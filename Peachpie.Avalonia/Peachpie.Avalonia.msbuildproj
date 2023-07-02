@@ -1,0 +1,18 @@
+<Project Sdk="Peachpie.NET.Sdk/1.1.9">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <Description>.NET class library in PHP</Description>
+    <AssemblyName>Peachpie.Avalonia</AssemblyName>
+    <RootNamespace>Peachpie</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**/*.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Peachpie.Avalonia.Extension\Peachpie.Avalonia.Extension.csproj" />
+  </ItemGroup>
+</Project>

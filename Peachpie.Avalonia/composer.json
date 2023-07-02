@@ -1,0 +1,15 @@
+﻿{
+    "name": "fibonaccifox/peachpie.avalonia",
+    "description": "Peachpie.Avalonia",
+    "type": "project",
+    "require": {
+        "php": ">=8.1"
+    },
+    "license": "MIT",
+    "authors": [ { "name": "Maxim Rakov" } ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    }
+}

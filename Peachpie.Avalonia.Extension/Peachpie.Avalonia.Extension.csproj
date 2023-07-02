@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>warnings</Nullable>
+        <LangVersion>latest</LangVersion>
+        <Title>Extension classes for use in PeachPie</Title>
+        <AssemblyName>Peachpie.Avalonia.Extension</AssemblyName>
+        <RootNamespace>Peachpie</RootNamespace>
+        <Authors>FibonacciFox</Authors>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.0.0-rc1.1" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc1.1" />
+        <PackageReference Include="Peachpie.Runtime" Version="1.1.9" />
+    </ItemGroup>
+</Project>
