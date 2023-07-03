@@ -1,23 +1,15 @@
-using Avalonia.Controls;
-using Peachpie.Avalonia.Controls.Layout;
+
+using MyPhpLib;
+using Peachpie.Avalonia.Controls.Windows;
 
 namespace AvaloniaApplication;
 
-public class UxRowDefinitions : RowDefinitions
-{
-    public UxRowDefinitions(string s) : base(s)
-    {
-        
-    }
-}
 
-public partial class MainWindow : Window
+public partial class MainWindow : UxWindow
 {
     public MainWindow()
     {
         InitializeComponent();
-
-        UxGrid grid = new UxGrid();
-        grid.RowDefinitions = new UxRowDefinitions("100");
+        
     }
 }

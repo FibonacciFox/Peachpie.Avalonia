@@ -9,11 +9,11 @@
  * @author FibonacciFox
  */
 
-namespace Peachpie\Avalonia\Controls;
+namespace Peachpie\Avalonia\Controls\Windows;
 
+use Peachpie\Avalonia\Extension\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
 use Peachpie\Avalonia\Traits\EventsTrait;
-use Peachpie\Avalonia\Extension\StyleKeyOverride;
 
 class UxWindow extends \Avalonia\Controls\Window implements IStyleKeyOverride
 {

@@ -61,4 +61,7 @@ public static class StyleKeyOverride
     public static readonly Type Flyout = typeof(Flyout);
     public static readonly Type ToolTip = typeof(ToolTip);
     
+    //Windows
+    public static readonly Type Window = typeof(Window);
+    
 }
