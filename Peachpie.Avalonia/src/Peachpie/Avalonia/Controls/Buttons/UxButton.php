@@ -11,6 +11,7 @@
 
 namespace Peachpie\Avalonia\Controls\Buttons;
 
+use Avalonia\Diagnostics\Override;
 use Peachpie\Avalonia\IStyleKeyOverride;
 use Peachpie\Avalonia\Traits\EventsTrait;
 use Peachpie\Avalonia\Extension\StyleKeyOverride;

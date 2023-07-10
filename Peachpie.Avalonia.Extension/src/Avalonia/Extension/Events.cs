@@ -3,7 +3,7 @@ using Pchp.Core;
 
 namespace Peachpie.Avalonia.Extension;
 
-public class Events
+public static class Events
 {
     public static void On(object targetClass, string eventName, Closure callback)
     {
@@ -11,9 +11,9 @@ public class Events
         if (eventInfo != null)
             eventInfo.AddEventHandler(targetClass,
                 CreateDelegate(eventInfo.EventHandlerType,
-                    (_, e) =>
+                    (sender, e) =>
                     {
-                        callback.__invoke(PhpValue.FromClass(_), PhpValue.FromClass(e));
+                        callback.__invoke(PhpValue.FromClass(sender), PhpValue.FromClass(e));
                     }));
         else
             throw new ArgumentException(

@@ -1,15 +1,11 @@
-<windows:UxWindow xmlns="https://github.com/avaloniaui"
+﻿<windows:UxWindow xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:buttons="clr-namespace:Peachpie.Avalonia.Controls.Buttons;assembly=Peachpie.Avalonia"
-        xmlns:layout="clr-namespace:Peachpie.Avalonia.Controls.Layout;assembly=Peachpie.Avalonia"
         xmlns:windows="clr-namespace:Peachpie.Avalonia.Controls.Windows;assembly=Peachpie.Avalonia"
-        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="200"
+        xmlns:buttons="clr-namespace:Peachpie.Avalonia.Controls.Buttons;assembly=Peachpie.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication.MainWindow"
-        Title="AvaloniaApplication">
-        <layout:UxStackPanel Name="StackPanel" HorizontalAlignment="Center">
-                <buttons:UxButton Content="Hello"/>
-                <buttons:UxButton Content="Hello"/>
-        </layout:UxStackPanel>
+        Title="MainWindow">
+        <buttons:UxButton Name="MyUxButton" />
 </windows:UxWindow>

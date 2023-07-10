@@ -9,6 +9,7 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+  
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>

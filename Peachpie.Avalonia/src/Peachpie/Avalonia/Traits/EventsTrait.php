@@ -16,4 +16,5 @@ trait EventsTrait
     {
         Events::on($this, $eventName, $callback );
     }
+
 }
