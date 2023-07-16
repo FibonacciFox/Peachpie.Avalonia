@@ -4,7 +4,24 @@
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                   xmlns:windows="clr-namespace:Peachpie.Avalonia.Controls.Windows;assembly=Peachpie.Avalonia"
                   xmlns:buttons="clr-namespace:Peachpie.Avalonia.Controls.Buttons;assembly=Peachpie.Avalonia"
+                  xmlns:layout="clr-namespace:Peachpie.Avalonia.Controls.Layout;assembly=Peachpie.Avalonia"
+                  xmlns:displayingImages="clr-namespace:Peachpie.Avalonia.Controls.DisplayingImages;assembly=Peachpie.Avalonia"
+                  xmlns:menusPopups="clr-namespace:Peachpie.Avalonia.Controls.MenusPopups;assembly=Peachpie.Avalonia"
+                  xmlns:repeatingData="clr-namespace:Peachpie.Avalonia.Controls.RepeatingData;assembly=Peachpie.Avalonia"
+                  xmlns:textDisplay="clr-namespace:Peachpie.Avalonia.Controls.TextDisplay;assembly=Peachpie.Avalonia"
+                  xmlns:valueSelection="clr-namespace:Peachpie.Avalonia.Controls.ValueSelection;assembly=Peachpie.Avalonia"
                   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-                  Title="MainWindow">
-        <buttons:UxButton Name="MyUxButton" Content="MyButton" />
+                  Width="600" Height="450"
+                  Title="Template Window">
+    <layout:UxGrid ColumnDefinitions="*,Auto" RowDefinitions="Auto,*">
+        <menusPopups:UxMenu Grid.Column="0" Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_OpenFolder" 
+                          HotKey="Ctrl+O"
+                          InputGesture="Ctrl+O"/>
+                <Separator />
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+        </menusPopups:UxMenu>   
+    </layout:UxGrid>
 </windows:UxWindow>

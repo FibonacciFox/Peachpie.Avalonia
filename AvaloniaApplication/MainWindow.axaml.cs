@@ -8,6 +8,7 @@ public partial class MainWindow : UxWindow
     public MainWindow()
     {
         InitializeComponent();
+        
     }
 
     private void InitializeComponent()
