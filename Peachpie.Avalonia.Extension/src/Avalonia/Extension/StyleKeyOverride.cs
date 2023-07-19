@@ -29,7 +29,8 @@ public static class StyleKeyOverride
     public static readonly Type ToggleButton = typeof(ToggleButton);
     public static readonly Type ButtonSpinner = typeof(ButtonSpinner);
     public static readonly Type SplitButton = typeof(SplitButton);
-    public static readonly Type ToggleSplitButton = typeof(ToggleSplitButton);
+    //Стиль ToggleSplitButton наследуется от SplitButton
+    public static readonly Type ToggleSplitButton = typeof(SplitButton);
     
     //Repeating Data Controls
     //public static readonly Type DataGrid = typeof(DataGrid);
