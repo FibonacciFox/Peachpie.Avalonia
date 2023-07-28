@@ -14,8 +14,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.0-rc1.1" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.0.0-rc1.1" />
+        <PackageReference Include="Avalonia" Version="11.0.1" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.1" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.1" />
         <PackageReference Include="Peachpie.Runtime" Version="1.1.9" />
     </ItemGroup>
 </Project>

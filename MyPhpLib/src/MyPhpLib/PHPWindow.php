@@ -16,17 +16,21 @@ namespace MyPhpLib {
 
             public function __construct()
             {
+                $this->Width = 150;
+                $this->Height = 150;
+                $this->Title = "MainWindow";
                 $this->InitializeComponent($this);
 
+                /**
                 $button = new UxButton();
                 $button->Content = "Hello";
                 $button->HorizontalAlignment = HorizontalAlignment::Center;
-               // $this->Content = $button;
+                $this->Content = $button;
 
                 $this->on('DoubleTapped', function($sender, $e){
-                    $sender->Title = "Hello W";
+                $sender->Title = "Hello W";
                 });
-
+                 */
             }
 
         public function InitializeComponent() : void {
@@ -38,7 +42,8 @@ namespace MyPhpLib {
             });
 
             $this->MyButton = $this->MyAxamlWindow->FindByName("MyUxButton");
-            $this->MyButton->Content = "Ya Knopka";
+            $this->MyButton->Content = "Новое имя для кнопки!";
+
             $this->MyAxamlWindow->Show();
         }
 

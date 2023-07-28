@@ -12,6 +12,8 @@ public static class StyleKeyOverride
     public static readonly Type DockPanel = typeof(DockPanel);
     public static readonly Type Expander = typeof(Expander);
     public static readonly Type Grid = typeof(Grid);
+    public static readonly Type DataGrid = typeof(DataGrid);
+    public static readonly Type DataGridTextColumn = typeof(DataGridTextColumn);
     public static readonly Type GridSplitter = typeof(GridSplitter);
     public static readonly Type Panel = typeof(Panel);
     public static readonly Type RelativePanel = typeof(RelativePanel);
