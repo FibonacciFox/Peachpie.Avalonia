@@ -12,6 +12,7 @@
                   xmlns:valueSelection="clr-namespace:Peachpie.Avalonia.Controls.ValueSelection;assembly=Peachpie.Avalonia"
                   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
                   Width="600" Height="450"
+                  Icon="/Assets/icon.png"
                   Title="Template Window">
     <layout:UxStackPanel>
         <buttons:UxButton Content="Click me!" Name="MyUxButton"/>

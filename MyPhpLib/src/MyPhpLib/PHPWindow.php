@@ -3,7 +3,13 @@
 namespace MyPhpLib {
 
     use Avalonia\Layout\HorizontalAlignment;
+    ######
+    use Avalonia\Media\Imaging\Bitmap;
+    use Avalonia\Platform\AssetLoader;
+    use Avalonia\Controls\WindowIcon;
+    ######
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Controls\TextDisplay\UxTextBox;
     use System\Uri;
 
     use Peachpie\Avalonia\Controls\Buttons\UxButton;
@@ -16,9 +22,10 @@ namespace MyPhpLib {
 
             public function __construct()
             {
-                $this->Width = 150;
-                $this->Height = 150;
+                $this->Width = 300;
+                $this->Height = 300;
                 $this->Title = "MainWindow";
+                $currentWindow = $this;
                 $this->InitializeComponent($this);
 
                 /**
@@ -31,6 +38,18 @@ namespace MyPhpLib {
                 $sender->Title = "Hello W";
                 });
                  */
+
+
+                $uri_warn64 = new Uri("avares://MyPhpLib/Assets/Warn64.png");
+                $Warn64 = new Bitmap(AssetLoader::Open($uri_warn64)); //new Uri($Warn64) - не нужно пока что писать в анонимках. Лучше заранее определить.
+
+                $TextBox = new UxTextBox();
+                //$TextBox->HorizontalAlignment = HorizontalAlignment::Center;
+                $TextBox->on('KeyDown', function($sender, $e) use ($Warn64, $currentWindow ) {
+                    $currentWindow->Icon = new WindowIcon($Warn64);
+                });
+
+                $this->Content = $TextBox;
             }
 
         public function InitializeComponent() : void {
