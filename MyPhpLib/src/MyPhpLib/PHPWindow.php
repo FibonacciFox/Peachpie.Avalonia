@@ -44,16 +44,16 @@ namespace MyPhpLib {
                 $Warn64 = new Bitmap(AssetLoader::Open($uri_warn64)); //new Uri($Warn64) - не нужно пока что писать в анонимках. Лучше заранее определить.
 
                 $TextBox = new UxTextBox();
-                //$TextBox->HorizontalAlignment = HorizontalAlignment::Center;
+                
                 $TextBox->on('KeyDown', function($sender, $e) use ($Warn64, $currentWindow ) {
                     $currentWindow->Icon = new WindowIcon($Warn64);
                 });
 
                 $this->Content = $TextBox;
             }
-
+        //ZIndex
         public function InitializeComponent() : void {
-
+            /*
             $uri = new Uri("avares://MyPhpLib/src/MyPhpLib/PHPWindow.axaml");
             $this->MyAxamlWindow = AvaloniaXamlLoader::Load( $uri, null );
             $this->MyAxamlWindow->on('PointerEntered', function($sender, $e){
@@ -63,7 +63,48 @@ namespace MyPhpLib {
             $this->MyButton = $this->MyAxamlWindow->FindByName("MyUxButton");
             $this->MyButton->Content = "Новое имя для кнопки!";
 
-            $this->MyAxamlWindow->Show();
+            $this->MyAxamlWindow->Show(); */
+
+            $uri = new Uri("avares://MyPhpLib/src/MyPhpLib/ZIndex.axaml");
+            $ZIndexForm = AvaloniaXamlLoader::Load( $uri, null );
+
+            $Red = $ZIndexForm->FindByName("Red"); //ZIndex = 0
+            $Blue = $ZIndexForm->FindByName("Blue"); //ZIndex = 0
+            $Green = $ZIndexForm->FindByName("Green"); //ZIndex = 0
+            $Orange = $ZIndexForm->FindByName("Orange"); //ZIndex = 0
+
+            $RedUp = $ZIndexForm->FindByName("RedUp");
+            $RedUp->on('Click', function($sender, $e) use($Red, $Blue,$Green, $Orange ) {
+                $Red->ZIndex = 1;
+                $Blue->ZIndex = 0;
+                $Green->ZIndex = 0;
+                $Orange->ZIndex = 0;
+            });
+
+            $BlueUp = $ZIndexForm->FindByName("BlueUp");
+            $BlueUp->on('Click', function($sender, $e) use($Red, $Blue,$Green, $Orange ){
+                $Red->ZIndex = 0;
+                $Blue->ZIndex = 1;
+                $Green->ZIndex = 0;
+                $Orange->ZIndex = 0;
+            });
+
+            $GreenUp = $ZIndexForm->FindByName("GreenUp");
+            $GreenUp->on('Click', function($sender, $e) use($Red, $Blue,$Green, $Orange ) {
+                $Red->ZIndex = 0;
+                $Blue->ZIndex = 0;
+                $Green->ZIndex = 1;
+                $Orange->ZIndex = 0;
+            });
+            $OrangeUp = $ZIndexForm->FindByName("OrangeUp");
+            $OrangeUp->on('Click', function($sender, $e) use($Red, $Blue,$Green, $Orange ) {
+                $Red->ZIndex = 0;
+                $Blue->ZIndex = 0;
+                $Green->ZIndex = 0;
+                $Orange->ZIndex = 1;
+            });
+
+            $ZIndexForm->Show();
         }
 
 

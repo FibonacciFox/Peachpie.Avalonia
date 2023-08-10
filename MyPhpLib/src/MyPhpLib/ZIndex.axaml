@@ -1,0 +1,24 @@
+﻿<windows:UxWindow xmlns="https://github.com/avaloniaui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:layout="clr-namespace:Peachpie.Avalonia.Controls.Layout;assembly=Peachpie.Avalonia"
+                  xmlns:windows="clr-namespace:Peachpie.Avalonia.Controls.Windows;assembly=Peachpie.Avalonia"
+                  xmlns:buttons="clr-namespace:Peachpie.Avalonia.Controls.Buttons;assembly=Peachpie.Avalonia"
+                  mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="450"
+                  Title="ZIndex">
+    <layout:UxStackPanel Orientation="Horizontal">
+        <layout:UxPanel Width="300" VerticalAlignment="Stretch" Background="Gray">
+            <Rectangle Name="Red" ZIndex="0"  Fill="Red" Height="240"/>
+            <Rectangle Name="Blue" ZIndex="0"  Fill="Blue" Height="140"/>
+            <Rectangle Name="Green" ZIndex="0"  Fill="Green" Height="100" />
+            <Rectangle Name="Orange" ZIndex="0"  Fill="Orange" Height="60"/>
+        </layout:UxPanel>
+        <layout:UxStackPanel>
+            <buttons:UxButton Name="RedUp" Content="Up Red" />
+            <buttons:UxButton Name="BlueUp" Content="Up Blue" />
+            <buttons:UxButton Name="GreenUp" Content="Up Green" />
+            <buttons:UxButton Name="OrangeUp" Content="Up Orange" />
+        </layout:UxStackPanel>
+    </layout:UxStackPanel>
+</windows:UxWindow>
