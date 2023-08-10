@@ -19,6 +19,6 @@
             <buttons:UxButton Name="BlueUp" Content="Up Blue" />
             <buttons:UxButton Name="GreenUp" Content="Up Green" />
             <buttons:UxButton Name="OrangeUp" Content="Up Orange" />
+            </layout:UxStackPanel>
         </layout:UxStackPanel>
-    </layout:UxStackPanel>
 </windows:UxWindow>
