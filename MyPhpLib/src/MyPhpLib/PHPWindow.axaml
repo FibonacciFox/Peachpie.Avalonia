@@ -15,8 +15,8 @@
                   Icon="/Assets/icon.png"
                   x:Class="MyPhpLib.PHPWindow"
                   Title="Template Window">
-    <layout:UxStackPanel>
-        <buttons:UxButton Content="Click me!" Name="MyUxButton"/>
+    <layout:UxStackPanel Name="MyUxStackPanel" >
+        <buttons:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
     </layout:UxStackPanel>
 
 </windows:UxWindow>
