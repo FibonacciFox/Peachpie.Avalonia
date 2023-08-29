@@ -11,25 +11,12 @@
                   xmlns:textDisplay="clr-namespace:Peachpie.Avalonia.Controls.TextDisplay;assembly=Peachpie.Avalonia"
                   xmlns:valueSelection="clr-namespace:Peachpie.Avalonia.Controls.ValueSelection;assembly=Peachpie.Avalonia"
                   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-                  Width="600" Height="450"
+                  Width="500" Height="500"
                   Icon="/Assets/icon.png"
+                  x:Class="MyPhpLib.PHPWindow"
                   Title="Template Window">
     <layout:UxStackPanel>
         <buttons:UxButton Content="Click me!" Name="MyUxButton"/>
-        <layout:UxDataGrid Width="300"
-                           Height="200"
-                           Margin="20"
-                           IsReadOnly="True"
-                           CanUserReorderColumns="True"
-                           CanUserResizeColumns="True"
-                           CanUserSortColumns="False"
-                           GridLinesVisibility="All"
-                           BorderThickness="1" BorderBrush="Gray">
-            <layout:UxDataGrid.Columns>
-                <layout:UxDataGridTextColumn Header="First Name"/>
-                <layout:UxDataGridTextColumn Header="Last Name"/>
-            </layout:UxDataGrid.Columns>
-        </layout:UxDataGrid>
     </layout:UxStackPanel>
 
 </windows:UxWindow>

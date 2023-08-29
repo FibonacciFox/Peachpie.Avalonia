@@ -8,9 +8,9 @@ trait GetComponentTrait
 
     /**
      * @param string $name
-     * @return object
+     * @return mixed
      */
-    public function FindByName(string $name) : object
+    public function FindByName(string $name): mixed
     {
         return GetComponent::FindByName($this, $name);
     }
