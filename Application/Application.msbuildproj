@@ -1,12 +1,10 @@
 <Project Sdk="Peachpie.NET.Sdk/1.1.9">
 
   <PropertyGroup>
-    <OutputType>Library</OutputType>
+    <OutputType>exe</OutputType>
+    <StartupObject>Program.php</StartupObject>
     <TargetFramework>net7.0</TargetFramework>
     <Description>.NET class library in PHP</Description>
-    <AssemblyName>MyPhpLib</AssemblyName>
-    <RootNamespace>MyPhpLib</RootNamespace>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   
@@ -14,9 +12,9 @@
     <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
   <ItemGroup>
-    <AvaloniaResource Include="Assets\**" />
+    <ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
   </ItemGroup>
 </Project>

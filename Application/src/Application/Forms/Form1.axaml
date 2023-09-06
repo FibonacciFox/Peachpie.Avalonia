@@ -13,7 +13,7 @@
                   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
                   Width="500" Height="500"
                   Icon="/Assets/icon.png"
-                  x:Class="MyPhpLib.PHPWindow"
+                  x:Class="Application.Forms.Form1"
                   Title="Template Window">
     <layout:UxStackPanel Name="MyUxStackPanel" >
         <buttons:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>

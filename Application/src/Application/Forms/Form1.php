@@ -1,6 +1,6 @@
 <?php
 
-namespace MyPhpLib {
+namespace Application\Forms {
 
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Controls\Buttons\UxButton;
@@ -8,11 +8,11 @@ namespace MyPhpLib {
     use Peachpie\Avalonia\Controls\TextDisplay\UxTextBlock;
     use Peachpie\Avalonia\Controls\Windows\UxWindow;
 
-    class PHPWindow extends UxWindow
+    class Form1 extends UxWindow
     {
         public UxButton $MyUxButton;
         public UxStackPanel $MyUxStackPanel;
-
+    
         public function __construct()
         {
             //Сначала всегда инициализируем компонент формы.
@@ -27,8 +27,8 @@ namespace MyPhpLib {
                 $text->Text = "Added New Text Block";
                 $this->MyUxStackPanel->Children->Add($text);
             });
-
         }
+
 
         public function InitializeComponent(): void
         {

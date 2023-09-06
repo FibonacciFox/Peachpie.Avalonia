@@ -2,15 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia", "Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj", "{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{4C4C20B4-8631-48BC-B4D1-8A0B96714A09}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Peachpie.Avalonia.Extension", "Peachpie.Avalonia.Extension", "{283522D0-3A7C-4561-8958-1E83923A7C80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Extension", "Peachpie.Avalonia.Extension\Peachpie.Avalonia.Extension.csproj", "{39539F17-A93F-4326-A578-BDD96B3FDC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaApplication", "AvaloniaApplication\AvaloniaApplication.csproj", "{76314E66-1703-40AB-8489-12784042FFB6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPhpLib", "MyPhpLib\MyPhpLib.msbuildproj", "{9C26572D-638A-4E9A-8E51-6182572C7180}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.msbuildproj", "{8F70B892-89D7-4196-8EAB-13D1F8F1F671}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,18 +22,12 @@ Global
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76314E66-1703-40AB-8489-12784042FFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76314E66-1703-40AB-8489-12784042FFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76314E66-1703-40AB-8489-12784042FFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76314E66-1703-40AB-8489-12784042FFB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C26572D-638A-4E9A-8E51-6182572C7180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C26572D-638A-4E9A-8E51-6182572C7180}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C26572D-638A-4E9A-8E51-6182572C7180}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C26572D-638A-4E9A-8E51-6182572C7180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D} = {283522D0-3A7C-4561-8958-1E83923A7C80}
-		{76314E66-1703-40AB-8489-12784042FFB6} = {4C4C20B4-8631-48BC-B4D1-8A0B96714A09}
-		{9C26572D-638A-4E9A-8E51-6182572C7180} = {4C4C20B4-8631-48BC-B4D1-8A0B96714A09}
 	EndGlobalSection
 EndGlobal

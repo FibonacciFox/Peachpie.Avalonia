@@ -14,5 +14,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Extension\Peachpie.Avalonia.Extension.csproj" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.1" />
   </ItemGroup>
 </Project>
