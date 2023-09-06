@@ -9,11 +9,9 @@ public class AppPhpBuilder
 {
     public static AppPhpBuilder Configure(string application)
     {
-        var applicationType = Type.GetType(application); //"AvaloniaApplication.App"
-
         var method =
             typeof(AppBuilder).GetMethods().Where(x => x.Name == "Configure")
-                .FirstOrDefault(x => x.IsGenericMethod)!.MakeGenericMethod(applicationType);
+                .FirstOrDefault(x => x.IsGenericMethod)!.MakeGenericMethod(Type.GetType(application));
 
         var builder = (AppBuilder)method.Invoke(typeof(AppBuilder), null)!;
 

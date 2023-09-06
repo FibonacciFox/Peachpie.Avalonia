@@ -6,7 +6,6 @@
     <Description>.NET class library in PHP</Description>
     <AssemblyName>Peachpie.Avalonia</AssemblyName>
     <RootNamespace>Peachpie</RootNamespace>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>

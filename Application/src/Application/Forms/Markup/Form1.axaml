@@ -1,0 +1,18 @@
+﻿<controls:UxWindow xmlns="https://github.com/avaloniaui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:controls="clr-namespace:Peachpie.Avalonia.Controls;assembly=Peachpie.Avalonia"
+                  mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                  Width="500" Height="500"
+                  Icon="/Assets/icon.png"
+                  x:Class="Application.Forms.Form1"
+                  Title="Template Window">
+    <controls:UxStackPanel Name="MyUxStackPanel" >
+        <controls:UxStackPanel Orientation="Horizontal">
+        <controls:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
+        <controls:UxButton HorizontalAlignment="Center" Content="Open Demo Form" Name="OpenDemo"/>
+        </controls:UxStackPanel>
+    </controls:UxStackPanel>
+
+</controls:UxWindow>

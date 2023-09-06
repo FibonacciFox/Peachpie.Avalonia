@@ -1,0 +1,46 @@
+﻿<controls:UxWindow xmlns="https://github.com/avaloniaui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:controls="clr-namespace:Peachpie.Avalonia.Controls;assembly=Peachpie.Avalonia"
+                  mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                  Width="500" Height="500"
+                  Icon="/Assets/icon.png"
+                  x:Class="Application.Forms.Demo"
+                  Title="Demo">
+    <controls:UxStackPanel Orientation="Vertical" Spacing="4">
+        <NativeMenuBar/>
+        <controls:UxTextBlock Classes="h2" HorizontalAlignment="Center">A window menu</controls:UxTextBlock>
+
+        <controls:UxWrapPanel HorizontalAlignment="Center">
+            <controls:UxStackPanel>
+                <controls:UxTextBlock Classes="h3" Margin="4 8">Defined in XAML</controls:UxTextBlock>
+                <controls:UxMenu>
+                    <MenuItem Header="_First">
+                        <MenuItem Header="Standard _Menu Item" InputGesture="Ctrl+A" />
+                        <MenuItem Header="_Disabled Menu Item" IsEnabled="False" InputGesture="Ctrl+D" />
+                        <Separator/>
+                        <MenuItem Header="Menu with _Submenu">
+                            <MenuItem Header="Submenu _1"/>
+                            <MenuItem Header="Submenu _2 with Submenu">
+                                <MenuItem Header="Submenu Level 2" />
+                            </MenuItem>
+                            <MenuItem Header="Submenu _3 with Submenu Disabled" IsEnabled="False">
+                                <MenuItem Header="Submenu Level 2" />
+                            </MenuItem>
+                        </MenuItem>
+                        <MenuItem Header="Menu Item with _Checkbox">
+                            <MenuItem.Icon>
+                                <CheckBox BorderThickness="0" IsHitTestVisible="False" IsChecked="True"/>
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="_Second">
+                        <MenuItem Header="Second _Menu Item"/>
+                    </MenuItem>
+                </controls:UxMenu>
+            </controls:UxStackPanel>
+        </controls:UxWrapPanel>
+    </controls:UxStackPanel>
+
+</controls:UxWindow>

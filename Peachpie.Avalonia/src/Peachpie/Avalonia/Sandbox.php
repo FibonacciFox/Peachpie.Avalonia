@@ -2,7 +2,7 @@
 
 namespace Peachpie\Avalonia;
 
-use Peachpie\Avalonia\Controls\Windows\UxWindow;
+use Peachpie\Avalonia\Controls\UxWindow;
 
 abstract class Sandbox
 {
