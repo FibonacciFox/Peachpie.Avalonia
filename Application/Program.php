@@ -1,6 +1,6 @@
 <?php
 
-use Peachpie\Avalonia\Extension\AppPhpBuilder;
+use Peachpie\Avalonia\Core\AppPhpBuilder;
 use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
 
 $lifetime = new ClassicDesktopStyleApplicationLifetime();

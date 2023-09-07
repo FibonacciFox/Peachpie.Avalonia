@@ -35,8 +35,8 @@ namespace Application\Forms {
                 $Demo = new Demo();
                 $Demo->Show();
             });
-        }
 
+        }
 
         public function InitializeComponent(): void
         {

@@ -16,7 +16,6 @@ namespace Application\Forms {
         {
             //Сначала всегда инициализируем компонент формы.
             $this->InitializeComponent();
-
         }
 
 

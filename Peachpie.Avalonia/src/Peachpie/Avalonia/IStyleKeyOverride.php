@@ -4,9 +4,9 @@ namespace Peachpie\Avalonia;
 
 use System\Type;
 
+
 interface IStyleKeyOverride
 {
-
     /**
      * @return Type
      */

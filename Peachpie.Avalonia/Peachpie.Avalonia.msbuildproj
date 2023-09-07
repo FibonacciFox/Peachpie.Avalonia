@@ -1,18 +1,14 @@
 <Project Sdk="Peachpie.NET.Sdk/1.1.9">
-
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <Description>.NET class library in PHP</Description>
-    <AssemblyName>Peachpie.Avalonia</AssemblyName>
-    <RootNamespace>Peachpie</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Peachpie.Avalonia.Extension\Peachpie.Avalonia.Extension.csproj" />
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.1" />
+    <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
   </ItemGroup>
 </Project>

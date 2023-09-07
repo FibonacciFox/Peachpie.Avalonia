@@ -1,11 +1,11 @@
 ﻿using System;
-using Pchp.Core;
 using System.Collections.Generic;
 using System.Reflection;
+using Pchp.Core;
 
-namespace Peachpie.Avalonia.Extension
+namespace Peachpie.Avalonia.Core
 {
-    public static class Events
+    public static class EventsTraitExtension
     {
         // Кэш для хранения информации о событиях для различных типов объектов
         private static readonly Dictionary<Type, Dictionary<string, EventInfo>> _cachedEventInfos = new Dictionary<Type, Dictionary<string, EventInfo>>();

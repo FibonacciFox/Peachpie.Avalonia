@@ -11,7 +11,7 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Extension\StyleKeyOverride;
+use Peachpie\Avalonia\Core\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
 use Peachpie\Avalonia\Traits\EventsTrait;
 

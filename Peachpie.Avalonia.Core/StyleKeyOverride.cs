@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Controls.Primitives;
 
-namespace Peachpie.Avalonia.Extension;
+namespace Peachpie.Avalonia.Core;
 
 public static class StyleKeyOverride
 {

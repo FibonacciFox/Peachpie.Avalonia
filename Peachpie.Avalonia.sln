@@ -2,9 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia", "Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj", "{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Peachpie.Avalonia.Extension", "Peachpie.Avalonia.Extension", "{283522D0-3A7C-4561-8958-1E83923A7C80}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Extension", "Peachpie.Avalonia.Extension\Peachpie.Avalonia.Extension.csproj", "{39539F17-A93F-4326-A578-BDD96B3FDC6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Core", "Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj", "{39539F17-A93F-4326-A578-BDD96B3FDC6D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.msbuildproj", "{8F70B892-89D7-4196-8EAB-13D1F8F1F671}"
 EndProject
@@ -28,6 +26,5 @@ Global
 		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{39539F17-A93F-4326-A578-BDD96B3FDC6D} = {283522D0-3A7C-4561-8958-1E83923A7C80}
 	EndGlobalSection
 EndGlobal

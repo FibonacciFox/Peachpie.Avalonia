@@ -3,7 +3,7 @@ using System.Linq;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 
-namespace Peachpie.Avalonia.Extension;
+namespace Peachpie.Avalonia.Core;
 
 public class AppPhpBuilder
 {
@@ -20,12 +20,7 @@ public class AppPhpBuilder
             _appBuilder = builder
         };
     }
-
-    private static Type GetType(string application)
-    {
-        return Type.GetType(application); //"AvaloniaApplication.App"
-    }
-
+    
     public AppPhpBuilder UsePlatformDetect()
     {
         _appBuilder = _appBuilder.UsePlatformDetect();

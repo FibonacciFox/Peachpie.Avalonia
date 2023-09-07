@@ -1,7 +1,7 @@
 <?php
 
 namespace Peachpie\Avalonia\Traits;
-use Peachpie\Avalonia\Extension\GetComponent;
+use Peachpie\Avalonia\Core\GetComponentTraitExtension;
 
 trait GetComponentTrait
 {
@@ -12,7 +12,7 @@ trait GetComponentTrait
      */
     public function FindByName(string $name): mixed
     {
-        return GetComponent::FindByName($this, $name);
+        return GetComponentTraitExtension::FindByName($this, $name);
     }
 
 }
