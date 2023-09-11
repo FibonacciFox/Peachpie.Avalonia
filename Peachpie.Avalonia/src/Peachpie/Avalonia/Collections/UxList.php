@@ -3,8 +3,9 @@
 namespace Peachpie\Avalonia\Collections;
 
 
+use Closure;
 use Peachpie\Avalonia\Core\Collections\AvaloniaObjectList;
-use Peachpie\Avalonia\Traits\EventsTrait;
+use Peachpie\Avalonia\Core\EventsTraitExtension;
 
 
 /**
@@ -13,7 +14,6 @@ use Peachpie\Avalonia\Traits\EventsTrait;
  */
 class UxList extends AvaloniaObjectList
 {
-    use EventsTrait;
 
     /**
      * Adds an item to the collection.
@@ -77,5 +77,15 @@ class UxList extends AvaloniaObjectList
      */
     public function RemoveAll(UxList $items): bool  {
         return AvaloniaObjectList::RemoveAll($items);
+    }
+
+
+    /**
+     * Raised when a change is made to the collection's items.
+     * @param Closure $callback
+     * @return void
+     */
+    public function onCollectionChanged(Closure $callback) : void {
+        EventsTraitExtension::on($this, "CollectionChanged", $callback);
     }
 }

@@ -37,12 +37,15 @@ namespace Application\Forms {
 
             $Uxlist = new Uxlist();
 
+            $Uxlist->onCollectionChanged(function (Uxlist $uxlist, $args){
+                $this->Title =  $uxlist[0];
+            });
+
             $this->MyListBox->ItemsSource = $Uxlist;
 
             $this->OpenDemo->on("Click", callback: function (UxButton $button, $args) use ($Uxlist) {
 
                 $Uxlist->Add(new UxButton());
-                $this->Title =  $Uxlist[0];
             });
 
         }
