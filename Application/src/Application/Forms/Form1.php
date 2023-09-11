@@ -43,7 +43,6 @@ namespace Application\Forms {
 
                 $Uxlist->Add(new UxButton());
                 $this->Title =  $Uxlist[0];
-                $Uxlist->Clear();
             });
 
         }

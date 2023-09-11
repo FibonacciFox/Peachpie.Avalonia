@@ -6,6 +6,11 @@ namespace Peachpie\Avalonia\Collections;
 use Peachpie\Avalonia\Core\Collections\AvaloniaObjectList;
 use Peachpie\Avalonia\Traits\EventsTrait;
 
+
+/**
+ * @property int $Count Gets the number of items in the collection.
+ * @property int $Capacity Gets or sets the total number of elements the internal data structure can hold without resizing.
+ */
 class UxList extends AvaloniaObjectList
 {
     use EventsTrait;
@@ -45,5 +50,32 @@ class UxList extends AvaloniaObjectList
      */
     public function Contains(mixed $item): void  {
         AvaloniaObjectList::Contains($item);
+    }
+
+    /**
+     * Removes an item from the collection.
+     * @param mixed $item The item.
+     * @return bool True if the item was found and removed, otherwise false.
+     */
+    public function Remove(mixed $item): bool  {
+       return AvaloniaObjectList::Contains($item);
+    }
+
+    /**
+     * Removes the item at the specified index.
+     * @param int $index The index.
+     * @return void
+     */
+    public function RemoveAt(int $index): void  {
+        AvaloniaObjectList::RemoveAt($index);
+    }
+
+    /**
+     * Removes multiple items from the collection.
+     * @param UxList $items The items.
+     * @return bool True if the item was found and removed, otherwise false.
+     */
+    public function RemoveAll(UxList $items): bool  {
+        return AvaloniaObjectList::RemoveAll($items);
     }
 }
