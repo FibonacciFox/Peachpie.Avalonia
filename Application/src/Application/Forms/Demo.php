@@ -14,7 +14,7 @@ namespace Application\Forms {
     
         public function __construct()
         {
-            //Сначала всегда инициализируем компонент формы.
+            //Сначала всегда инициализируем axaml.
             $this->InitializeComponent();
         }
 

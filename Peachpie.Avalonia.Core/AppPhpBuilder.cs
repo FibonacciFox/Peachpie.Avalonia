@@ -12,7 +12,7 @@ public class AppPhpBuilder
         var method =
             typeof(AppBuilder).GetMethods().Where(x => x.Name == "Configure")
                 .FirstOrDefault(x => x.IsGenericMethod)!.MakeGenericMethod(Type.GetType(application));
-
+       
         var builder = (AppBuilder)method.Invoke(typeof(AppBuilder), null)!;
 
         return new AppPhpBuilder()

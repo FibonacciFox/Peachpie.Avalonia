@@ -11,7 +11,7 @@
         <PackageReference Include="Avalonia" Version="11.0.1" />
         <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.1" />
         <PackageReference Include="Avalonia.Desktop" Version="11.0.1" />
-        <PackageReference Include="Peachpie.Runtime" Version="1.1.9" />
+        <PackageReference Include="Peachpie.Runtime" Version="1.2.0-r16166" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Styles" />

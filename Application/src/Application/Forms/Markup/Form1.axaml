@@ -9,10 +9,9 @@
                   x:Class="Application.Forms.Form1"
                   Title="Template Window">
     <controls:UxStackPanel Name="MyUxStackPanel" >
-        <controls:UxStackPanel Orientation="Horizontal">
         <controls:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
         <controls:UxButton HorizontalAlignment="Center" Content="Open Demo Form" Name="OpenDemo"/>
-        </controls:UxStackPanel>
+        <controls:UxListBox Name="MyListBox"/>
     </controls:UxStackPanel>
 
 </controls:UxWindow>

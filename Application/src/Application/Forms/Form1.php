@@ -3,7 +3,9 @@
 namespace Application\Forms {
 
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
+    use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxStackPanel;
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
@@ -13,16 +15,18 @@ namespace Application\Forms {
         public UxButton $MyUxButton;
         public UxButton $OpenDemo;
         public UxStackPanel $MyUxStackPanel;
+        private UxListBox $MyListBox;
 
 
         public function __construct()
         {
-            //Сначала всегда инициализируем компонент формы.
+            //Сначала всегда инициализируем axaml.
             $this->InitializeComponent();
-
+            
             $this->MyUxButton = $this->FindByName("MyUxButton");
             $this->OpenDemo = $this->FindByName("OpenDemo");
             $this->MyUxStackPanel = $this->FindByName("MyUxStackPanel");
+            $this->MyListBox = $this->FindByName("MyListBox");
 
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();
@@ -31,12 +35,19 @@ namespace Application\Forms {
                 $this->MyUxStackPanel->Children->Add($text);
             });
 
-            $this->OpenDemo->on("Click", function (UxButton $button, $args) {
-                $Demo = new Demo();
-                $Demo->Show();
+            $Uxlist = new Uxlist();
+
+            $this->MyListBox->ItemsSource = $Uxlist;
+
+            $this->OpenDemo->on("Click", callback: function (UxButton $button, $args) use ($Uxlist) {
+
+                $Uxlist->Add(new UxButton());
+                $this->Title =  $Uxlist[0];
+                $Uxlist->Clear();
             });
 
         }
+
 
         public function InitializeComponent(): void
         {
