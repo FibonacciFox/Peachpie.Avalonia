@@ -51,13 +51,14 @@ namespace Application\Forms {
                 $Surname->Binding = new \Avalonia\Data\Binding("[Surname]");
                 $this->Grid->Columns->Add($Surname);
 
-                $IsTrue  =  new \Avalonia\Controls\DataGridTextColumn();
+                $IsTrue  =  new \Avalonia\Controls\DataGridCheckBoxColumn();
                 $IsTrue->Header = "IsTrue";
                 $IsTrue->Binding = new \Avalonia\Data\Binding("[IsTrue]");
                 $this->Grid->Columns->Add($IsTrue);
             }
 
             $this->Grid->ItemsSource = $list;
+
 
             $this->on('Closing', function (UxWindow $demo, $e){
                 $this->Hide();
