@@ -10,7 +10,7 @@
                   Title="Template Window">
     <controls:UxStackPanel Name="MyUxStackPanel" >
         <controls:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
-        <controls:UxButton HorizontalAlignment="Center" Content="Open Demo Form" Name="OpenDemo"/>
+        <controls:UxButton HorizontalAlignment="Center" Content="Show Demo Form" Name="OpenDemo"/>
         <controls:UxListBox Name="MyListBox"/>
     </controls:UxStackPanel>
 

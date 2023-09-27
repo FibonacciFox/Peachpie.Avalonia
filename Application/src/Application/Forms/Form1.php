@@ -17,6 +17,8 @@ namespace Application\Forms {
         public UxStackPanel $MyUxStackPanel;
         private UxListBox $MyListBox;
 
+        private UxWindow $Demo;
+
 
         public function __construct()
         {
@@ -28,6 +30,7 @@ namespace Application\Forms {
             $this->MyUxStackPanel = $this->FindByName("MyUxStackPanel");
             $this->MyListBox = $this->FindByName("MyListBox");
 
+
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();
                 $text->HorizontalAlignment = \Avalonia\Layout\HorizontalAlignment::Center;
@@ -35,19 +38,12 @@ namespace Application\Forms {
                 $this->MyUxStackPanel->Children->Add($text);
             });
 
-            $Uxlist = new Uxlist();
 
-            $Uxlist->onCollectionChanged(function (Uxlist $uxlist, $args){
-                $this->Title =  $uxlist[0];
+            $this->Demo = new Demo();
+
+            $this->OpenDemo->on("Click", callback: function (UxButton $button, $args) {
+                $this->Demo->Show();
             });
-
-            $this->MyListBox->ItemsSource = $Uxlist;
-
-            $this->OpenDemo->on("Click", callback: function (UxButton $button, $args) use ($Uxlist) {
-
-                $Uxlist->Add(new UxButton());
-            });
-
         }
 
 

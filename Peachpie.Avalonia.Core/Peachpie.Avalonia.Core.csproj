@@ -4,6 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Title>Extension classes for use in PeachPie</Title>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Authors>FibonacciFox</Authors>
         <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
