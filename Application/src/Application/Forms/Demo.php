@@ -2,6 +2,7 @@
 
 namespace Application\Forms {
 
+    use Avalonia\Data\Binding;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
@@ -43,19 +44,18 @@ namespace Application\Forms {
 
             $Name  =  new \Avalonia\Controls\DataGridTextColumn();
             $Name->Header = "Name";
-            $Name->Binding = new \Avalonia\Data\Binding("[Name]");
+            $Name->Binding = new Binding("[Name]");
             $this->Grid->Columns->Add($Name);
 
             $Surname  =  new \Avalonia\Controls\DataGridTextColumn();
             $Surname->Header = "Surname";
-            $Surname->Binding = new \Avalonia\Data\Binding("[Surname]");
+            $Surname->Binding = new Binding("[Surname]");
             $this->Grid->Columns->Add($Surname);
 
             $IsTrue  =  new \Avalonia\Controls\DataGridCheckBoxColumn();
             $IsTrue->Header = "IsTrue";
-            $IsTrue->Binding = new \Avalonia\Data\Binding("[IsTrue]");
+            $IsTrue->Binding = new Binding("[IsTrue]");
             $this->Grid->Columns->Add($IsTrue);
-
 
             $this->Grid->ItemsSource = $list;
 

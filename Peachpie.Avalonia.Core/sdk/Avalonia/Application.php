@@ -1,5 +1,8 @@
 <?php
 namespace Avalonia;
+use Avalonia\Platform\PlatformColorValues;
+use System\Object;
+
 /**
  * @deprecated this element should not be used by you because it will break your program
  */
@@ -350,12 +353,13 @@ class Application extends \Avalonia\AvaloniaObject implements
 	 * @return \System\Void|void
 	 */
 	public  function set_Name($value){}
-	/**
-	 * @param \System\Object|object $sender
-	 * @param \Avalonia\Platform\PlatformColorValues $e
-	 * @deprecated this element should not be used by you because it will break your program
-	 * @return @deprecated
-	 */
+
+    /**
+     * @param Object|object $sender
+     * @param PlatformColorValues $e
+     * @return void @deprecated
+     * @deprecated this element should not be used by you because it will break your program
+     */
 	#[MethodPrivate]  function OnColorValuesChanged($sender, $e){}
 	/**
 	 * @uses ApplicationMethodsOverride::add_PropertyChanged_1 ($value)

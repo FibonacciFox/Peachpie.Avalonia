@@ -5,7 +5,12 @@ namespace Avalonia\Data;
 class Binding extends \Avalonia\Data\BindingBase implements 
 	\Avalonia\Data\IBinding
 {
-	/**
+
+    public function __construct(string $path)
+    {
+    }
+
+    /**
 	 * @return \System\String|string
 	 */
 	public  function get_ElementName(){}
