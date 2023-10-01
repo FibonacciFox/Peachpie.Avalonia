@@ -38,24 +38,24 @@ namespace Application\Forms {
 
             $list->Add(new Person("Fibonacci","Fox", true));
             $list->Add(new Person("Peachpie","Avalonia", false));
+            $list->Add(new Person("Peachpie","Avalonia", false));
+           
 
-            for ($i = 1; $i < $list->Count; $i++) {
+            $Name  =  new \Avalonia\Controls\DataGridTextColumn();
+            $Name->Header = "Name";
+            $Name->Binding = new \Avalonia\Data\Binding("[Name]");
+            $this->Grid->Columns->Add($Name);
 
-                $Name  =  new \Avalonia\Controls\DataGridTextColumn();
-                $Name->Header = "Name";
-                $Name->Binding = new \Avalonia\Data\Binding("[Name]");
-                $this->Grid->Columns->Add($Name);
+            $Surname  =  new \Avalonia\Controls\DataGridTextColumn();
+            $Surname->Header = "Surname";
+            $Surname->Binding = new \Avalonia\Data\Binding("[Surname]");
+            $this->Grid->Columns->Add($Surname);
 
-                $Surname  =  new \Avalonia\Controls\DataGridTextColumn();
-                $Surname->Header = "Surname";
-                $Surname->Binding = new \Avalonia\Data\Binding("[Surname]");
-                $this->Grid->Columns->Add($Surname);
+            $IsTrue  =  new \Avalonia\Controls\DataGridCheckBoxColumn();
+            $IsTrue->Header = "IsTrue";
+            $IsTrue->Binding = new \Avalonia\Data\Binding("[IsTrue]");
+            $this->Grid->Columns->Add($IsTrue);
 
-                $IsTrue  =  new \Avalonia\Controls\DataGridCheckBoxColumn();
-                $IsTrue->Header = "IsTrue";
-                $IsTrue->Binding = new \Avalonia\Data\Binding("[IsTrue]");
-                $this->Grid->Columns->Add($IsTrue);
-            }
 
             $this->Grid->ItemsSource = $list;
 
