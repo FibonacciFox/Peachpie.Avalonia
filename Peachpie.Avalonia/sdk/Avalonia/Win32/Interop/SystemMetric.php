@@ -1,0 +1,105 @@
+<?php
+namespace Avalonia\Win32\Interop;
+/**
+ */
+enum SystemMetric implements 
+	\System\IComparable,
+	\System\IFormattable,
+	\System\IConvertible
+{
+	case SM_CXSCREEN = 0;
+	case SM_CYSCREEN = 1;
+	case SM_CXVSCROLL = 2;
+	case SM_CYHSCROLL = 3;
+	case SM_CYCAPTION = 4;
+	case SM_CXBORDER = 5;
+	case SM_CYBORDER = 6;
+	case SM_CXDLGFRAME = 7;
+	case SM_CXFIXEDFRAME = 7;
+	case SM_CYDLGFRAME = 8;
+	case SM_CYFIXEDFRAME = 8;
+	case SM_CYVTHUMB = 9;
+	case SM_CXHTHUMB = 10;
+	case SM_CXICON = 11;
+	case SM_CYICON = 12;
+	case SM_CXCURSOR = 13;
+	case SM_CYCURSOR = 14;
+	case SM_CYMENU = 15;
+	case SM_CXFULLSCREEN = 16;
+	case SM_CYFULLSCREEN = 17;
+	case SM_CYKANJIWINDOW = 18;
+	case SM_MOUSEPRESENT = 19;
+	case SM_CYVSCROLL = 20;
+	case SM_CXHSCROLL = 21;
+	case SM_DEBUG = 22;
+	case SM_SWAPBUTTON = 23;
+	case SM_CXMIN = 28;
+	case SM_CYMIN = 29;
+	case SM_CXSIZE = 30;
+	case SM_CYSIZE = 31;
+	case SM_CXSIZEFRAME = 32;
+	case SM_CXFRAME = 32;
+	case SM_CYSIZEFRAME = 33;
+	case SM_CYFRAME = 33;
+	case SM_CXMINTRACK = 34;
+	case SM_CYMINTRACK = 35;
+	case SM_CXDOUBLECLK = 36;
+	case SM_CYDOUBLECLK = 37;
+	case SM_CXICONSPACING = 38;
+	case SM_CYICONSPACING = 39;
+	case SM_MENUDROPALIGNMENT = 40;
+	case SM_PENWINDOWS = 41;
+	case SM_DBCSENABLED = 42;
+	case SM_CMOUSEBUTTONS = 43;
+	case SM_SECURE = 44;
+	case SM_CXEDGE = 45;
+	case SM_CYEDGE = 46;
+	case SM_CXMINSPACING = 47;
+	case SM_CYMINSPACING = 48;
+	case SM_CXSMICON = 49;
+	case SM_CYSMICON = 50;
+	case SM_CYSMCAPTION = 51;
+	case SM_CXSMSIZE = 52;
+	case SM_CYSMSIZE = 53;
+	case SM_CXMENUSIZE = 54;
+	case SM_CYMENUSIZE = 55;
+	case SM_ARRANGE = 56;
+	case SM_CXMINIMIZED = 57;
+	case SM_CYMINIMIZED = 58;
+	case SM_CXMAXTRACK = 59;
+	case SM_CYMAXTRACK = 60;
+	case SM_CXMAXIMIZED = 61;
+	case SM_CYMAXIMIZED = 62;
+	case SM_NETWORK = 63;
+	case SM_CLEANBOOT = 67;
+	case SM_CXDRAG = 68;
+	case SM_CYDRAG = 69;
+	case SM_SHOWSOUNDS = 70;
+	case SM_CXMENUCHECK = 71;
+	case SM_CYMENUCHECK = 72;
+	case SM_SLOWMACHINE = 73;
+	case SM_MIDEASTENABLED = 74;
+	case SM_MOUSEWHEELPRESENT = 75;
+	case SM_XVIRTUALSCREEN = 76;
+	case SM_YVIRTUALSCREEN = 77;
+	case SM_CXVIRTUALSCREEN = 78;
+	case SM_CYVIRTUALSCREEN = 79;
+	case SM_CMONITORS = 80;
+	case SM_SAMEDISPLAYFORMAT = 81;
+	case SM_IMMENABLED = 82;
+	case SM_CXFOCUSBORDER = 83;
+	case SM_CYFOCUSBORDER = 84;
+	case SM_TABLETPC = 86;
+	case SM_MEDIACENTER = 87;
+	case SM_STARTER = 88;
+	case SM_SERVERR2 = 89;
+	case SM_MOUSEHORIZONTALWHEELPRESENT = 91;
+	case SM_CXPADDEDBORDER = 92;
+	case SM_DIGITIZER = 94;
+	case SM_MAXIMUMTOUCHES = 95;
+	case SM_REMOTESESSION = 4096;
+	case SM_SHUTTINGDOWN = 8192;
+	case SM_REMOTECONTROL = 8193;
+	case SM_CONVERTABLESLATEMODE = 8195;
+	case SM_SYSTEMDOCKED = 8196;
+}

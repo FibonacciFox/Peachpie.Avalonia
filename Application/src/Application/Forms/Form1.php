@@ -2,6 +2,8 @@
 
 namespace Application\Forms {
 
+    use Avalonia\Layout\HorizontalAlignment;
+    use Avalonia\Layout\VerticalAlignment;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
@@ -33,7 +35,8 @@ namespace Application\Forms {
 
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();
-                $text->HorizontalAlignment = \Avalonia\Layout\HorizontalAlignment::Center;
+                $text->HorizontalAlignment = HorizontalAlignment::Center;
+                $text->VerticalAlignment = VerticalAlignment::Center;
                 $text->Text = "Added New Text Block";
                 $this->MyUxStackPanel->Children->Add($text);
             });

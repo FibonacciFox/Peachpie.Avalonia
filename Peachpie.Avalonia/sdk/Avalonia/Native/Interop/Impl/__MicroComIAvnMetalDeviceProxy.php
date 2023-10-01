@@ -1,0 +1,56 @@
+<?php
+namespace Avalonia\Native\Interop\Impl;
+/**
+ * @deprecated this element should not be used by you because it will break your program
+ */
+trait __MicroComIAvnMetalDeviceProxyMethodsOverride
+{
+	/**
+	 * @return \System\Int32|int
+	 */
+	#[MethodOverride] public  function QueryInterface_1($guid, $ppv){}
+	/**
+	 * @return \MicroCom\Runtime\T
+	 */
+	#[MethodOverride] public  function QueryInterface_2(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] protected  function Dispose_1($disposing){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function Dispose_2(){}
+}
+/**
+ */
+class __MicroComIAvnMetalDeviceProxy extends \MicroCom\Runtime\MicroComProxyBase implements 
+	\MicroCom\Runtime\IUnknown,
+	\System\IDisposable,
+	\Avalonia\Native\Interop\IAvnMetalDevice
+{
+	/**
+	 * @return \System\IntPtr
+	 */
+	public  function get_Device(){}
+	/**
+	 * @return \System\IntPtr
+	 */
+	public  function get_Queue(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	protected static function __MicroComModuleInit(){}
+	/**
+	 * @uses __MicroComIAvnMetalDeviceProxyMethodsOverride::QueryInterface_1 ($guid, $ppv)
+	 * @uses __MicroComIAvnMetalDeviceProxyMethodsOverride::QueryInterface_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function QueryInterface(mixed ...$args){}
+	/**
+	 * @uses __MicroComIAvnMetalDeviceProxyMethodsOverride::Dispose_1 ($disposing)
+	 * @uses __MicroComIAvnMetalDeviceProxyMethodsOverride::Dispose_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function Dispose(mixed ...$args){}
+}

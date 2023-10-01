@@ -1,0 +1,465 @@
+<?php
+namespace Avalonia\OpenGL\Controls;
+/**
+ * @deprecated this element should not be used by you because it will break your program
+ */
+trait OpenGlControlBaseMethodsOverride
+{
+	/**
+	 * @return \System\Boolean
+	 */
+	#[MethodOverride] private  function EnsureInitialized_1(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] private  function EnsureInitialized_2(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function InvalidateVisual_1(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function InvalidateVisual_2(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function AddHandler_1($routedEvent, $handler, $routes, $handledEventsToo){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function AddHandler_2($routedEvent, $handler, $routes, $handledEventsToo){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function RemoveHandler_1($routedEvent, $handler){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function RemoveHandler_2($routedEvent, $handler){}
+	/**
+	 * @return \Avalonia\Controls\Classes
+	 */
+	#[MethodOverride] public  function get_Classes_1(){}
+	/**
+	 * @return \Avalonia\Collections\IAvaloniaReadOnlyList_1
+	 */
+	#[MethodOverride] private  function get_Classes_2(){}
+	/**
+	 * @return \Avalonia\Collections\IAvaloniaList_1
+	 */
+	#[MethodOverride] protected  function get_LogicalChildren_1(){}
+	/**
+	 * @return \Avalonia\Collections\IAvaloniaReadOnlyList_1
+	 */
+	#[MethodOverride] private  function get_LogicalChildren_2(){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] private  function SetParent_1($parent){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] private  function SetParent_2($parent){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function add_PropertyChanged_1($value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] private  function add_PropertyChanged_2($value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function remove_PropertyChanged_1($value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] private  function remove_PropertyChanged_2($value){}
+	/**
+	 * @return \System\Object|object
+	 */
+	#[MethodOverride] public  function get_Item_1($property){}
+	/**
+	 * @return \Avalonia\Data\IBinding
+	 */
+	#[MethodOverride] public  function get_Item_2($binding){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function set_Item_1($property, $value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function set_Item_2($binding, $value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function ClearValue_1($property){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function ClearValue_2($property){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function ClearValue_3($property){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function ClearValue_4($property){}
+	/**
+	 * @return \System\Object|object
+	 */
+	#[MethodOverride] public  function GetValue_1($property){}
+	/**
+	 * @return \Avalonia\T
+	 */
+	#[MethodOverride] public  function GetValue_2($property){}
+	/**
+	 * @return \Avalonia\T
+	 */
+	#[MethodOverride] public  function GetValue_3($property){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function SetValue_1($property, $value, $priority){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function SetValue_2($property, $value, $priority){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function SetValue_3($property, $value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function SetCurrentValue_1($property, $value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] public  function SetCurrentValue_2($property, $value){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_1($property, $source, $priority){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_2($property, $source, $priority){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_3($property, $source, $priority){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_4($property, $source, $priority){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_5($property, $source){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_6($property, $source){}
+	/**
+	 * @return \System\IDisposable
+	 */
+	#[MethodOverride] public  function Bind_7($property, $source){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] protected  function RaisePropertyChanged_1($property, $oldValue, $newValue){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] protected  function RaisePropertyChanged_2($property, $oldValue, $newValue, $priority, $isEffectiveValue){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] protected  function SetDirectValueUnchecked_1($property, $value){}
+	/**
+	 * @return \System\Void|void
+	 */
+	#[MethodOverride] protected  function SetDirectValueUnchecked_2($property, $value){}
+}
+/**
+ */
+class OpenGlControlBase extends \Avalonia\Controls\Control implements 
+	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
+	\System\ComponentModel\INotifyPropertyChanged,
+	\Avalonia\IDataContextProvider,
+	\Avalonia\LogicalTree\ILogical,
+	\Avalonia\Styling\IThemeVariantHost,
+	\Avalonia\Controls\IResourceHost,
+	\Avalonia\Controls\IResourceNode,
+	\Avalonia\Styling\IStyleHost,
+	\Avalonia\Controls\ISetLogicalParent,
+	\Avalonia\Controls\ISetInheritanceParent,
+	\System\ComponentModel\ISupportInitialize,
+	\Avalonia\Styling\IStyleable,
+	\Avalonia\INamed,
+	\Avalonia\Input\IInputElement,
+	\Avalonia\Controls\Templates\IDataTemplateHost,
+	\Avalonia\Rendering\IVisualBrushInitialize,
+	\Avalonia\Styling\ISetterValue
+{
+	/**
+	 * @return \Avalonia\OpenGL\GlVersion
+	 */
+	protected  function get_GlVersion(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function DoCleanup(){}
+	/**
+	 * @param \Avalonia\Rendering\Composition\ICompositionGpuInterop $interop
+	 * @param \Avalonia\OpenGL\IOpenGlTextureSharingRenderInterfaceContextFeature $contextSharingFeature
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function EnsureInitializedCore($interop, $contextSharingFeature){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function ContextLost(){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::EnsureInitialized_1 ()
+	 * @uses OpenGlControlBaseMethodsOverride::EnsureInitialized_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function EnsureInitialized(mixed ...$args){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function Update(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function InitializeAsync(){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::InvalidateVisual_1 ()
+	 * @uses OpenGlControlBaseMethodsOverride::InvalidateVisual_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function InvalidateVisual(mixed ...$args){}
+	/**
+	 * @return \System\Void|void
+	 */
+	public  function RequestNextFrameRendering(){}
+	/**
+	 * @param \Avalonia\Rendering\IRenderRoot $visualRoot
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function GetPixelSize($visualRoot){}
+	/**
+	 * @param \Avalonia\OpenGL\GlInterface $gl
+	 * @return \System\Void|void
+	 */
+	protected  function OnOpenGlInit($gl){}
+	/**
+	 * @param \Avalonia\OpenGL\GlInterface $gl
+	 * @return \System\Void|void
+	 */
+	protected  function OnOpenGlDeinit($gl){}
+	/**
+	 * @return \System\Void|void
+	 */
+	protected  function OnOpenGlLost(){}
+	/**
+	 * @param \Avalonia\OpenGL\GlInterface $gl
+	 * @param \System\Int32|int $fb
+	 * @return \System\Void|void
+	 */
+	protected  function OnOpenGlRender($gl, $fb){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_IsDataTemplatesInitialized(){}
+	/**
+	 * @param \Avalonia\Styling\SetterBase $setter
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function Initialize($setter){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::AddHandler_1 ($routedEvent, $handler, $routes, $handledEventsToo)
+	 * @uses OpenGlControlBaseMethodsOverride::AddHandler_2 ($routedEvent, $handler, $routes, $handledEventsToo)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function AddHandler(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::RemoveHandler_1 ($routedEvent, $handler)
+	 * @uses OpenGlControlBaseMethodsOverride::RemoveHandler_2 ($routedEvent, $handler)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function RemoveHandler(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::get_Classes_1 ()
+	 * @uses OpenGlControlBaseMethodsOverride::get_Classes_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function get_Classes(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::get_LogicalChildren_1 ()
+	 * @uses OpenGlControlBaseMethodsOverride::get_LogicalChildren_2 ()
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function get_LogicalChildren(mixed ...$args){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_IsAttachedToLogicalTree(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_LogicalParent(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_HasResources(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_IsStylesInitialized(){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function get_StylingParent(){}
+	/**
+	 * @param \Avalonia\LogicalTree\LogicalTreeAttachmentEventArgs $e
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function NotifyAttachedToLogicalTree($e){}
+	/**
+	 * @param \Avalonia\LogicalTree\LogicalTreeAttachmentEventArgs $e
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function NotifyDetachedFromLogicalTree($e){}
+	/**
+	 * @param \Avalonia\Controls\ResourcesChangedEventArgs $e
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function NotifyResourcesChanged($e){}
+	/**
+	 * @param \Avalonia\Controls\ResourcesChangedEventArgs $e
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function NotifyHostedResourcesChanged($e){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::SetParent_1 ($parent)
+	 * @uses OpenGlControlBaseMethodsOverride::SetParent_2 ($parent)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function SetParent(mixed ...$args){}
+	/**
+	 * @param \System\Collections\Generic\IReadOnlyList_1 $styles
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function StylesAdded($styles){}
+	/**
+	 * @param \System\Collections\Generic\IReadOnlyList_1 $styles
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function StylesRemoved($styles){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::add_PropertyChanged_1 ($value)
+	 * @uses OpenGlControlBaseMethodsOverride::add_PropertyChanged_2 ($value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function add_PropertyChanged(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::remove_PropertyChanged_1 ($value)
+	 * @uses OpenGlControlBaseMethodsOverride::remove_PropertyChanged_2 ($value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function remove_PropertyChanged(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::get_Item_1 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::get_Item_2 ($binding)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function get_Item(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::set_Item_1 ($property, $value)
+	 * @uses OpenGlControlBaseMethodsOverride::set_Item_2 ($binding, $value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function set_Item(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::ClearValue_1 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::ClearValue_2 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::ClearValue_3 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::ClearValue_4 ($property)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function ClearValue(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::GetValue_1 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::GetValue_2 ($property)
+	 * @uses OpenGlControlBaseMethodsOverride::GetValue_3 ($property)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function GetValue(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::SetValue_1 ($property, $value, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::SetValue_2 ($property, $value, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::SetValue_3 ($property, $value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function SetValue(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::SetCurrentValue_1 ($property, $value)
+	 * @uses OpenGlControlBaseMethodsOverride::SetCurrentValue_2 ($property, $value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function SetCurrentValue(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_1 ($property, $source, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_2 ($property, $source, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_3 ($property, $source, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_4 ($property, $source, $priority)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_5 ($property, $source)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_6 ($property, $source)
+	 * @uses OpenGlControlBaseMethodsOverride::Bind_7 ($property, $source)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function Bind(mixed ...$args){}
+	/**
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
+	#[MethodPrivate]  function GetPropertyChangedSubscribers(){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::RaisePropertyChanged_1 ($property, $oldValue, $newValue)
+	 * @uses OpenGlControlBaseMethodsOverride::RaisePropertyChanged_2 ($property, $oldValue, $newValue, $priority, $isEffectiveValue)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function RaisePropertyChanged(mixed ...$args){}
+	/**
+	 * @uses OpenGlControlBaseMethodsOverride::SetDirectValueUnchecked_1 ($property, $value)
+	 * @uses OpenGlControlBaseMethodsOverride::SetDirectValueUnchecked_2 ($property, $value)
+	 * @return mixed|@override
+	 */
+	#[MethodOverride]  function SetDirectValueUnchecked(mixed ...$args){}
+}

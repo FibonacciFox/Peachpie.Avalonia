@@ -11,10 +11,16 @@
 
 namespace Peachpie\Avalonia\Controls;
 
+use Avalonia\Layout\HorizontalAlignment;
+use Avalonia\Layout\VerticalAlignment;
 use Peachpie\Avalonia\Core\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
 use Peachpie\Avalonia\Traits\EventsTrait;
 
+/**
+ * @property HorizontalAlignment $HorizontalAlignment
+ * @property VerticalAlignment $VerticalAlignment
+ */
 class UxTextBlock extends \Avalonia\Controls\TextBlock implements IStyleKeyOverride
 {
     use EventsTrait;
