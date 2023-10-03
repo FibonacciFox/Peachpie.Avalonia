@@ -2,6 +2,7 @@
 
 namespace Application\Forms {
 
+    use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
     use Avalonia\Layout\VerticalAlignment;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
@@ -44,7 +45,7 @@ namespace Application\Forms {
 
             $this->Demo = new Demo();
 
-            $this->OpenDemo->on("Click", callback: function (UxButton $button, $args) {
+            $this->OpenDemo->on("Click", callback: function (UxButton $button, RoutedEventArgs $args) {
                 $this->Demo->Show();
             });
         }

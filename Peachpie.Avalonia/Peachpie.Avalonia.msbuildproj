@@ -1,14 +1,26 @@
 <Project Sdk="Peachpie.NET.Sdk/1.2.0-r16166">
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <Description>.NET class library in PHP</Description>
+    <LangVersion>latest</LangVersion>
+    <Platforms>AnyCPU</Platforms>
+    <OutputType>Library</OutputType>
+    <Configurations>Debug;Release</Configurations>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Title>Peachpie.Avalonia</Title>
+    <Description>
+      The Peachpie.Avalonia library is a collection of user interface (UI) controls based on the Avalonia UI framework that can be easily used in the PHP language. 
+      This library enables PHP developers to create modern cross-platform applications with a rich user interface, harnessing the power and flexibility of Avalonia UI.</Description>
+    <PackageTags>Avalonia;Avalonia UI;Peachpie;Peachpie Avalonia;Peachpie Avalonia UI</PackageTags>
+    <PackageVersion>0.0.1-alpha</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup><!-- <PackageReference Include="Peachpie.Avalonia.Core" Version="0.0.1-alpha" /> -->
+  
     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
   </ItemGroup>
 </Project>
