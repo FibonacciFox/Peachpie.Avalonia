@@ -16,6 +16,15 @@ class UxList extends AvaloniaObjectList
 {
 
     /**
+     * Adds multiple items to the collection.
+     * @param UxList $items
+     * @return void
+     */
+    public function AddRange(UxList $items): void  {
+        AvaloniaObjectList::AddRange($items);
+    }
+
+    /**
      * Adds an item to the collection.
      * @param mixed $item The item.
      * @return void
@@ -58,7 +67,17 @@ class UxList extends AvaloniaObjectList
      * @return bool True if the item was found and removed, otherwise false.
      */
     public function Remove(mixed $item): bool  {
-       return AvaloniaObjectList::Contains($item);
+       return AvaloniaObjectList::Remove($item);
+    }
+
+    /**
+     * Moves an item to a new index.
+     * @param int $oldIndex - The index of the item to move.
+     * @param int $newIndex - The index to move the item to.
+     * @return bool True if the item was found and removed, otherwise false.
+     */
+    public function Move(int $oldIndex, int $newIndex): bool  {
+        return AvaloniaObjectList::Move($oldIndex, $newIndex );
     }
 
     /**

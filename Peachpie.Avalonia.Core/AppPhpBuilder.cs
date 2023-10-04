@@ -7,9 +7,6 @@ namespace Peachpie.Avalonia.Core;
 
 public class AppPhpBuilder
 {
-
-    public string Help { get; set; } = "ddd";
-
     public static AppPhpBuilder Configure(string application)
     {
         var method =
@@ -32,7 +29,6 @@ public class AppPhpBuilder
 
     public AppPhpBuilder SetupWithLifetime(IApplicationLifetime lifetime)
     {
-        Help = "ddd";
         _appBuilder = _appBuilder.SetupWithLifetime(lifetime);
         return this;
     }

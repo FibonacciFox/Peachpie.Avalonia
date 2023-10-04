@@ -1,6 +1,6 @@
 <Project Sdk="Peachpie.NET.Sdk/1.2.0-r16166">
   <PropertyGroup>
-    <OutputType>exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>net7.0</TargetFramework>
     <Description>.NET class library in PHP</Description>
@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.1" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.1" />
     <!-- <PackageReference Include="Peachpie.Avalonia.Core" Version="0.0.1-alpha" /> -->
     <!-- <PackageReference Include="Peachpie.Avalonia" Version="0.0.1-alpha" /> -->
   </ItemGroup>

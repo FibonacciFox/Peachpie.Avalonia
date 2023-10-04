@@ -1,11 +1,9 @@
 ﻿using System.Collections.Generic;
 using Avalonia.Collections;
 
-namespace Peachpie.Avalonia.Core.Collections
+namespace Peachpie.Avalonia.Core.Collections;
+
+public class AvaloniaObjectList : AvaloniaList<object>
 {
-    public class AvaloniaObjectList : AvaloniaList<object>
-    {
-        public bool IsReadOnly => ((ICollection<object>)this).IsReadOnly;
-        
-    }
+    public bool IsReadOnly => ((ICollection<object>)this).IsReadOnly;
 }

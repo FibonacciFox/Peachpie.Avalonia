@@ -19,11 +19,15 @@
             -It serves as a bridge between the two frameworks, enabling the creation of cross-platform applications based on Avalonia UI and PeachPie.
             -It provides a set of extension classes that simplify interaction with Avalonia UI controls, styles, and layouts from PHP code.
         </Description>
+        <RepositoryUrl>
+            https://github.com/FibonacciFox/Peachpie.Avalonia
+        </RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.1" />
-        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.1" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.0.1" />
+        <PackageReference Include="Avalonia" Version="11.0.4" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.4" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.4" />
         <PackageReference Include="Peachpie.Runtime" Version="1.2.0-r16166" />
     </ItemGroup>
     <ItemGroup>

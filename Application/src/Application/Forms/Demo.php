@@ -4,6 +4,7 @@ namespace Application\Forms {
 
     use Avalonia\Data\Binding;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Collections\UxDictionary;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxDataGrid;
@@ -11,7 +12,7 @@ namespace Application\Forms {
     use Peachpie\Avalonia\Controls\UxWindow;
 
 
-    class Person extends \Peachpie\Avalonia\Core\DataTable {
+    class Person extends UxDictionary {
         public function __construct(string $name, string $surname, bool $isTrue  )
         {
             $this["Name"] = $name;

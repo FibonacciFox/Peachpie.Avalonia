@@ -33,7 +33,17 @@ namespace Application\Forms {
             $this->MyUxStackPanel = $this->FindByName("MyUxStackPanel");
             $this->MyListBox = $this->FindByName("MyListBox");
 
+            $list1 = new UxList();
+            $list1->Add("0");
+            $list1->Add("1");
+            $list1->Add("3");
+            $list1->Add("4");
+            $list = new UxList();
 
+
+            $list->AddRange($list1);
+
+            $this->MyListBox->ItemsSource = $list;
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();
                 $text->HorizontalAlignment = HorizontalAlignment::Center;
@@ -46,7 +56,13 @@ namespace Application\Forms {
             $this->Demo = new Demo();
 
             $this->OpenDemo->on("Click", callback: function (UxButton $button, RoutedEventArgs $args) {
-                $this->Demo->Show();
+                if(!$this->Demo->IsVisible){
+                    $button->Content = "Hide Demo Window";
+                    $this->Demo->Show();
+                } else{
+                    $button->Content = "Open Demo Window";
+                    $this->Demo->Hide();
+                }
             });
         }
 

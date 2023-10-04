@@ -6,7 +6,7 @@
         "php": ">=8.1"
     },
     "license": "MIT",
-    "authors": [ { "name": "Maxim Rakov" } ],
+    "authors": [ { "name": "FibonacciFox" } ],
     "autoload": {
         "psr-4": {
             "": "src/"
