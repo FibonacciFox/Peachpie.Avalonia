@@ -45,6 +45,51 @@ class AvaloniaProperty extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	public readonly $UnsetValue;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

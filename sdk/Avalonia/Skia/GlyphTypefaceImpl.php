@@ -21,6 +21,61 @@ class GlyphTypefaceImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \HarfBuzzSharp\Face
+	 * @property
+	 */
+	public readonly $Face;
+	/**
+	 * @var \HarfBuzzSharp\Font
+	 * @property
+	 */
+	public readonly $Font;
+	/**
+	 * @var \SkiaSharp\SKFont
+	 * @property
+	 */
+	public readonly $SKFont;
+	/**
+	 * @var \Avalonia\Media\FontSimulations
+	 * @property
+	 */
+	public readonly $FontSimulations;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ReplacementCodepoint;
+	/**
+	 * @var \Avalonia\Media\FontMetrics
+	 * @property
+	 */
+	public readonly $Metrics;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $GlyphCount;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $FamilyName;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public readonly $Weight;
+	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public readonly $Style;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public readonly $Stretch;
+	/**
 	 * @return \HarfBuzzSharp\Face
 	 */
 	public  function get_Face(){}

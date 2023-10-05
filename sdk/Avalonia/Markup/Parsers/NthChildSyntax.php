@@ -6,6 +6,16 @@ class NthChildSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Step;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Offset(){}

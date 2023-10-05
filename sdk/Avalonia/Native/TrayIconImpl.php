@@ -7,6 +7,16 @@ class TrayIconImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $OnClicked;
+	/**
+	 * @var \Avalonia\Controls\Platform\INativeMenuExporter
+	 * @property
+	 */
+	public readonly $MenuExporter;
+	/**
 	 * @return \System\Action
 	 */
 	public  function get_OnClicked(){}

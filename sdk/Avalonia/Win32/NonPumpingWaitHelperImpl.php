@@ -6,6 +6,11 @@ class NonPumpingWaitHelperImpl extends \System\Object implements
 	\Avalonia\Utilities\IHelperImpl
 {
 	/**
+	 * @var \Avalonia\Win32\NonPumpingWaitHelperImpl
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Win32\NonPumpingWaitHelperImpl
 	 */
 	public static function get_Instance(){}

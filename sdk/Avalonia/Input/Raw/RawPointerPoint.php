@@ -20,6 +20,31 @@ class RawPointerPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Position;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $Twist;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $Pressure;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $XTilt;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $YTilt;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_Position(){}

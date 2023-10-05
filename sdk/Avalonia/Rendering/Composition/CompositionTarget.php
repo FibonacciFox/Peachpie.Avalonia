@@ -36,6 +36,51 @@ class CompositionTarget extends \Avalonia\Rendering\Composition\CompositionObjec
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\CompositionVisual
+	 * @property
+	 */
+	public $Root;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \Avalonia\Rendering\RendererDebugOverlays
+	 * @property
+	 */
+	public $DebugOverlays;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Scaling;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @param \Avalonia\Point $point
 	 * @param \Avalonia\Rendering\Composition\CompositionVisual $root
 	 * @param \System\Func_2 $filter

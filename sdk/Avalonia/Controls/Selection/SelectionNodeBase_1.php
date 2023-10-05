@@ -6,6 +6,16 @@ namespace Avalonia\Controls\Selection;
 class SelectionNodeBase_1 extends \System\Object
 {
 	/**
+	 * @var \System\Collections\IEnumerable
+	 * @property
+	 */
+	protected $Source;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	protected $RangesEnabled;
+	/**
 	 * @return \System\Collections\IEnumerable
 	 */
 	protected  function get_Source(){}

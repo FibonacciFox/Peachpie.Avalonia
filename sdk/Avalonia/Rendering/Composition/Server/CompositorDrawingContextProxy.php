@@ -39,6 +39,21 @@ class CompositorDrawingContextProxy extends \System\Object implements
 	\Avalonia\Platform\IDrawingContextImplWithEffects
 {
 	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $PostTransform;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\Media\RenderOptions
+	 * @property
+	 */
+	public $RenderOptions;
+	/**
 	 * @return \Avalonia\Matrix
 	 */
 	public  function get_PostTransform(){}

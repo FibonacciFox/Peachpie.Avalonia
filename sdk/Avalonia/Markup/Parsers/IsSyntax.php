@@ -7,6 +7,16 @@ class IsSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ITypeSyntax
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $TypeName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Xmlns;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_TypeName(){}

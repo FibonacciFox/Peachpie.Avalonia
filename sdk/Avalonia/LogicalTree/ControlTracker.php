@@ -6,6 +6,11 @@ class ControlTracker extends \Avalonia\Reactive\LightweightObservableBase_1 impl
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\LogicalTree\LogicalTreeAttachmentEventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

@@ -7,6 +7,26 @@ class GlyphRunImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Media\IGlyphTypeface
+	 * @property
+	 */
+	public readonly $GlyphTypeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $BaselineOrigin;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Media\IGlyphTypeface
 	 */
 	public  function get_GlyphTypeface(){}

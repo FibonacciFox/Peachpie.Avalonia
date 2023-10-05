@@ -5,6 +5,16 @@ namespace Avalonia\Controls\Primitives\PopupPositioning;
 class ManagedPopupPositionerScreenInfo extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $WorkingArea;
+	/**
 	 * @return \Avalonia\Rect
 	 */
 	public  function get_Bounds(){}

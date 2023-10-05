@@ -140,6 +140,36 @@ class CroppedBitmap extends \Avalonia\AvaloniaObject implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IImage]
+	 * @field
+	 */
+	public readonly $SourceProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\PixelRect]
+	 * @field
+	 */
+	public readonly $SourceRectProperty;
+	/**
+	 * @var \Avalonia\Media\IImage
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \Avalonia\PixelRect
+	 * @property
+	 */
+	public $SourceRect;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

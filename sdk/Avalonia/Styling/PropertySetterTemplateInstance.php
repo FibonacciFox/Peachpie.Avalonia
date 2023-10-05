@@ -7,6 +7,16 @@ class PropertySetterTemplateInstance extends \System\Object implements
 	\Avalonia\Styling\ISetterInstance
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasValue(){}

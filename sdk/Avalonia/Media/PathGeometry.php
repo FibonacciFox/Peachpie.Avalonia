@@ -137,6 +137,46 @@ class PathGeometry extends \Avalonia\Media\StreamGeometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Media\PathGeometry,Avalonia\Media\PathFigures]
+	 * @field
+	 */
+	public readonly $FiguresProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\FillRule]
+	 * @field
+	 */
+	public readonly $FillRuleProperty;
+	/**
+	 * @var \Avalonia\Media\PathFigures
+	 * @property
+	 */
+	public $Figures;
+	/**
+	 * @var \Avalonia\Media\FillRule
+	 * @property
+	 */
+	public $FillRule;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\String|string $pathData
 	 * @return \Avalonia\Media\PathGeometry
 	 */

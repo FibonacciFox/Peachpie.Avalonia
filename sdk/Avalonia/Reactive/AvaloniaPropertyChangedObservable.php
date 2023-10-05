@@ -7,6 +7,16 @@ class AvaloniaPropertyChangedObservable extends \Avalonia\Reactive\LightweightOb
 	\Avalonia\IDescription
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Description(){}

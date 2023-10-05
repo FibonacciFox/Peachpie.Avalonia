@@ -40,6 +40,26 @@ class Size extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Size
+	 * @field
+	 */
+	public readonly $Infinity;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $AspectRatio;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Height;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_AspectRatio(){}

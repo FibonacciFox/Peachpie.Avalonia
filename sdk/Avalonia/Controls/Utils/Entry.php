@@ -7,6 +7,11 @@ class Entry extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[System\WeakReference_1[Avalonia\Controls\Utils\ICollectionChangedListener]]
+	 * @property
+	 */
+	public readonly $Listeners;
+	/**
 	 * @return \System\Collections\Generic\List_1
 	 */
 	public  function get_Listeners(){}

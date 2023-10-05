@@ -5,6 +5,51 @@ namespace Avalonia\Input\Raw;
 class RawDragEvent extends \Avalonia\Input\Raw\RawInputEventArgs
 {
 	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Location;
+	/**
+	 * @var \Avalonia\Input\IDataObject
+	 * @property
+	 */
+	public readonly $Data;
+	/**
+	 * @var \Avalonia\Input\DragDropEffects
+	 * @property
+	 */
+	public $Effects;
+	/**
+	 * @var \Avalonia\Input\Raw\RawDragEventType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \Avalonia\Input\KeyModifiers
+	 * @property
+	 */
+	public readonly $KeyModifiers;
+	/**
+	 * @var \Avalonia\Input\IInputDevice
+	 * @property
+	 */
+	public readonly $Device;
+	/**
+	 * @var \Avalonia\Input\IInputRoot
+	 * @property
+	 */
+	public readonly $Root;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Handled;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $Timestamp;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_Location(){}

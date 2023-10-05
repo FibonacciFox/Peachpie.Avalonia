@@ -27,6 +27,26 @@ class ServerCompositionSimpleTransform extends \Avalonia\Rendering\Composition\S
 	\Avalonia\Media\ITransform
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfValueProperty;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $Value;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\Matrix
 	 */
 	public  function get_Value(){}

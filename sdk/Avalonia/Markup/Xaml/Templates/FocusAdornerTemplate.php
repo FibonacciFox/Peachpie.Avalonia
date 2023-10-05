@@ -21,6 +21,11 @@ class FocusAdornerTemplate extends \Avalonia\Markup\Xaml\Templates\Template impl
 	\Avalonia\Styling\ITemplate
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Content;
+	/**
 	 * @uses FocusAdornerTemplateMethodsOverride::Build_1 ()
 	 * @uses FocusAdornerTemplateMethodsOverride::Build_2 ()
 	 * @return mixed|@override

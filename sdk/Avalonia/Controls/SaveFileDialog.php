@@ -5,6 +5,36 @@ namespace Avalonia\Controls;
 class SaveFileDialog extends \Avalonia\Controls\FileDialog
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $DefaultExtension;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public $ShowOverwritePrompt;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Controls\FileDialogFilter]
+	 * @property
+	 */
+	public $Filters;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $InitialFileName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Directory;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_DefaultExtension(){}

@@ -137,6 +137,31 @@ class KeySpline extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ControlPointX1;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ControlPointY1;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ControlPointX2;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ControlPointY2;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\String|string $value
 	 * @param \System\Globalization\CultureInfo $culture
 	 * @return \Avalonia\Animation\KeySpline

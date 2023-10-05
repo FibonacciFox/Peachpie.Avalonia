@@ -91,6 +91,106 @@ trait FormattedTextMethodsOverride
 class FormattedText extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $DefaultRealToIdeal;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $DefaultIdealToReal;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $IdealInfiniteWidth;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $RealInfiniteWidth;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $GreatestMultiplierOfEm;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public $FlowDirection;
+	/**
+	 * @var \Avalonia\Media\TextAlignment
+	 * @property
+	 */
+	public $TextAlignment;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $LineHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxTextWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxTextHeight;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $MaxLineCount;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public $Trimming;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Height;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Extent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Baseline;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangAfter;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangLeading;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangTrailing;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $WidthIncludingTrailingWhitespace;
+	/**
 	 * @param \System\Double|double $emSize
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

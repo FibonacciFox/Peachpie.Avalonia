@@ -6,6 +6,21 @@ class GtkSystemDialog extends \Avalonia\Platform\Storage\FileIO\BclStorageProvid
 	\Avalonia\Platform\Storage\IStorageProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanOpen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSave;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanPickFolder;
+	/**
 	 * @param \Avalonia\X11\X11Window $window
 	 * @return \System\Threading\Tasks\Task_1
 	 */

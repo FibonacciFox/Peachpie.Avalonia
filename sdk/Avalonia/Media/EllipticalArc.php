@@ -47,6 +47,111 @@ trait EllipticalArcMethodsOverride
 class EllipticalArc extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Cx;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Cy;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $A;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $B;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Theta;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Eta1;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Eta2;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $X1;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Y1;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $X2;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $Y2;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $FirstFocusX;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $FirstFocusY;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $SecondFocusX;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $SecondFocusY;
+	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected $IsPieSlice;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $F;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $E2;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $G;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $G2;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DrawInOppositeDirection;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_DrawInOppositeDirection(){}

@@ -30,6 +30,26 @@ class __MicroComICompositorDesktopInteropProxy extends \MicroCom\Runtime\MicroCo
 	\Avalonia\Win32\WinRT\ICompositorDesktopInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\IntPtr $hwndTarget
 	 * @param \System\Int32|int $isTopmost
 	 * @return \Avalonia\Win32\WinRT\IDesktopWindowTarget

@@ -6,6 +6,11 @@ class WinUiCompositorConnection extends \System\Object implements
 	\Avalonia\Rendering\IRenderTimer
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $RunsInBackground;
+	/**
 	 * @param \System\Action_1 $value
 	 * @return \System\Void|void
 	 */

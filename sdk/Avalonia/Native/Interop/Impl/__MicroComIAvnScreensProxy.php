@@ -30,6 +30,31 @@ class __MicroComIAvnScreensProxy extends \MicroCom\Runtime\MicroComProxyBase imp
 	\Avalonia\Native\Interop\IAvnScreens
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ScreenCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_ScreenCount(){}

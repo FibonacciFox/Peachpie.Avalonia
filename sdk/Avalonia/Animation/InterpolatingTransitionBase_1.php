@@ -163,6 +163,31 @@ class InterpolatingTransitionBase_1 extends \Avalonia\Animation\Transition_1 imp
 	\Avalonia\Animation\ITransition
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Delay;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $Easing;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Double|double $progress
 	 * @param \Avalonia\Animation\T $from
 	 * @param \Avalonia\Animation\T $to

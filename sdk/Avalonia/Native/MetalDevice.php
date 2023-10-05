@@ -9,6 +9,26 @@ class MetalDevice extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnMetalDevice
+	 * @property
+	 */
+	public $Native;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Device;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $CommandQueue;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnMetalDevice
 	 */
 	public  function get_Native(){}

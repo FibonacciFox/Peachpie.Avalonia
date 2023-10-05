@@ -23,6 +23,16 @@ class Untyped extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @param \System\Int32|int $index
 	 * @return \System\Object|object
 	 */

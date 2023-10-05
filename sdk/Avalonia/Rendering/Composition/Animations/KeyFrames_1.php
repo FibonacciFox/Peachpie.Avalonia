@@ -197,6 +197,31 @@ class KeyFrames_1 extends \System\Collections\Generic\List_1 implements
 	\Avalonia\Rendering\Composition\Animations\IKeyFrames
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\KeyFrame_1[T][]
+	 * @field
+	 */
+	protected $_items;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\KeyFrame_1[T]
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Single $key
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

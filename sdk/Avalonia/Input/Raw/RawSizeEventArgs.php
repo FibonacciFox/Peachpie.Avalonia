@@ -5,6 +5,11 @@ namespace Avalonia\Input\Raw;
 class RawSizeEventArgs extends \System\EventArgs
 {
 	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $Size;
+	/**
 	 * @return \Avalonia\Size
 	 */
 	public  function get_Size(){}

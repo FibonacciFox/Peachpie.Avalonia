@@ -142,6 +142,21 @@ class Transform extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

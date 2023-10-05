@@ -20,6 +20,21 @@ class ListItemAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAu
 	\Avalonia\Automation\Provider\ISelectionItemProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSelected;
+	/**
+	 * @var \Avalonia\Automation\Provider\ISelectionProvider
+	 * @property
+	 */
+	public readonly $SelectionContainer;
+	/**
+	 * @var \Avalonia\Controls\ContentControl
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsSelected(){}

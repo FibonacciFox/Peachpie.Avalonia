@@ -22,6 +22,16 @@ class FuncDataTemplate extends \Avalonia\Controls\Templates\FuncTemplate_2 imple
 	\Avalonia\Controls\Templates\IDataTemplate
 {
 	/**
+	 * @var \Avalonia\Controls\Templates\FuncDataTemplate
+	 * @field
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\Controls\Templates\FuncDataTemplate
+	 * @field
+	 */
+	public readonly $Access;
+	/**
 	 * @param \System\Object|object $data
 	 * @return \System\Boolean
 	 */

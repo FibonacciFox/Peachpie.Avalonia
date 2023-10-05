@@ -20,6 +20,36 @@ class AngleWin32EglDisplay extends \Avalonia\OpenGL\Egl\EglDisplay implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Win32\AngleOptions+PlatformApi
+	 * @property
+	 */
+	public readonly $PlatformApi;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsSharing;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Config;
+	/**
+	 * @var \Avalonia\OpenGL\Egl\EglInterface
+	 * @property
+	 */
+	public readonly $EglInterface;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
 	 * @param \Avalonia\OpenGL\Egl\EglInterface $egl
 	 * @return \Avalonia\Win32\OpenGl\Angle\AngleWin32EglDisplay
 	 */

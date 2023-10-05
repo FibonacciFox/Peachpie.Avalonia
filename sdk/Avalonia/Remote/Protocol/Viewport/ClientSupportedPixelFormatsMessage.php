@@ -5,6 +5,11 @@ namespace Avalonia\Remote\Protocol\Viewport;
 class ClientSupportedPixelFormatsMessage extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Remote\Protocol\Viewport\PixelFormat[]
+	 * @property
+	 */
+	public $Formats;
+	/**
 	 * @return \Avalonia\Remote\Protocol\Viewport\PixelFormat[]
 	 */
 	public  function get_Formats(){}

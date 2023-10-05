@@ -20,6 +20,21 @@ class OpenGlControlBaseResources extends \System\Object implements
 	\System\IAsyncDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Fbo;
+	/**
+	 * @var \Avalonia\Rendering\Composition\CompositionDrawingSurface
+	 * @property
+	 */
+	public readonly $Surface;
+	/**
+	 * @var \Avalonia\OpenGL\IGlContext
+	 * @property
+	 */
+	public $Context;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Fbo(){}

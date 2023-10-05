@@ -22,6 +22,11 @@ class KeyFrameAnimationInstance_1 extends \Avalonia\Rendering\Composition\Animat
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerObject
+	 * @property
+	 */
+	public readonly $TargetObject;
+	/**
 	 * @param \System\TimeSpan $elapsed
 	 * @param \Avalonia\Rendering\Composition\Expressions\ExpressionVariant $currentValue
 	 * @param \Avalonia\Rendering\Composition\Expressions\ExpressionEvaluationContext& $ctx

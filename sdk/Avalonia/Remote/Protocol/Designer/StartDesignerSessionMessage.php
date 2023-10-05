@@ -5,6 +5,11 @@ namespace Avalonia\Remote\Protocol\Designer;
 class StartDesignerSessionMessage extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SessionId;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_SessionId(){}

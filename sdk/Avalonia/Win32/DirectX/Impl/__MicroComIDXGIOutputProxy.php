@@ -31,6 +31,36 @@ class __MicroComIDXGIOutputProxy extends \Avalonia\Win32\DirectX\Impl\__MicroCom
 	\Avalonia\Win32\DirectX\IDXGIOutput
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_OUTPUT_DESC
+	 * @property
+	 */
+	public readonly $Desc;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_FRAME_STATISTICS
+	 * @property
+	 */
+	public readonly $FrameStatistics;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\DirectX\DXGI_OUTPUT_DESC
 	 */
 	public  function get_Desc(){}

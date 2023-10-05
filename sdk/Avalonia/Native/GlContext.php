@@ -9,6 +9,41 @@ class GlContext extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnGlContext
+	 * @property
+	 */
+	public $Context;
+	/**
+	 * @var \Avalonia\OpenGL\GlVersion
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \Avalonia\OpenGL\GlInterface
+	 * @property
+	 */
+	public readonly $GlInterface;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SampleCount;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $StencilSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanCreateSharedContext;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnGlContext
 	 */
 	public  function get_Context(){}

@@ -5,6 +5,16 @@ namespace Avalonia\X11;
 class X11ScreensUserSettings extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $GlobalScaleFactor;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\String,System\Double]
+	 * @property
+	 */
+	public $NamedScaleFactors;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_GlobalScaleFactor(){}

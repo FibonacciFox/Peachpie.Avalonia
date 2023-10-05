@@ -8,6 +8,16 @@ class OrActivator extends \Avalonia\Styling\Activators\StyleActivatorBase implem
 	\Avalonia\Styling\Activators\IStyleActivatorSink
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

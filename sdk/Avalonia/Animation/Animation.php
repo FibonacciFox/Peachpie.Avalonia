@@ -170,6 +170,96 @@ class Animation extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Animation\IAnimation
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,System\TimeSpan]
+	 * @field
+	 */
+	public readonly $DurationProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,Avalonia\Animation\IterationCount]
+	 * @field
+	 */
+	public readonly $IterationCountProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,Avalonia\Animation\PlaybackDirection]
+	 * @field
+	 */
+	public readonly $PlaybackDirectionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,Avalonia\Animation\FillMode]
+	 * @field
+	 */
+	public readonly $FillModeProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,Avalonia\Animation\Easings\Easing]
+	 * @field
+	 */
+	public readonly $EasingProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,System\TimeSpan]
+	 * @field
+	 */
+	public readonly $DelayProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,System\TimeSpan]
+	 * @field
+	 */
+	public readonly $DelayBetweenIterationsProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\Animation,System\Double]
+	 * @field
+	 */
+	public readonly $SpeedRatioProperty;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \Avalonia\Animation\IterationCount
+	 * @property
+	 */
+	public $IterationCount;
+	/**
+	 * @var \Avalonia\Animation\PlaybackDirection
+	 * @property
+	 */
+	public $PlaybackDirection;
+	/**
+	 * @var \Avalonia\Animation\FillMode
+	 * @property
+	 */
+	public $FillMode;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $Easing;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Delay;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $DelayBetweenIterations;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $SpeedRatio;
+	/**
+	 * @var \Avalonia\Animation\KeyFrames
+	 * @property
+	 */
+	public readonly $Children;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses AnimationMethodsOverride::SetAnimator_1 ($setter, $value)
 	 * @uses AnimationMethodsOverride::SetAnimator_2 ($setter, $value)
 	 * @return mixed|@override

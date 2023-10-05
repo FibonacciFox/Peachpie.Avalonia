@@ -28,6 +28,16 @@ trait AvaloniaPropertyDictionary_1MethodsOverride
 class AvaloniaPropertyDictionary_1 extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \TValue
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

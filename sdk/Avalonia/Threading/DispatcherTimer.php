@@ -5,6 +5,26 @@ namespace Avalonia\Threading;
 class DispatcherTimer extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Threading\Dispatcher
+	 * @property
+	 */
+	public readonly $Dispatcher;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Interval;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Tag;
+	/**
 	 * @return \Avalonia\Threading\Dispatcher
 	 */
 	public  function get_Dispatcher(){}

@@ -6,6 +6,16 @@ class RenderLoop extends \System\Object implements
 	\Avalonia\Rendering\IRenderLoop
 {
 	/**
+	 * @var \Avalonia\Rendering\IRenderLoop
+	 * @property
+	 */
+	public readonly $LocatorAutoInstance;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $RunsInBackground;
+	/**
 	 * @return \Avalonia\Rendering\IRenderLoop
 	 */
 	public static function get_LocatorAutoInstance(){}

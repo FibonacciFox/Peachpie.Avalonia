@@ -6,6 +6,11 @@ class AssemblyResourceDescriptor extends \System\Object implements
 	\Avalonia\Platform\Internal\IAssetDescriptor
 {
 	/**
+	 * @var \System\Reflection\Assembly
+	 * @property
+	 */
+	public readonly $Assembly;
+	/**
 	 * @return \System\IO\Stream
 	 */
 	public  function GetStream(){}

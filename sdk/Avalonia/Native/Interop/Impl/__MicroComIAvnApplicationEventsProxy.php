@@ -30,6 +30,26 @@ class __MicroComIAvnApplicationEventsProxy extends \MicroCom\Runtime\MicroComPro
 	\Avalonia\Native\Interop\IAvnApplicationEvents
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnStringArray $urls
 	 * @return \System\Void|void
 	 */

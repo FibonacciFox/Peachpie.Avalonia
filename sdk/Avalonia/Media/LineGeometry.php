@@ -137,6 +137,46 @@ class LineGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $StartPointProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $EndPointProperty;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $StartPoint;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $EndPoint;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_StartPoint(){}

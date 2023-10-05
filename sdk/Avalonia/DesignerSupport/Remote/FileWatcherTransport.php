@@ -8,6 +8,11 @@ class FileWatcherTransport extends \System\Object implements
 	\Avalonia\DesignerSupport\Remote\ITransportWithEnforcedMethod
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $PreviewerMethod;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

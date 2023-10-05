@@ -5,6 +5,21 @@ namespace Avalonia;
 class AvaloniaNativePlatformOptions extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\AvaloniaNativeRenderingMode]
+	 * @property
+	 */
+	public $RenderingMode;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $OverlayPopups;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $AvaloniaNativeLibraryPath;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_RenderingMode(){}

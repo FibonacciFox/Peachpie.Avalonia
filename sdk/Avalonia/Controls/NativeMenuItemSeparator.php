@@ -138,6 +138,66 @@ class NativeMenuItemSeparator extends \Avalonia\Controls\NativeMenuItem implemen
 	\Avalonia\Controls\INativeMenuItemExporterEventsImplBridge
 {
 	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Menu;
+	/**
+	 * @var \Avalonia\Media\Imaging\Bitmap
+	 * @property
+	 */
+	public $Icon;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Header;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public $Gesture;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsChecked;
+	/**
+	 * @var \Avalonia\Controls\NativeMenuItemToggleType
+	 * @property
+	 */
+	public $ToggleType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasClickHandlers;
+	/**
+	 * @var \System\Windows\Input\ICommand
+	 * @property
+	 */
+	public $Command;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $CommandParameter;
+	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

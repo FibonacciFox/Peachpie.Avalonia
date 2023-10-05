@@ -5,6 +5,31 @@ namespace Avalonia\Rendering\Composition\Transport;
 class Batch extends \System\Object
 {
 	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $SequenceId;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Transport\BatchStreamData
+	 * @property
+	 */
+	public $Changes;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $CommittedAt;
+	/**
+	 * @var \System\Threading\Tasks\Task
+	 * @property
+	 */
+	public readonly $Processed;
+	/**
+	 * @var \System\Threading\Tasks\Task
+	 * @property
+	 */
+	public readonly $Rendered;
+	/**
 	 * @return \System\Int64|int
 	 */
 	public  function get_SequenceId(){}

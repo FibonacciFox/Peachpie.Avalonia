@@ -7,6 +7,36 @@ class IndexerDescriptor extends \System\Object implements
 	\Avalonia\IDescription
 {
 	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \System\IObservable_1[System\Object]
+	 * @property
+	 */
+	public $SourceObservable;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
 	 * @return \Avalonia\Data\BindingMode
 	 */
 	public  function get_Mode(){}

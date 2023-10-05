@@ -34,6 +34,21 @@ class Win32Platform extends \System\Object implements
 	\Avalonia\Platform\IPlatformLifetimeEventsImpl
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $TIMERID_DISPATCHER;
+	/**
+	 * @var \System\Version
+	 * @property
+	 */
+	public readonly $WindowsVersion;
+	/**
+	 * @var \Avalonia\Win32PlatformOptions
+	 * @property
+	 */
+	public readonly $Options;
+	/**
 	 * @return \Avalonia\Win32\Win32Platform
 	 */
 	protected static function get_Instance(){}

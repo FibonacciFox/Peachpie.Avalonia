@@ -145,6 +145,31 @@ class Geometry extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Transform]
+	 * @field
+	 */
+	public readonly $TransformProperty;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

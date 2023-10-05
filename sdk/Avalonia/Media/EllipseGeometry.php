@@ -137,6 +137,66 @@ class EllipseGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Rect]
+	 * @field
+	 */
+	public readonly $RectProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $RadiusXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $RadiusYProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $CenterProperty;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Rect;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $RadiusX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $RadiusY;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Center;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Rect
 	 */
 	public  function get_Rect(){}

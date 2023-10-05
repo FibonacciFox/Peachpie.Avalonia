@@ -6,6 +6,16 @@ namespace Avalonia\Markup\Xaml\MarkupExtensions;
 class On_1 extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $Options;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Content;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_Options(){}

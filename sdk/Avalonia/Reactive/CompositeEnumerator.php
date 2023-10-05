@@ -22,6 +22,11 @@ class CompositeEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @uses CompositeEnumeratorMethodsOverride::get_Current_1 ()
 	 * @uses CompositeEnumeratorMethodsOverride::get_Current_2 ()
 	 * @return mixed|@override

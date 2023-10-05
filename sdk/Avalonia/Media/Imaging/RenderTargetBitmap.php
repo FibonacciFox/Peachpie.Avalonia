@@ -35,6 +35,26 @@ class RenderTargetBitmap extends \Avalonia\Media\Imaging\Bitmap implements
 	\Avalonia\Media\IImageBrushSource
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @uses RenderTargetBitmapMethodsOverride::get_PlatformImpl_1 ()
 	 * @uses RenderTargetBitmapMethodsOverride::get_PlatformImpl_2 ()
 	 * @uses RenderTargetBitmapMethodsOverride::get_PlatformImpl_3 ()

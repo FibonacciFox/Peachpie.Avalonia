@@ -20,6 +20,21 @@ class CrossFade extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $FadeInEasing;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $FadeOutEasing;
+	/**
 	 * @return \System\TimeSpan
 	 */
 	public  function get_Duration(){}

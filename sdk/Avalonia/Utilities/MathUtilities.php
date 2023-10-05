@@ -87,6 +87,11 @@ trait MathUtilitiesMethodsOverride
 class MathUtilities extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $DoubleEpsilon;
+	/**
 	 * @uses MathUtilitiesMethodsOverride::AreClose_1 ($value1, $value2)
 	 * @uses MathUtilitiesMethodsOverride::AreClose_2 ($value1, $value2, $eps)
 	 * @uses MathUtilitiesMethodsOverride::AreClose_3 ($value1, $value2)

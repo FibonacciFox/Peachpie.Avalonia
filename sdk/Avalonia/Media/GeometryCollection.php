@@ -132,6 +132,36 @@ class GeometryCollection extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \Avalonia\Media\GeometryGroup
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Media\Geometry]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @return \Avalonia\Media\GeometryGroup
 	 */
 	public  function get_Parent(){}

@@ -22,6 +22,11 @@ class Enumerator extends \System\ValueType implements
 	\System\Collections\IEnumerator
 {
 	/**
+	 * @var \System\Collections\Generic\KeyValuePair_2[TKey,TValue]
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function MoveNext(){}

@@ -20,6 +20,11 @@ class Velocity extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $PixelsPerSecond;
+	/**
 	 * @return \Avalonia\Vector
 	 */
 	public  function get_PixelsPerSecond(){}

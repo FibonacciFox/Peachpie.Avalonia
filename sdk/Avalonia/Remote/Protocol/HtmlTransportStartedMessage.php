@@ -5,6 +5,11 @@ namespace Avalonia\Remote\Protocol;
 class HtmlTransportStartedMessage extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Uri;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Uri(){}

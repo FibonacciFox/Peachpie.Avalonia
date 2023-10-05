@@ -36,6 +36,66 @@ class Matrix extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Identity;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsIdentity;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasInverse;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M11;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M12;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M13;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M21;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M22;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M23;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M31;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M32;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $M33;
+	/**
 	 * @return \Avalonia\Matrix
 	 */
 	public static function get_Identity(){}

@@ -6,6 +6,21 @@ class Win32StorageProvider extends \Avalonia\Platform\Storage\FileIO\BclStorageP
 	\Avalonia\Platform\Storage\IStorageProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanOpen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSave;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanPickFolder;
+	/**
 	 * @param \System\Boolean $isOpenFile
 	 * @param \System\Boolean $openFolder
 	 * @param \System\Boolean $allowMultiple

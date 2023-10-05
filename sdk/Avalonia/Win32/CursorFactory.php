@@ -6,6 +6,11 @@ class CursorFactory extends \System\Object implements
 	\Avalonia\Platform\ICursorFactory
 {
 	/**
+	 * @var \Avalonia\Win32\CursorFactory
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Win32\CursorFactory
 	 */
 	public static function get_Instance(){}

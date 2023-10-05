@@ -141,6 +141,36 @@ class BlurEffectAnimator extends \Avalonia\Animation\Animators\EffectAnimatorBas
 	\Avalonia\Animation\IAnimator
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\AnimatorKeyFrame]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\AnimatorKeyFrame
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses BlurEffectAnimatorMethodsOverride::Interpolate_1 ($progress, $oldValue, $newValue)
 	 * @uses BlurEffectAnimatorMethodsOverride::Interpolate_2 ($progress, $oldValue, $newValue)
 	 * @return mixed|@override

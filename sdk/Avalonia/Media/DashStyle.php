@@ -146,6 +146,56 @@ class DashStyle extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Media\IDashStyle
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Collections\AvaloniaList_1[System\Double]]
+	 * @field
+	 */
+	public readonly $DashesProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OffsetProperty;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public readonly $Dash;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public readonly $Dot;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public readonly $DashDot;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public readonly $DashDotDot;
+	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[System\Double]
+	 * @property
+	 */
+	public $Dashes;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\IDashStyle
 	 */
 	public static function get_Dash(){}

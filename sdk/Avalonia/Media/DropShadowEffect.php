@@ -141,6 +141,51 @@ class DropShadowEffect extends \Avalonia\Media\DropShadowEffectBase implements
 	\Avalonia\Media\IMutableEffect
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OffsetXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OffsetYProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OffsetX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OffsetY;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $BlurRadius;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_OffsetX(){}

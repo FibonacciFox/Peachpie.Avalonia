@@ -21,6 +21,31 @@ class ImmutableExperimentalAcrylicMaterial extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\AcrylicBackgroundSource
+	 * @property
+	 */
+	public readonly $BackgroundSource;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public readonly $TintColor;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public readonly $MaterialColor;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $TintOpacity;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public readonly $FallbackColor;
+	/**
 	 * @return \Avalonia\Media\AcrylicBackgroundSource
 	 */
 	public  function get_BackgroundSource(){}

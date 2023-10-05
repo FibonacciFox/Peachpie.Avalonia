@@ -146,6 +146,91 @@ class PopupFlyoutBase extends \Avalonia\Controls\Primitives\FlyoutBase implement
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\PlacementMode]
+	 * @field
+	 */
+	public readonly $PlacementProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $HorizontalOffsetProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $VerticalOffsetProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\Primitives\PopupPositioning\PopupAnchor]
+	 * @field
+	 */
+	public readonly $PlacementAnchorProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\Primitives\PopupPositioning\PopupGravity]
+	 * @field
+	 */
+	public readonly $PlacementGravityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\FlyoutShowMode]
+	 * @field
+	 */
+	public readonly $ShowModeProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Input\IInputElement]
+	 * @field
+	 */
+	public readonly $OverlayInputPassThroughElementProperty;
+	/**
+	 * @var \Avalonia\Controls\PlacementMode
+	 * @property
+	 */
+	public $Placement;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupGravity
+	 * @property
+	 */
+	public $PlacementGravity;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupAnchor
+	 * @property
+	 */
+	public $PlacementAnchor;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $HorizontalOffset;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $VerticalOffset;
+	/**
+	 * @var \Avalonia\Controls\FlyoutShowMode
+	 * @property
+	 */
+	public $ShowMode;
+	/**
+	 * @var \Avalonia\Input\IInputElement
+	 * @property
+	 */
+	public $OverlayInputPassThroughElement;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsOpen;
+	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Controls\Primitives\Popup
 	 */
 	protected  function get_Popup(){}

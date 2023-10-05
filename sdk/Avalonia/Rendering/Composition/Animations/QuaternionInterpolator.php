@@ -6,6 +6,11 @@ class QuaternionInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\QuaternionInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Numerics\Quaternion $from
 	 * @param \System\Numerics\Quaternion $to
 	 * @param \System\Single $progress

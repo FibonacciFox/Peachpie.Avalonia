@@ -5,6 +5,16 @@ namespace Avalonia\Controls;
 class FileDialogFilter extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \System\Collections\Generic\List_1[System\String]
+	 * @property
+	 */
+	public $Extensions;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

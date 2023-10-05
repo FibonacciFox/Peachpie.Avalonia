@@ -7,6 +7,41 @@ class OnPlatformExtensionBase_2 extends \System\Object implements
 	\Avalonia\Metadata\IAddChild_1
 {
 	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Default;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Windows;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $macOS;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Linux;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Android;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $iOS;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Browser;
+	/**
 	 * @return \Avalonia\Markup\Xaml\MarkupExtensions\TReturn
 	 */
 	public  function get_Default(){}

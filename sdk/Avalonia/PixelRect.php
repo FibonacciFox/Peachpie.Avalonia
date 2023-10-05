@@ -60,6 +60,71 @@ class PixelRect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Y;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Height;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Right;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Bottom;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $TopLeft;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $TopRight;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $BottomLeft;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $BottomRight;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $Center;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_X(){}

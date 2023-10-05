@@ -5,6 +5,26 @@ namespace Avalonia\Media\TextFormatting;
 class BidiRange extends \System\ValueType
 {
 	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public $Level;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $LeftRunIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $RightRunIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $PreviousRangeIndex;
+	/**
 	 * @return \System\SByte
 	 */
 	public  function get_Level(){}

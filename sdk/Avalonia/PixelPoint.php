@@ -68,6 +68,21 @@ class PixelPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\PixelPoint
+	 * @field
+	 */
+	public readonly $Origin;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Y;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_X(){}

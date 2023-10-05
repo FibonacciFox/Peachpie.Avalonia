@@ -20,6 +20,21 @@ class TopLevelInfo extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public $Compositor;
+	/**
+	 * @var \Avalonia\Rendering\Composition\CompositingRenderer
+	 * @property
+	 */
+	public $Renderer;
+	/**
+	 * @var \Avalonia\Layout\ILayoutManager
+	 * @property
+	 */
+	public $LayoutManager;
+	/**
 	 * @return \System\Type
 	 */
 	protected  function get_EqualityContract(){}

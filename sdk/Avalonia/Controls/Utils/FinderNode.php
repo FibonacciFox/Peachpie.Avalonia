@@ -6,6 +6,11 @@ class FinderNode extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IObservable_1[Avalonia\StyledElement]
+	 * @property
+	 */
+	public readonly $Observable;
+	/**
 	 * @return \System\IObservable_1
 	 */
 	public  function get_Observable(){}

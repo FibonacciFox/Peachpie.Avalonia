@@ -30,6 +30,26 @@ class __MicroComIAvnTextInputMethodClientProxy extends \MicroCom\Runtime\MicroCo
 	\Avalonia\Native\Interop\IAvnTextInputMethodClient
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\String|string $preeditText
 	 * @return \System\Void|void
 	 */

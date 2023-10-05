@@ -7,6 +7,11 @@ class EmptyImpl_1 extends \System\Object implements
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\IObservable_1[TResult]
+	 * @field
+	 */
+	protected readonly $Instance;
+	/**
 	 * @param \System\IObserver_1 $observer
 	 * @return \System\IDisposable
 	 */

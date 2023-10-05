@@ -22,6 +22,16 @@ class IBusX11TextInputMethod extends \Avalonia\FreeDesktop\DBusIme\DBusTextInput
 	\Avalonia\Input\TextInput\ITextInputMethodImpl
 {
 	/**
+	 * @var \Avalonia\Input\TextInput\TextInputMethodClient
+	 * @property
+	 */
+	public readonly $Client;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
 	 * @param \System\Exception $e
 	 * @param \System\ValueTuple_3 $k
 	 * @deprecated this element should not be used by you because it will break your program

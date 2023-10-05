@@ -19,6 +19,46 @@ trait GlInterfaceMethodsOverride
 class GlInterface extends \Avalonia\OpenGL\GlBasicInfoInterface
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Vendor;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Renderer;
+	/**
+	 * @var \Avalonia\OpenGL\GlInterface+GlContextInfo
+	 * @property
+	 */
+	public readonly $ContextInfo;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsBlitFramebufferAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDeleteVertexArraysAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsBindVertexArrayAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsGenVertexArraysAvailable;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Version(){}

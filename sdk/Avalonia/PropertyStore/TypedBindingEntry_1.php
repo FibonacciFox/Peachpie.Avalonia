@@ -61,6 +61,21 @@ class TypedBindingEntry_1 extends \Avalonia\PropertyStore\BindingEntryBase_2 imp
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @uses TypedBindingEntry_1MethodsOverride::get_Property_1 ()
 	 * @uses TypedBindingEntry_1MethodsOverride::get_Property_2 ()
 	 * @uses TypedBindingEntry_1MethodsOverride::get_Property_3 ()

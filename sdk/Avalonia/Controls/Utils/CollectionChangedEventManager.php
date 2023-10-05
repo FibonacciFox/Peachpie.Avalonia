@@ -5,6 +5,11 @@ namespace Avalonia\Controls\Utils;
 class CollectionChangedEventManager extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Controls\Utils\CollectionChangedEventManager
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Controls\Utils\CollectionChangedEventManager
 	 */
 	public static function get_Instance(){}

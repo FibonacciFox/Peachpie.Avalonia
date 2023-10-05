@@ -20,6 +20,16 @@ class TextSelection extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Start;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $End;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Start(){}

@@ -27,6 +27,11 @@ class PooledInlineList_1 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @param \Avalonia\Utilities\T $item
 	 * @return \System\Void|void
 	 */

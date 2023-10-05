@@ -6,6 +6,11 @@ namespace Avalonia\Utilities;
 class SubscriptionTypeStorage_2 extends \System\Object
 {
 	/**
+	 * @var \System\Runtime\CompilerServices\ConditionalWeakTable_2[System\Object,Avalonia\Utilities\WeakEventHandlerManager+SubscriptionDic_2[TArgs,TSubscriber]]
+	 * @field
+	 */
+	public readonly $Subscribers;
+	/**
 	 * @param \System\Object|object $obj
 	 * @return \System\Boolean
 	 */

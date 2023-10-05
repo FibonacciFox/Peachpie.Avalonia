@@ -132,6 +132,31 @@ class Controls extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\Control]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

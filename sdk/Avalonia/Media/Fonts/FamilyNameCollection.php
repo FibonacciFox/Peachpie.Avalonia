@@ -27,6 +27,26 @@ class FamilyNameCollection extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $PrimaryFamilyName;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasFallbacks;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @param \System\String|string $names
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

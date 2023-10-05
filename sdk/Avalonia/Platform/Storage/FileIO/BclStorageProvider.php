@@ -6,6 +6,21 @@ class BclStorageProvider extends \System\Object implements
 	\Avalonia\Platform\Storage\IStorageProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanOpen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSave;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanPickFolder;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_CanOpen(){}

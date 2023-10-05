@@ -10,6 +10,16 @@ class Events extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnPlatformThreadingInterfaceEvents
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Signaled(){}

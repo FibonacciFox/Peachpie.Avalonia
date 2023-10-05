@@ -56,6 +56,16 @@ class Point extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Y;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_X(){}

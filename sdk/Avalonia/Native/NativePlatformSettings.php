@@ -20,6 +20,16 @@ class NativePlatformSettings extends \Avalonia\Platform\DefaultPlatformSettings 
 	\Avalonia\Platform\IPlatformSettings
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public readonly $HoldWaitDuration;
+	/**
+	 * @var \Avalonia\Input\Platform\PlatformHotkeyConfiguration
+	 * @property
+	 */
+	public readonly $HotkeyConfiguration;
+	/**
 	 * @uses NativePlatformSettingsMethodsOverride::OnColorValuesChanged_1 ()
 	 * @uses NativePlatformSettingsMethodsOverride::OnColorValuesChanged_2 ($colorValues)
 	 * @return mixed|@override

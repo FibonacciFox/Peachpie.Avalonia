@@ -151,6 +151,41 @@ class SolidColorBrush extends \Avalonia\Media\Brush implements
 	\Avalonia\Media\IMutableBrush
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Color]
+	 * @field
+	 */
+	public readonly $ColorProperty;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\Color
 	 */
 	public  function get_Color(){}

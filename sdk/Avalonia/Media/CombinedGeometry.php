@@ -137,6 +137,56 @@ class CombinedGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Geometry]
+	 * @field
+	 */
+	public readonly $Geometry1Property;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Geometry]
+	 * @field
+	 */
+	public readonly $Geometry2Property;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\GeometryCombineMode]
+	 * @field
+	 */
+	public readonly $GeometryCombineModeProperty;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Geometry1;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Geometry2;
+	/**
+	 * @var \Avalonia\Media\GeometryCombineMode
+	 * @property
+	 */
+	public $GeometryCombineMode;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\Geometry
 	 */
 	public  function get_Geometry1(){}

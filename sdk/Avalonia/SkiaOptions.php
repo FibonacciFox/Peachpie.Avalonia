@@ -5,6 +5,16 @@ namespace Avalonia;
 class SkiaOptions extends \System\Object
 {
 	/**
+	 * @var \System\Nullable_1[System\Int64]
+	 * @property
+	 */
+	public $MaxGpuResourceSizeBytes;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseOpacitySaveLayer;
+	/**
 	 * @return \System\Nullable_1
 	 */
 	public  function get_MaxGpuResourceSizeBytes(){}

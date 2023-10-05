@@ -21,6 +21,11 @@ class ItemsPanelTemplate extends \System\Object implements
 	\Avalonia\Styling\ITemplate
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Content;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Content(){}

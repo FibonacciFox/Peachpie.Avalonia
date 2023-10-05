@@ -30,6 +30,31 @@ class __MicroComIDesktopWindowTargetInteropProxy extends \MicroCom\Runtime\Micro
 	\Avalonia\Win32\WinRT\IDesktopWindowTargetInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $HWnd;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_HWnd(){}

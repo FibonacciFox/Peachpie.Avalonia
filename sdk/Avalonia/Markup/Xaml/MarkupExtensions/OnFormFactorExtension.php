@@ -6,6 +6,21 @@ class OnFormFactorExtension extends \Avalonia\Markup\Xaml\MarkupExtensions\OnFor
 	\Avalonia\Metadata\IAddChild_1
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Default;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Desktop;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Mobile;
+	/**
 	 * @param \System\IServiceProvider $serviceProvider
 	 * @param \Avalonia\Platform\FormFactorType $option
 	 * @return \System\Boolean

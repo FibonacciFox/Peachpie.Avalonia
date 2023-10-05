@@ -8,6 +8,11 @@ class PropertyEqualsActivator extends \Avalonia\Styling\Activators\StyleActivato
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

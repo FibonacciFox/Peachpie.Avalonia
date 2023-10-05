@@ -5,6 +5,11 @@ namespace Avalonia\Win32;
 class OffscreenParentWindow extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public static function get_Handle(){}

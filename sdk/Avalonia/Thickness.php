@@ -36,6 +36,31 @@ class Thickness extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Left;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Top;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Right;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Bottom;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsUniform;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Left(){}

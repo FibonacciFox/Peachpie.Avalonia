@@ -31,6 +31,41 @@ class __MicroComICompositionShapeProxy extends \Avalonia\Win32\WinRT\Impl\__Micr
 	\Avalonia\Win32\WinRT\ICompositionShape
 {
 	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $CenterPoint;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Numerics\Vector2
 	 */
 	public  function get_CenterPoint(){}

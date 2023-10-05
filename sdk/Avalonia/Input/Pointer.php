@@ -7,6 +7,26 @@ class Pointer extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Id;
+	/**
+	 * @var \Avalonia\Input\IInputElement
+	 * @property
+	 */
+	public $Captured;
+	/**
+	 * @var \Avalonia\Input\PointerType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsPrimary;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public static function GetNextFreeId(){}

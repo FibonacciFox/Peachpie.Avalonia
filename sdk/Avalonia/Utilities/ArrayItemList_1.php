@@ -24,6 +24,21 @@ trait ArrayItemList_1MethodsOverride
 class ArrayItemList_1 extends \Avalonia\Utilities\FrugalListBase_1
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @uses ArrayItemList_1MethodsOverride::Promote_1 ($oldList)
 	 * @uses ArrayItemList_1MethodsOverride::Promote_2 ($oldList)
 	 * @uses ArrayItemList_1MethodsOverride::Promote_3 ($oldList)

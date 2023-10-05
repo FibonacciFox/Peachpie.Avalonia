@@ -20,6 +20,21 @@ class FontCollectionKey extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public $Style;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public $Weight;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public $Stretch;
+	/**
 	 * @return \Avalonia\Media\FontStyle
 	 */
 	public  function get_Style(){}

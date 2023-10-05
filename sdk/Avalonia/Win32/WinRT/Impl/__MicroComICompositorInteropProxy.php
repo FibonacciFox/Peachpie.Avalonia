@@ -30,6 +30,26 @@ class __MicroComICompositorInteropProxy extends \MicroCom\Runtime\MicroComProxyB
 	\Avalonia\Win32\WinRT\ICompositorInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\IntPtr $swapChain
 	 * @return \Avalonia\Win32\WinRT\ICompositionSurface
 	 */

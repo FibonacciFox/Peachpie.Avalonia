@@ -22,6 +22,16 @@ class DBusTextInputMethodBase extends \System\Object implements
 	\Avalonia\Input\TextInput\ITextInputMethodImpl
 {
 	/**
+	 * @var \Avalonia\Input\TextInput\TextInputMethodClient
+	 * @property
+	 */
+	public readonly $Client;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
 	 * @return \Tmds\DBus\Protocol\Connection
 	 */
 	protected  function get_Connection(){}

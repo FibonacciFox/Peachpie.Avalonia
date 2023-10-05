@@ -20,6 +20,21 @@ class TextBoxAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomation
 	\Avalonia\Automation\Provider\IValueProvider
 {
 	/**
+	 * @var \Avalonia\Controls\TextBox
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @uses TextBoxAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses TextBoxAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

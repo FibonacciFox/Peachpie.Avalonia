@@ -141,6 +141,31 @@ class Classes extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Controls\IPseudoClasses
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[System\String]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @return \System\Int32|int
 	 */
 	protected  function get_ListenerCount(){}

@@ -5,6 +5,26 @@ namespace Avalonia\Platform\Storage;
 class FilePickerFileType extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public $Patterns;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public $MimeTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public $AppleUniformTypeIdentifiers;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

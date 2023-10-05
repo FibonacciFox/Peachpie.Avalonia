@@ -6,6 +6,51 @@ class ServerCompositor extends \System\Object implements
 	\Avalonia\Rendering\IRenderLoopTask
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Transport\BatchStreamObjectPool_1[System\Object]
+	 * @field
+	 */
+	protected $BatchObjectPool;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Transport\BatchStreamMemoryPool
+	 * @field
+	 */
+	protected $BatchMemoryPool;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected readonly $RenderThreadDisposeStartMarker;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected readonly $RenderThreadJobsStartMarker;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected readonly $RenderThreadJobsEndMarker;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public $LastBatchId;
+	/**
+	 * @var \System\Diagnostics\Stopwatch
+	 * @property
+	 */
+	public readonly $Clock;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $ServerNow;
+	/**
+	 * @var \Avalonia\Rendering\PlatformRenderInterfaceContextManager
+	 * @property
+	 */
+	public readonly $RenderInterface;
+	/**
 	 * @return \System\Int64|int
 	 */
 	public  function get_LastBatchId(){}

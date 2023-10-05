@@ -7,6 +7,36 @@ class AngleExternalObjectsFeature extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImportableExternalImageTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedExportableExternalImageTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImportableExternalSemaphoreTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedExportableExternalSemaphoreTypes;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceLuid;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceUuid;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_SupportedImportableExternalImageTypes(){}

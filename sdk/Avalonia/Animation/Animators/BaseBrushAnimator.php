@@ -133,6 +133,36 @@ class BaseBrushAnimator extends \Avalonia\Animation\Animators\Animator_1 impleme
 	\Avalonia\Animation\IAnimator
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\AnimatorKeyFrame]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\AnimatorKeyFrame
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \System\Func_2 $condition
 	 * @return \System\Void|void
 	 */

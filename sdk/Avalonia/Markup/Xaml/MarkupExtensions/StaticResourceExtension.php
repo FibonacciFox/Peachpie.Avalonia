@@ -5,6 +5,11 @@ namespace Avalonia\Markup\Xaml\MarkupExtensions;
 class StaticResourceExtension extends \System\Object
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ResourceKey;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_ResourceKey(){}

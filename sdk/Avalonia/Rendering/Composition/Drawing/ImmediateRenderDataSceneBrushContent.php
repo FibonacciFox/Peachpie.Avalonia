@@ -23,6 +23,36 @@ class ImmediateRenderDataSceneBrushContent extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Media\ITileBrush
+	 * @property
+	 */
+	public readonly $Brush;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Rect;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public readonly $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public readonly $TransformOrigin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UseScalableRasterization;
+	/**
 	 * @return \Avalonia\Media\ITileBrush
 	 */
 	public  function get_Brush(){}

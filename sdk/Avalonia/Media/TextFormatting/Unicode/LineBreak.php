@@ -20,6 +20,21 @@ class LineBreak extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $PositionMeasure;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $PositionWrap;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $Required;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_PositionMeasure(){}

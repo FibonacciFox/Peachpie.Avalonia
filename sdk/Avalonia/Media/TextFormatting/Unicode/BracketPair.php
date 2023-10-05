@@ -6,6 +6,16 @@ class BracketPair extends \System\ValueType implements
 	\System\IComparable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $OpeningIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ClosingIndex;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_OpeningIndex(){}

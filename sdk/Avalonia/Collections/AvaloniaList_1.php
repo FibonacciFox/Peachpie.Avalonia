@@ -149,6 +149,31 @@ class AvaloniaList_1 extends \System\Object implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[T]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \System\Collections\Specialized\NotifyCollectionChangedEventHandler $value
 	 * @return \System\Void|void
 	 */

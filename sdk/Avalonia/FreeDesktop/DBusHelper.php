@@ -5,6 +5,11 @@ namespace Avalonia\FreeDesktop;
 class DBusHelper extends \System\Object
 {
 	/**
+	 * @var \Tmds\DBus\Protocol\Connection
+	 * @property
+	 */
+	public $Connection;
+	/**
 	 * @return \Tmds\DBus\Protocol\Connection
 	 */
 	public static function get_Connection(){}

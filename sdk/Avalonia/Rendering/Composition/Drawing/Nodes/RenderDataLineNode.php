@@ -7,6 +7,31 @@ class RenderDataLineNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
 	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ServerPen;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ClientPen;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $P1;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $P2;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Media\IPen
 	 */
 	public  function get_ServerPen(){}

@@ -20,6 +20,16 @@ class UndoRedoState extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Text;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $CaretPosition;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Text(){}

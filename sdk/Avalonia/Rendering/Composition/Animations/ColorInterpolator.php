@@ -6,6 +6,11 @@ class ColorInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ColorInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Single $a
 	 * @param \System\Single $b
 	 * @param \System\Single $p

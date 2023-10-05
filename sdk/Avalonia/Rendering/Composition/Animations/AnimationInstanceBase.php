@@ -21,6 +21,11 @@ class AnimationInstanceBase extends \System\Object implements
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerObject
+	 * @property
+	 */
+	public readonly $TargetObject;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Animations\PropertySetSnapshot
 	 */
 	protected  function get_Parameters(){}

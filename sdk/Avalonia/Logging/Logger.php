@@ -19,6 +19,11 @@ trait LoggerMethodsOverride
 class Logger extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Logging\ILogSink
+	 * @property
+	 */
+	public $Sink;
+	/**
 	 * @return \Avalonia\Logging\ILogSink
 	 */
 	public static function get_Sink(){}

@@ -19,6 +19,16 @@ trait AvaloniaSynchronizationContextMethodsOverride
 class AvaloniaSynchronizationContext extends \System\Threading\SynchronizationContext
 {
 	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	protected readonly $Priority;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AutoInstall;
+	/**
 	 * @return \System\Boolean
 	 */
 	public static function get_AutoInstall(){}

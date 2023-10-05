@@ -138,6 +138,111 @@ class NativeMenuItem extends \Avalonia\Controls\NativeMenuItemBase implements
 	\Avalonia\Controls\INativeMenuItemExporterEventsImplBridge
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\NativeMenu]
+	 * @field
+	 */
+	public readonly $MenuProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Imaging\Bitmap]
+	 * @field
+	 */
+	public readonly $IconProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $HeaderProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Input\KeyGesture]
+	 * @field
+	 */
+	public readonly $GestureProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsCheckedProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\NativeMenuItemToggleType]
+	 * @field
+	 */
+	public readonly $ToggleTypeProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Windows\Input\ICommand]
+	 * @field
+	 */
+	public readonly $CommandProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $CommandParameterProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsEnabledProperty;
+	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Menu;
+	/**
+	 * @var \Avalonia\Media\Imaging\Bitmap
+	 * @property
+	 */
+	public $Icon;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Header;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public $Gesture;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsChecked;
+	/**
+	 * @var \Avalonia\Controls\NativeMenuItemToggleType
+	 * @property
+	 */
+	public $ToggleType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasClickHandlers;
+	/**
+	 * @var \System\Windows\Input\ICommand
+	 * @property
+	 */
+	public $Command;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $CommandParameter;
+	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Controls\NativeMenu
 	 */
 	public  function get_Menu(){}

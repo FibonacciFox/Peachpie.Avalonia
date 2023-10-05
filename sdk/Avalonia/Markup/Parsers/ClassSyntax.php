@@ -6,6 +6,11 @@ class ClassSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Class;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Class(){}

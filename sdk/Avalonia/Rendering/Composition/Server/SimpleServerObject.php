@@ -5,6 +5,11 @@ namespace Avalonia\Rendering\Composition\Server;
 class SimpleServerObject extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Server\ServerCompositor
 	 */
 	public  function get_Compositor(){}

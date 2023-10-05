@@ -6,6 +6,21 @@ class AttachedPropertyNameNode extends \System\Object implements
 	\Avalonia\Markup\Parsers\INode
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Namespace;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $TypeName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $PropertyName;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Namespace(){}

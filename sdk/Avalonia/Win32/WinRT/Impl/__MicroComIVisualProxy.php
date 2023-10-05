@@ -31,6 +31,121 @@ class __MicroComIVisualProxy extends \Avalonia\Win32\WinRT\Impl\__MicroComIInspe
 	\Avalonia\Win32\WinRT\IVisual
 {
 	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $AnchorPoint;
+	/**
+	 * @var \Avalonia\Win32\WinRT\CompositionBackfaceVisibility
+	 * @property
+	 */
+	public readonly $BackfaceVisibility;
+	/**
+	 * @var \Avalonia\Win32\WinRT\CompositionBorderMode
+	 * @property
+	 */
+	public readonly $BorderMode;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @property
+	 */
+	public readonly $CenterPoint;
+	/**
+	 * @var \Avalonia\Win32\WinRT\ICompositionClip
+	 * @property
+	 */
+	public readonly $Clip;
+	/**
+	 * @var \Avalonia\Win32\WinRT\CompositionCompositeMode
+	 * @property
+	 */
+	public readonly $CompositeMode;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsVisible;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $Opacity;
+	/**
+	 * @var \System\Numerics\Quaternion
+	 * @property
+	 */
+	public readonly $Orientation;
+	/**
+	 * @var \Avalonia\Win32\WinRT\IContainerVisual
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $RotationAngle;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $RotationAngleInDegrees;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @property
+	 */
+	public readonly $RotationAxis;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @property
+	 */
+	public readonly $Scale;
+	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Numerics\Matrix4x4
+	 * @property
+	 */
+	public readonly $TransformMatrix;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Numerics\Vector2
 	 */
 	public  function get_AnchorPoint(){}

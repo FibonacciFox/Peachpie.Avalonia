@@ -5,6 +5,21 @@ namespace Avalonia\Controls;
 class CalendarDatePickerDateValidationErrorEventArgs extends \System\EventArgs
 {
 	/**
+	 * @var \System\Exception
+	 * @property
+	 */
+	public $Exception;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Text;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ThrowException;
+	/**
 	 * @return \System\Exception
 	 */
 	public  function get_Exception(){}

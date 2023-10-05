@@ -20,6 +20,16 @@ class CharacterHit extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $FirstCharacterIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TrailingLength;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_FirstCharacterIndex(){}

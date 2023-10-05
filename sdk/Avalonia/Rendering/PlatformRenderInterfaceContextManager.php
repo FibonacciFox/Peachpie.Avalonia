@@ -5,6 +5,11 @@ namespace Avalonia\Rendering;
 class PlatformRenderInterfaceContextManager extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Platform\IPlatformRenderInterfaceContext
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function EnsureValidBackendContext(){}

@@ -6,6 +6,36 @@ class ExternalObjectsOpenGlExtensionFeature extends \System\Object implements
 	\Avalonia\OpenGL\IGlContextExternalObjectsFeature
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImportableExternalImageTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedExportableExternalImageTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImportableExternalSemaphoreTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedExportableExternalSemaphoreTypes;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceLuid;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceUuid;
+	/**
 	 * @param \Avalonia\OpenGL\IGlContext $context
 	 * @return \Avalonia\OpenGL\Features\ExternalObjectsOpenGlExtensionFeature
 	 */

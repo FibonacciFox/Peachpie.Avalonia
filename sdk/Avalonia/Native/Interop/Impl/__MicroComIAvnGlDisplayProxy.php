@@ -30,6 +30,26 @@ class __MicroComIAvnGlDisplayProxy extends \MicroCom\Runtime\MicroComProxyBase i
 	\Avalonia\Native\Interop\IAvnGlDisplay
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnGlContext $share
 	 * @return \Avalonia\Native\Interop\IAvnGlContext
 	 */

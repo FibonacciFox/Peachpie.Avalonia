@@ -24,6 +24,26 @@ class ImmutableSolidColorBrush extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public readonly $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public readonly $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public readonly $TransformOrigin;
+	/**
 	 * @return \Avalonia\Media\Color
 	 */
 	public  function get_Color(){}

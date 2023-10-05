@@ -146,6 +146,31 @@ class RefTrackingDictionary_1 extends \System\Collections\Generic\Dictionary_2 i
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	/**
+	 * @var \System\Collections\Generic\IEqualityComparer_1[TKey]
+	 * @property
+	 */
+	public readonly $Comparer;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2+KeyCollection[TKey,System\Int32]
+	 * @property
+	 */
+	public readonly $Keys;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2+ValueCollection[TKey,System\Int32]
+	 * @property
+	 */
+	public readonly $Values;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \Avalonia\Utilities\TKey $key
 	 * @return \System\Boolean
 	 */

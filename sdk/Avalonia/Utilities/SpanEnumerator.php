@@ -6,6 +6,11 @@ class SpanEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Current(){}

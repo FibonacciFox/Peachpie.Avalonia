@@ -29,6 +29,26 @@ class IndexerNodeBase extends \Avalonia\Data\Core\SettableNode implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \Avalonia\Data\Core\ExpressionNode
+	 * @property
+	 */
+	public $Next;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @property
+	 */
+	public $Target;
+	/**
 	 * @param \System\Object|object $target
 	 * @return \System\Object|object
 	 */

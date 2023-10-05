@@ -5,6 +5,11 @@ namespace Avalonia\OpenGL;
 class GlExtensionEntryPoint extends \System\Attribute
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $TypeId;
+	/**
 	 * @param \System\Func_2 $getProcAddress
 	 * @param \Avalonia\OpenGL\GlContextInfo $context
 	 * @param \System\String|string $entry

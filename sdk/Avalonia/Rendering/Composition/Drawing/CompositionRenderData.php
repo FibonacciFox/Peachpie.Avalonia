@@ -7,6 +7,11 @@ class CompositionRenderData extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Drawing\ServerCompositionRenderData
+	 * @property
+	 */
+	public readonly $Server;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Drawing\ServerCompositionRenderData
 	 */
 	public  function get_Server(){}

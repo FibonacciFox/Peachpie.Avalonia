@@ -5,6 +5,21 @@ namespace Avalonia\Markup\Xaml;
 class RuntimeXamlLoaderConfiguration extends \System\Object
 {
 	/**
+	 * @var \System\Reflection\Assembly
+	 * @property
+	 */
+	public $LocalAssembly;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseCompiledBindingsByDefault;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DesignMode;
+	/**
 	 * @return \System\Reflection\Assembly
 	 */
 	public  function get_LocalAssembly(){}

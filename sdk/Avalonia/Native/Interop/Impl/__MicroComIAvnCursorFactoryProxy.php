@@ -30,6 +30,26 @@ class __MicroComIAvnCursorFactoryProxy extends \MicroCom\Runtime\MicroComProxyBa
 	\Avalonia\Native\Interop\IAvnCursorFactory
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\AvnStandardCursorType $cursorType
 	 * @return \Avalonia\Native\Interop\IAvnCursor
 	 */

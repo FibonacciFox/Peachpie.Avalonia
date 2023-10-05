@@ -9,6 +9,41 @@ class CompositionRenderDataSceneBrushContent extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Drawing\CompositionRenderData
+	 * @property
+	 */
+	public readonly $RenderData;
+	/**
+	 * @var \Avalonia\Media\ITileBrush
+	 * @property
+	 */
+	public readonly $Brush;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Rect;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public readonly $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public readonly $TransformOrigin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UseScalableRasterization;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Drawing\CompositionRenderData
 	 */
 	public  function get_RenderData(){}

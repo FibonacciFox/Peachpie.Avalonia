@@ -5,6 +5,16 @@ namespace Avalonia\Input\GestureRecognizers;
 class PolynomialFit extends \System\Object
 {
 	/**
+	 * @var \System\Double[]
+	 * @property
+	 */
+	public readonly $Coefficients;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Confidence;
+	/**
 	 * @return \System\Double[]
 	 */
 	public  function get_Coefficients(){}

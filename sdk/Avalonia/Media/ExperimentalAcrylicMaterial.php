@@ -147,6 +147,71 @@ class ExperimentalAcrylicMaterial extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IExperimentalAcrylicMaterial
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Color]
+	 * @field
+	 */
+	public readonly $TintColorProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\AcrylicBackgroundSource]
+	 * @field
+	 */
+	public readonly $BackgroundSourceProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $TintOpacityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MaterialOpacityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $PlatformTransparencyCompensationLevelProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Color]
+	 * @field
+	 */
+	public readonly $FallbackColorProperty;
+	/**
+	 * @var \Avalonia\Media\AcrylicBackgroundSource
+	 * @property
+	 */
+	public $BackgroundSource;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $TintColor;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $TintOpacity;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $FallbackColor;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaterialOpacity;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $PlatformTransparencyCompensationLevel;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

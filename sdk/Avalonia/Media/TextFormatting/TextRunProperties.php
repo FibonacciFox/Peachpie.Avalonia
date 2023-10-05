@@ -20,6 +20,41 @@ class TextRunProperties extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Typeface
+	 * @property
+	 */
+	public readonly $Typeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \Avalonia\Media\TextDecorationCollection
+	 * @property
+	 */
+	public readonly $TextDecorations;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public readonly $ForegroundBrush;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public readonly $BackgroundBrush;
+	/**
+	 * @var \System\Globalization\CultureInfo
+	 * @property
+	 */
+	public readonly $CultureInfo;
+	/**
+	 * @var \Avalonia\Media\BaselineAlignment
+	 * @property
+	 */
+	public readonly $BaselineAlignment;
+	/**
 	 * @return \Avalonia\Media\Typeface
 	 */
 	public  function get_Typeface(){}

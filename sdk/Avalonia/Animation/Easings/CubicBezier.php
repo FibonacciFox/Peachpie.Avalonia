@@ -5,6 +5,16 @@ namespace Avalonia\Animation\Easings;
 class CubicBezier extends \System\ValueType
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $RangeMin;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $RangeMax;
+	/**
 	 * @param \System\Double|double $t
 	 * @return \System\Double|double
 	 */

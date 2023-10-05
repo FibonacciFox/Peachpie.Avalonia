@@ -10,6 +10,16 @@ class AvnDispatcher extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnDispatcher
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnActionCallback $cb
 	 * @return \System\Void|void
 	 */

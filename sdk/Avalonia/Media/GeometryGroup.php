@@ -137,6 +137,46 @@ class GeometryGroup extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Media\GeometryGroup,Avalonia\Media\GeometryCollection]
+	 * @field
+	 */
+	public readonly $ChildrenProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\FillRule]
+	 * @field
+	 */
+	public readonly $FillRuleProperty;
+	/**
+	 * @var \Avalonia\Media\GeometryCollection
+	 * @property
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\Media\FillRule
+	 * @property
+	 */
+	public $FillRule;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\GeometryCollection
 	 */
 	public  function get_Children(){}

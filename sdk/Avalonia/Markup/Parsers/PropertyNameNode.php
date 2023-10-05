@@ -6,6 +6,11 @@ class PropertyNameNode extends \System\Object implements
 	\Avalonia\Markup\Parsers\INode
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $PropertyName;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_PropertyName(){}

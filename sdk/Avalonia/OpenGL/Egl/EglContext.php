@@ -23,6 +23,56 @@ class EglContext extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Context;
+	/**
+	 * @var \Avalonia\OpenGL\Egl\EglSurface
+	 * @property
+	 */
+	public readonly $OffscreenSurface;
+	/**
+	 * @var \Avalonia\OpenGL\GlVersion
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \Avalonia\OpenGL\GlInterface
+	 * @property
+	 */
+	public readonly $GlInterface;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SampleCount;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $StencilSize;
+	/**
+	 * @var \Avalonia\OpenGL\Egl\EglDisplay
+	 * @property
+	 */
+	public readonly $Display;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanCreateSharedContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCurrent;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Context(){}

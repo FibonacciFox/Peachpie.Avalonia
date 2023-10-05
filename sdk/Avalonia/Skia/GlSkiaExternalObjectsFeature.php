@@ -20,6 +20,26 @@ class GlSkiaExternalObjectsFeature extends \System\Object implements
 	\Avalonia\Platform\IExternalObjectsRenderInterfaceContextFeature
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImageHandleTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedSemaphoreTypes;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceUuid;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $DeviceLuid;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_SupportedImageHandleTypes(){}

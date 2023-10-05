@@ -141,6 +141,26 @@ class BlurEffect extends \Avalonia\Media\Effect implements
 	\Avalonia\Media\IMutableEffect
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $RadiusProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Radius;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Radius(){}

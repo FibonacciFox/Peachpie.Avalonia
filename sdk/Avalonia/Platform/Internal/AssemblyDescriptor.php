@@ -6,6 +6,26 @@ class AssemblyDescriptor extends \System\Object implements
 	\Avalonia\Platform\Internal\IAssemblyDescriptor
 {
 	/**
+	 * @var \System\Reflection\Assembly
+	 * @property
+	 */
+	public readonly $Assembly;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\String,Avalonia\Platform\Internal\IAssetDescriptor]
+	 * @property
+	 */
+	public readonly $Resources;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\String,Avalonia\Platform\Internal\IAssetDescriptor]
+	 * @property
+	 */
+	public readonly $AvaloniaResources;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
 	 * @return \System\Reflection\Assembly
 	 */
 	public  function get_Assembly(){}

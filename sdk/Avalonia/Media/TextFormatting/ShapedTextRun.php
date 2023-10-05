@@ -6,6 +6,56 @@ class ShapedTextRun extends \Avalonia\Media\TextFormatting\DrawableTextRun imple
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReversed;
+	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public readonly $BidiLevel;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\ShapedBuffer
+	 * @property
+	 */
+	public readonly $ShapedBuffer;
+	/**
+	 * @var \System\ReadOnlyMemory_1[System\Char]
+	 * @property
+	 */
+	public readonly $Text;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRunProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextMetrics
+	 * @property
+	 */
+	public readonly $TextMetrics;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Baseline;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\Media\GlyphRun
+	 * @property
+	 */
+	public readonly $GlyphRun;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsReversed(){}

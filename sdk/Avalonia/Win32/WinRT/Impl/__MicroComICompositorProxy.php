@@ -31,6 +31,36 @@ class __MicroComICompositorProxy extends \Avalonia\Win32\WinRT\Impl\__MicroComII
 	\Avalonia\Win32\WinRT\ICompositor
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Void*
 	 */
 	public  function CreateColorKeyFrameAnimation(){}

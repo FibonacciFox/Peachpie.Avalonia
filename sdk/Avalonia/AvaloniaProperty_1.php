@@ -38,6 +38,46 @@ class AvaloniaProperty_1 extends \Avalonia\AvaloniaProperty implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
 	 * @uses AvaloniaProperty_1MethodsOverride::get_Changed_1 ()
 	 * @uses AvaloniaProperty_1MethodsOverride::get_Changed_2 ()
 	 * @return mixed|@override

@@ -5,6 +5,41 @@ namespace Avalonia;
 class Win32PlatformOptions extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $OverlayPopups;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Win32RenderingMode]
+	 * @property
+	 */
+	public $RenderingMode;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Win32CompositionMode]
+	 * @property
+	 */
+	public $CompositionMode;
+	/**
+	 * @var \System\Nullable_1[System\Single]
+	 * @property
+	 */
+	public $WinUICompositionBackdropCornerRadius;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ShouldRenderOnUIThread;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\OpenGL\GlVersion]
+	 * @property
+	 */
+	public $WglProfiles;
+	/**
+	 * @var \Avalonia\Platform\IPlatformGraphics
+	 * @property
+	 */
+	public $CustomPlatformGraphics;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_OverlayPopups(){}

@@ -6,6 +6,11 @@ class CompositePageTransition extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Animation\IPageTransition]
+	 * @property
+	 */
+	public $PageTransitions;
+	/**
 	 * @return \System\Collections\Generic\List_1
 	 */
 	public  function get_PageTransitions(){}

@@ -30,6 +30,26 @@ class __MicroComICompositionDrawingSurfaceInteropProxy extends \MicroCom\Runtime
 	\Avalonia\Win32\WinRT\ICompositionDrawingSurfaceInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\Interop\RECT* $updateRect
 	 * @param \System\Guid* $iid
 	 * @param \System\Void** $updateObject

@@ -21,6 +21,11 @@ class DragDropDevice extends \System\Object implements
 	\Avalonia\Input\IInputDevice
 {
 	/**
+	 * @var \Avalonia\Input\DragDropDevice
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \Avalonia\Input\IInputRoot $root
 	 * @param \Avalonia\Point $local
 	 * @deprecated this element should not be used by you because it will break your program

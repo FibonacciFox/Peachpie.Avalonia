@@ -138,6 +138,46 @@ class DropShadowEffectBase extends \Avalonia\Media\Effect implements
 	\Avalonia\Media\IAffectsRender
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $BlurRadiusProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Color]
+	 * @field
+	 */
+	public readonly $ColorProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OpacityProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $BlurRadius;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_BlurRadius(){}

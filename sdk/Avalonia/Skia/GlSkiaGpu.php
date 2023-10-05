@@ -10,6 +10,26 @@ class GlSkiaGpu extends \System\Object implements
 	\Avalonia\OpenGL\IOpenGlTextureSharingRenderInterfaceContextFeature
 {
 	/**
+	 * @var \SkiaSharp\GRContext
+	 * @property
+	 */
+	public readonly $GrContext;
+	/**
+	 * @var \Avalonia\OpenGL\IGlContext
+	 * @property
+	 */
+	public readonly $GlContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanCreateSharedContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
 	 * @return \SkiaSharp\GRContext
 	 */
 	public  function get_GrContext(){}

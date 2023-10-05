@@ -19,6 +19,11 @@ trait RoutedEventRegistryMethodsOverride
 class RoutedEventRegistry extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Interactivity\RoutedEventRegistry
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Interactivity\RoutedEventRegistry
 	 */
 	public static function get_Instance(){}

@@ -5,6 +5,41 @@ namespace Avalonia\Automation;
 class ScrollPatternIdentifiers extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $NoScroll;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $HorizontallyScrollableProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $HorizontalScrollPercentProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $HorizontalViewSizeProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $VerticallyScrollableProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $VerticalScrollPercentProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $VerticalViewSizeProperty;
+	/**
 	 * @return \Avalonia\Automation\AutomationProperty
 	 */
 	public static function get_HorizontallyScrollableProperty(){}

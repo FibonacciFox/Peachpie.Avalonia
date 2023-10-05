@@ -21,6 +21,21 @@ class ValueSpan_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Start;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Start(){}

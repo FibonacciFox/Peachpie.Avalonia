@@ -32,6 +32,21 @@ class PlatformRenderInterface extends \System\Object implements
 	\Avalonia\Platform\IPlatformRenderInterface
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsIndividualRoundRects;
+	/**
+	 * @var \Avalonia\Platform\AlphaFormat
+	 * @property
+	 */
+	public readonly $DefaultAlphaFormat;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $DefaultPixelFormat;
+	/**
 	 * @param \Avalonia\Platform\IPlatformGraphicsContext $graphicsContext
 	 * @return \Avalonia\Platform\IPlatformRenderInterfaceContext
 	 */

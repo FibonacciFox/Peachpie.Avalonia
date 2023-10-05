@@ -137,6 +137,56 @@ class ColumnDefinition extends \Avalonia\Controls\DefinitionBase implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MaxWidthProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MinWidthProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\GridLength]
+	 * @field
+	 */
+	public readonly $WidthProperty;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_parentIndex;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ActualWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinWidth;
+	/**
+	 * @var \Avalonia\Controls\GridLength
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SharedSizeGroup;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_ActualWidth(){}

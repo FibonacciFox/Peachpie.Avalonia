@@ -7,6 +7,11 @@ class OwnedDisposable_1 extends \System\ValueType implements
 	\System\IDisposable
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \Avalonia\Rendering\T
 	 */
 	public  function get_Value(){}

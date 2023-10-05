@@ -27,6 +27,16 @@ trait TokenParserMethodsOverride
 class TokenParser extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Position;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Position(){}

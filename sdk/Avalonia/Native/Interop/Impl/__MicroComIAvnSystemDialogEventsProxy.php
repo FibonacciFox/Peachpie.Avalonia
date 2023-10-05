@@ -30,6 +30,26 @@ class __MicroComIAvnSystemDialogEventsProxy extends \MicroCom\Runtime\MicroComPr
 	\Avalonia\Native\Interop\IAvnSystemDialogEvents
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Int32|int $numResults
 	 * @param \System\Void* $ptrFirstResult
 	 * @return \System\Void|void

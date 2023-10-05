@@ -19,6 +19,21 @@ trait CharacterReaderMethodsOverride
 class CharacterReader extends \System\ValueType
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $End;
+	/**
+	 * @var \System\Char
+	 * @property
+	 */
+	public readonly $Peek;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Position;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_End(){}

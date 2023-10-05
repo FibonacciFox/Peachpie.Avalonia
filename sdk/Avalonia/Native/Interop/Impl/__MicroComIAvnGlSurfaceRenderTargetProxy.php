@@ -30,6 +30,26 @@ class __MicroComIAvnGlSurfaceRenderTargetProxy extends \MicroCom\Runtime\MicroCo
 	\Avalonia\Native\Interop\IAvnGlSurfaceRenderTarget
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnGlSurfaceRenderingSession
 	 */
 	public  function BeginDrawing(){}

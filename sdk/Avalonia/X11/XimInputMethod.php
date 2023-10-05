@@ -8,6 +8,21 @@ class XimInputMethod extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Input\TextInput\TextInputMethodClient
+	 * @property
+	 */
+	public readonly $Client;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEnabled;
+	/**
 	 * @return \Avalonia\Input\TextInput\TextInputMethodClient
 	 */
 	public  function get_Client(){}

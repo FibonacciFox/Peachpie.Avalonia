@@ -6,6 +6,26 @@ class PageSlide extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \Avalonia\Animation\PageSlide+SlideAxis
+	 * @property
+	 */
+	public $Orientation;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $SlideInEasing;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $SlideOutEasing;
+	/**
 	 * @return \System\TimeSpan
 	 */
 	public  function get_Duration(){}

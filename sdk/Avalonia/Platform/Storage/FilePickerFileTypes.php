@@ -5,6 +5,36 @@ namespace Avalonia\Platform\Storage;
 class FilePickerFileTypes extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $All;
+	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $TextPlain;
+	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $ImageAll;
+	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $ImageJpg;
+	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $ImagePng;
+	/**
+	 * @var \Avalonia\Platform\Storage\FilePickerFileType
+	 * @property
+	 */
+	public readonly $Pdf;
+	/**
 	 * @return \Avalonia\Platform\Storage\FilePickerFileType
 	 */
 	public static function get_All(){}

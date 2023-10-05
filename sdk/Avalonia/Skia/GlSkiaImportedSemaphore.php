@@ -8,6 +8,11 @@ class GlSkiaImportedSemaphore extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\OpenGL\IGlExternalSemaphore
+	 * @property
+	 */
+	public readonly $Semaphore;
+	/**
 	 * @return \Avalonia\OpenGL\IGlExternalSemaphore
 	 */
 	public  function get_Semaphore(){}

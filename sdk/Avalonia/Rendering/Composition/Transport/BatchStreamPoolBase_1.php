@@ -7,6 +7,16 @@ class BatchStreamPoolBase_1 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $CurrentUsage;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $CurrentPool;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_CurrentUsage(){}

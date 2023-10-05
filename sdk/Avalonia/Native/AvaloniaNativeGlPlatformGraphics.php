@@ -6,6 +6,26 @@ class AvaloniaNativeGlPlatformGraphics extends \System\Object implements
 	\Avalonia\Platform\IPlatformGraphics
 {
 	/**
+	 * @var \Avalonia\Native\GlDisplay
+	 * @field
+	 */
+	protected $GlDisplay;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UsesSharedContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanShareContexts;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanCreateContexts;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_UsesSharedContext(){}

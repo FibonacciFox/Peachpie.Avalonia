@@ -119,6 +119,26 @@ class ItemCollection extends \Avalonia\Controls\ItemsSourceView implements
 	\Avalonia\Controls\Utils\ICollectionChangedListener
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Collections\IList
+	 * @property
+	 */
+	public readonly $Source;
+	/**
 	 * @uses ItemCollectionMethodsOverride::get_Item_1 ($index)
 	 * @uses ItemCollectionMethodsOverride::get_Item_2 ($index)
 	 * @uses ItemCollectionMethodsOverride::get_Item_3 ($index)

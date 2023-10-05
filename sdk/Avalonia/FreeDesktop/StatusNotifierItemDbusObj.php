@@ -6,6 +6,16 @@ class StatusNotifierItemDbusObj extends \Tmds\DBus\SourceGenerator\OrgKdeStatusN
 	\Tmds\DBus\Protocol\IMethodHandler
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Path;
+	/**
+	 * @var \Tmds\DBus\SourceGenerator\OrgKdeStatusNotifierItem+Properties
+	 * @property
+	 */
+	public readonly $BackingProperties;
+	/**
 	 * @param \System\Action $value
 	 * @return \System\Void|void
 	 */

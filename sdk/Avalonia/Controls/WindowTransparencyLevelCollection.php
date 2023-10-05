@@ -119,6 +119,16 @@ class WindowTransparencyLevelCollection extends \System\Collections\ObjectModel\
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @uses WindowTransparencyLevelCollectionMethodsOverride::get_Item_1 ($index)
 	 * @uses WindowTransparencyLevelCollectionMethodsOverride::get_Item_2 ($index)
 	 * @uses WindowTransparencyLevelCollectionMethodsOverride::get_Item_3 ($index)

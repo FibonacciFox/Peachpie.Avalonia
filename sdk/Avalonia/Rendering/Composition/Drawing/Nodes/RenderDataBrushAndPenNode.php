@@ -7,6 +7,26 @@ class RenderDataBrushAndPenNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
 	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $ServerBrush;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ServerPen;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ClientPen;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_ServerBrush(){}

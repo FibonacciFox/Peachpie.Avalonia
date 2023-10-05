@@ -10,6 +10,16 @@ class MenuEvents extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnMenuEvents
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnMenu $parent
 	 * @return \System\Void|void
 	 */

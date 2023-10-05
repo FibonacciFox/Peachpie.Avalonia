@@ -5,6 +5,31 @@ namespace Avalonia\DesignerSupport\Remote;
 class CommandLineArgs extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $AppPath;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $Transport;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $HtmlMethodListenUri;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Method;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SessionId;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_AppPath(){}

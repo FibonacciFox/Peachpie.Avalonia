@@ -43,6 +43,41 @@ class ResourceDictionary extends \System\Object implements
 	\Avalonia\Controls\IThemeVariantProvider
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Collections\Generic\ICollection_1[System\Object]
+	 * @property
+	 */
+	public readonly $Keys;
+	/**
+	 * @var \System\Collections\Generic\ICollection_1[System\Object]
+	 * @property
+	 */
+	public readonly $Values;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public $Owner;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Controls\IResourceProvider]
+	 * @property
+	 */
+	public readonly $MergedDictionaries;
+	/**
+	 * @var \System\Collections\Generic\IDictionary_2[Avalonia\Styling\ThemeVariant,Avalonia\Controls\IThemeVariantProvider]
+	 * @property
+	 */
+	public readonly $ThemeDictionaries;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

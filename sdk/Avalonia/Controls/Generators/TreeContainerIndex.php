@@ -5,6 +5,11 @@ namespace Avalonia\Controls\Generators;
 class TreeContainerIndex extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[Avalonia\Controls\Control]
+	 * @property
+	 */
+	public readonly $Containers;
+	/**
 	 * @return \System\Collections\Generic\IEnumerable_1
 	 */
 	public  function get_Containers(){}

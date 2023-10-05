@@ -5,6 +5,36 @@ namespace Avalonia\Controls\Primitives;
 class UpdateState extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $UpdateCount;
+	/**
+	 * @var \Avalonia\Data\Optional_1[Avalonia\Controls\Selection\ISelectionModel]
+	 * @property
+	 */
+	public $Selection;
+	/**
+	 * @var \Avalonia\Data\Optional_1[System\Collections\IList]
+	 * @property
+	 */
+	public $SelectedItems;
+	/**
+	 * @var \Avalonia\Data\Optional_1[System\Int32]
+	 * @property
+	 */
+	public $SelectedIndex;
+	/**
+	 * @var \Avalonia\Data\Optional_1[System\Object]
+	 * @property
+	 */
+	public $SelectedItem;
+	/**
+	 * @var \Avalonia\Data\Optional_1[System\Object]
+	 * @property
+	 */
+	public $SelectedValue;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_UpdateCount(){}

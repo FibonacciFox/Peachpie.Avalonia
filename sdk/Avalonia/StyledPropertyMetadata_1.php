@@ -21,6 +21,26 @@ class StyledPropertyMetadata_1 extends \Avalonia\AvaloniaPropertyMetadata implem
 	\Avalonia\IStyledPropertyMetadata
 {
 	/**
+	 * @var \TValue
+	 * @property
+	 */
+	public readonly $DefaultValue;
+	/**
+	 * @var \System\Func_3[Avalonia\AvaloniaObject,TValue,TValue]
+	 * @property
+	 */
+	public $CoerceValue;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public readonly $DefaultBindingMode;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public readonly $EnableDataValidation;
+	/**
 	 * @uses StyledPropertyMetadata_1MethodsOverride::get_DefaultValue_1 ()
 	 * @uses StyledPropertyMetadata_1MethodsOverride::get_DefaultValue_2 ()
 	 * @return mixed|@override

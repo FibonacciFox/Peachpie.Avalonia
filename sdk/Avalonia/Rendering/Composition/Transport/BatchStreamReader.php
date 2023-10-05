@@ -20,6 +20,16 @@ class BatchStreamReader extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsObjectEof;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsStructEof;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Transport\T
 	 */
 	public  function Read(){}

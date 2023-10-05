@@ -25,6 +25,11 @@ class Cue extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $CueValue;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_CueValue(){}

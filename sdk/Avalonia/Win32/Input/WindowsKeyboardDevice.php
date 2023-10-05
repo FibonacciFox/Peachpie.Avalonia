@@ -8,6 +8,31 @@ class WindowsKeyboardDevice extends \Avalonia\Input\KeyboardDevice implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Win32\Input\WindowsKeyboardDevice
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
+	 * @var \Avalonia\Input\RawInputModifiers
+	 * @property
+	 */
+	public readonly $Modifiers;
+	/**
+	 * @var \Avalonia\Input\IInputManager
+	 * @property
+	 */
+	public readonly $InputManager;
+	/**
+	 * @var \Avalonia\Input\IFocusManager
+	 * @property
+	 */
+	public readonly $FocusManager;
+	/**
+	 * @var \Avalonia\Input\IInputElement
+	 * @property
+	 */
+	public readonly $FocusedElement;
+	/**
 	 * @return \Avalonia\Win32\Input\WindowsKeyboardDevice
 	 */
 	public static function get_Instance(){}

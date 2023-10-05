@@ -5,6 +5,16 @@ namespace Avalonia\Remote\Protocol\Input;
 class TextInputEventMessage extends \Avalonia\Remote\Protocol\Input\InputEventMessageBase
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Text;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Input\InputModifiers[]
+	 * @property
+	 */
+	public $Modifiers;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Text(){}

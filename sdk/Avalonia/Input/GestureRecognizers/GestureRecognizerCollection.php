@@ -22,6 +22,11 @@ class GestureRecognizerCollection extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @param \Avalonia\Input\GestureRecognizers\GestureRecognizer $recognizer
 	 * @return \System\Void|void
 	 */

@@ -9,6 +9,21 @@ class DeferredParentServiceProvider extends \System\Object implements
 	\Avalonia\Markup\Xaml\XamlIl\Runtime\IAvaloniaXamlIlControlTemplateProvider
 {
 	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[System\Object]
+	 * @property
+	 */
+	public readonly $Parents;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $RootObject;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $IntermediateRootObject;
+	/**
 	 * @return \System\Collections\Generic\IEnumerable_1
 	 */
 	public  function get_Parents(){}

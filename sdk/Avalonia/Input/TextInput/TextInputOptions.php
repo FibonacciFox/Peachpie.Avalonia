@@ -5,6 +5,81 @@ namespace Avalonia\Input\TextInput;
 class TextInputOptions extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Input\TextInput\TextInputOptions
+	 * @field
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Input\TextInput\TextInputContentType]
+	 * @field
+	 */
+	public readonly $ContentTypeProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Input\TextInput\TextInputReturnKeyType]
+	 * @field
+	 */
+	public readonly $ReturnKeyTypeProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $MultilineProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $LowercaseProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $UppercaseProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AutoCapitalizationProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsSensitiveProperty;
+	/**
+	 * @var \Avalonia\Input\TextInput\TextInputContentType
+	 * @property
+	 */
+	public $ContentType;
+	/**
+	 * @var \Avalonia\Input\TextInput\TextInputReturnKeyType
+	 * @property
+	 */
+	public $ReturnKeyType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Multiline;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Lowercase;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Uppercase;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AutoCapitalization;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsSensitive;
+	/**
 	 * @param \Avalonia\StyledElement $avaloniaObject
 	 * @return \Avalonia\Input\TextInput\TextInputOptions
 	 */

@@ -30,6 +30,26 @@ class __MicroComIAvnDndResultCallbackProxy extends \MicroCom\Runtime\MicroComPro
 	\Avalonia\Native\Interop\IAvnDndResultCallback
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\AvnDragDropEffects $effecct
 	 * @return \System\Void|void
 	 */

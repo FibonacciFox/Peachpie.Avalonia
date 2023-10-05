@@ -6,6 +6,11 @@ namespace Avalonia\Utilities;
 class SynchronousCompletionAsyncResultSource_1 extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Utilities\SynchronousCompletionAsyncResult_1[T]
+	 * @property
+	 */
+	public readonly $AsyncResult;
+	/**
 	 * @return \System\Boolean
 	 */
 	protected  function get_IsCompleted(){}

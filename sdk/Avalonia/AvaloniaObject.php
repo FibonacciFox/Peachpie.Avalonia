@@ -137,6 +137,11 @@ class AvaloniaObject extends \System\Object implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses AvaloniaObjectMethodsOverride::add_PropertyChanged_1 ($value)
 	 * @uses AvaloniaObjectMethodsOverride::add_PropertyChanged_2 ($value)
 	 * @return mixed|@override

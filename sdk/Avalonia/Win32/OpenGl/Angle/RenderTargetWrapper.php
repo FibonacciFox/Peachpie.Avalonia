@@ -22,6 +22,11 @@ class RenderTargetWrapper extends \Avalonia\OpenGL\Egl\EglPlatformSurfaceRenderT
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
 	 * @uses RenderTargetWrapperMethodsOverride::BeginDraw_1 ()
 	 * @uses RenderTargetWrapperMethodsOverride::BeginDraw_2 ($surface, $size, $scaling, $onFinish, $isYFlipped)
 	 * @return mixed|@override

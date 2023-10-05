@@ -28,6 +28,46 @@ trait EffectiveValue_1MethodsOverride
 class EffectiveValue_1 extends \Avalonia\PropertyStore\EffectiveValue
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Value;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $BasePriority;
+	/**
+	 * @var \Avalonia\PropertyStore\IValueEntry
+	 * @property
+	 */
+	public readonly $ValueEntry;
+	/**
+	 * @var \Avalonia\PropertyStore\IValueEntry
+	 * @property
+	 */
+	public readonly $BaseValueEntry;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasCoercion;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsOverridenCurrentValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsCoercedDefaultValue;
+	/**
 	 * @uses EffectiveValue_1MethodsOverride::get_Value_1 ()
 	 * @uses EffectiveValue_1MethodsOverride::get_Value_2 ()
 	 * @return mixed|@override

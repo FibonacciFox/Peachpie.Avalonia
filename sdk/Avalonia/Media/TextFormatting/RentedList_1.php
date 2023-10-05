@@ -192,6 +192,31 @@ class RentedList_1 extends \System\Collections\Generic\List_1 implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	/**
+	 * @var \T[]
+	 * @field
+	 */
+	protected $_items;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

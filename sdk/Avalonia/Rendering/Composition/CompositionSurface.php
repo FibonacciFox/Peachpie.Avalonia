@@ -28,6 +28,26 @@ class CompositionSurface extends \Avalonia\Rendering\Composition\CompositionObje
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @param \Avalonia\Rendering\Composition\Compositor $c
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

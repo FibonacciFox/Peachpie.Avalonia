@@ -162,6 +162,31 @@ class EffectTransition extends \Avalonia\Animation\Transition_1 implements
 	\Avalonia\Animation\ITransition
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Delay;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $Easing;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\IObservable_1 $progress
 	 * @param \Avalonia\Animation\TAnimator $animator
 	 * @param \Avalonia\Media\IEffect $oldValue

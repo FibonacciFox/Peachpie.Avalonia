@@ -5,6 +5,26 @@ namespace Avalonia\Interactivity;
 class RoutedEventArgs extends \System\EventArgs
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Handled;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent
+	 * @property
+	 */
+	public $RoutedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutingStrategies
+	 * @property
+	 */
+	public $Route;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Source;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_Handled(){}

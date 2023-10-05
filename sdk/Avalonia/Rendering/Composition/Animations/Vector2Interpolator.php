@@ -6,6 +6,11 @@ class Vector2Interpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\Vector2Interpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Numerics\Vector2 $from
 	 * @param \System\Numerics\Vector2 $to
 	 * @param \System\Single $progress

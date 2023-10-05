@@ -25,6 +25,21 @@ class RadioButtonAutomationPeer extends \Avalonia\Automation\Peers\ToggleButtonA
 	\Avalonia\Automation\Provider\ISelectionItemProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSelected;
+	/**
+	 * @var \Avalonia\Automation\Provider\ISelectionProvider
+	 * @property
+	 */
+	public readonly $SelectionContainer;
+	/**
+	 * @var \Avalonia\Controls\Primitives\ToggleButton
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsSelected(){}

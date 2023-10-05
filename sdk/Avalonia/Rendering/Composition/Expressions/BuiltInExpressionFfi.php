@@ -56,6 +56,11 @@ class BuiltInExpressionFfi extends \System\Object implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionForeignFunctionInterface
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\BuiltInExpressionFfi
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @uses BuiltInExpressionFfiMethodsOverride::Lerp_1 ($a, $b, $p)
 	 * @uses BuiltInExpressionFfiMethodsOverride::Lerp_2 ($a, $b, $p)
 	 * @return mixed|@override

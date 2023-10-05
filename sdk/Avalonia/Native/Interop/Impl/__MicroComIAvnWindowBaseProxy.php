@@ -30,6 +30,46 @@ class __MicroComIAvnWindowBaseProxy extends \MicroCom\Runtime\MicroComProxyBase 
 	\Avalonia\Native\Interop\IAvnWindowBase
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnSize
+	 * @property
+	 */
+	public readonly $ClientSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnPoint
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnTextInputMethod
+	 * @property
+	 */
+	public readonly $InputMethod;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Int32|int $activate
 	 * @param \System\Int32|int $isDialog
 	 * @return \System\Void|void

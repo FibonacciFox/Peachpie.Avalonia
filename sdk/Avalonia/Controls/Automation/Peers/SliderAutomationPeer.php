@@ -20,6 +20,41 @@ class SliderAutomationPeer extends \Avalonia\Automation\Peers\RangeBaseAutomatio
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Primitives\RangeBase
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Maximum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Minimum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $SmallChange;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LargeChange;
+	/**
 	 * @uses SliderAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses SliderAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

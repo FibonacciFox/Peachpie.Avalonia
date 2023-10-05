@@ -28,6 +28,41 @@ class ThemeVariant extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ThemeVariant]
+	 * @field
+	 */
+	protected readonly $ActualThemeVariantProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ThemeVariant]
+	 * @field
+	 */
+	protected readonly $RequestedThemeVariantProperty;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Key;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $InheritVariant;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $Light;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $Dark;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

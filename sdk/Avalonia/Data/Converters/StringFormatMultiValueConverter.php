@@ -6,6 +6,16 @@ class StringFormatMultiValueConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IMultiValueConverter
 {
 	/**
+	 * @var \Avalonia\Data\Converters\IMultiValueConverter
+	 * @property
+	 */
+	public readonly $Inner;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @return \Avalonia\Data\Converters\IMultiValueConverter
 	 */
 	public  function get_Inner(){}

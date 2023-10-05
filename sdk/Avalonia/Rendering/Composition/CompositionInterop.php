@@ -28,6 +28,31 @@ class CompositionInterop extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositionGpuInterop
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedImageHandleTypes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $SupportedSemaphoreTypes;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public $DeviceLuid;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public $DeviceUuid;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_SupportedImageHandleTypes(){}

@@ -24,6 +24,16 @@ class SelectedItems_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @param \System\Int32|int $index
 	 * @return \Avalonia\Controls\Selection\T
 	 */

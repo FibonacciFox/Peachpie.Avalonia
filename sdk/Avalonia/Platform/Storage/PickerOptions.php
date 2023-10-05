@@ -5,6 +5,16 @@ namespace Avalonia\Platform\Storage;
 class PickerOptions extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
+	 * @var \Avalonia\Platform\Storage\IStorageFolder
+	 * @property
+	 */
+	public $SuggestedStartLocation;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Title(){}

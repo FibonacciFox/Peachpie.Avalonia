@@ -6,6 +6,11 @@ class PreviewerWindowingPlatform extends \System\Object implements
 	\Avalonia\Platform\IWindowingPlatform
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[System\Object]
+	 * @field
+	 */
+	public $PreFlightMessages;
+	/**
 	 * @return \Avalonia\Platform\ITrayIconImpl
 	 */
 	public  function CreateTrayIcon(){}

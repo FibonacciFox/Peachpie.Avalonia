@@ -20,6 +20,21 @@ class RuntimePlatformInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Platform\FormFactorType
+	 * @property
+	 */
+	public readonly $FormFactor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDesktop;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsMobile;
+	/**
 	 * @return \Avalonia\Platform\FormFactorType
 	 */
 	public  function get_FormFactor(){}

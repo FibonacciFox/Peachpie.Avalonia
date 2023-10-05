@@ -5,6 +5,11 @@ namespace Avalonia\Win32\OpenGl;
 class WglDisplay extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	public $OpenGl32Handle;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

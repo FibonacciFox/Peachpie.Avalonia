@@ -5,6 +5,21 @@ namespace Avalonia\Skia;
 class PathCache extends \System\ValueType
 {
 	/**
+	 * @var \System\Single
+	 * @field
+	 */
+	public $Tolerance;
+	/**
+	 * @var \SkiaSharp\SKPath
+	 * @property
+	 */
+	public $CachedStrokePath;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $CachedGeometryRenderBounds;
+	/**
 	 * @return \SkiaSharp\SKPath
 	 */
 	public  function get_CachedStrokePath(){}

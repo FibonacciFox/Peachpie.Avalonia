@@ -5,6 +5,61 @@ namespace Avalonia\Markup\Xaml\MarkupExtensions;
 class ReflectionBindingExtension extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Data\Converters\IValueConverter
+	 * @property
+	 */
+	public $Converter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ConverterParameter;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $ElementName;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $FallbackValue;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Path;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $StringFormat;
+	/**
+	 * @var \Avalonia\Data\RelativeSource
+	 * @property
+	 */
+	public $RelativeSource;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $TargetNullValue;
+	/**
 	 * @param \System\IServiceProvider $serviceProvider
 	 * @return \Avalonia\Data\Binding
 	 */

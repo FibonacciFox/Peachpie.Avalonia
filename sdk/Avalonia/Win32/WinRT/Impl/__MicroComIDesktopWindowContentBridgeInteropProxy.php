@@ -30,6 +30,36 @@ class __MicroComIDesktopWindowContentBridgeInteropProxy extends \MicroCom\Runtim
 	\Avalonia\Win32\WinRT\IDesktopWindowContentBridgeInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $HWnd;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $AppliedScaleFactor;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\WinRT\ICompositor $compositor
 	 * @param \System\IntPtr $parentHwnd
 	 * @return \System\Void|void

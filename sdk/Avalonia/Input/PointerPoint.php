@@ -20,6 +20,21 @@ class PointerPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Input\IPointer
+	 * @property
+	 */
+	public readonly $Pointer;
+	/**
+	 * @var \Avalonia\Input\PointerPointProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $Position;
+	/**
 	 * @return \Avalonia\Input\IPointer
 	 */
 	public  function get_Pointer(){}

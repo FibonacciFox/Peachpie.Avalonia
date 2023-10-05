@@ -5,6 +5,101 @@ namespace Avalonia\Automation;
 class AutomationProperties extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $AcceleratorKeyProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Automation\AccessibilityView]
+	 * @field
+	 */
+	public readonly $AccessibilityViewProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $AccessKeyProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $AutomationIdProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Nullable_1[Avalonia\Automation\Peers\AutomationControlType]]
+	 * @field
+	 */
+	public readonly $ControlTypeOverrideProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $HelpTextProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsColumnHeaderProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsRequiredForFormProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsRowHeaderProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Automation\IsOffscreenBehavior]
+	 * @field
+	 */
+	public readonly $IsOffscreenBehaviorProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $ItemStatusProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $ItemTypeProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\Control]
+	 * @field
+	 */
+	public readonly $LabeledByProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Automation\AutomationLiveSetting]
+	 * @field
+	 */
+	public readonly $LiveSettingProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $NameProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $PositionInSetProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $SizeOfSetProperty;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $AutomationPositionInSetDefault;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $AutomationSizeOfSetDefault;
+	/**
 	 * @param \Avalonia\StyledElement $element
 	 * @param \System\String|string $value
 	 * @return \System\Void|void

@@ -8,6 +8,21 @@ class StyleInclude extends \System\Object implements
 	\Avalonia\Controls\IResourceProvider
 {
 	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public readonly $Loaded;
+	/**
 	 * @return \Avalonia\Controls\IResourceHost
 	 */
 	public  function get_Owner(){}

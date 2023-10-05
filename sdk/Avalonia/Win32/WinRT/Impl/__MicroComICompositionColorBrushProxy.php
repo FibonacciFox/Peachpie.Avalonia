@@ -31,6 +31,41 @@ class __MicroComICompositionColorBrushProxy extends \Avalonia\Win32\WinRT\Impl\_
 	\Avalonia\Win32\WinRT\ICompositionColorBrush
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\WinRTColor
+	 * @property
+	 */
+	public readonly $Color;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\WinRT\WinRTColor
 	 */
 	public  function get_Color(){}

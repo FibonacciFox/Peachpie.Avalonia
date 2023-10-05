@@ -36,6 +36,246 @@ class ServerCompositionVisual extends \Avalonia\Rendering\Composition\Server\Ser
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected $IsDirtyComposition;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfRootProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfParentProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfVisibleProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfOpacityProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfClipProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfClipToBoundsProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfOffsetProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfSizeProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfAnchorPointProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfCenterPointProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfRotationAngleProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfOrientationProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfScaleProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfTransformMatrixProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfAdornedVisualProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfAdornerIsClippedProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfOpacityMaskBrushProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfEffectProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfRenderOptionsProperty;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $CombinedTransformMatrix;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $GlobalTransformMatrix;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisibleInFrame;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsHitTestVisibleInFrame;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $EffectiveOpacity;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $TransformedOwnContentBounds;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $OwnContentBounds;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositionTarget
+	 * @property
+	 */
+	public $Root;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositionVisual
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Visible;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Platform\IGeometryImpl
+	 * @property
+	 */
+	public $Clip;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $AnchorPoint;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $CenterPoint;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $RotationAngle;
+	/**
+	 * @var \System\Numerics\Quaternion
+	 * @property
+	 */
+	public $Orientation;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $Scale;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $TransformMatrix;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositionVisual
+	 * @property
+	 */
+	public $AdornedVisual;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AdornerIsClipped;
+	/**
+	 * @var \Avalonia\Media\IImmutableBrush
+	 * @property
+	 */
+	public $OpacityMaskBrush;
+	/**
+	 * @var \Avalonia\Media\IImmutableEffect
+	 * @property
+	 */
+	public $Effect;
+	/**
+	 * @var \Avalonia\Media\RenderOptions
+	 * @property
+	 */
+	public $RenderOptions;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @param \Avalonia\Rendering\Composition\Server\CompositorDrawingContextProxy $canvas
 	 * @param \Avalonia\Rect $currentTransformedClip
 	 * @return \System\Void|void

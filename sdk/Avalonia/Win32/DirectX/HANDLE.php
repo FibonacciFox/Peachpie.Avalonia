@@ -19,6 +19,21 @@ trait HANDLEMethodsOverride
 class HANDLE extends \System\ValueType
 {
 	/**
+	 * @var \System\Void*
+	 * @field
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Win32\DirectX\HANDLE
+	 * @property
+	 */
+	public readonly $INVALID_VALUE;
+	/**
+	 * @var \Avalonia\Win32\DirectX\HANDLE
+	 * @property
+	 */
+	public readonly $NULL;
+	/**
 	 * @return \Avalonia\Win32\DirectX\HANDLE
 	 */
 	public static function get_INVALID_VALUE(){}

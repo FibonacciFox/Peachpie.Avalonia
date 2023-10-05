@@ -68,6 +68,11 @@ class PlatformDrawingContext extends \Avalonia\Media\DrawingContext implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Media\RenderOptions
+	 * @property
+	 */
+	public $RenderOptions;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

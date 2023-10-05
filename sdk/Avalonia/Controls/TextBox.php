@@ -193,6 +193,716 @@ class TextBox extends \Avalonia\Controls\Primitives\TemplatedControl implements
 	\Avalonia\Controls\Utils\IUndoRedoHost
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AcceptsReturnProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AcceptsTabProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $CaretIndexProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsReadOnlyProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Char]
+	 * @field
+	 */
+	public readonly $PasswordCharProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $SelectionBrushProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $SelectionForegroundBrushProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $CaretBrushProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $SelectionStartProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $SelectionEndProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $MaxLengthProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $MaxLinesProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $TextProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TextAlignment]
+	 * @field
+	 */
+	public readonly $TextAlignmentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Layout\HorizontalAlignment]
+	 * @field
+	 */
+	public readonly $HorizontalContentAlignmentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Layout\VerticalAlignment]
+	 * @field
+	 */
+	public readonly $VerticalContentAlignmentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TextWrapping]
+	 * @field
+	 */
+	public readonly $TextWrappingProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $LineHeightProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $LetterSpacingProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $WatermarkProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $UseFloatingWatermarkProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $NewLineProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $InnerLeftContentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $InnerRightContentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $RevealPasswordProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\TextBox,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanCutProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\TextBox,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanCopyProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\TextBox,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanPasteProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsUndoEnabledProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $UndoLimitProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\TextBox,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanUndoProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\TextBox,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanRedoProperty;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Interactivity\RoutedEventArgs]
+	 * @field
+	 */
+	public readonly $CopyingToClipboardEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Interactivity\RoutedEventArgs]
+	 * @field
+	 */
+	public readonly $CuttingToClipboardEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Interactivity\RoutedEventArgs]
+	 * @field
+	 */
+	public readonly $PastingFromClipboardEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Controls\TextChangedEventArgs]
+	 * @field
+	 */
+	public readonly $TextChangedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Controls\TextChangingEventArgs]
+	 * @field
+	 */
+	public readonly $TextChangingEvent;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public readonly $CutGesture;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public readonly $CopyGesture;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public readonly $PasteGesture;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AcceptsReturn;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AcceptsTab;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $CaretIndex;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
+	 * @var \System\Char
+	 * @property
+	 */
+	public $PasswordChar;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $SelectionBrush;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $SelectionForegroundBrush;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $CaretBrush;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $SelectionStart;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $SelectionEnd;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $MaxLength;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $MaxLines;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $LetterSpacing;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $LineHeight;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Text;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SelectedText;
+	/**
+	 * @var \Avalonia\Layout\HorizontalAlignment
+	 * @property
+	 */
+	public $HorizontalContentAlignment;
+	/**
+	 * @var \Avalonia\Layout\VerticalAlignment
+	 * @property
+	 */
+	public $VerticalContentAlignment;
+	/**
+	 * @var \Avalonia\Media\TextAlignment
+	 * @property
+	 */
+	public $TextAlignment;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Watermark;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseFloatingWatermark;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $InnerLeftContent;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $InnerRightContent;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $RevealPassword;
+	/**
+	 * @var \Avalonia\Media\TextWrapping
+	 * @property
+	 */
+	public $TextWrapping;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $NewLine;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanCut;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanCopy;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanPaste;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsUndoEnabled;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $UndoLimit;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanUndo;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanRedo;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Background;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $BorderBrush;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public $BorderThickness;
+	/**
+	 * @var \Avalonia\CornerRadius
+	 * @property
+	 */
+	public $CornerRadius;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public $FontFamily;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $FontSize;
+	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public $FontStyle;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public $FontWeight;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public $FontStretch;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Foreground;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public $Padding;
+	/**
+	 * @var \Avalonia\Controls\Templates\IControlTemplate
+	 * @property
+	 */
+	public $Template;
+	/**
+	 * @var \Avalonia\Controls\ITemplate_1[Avalonia\Controls\Control]
+	 * @property
+	 */
+	public $FocusAdorner;
+	/**
+	 * @var \Avalonia\Controls\Templates\DataTemplates
+	 * @property
+	 */
+	public readonly $DataTemplates;
+	/**
+	 * @var \Avalonia\Controls\ContextMenu
+	 * @property
+	 */
+	public $ContextMenu;
+	/**
+	 * @var \Avalonia\Controls\Primitives\FlyoutBase
+	 * @property
+	 */
+	public $ContextFlyout;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLoaded;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Tag;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Focusable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \Avalonia\Input\Cursor
+	 * @property
+	 */
+	public $Cursor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsKeyboardFocusWithin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsFocused;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsHitTestVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsPointerOver;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsTabStop;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyEnabled;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TabIndex;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Input\KeyBinding]
+	 * @property
+	 */
+	public readonly $KeyBindings;
+	/**
+	 * @var \Avalonia\Input\GestureRecognizers\GestureRecognizerCollection
+	 * @property
+	 */
+	public readonly $GestureRecognizers;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxHeight;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public $Margin;
+	/**
+	 * @var \Avalonia\Layout\HorizontalAlignment
+	 * @property
+	 */
+	public $HorizontalAlignment;
+	/**
+	 * @var \Avalonia\Layout\VerticalAlignment
+	 * @property
+	 */
+	public $VerticalAlignment;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $DesiredSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsMeasureValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsArrangeValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseLayoutRounding;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Clip;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisible;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \Avalonia\Media\IEffect
+	 * @property
+	 */
+	public $Effect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasMirrorTransform;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $RenderTransform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $RenderTransformOrigin;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public $FlowDirection;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ZIndex;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Input\KeyGesture
 	 */
 	public static function get_CutGesture(){}

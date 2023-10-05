@@ -19,6 +19,96 @@ trait GraphNodeMethodsOverride
 class GraphNode extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Measured;
+	/**
+	 * @var \Avalonia\Layout\Layoutable
+	 * @property
+	 */
+	public readonly $Element;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $OriginDesiredSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Left;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Top;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Right;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Bottom;
+	/**
+	 * @var \System\Collections\Generic\HashSet_1[Avalonia\Controls\RelativePanel+GraphNode]
+	 * @property
+	 */
+	public readonly $OutgoingNodes;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignLeftWithNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignTopWithNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignRightWithNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignBottomWithNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $LeftOfNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AboveNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $RightOfNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $BelowNode;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignHorizontalCenterWith;
+	/**
+	 * @var \Avalonia\Controls\RelativePanel+GraphNode
+	 * @property
+	 */
+	public $AlignVerticalCenterWith;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_Measured(){}

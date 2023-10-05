@@ -35,6 +35,46 @@ class ServerCompositionSimpleBrush extends \Avalonia\Rendering\Composition\Serve
 	\Avalonia\Media\IBrush
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfOpacityProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfTransformOriginProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfTransformProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @uses ServerCompositionSimpleBrushMethodsOverride::get_Transform_1 ()
 	 * @uses ServerCompositionSimpleBrushMethodsOverride::get_Transform_2 ()
 	 * @return mixed|@override

@@ -125,6 +125,16 @@ class CalendarBlackoutDatesCollection extends \System\Collections\ObjectModel\Ob
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Controls\CalendarDateRange
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function AddDatesInPast(){}

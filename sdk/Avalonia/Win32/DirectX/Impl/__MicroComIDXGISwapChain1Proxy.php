@@ -33,6 +33,76 @@ class __MicroComIDXGISwapChain1Proxy extends \Avalonia\Win32\DirectX\Impl\__Micr
 	\Avalonia\Win32\DirectX\IDXGISwapChain1
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_DESC1
+	 * @property
+	 */
+	public readonly $Desc1;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_FULLSCREEN_DESC
+	 * @property
+	 */
+	public readonly $FullscreenDesc;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Hwnd;
+	/**
+	 * @var \Avalonia\Win32\DirectX\IDXGIOutput
+	 * @property
+	 */
+	public readonly $RestrictToOutput;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_RGBA
+	 * @property
+	 */
+	public readonly $BackgroundColor;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_MODE_ROTATION
+	 * @property
+	 */
+	public readonly $Rotation;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_DESC
+	 * @property
+	 */
+	public readonly $Desc;
+	/**
+	 * @var \Avalonia\Win32\DirectX\IDXGIOutput
+	 * @property
+	 */
+	public readonly $ContainingOutput;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_FRAME_STATISTICS
+	 * @property
+	 */
+	public readonly $FrameStatistics;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $LastPresentCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_DESC1
 	 */
 	public  function get_Desc1(){}

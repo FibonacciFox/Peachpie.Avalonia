@@ -7,6 +7,31 @@ class X11Framebuffer extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Address;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RowBytes;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

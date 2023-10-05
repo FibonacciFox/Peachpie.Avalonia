@@ -5,6 +5,26 @@ namespace Avalonia\Win32\Interop\Automation;
 class UiaCoreTypesApi extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $UIA_E_ELEMENTNOTENABLED;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $UIA_E_ELEMENTNOTAVAILABLE;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $UIA_E_NOCLICKABLEPOINT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $UIA_E_PROXYASSEMBLYNOTLOADED;
+	/**
 	 * @return \System\Boolean
 	 */
 	protected static function get_IsNetComInteropAvailable(){}

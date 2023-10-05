@@ -30,6 +30,41 @@ class __MicroComIGraphicsEffectD2D1InteropProxy extends \MicroCom\Runtime\MicroC
 	\Avalonia\Win32\WinRT\IGraphicsEffectD2D1Interop
 {
 	/**
+	 * @var \System\Guid
+	 * @property
+	 */
+	public readonly $EffectId;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $PropertyCount;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $SourceCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Guid
 	 */
 	public  function get_EffectId(){}

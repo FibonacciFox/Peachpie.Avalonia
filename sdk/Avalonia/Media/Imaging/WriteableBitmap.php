@@ -31,6 +31,26 @@ class WriteableBitmap extends \Avalonia\Media\Imaging\Bitmap implements
 	\Avalonia\Media\IImageBrushSource
 {
 	/**
+	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]
+	 * @property
+	 */
+	public readonly $Format;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
 	 * @return \Avalonia\Platform\ILockedFramebuffer
 	 */
 	public  function Lock(){}

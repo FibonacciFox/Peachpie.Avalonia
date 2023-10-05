@@ -5,6 +5,11 @@ namespace Avalonia\Media\TextFormatting;
 class BidiReorderer extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Media\TextFormatting\BidiReorderer
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\BidiReorderer
 	 */
 	public static function get_Instance(){}

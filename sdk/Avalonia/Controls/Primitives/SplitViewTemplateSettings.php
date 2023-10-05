@@ -137,6 +137,31 @@ class SplitViewTemplateSettings extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $ClosedPaneWidthProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\GridLength]
+	 * @field
+	 */
+	public readonly $PaneColumnGridLengthProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ClosedPaneWidth;
+	/**
+	 * @var \Avalonia\Controls\GridLength
+	 * @property
+	 */
+	public $PaneColumnGridLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_ClosedPaneWidth(){}

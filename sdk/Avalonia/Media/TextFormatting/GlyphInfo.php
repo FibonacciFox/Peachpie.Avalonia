@@ -20,6 +20,26 @@ class GlyphInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $GlyphIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $GlyphCluster;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $GlyphAdvance;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $GlyphOffset;
+	/**
 	 * @return \System\Collections\Generic\Comparer_1
 	 */
 	protected static function get_ClusterAscendingComparer(){}

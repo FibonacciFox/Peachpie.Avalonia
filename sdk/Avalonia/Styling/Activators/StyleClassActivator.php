@@ -8,6 +8,11 @@ class StyleClassActivator extends \Avalonia\Styling\Activators\StyleActivatorBas
 	\Avalonia\Controls\IClassesChangedListener
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $classes
 	 * @param \System\Collections\Generic\IList_1 $toMatch
 	 * @return \System\Boolean

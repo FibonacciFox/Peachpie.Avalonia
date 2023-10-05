@@ -5,6 +5,31 @@ namespace Avalonia;
 class MacOSPlatformOptions extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ShowInDock;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DisableDefaultApplicationMenuItems;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DisableNativeMenus;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DisableSetProcessName;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $DisableAvaloniaAppDelegate;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_ShowInDock(){}

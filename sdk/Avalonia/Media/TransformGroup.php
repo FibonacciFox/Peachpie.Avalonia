@@ -142,6 +142,31 @@ class TransformGroup extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Transforms]
+	 * @field
+	 */
+	public readonly $ChildrenProperty;
+	/**
+	 * @var \Avalonia\Media\Transforms
+	 * @property
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \System\EventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

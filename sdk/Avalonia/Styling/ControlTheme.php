@@ -156,6 +156,51 @@ class ControlTheme extends \Avalonia\Styling\StyleBase implements
 	\Avalonia\Controls\IResourceProvider
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $TargetType;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $BasedOn;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Styling\IStyle]
+	 * @property
+	 */
+	public readonly $Children;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Styling\SetterBase]
+	 * @property
+	 */
+	public readonly $Setters;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Animation\IAnimation]
+	 * @property
+	 */
+	public readonly $Animations;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_TargetType(){}

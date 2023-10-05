@@ -31,6 +31,56 @@ class __MicroComIAvnWindowProxy extends \Avalonia\Native\Interop\Impl\__MicroCom
 	\Avalonia\Native\Interop\IAvnWindow
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnWindowState
+	 * @property
+	 */
+	public readonly $WindowState;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ExtendTitleBarHeight;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnSize
+	 * @property
+	 */
+	public readonly $ClientSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnPoint
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnTextInputMethod
+	 * @property
+	 */
+	public readonly $InputMethod;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Int32|int $enable
 	 * @return \System\Void|void
 	 */

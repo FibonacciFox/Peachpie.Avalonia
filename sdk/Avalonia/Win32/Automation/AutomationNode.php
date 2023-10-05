@@ -71,6 +71,31 @@ class AutomationNode extends \System\MarshalByRefObject implements
 	\Avalonia\Win32\Interop\Automation\IValueProvider
 {
 	/**
+	 * @var \Avalonia\Automation\Peers\AutomationPeer
+	 * @property
+	 */
+	public $Peer;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $BoundingRectangle;
+	/**
+	 * @var \Avalonia\Win32\Interop\Automation\IRawElementProviderFragmentRoot
+	 * @property
+	 */
+	public readonly $FragmentRoot;
+	/**
+	 * @var \Avalonia\Win32\Interop\Automation\IRawElementProviderSimple
+	 * @property
+	 */
+	public readonly $HostRawElementProvider;
+	/**
+	 * @var \Avalonia\Win32\Interop\Automation\ProviderOptions
+	 * @property
+	 */
+	public readonly $ProviderOptions;
+	/**
 	 * @return \Avalonia\Automation\Peers\AutomationPeer
 	 */
 	public  function get_Peer(){}

@@ -6,6 +6,91 @@ class TextLine extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\TextFormatting\TextRun]
+	 * @property
+	 */
+	public readonly $TextRuns;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $FirstTextSourceIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextLineBreak
+	 * @property
+	 */
+	public readonly $TextLineBreak;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Baseline;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Extent;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasCollapsed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasOverflowed;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Height;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $NewLineLength;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangAfter;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangLeading;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangTrailing;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Start;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TrailingWhitespaceLength;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $WidthIncludingTrailingWhitespace;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_TextRuns(){}

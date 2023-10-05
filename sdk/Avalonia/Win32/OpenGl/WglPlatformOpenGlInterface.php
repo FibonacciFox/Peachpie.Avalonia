@@ -20,6 +20,16 @@ class WglPlatformOpenGlInterface extends \System\Object implements
 	\Avalonia\Platform\IPlatformGraphics
 {
 	/**
+	 * @var \Avalonia\Win32\OpenGl\WglContext
+	 * @property
+	 */
+	public readonly $PrimaryContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UsesSharedContext;
+	/**
 	 * @return \Avalonia\Win32\OpenGl\WglContext
 	 */
 	public  function get_PrimaryContext(){}

@@ -116,6 +116,31 @@ class AvaloniaDictionary_2 extends \System\Object implements
 	\System\Collections\ICollection
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Collections\Generic\ICollection_1[TKey]
+	 * @property
+	 */
+	public readonly $Keys;
+	/**
+	 * @var \System\Collections\Generic\ICollection_1[TValue]
+	 * @property
+	 */
+	public readonly $Values;
+	/**
+	 * @var \TValue
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Collections\Specialized\NotifyCollectionChangedEventHandler $value
 	 * @return \System\Void|void
 	 */

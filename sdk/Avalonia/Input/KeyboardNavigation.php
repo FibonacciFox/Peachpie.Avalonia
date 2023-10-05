@@ -5,6 +5,26 @@ namespace Avalonia\Input;
 class KeyboardNavigation extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $TabIndexProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Input\KeyboardNavigationMode]
+	 * @field
+	 */
+	public readonly $TabNavigationProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Input\IInputElement]
+	 * @field
+	 */
+	public readonly $TabOnceActiveElementProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsTabStopProperty;
+	/**
 	 * @param \Avalonia\Input\IInputElement $element
 	 * @return \System\Int32|int
 	 */

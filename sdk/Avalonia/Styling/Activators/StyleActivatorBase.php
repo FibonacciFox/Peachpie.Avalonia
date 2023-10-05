@@ -7,6 +7,11 @@ class StyleActivatorBase extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function GetIsActive(){}

@@ -59,6 +59,141 @@ trait UnmanagedMethodsMethodsOverride
 class UnmanagedMethods extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	public readonly $DPI_AWARENESS_CONTEXT_UNAWARE;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	public readonly $DPI_AWARENESS_CONTEXT_SYSTEM_AWARE;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	public readonly $DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	public readonly $DPI_AWARENESS_CONTEXT_PER_MONITOR_AWARE_V2;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CW_USEDEFAULT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $SizeOf_BITMAPINFOHEADER;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $WAIT_FAILED;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $SORT_DEFAULT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $LANG_ZH;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $LANG_JA;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $LANG_KO;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CFS_FORCE_POSITION;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CFS_CANDIDATEPOS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CFS_EXCLUDE;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CFS_POINT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CFS_RECT;
+	/**
+	 * @var \System\Int64
+	 * @field
+	 */
+	public $ISC_SHOWUICANDIDATEWINDOW;
+	/**
+	 * @var \System\Int64
+	 * @field
+	 */
+	public $ISC_SHOWUICOMPOSITIONWINDOW;
+	/**
+	 * @var \System\Int64
+	 * @field
+	 */
+	public $ISC_SHOWUIGUIDELINE;
+	/**
+	 * @var \System\Int64
+	 * @field
+	 */
+	public $ISC_SHOWUIALLCANDIDATEWINDOW;
+	/**
+	 * @var \System\Int64
+	 * @field
+	 */
+	public $ISC_SHOWUIALL;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $NI_COMPOSITIONSTR;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CPS_COMPLETE;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CPS_CONVERT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CPS_REVERT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $CPS_CANCEL;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $ShCoreAvailable;
+	/**
 	 * @param \System\UInt32 $cbSize
 	 * @param \Avalonia\Win32\Interop\MOUSEMOVEPOINT* $pointsIn
 	 * @param \Avalonia\Win32\Interop\MOUSEMOVEPOINT* $pointsBufferOut

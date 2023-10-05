@@ -7,6 +7,16 @@ class RenderDataPushNode extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]
+	 * @field
+	 */
+	public $Children;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @param \Avalonia\Rendering\Composition\Drawing\Nodes\RenderDataNodeRenderContext& $context
 	 * @return \System\Void|void
 	 */

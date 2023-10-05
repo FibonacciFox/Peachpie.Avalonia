@@ -21,6 +21,16 @@ class BatchStreamSegment_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \TData
+	 * @property
+	 */
+	public $Data;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ElementCount;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Transport\TData
 	 */
 	public  function get_Data(){}

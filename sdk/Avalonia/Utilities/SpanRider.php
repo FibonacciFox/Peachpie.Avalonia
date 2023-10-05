@@ -19,6 +19,36 @@ trait SpanRiderMethodsOverride
 class SpanRider extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $CurrentSpanStart;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Length;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $CurrentPosition;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $CurrentElement;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $CurrentSpanIndex;
+	/**
+	 * @var \Avalonia\Utilities\SpanPosition
+	 * @property
+	 */
+	public readonly $SpanPosition;
+	/**
 	 * @uses SpanRiderMethodsOverride::At_1 ($cp)
 	 * @uses SpanRiderMethodsOverride::At_2 ($latestPosition, $cp)
 	 * @return mixed|@override

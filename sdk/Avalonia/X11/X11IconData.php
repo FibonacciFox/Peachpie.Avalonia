@@ -7,6 +7,11 @@ class X11IconData extends \System\Object implements
 	\Avalonia\Controls\Platform\Surfaces\IFramebufferPlatformSurface
 {
 	/**
+	 * @var \System\UIntPtr[]
+	 * @property
+	 */
+	public readonly $Data;
+	/**
 	 * @return \System\UIntPtr[]
 	 */
 	public  function get_Data(){}

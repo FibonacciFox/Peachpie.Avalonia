@@ -11,4 +11,39 @@ class BlendEffect extends \Avalonia\Win32\WinRT\Composition\WinUIEffectBase impl
 	\Avalonia\Win32\WinRT\IGraphicsEffectSource,
 	\Avalonia\Win32\WinRT\IGraphicsEffectD2D1Interop
 {
+	/**
+	 * @var \System\Guid
+	 * @property
+	 */
+	public readonly $EffectId;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $PropertyCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $SourceCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
 }

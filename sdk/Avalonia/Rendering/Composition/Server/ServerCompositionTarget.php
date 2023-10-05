@@ -45,6 +45,101 @@ class ServerCompositionTarget extends \Avalonia\Rendering\Composition\Server\Ser
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfRootProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfIsEnabledProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfDebugOverlaysProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfLastLayoutPassTimingProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfScalingProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfSizeProperty;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Id;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $Revision;
+	/**
+	 * @var \Avalonia\Rendering\Composition\ICompositionTargetDebugEvents
+	 * @property
+	 */
+	public $DebugEvents;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ReadbackIndices
+	 * @property
+	 */
+	public readonly $Readback;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $RenderedVisuals;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositionVisual
+	 * @property
+	 */
+	public $Root;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \Avalonia\Rendering\RendererDebugOverlays
+	 * @property
+	 */
+	public $DebugOverlays;
+	/**
+	 * @var \Avalonia\Rendering\LayoutPassTiming
+	 * @property
+	 */
+	public $LastLayoutPassTiming;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Scaling;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Int64|int
 	 */
 	public  function get_Id(){}

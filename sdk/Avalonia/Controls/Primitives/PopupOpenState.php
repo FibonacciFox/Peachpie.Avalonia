@@ -6,6 +6,21 @@ class PopupOpenState extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Controls\TopLevel
+	 * @property
+	 */
+	public readonly $TopLevel;
+	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public $PlacementTarget;
+	/**
+	 * @var \Avalonia\Controls\Primitives\IPopupHost
+	 * @property
+	 */
+	public readonly $PopupHost;
+	/**
 	 * @return \Avalonia\Controls\TopLevel
 	 */
 	public  function get_TopLevel(){}

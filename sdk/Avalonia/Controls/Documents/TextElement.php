@@ -172,6 +172,141 @@ class TextElement extends \Avalonia\StyledElement implements
 	\Avalonia\INamed
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $BackgroundProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\FontFamily]
+	 * @field
+	 */
+	public readonly $FontFamilyProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $FontSizeProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\FontStyle]
+	 * @field
+	 */
+	public readonly $FontStyleProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\FontWeight]
+	 * @field
+	 */
+	public readonly $FontWeightProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\FontStretch]
+	 * @field
+	 */
+	public readonly $FontStretchProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $ForegroundProperty;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Background;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public $FontFamily;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $FontSize;
+	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public $FontStyle;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public $FontWeight;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public $FontStretch;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Foreground;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_Background(){}

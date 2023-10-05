@@ -20,6 +20,46 @@ class GlyphRunMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Baseline;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $WidthIncludingTrailingWhitespace;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TrailingWhitespaceLength;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $NewLineLength;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $FirstCluster;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $LastCluster;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Baseline(){}

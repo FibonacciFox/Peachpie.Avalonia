@@ -6,6 +6,11 @@ class MenuScrollingVisibilityConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IMultiValueConverter
 {
 	/**
+	 * @var \Avalonia\Controls\Converters\MenuScrollingVisibilityConverter
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Collections\Generic\IList_1 $values
 	 * @param \System\Type $targetType
 	 * @param \System\Object|object $parameter

@@ -26,6 +26,16 @@ class SimpleServerRenderResource extends \Avalonia\Rendering\Composition\Server\
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsDisposed(){}

@@ -31,6 +31,51 @@ class __MicroComICompositionRoundedRectangleGeometryProxy extends \Avalonia\Win3
 	\Avalonia\Win32\WinRT\ICompositionRoundedRectangleGeometry
 {
 	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $CornerRadius;
+	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Numerics\Vector2
 	 */
 	public  function get_CornerRadius(){}

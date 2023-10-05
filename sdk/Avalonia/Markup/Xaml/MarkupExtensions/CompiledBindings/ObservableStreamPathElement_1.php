@@ -8,6 +8,11 @@ class ObservableStreamPathElement_1 extends \System\Object implements
 	\Avalonia\Markup\Xaml\MarkupExtensions\CompiledBindings\ICompiledBindingPathElement
 {
 	/**
+	 * @var \Avalonia\Markup\Xaml\MarkupExtensions\CompiledBindings\ObservableStreamPathElement_1[T]
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Data\Core\Plugins\IStreamPlugin
 	 */
 	public  function CreatePlugin(){}

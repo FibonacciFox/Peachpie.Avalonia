@@ -19,6 +19,31 @@ trait ExpressionNodeMethodsOverride
 class ExpressionNode extends \System\Object
 {
 	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @field
+	 */
+	protected readonly $UnsetReference;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @field
+	 */
+	protected readonly $NullReference;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \Avalonia\Data\Core\ExpressionNode
+	 * @property
+	 */
+	public $Next;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @property
+	 */
+	public $Target;
+	/**
 	 * @return \System\WeakReference_1
 	 */
 	protected  function get_LastValue(){}

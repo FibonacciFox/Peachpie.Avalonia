@@ -37,6 +37,16 @@ class ImmediateDrawingContext extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	/**
+	 * @var \Avalonia\Platform\IDrawingContextImpl
+	 * @property
+	 */
+	public readonly $PlatformImpl;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $CurrentTransform;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

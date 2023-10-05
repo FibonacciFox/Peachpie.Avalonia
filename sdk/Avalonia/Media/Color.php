@@ -60,6 +60,26 @@ class Color extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Byte
+	 * @property
+	 */
+	public readonly $A;
+	/**
+	 * @var \System\Byte
+	 * @property
+	 */
+	public readonly $R;
+	/**
+	 * @var \System\Byte
+	 * @property
+	 */
+	public readonly $G;
+	/**
+	 * @var \System\Byte
+	 * @property
+	 */
+	public readonly $B;
+	/**
 	 * @return \System\Byte
 	 */
 	public  function get_A(){}

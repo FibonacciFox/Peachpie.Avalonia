@@ -23,6 +23,11 @@ class ImmutableBlurEffect extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Radius;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Radius(){}

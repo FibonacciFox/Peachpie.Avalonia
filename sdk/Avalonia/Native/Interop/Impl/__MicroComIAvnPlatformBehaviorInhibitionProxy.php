@@ -30,6 +30,26 @@ class __MicroComIAvnPlatformBehaviorInhibitionProxy extends \MicroCom\Runtime\Mi
 	\Avalonia\Native\Interop\IAvnPlatformBehaviorInhibition
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Int32|int $inhibitAppSleep
 	 * @param \System\String|string $reason
 	 * @return \System\Void|void

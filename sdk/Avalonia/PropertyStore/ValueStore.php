@@ -59,6 +59,26 @@ trait ValueStoreMethodsOverride
 class ValueStore extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\PropertyStore\ValueStore
+	 * @property
+	 */
+	public $InheritanceAncestor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEvaluating;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\PropertyStore\ValueFrame]
+	 * @property
+	 */
+	public readonly $Frames;
+	/**
 	 * @return \Avalonia\AvaloniaObject
 	 */
 	public  function get_Owner(){}

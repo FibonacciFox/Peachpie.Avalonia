@@ -10,6 +10,16 @@ class DndCallback extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnDndResultCallback
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \Avalonia\Native\Interop\AvnDragDropEffects $effect
 	 * @return \System\Void|void
 	 */

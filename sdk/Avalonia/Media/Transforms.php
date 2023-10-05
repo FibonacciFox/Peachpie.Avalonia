@@ -132,6 +132,31 @@ class Transforms extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Media\Transform]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses TransformsMethodsOverride::get_Count_1 ()
 	 * @uses TransformsMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

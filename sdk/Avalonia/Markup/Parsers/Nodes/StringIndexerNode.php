@@ -37,6 +37,31 @@ class StringIndexerNode extends \Avalonia\Data\Core\IndexerNodeBase implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \System\Collections\Generic\IList_1[System\String]
+	 * @property
+	 */
+	public readonly $Arguments;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \Avalonia\Data\Core\ExpressionNode
+	 * @property
+	 */
+	public $Next;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @property
+	 */
+	public $Target;
+	/**
 	 * @uses StringIndexerNodeMethodsOverride::SetValueInArray_1 ($array, $value)
 	 * @uses StringIndexerNodeMethodsOverride::SetValueInArray_2 ($array, $indices, $value)
 	 * @return mixed|@override

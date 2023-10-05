@@ -147,6 +147,11 @@ trait XLibMethodsOverride
 class XLib extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $XiEventMaskLen;
+	/**
 	 * @param \System\IntPtr $display
 	 * @return \System\IntPtr
 	 */

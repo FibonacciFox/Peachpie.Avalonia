@@ -5,6 +5,26 @@ namespace Avalonia\Platform\Storage;
 class FilePickerOpenOptions extends \Avalonia\Platform\Storage\PickerOptions
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AllowMultiple;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Platform\Storage\FilePickerFileType]
+	 * @property
+	 */
+	public $FileTypeFilter;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
+	 * @var \Avalonia\Platform\Storage\IStorageFolder
+	 * @property
+	 */
+	public $SuggestedStartLocation;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_AllowMultiple(){}

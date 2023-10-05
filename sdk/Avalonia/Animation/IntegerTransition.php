@@ -162,6 +162,31 @@ class IntegerTransition extends \Avalonia\Animation\Transition_1 implements
 	\Avalonia\Animation\ITransition
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Delay;
+	/**
+	 * @var \Avalonia\Animation\Easings\Easing
+	 * @property
+	 */
+	public $Easing;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses IntegerTransitionMethodsOverride::get_Property_1 ()
 	 * @uses IntegerTransitionMethodsOverride::get_Property_2 ()
 	 * @return mixed|@override

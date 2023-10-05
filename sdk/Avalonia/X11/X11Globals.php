@@ -5,6 +5,16 @@ namespace Avalonia\X11;
 class X11Globals extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $WmName;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsCompositionEnabled;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_WmName(){}

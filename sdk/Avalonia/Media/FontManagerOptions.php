@@ -5,6 +5,16 @@ namespace Avalonia\Media;
 class FontManagerOptions extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $DefaultFamilyName;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\FontFallback]
+	 * @property
+	 */
+	public $FontFallbacks;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_DefaultFamilyName(){}

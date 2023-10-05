@@ -6,6 +6,21 @@ class SecondObserver extends \System\Object implements
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasValue;
+	/**
+	 * @var \TSecond
+	 * @property
+	 */
+	public $Value;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Done;
+	/**
 	 * @param \Avalonia\Reactive\Operators\FirstObserver $other
 	 * @return \System\Void|void
 	 */

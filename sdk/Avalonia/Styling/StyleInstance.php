@@ -42,6 +42,41 @@ class StyleInstance extends \Avalonia\PropertyStore\ValueFrame implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasActivator;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public readonly $Source;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $EntryCount;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\PropertyStore\ValueStore
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public readonly $Priority;
+	/**
+	 * @var \Avalonia\PropertyStore\FramePriority
+	 * @property
+	 */
+	public readonly $FramePriority;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasActivator(){}

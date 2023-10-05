@@ -59,6 +59,26 @@ class ItemsSourceView_1 extends \Avalonia\Controls\ItemsSourceView implements
 	\System\Collections\Generic\IEnumerable_1
 {
 	/**
+	 * @var \Avalonia\Controls\ItemsSourceView_1[T]
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Collections\IList
+	 * @property
+	 */
+	public readonly $Source;
+	/**
 	 * @return \Avalonia\Controls\ItemsSourceView_1
 	 */
 	public static function get_Empty(){}

@@ -7,6 +7,21 @@ class AngleExternalMemoryD3D11Texture2D extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TextureId;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $InternalFormat;
+	/**
+	 * @var \Avalonia\Platform\PlatformGraphicsExternalImageProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

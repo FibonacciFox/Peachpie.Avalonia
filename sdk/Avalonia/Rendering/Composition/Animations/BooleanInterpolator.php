@@ -6,6 +6,11 @@ class BooleanInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\BooleanInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Boolean $from
 	 * @param \System\Boolean $to
 	 * @param \System\Single $progress

@@ -30,6 +30,36 @@ class __MicroComIAvnStringProxy extends \MicroCom\Runtime\MicroComProxyBase impl
 	\Avalonia\Native\Interop\IAvnString
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $String;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $Bytes;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_String(){}

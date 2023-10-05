@@ -133,6 +133,36 @@ class DefinitionList_1 extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected $IsDirty;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[T]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @return \Avalonia\Controls\Grid
 	 */
 	protected  function get_Parent(){}

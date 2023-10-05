@@ -30,6 +30,31 @@ class __MicroComICompositionGraphicsDeviceInteropProxy extends \MicroCom\Runtime
 	\Avalonia\Win32\WinRT\ICompositionGraphicsDeviceInterop
 {
 	/**
+	 * @var \MicroCom\Runtime\IUnknown
+	 * @property
+	 */
+	public readonly $RenderingDevice;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \MicroCom\Runtime\IUnknown
 	 */
 	public  function get_RenderingDevice(){}

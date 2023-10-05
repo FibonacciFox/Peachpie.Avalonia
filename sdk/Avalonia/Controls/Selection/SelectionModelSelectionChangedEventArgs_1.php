@@ -28,6 +28,26 @@ trait SelectionModelSelectionChangedEventArgs_1MethodsOverride
 class SelectionModelSelectionChangedEventArgs_1 extends \Avalonia\Controls\Selection\SelectionModelSelectionChangedEventArgs
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Int32]
+	 * @property
+	 */
+	public readonly $DeselectedIndexes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Int32]
+	 * @property
+	 */
+	public readonly $SelectedIndexes;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[T]
+	 * @property
+	 */
+	public readonly $DeselectedItems;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[T]
+	 * @property
+	 */
+	public readonly $SelectedItems;
+	/**
 	 * @uses SelectionModelSelectionChangedEventArgs_1MethodsOverride::get_DeselectedItems_1 ()
 	 * @uses SelectionModelSelectionChangedEventArgs_1MethodsOverride::get_DeselectedItems_2 ()
 	 * @return mixed|@override

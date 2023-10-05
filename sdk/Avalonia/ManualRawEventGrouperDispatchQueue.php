@@ -6,6 +6,11 @@ class ManualRawEventGrouperDispatchQueue extends \System\Object implements
 	\Avalonia\IRawEventGrouperDispatchQueue
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasJobs;
+	/**
 	 * @param \Avalonia\Input\Raw\RawInputEventArgs $args
 	 * @param \System\Action_1 $handler
 	 * @return \System\Void|void

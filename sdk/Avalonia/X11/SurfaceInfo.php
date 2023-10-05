@@ -6,6 +6,21 @@ class SurfaceInfo extends \System\Object implements
 	\Avalonia\OpenGL\Egl\IEglWindowGlPlatformSurfaceInfo
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Handle(){}

@@ -6,6 +6,31 @@ class MarginMultiplierConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Indent;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Left;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Top;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Right;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Bottom;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Indent(){}

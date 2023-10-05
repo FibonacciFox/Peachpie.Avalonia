@@ -5,6 +5,21 @@ namespace Avalonia\Dialogs\Internal;
 class ManagedFileChooserNavigationItem extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $DisplayName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Path;
+	/**
+	 * @var \Avalonia\Dialogs\Internal\ManagedFileChooserItemType
+	 * @property
+	 */
+	public $ItemType;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_DisplayName(){}

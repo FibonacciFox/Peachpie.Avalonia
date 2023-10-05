@@ -24,6 +24,16 @@ class WindowAutomationPeer extends \Avalonia\Automation\Peers\WindowBaseAutomati
 	\Avalonia\Automation\Provider\IRootProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Window
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Platform\ITopLevelImpl
+	 * @property
+	 */
+	public readonly $PlatformImpl;
+	/**
 	 * @uses WindowAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses WindowAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @uses WindowAutomationPeerMethodsOverride::get_Owner_3 ()

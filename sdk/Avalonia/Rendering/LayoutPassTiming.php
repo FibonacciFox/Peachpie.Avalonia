@@ -20,6 +20,16 @@ class LayoutPassTiming extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $PassCounter;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Elapsed;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_PassCounter(){}

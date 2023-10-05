@@ -5,6 +5,11 @@ namespace Avalonia\Controls;
 class SystemDialog extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Title(){}

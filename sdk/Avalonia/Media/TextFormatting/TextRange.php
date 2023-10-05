@@ -20,6 +20,21 @@ class TextRange extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Start;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $End;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Start(){}

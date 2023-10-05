@@ -5,6 +5,11 @@ namespace Avalonia\Controls\Utils;
 class CollectionUtils extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Specialized\NotifyCollectionChangedEventArgs
+	 * @property
+	 */
+	public readonly $ResetEventArgs;
+	/**
 	 * @return \System\Collections\Specialized\NotifyCollectionChangedEventArgs
 	 */
 	public static function get_ResetEventArgs(){}

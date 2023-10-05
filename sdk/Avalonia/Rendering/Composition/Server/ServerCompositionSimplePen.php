@@ -35,6 +35,76 @@ class ServerCompositionSimplePen extends \Avalonia\Rendering\Composition\Server\
 	\Avalonia\Media\IPen
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfBrushProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfDashStyleProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfLineCapProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfLineJoinProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfMiterLimitProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfThicknessProperty;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Brush;
+	/**
+	 * @var \Avalonia\Media\Immutable\ImmutableDashStyle
+	 * @property
+	 */
+	public $DashStyle;
+	/**
+	 * @var \Avalonia\Media\PenLineCap
+	 * @property
+	 */
+	public $LineCap;
+	/**
+	 * @var \Avalonia\Media\PenLineJoin
+	 * @property
+	 */
+	public $LineJoin;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MiterLimit;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Thickness;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @uses ServerCompositionSimplePenMethodsOverride::get_DashStyle_1 ()
 	 * @uses ServerCompositionSimplePenMethodsOverride::get_DashStyle_2 ()
 	 * @return mixed|@override

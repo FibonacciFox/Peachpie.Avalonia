@@ -5,6 +5,11 @@ namespace Avalonia\Media\TextFormatting;
 class TextRunEnumerator extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRun
+	 * @property
+	 */
+	public $Current;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\TextRun
 	 */
 	public  function get_Current(){}

@@ -7,6 +7,26 @@ class Session extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $D3D11Texture2D;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

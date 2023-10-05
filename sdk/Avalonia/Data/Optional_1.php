@@ -37,6 +37,21 @@ class Optional_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Data\Optional_1[T]
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasValue(){}

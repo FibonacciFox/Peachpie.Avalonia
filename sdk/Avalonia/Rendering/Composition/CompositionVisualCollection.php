@@ -53,6 +53,41 @@ class CompositionVisualCollection extends \Avalonia\Rendering\Composition\Compos
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \Avalonia\Rendering\Composition\CompositionVisual
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @param \Avalonia\Rendering\Composition\CompositionVisual $newChild
 	 * @param \Avalonia\Rendering\Composition\CompositionVisual $sibling
 	 * @return \System\Void|void

@@ -21,6 +21,51 @@ class SelectingItemsControlAutomationPeer extends \Avalonia\Automation\Peers\Ite
 	\Avalonia\Automation\Provider\ISelectionProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSelectMultiple;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSelectionRequired;
+	/**
+	 * @var \Avalonia\Controls\ItemsControl
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HorizontallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalViewSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $VerticallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalViewSize;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_CanSelectMultiple(){}

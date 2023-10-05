@@ -31,6 +31,31 @@ class __MicroComIDXGIFactoryProxy extends \Avalonia\Win32\DirectX\Impl\__MicroCo
 	\Avalonia\Win32\DirectX\IDXGIFactory
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $WindowAssociation;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt16 $Adapter
 	 * @param \System\Void* $ppAdapter
 	 * @return \System\Int32|int

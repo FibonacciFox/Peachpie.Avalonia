@@ -5,6 +5,21 @@ namespace Avalonia\Controls\Selection;
 class CollectionChangeState extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ShiftIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ShiftDelta;
+	/**
+	 * @var \System\Collections\Generic\List_1[T]
+	 * @property
+	 */
+	public $RemovedItems;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_ShiftIndex(){}

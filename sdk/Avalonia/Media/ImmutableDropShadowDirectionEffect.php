@@ -24,6 +24,41 @@ class ImmutableDropShadowDirectionEffect extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OffsetX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OffsetY;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Direction;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ShadowDepth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $BlurRadius;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public readonly $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Opacity;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_OffsetX(){}

@@ -20,6 +20,76 @@ class PointerPointProperties extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLeftButtonPressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsMiddleButtonPressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsRightButtonPressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsXButton1Pressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsXButton2Pressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsBarrelButtonPressed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEraser;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInverted;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $Twist;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $Pressure;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $XTilt;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $YTilt;
+	/**
+	 * @var \Avalonia\Input\PointerUpdateKind
+	 * @property
+	 */
+	public readonly $PointerUpdateKind;
+	/**
+	 * @var \Avalonia\Input\PointerPointProperties
+	 * @property
+	 */
+	public readonly $None;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsLeftButtonPressed(){}

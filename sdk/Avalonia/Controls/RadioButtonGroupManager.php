@@ -5,6 +5,11 @@ namespace Avalonia\Controls;
 class RadioButtonGroupManager extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Controls\RadioButton+RadioButtonGroupManager
+	 * @field
+	 */
+	public readonly $Default;
+	/**
 	 * @param \Avalonia\Rendering\IRenderRoot $root
 	 * @return \Avalonia\Controls\RadioButtonGroupManager
 	 */

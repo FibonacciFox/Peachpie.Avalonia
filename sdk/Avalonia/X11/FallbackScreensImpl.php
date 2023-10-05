@@ -6,6 +6,11 @@ class FallbackScreensImpl extends \System\Object implements
 	\Avalonia\X11\IX11Screens
 {
 	/**
+	 * @var \Avalonia\X11\X11Screen[]
+	 * @property
+	 */
+	public readonly $Screens;
+	/**
 	 * @return \Avalonia\X11\X11Screen[]
 	 */
 	public  function get_Screens(){}

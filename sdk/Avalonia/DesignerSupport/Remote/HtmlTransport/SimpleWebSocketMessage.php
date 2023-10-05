@@ -5,6 +5,16 @@ namespace Avalonia\DesignerSupport\Remote\HtmlTransport;
 class SimpleWebSocketMessage extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsText;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public $Data;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsText(){}

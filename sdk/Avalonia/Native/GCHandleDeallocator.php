@@ -10,6 +10,16 @@ class GCHandleDeallocator extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnGCHandleDeallocatorCallback
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \System\IntPtr $handle
 	 * @return \System\Void|void
 	 */

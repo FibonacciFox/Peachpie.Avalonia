@@ -7,6 +7,26 @@ class SkiaMetalRenderSession extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\GRContext
+	 * @property
+	 */
+	public readonly $GrContext;
+	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $SkSurface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ScaleFactor;
+	/**
+	 * @var \SkiaSharp\GRSurfaceOrigin
+	 * @property
+	 */
+	public readonly $SurfaceOrigin;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

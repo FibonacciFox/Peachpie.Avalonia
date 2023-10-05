@@ -26,6 +26,16 @@ class InlineDictionary_2 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \TValue
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasEntries;
+	/**
 	 * @param \Avalonia\Utilities\TKey $key
 	 * @param \Avalonia\Utilities\TValue $value
 	 * @param \System\Boolean $overwrite

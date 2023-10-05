@@ -30,6 +30,26 @@ class __MicroComIDropSourceProxy extends \MicroCom\Runtime\MicroComProxyBase imp
 	\Avalonia\Win32\Win32Com\IDropSource
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Int32|int $fEscapePressed
 	 * @param \System\Int32|int $grfKeyState
 	 * @return \System\Int32|int

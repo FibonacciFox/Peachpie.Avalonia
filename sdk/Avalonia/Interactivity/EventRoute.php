@@ -6,6 +6,11 @@ class EventRoute extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasHandlers;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasHandlers(){}

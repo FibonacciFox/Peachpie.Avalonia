@@ -5,6 +5,16 @@ namespace Avalonia\Win32;
 class AngleOptions extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\OpenGL\GlVersion]
+	 * @property
+	 */
+	public $GlProfiles;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Win32\AngleOptions+PlatformApi]
+	 * @property
+	 */
+	public $AllowedPlatformApis;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_GlProfiles(){}

@@ -5,6 +5,31 @@ namespace Avalonia\Media;
 class FontManager extends \System\Object
 {
 	/**
+	 * @var \System\Uri
+	 * @field
+	 */
+	protected $SystemFontsKey;
+	/**
+	 * @var \System\String
+	 * @field
+	 */
+	public $FontCollectionScheme;
+	/**
+	 * @var \Avalonia\Media\FontManager
+	 * @property
+	 */
+	public readonly $Current;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public readonly $DefaultFontFamily;
+	/**
+	 * @var \Avalonia\Media\Fonts\IFontCollection
+	 * @property
+	 */
+	public readonly $SystemFonts;
+	/**
 	 * @return \Avalonia\Media\FontManager
 	 */
 	public static function get_Current(){}

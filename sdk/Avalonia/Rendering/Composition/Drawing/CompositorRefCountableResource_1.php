@@ -6,6 +6,16 @@ namespace Avalonia\Rendering\Composition\Drawing;
 class CompositorRefCountableResource_1 extends \System\Object
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Value;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $RefCount;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Drawing\T
 	 */
 	public  function get_Value(){}

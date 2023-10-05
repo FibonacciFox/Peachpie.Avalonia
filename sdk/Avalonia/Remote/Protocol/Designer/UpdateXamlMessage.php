@@ -5,6 +5,21 @@ namespace Avalonia\Remote\Protocol\Designer;
 class UpdateXamlMessage extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Xaml;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $AssemblyPath;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $XamlFileProjectPath;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Xaml(){}

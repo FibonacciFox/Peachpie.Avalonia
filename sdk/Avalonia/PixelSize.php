@@ -52,6 +52,26 @@ class PixelSize extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\PixelSize
+	 * @field
+	 */
+	public readonly $Empty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $AspectRatio;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Height;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_AspectRatio(){}

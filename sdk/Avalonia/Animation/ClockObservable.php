@@ -6,6 +6,16 @@ class ClockObservable extends \Avalonia\Reactive\LightweightObservableBase_1 imp
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasSubscriptions;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasSubscriptions(){}

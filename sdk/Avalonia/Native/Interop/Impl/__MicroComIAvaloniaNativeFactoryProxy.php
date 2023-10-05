@@ -30,6 +30,31 @@ class __MicroComIAvaloniaNativeFactoryProxy extends \MicroCom\Runtime\MicroComPr
 	\Avalonia\Native\Interop\IAvaloniaNativeFactory
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnMacOptions
+	 * @property
+	 */
+	public readonly $MacOptions;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnGCHandleDeallocatorCallback $deallocator
 	 * @param \Avalonia\Native\Interop\IAvnApplicationEvents $appCb
 	 * @param \Avalonia\Native\Interop\IAvnDispatcher $dispatcher

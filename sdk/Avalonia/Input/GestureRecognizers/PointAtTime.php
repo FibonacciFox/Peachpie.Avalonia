@@ -20,6 +20,21 @@ class PointAtTime extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Valid;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $Point;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Time;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_Valid(){}

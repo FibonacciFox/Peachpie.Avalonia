@@ -132,6 +132,31 @@ class TextDecorationCollection extends \Avalonia\Collections\AvaloniaList_1 impl
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Media\TextDecoration]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Media\TextDecoration
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \System\String|string $s
 	 * @return \Avalonia\Media\TextDecorationCollection
 	 */

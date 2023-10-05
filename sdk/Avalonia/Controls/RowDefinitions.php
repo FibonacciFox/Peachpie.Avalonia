@@ -132,6 +132,36 @@ class RowDefinitions extends \Avalonia\Controls\DefinitionList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected $IsDirty;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\RowDefinition]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Controls\RowDefinition
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \System\String|string $s
 	 * @return \Avalonia\Controls\RowDefinitions
 	 */

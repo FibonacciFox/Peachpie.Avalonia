@@ -30,6 +30,41 @@ class __MicroComIAvnGlContextProxy extends \MicroCom\Runtime\MicroComProxyBase i
 	\Avalonia\Native\Interop\IAvnGlContext
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SampleCount;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $StencilSize;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativeHandle;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \MicroCom\Runtime\IUnknown
 	 */
 	public  function MakeCurrent(){}

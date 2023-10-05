@@ -22,6 +22,26 @@ class AngleExternalMemoryD3D11ExportedTexture2D extends \Avalonia\Win32\OpenGl\A
 	\Avalonia\OpenGL\IGlExportableExternalImageTexture
 {
 	/**
+	 * @var \Avalonia\Platform\IPlatformHandle
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TextureId;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $InternalFormat;
+	/**
+	 * @var \Avalonia\Platform\PlatformGraphicsExternalImageProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
 	 * @uses AngleExternalMemoryD3D11ExportedTexture2DMethodsOverride::GetHandle_1 ($texture2D)
 	 * @uses AngleExternalMemoryD3D11ExportedTexture2DMethodsOverride::GetHandle_2 ()
 	 * @return mixed|@override

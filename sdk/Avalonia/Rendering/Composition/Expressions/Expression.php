@@ -5,6 +5,11 @@ namespace Avalonia\Rendering\Composition\Expressions;
 class Expression extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionType
 	 */
 	public  function get_Type(){}

@@ -5,6 +5,41 @@ namespace Avalonia\OpenGL\Egl;
 class EglDisplayOptions extends \System\Object
 {
 	/**
+	 * @var \Avalonia\OpenGL\Egl\EglInterface
+	 * @property
+	 */
+	public $Egl;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $SupportsContextSharing;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $SupportsMultipleContexts;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ContextLossIsDisplayLoss;
+	/**
+	 * @var \System\Func_1[System\Boolean]
+	 * @property
+	 */
+	public $DeviceLostCheckCallback;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $DisposeCallback;
+	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[Avalonia\OpenGL\GlVersion]
+	 * @property
+	 */
+	public $GlVersions;
+	/**
 	 * @return \Avalonia\OpenGL\Egl\EglInterface
 	 */
 	public  function get_Egl(){}

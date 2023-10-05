@@ -27,6 +27,31 @@ class RenderTargetBitmapImpl extends \Avalonia\Skia\WriteableBitmapImpl implemen
 	\Avalonia\Controls\Platform\Surfaces\IFramebufferPlatformSurface
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @return \Avalonia\Platform\IDrawingContextImpl
 	 */
 	public  function CreateDrawingContext(){}

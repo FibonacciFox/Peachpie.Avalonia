@@ -7,6 +7,11 @@ class WeakCollectionChangedObservable extends \Avalonia\Reactive\LightweightObse
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\Utilities\WeakEvent $ev
 	 * @param \System\Collections\Specialized\NotifyCollectionChangedEventArgs $e

@@ -48,6 +48,11 @@ class ParametrizedLogger extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsValid;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsValid(){}

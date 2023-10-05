@@ -6,6 +6,16 @@ class NameScope extends \System\Object implements
 	\Avalonia\Controls\INameScope
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\INameScope]
+	 * @field
+	 */
+	public readonly $NameScopeProperty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsCompleted;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsCompleted(){}

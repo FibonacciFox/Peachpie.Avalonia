@@ -20,6 +20,36 @@ class TextShaperOptions extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\IGlyphTypeface
+	 * @property
+	 */
+	public readonly $Typeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public readonly $BidiLevel;
+	/**
+	 * @var \System\Globalization\CultureInfo
+	 * @property
+	 */
+	public readonly $Culture;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $IncrementalTabWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LetterSpacing;
+	/**
 	 * @return \Avalonia\Media\IGlyphTypeface
 	 */
 	public  function get_Typeface(){}

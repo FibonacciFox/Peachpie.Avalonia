@@ -6,6 +6,41 @@ class OnPlatformExtension extends \Avalonia\Markup\Xaml\MarkupExtensions\OnPlatf
 	\Avalonia\Metadata\IAddChild_1
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Default;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Windows;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $macOS;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Linux;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Android;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $iOS;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Browser;
+	/**
 	 * @param \System\String|string $option
 	 * @return \System\Boolean
 	 */

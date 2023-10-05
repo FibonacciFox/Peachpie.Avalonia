@@ -30,6 +30,26 @@ class __MicroComIAvnSystemDialogsProxy extends \MicroCom\Runtime\MicroComProxyBa
 	\Avalonia\Native\Interop\IAvnSystemDialogs
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Native\Interop\IAvnWindow $parentWindowHandle
 	 * @param \Avalonia\Native\Interop\IAvnSystemDialogEvents $events
 	 * @param \System\Int32|int $allowMultiple

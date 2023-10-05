@@ -31,6 +31,36 @@ class __MicroComIDXGIDeviceProxy extends \Avalonia\Win32\DirectX\Impl\__MicroCom
 	\Avalonia\Win32\DirectX\IDXGIDevice
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\IDXGIAdapter
+	 * @property
+	 */
+	public readonly $Adapter;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $GPUThreadPriority;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\DirectX\IDXGIAdapter
 	 */
 	public  function get_Adapter(){}

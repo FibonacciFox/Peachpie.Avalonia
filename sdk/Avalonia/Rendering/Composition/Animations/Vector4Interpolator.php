@@ -6,6 +6,11 @@ class Vector4Interpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\Vector4Interpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Numerics\Vector4 $from
 	 * @param \System\Numerics\Vector4 $to
 	 * @param \System\Single $progress

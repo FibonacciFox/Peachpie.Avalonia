@@ -20,6 +20,31 @@ class PixelFormat extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Platform\PixelFormatEnum
+	 * @field
+	 */
+	protected $FormatEnum;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $BitsPerPixel;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgb565;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgba8888;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Bgra8888;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_BitsPerPixel(){}

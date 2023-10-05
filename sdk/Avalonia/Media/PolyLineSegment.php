@@ -137,6 +137,21 @@ class PolyLineSegment extends \Avalonia\Media\PathSegment implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Collections\Generic\IList_1[Avalonia\Point]]
+	 * @field
+	 */
+	public readonly $PointsProperty;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Point]
+	 * @property
+	 */
+	public $Points;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_Points(){}

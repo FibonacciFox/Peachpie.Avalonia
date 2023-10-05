@@ -188,6 +188,201 @@ class Visual extends \Avalonia\StyledElement implements
 	\Avalonia\INamed
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Visual,Avalonia\Rect]
+	 * @field
+	 */
+	public readonly $BoundsProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $ClipToBoundsProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Geometry]
+	 * @field
+	 */
+	public readonly $ClipProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsVisibleProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OpacityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $OpacityMaskProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IEffect]
+	 * @field
+	 */
+	public readonly $EffectProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Visual,System\Boolean]
+	 * @field
+	 */
+	public readonly $HasMirrorTransformProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\ITransform]
+	 * @field
+	 */
+	public readonly $RenderTransformProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativePoint]
+	 * @field
+	 */
+	public readonly $RenderTransformOriginProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Media\FlowDirection]
+	 * @field
+	 */
+	public readonly $FlowDirectionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Visual,Avalonia\Visual]
+	 * @field
+	 */
+	public readonly $VisualParentProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $ZIndexProperty;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Clip;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisible;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \Avalonia\Media\IEffect
+	 * @property
+	 */
+	public $Effect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasMirrorTransform;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $RenderTransform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $RenderTransformOrigin;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public $FlowDirection;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ZIndex;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Rendering\Composition\CompositionDrawListVisual
 	 */
 	protected  function get_CompositionVisual(){}

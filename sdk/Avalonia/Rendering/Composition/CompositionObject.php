@@ -28,6 +28,26 @@ class CompositionObject extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDisposed;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
 	 */
 	public  function get_ImplicitAnimations(){}

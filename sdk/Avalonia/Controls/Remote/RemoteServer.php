@@ -5,6 +5,11 @@ namespace Avalonia\Controls\Remote;
 class RemoteServer extends \System\Object
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Content;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Content(){}

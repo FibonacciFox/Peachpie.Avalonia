@@ -6,6 +6,16 @@ class AvaloniaLocator extends \System\Object implements
 	\Avalonia\IAvaloniaDependencyResolver
 {
 	/**
+	 * @var \Avalonia\IAvaloniaDependencyResolver
+	 * @property
+	 */
+	public $Current;
+	/**
+	 * @var \Avalonia\AvaloniaLocator
+	 * @property
+	 */
+	public $CurrentMutable;
+	/**
 	 * @return \Avalonia\IAvaloniaDependencyResolver
 	 */
 	public static function get_Current(){}

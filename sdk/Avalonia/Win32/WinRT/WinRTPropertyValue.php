@@ -10,6 +10,96 @@ class WinRTPropertyValue extends \Avalonia\Win32\WinRT\WinRTInspectable implemen
 	\Avalonia\Win32\WinRT\IPropertyValue
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\PropertyType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsNumericScalar;
+	/**
+	 * @var \System\Byte
+	 * @property
+	 */
+	public readonly $UInt8;
+	/**
+	 * @var \System\Int16
+	 * @property
+	 */
+	public readonly $Int16;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $UInt16;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Int32;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $UInt32;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Int64;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public readonly $UInt64;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $Single;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Double;
+	/**
+	 * @var \System\Char
+	 * @property
+	 */
+	public readonly $Char16;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Boolean;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $String;
+	/**
+	 * @var \System\Guid
+	 * @property
+	 */
+	public readonly $Guid;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \Avalonia\Win32\WinRT\PropertyType
 	 */
 	public  function get_Type(){}

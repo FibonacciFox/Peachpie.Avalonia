@@ -35,6 +35,21 @@ class BindingExpression extends \Avalonia\Reactive\LightweightObservableBase_1 i
 	\Avalonia\IDescription
 {
 	/**
+	 * @var \Avalonia\Data\Converters\IValueConverter
+	 * @property
+	 */
+	public readonly $Converter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $ConverterParameter;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \Avalonia\Data\Converters\IValueConverter
 	 */
 	public  function get_Converter(){}

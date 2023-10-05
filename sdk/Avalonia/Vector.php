@@ -64,6 +64,46 @@ class Vector extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Y;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $SquaredLength;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Zero;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $One;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $UnitX;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $UnitY;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_X(){}

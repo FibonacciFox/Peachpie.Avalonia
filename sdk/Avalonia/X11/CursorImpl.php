@@ -7,6 +7,11 @@ class CursorImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Handle;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Handle(){}

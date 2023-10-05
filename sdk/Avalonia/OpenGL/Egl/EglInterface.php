@@ -27,6 +27,21 @@ trait EglInterfaceMethodsOverride
 class EglInterface extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsGetPlatformDisplayExtAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsQueryDisplayAttribExtAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsQueryDeviceAttribExtAvailable;
+	/**
 	 * @uses EglInterfaceMethodsOverride::Load_1 ()
 	 * @uses EglInterfaceMethodsOverride::Load_2 ($library)
 	 * @return mixed|@override

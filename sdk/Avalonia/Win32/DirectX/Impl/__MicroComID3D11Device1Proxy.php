@@ -31,6 +31,46 @@ class __MicroComID3D11Device1Proxy extends \Avalonia\Win32\DirectX\Impl\__MicroC
 	\Avalonia\Win32\DirectX\ID3D11Device1
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\D3D_FEATURE_LEVEL
+	 * @property
+	 */
+	public readonly $FeatureLevel;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $CreationFlags;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $DeviceRemovedReason;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $ExceptionMode;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Void** $ppImmediateContext
 	 * @return \System\Void|void
 	 */

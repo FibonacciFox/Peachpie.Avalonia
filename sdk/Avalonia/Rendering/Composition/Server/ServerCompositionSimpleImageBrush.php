@@ -38,6 +38,71 @@ class ServerCompositionSimpleImageBrush extends \Avalonia\Rendering\Composition\
 	\Avalonia\Media\IImageBrushSource
 {
 	/**
+	 * @var \Avalonia\Media\IImageBrushSource
+	 * @property
+	 */
+	public readonly $Source;
+	/**
+	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]
+	 * @property
+	 */
+	public $Bitmap;
+	/**
+	 * @var \Avalonia\Media\AlignmentX
+	 * @property
+	 */
+	public $AlignmentX;
+	/**
+	 * @var \Avalonia\Media\AlignmentY
+	 * @property
+	 */
+	public $AlignmentY;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $DestinationRect;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $SourceRect;
+	/**
+	 * @var \Avalonia\Media\Stretch
+	 * @property
+	 */
+	public $Stretch;
+	/**
+	 * @var \Avalonia\Media\TileMode
+	 * @property
+	 */
+	public $TileMode;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\Media\IImageBrushSource
 	 */
 	public  function get_Source(){}

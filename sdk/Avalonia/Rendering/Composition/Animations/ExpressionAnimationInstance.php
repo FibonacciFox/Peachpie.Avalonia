@@ -21,6 +21,11 @@ class ExpressionAnimationInstance extends \Avalonia\Rendering\Composition\Animat
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerObject
+	 * @property
+	 */
+	public readonly $TargetObject;
+	/**
 	 * @uses ExpressionAnimationInstanceMethodsOverride::Initialize_1 ($startedAt, $startingValue, $property)
 	 * @uses ExpressionAnimationInstanceMethodsOverride::Initialize_2 ($property, $trackedObjects)
 	 * @return mixed|@override

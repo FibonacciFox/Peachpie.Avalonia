@@ -9,6 +9,16 @@ class OleDragSource extends \Avalonia\MicroCom\CallbackBase implements
 	\Avalonia\Win32\Win32Com\IDropSource
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \System\Int32|int $fEscapePressed
 	 * @param \System\Int32|int $grfKeyState
 	 * @return \System\Int32|int

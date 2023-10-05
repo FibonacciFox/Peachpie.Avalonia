@@ -5,6 +5,11 @@ namespace Avalonia\Dialogs;
 class ManagedFileDialogOptions extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $AllowDirectorySelection;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_AllowDirectorySelection(){}

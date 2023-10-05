@@ -5,6 +5,36 @@ namespace Avalonia\Controls\Utils;
 class RealizedStackElements extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $FirstIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $LastIndex;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Controls\Control]
+	 * @property
+	 */
+	public readonly $Elements;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Double]
+	 * @property
+	 */
+	public readonly $SizeU;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $StartU;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

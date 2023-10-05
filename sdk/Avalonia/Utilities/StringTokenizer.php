@@ -21,6 +21,11 @@ class StringTokenizer extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $CurrentToken;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_CurrentToken(){}

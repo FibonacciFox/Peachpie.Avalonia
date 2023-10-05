@@ -7,6 +7,21 @@ class ExternalImageTexture extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TextureId;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $InternalFormat;
+	/**
+	 * @var \Avalonia\Platform\PlatformGraphicsExternalImageProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

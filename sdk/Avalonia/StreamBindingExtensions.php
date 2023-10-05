@@ -23,6 +23,11 @@ trait StreamBindingExtensionsMethodsOverride
 class StreamBindingExtensions extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @field
+	 */
+	protected $StreamBindingName;
+	/**
 	 * @uses StreamBindingExtensionsMethodsOverride::StreamBinding_1 ($this)
 	 * @uses StreamBindingExtensionsMethodsOverride::StreamBinding_2 ($this)
 	 * @uses StreamBindingExtensionsMethodsOverride::StreamBinding_3 ($this)

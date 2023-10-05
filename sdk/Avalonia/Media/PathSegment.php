@@ -137,6 +137,11 @@ class PathSegment extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \Avalonia\Media\StreamGeometryContext $ctx
 	 * @return \System\Void|void
 	 */

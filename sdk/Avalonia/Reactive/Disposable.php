@@ -19,6 +19,11 @@ trait DisposableMethodsOverride
 class Disposable extends \System\Object
 {
 	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
 	 * @return \System\IDisposable
 	 */
 	public static function get_Empty(){}

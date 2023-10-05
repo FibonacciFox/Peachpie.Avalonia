@@ -20,6 +20,26 @@ class VelocityEstimate extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $PixelsPerSecond;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Confidence;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $Offset;
+	/**
 	 * @return \System\Type
 	 */
 	protected  function get_EqualityContract(){}

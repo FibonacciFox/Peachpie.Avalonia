@@ -21,6 +21,26 @@ class IndexerExpressionNode extends \Avalonia\Data\Core\IndexerNodeBase implemen
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \Avalonia\Data\Core\ExpressionNode
+	 * @property
+	 */
+	public $Next;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @property
+	 */
+	public $Target;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \System\ComponentModel\PropertyChangedEventArgs $e
 	 * @return \System\Boolean

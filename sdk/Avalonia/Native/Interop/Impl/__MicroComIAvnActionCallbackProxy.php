@@ -30,6 +30,26 @@ class __MicroComIAvnActionCallbackProxy extends \MicroCom\Runtime\MicroComProxyB
 	\Avalonia\Native\Interop\IAvnActionCallback
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Run(){}

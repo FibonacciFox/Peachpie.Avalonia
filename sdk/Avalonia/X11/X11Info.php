@@ -5,6 +5,111 @@ namespace Avalonia\X11;
 class X11Info extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Display;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $DeferredDisplay;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $DefaultScreen;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $BlackPixel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RootWindow;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $DefaultRootWindow;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $DefaultCursor;
+	/**
+	 * @var \Avalonia\X11\X11Atoms
+	 * @property
+	 */
+	public readonly $Atoms;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Xim;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RandrEventBase;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RandrErrorBase;
+	/**
+	 * @var \System\Version
+	 * @property
+	 */
+	public readonly $RandrVersion;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $XInputOpcode;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $XInputEventBase;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $XInputErrorBase;
+	/**
+	 * @var \System\Version
+	 * @property
+	 */
+	public readonly $XInputVersion;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $LastActivityTimestamp;
+	/**
+	 * @var \System\Nullable_1[Avalonia\X11\XVisualInfo]
+	 * @property
+	 */
+	public $TransparentVisualInfo;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasXim;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasXSync;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $DefaultFontSet;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Display(){}

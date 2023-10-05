@@ -5,6 +5,11 @@ namespace Avalonia\Utilities;
 class StringBuilderCache extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $MaxBuilderSize;
+	/**
 	 * @param \System\Int32|int $capacity
 	 * @return \System\Text\StringBuilder
 	 */

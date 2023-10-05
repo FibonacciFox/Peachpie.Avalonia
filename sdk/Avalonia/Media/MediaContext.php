@@ -6,6 +6,16 @@ class MediaContext extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositorScheduler
 {
 	/**
+	 * @var \Avalonia\Animation\IGlobalClock
+	 * @property
+	 */
+	public readonly $Clock;
+	/**
+	 * @var \Avalonia\Media\MediaContext
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Animation\IGlobalClock
 	 */
 	public  function get_Clock(){}

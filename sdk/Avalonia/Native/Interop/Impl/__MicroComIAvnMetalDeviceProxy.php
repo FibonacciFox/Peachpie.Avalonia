@@ -30,6 +30,36 @@ class __MicroComIAvnMetalDeviceProxy extends \MicroCom\Runtime\MicroComProxyBase
 	\Avalonia\Native\Interop\IAvnMetalDevice
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Device;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Queue;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Device(){}

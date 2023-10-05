@@ -22,6 +22,11 @@ class EglPlatformSurfaceRenderTargetBase extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
 	 * @return \Avalonia\OpenGL\Egl\EglContext
 	 */
 	protected  function get_Context(){}

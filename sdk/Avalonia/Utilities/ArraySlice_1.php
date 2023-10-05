@@ -36,6 +36,36 @@ class ArraySlice_1 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \Avalonia\Utilities\ArraySlice_1[T]
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEmpty;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Start;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \System\Span_1[T]
+	 * @property
+	 */
+	public readonly $Span;
+	/**
+	 * @var \T&
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \Avalonia\Utilities\ArraySlice_1
 	 */
 	public static function get_Empty(){}

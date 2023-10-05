@@ -20,6 +20,11 @@ class EglPlatformGraphics extends \System\Object implements
 	\Avalonia\Platform\IPlatformGraphics
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UsesSharedContext;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_UsesSharedContext(){}

@@ -6,6 +6,16 @@ class CubicBezierEasing extends \System\Object implements
 	\Avalonia\Animation\Easings\IEasing
 {
 	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $ControlPoint2;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $ControlPoint1;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_ControlPoint2(){}

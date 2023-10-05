@@ -32,6 +32,26 @@ class __MicroComIDXGIKeyedMutexProxy extends \Avalonia\Win32\DirectX\Impl\__Micr
 	\Avalonia\Win32\DirectX\IDXGIKeyedMutex
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt64 $Key
 	 * @param \System\UInt32 $dwMilliseconds
 	 * @return \System\Void|void

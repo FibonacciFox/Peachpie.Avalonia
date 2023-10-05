@@ -8,6 +8,16 @@ class DataValidationBase extends \Avalonia\Data\Core\Plugins\PropertyAccessorBas
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

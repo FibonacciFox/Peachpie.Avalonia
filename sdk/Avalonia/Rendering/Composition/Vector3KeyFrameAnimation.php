@@ -37,6 +37,66 @@ class Vector3KeyFrameAnimation extends \Avalonia\Rendering\Composition\Animation
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\AnimationDelayBehavior
+	 * @property
+	 */
+	public $DelayBehavior;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $DelayTime;
+	/**
+	 * @var \Avalonia\Animation\PlaybackDirection
+	 * @property
+	 */
+	public $Direction;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Duration;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\AnimationIterationBehavior
+	 * @property
+	 */
+	public $IterationBehavior;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $IterationCount;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\AnimationStopBehavior
+	 * @property
+	 */
+	public $StopBehavior;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @uses Vector3KeyFrameAnimationMethodsOverride::InsertKeyFrame_1 ($normalizedProgressKey, $value, $easingFunction)
 	 * @uses Vector3KeyFrameAnimationMethodsOverride::InsertKeyFrame_2 ($normalizedProgressKey, $value)
 	 * @return mixed|@override

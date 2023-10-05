@@ -10,6 +10,26 @@ class DataObject extends \Avalonia\MicroCom\CallbackBase implements
 	\Avalonia\Win32\Win32Com\IDataObject
 {
 	/**
+	 * @var \System\Byte[]
+	 * @field
+	 */
+	protected readonly $SerializedObjectGUID;
+	/**
+	 * @var \Avalonia\Input\IDataObject
+	 * @property
+	 */
+	public readonly $Wrapped;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \Avalonia\Input\IDataObject
 	 */
 	public  function get_Wrapped(){}

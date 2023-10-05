@@ -9,6 +9,21 @@ class TreeDataTemplate extends \System\Object implements
 	\Avalonia\Controls\Templates\ITypedDataTemplate
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $DataType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Content;
+	/**
+	 * @var \Avalonia\Data\BindingBase
+	 * @property
+	 */
+	public $ItemsSource;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_DataType(){}

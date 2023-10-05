@@ -6,6 +6,56 @@ class GlyphRun extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Media\IGlyphTypeface
+	 * @property
+	 */
+	public readonly $GlyphTypeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $FontRenderingEmSize;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $InkBounds;
+	/**
+	 * @var \Avalonia\Media\GlyphRunMetrics
+	 * @property
+	 */
+	public readonly $Metrics;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $BaselineOrigin;
+	/**
+	 * @var \System\ReadOnlyMemory_1[System\Char]
+	 * @property
+	 */
+	public $Characters;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\TextFormatting\GlyphInfo]
+	 * @property
+	 */
+	public $GlyphInfos;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $BiDiLevel;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLeftToRight;
+	/**
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $glyphIndices
 	 * @param \System\Double|double $fontRenderingEmSize
 	 * @param \Avalonia\Media\IGlyphTypeface $glyphTypeface

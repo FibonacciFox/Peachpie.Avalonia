@@ -5,6 +5,11 @@ namespace Avalonia\FreeDesktop;
 class DBusMenuExporter extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $GenerateDBusMenuObjPath;
+	/**
 	 * @param \System\IntPtr $xid
 	 * @return \Avalonia\Controls\Platform\ITopLevelNativeMenuExporter
 	 */

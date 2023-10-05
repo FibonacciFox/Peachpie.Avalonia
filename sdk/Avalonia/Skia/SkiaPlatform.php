@@ -19,6 +19,11 @@ trait SkiaPlatformMethodsOverride
 class SkiaPlatform extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $DefaultDpi;
+	/**
 	 * @uses SkiaPlatformMethodsOverride::Initialize_1 ()
 	 * @uses SkiaPlatformMethodsOverride::Initialize_2 ($options)
 	 * @return mixed|@override

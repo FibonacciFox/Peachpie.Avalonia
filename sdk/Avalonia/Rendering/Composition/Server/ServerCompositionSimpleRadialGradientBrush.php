@@ -37,6 +37,71 @@ class ServerCompositionSimpleRadialGradientBrush extends \Avalonia\Rendering\Com
 	\Avalonia\Media\IRadialGradientBrush
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfCenterProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfGradientOriginProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfRadiusProperty;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $Center;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $GradientOrigin;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Radius;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]
+	 * @property
+	 */
+	public readonly $GradientStops;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public readonly $SpreadMethod;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\RelativePoint
 	 */
 	public  function get_Center(){}

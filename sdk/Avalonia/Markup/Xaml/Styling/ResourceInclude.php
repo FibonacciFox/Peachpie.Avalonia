@@ -8,6 +8,21 @@ class ResourceInclude extends \System\Object implements
 	\Avalonia\Controls\IThemeVariantProvider
 {
 	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public readonly $Loaded;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $Source;
+	/**
 	 * @return \Avalonia\Controls\IResourceDictionary
 	 */
 	public  function get_Loaded(){}

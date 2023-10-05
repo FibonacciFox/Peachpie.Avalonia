@@ -24,6 +24,21 @@ trait SixItemList_1MethodsOverride
 class SixItemList_1 extends \Avalonia\Utilities\FrugalListBase_1
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @uses SixItemList_1MethodsOverride::Promote_1 ($oldList)
 	 * @uses SixItemList_1MethodsOverride::Promote_2 ($oldList)
 	 * @uses SixItemList_1MethodsOverride::Promote_3 ($oldList)

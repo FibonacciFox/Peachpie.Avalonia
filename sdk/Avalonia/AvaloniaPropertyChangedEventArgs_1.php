@@ -36,6 +36,31 @@ trait AvaloniaPropertyChangedEventArgs_1MethodsOverride
 class AvaloniaPropertyChangedEventArgs_1 extends \Avalonia\AvaloniaPropertyChangedEventArgs
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
+	 * @var \Avalonia\Data\Optional_1[T]
+	 * @property
+	 */
+	public $OldValue;
+	/**
+	 * @var \Avalonia\Data\BindingValue_1[T]
+	 * @property
+	 */
+	public $NewValue;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public readonly $Sender;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public readonly $Priority;
+	/**
 	 * @uses AvaloniaPropertyChangedEventArgs_1MethodsOverride::get_Property_1 ()
 	 * @uses AvaloniaPropertyChangedEventArgs_1MethodsOverride::get_Property_2 ()
 	 * @return mixed|@override

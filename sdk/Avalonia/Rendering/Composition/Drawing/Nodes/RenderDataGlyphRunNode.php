@@ -8,6 +8,21 @@ class RenderDataGlyphRunNode extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $ServerBrush;
+	/**
+	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IGlyphRunImpl]
+	 * @property
+	 */
+	public $GlyphRun;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_ServerBrush(){}

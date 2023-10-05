@@ -7,6 +7,16 @@ class SkiaSurfaceWrapper extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $Surface;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanBlit;
+	/**
 	 * @return \SkiaSharp\SKSurface
 	 */
 	public  function get_Surface(){}

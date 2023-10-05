@@ -5,6 +5,26 @@ namespace Avalonia\Markup\Xaml;
 class RuntimeXamlLoaderDocument extends \System\Object
 {
 	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $BaseUri;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $RootInstance;
+	/**
+	 * @var \System\IO\Stream
+	 * @property
+	 */
+	public readonly $XamlStream;
+	/**
+	 * @var \System\IServiceProvider
+	 * @property
+	 */
+	public $ServiceProvider;
+	/**
 	 * @return \System\Uri
 	 */
 	public  function get_BaseUri(){}

@@ -8,6 +8,21 @@ class MediaContextClock extends \System\Object implements
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasNewSubscriptions;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasSubscriptions;
+	/**
+	 * @var \Avalonia\Animation\PlayState
+	 * @property
+	 */
+	public $PlayState;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasNewSubscriptions(){}

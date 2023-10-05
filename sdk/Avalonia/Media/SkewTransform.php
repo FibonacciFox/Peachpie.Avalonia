@@ -142,6 +142,41 @@ class SkewTransform extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $AngleXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $AngleYProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $AngleX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $AngleY;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_AngleX(){}

@@ -24,6 +24,41 @@ class ShapedBuffer extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \Avalonia\Media\IGlyphTypeface
+	 * @property
+	 */
+	public readonly $GlyphTypeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public readonly $BidiLevel;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLeftToRight;
+	/**
+	 * @var \System\ReadOnlyMemory_1[System\Char]
+	 * @property
+	 */
+	public readonly $Text;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\GlyphInfo
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Length(){}

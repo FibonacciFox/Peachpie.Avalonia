@@ -40,6 +40,16 @@ class LocalValueBindingObserver_1 extends \Avalonia\PropertyStore\LocalValueBind
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\IDisposable
+	 * @field
+	 */
+	protected $_subscription;
+	/**
+	 * @var \Avalonia\StyledProperty_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @uses LocalValueBindingObserver_1MethodsOverride::Start_1 ($source)
 	 * @uses LocalValueBindingObserver_1MethodsOverride::Start_2 ($source)
 	 * @uses LocalValueBindingObserver_1MethodsOverride::Start_3 ($source)

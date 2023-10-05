@@ -137,6 +137,21 @@ class NativeMenuItemBase extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\NativeMenuItemBase,Avalonia\Controls\NativeMenu]
+	 * @field
+	 */
+	public readonly $ParentProperty;
+	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Controls\NativeMenu
 	 */
 	public  function get_Parent(){}

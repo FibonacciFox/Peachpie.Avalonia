@@ -31,6 +31,56 @@ class __MicroComICompositionSpriteShapeProxy extends \Avalonia\Win32\WinRT\Impl\
 	\Avalonia\Win32\WinRT\ICompositionSpriteShape
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\ICompositionBrush
+	 * @property
+	 */
+	public readonly $FillBrush;
+	/**
+	 * @var \Avalonia\Win32\WinRT\ICompositionGeometry
+	 * @property
+	 */
+	public readonly $Geometry;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsStrokeNonScaling;
+	/**
+	 * @var \Avalonia\Win32\WinRT\ICompositionBrush
+	 * @property
+	 */
+	public readonly $StrokeBrush;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\WinRT\ICompositionBrush
 	 */
 	public  function get_FillBrush(){}

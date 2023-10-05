@@ -32,6 +32,46 @@ class __MicroComIDXGISwapChainProxy extends \Avalonia\Win32\DirectX\Impl\__Micro
 	\Avalonia\Win32\DirectX\IDXGISwapChain
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_DESC
+	 * @property
+	 */
+	public readonly $Desc;
+	/**
+	 * @var \Avalonia\Win32\DirectX\IDXGIOutput
+	 * @property
+	 */
+	public readonly $ContainingOutput;
+	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_FRAME_STATISTICS
+	 * @property
+	 */
+	public readonly $FrameStatistics;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $LastPresentCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt16 $SyncInterval
 	 * @param \System\UInt16 $Flags
 	 * @return \System\Void|void

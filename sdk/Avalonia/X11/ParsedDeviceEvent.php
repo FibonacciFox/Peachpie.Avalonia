@@ -5,6 +5,46 @@ namespace Avalonia\X11;
 class ParsedDeviceEvent extends \System\Object
 {
 	/**
+	 * @var \Avalonia\X11\XiEventType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \Avalonia\Input\RawInputModifiers
+	 * @property
+	 */
+	public readonly $Modifiers;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public readonly $Timestamp;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Button;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Detail;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Emulated;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\Int32,System\Double]
+	 * @property
+	 */
+	public readonly $Valuators;
+	/**
 	 * @return \Avalonia\X11\XiEventType
 	 */
 	public  function get_Type(){}

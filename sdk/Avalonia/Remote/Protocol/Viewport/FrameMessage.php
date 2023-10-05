@@ -5,6 +5,46 @@ namespace Avalonia\Remote\Protocol\Viewport;
 class FrameMessage extends \System\Object
 {
 	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public $SequenceId;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Viewport\PixelFormat
+	 * @property
+	 */
+	public $Format;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public $Data;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Stride;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $DpiX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $DpiY;
+	/**
 	 * @return \System\Int64|int
 	 */
 	public  function get_SequenceId(){}

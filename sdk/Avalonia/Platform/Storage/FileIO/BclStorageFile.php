@@ -24,6 +24,26 @@ class BclStorageFile extends \System\Object implements
 	\Avalonia\Platform\Storage\IStorageBookmarkItem
 {
 	/**
+	 * @var \System\IO\FileInfo
+	 * @property
+	 */
+	public readonly $FileInfo;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanBookmark;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public readonly $Path;
+	/**
 	 * @return \System\IO\FileInfo
 	 */
 	public  function get_FileInfo(){}

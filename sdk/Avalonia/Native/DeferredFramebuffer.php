@@ -7,6 +7,36 @@ class DeferredFramebuffer extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Address;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $RowBytes;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $Dpi;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public $Format;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Address(){}

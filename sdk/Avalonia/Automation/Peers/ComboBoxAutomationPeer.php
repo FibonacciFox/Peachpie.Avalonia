@@ -27,6 +27,61 @@ class ComboBoxAutomationPeer extends \Avalonia\Automation\Peers\SelectingItemsCo
 	\Avalonia\Automation\Provider\IValueProvider
 {
 	/**
+	 * @var \Avalonia\Controls\ComboBox
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Automation\ExpandCollapseState
+	 * @property
+	 */
+	public readonly $ExpandCollapseState;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $ShowsMenu;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSelectMultiple;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSelectionRequired;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HorizontallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalViewSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $VerticallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalViewSize;
+	/**
 	 * @uses ComboBoxAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses ComboBoxAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @uses ComboBoxAutomationPeerMethodsOverride::get_Owner_3 ()

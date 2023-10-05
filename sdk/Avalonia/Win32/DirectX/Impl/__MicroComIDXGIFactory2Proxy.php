@@ -33,6 +33,31 @@ class __MicroComIDXGIFactory2Proxy extends \Avalonia\Win32\DirectX\Impl\__MicroC
 	\Avalonia\Win32\DirectX\IDXGIFactory2
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $WindowAssociation;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function IsWindowedStereoEnabled(){}

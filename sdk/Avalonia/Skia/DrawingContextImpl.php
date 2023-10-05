@@ -47,6 +47,31 @@ class DrawingContextImpl extends \System\Object implements
 	\Avalonia\Platform\IDrawingContextImplWithEffects
 {
 	/**
+	 * @var \SkiaSharp\GRContext
+	 * @property
+	 */
+	public readonly $GrContext;
+	/**
+	 * @var \SkiaSharp\SKCanvas
+	 * @property
+	 */
+	public readonly $Canvas;
+	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $Surface;
+	/**
+	 * @var \Avalonia\Media\RenderOptions
+	 * @property
+	 */
+	public $RenderOptions;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $Transform;
+	/**
 	 * @return \SkiaSharp\GRContext
 	 */
 	public  function get_GrContext(){}

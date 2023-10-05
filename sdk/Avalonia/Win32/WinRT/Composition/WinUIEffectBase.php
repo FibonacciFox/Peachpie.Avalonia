@@ -12,6 +12,41 @@ class WinUIEffectBase extends \Avalonia\Win32\WinRT\WinRTInspectable implements
 	\Avalonia\Win32\WinRT\IGraphicsEffectD2D1Interop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Guid
+	 * @property
+	 */
+	public readonly $EffectId;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $PropertyCount;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $SourceCount;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Name(){}

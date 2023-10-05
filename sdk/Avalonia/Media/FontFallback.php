@@ -5,6 +5,16 @@ namespace Avalonia\Media;
 class FontFallback extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public $FontFamily;
+	/**
+	 * @var \Avalonia\Media\UnicodeRange
+	 * @property
+	 */
+	public $UnicodeRange;
+	/**
 	 * @return \Avalonia\Media\FontFamily
 	 */
 	public  function get_FontFamily(){}

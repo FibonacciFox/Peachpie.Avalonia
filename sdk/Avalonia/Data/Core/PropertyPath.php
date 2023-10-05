@@ -5,6 +5,11 @@ namespace Avalonia\Data\Core;
 class PropertyPath extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Data\Core\IPropertyPathElement]
+	 * @property
+	 */
+	public readonly $Elements;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_Elements(){}

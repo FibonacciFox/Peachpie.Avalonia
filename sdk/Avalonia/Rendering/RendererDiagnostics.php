@@ -6,6 +6,11 @@ class RendererDiagnostics extends \System\Object implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Rendering\RendererDebugOverlays
+	 * @property
+	 */
+	public $DebugOverlays;
+	/**
 	 * @return \Avalonia\Rendering\RendererDebugOverlays
 	 */
 	public  function get_DebugOverlays(){}

@@ -5,6 +5,41 @@ namespace Avalonia\Rendering\Utilities;
 class TileBrushCalculator extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsValid;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $DestinationRect;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $IntermediateClip;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $IntermediateSize;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $IntermediateTransform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $NeedsIntermediate;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $SourceRect;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsValid(){}

@@ -20,6 +20,21 @@ class TextCollapsingCreateInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public readonly $Width;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRunProperties
+	 * @field
+	 */
+	public readonly $TextRunProperties;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @field
+	 */
+	public readonly $FlowDirection;
+	/**
 	 * @param \System\Text\StringBuilder $builder
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

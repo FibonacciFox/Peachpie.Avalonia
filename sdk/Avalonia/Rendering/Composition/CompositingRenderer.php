@@ -9,6 +9,21 @@ class CompositingRenderer extends \System\Object implements
 	\Avalonia\Rendering\IHitTester
 {
 	/**
+	 * @var \Avalonia\Rendering\RendererDiagnostics
+	 * @property
+	 */
+	public readonly $Diagnostics;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @return \Avalonia\Rendering\Composition\CompositionTarget
 	 */
 	protected  function get_CompositionTarget(){}

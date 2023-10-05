@@ -6,6 +6,11 @@ class AnonymousDisposable extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsDisposed(){}

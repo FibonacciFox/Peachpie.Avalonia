@@ -31,6 +31,36 @@ class __MicroComICompositionSurfaceProxy extends \Avalonia\Win32\WinRT\Impl\__Mi
 	\Avalonia\Win32\WinRT\ICompositionSurface
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @uses __MicroComICompositionSurfaceProxyMethodsOverride::QueryInterface_1 ($guid, $ppv)
 	 * @uses __MicroComICompositionSurfaceProxyMethodsOverride::QueryInterface_2 ()
 	 * @return mixed|@override

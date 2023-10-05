@@ -52,6 +52,41 @@ class ProgressBarAutomationPeer extends \Avalonia\Automation\Peers\RangeBaseAuto
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Primitives\RangeBase
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Maximum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Minimum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $SmallChange;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LargeChange;
+	/**
 	 * @uses ProgressBarAutomationPeerMethodsOverride::SetValue_1 ($val)
 	 * @uses ProgressBarAutomationPeerMethodsOverride::SetValue_2 ($value)
 	 * @return mixed|@override

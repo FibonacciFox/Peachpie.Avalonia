@@ -6,6 +6,11 @@ namespace Avalonia\Threading;
 class ThreadSafeObjectPool_1 extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Threading\ThreadSafeObjectPool_1[T]
+	 * @property
+	 */
+	public readonly $Default;
+	/**
 	 * @return \Avalonia\Threading\ThreadSafeObjectPool_1
 	 */
 	public static function get_Default(){}

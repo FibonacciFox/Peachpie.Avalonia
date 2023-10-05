@@ -117,6 +117,51 @@ class SlicedStream extends \System\IO\Stream implements
 	\System\IAsyncDisposable
 {
 	/**
+	 * @var \System\Threading\SemaphoreSlim
+	 * @field
+	 */
+	protected $_asyncActiveSemaphore;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanRead;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSeek;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanWrite;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public $Position;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanTimeout;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ReadTimeout;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $WriteTimeout;
+	/**
 	 * @uses SlicedStreamMethodsOverride::Read_1 ($buffer, $offset, $count)
 	 * @uses SlicedStreamMethodsOverride::Read_2 ($buffer)
 	 * @return mixed|@override

@@ -5,6 +5,36 @@ namespace Avalonia\Media;
 class TextTrimming extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @field
+	 */
+	protected $DefaultEllipsisChar;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public readonly $None;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public readonly $CharacterEllipsis;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public readonly $WordEllipsis;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public readonly $PrefixCharacterEllipsis;
+	/**
+	 * @var \Avalonia\Media\TextTrimming
+	 * @property
+	 */
+	public readonly $LeadingCharacterEllipsis;
+	/**
 	 * @return \Avalonia\Media\TextTrimming
 	 */
 	public static function get_None(){}

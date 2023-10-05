@@ -7,6 +7,31 @@ class CompositionGpuImportedObjectBase extends \System\Object implements
 	\System\IAsyncDisposable
 {
 	/**
+	 * @var \Avalonia\Platform\IPlatformRenderInterfaceContext
+	 * @property
+	 */
+	public readonly $Context;
+	/**
+	 * @var \Avalonia\Platform\IExternalObjectsRenderInterfaceContextFeature
+	 * @property
+	 */
+	public readonly $Feature;
+	/**
+	 * @var \System\Threading\Tasks\Task
+	 * @property
+	 */
+	public readonly $ImportCompleted;
+	/**
+	 * @var \System\Threading\Tasks\Task
+	 * @property
+	 */
+	public readonly $ImportCompeted;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Compositor
 	 */
 	protected  function get_Compositor(){}

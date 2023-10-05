@@ -20,6 +20,21 @@ class MountedVolumeInfo extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $VolumeLabel;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $VolumePath;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $VolumeSizeBytes;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_VolumeLabel(){}

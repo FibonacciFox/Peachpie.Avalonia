@@ -7,6 +7,11 @@ class ClockBase extends \System\Object implements
 	\System\IObservable_1
 {
 	/**
+	 * @var \Avalonia\Animation\PlayState
+	 * @property
+	 */
+	public $PlayState;
+	/**
 	 * @return \System\Boolean
 	 */
 	protected  function get_HasSubscriptions(){}

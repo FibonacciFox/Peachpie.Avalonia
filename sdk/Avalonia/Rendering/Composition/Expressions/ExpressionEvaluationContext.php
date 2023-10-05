@@ -5,6 +5,36 @@ namespace Avalonia\Rendering\Composition\Expressions;
 class ExpressionEvaluationContext extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionVariant
+	 * @property
+	 */
+	public $StartingValue;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionVariant
+	 * @property
+	 */
+	public $CurrentValue;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionVariant
+	 * @property
+	 */
+	public $FinalValue;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\IExpressionObject
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\IExpressionParameterCollection
+	 * @property
+	 */
+	public $Parameters;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\IExpressionForeignFunctionInterface
+	 * @property
+	 */
+	public $ForeignFunctionInterface;
+	/**
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionVariant
 	 */
 	public  function get_StartingValue(){}

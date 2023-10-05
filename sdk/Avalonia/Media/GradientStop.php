@@ -138,6 +138,31 @@ class GradientStop extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IGradientStop
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OffsetProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Color]
+	 * @field
+	 */
+	public readonly $ColorProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Offset(){}

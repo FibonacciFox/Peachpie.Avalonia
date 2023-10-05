@@ -173,6 +173,26 @@ class Styles extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\IResourceProvider
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public $Owner;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Collections\Specialized\NotifyCollectionChangedEventHandler $value
 	 * @return \System\Void|void
 	 */

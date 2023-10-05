@@ -7,6 +7,26 @@ class GlGpuSession extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\GRSurfaceOrigin
+	 * @property
+	 */
+	public readonly $SurfaceOrigin;
+	/**
+	 * @var \SkiaSharp\GRContext
+	 * @property
+	 */
+	public readonly $GrContext;
+	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $SkSurface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ScaleFactor;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

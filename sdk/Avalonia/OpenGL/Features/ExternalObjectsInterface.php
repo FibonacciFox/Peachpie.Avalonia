@@ -5,6 +5,26 @@ namespace Avalonia\OpenGL\Features;
 class ExternalObjectsInterface extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsImportMemoryFdEXTAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsImportSemaphoreFdEXTAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsGetUnsignedBytei_vEXTAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsGetUnsignedBytevEXTAvailable;
+	/**
 	 * @param \System\UInt32 $memory
 	 * @param \System\UInt64 $size
 	 * @param \System\Int32|int $handleType

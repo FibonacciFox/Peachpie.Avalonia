@@ -7,6 +7,16 @@ class PropertyAccessorBase extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_PropertyType(){}

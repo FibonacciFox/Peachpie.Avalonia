@@ -19,6 +19,11 @@ trait TextShaperMethodsOverride
 class TextShaper extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Media\TextFormatting\TextShaper
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\TextShaper
 	 */
 	public static function get_Current(){}

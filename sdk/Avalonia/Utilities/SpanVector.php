@@ -28,6 +28,21 @@ class SpanVector extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\Utilities\Span
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \System\Collections\IEnumerator
 	 */
 	public  function GetEnumerator(){}

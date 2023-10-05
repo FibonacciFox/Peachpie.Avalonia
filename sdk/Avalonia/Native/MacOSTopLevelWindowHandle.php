@@ -7,6 +7,26 @@ class MacOSTopLevelWindowHandle extends \System\Object implements
 	\Avalonia\Platform\IMacOSTopLevelPlatformHandle
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $HandleDescriptor;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NSView;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NSWindow;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Handle(){}

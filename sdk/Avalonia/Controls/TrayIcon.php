@@ -139,6 +139,81 @@ class TrayIcon extends \Avalonia\AvaloniaObject implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Windows\Input\ICommand]
+	 * @field
+	 */
+	public readonly $CommandProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $CommandParameterProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\TrayIcons]
+	 * @field
+	 */
+	public readonly $IconsProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\NativeMenu]
+	 * @field
+	 */
+	public readonly $MenuProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\WindowIcon]
+	 * @field
+	 */
+	public readonly $IconProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $ToolTipTextProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsVisibleProperty;
+	/**
+	 * @var \System\Windows\Input\ICommand
+	 * @property
+	 */
+	public $Command;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $CommandParameter;
+	/**
+	 * @var \Avalonia\Controls\NativeMenu
+	 * @property
+	 */
+	public $Menu;
+	/**
+	 * @var \Avalonia\Controls\WindowIcon
+	 * @property
+	 */
+	public $Icon;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $ToolTipText;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisible;
+	/**
+	 * @var \Avalonia\Controls\Platform\INativeMenuExporter
+	 * @property
+	 */
+	public readonly $NativeMenuExporter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

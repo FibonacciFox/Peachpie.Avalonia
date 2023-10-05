@@ -6,6 +6,36 @@ class Notification extends \System\Object implements
 	\Avalonia\Controls\Notifications\INotification
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Message;
+	/**
+	 * @var \Avalonia\Controls\Notifications\NotificationType
+	 * @property
+	 */
+	public $Type;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $Expiration;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $OnClick;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $OnClose;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Title(){}

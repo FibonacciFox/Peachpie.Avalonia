@@ -20,6 +20,26 @@ class WinRTColor extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Byte
+	 * @field
+	 */
+	public $A;
+	/**
+	 * @var \System\Byte
+	 * @field
+	 */
+	public $R;
+	/**
+	 * @var \System\Byte
+	 * @field
+	 */
+	public $G;
+	/**
+	 * @var \System\Byte
+	 * @field
+	 */
+	public $B;
+	/**
 	 * @param \System\Byte $a
 	 * @param \System\Byte $r
 	 * @param \System\Byte $g

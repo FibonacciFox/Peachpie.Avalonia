@@ -137,6 +137,31 @@ class GlyphRunDrawing extends \Avalonia\Media\Drawing implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $ForegroundProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\GlyphRun]
+	 * @field
+	 */
+	public readonly $GlyphRunProperty;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Foreground;
+	/**
+	 * @var \Avalonia\Media\GlyphRun
+	 * @property
+	 */
+	public $GlyphRun;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_Foreground(){}

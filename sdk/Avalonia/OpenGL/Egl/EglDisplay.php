@@ -6,6 +6,31 @@ class EglDisplay extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsSharing;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Config;
+	/**
+	 * @var \Avalonia\OpenGL\Egl\EglInterface
+	 * @property
+	 */
+	public readonly $EglInterface;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_SupportsSharing(){}

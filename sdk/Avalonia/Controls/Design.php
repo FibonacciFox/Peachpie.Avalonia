@@ -27,6 +27,36 @@ trait DesignMethodsOverride
 class Design extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $HeightProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $WidthProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $DataContextProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\Control]
+	 * @field
+	 */
+	public readonly $PreviewWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Styling\IStyle]
+	 * @field
+	 */
+	public readonly $DesignStyleProperty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDesignMode;
+	/**
 	 * @return \System\Boolean
 	 */
 	public static function get_IsDesignMode(){}

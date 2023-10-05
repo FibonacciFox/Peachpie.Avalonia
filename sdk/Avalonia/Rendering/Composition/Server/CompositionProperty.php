@@ -5,6 +5,11 @@ namespace Avalonia\Rendering\Composition\Server;
 class CompositionProperty extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Id;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Id(){}

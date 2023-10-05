@@ -137,6 +137,11 @@ class Drawing extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \Avalonia\Media\DrawingContext $context
 	 * @return \System\Void|void
 	 */

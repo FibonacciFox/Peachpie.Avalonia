@@ -140,6 +140,36 @@ class InlineCollection extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Text;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\Documents\Inline]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Controls\Documents\Inline
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @return \Avalonia\Collections\IAvaloniaList_1
 	 */
 	protected  function get_LogicalChildren(){}

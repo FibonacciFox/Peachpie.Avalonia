@@ -132,6 +132,31 @@ class Transitions extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\ITransition]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\ITransition
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \Avalonia\Animation\ITransition $obj
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

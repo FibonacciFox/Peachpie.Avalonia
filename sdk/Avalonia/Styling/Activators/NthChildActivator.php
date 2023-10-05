@@ -7,6 +7,11 @@ class NthChildActivator extends \Avalonia\Styling\Activators\StyleActivatorBase 
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\LogicalTree\ChildIndexChangedEventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

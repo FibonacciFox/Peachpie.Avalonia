@@ -19,6 +19,16 @@ trait NthLastChildSelectorMethodsOverride
 class NthLastChildSelector extends \Avalonia\Styling\NthChildSelector
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Step;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
 	 * @param \Avalonia\StyledElement $control
 	 * @param \Avalonia\Styling\IStyle $parent
 	 * @param \System\Boolean $subscribe

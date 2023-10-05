@@ -61,6 +61,21 @@ class SourceUntypedBindingEntry_1 extends \Avalonia\PropertyStore\BindingEntryBa
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[TTarget]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @uses SourceUntypedBindingEntry_1MethodsOverride::get_Property_1 ()
 	 * @uses SourceUntypedBindingEntry_1MethodsOverride::get_Property_2 ()
 	 * @uses SourceUntypedBindingEntry_1MethodsOverride::get_Property_3 ()

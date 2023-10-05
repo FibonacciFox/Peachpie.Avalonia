@@ -6,6 +6,11 @@ class IndexerNode extends \System\Object implements
 	\Avalonia\Markup\Parsers\INode
 {
 	/**
+	 * @var \System\Collections\Generic\IList_1[System\String]
+	 * @property
+	 */
+	public $Arguments;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_Arguments(){}

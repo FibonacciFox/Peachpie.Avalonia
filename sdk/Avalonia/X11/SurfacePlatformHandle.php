@@ -7,6 +7,26 @@ class SurfacePlatformHandle extends \System\Object implements
 	\Avalonia\Platform\IPlatformHandle
 {
 	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $HandleDescriptor;
+	/**
 	 * @return \Avalonia\PixelSize
 	 */
 	public  function get_Size(){}

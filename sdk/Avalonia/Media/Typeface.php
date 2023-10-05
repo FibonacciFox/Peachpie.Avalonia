@@ -20,6 +20,36 @@ class Typeface extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Typeface
+	 * @property
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public readonly $FontFamily;
+	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public readonly $Style;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public readonly $Weight;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public readonly $Stretch;
+	/**
+	 * @var \Avalonia\Media\IGlyphTypeface
+	 * @property
+	 */
+	public readonly $GlyphTypeface;
+	/**
 	 * @return \Avalonia\Media\Typeface
 	 */
 	public static function get_Default(){}

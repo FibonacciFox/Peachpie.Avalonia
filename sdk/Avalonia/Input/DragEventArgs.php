@@ -5,6 +5,41 @@ namespace Avalonia\Input;
 class DragEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	/**
+	 * @var \Avalonia\Input\DragDropEffects
+	 * @property
+	 */
+	public $DragEffects;
+	/**
+	 * @var \Avalonia\Input\IDataObject
+	 * @property
+	 */
+	public readonly $Data;
+	/**
+	 * @var \Avalonia\Input\KeyModifiers
+	 * @property
+	 */
+	public readonly $KeyModifiers;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Handled;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent
+	 * @property
+	 */
+	public $RoutedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutingStrategies
+	 * @property
+	 */
+	public $Route;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Source;
+	/**
 	 * @return \Avalonia\Input\DragDropEffects
 	 */
 	public  function get_DragEffects(){}

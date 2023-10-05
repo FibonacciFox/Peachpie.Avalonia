@@ -5,6 +5,31 @@ namespace Avalonia\Rendering\Composition\Server;
 class ReadbackIndices extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ReadIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $WriteIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $WrittenIndex;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $ReadRevision;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $LastWrittenRevision;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_ReadIndex(){}

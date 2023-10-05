@@ -5,6 +5,21 @@ namespace Avalonia\Metadata;
 class AvaloniaListAttribute extends \System\Attribute
 {
 	/**
+	 * @var \System\String[]
+	 * @property
+	 */
+	public $Separators;
+	/**
+	 * @var \System\StringSplitOptions
+	 * @property
+	 */
+	public $SplitOptions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $TypeId;
+	/**
 	 * @return \System\String[]
 	 */
 	public  function get_Separators(){}

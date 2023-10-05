@@ -6,6 +6,16 @@ class SimplePooledList extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $Count;
+	/**
+	 * @var \T[]
+	 * @field
+	 */
+	public $Items;
+	/**
 	 * @param \Avalonia\Utilities\T $item
 	 * @return \System\Void|void
 	 */

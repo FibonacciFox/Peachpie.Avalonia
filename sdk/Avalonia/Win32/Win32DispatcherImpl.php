@@ -8,6 +8,36 @@ class Win32DispatcherImpl extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImpl
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SignalW;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SignalL;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CurrentThreadIsLoopThread;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanQueryPendingInput;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasPendingInput;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Now;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_CurrentThreadIsLoopThread(){}

@@ -9,6 +9,11 @@ class SkiaMetalGpu extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLost;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

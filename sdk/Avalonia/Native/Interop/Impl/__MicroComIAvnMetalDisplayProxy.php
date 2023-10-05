@@ -30,6 +30,26 @@ class __MicroComIAvnMetalDisplayProxy extends \MicroCom\Runtime\MicroComProxyBas
 	\Avalonia\Native\Interop\IAvnMetalDisplay
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnMetalDevice
 	 */
 	public  function CreateDevice(){}

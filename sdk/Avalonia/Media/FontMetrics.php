@@ -20,6 +20,56 @@ class FontMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int16
+	 * @property
+	 */
+	public $DesignEmHeight;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsFixedPitch;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Ascent;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Descent;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $LineGap;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $LineSpacing;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $UnderlinePosition;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $UnderlineThickness;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $StrikethroughPosition;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $StrikethroughThickness;
+	/**
 	 * @return \System\Int16
 	 */
 	public  function get_DesignEmHeight(){}

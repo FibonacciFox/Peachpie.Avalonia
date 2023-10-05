@@ -6,6 +6,11 @@ class Cursor extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Input\Cursor
+	 * @field
+	 */
+	public readonly $Default;
+	/**
 	 * @return \Avalonia\Platform\ICursorImpl
 	 */
 	protected  function get_PlatformImpl(){}

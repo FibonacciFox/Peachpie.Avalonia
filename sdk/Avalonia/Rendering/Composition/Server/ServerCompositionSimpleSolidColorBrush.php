@@ -36,6 +36,41 @@ class ServerCompositionSimpleSolidColorBrush extends \Avalonia\Rendering\Composi
 	\Avalonia\Media\ISolidColorBrush
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfColorProperty;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\Media\Color
 	 */
 	public  function get_Color(){}

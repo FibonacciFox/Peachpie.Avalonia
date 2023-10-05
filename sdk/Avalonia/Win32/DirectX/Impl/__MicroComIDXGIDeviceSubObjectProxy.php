@@ -31,6 +31,26 @@ class __MicroComIDXGIDeviceSubObjectProxy extends \Avalonia\Win32\DirectX\Impl\_
 	\Avalonia\Win32\DirectX\IDXGIDeviceSubObject
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Guid* $riid
 	 * @return \System\Void*
 	 */

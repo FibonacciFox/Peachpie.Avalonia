@@ -2,7 +2,7 @@
 namespace Avalonia\Layout;
 /**
  */
-enum HorizontalAlignment: int implements
+enum HorizontalAlignment implements 
 	\System\IComparable,
 	\System\IFormattable,
 	\System\IConvertible

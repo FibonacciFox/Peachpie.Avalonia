@@ -30,6 +30,26 @@ class __MicroComIAsyncActionCompletedHandlerProxy extends \MicroCom\Runtime\Micr
 	\Avalonia\Win32\WinRT\IAsyncActionCompletedHandler
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\WinRT\IAsyncAction $asyncInfo
 	 * @param \Avalonia\Win32\WinRT\AsyncStatus $asyncStatus
 	 * @return \System\Void|void

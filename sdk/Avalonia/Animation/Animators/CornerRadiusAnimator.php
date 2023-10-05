@@ -133,6 +133,36 @@ class CornerRadiusAnimator extends \Avalonia\Animation\Animators\Animator_1 impl
 	\Avalonia\Animation\IAnimator
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\AnimatorKeyFrame]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\AnimatorKeyFrame
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses CornerRadiusAnimatorMethodsOverride::get_Count_1 ()
 	 * @uses CornerRadiusAnimatorMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

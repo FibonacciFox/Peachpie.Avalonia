@@ -5,6 +5,36 @@ namespace Avalonia\Controls;
 class TextBoxTextInputMethodClient extends \Avalonia\Input\TextInput\TextInputMethodClient
 {
 	/**
+	 * @var \Avalonia\Visual
+	 * @property
+	 */
+	public readonly $TextViewVisual;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $SurroundingText;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $CursorRectangle;
+	/**
+	 * @var \Avalonia\Input\TextInput\TextSelection
+	 * @property
+	 */
+	public $Selection;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsPreedit;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsSurroundingText;
+	/**
 	 * @param \Avalonia\Controls\Presenters\TextPresenter $presenter
 	 * @param \Avalonia\Controls\TextBox $parent
 	 * @return \System\Void|void

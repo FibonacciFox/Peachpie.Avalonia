@@ -8,6 +8,16 @@ class AvaloniaPropertyBindingObservable_2 extends \Avalonia\Reactive\Lightweight
 	\Avalonia\IDescription
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Description(){}

@@ -6,6 +6,26 @@ class ClrPropertyInfo extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSet;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanGet;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

@@ -25,6 +25,11 @@ class AvaloniaNativeMenuExporter extends \System\Object implements
 	\Avalonia\Controls\Platform\INativeMenuExporter
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsNativeMenuExported;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsNativeMenuExported(){}

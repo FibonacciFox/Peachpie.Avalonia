@@ -197,6 +197,391 @@ class InputElement extends \Avalonia\Interactivity\Interactive implements
 	\Avalonia\Input\IInputElement
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $FocusableProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsEnabledProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\InputElement,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsEffectivelyEnabledProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Input\Cursor]
+	 * @field
+	 */
+	public readonly $CursorProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\InputElement,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsKeyboardFocusWithinProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\InputElement,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsFocusedProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsHitTestVisibleProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\InputElement,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsPointerOverProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsTabStopProperty;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\GotFocusEventArgs]
+	 * @field
+	 */
+	public readonly $GotFocusEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Interactivity\RoutedEventArgs]
+	 * @field
+	 */
+	public readonly $LostFocusEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\KeyEventArgs]
+	 * @field
+	 */
+	public readonly $KeyDownEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\KeyEventArgs]
+	 * @field
+	 */
+	public readonly $KeyUpEvent;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Int32]
+	 * @field
+	 */
+	public readonly $TabIndexProperty;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\TextInputEventArgs]
+	 * @field
+	 */
+	public readonly $TextInputEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\TextInput\TextInputMethodClientRequestedEventArgs]
+	 * @field
+	 */
+	public readonly $TextInputMethodClientRequestedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerEventArgs]
+	 * @field
+	 */
+	public readonly $PointerEnteredEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerEventArgs]
+	 * @field
+	 */
+	public readonly $PointerExitedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerEventArgs]
+	 * @field
+	 */
+	public readonly $PointerMovedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerPressedEventArgs]
+	 * @field
+	 */
+	public readonly $PointerPressedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerReleasedEventArgs]
+	 * @field
+	 */
+	public readonly $PointerReleasedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerCaptureLostEventArgs]
+	 * @field
+	 */
+	public readonly $PointerCaptureLostEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\PointerWheelEventArgs]
+	 * @field
+	 */
+	public readonly $PointerWheelChangedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\TappedEventArgs]
+	 * @field
+	 */
+	public readonly $TappedEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\HoldingRoutedEventArgs]
+	 * @field
+	 */
+	public readonly $HoldingEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\TappedEventArgs]
+	 * @field
+	 */
+	public readonly $DoubleTappedEvent;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Focusable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \Avalonia\Input\Cursor
+	 * @property
+	 */
+	public $Cursor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsKeyboardFocusWithin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsFocused;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsHitTestVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsPointerOver;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsTabStop;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEffectivelyEnabled;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TabIndex;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Input\KeyBinding]
+	 * @property
+	 */
+	public readonly $KeyBindings;
+	/**
+	 * @var \Avalonia\Input\GestureRecognizers\GestureRecognizerCollection
+	 * @property
+	 */
+	public readonly $GestureRecognizers;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxHeight;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public $Margin;
+	/**
+	 * @var \Avalonia\Layout\HorizontalAlignment
+	 * @property
+	 */
+	public $HorizontalAlignment;
+	/**
+	 * @var \Avalonia\Layout\VerticalAlignment
+	 * @property
+	 */
+	public $VerticalAlignment;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $DesiredSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsMeasureValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsArrangeValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseLayoutRounding;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Clip;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisible;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \Avalonia\Media\IEffect
+	 * @property
+	 */
+	public $Effect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasMirrorTransform;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $RenderTransform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $RenderTransformOrigin;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public $FlowDirection;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ZIndex;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler_1 $value
 	 * @return \System\Void|void
 	 */

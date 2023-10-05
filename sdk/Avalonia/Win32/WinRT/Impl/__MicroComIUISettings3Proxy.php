@@ -31,6 +31,36 @@ class __MicroComIUISettings3Proxy extends \Avalonia\Win32\WinRT\Impl\__MicroComI
 	\Avalonia\Win32\WinRT\IUISettings3
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\WinRT\UIColorType $desiredColor
 	 * @return \Avalonia\Win32\WinRT\WinRTColor
 	 */

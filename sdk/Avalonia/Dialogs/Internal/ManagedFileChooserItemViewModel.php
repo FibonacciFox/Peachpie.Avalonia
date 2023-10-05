@@ -6,6 +6,41 @@ class ManagedFileChooserItemViewModel extends \Avalonia\Dialogs\Internal\Avaloni
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $DisplayName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Path;
+	/**
+	 * @var \System\DateTime
+	 * @property
+	 */
+	public $Modified;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Type;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Dialogs\Internal\ManagedFileChooserItemType
+	 * @property
+	 */
+	public $ItemType;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $IconKey;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_DisplayName(){}

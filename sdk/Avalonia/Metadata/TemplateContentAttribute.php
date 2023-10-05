@@ -5,6 +5,16 @@ namespace Avalonia\Metadata;
 class TemplateContentAttribute extends \System\Attribute
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $TemplateResultType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $TypeId;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_TemplateResultType(){}

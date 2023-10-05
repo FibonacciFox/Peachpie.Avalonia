@@ -5,6 +5,21 @@ namespace Avalonia\Remote\Protocol\Designer;
 class UpdateXamlResultMessage extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Error;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Handle;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Designer\ExceptionDetails
+	 * @property
+	 */
+	public $Exception;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Error(){}

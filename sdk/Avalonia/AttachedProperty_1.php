@@ -79,6 +79,51 @@ class AttachedProperty_1 extends \Avalonia\StyledProperty_1 implements
 	\Avalonia\IStyledPropertyAccessor
 {
 	/**
+	 * @var \System\Func_2[TValue,System\Boolean]
+	 * @property
+	 */
+	public readonly $ValidateValue;
+	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
 	 * @uses AttachedProperty_1MethodsOverride::AddOwner_1 ($metadata)
 	 * @uses AttachedProperty_1MethodsOverride::AddOwner_2 ($metadata)
 	 * @return mixed|@override

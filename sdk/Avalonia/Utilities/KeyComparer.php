@@ -28,6 +28,11 @@ class KeyComparer extends \System\Object implements
 	\System\Collections\Generic\IEqualityComparer_1
 {
 	/**
+	 * @var \Avalonia\Utilities\WeakHashList_1+KeyComparer[T]
+	 * @field
+	 */
+	public $Instance;
+	/**
 	 * @uses KeyComparerMethodsOverride::Equals_1 ($x, $y)
 	 * @uses KeyComparerMethodsOverride::Equals_2 ($obj)
 	 * @return mixed|@override

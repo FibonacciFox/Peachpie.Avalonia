@@ -28,6 +28,21 @@ class ServerListProxyHelper_2 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \TClient
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses ServerListProxyHelper_2MethodsOverride::GetEnumerator_1 ()
 	 * @uses ServerListProxyHelper_2MethodsOverride::GetEnumerator_2 ()
 	 * @uses ServerListProxyHelper_2MethodsOverride::GetEnumerator_3 ()

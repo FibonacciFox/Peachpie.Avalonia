@@ -7,6 +7,21 @@ class RenderDataClipNode extends \Avalonia\Rendering\Composition\Drawing\Nodes\R
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]
+	 * @field
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\RoundedRect
+	 * @property
+	 */
+	public $Rect;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\RoundedRect
 	 */
 	public  function get_Rect(){}

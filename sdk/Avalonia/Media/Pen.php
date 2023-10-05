@@ -141,6 +141,71 @@ class Pen extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $BrushProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $ThicknessProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IDashStyle]
+	 * @field
+	 */
+	public readonly $DashStyleProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\PenLineCap]
+	 * @field
+	 */
+	public readonly $LineCapProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\PenLineJoin]
+	 * @field
+	 */
+	public readonly $LineJoinProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MiterLimitProperty;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Brush;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Thickness;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public $DashStyle;
+	/**
+	 * @var \Avalonia\Media\PenLineCap
+	 * @property
+	 */
+	public $LineCap;
+	/**
+	 * @var \Avalonia\Media\PenLineJoin
+	 * @property
+	 */
+	public $LineJoin;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MiterLimit;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_Brush(){}

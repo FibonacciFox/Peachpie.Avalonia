@@ -28,6 +28,21 @@ class SelectingItemsControlSelectionAdapter extends \System\Object implements
 	\Avalonia\Controls\Utils\ISelectionAdapter
 {
 	/**
+	 * @var \Avalonia\Controls\Primitives\SelectingItemsControl
+	 * @property
+	 */
+	public $SelectorControl;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $SelectedItem;
+	/**
+	 * @var \System\Collections\IEnumerable
+	 * @property
+	 */
+	public $ItemsSource;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

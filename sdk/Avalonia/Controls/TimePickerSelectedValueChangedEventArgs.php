@@ -5,6 +5,16 @@ namespace Avalonia\Controls;
 class TimePickerSelectedValueChangedEventArgs extends \System\Object
 {
 	/**
+	 * @var \System\Nullable_1[System\TimeSpan]
+	 * @property
+	 */
+	public readonly $OldTime;
+	/**
+	 * @var \System\Nullable_1[System\TimeSpan]
+	 * @property
+	 */
+	public readonly $NewTime;
+	/**
 	 * @return \System\Nullable_1
 	 */
 	public  function get_OldTime(){}

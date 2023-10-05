@@ -117,6 +117,16 @@ class SelectedDatesCollection extends \System\Collections\ObjectModel\Observable
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\DateTime
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Collections\IList $removedItems
 	 * @param \System\Collections\IList $addedItems
 	 * @deprecated this element should not be used by you because it will break your program

@@ -19,6 +19,21 @@ trait TypeNameAndClassSelectorMethodsOverride
 class TypeNameAndClassSelector extends \Avalonia\Styling\Selector
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsConcreteType;
+	/**
+	 * @var \System\Collections\Generic\IList_1[System\String]
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
 	 * @param \Avalonia\Styling\Selector $previous
 	 * @param \System\Type $targetType
 	 * @return \Avalonia\Styling\TypeNameAndClassSelector

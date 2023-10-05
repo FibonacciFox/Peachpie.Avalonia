@@ -137,6 +137,36 @@ class FlyoutBase extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\Primitives\FlyoutBase,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsOpenProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\Primitives\FlyoutBase,Avalonia\Controls\Control]
+	 * @field
+	 */
+	public readonly $TargetProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\Primitives\FlyoutBase]
+	 * @field
+	 */
+	public readonly $AttachedFlyoutProperty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsOpen;
+	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

@@ -31,6 +31,16 @@ class ImmediateValueEntry_1 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
 	 * @uses ImmediateValueEntry_1MethodsOverride::get_Property_1 ()
 	 * @uses ImmediateValueEntry_1MethodsOverride::get_Property_2 ()
 	 * @return mixed|@override

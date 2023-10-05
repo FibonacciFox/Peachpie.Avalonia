@@ -5,12 +5,77 @@ namespace Avalonia\Data;
 class Binding extends \Avalonia\Data\BindingBase implements 
 	\Avalonia\Data\IBinding
 {
-
-    public function __construct(string $path)
-    {
-    }
-
-    /**
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $ElementName;
+	/**
+	 * @var \Avalonia\Data\RelativeSource
+	 * @property
+	 */
+	public $RelativeSource;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Path;
+	/**
+	 * @var \System\Func_3[System\String,System\String,System\Type]
+	 * @property
+	 */
+	public $TypeResolver;
+	/**
+	 * @var \Avalonia\Data\Converters\IValueConverter
+	 * @property
+	 */
+	public $Converter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ConverterParameter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $FallbackValue;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $TargetNullValue;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $StringFormat;
+	/**
+	 * @var \System\WeakReference
+	 * @property
+	 */
+	public $DefaultAnchor;
+	/**
+	 * @var \System\WeakReference_1[Avalonia\Controls\INameScope]
+	 * @property
+	 */
+	public $NameScope;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_ElementName(){}

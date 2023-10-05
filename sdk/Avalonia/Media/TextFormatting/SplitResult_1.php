@@ -6,6 +6,16 @@ namespace Avalonia\Media\TextFormatting;
 class SplitResult_1 extends \System\ValueType
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $First;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Second;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\T
 	 */
 	public  function get_First(){}

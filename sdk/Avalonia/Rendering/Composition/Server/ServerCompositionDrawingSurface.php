@@ -37,6 +37,26 @@ class ServerCompositionDrawingSurface extends \Avalonia\Rendering\Composition\Se
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]
+	 * @property
+	 */
+	public readonly $Bitmap;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $Changed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @param \Avalonia\Rendering\Composition\CompositionImportedGpuImage $image
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

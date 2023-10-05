@@ -9,6 +9,21 @@ class WinRTInspectable extends \System\Object implements
 	\MicroCom\Runtime\IMicroComShadowContainer
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

@@ -8,6 +8,16 @@ class TypeCastPathElement_1 extends \System\Object implements
 	\Avalonia\Markup\Xaml\MarkupExtensions\CompiledBindings\ICompiledBindingPathElement
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \System\Func_2[System\Object,System\Object]
+	 * @property
+	 */
+	public readonly $Cast;
+	/**
 	 * @param \System\Object|object $obj
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

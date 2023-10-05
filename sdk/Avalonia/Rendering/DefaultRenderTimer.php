@@ -6,6 +6,16 @@ class DefaultRenderTimer extends \System\Object implements
 	\Avalonia\Rendering\IRenderTimer
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $FramesPerSecond;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $RunsInBackground;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_FramesPerSecond(){}

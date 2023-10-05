@@ -5,6 +5,21 @@ namespace Avalonia\Automation;
 class AutomationElementIdentifiers extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $BoundingRectangleProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $ClassNameProperty;
+	/**
+	 * @var \Avalonia\Automation\AutomationProperty
+	 * @property
+	 */
+	public readonly $NameProperty;
+	/**
 	 * @return \Avalonia\Automation\AutomationProperty
 	 */
 	public static function get_BoundingRectangleProperty(){}

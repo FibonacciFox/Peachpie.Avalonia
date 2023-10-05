@@ -7,6 +7,11 @@ class Win32NativeControlAttachment extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Controls\Platform\INativeControlHostImpl
+	 * @property
+	 */
+	public $AttachedTo;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

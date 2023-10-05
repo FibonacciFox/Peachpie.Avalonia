@@ -63,6 +63,76 @@ trait ExpressionVariantMethodsOverride
 class ExpressionVariant extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\VariantType
+	 * @field
+	 */
+	public $Type;
+	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	public $Boolean;
+	/**
+	 * @var \System\Single
+	 * @field
+	 */
+	public $Scalar;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $Double;
+	/**
+	 * @var \System\Numerics\Vector2
+	 * @field
+	 */
+	public $Vector2;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @field
+	 */
+	public $Vector3;
+	/**
+	 * @var \System\Numerics\Vector4
+	 * @field
+	 */
+	public $Vector4;
+	/**
+	 * @var \Avalonia\Vector
+	 * @field
+	 */
+	public $Vector;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @field
+	 */
+	public $Vector3D;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @field
+	 */
+	public $AvaloniaMatrix;
+	/**
+	 * @var \System\Numerics\Matrix3x2
+	 * @field
+	 */
+	public $Matrix3x2;
+	/**
+	 * @var \System\Numerics\Matrix4x4
+	 * @field
+	 */
+	public $Matrix4x4;
+	/**
+	 * @var \System\Numerics\Quaternion
+	 * @field
+	 */
+	public $Quaternion;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @field
+	 */
+	public $Color;
+	/**
 	 * @param \System\String|string $property
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionVariant
 	 */

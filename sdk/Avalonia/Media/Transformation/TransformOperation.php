@@ -20,6 +20,31 @@ class TransformOperation extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+OperationType
+	 * @field
+	 */
+	public $Type;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @field
+	 */
+	public $Matrix;
+	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+DataLayout
+	 * @field
+	 */
+	public $Data;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsIdentity;
+	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation
+	 * @property
+	 */
+	public readonly $Identity;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsIdentity(){}

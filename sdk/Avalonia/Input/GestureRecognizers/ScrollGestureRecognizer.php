@@ -172,6 +172,121 @@ class ScrollGestureRecognizer extends \Avalonia\Input\GestureRecognizers\Gesture
 	\Avalonia\INamed
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\GestureRecognizers\ScrollGestureRecognizer,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanHorizontallyScrollProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\GestureRecognizers\ScrollGestureRecognizer,System\Boolean]
+	 * @field
+	 */
+	public readonly $CanVerticallyScrollProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\GestureRecognizers\ScrollGestureRecognizer,System\Boolean]
+	 * @field
+	 */
+	public readonly $IsScrollInertiaEnabledProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Input\GestureRecognizers\ScrollGestureRecognizer,System\Int32]
+	 * @field
+	 */
+	public readonly $ScrollStartDistanceProperty;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	protected $InertialScrollSpeedEnd;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $InertialResistance;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanHorizontallyScroll;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $CanVerticallyScroll;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsScrollInertiaEnabled;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ScrollStartDistance;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_CanHorizontallyScroll(){}

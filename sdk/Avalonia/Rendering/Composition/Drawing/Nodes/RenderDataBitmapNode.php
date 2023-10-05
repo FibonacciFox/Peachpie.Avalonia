@@ -7,6 +7,31 @@ class RenderDataBitmapNode extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]
+	 * @property
+	 */
+	public $Bitmap;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $SourceRect;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $DestRect;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Utilities\IRef_1
 	 */
 	public  function get_Bitmap(){}

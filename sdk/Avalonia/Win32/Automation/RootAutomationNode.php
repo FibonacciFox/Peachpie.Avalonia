@@ -80,6 +80,36 @@ class RootAutomationNode extends \Avalonia\Win32\Automation\AutomationNode imple
 	\Avalonia\Win32\Interop\Automation\IRawElementProviderFragmentRoot
 {
 	/**
+	 * @var \Avalonia\Win32\Interop\Automation\IRawElementProviderFragmentRoot
+	 * @property
+	 */
+	public readonly $FragmentRoot;
+	/**
+	 * @var \Avalonia\Automation\Provider\IRootProvider
+	 * @property
+	 */
+	public readonly $Peer;
+	/**
+	 * @var \Avalonia\Platform\IWindowBaseImpl
+	 * @property
+	 */
+	public readonly $WindowImpl;
+	/**
+	 * @var \Avalonia\Win32\Interop\Automation\IRawElementProviderSimple
+	 * @property
+	 */
+	public readonly $HostRawElementProvider;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $BoundingRectangle;
+	/**
+	 * @var \Avalonia\Win32\Interop\Automation\ProviderOptions
+	 * @property
+	 */
+	public readonly $ProviderOptions;
+	/**
 	 * @uses RootAutomationNodeMethodsOverride::get_Peer_1 ()
 	 * @uses RootAutomationNodeMethodsOverride::get_Peer_2 ()
 	 * @return mixed|@override

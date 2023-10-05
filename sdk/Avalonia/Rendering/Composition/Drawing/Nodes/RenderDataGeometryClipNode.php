@@ -7,6 +7,21 @@ class RenderDataGeometryClipNode extends \Avalonia\Rendering\Composition\Drawing
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]
+	 * @field
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\Platform\IGeometryImpl
+	 * @property
+	 */
+	public $Geometry;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Platform\IGeometryImpl
 	 */
 	public  function get_Geometry(){}

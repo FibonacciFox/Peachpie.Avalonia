@@ -7,6 +7,26 @@ class Session extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\OpenGL\IGlContext
+	 * @property
+	 */
+	public readonly $Context;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsYFlipped;
+	/**
 	 * @return \Avalonia\OpenGL\IGlContext
 	 */
 	public  function get_Context(){}

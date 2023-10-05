@@ -19,6 +19,36 @@ trait DispatcherOperationMethodsOverride
 class DispatcherOperation extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected readonly $ThrowOnUiThread;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $Callback;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $TaskSource;
+	/**
+	 * @var \Avalonia\Threading\DispatcherOperationStatus
+	 * @property
+	 */
+	public $Status;
+	/**
+	 * @var \Avalonia\Threading\Dispatcher
+	 * @property
+	 */
+	public readonly $Dispatcher;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
 	 * @return \Avalonia\Threading\DispatcherOperationStatus
 	 */
 	public  function get_Status(){}

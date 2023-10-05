@@ -5,6 +5,16 @@ namespace Avalonia\Media\Fonts;
 class FontFamilyKey extends \System\Object
 {
 	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public readonly $Source;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public readonly $BaseUri;
+	/**
 	 * @return \System\Uri
 	 */
 	public  function get_Source(){}

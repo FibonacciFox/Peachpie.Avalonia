@@ -5,6 +5,11 @@ namespace Avalonia\X11;
 class XError extends \System\Object
 {
 	/**
+	 * @var \Avalonia\X11\XErrorEvent
+	 * @field
+	 */
+	public $LastError;
+	/**
 	 * @param \System\IntPtr $display
 	 * @param \Avalonia\X11\XErrorEvent& $error
 	 * @deprecated this element should not be used by you because it will break your program

@@ -20,6 +20,16 @@ class Item extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Action_1[System\Exception]
+	 * @field
+	 */
+	public $OnFinish;
+	/**
+	 * @var \System\Func_1[System\Threading\Tasks\Task]
+	 * @property
+	 */
+	public $Callback;
+	/**
 	 * @return \System\Type
 	 */
 	protected  function get_EqualityContract(){}

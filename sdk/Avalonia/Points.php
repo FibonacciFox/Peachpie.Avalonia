@@ -132,6 +132,31 @@ class Points extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Point]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses PointsMethodsOverride::get_Count_1 ()
 	 * @uses PointsMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

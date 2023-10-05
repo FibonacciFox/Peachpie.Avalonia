@@ -37,6 +37,21 @@ class ServerList_1 extends \Avalonia\Rendering\Composition\Server\ServerObject i
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[T]
+	 * @property
+	 */
+	public readonly $List;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Collections\Generic\List_1
 	 */
 	public  function get_List(){}

@@ -7,6 +7,26 @@ class MetalDrawingSession extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Texture;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsYFlipped;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

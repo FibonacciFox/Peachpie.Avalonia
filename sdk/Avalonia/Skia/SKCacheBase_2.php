@@ -6,6 +6,16 @@ namespace Avalonia\Skia;
 class SKCacheBase_2 extends \System\Object
 {
 	/**
+	 * @var \System\Collections\Concurrent\ConcurrentBag_1[TCachedItem]
+	 * @field
+	 */
+	protected readonly $Cache;
+	/**
+	 * @var \TCache
+	 * @field
+	 */
+	public readonly $Shared;
+	/**
 	 * @return \Avalonia\Skia\TCachedItem
 	 */
 	public  function Get(){}

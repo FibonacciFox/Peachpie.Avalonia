@@ -56,6 +56,21 @@ class UntypedBindingEntry extends \Avalonia\PropertyStore\BindingEntryBase_2 imp
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @uses UntypedBindingEntryMethodsOverride::ConvertAndValidate_1 ($value)
 	 * @uses UntypedBindingEntryMethodsOverride::ConvertAndValidate_2 ($value)
 	 * @return mixed|@override

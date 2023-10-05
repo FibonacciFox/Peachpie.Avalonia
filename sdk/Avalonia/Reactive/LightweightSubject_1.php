@@ -9,6 +9,11 @@ class LightweightSubject_1 extends \Avalonia\Reactive\LightweightObservableBase_
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function OnCompleted(){}

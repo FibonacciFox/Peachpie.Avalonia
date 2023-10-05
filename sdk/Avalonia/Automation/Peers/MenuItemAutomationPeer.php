@@ -19,6 +19,11 @@ trait MenuItemAutomationPeerMethodsOverride
 class MenuItemAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
 	/**
+	 * @var \Avalonia\Controls\MenuItem
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @uses MenuItemAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses MenuItemAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

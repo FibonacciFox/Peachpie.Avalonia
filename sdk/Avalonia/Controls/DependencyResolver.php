@@ -6,6 +6,11 @@ class DependencyResolver extends \System\Object implements
 	\Avalonia\IAvaloniaDependencyResolver
 {
 	/**
+	 * @var \Avalonia\Controls\MenuItem+DependencyResolver
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Type $serviceType
 	 * @return \System\Object|object
 	 */

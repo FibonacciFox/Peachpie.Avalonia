@@ -5,6 +5,26 @@ namespace Avalonia\Threading;
 class PriorityChain extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Count;
+	/**
+	 * @var \Avalonia\Threading\DispatcherOperation
+	 * @property
+	 */
+	public $Head;
+	/**
+	 * @var \Avalonia\Threading\DispatcherOperation
+	 * @property
+	 */
+	public $Tail;
+	/**
 	 * @return \Avalonia\Threading\DispatcherPriority
 	 */
 	public  function get_Priority(){}

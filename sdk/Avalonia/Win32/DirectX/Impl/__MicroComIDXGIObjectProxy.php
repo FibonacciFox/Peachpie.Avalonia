@@ -30,6 +30,26 @@ class __MicroComIDXGIObjectProxy extends \MicroCom\Runtime\MicroComProxyBase imp
 	\Avalonia\Win32\DirectX\IDXGIObject
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Guid* $Name
 	 * @param \System\UInt16 $DataSize
 	 * @param \System\Void** $pData

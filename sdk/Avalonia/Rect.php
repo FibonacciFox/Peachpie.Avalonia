@@ -68,6 +68,81 @@ class Rect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Y;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Height;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Right;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Bottom;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Left;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Top;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $TopLeft;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $TopRight;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $BottomLeft;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $BottomRight;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $Center;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_X(){}

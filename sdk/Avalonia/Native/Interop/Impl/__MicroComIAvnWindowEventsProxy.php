@@ -31,6 +31,31 @@ class __MicroComIAvnWindowEventsProxy extends \Avalonia\Native\Interop\Impl\__Mi
 	\Avalonia\Native\Interop\IAvnWindowEvents
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeer
+	 * @property
+	 */
+	public readonly $AutomationPeer;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function Closing(){}

@@ -20,6 +20,41 @@ class SelectorMatch extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Styling\SelectorMatch
+	 * @field
+	 */
+	public readonly $NeverThisType;
+	/**
+	 * @var \Avalonia\Styling\SelectorMatch
+	 * @field
+	 */
+	public readonly $NeverThisInstance;
+	/**
+	 * @var \Avalonia\Styling\SelectorMatch
+	 * @field
+	 */
+	public readonly $AlwaysThisType;
+	/**
+	 * @var \Avalonia\Styling\SelectorMatch
+	 * @field
+	 */
+	public readonly $AlwaysThisInstance;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsMatch;
+	/**
+	 * @var \Avalonia\Styling\SelectorMatchResult
+	 * @property
+	 */
+	public readonly $Result;
+	/**
+	 * @var \Avalonia\Styling\Activators\IStyleActivator
+	 * @property
+	 */
+	public readonly $Activator;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsMatch(){}

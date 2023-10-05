@@ -5,6 +5,11 @@ namespace Avalonia\Platform\Internal;
 class Constants extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $AvaloniaResourceName;
+	/**
 	 * @return \System\String|string
 	 */
 	public static function get_AvaloniaResourceName(){}

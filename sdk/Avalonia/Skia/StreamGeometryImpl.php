@@ -7,6 +7,26 @@ class StreamGeometryImpl extends \Avalonia\Skia\GeometryImpl implements
 	\Avalonia\Platform\IStreamGeometryImpl
 {
 	/**
+	 * @var \SkiaSharp\SKPath
+	 * @property
+	 */
+	public readonly $StrokePath;
+	/**
+	 * @var \SkiaSharp\SKPath
+	 * @property
+	 */
+	public readonly $FillPath;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
 	 * @return \Avalonia\Platform\IStreamGeometryImpl
 	 */
 	public  function Clone(){}

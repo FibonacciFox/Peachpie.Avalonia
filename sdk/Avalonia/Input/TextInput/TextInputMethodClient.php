@@ -5,6 +5,36 @@ namespace Avalonia\Input\TextInput;
 class TextInputMethodClient extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Visual
+	 * @property
+	 */
+	public readonly $TextViewVisual;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsPreedit;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsSurroundingText;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $SurroundingText;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $CursorRectangle;
+	/**
+	 * @var \Avalonia\Input\TextInput\TextSelection
+	 * @property
+	 */
+	public $Selection;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

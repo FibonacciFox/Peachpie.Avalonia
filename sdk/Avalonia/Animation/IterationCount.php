@@ -20,6 +20,26 @@ class IterationCount extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Animation\IterationCount
+	 * @property
+	 */
+	public readonly $Infinite;
+	/**
+	 * @var \Avalonia\Animation\IterationType
+	 * @property
+	 */
+	public readonly $RepeatType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInfinite;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \Avalonia\Animation\IterationCount
 	 */
 	public static function get_Infinite(){}

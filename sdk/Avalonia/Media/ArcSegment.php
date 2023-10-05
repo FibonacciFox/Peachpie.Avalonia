@@ -137,6 +137,61 @@ class ArcSegment extends \Avalonia\Media\PathSegment implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsLargeArcProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $PointProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $RotationAngleProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Size]
+	 * @field
+	 */
+	public readonly $SizeProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\SweepDirection]
+	 * @field
+	 */
+	public readonly $SweepDirectionProperty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsLargeArc;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Point;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $RotationAngle;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Media\SweepDirection
+	 * @property
+	 */
+	public $SweepDirection;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsLargeArc(){}

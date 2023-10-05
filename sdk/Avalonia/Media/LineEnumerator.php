@@ -21,6 +21,21 @@ class LineEnumerator extends \System\ValueType implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Position;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Length;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextLine
+	 * @property
+	 */
+	public $Current;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

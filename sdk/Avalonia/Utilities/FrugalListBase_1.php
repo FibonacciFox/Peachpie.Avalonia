@@ -6,6 +6,21 @@ namespace Avalonia\Utilities;
 class FrugalListBase_1 extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Capacity;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

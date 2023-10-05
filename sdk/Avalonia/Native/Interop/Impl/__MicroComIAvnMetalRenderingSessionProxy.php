@@ -30,6 +30,41 @@ class __MicroComIAvnMetalRenderingSessionProxy extends \MicroCom\Runtime\MicroCo
 	\Avalonia\Native\Interop\IAvnMetalRenderingSession
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnPixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Texture;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Native\Interop\AvnPixelSize
 	 */
 	public  function get_PixelSize(){}

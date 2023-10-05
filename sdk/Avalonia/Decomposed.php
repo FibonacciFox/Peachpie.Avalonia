@@ -20,6 +20,26 @@ class Decomposed extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @field
+	 */
+	public $Translate;
+	/**
+	 * @var \Avalonia\Vector
+	 * @field
+	 */
+	public $Scale;
+	/**
+	 * @var \Avalonia\Vector
+	 * @field
+	 */
+	public $Skew;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $Angle;
+	/**
 	 * @param \System\Text\StringBuilder $builder
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

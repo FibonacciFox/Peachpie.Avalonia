@@ -7,6 +7,16 @@ class CommandAccessor extends \Avalonia\Data\Core\Plugins\PropertyAccessorBase i
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

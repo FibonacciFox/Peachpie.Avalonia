@@ -8,6 +8,21 @@ class MergeResourceInclude extends \Avalonia\Markup\Xaml\Styling\ResourceInclude
 	\Avalonia\Controls\IThemeVariantProvider
 {
 	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public readonly $Loaded;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public $Source;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

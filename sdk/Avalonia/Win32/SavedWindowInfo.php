@@ -5,6 +5,21 @@ namespace Avalonia\Win32;
 class SavedWindowInfo extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Win32\Interop\UnmanagedMethods+WindowStyles
+	 * @property
+	 */
+	public $Style;
+	/**
+	 * @var \Avalonia\Win32\Interop\UnmanagedMethods+WindowStyles
+	 * @property
+	 */
+	public $ExStyle;
+	/**
+	 * @var \Avalonia\Win32\Interop\UnmanagedMethods+RECT
+	 * @property
+	 */
+	public $WindowRect;
+	/**
 	 * @return \Avalonia\Win32\Interop\WindowStyles
 	 */
 	public  function get_Style(){}

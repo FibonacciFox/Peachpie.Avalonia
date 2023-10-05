@@ -25,6 +25,26 @@ class EmbeddedFontCollection extends \Avalonia\Media\Fonts\FontCollectionBase im
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Concurrent\ConcurrentDictionary_2[System\String,System\Collections\Concurrent\ConcurrentDictionary_2[Avalonia\Media\Fonts\FontCollectionKey,Avalonia\Media\IGlyphTypeface]]
+	 * @field
+	 */
+	protected readonly $_glyphTypefaceCache;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public readonly $Key;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @uses EmbeddedFontCollectionMethodsOverride::GetEnumerator_1 ()
 	 * @uses EmbeddedFontCollectionMethodsOverride::GetEnumerator_2 ()
 	 * @return mixed|@override

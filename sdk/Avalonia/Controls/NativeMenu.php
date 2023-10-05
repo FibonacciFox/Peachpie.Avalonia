@@ -148,6 +148,36 @@ class NativeMenu extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\INativeMenuExporterEventsImplBridge
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\NativeMenu,Avalonia\Controls\NativeMenuItem]
+	 * @field
+	 */
+	public readonly $ParentProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsNativeMenuExportedProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\NativeMenu]
+	 * @field
+	 */
+	public readonly $MenuProperty;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Controls\NativeMenuItemBase]
+	 * @property
+	 */
+	public readonly $Items;
+	/**
+	 * @var \Avalonia\Controls\NativeMenuItem
+	 * @property
+	 */
+	public $Parent;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_Items(){}

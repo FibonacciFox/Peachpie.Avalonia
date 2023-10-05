@@ -142,6 +142,41 @@ class ScaleTransform extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $ScaleXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $ScaleYProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ScaleX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ScaleY;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_ScaleX(){}

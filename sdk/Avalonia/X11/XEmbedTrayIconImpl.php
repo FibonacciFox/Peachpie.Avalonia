@@ -7,6 +7,16 @@ class XEmbedTrayIconImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Controls\Platform\INativeMenuExporter
+	 * @property
+	 */
+	public readonly $MenuExporter;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $OnClicked;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

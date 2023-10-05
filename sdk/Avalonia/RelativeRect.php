@@ -20,6 +20,21 @@ class RelativeRect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\RelativeRect
+	 * @field
+	 */
+	public readonly $Fill;
+	/**
+	 * @var \Avalonia\RelativeUnit
+	 * @property
+	 */
+	public readonly $Unit;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Rect;
+	/**
 	 * @return \Avalonia\RelativeUnit
 	 */
 	public  function get_Unit(){}

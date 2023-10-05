@@ -21,6 +21,16 @@ class ImmutableDashStyle extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Double]
+	 * @property
+	 */
+	public readonly $Dashes;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_Dashes(){}

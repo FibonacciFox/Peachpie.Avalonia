@@ -30,6 +30,26 @@ class __MicroComIEnumFORMATETCProxy extends \MicroCom\Runtime\MicroComProxyBase 
 	\Avalonia\Win32\Win32Com\IEnumFORMATETC
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt32 $celt
 	 * @param \Avalonia\Win32\Interop\FORMATETC* $rgelt
 	 * @param \System\UInt32* $pceltFetched

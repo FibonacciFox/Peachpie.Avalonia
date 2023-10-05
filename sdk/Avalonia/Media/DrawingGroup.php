@@ -137,6 +137,61 @@ class DrawingGroup extends \Avalonia\Media\Drawing implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OpacityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Transform]
+	 * @field
+	 */
+	public readonly $TransformProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Geometry]
+	 * @field
+	 */
+	public readonly $ClipGeometryProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $OpacityMaskProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Media\DrawingGroup,Avalonia\Media\DrawingCollection]
+	 * @field
+	 */
+	public readonly $ChildrenProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $ClipGeometry;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \Avalonia\Media\DrawingCollection
+	 * @property
+	 */
+	public $Children;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Opacity(){}

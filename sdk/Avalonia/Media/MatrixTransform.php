@@ -142,6 +142,31 @@ class MatrixTransform extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Matrix]
+	 * @field
+	 */
+	public readonly $MatrixProperty;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public $Matrix;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Matrix
 	 */
 	public  function get_Matrix(){}

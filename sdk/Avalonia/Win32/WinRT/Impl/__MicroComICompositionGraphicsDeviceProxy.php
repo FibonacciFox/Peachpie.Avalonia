@@ -31,6 +31,36 @@ class __MicroComICompositionGraphicsDeviceProxy extends \Avalonia\Win32\WinRT\Im
 	\Avalonia\Win32\WinRT\ICompositionGraphicsDevice
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\Interop\SIZE_F $sizePixels
 	 * @param \Avalonia\Win32\WinRT\DirectXPixelFormat $pixelFormat
 	 * @param \Avalonia\Win32\WinRT\DirectXAlphaMode $alphaMode

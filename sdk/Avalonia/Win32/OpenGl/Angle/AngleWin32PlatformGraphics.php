@@ -21,6 +21,16 @@ class AngleWin32PlatformGraphics extends \System\Object implements
 	\Avalonia\OpenGL\IPlatformGraphicsOpenGlContextFactory
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UsesSharedContext;
+	/**
+	 * @var \Avalonia\Win32\AngleOptions+PlatformApi
+	 * @property
+	 */
+	public readonly $PlatformApi;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_UsesSharedContext(){}

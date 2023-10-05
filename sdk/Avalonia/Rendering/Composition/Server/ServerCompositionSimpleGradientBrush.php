@@ -36,6 +36,41 @@ class ServerCompositionSimpleGradientBrush extends \Avalonia\Rendering\Compositi
 	\Avalonia\Media\IGradientBrush
 {
 	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]
+	 * @property
+	 */
+	public readonly $GradientStops;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public $SpreadMethod;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Collections\Generic\IReadOnlyList_1
 	 */
 	public  function get_GradientStops(){}

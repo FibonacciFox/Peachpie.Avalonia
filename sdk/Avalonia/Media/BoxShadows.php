@@ -19,6 +19,21 @@ trait BoxShadowsMethodsOverride
 class BoxShadows extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Media\BoxShadow
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasInsetShadows;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

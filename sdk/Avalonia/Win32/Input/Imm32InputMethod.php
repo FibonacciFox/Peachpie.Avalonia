@@ -6,6 +6,41 @@ class Imm32InputMethod extends \System\Object implements
 	\Avalonia\Input\TextInput\ITextInputMethodImpl
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Hwnd;
+	/**
+	 * @var \Avalonia\Input\TextInput\TextInputMethodClient
+	 * @property
+	 */
+	public $Client;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsComposing;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $ShowCompositionWindow;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Composition;
+	/**
+	 * @var \Avalonia\Win32\Input\Imm32InputMethod
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Hwnd(){}

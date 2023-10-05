@@ -137,6 +137,26 @@ class PlatformGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses PlatformGeometryMethodsOverride::add_PropertyChanged_1 ($value)
 	 * @uses PlatformGeometryMethodsOverride::add_PropertyChanged_2 ($value)
 	 * @return mixed|@override

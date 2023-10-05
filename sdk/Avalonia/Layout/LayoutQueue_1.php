@@ -24,6 +24,11 @@ class LayoutQueue_1 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

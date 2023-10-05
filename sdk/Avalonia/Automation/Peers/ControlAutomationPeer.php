@@ -5,6 +5,11 @@ namespace Avalonia\Automation\Peers;
 class ControlAutomationPeer extends \Avalonia\Automation\Peers\AutomationPeer
 {
 	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @return \Avalonia\Controls\Control
 	 */
 	public  function get_Owner(){}

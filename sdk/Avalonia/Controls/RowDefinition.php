@@ -137,6 +137,56 @@ class RowDefinition extends \Avalonia\Controls\DefinitionBase implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MaxHeightProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $MinHeightProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\GridLength]
+	 * @field
+	 */
+	public readonly $HeightProperty;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_parentIndex;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ActualHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinHeight;
+	/**
+	 * @var \Avalonia\Controls\GridLength
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SharedSizeGroup;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_ActualHeight(){}

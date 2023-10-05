@@ -8,6 +8,26 @@ class RenderDataOpacityMaskNode extends \Avalonia\Rendering\Composition\Drawing\
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItemWithServerResources
 {
 	/**
+	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]
+	 * @field
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $ServerBrush;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $BoundsRect;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_ServerBrush(){}

@@ -7,6 +7,21 @@ class AvaloniaPropertyAccessor extends \Avalonia\Data\Core\Plugins\PropertyAcces
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \Avalonia\AvaloniaObject
 	 */
 	public  function get_Instance(){}

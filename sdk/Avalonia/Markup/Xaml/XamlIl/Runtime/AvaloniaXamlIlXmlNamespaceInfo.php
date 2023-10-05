@@ -5,6 +5,16 @@ namespace Avalonia\Markup\Xaml\XamlIl\Runtime;
 class AvaloniaXamlIlXmlNamespaceInfo extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $ClrNamespace;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $ClrAssemblyName;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_ClrNamespace(){}

@@ -42,6 +42,16 @@ class PooledStack_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\Pooled\ClearMode
+	 * @property
+	 */
+	public readonly $ClearMode;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

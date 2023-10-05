@@ -44,6 +44,21 @@ class IndexRange extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Begin;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $End;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Begin(){}

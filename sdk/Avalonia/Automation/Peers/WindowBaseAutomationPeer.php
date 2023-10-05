@@ -20,6 +20,16 @@ class WindowBaseAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomat
 	\Avalonia\Automation\Provider\IRootProvider
 {
 	/**
+	 * @var \Avalonia\Controls\WindowBase
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Platform\ITopLevelImpl
+	 * @property
+	 */
+	public readonly $PlatformImpl;
+	/**
 	 * @uses WindowBaseAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses WindowBaseAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

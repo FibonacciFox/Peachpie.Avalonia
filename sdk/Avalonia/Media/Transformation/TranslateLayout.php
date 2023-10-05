@@ -20,6 +20,16 @@ class TranslateLayout extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $X;
+	/**
+	 * @var \System\Double
+	 * @field
+	 */
+	public $Y;
+	/**
 	 * @param \System\Text\StringBuilder $builder
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

@@ -36,6 +36,16 @@ class ServerObject extends \Avalonia\Rendering\Composition\Server\SimpleServerOb
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsActive(){}

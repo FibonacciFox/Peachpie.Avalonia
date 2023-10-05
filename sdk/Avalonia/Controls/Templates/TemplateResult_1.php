@@ -21,6 +21,16 @@ class TemplateResult_1 extends \System\Object implements
 	\Avalonia\Controls\Templates\ITemplateResult
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Result;
+	/**
+	 * @var \Avalonia\Controls\INameScope
+	 * @property
+	 */
+	public readonly $NameScope;
+	/**
 	 * @uses TemplateResult_1MethodsOverride::get_Result_1 ()
 	 * @uses TemplateResult_1MethodsOverride::get_Result_2 ()
 	 * @return mixed|@override

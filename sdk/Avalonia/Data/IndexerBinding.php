@@ -6,6 +6,11 @@ class IndexerBinding extends \System\Object implements
 	\Avalonia\Data\IBinding
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

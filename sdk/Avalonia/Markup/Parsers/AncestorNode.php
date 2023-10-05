@@ -6,6 +6,21 @@ class AncestorNode extends \System\Object implements
 	\Avalonia\Markup\Parsers\INode
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Namespace;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $TypeName;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Level;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Namespace(){}

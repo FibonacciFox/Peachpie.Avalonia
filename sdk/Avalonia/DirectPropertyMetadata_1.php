@@ -21,6 +21,21 @@ class DirectPropertyMetadata_1 extends \Avalonia\AvaloniaPropertyMetadata implem
 	\Avalonia\IDirectPropertyMetadata
 {
 	/**
+	 * @var \TValue
+	 * @property
+	 */
+	public $UnsetValue;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public readonly $DefaultBindingMode;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public readonly $EnableDataValidation;
+	/**
 	 * @uses DirectPropertyMetadata_1MethodsOverride::get_UnsetValue_1 ()
 	 * @uses DirectPropertyMetadata_1MethodsOverride::get_UnsetValue_2 ()
 	 * @return mixed|@override

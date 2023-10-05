@@ -22,6 +22,26 @@ class GlSkiaSharedTextureForComposition extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\OpenGL\IGlContext
+	 * @property
+	 */
+	public readonly $Context;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TextureId;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $InternalFormat;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
 	 * @return \Avalonia\OpenGL\IGlContext
 	 */
 	public  function get_Context(){}

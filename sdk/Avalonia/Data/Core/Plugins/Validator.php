@@ -166,6 +166,16 @@ class Validator extends \Avalonia\Data\Core\Plugins\DataValidationBase implement
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @uses ValidatorMethodsOverride::SetValue_1 ($value, $priority)
 	 * @uses ValidatorMethodsOverride::SetValue_2 ($value, $priority)
 	 * @return mixed|@override

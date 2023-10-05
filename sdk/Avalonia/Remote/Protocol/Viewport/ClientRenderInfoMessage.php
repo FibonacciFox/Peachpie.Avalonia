@@ -5,6 +5,16 @@ namespace Avalonia\Remote\Protocol\Viewport;
 class ClientRenderInfoMessage extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $DpiX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $DpiY;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_DpiX(){}

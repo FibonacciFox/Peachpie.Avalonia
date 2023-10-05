@@ -31,6 +31,51 @@ class __MicroComIVisual2Proxy extends \Avalonia\Win32\WinRT\Impl\__MicroComIInsp
 	\Avalonia\Win32\WinRT\IVisual2
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\IVisual
+	 * @property
+	 */
+	public readonly $ParentForTransform;
+	/**
+	 * @var \System\Numerics\Vector3
+	 * @property
+	 */
+	public readonly $RelativeOffsetAdjustment;
+	/**
+	 * @var \System\Numerics\Vector2
+	 * @property
+	 */
+	public readonly $RelativeSizeAdjustment;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\WinRT\IVisual
 	 */
 	public  function get_ParentForTransform(){}

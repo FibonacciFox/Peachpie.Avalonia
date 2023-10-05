@@ -20,6 +20,66 @@ class TextLineMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasOverflowed;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $NewlineLength;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Start;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $TextBaseline;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TrailingWhitespaceLength;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $WidthIncludingTrailingWhitespace;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Extent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OverhangAfter;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OverhangLeading;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OverhangTrailing;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasOverflowed(){}

@@ -8,6 +8,16 @@ class Ref_1 extends \System\Runtime\ConstrainedExecution\CriticalFinalizerObject
 	\System\IDisposable
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RefCount;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

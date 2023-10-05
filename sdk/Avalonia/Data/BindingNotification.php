@@ -19,6 +19,36 @@ trait BindingNotificationMethodsOverride
 class BindingNotification extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Data\BindingNotification
+	 * @field
+	 */
+	public readonly $Null;
+	/**
+	 * @var \Avalonia\Data\BindingNotification
+	 * @field
+	 */
+	public readonly $UnsetValue;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Exception
+	 * @property
+	 */
+	public $Error;
+	/**
+	 * @var \Avalonia\Data\BindingErrorType
+	 * @property
+	 */
+	public $ErrorType;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Value(){}

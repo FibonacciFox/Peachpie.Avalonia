@@ -19,6 +19,16 @@ trait BidiAlgorithmMethodsOverride
 class BidiAlgorithm extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Utilities\ArraySlice_1[System\SByte]
+	 * @property
+	 */
+	public readonly $ResolvedLevels;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ResolvedParagraphEmbeddingLevel;
+	/**
 	 * @return \Avalonia\Utilities\ArraySlice_1
 	 */
 	public  function get_ResolvedLevels(){}

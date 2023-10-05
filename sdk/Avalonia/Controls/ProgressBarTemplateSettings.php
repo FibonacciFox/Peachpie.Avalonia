@@ -137,6 +137,91 @@ class ProgressBarTemplateSettings extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $ContainerAnimationStartPositionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $ContainerAnimationEndPositionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $Container2AnimationStartPositionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $Container2AnimationEndPositionProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $Container2WidthProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $ContainerWidthProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $IndeterminateStartingOffsetProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Controls\ProgressBar+ProgressBarTemplateSettings,System\Double]
+	 * @field
+	 */
+	public readonly $IndeterminateEndingOffsetProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ContainerWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Container2Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ContainerAnimationStartPosition;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $ContainerAnimationEndPosition;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Container2AnimationStartPosition;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Container2AnimationEndPosition;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $IndeterminateStartingOffset;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $IndeterminateEndingOffset;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_ContainerWidth(){}

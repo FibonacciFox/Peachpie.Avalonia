@@ -22,6 +22,16 @@ class FcitxX11TextInputMethod extends \Avalonia\FreeDesktop\DBusIme\DBusTextInpu
 	\Avalonia\Input\TextInput\ITextInputMethodImpl
 {
 	/**
+	 * @var \Avalonia\Input\TextInput\TextInputMethodClient
+	 * @property
+	 */
+	public readonly $Client;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
 	 * @uses FcitxX11TextInputMethodMethodsOverride::Reset_1 ()
 	 * @uses FcitxX11TextInputMethodMethodsOverride::Reset_2 ()
 	 * @return mixed|@override

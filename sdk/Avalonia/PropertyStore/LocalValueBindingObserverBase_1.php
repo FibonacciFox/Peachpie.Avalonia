@@ -31,6 +31,16 @@ class LocalValueBindingObserverBase_1 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IDisposable
+	 * @field
+	 */
+	protected $_subscription;
+	/**
+	 * @var \Avalonia\StyledProperty_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @return \Avalonia\StyledProperty_1
 	 */
 	public  function get_Property(){}

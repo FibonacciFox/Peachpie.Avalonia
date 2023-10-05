@@ -85,6 +85,56 @@ class InternalSelectionModel extends \Avalonia\Controls\Selection\SelectionModel
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Collections\IList
+	 * @property
+	 */
+	public $WritableSelectedItems;
+	/**
+	 * @var \System\Collections\IEnumerable
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $SingleSelect;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $SelectedIndex;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Int32]
+	 * @property
+	 */
+	public readonly $SelectedIndexes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $SelectedItem;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Object]
+	 * @property
+	 */
+	public readonly $SelectedItems;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $AnchorIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	protected $RangesEnabled;
+	/**
 	 * @return \System\Collections\IList
 	 */
 	public  function get_WritableSelectedItems(){}

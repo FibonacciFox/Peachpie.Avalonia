@@ -11,6 +11,16 @@ class PopupEvents extends \Avalonia\Native\WindowBaseEvents implements
 	\Avalonia\Native\Interop\IAvnWindowEvents
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function GotInputWhenDisabled(){}

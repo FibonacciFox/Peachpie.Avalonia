@@ -5,6 +5,11 @@ namespace Avalonia\Controls\ApplicationLifetimes;
 class ClassicDesktopStyleApplicationLifetimeOptions extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ProcessUrlActivationCommandLine;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_ProcessUrlActivationCommandLine(){}

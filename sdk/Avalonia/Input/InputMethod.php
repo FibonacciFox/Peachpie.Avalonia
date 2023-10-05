@@ -5,6 +5,11 @@ namespace Avalonia\Input;
 class InputMethod extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsInputMethodEnabledProperty;
+	/**
 	 * @param \Avalonia\Input\InputElement $target
 	 * @param \System\Boolean $value
 	 * @return \System\Void|void

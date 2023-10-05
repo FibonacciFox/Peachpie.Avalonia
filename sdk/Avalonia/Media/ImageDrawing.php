@@ -137,6 +137,31 @@ class ImageDrawing extends \Avalonia\Media\Drawing implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IImage]
+	 * @field
+	 */
+	public readonly $ImageSourceProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Rect]
+	 * @field
+	 */
+	public readonly $RectProperty;
+	/**
+	 * @var \Avalonia\Media\IImage
+	 * @property
+	 */
+	public $ImageSource;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Rect;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\IImage
 	 */
 	public  function get_ImageSource(){}

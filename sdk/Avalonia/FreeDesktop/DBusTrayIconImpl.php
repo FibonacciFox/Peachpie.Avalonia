@@ -7,6 +7,31 @@ class DBusTrayIconImpl extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\ValueTuple_3[System\Int32,System\Int32,System\Byte[]]
+	 * @field
+	 */
+	public readonly $EmptyPixmap;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsActive;
+	/**
+	 * @var \Avalonia\Controls\Platform\INativeMenuExporter
+	 * @property
+	 */
+	public readonly $MenuExporter;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $OnClicked;
+	/**
+	 * @var \System\Func_2[Avalonia\Platform\IWindowIconImpl,System\UInt32[]]
+	 * @property
+	 */
+	public $IconConverterDelegate;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsActive(){}

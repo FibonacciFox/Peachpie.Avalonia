@@ -31,6 +31,56 @@ trait AppBuilderMethodsOverride
 class AppBuilder extends \System\Object
 {
 	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $RuntimePlatformServicesInitializer;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $RuntimePlatformServicesName;
+	/**
+	 * @var \Avalonia\Application
+	 * @property
+	 */
+	public $Instance;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $ApplicationType;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $WindowingSubsystemInitializer;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $WindowingSubsystemName;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $RenderingSubsystemInitializer;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $RenderingSubsystemName;
+	/**
+	 * @var \System\Action_1[Avalonia\AppBuilder]
+	 * @property
+	 */
+	public $AfterSetupCallback;
+	/**
+	 * @var \System\Action_1[Avalonia\AppBuilder]
+	 * @property
+	 */
+	public $AfterPlatformServicesSetupCallback;
+	/**
 	 * @return \System\Action
 	 */
 	public  function get_RuntimePlatformServicesInitializer(){}

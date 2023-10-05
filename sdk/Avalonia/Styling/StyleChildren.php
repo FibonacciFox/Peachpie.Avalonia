@@ -99,6 +99,16 @@ class StyleChildren extends \System\Collections\ObjectModel\Collection_1 impleme
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses StyleChildrenMethodsOverride::get_Item_1 ($index)
 	 * @uses StyleChildrenMethodsOverride::get_Item_2 ($index)
 	 * @return mixed|@override

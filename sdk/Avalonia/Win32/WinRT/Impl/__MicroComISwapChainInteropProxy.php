@@ -30,6 +30,26 @@ class __MicroComISwapChainInteropProxy extends \MicroCom\Runtime\MicroComProxyBa
 	\Avalonia\Win32\WinRT\ISwapChainInterop
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \MicroCom\Runtime\IUnknown $swapChain
 	 * @return \System\Void|void
 	 */

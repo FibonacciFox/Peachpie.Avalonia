@@ -36,6 +36,56 @@ class Codepoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\Codepoint
+	 * @property
+	 */
+	public readonly $ReplacementCodepoint;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\GeneralCategory
+	 * @property
+	 */
+	public readonly $GeneralCategory;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\Script
+	 * @property
+	 */
+	public readonly $Script;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\BidiClass
+	 * @property
+	 */
+	public readonly $BiDiClass;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\BidiPairedBracketType
+	 * @property
+	 */
+	public readonly $PairedBracketType;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\LineBreakClass
+	 * @property
+	 */
+	public readonly $LineBreakClass;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\Unicode\GraphemeBreakClass
+	 * @property
+	 */
+	public readonly $GraphemeBreakClass;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsBreakChar;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsWhiteSpace;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\Unicode\Codepoint
 	 */
 	public static function get_ReplacementCodepoint(){}

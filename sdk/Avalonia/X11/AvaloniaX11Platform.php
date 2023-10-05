@@ -6,6 +6,71 @@ class AvaloniaX11Platform extends \System\Object implements
 	\Avalonia\Platform\IWindowingPlatform
 {
 	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\IntPtr,Avalonia\X11\X11PlatformThreading+EventHandler]
+	 * @field
+	 */
+	public $Windows;
+	/**
+	 * @var \Avalonia\X11\XI2Manager
+	 * @field
+	 */
+	public $XI2;
+	/**
+	 * @var \Avalonia\Input\KeyboardDevice
+	 * @property
+	 */
+	public readonly $KeyboardDevice;
+	/**
+	 * @var \Avalonia\X11\X11Info
+	 * @property
+	 */
+	public $Info;
+	/**
+	 * @var \Avalonia\X11\IX11Screens
+	 * @property
+	 */
+	public $X11Screens;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public $Compositor;
+	/**
+	 * @var \Avalonia\Platform\IScreenImpl
+	 * @property
+	 */
+	public $Screens;
+	/**
+	 * @var \Avalonia\X11PlatformOptions
+	 * @property
+	 */
+	public $Options;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $OrphanedWindow;
+	/**
+	 * @var \Avalonia\X11\X11Globals
+	 * @property
+	 */
+	public $Globals;
+	/**
+	 * @var \Avalonia\ManualRawEventGrouperDispatchQueue
+	 * @property
+	 */
+	public readonly $EventGrouperDispatchQueue;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $DeferredDisplay;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Display;
+	/**
 	 * @return \Avalonia\Input\KeyboardDevice
 	 */
 	public  function get_KeyboardDevice(){}

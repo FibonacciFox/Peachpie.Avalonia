@@ -20,6 +20,31 @@ class PlatformColorValues extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Platform\PlatformThemeVariant
+	 * @property
+	 */
+	public $ThemeVariant;
+	/**
+	 * @var \Avalonia\Platform\ColorContrastPreference
+	 * @property
+	 */
+	public $ContrastPreference;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $AccentColor1;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $AccentColor2;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $AccentColor3;
+	/**
 	 * @return \System\Type
 	 */
 	protected  function get_EqualityContract(){}

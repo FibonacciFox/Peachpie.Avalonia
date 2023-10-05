@@ -54,6 +54,51 @@ class DirectPropertyBase_1 extends \Avalonia\AvaloniaProperty_1 implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_Owner(){}

@@ -6,6 +6,26 @@ class SplineEasing extends \Avalonia\Animation\Easings\Easing implements
 	\Avalonia\Animation\Easings\IEasing
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $X1;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Y1;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $X2;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Y2;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_X1(){}

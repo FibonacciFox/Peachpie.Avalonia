@@ -10,6 +10,16 @@ class MenuActionCallback extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnActionCallback
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

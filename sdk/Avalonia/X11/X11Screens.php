@@ -6,6 +6,16 @@ class X11Screens extends \System\Object implements
 	\Avalonia\Platform\IScreenImpl
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ScreenCount;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Platform\Screen]
+	 * @property
+	 */
+	public readonly $AllScreens;
+	/**
 	 * @param \Avalonia\X11\X11Info $info
 	 * @param \Avalonia\X11\X11Screen[] $screens
 	 * @deprecated this element should not be used by you because it will break your program

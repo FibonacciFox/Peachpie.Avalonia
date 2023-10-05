@@ -5,6 +5,11 @@ namespace Avalonia\Styling\Activators;
 class OrActivatorBuilder extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

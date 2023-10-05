@@ -23,6 +23,26 @@ class FastRepeat_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \Avalonia\Controls\Utils\CollectionUtils+FastRepeat_1[T]
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

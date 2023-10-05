@@ -6,6 +6,16 @@ class PropertySyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Value;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Property(){}

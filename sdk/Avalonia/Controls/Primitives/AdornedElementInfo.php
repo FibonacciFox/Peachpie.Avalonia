@@ -5,6 +5,16 @@ namespace Avalonia\Controls\Primitives;
 class AdornedElementInfo extends \System\Object
 {
 	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public $Subscription;
+	/**
+	 * @var \System\Nullable_1[Avalonia\VisualTree\TransformedBounds]
+	 * @property
+	 */
+	public $Bounds;
+	/**
 	 * @return \System\IDisposable
 	 */
 	public  function get_Subscription(){}

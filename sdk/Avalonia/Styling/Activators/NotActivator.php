@@ -8,6 +8,11 @@ class NotActivator extends \Avalonia\Styling\Activators\StyleActivatorBase imple
 	\Avalonia\Styling\Activators\IStyleActivatorSink
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
 	 * @param \System\Boolean $value
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

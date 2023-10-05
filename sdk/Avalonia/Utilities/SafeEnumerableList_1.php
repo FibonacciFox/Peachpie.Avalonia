@@ -26,6 +26,11 @@ class SafeEnumerableList_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Count(){}

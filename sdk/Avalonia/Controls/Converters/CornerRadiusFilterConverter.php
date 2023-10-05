@@ -6,6 +6,16 @@ class CornerRadiusFilterConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 	/**
+	 * @var \Avalonia\Controls\Converters\Corners
+	 * @property
+	 */
+	public $Filter;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Scale;
+	/**
 	 * @return \Avalonia\Controls\Converters\Corners
 	 */
 	public  function get_Filter(){}

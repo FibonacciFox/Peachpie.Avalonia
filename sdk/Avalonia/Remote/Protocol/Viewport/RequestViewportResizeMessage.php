@@ -5,6 +5,16 @@ namespace Avalonia\Remote\Protocol\Viewport;
 class RequestViewportResizeMessage extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Width(){}

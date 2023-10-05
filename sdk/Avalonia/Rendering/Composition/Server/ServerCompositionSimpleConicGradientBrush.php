@@ -37,6 +37,61 @@ class ServerCompositionSimpleConicGradientBrush extends \Avalonia\Rendering\Comp
 	\Avalonia\Media\IConicGradientBrush
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfAngleProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfCenterProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Angle;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $Center;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]
+	 * @property
+	 */
+	public readonly $GradientStops;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public readonly $SpreadMethod;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Angle(){}

@@ -6,6 +6,16 @@ class RenderDataCustomNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
 	/**
+	 * @var \Avalonia\Rendering\SceneGraph\ICustomDrawOperation
+	 * @property
+	 */
+	public $Operation;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
 	 * @return \Avalonia\Rendering\SceneGraph\ICustomDrawOperation
 	 */
 	public  function get_Operation(){}

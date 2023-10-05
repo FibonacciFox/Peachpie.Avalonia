@@ -9,6 +9,16 @@ class XImageCursor extends \Avalonia\X11\CursorImpl implements
 	\Avalonia\Platform\IPlatformHandle
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $HandleDescriptor;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Handle;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_HandleDescriptor(){}

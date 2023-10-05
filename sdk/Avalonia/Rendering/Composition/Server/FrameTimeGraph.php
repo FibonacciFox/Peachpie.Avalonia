@@ -5,6 +5,11 @@ namespace Avalonia\Rendering\Composition\Server;
 class FrameTimeGraph extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
 	 * @return \Avalonia\Size
 	 */
 	public  function get_Size(){}

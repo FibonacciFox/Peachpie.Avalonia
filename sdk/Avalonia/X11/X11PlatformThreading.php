@@ -8,6 +8,26 @@ class X11PlatformThreading extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImpl
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CurrentThreadIsLoopThread;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Now;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanQueryPendingInput;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasPendingInput;
+	/**
 	 * @param \System\Int32|int $size
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

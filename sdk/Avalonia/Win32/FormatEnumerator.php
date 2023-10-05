@@ -9,6 +9,16 @@ class FormatEnumerator extends \Avalonia\MicroCom\CallbackBase implements
 	\Avalonia\Win32\Win32Com\IEnumFORMATETC
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \System\String|string $aFormatName
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

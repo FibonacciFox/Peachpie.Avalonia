@@ -5,6 +5,16 @@ namespace Avalonia\OpenGL;
 class GlContextInfo extends \System\Object
 {
 	/**
+	 * @var \Avalonia\OpenGL\GlVersion
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \System\Collections\Generic\HashSet_1[System\String]
+	 * @property
+	 */
+	public readonly $Extensions;
+	/**
 	 * @return \Avalonia\OpenGL\GlVersion
 	 */
 	public  function get_Version(){}

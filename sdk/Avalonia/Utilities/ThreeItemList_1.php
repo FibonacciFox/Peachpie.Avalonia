@@ -24,6 +24,21 @@ trait ThreeItemList_1MethodsOverride
 class ThreeItemList_1 extends \Avalonia\Utilities\FrugalListBase_1
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_count;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @uses ThreeItemList_1MethodsOverride::Promote_1 ($oldList)
 	 * @uses ThreeItemList_1MethodsOverride::Promote_2 ($oldList)
 	 * @uses ThreeItemList_1MethodsOverride::Promote_3 ($oldList)

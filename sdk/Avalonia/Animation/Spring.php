@@ -5,6 +5,26 @@ namespace Avalonia\Animation;
 class Spring extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Mass;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Stiffness;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Damping;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $InitialVelocity;
+	/**
 	 * @param \System\String|string $value
 	 * @param \System\Globalization\CultureInfo $culture
 	 * @return \Avalonia\Animation\Spring

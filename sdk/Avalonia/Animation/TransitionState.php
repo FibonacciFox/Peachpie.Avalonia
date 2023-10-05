@@ -5,6 +5,16 @@ namespace Avalonia\Animation;
 class TransitionState extends \System\Object
 {
 	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public $Instance;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $BaseValue;
+	/**
 	 * @return \System\IDisposable
 	 */
 	public  function get_Instance(){}

@@ -32,6 +32,31 @@ class __MicroComIDXGISurfaceProxy extends \Avalonia\Win32\DirectX\Impl\__MicroCo
 	\Avalonia\Win32\DirectX\IDXGISurface
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_SURFACE_DESC
+	 * @property
+	 */
+	public readonly $Desc;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\DirectX\DXGI_SURFACE_DESC
 	 */
 	public  function get_Desc(){}

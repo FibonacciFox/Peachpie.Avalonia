@@ -5,6 +5,26 @@ namespace Avalonia\Media\TextFormatting;
 class IndexedTextRun extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TextSourceCharacterIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $RunIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $NextRunIndex;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRun
+	 * @property
+	 */
+	public $TextRun;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_TextSourceCharacterIndex(){}

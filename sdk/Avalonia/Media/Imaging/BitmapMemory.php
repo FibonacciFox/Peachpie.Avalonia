@@ -6,6 +6,26 @@ class BitmapMemory extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public $Address;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RowBytes;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

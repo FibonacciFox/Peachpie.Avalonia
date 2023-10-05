@@ -47,6 +47,26 @@ class ItemsSourceView extends \System\Object implements
 	\Avalonia\Controls\Utils\ICollectionChangedListener
 {
 	/**
+	 * @var \Avalonia\Controls\ItemsSourceView
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Collections\IList
+	 * @property
+	 */
+	public readonly $Source;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \Avalonia\Controls\ItemsSourceView
 	 */
 	public static function get_Empty(){}

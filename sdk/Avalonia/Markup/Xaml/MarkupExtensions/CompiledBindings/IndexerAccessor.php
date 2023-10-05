@@ -23,6 +23,21 @@ class IndexerAccessor extends \Avalonia\Markup\Xaml\MarkupExtensions\CompiledBin
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @field
+	 */
+	protected readonly $_reference;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @uses IndexerAccessorMethodsOverride::OnEvent_1 ($sender, $ev, $args)
 	 * @uses IndexerAccessorMethodsOverride::OnEvent_2 ($sender, $ev, $e)
 	 * @return mixed|@override

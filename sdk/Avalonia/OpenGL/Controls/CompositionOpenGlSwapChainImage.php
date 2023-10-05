@@ -9,6 +9,26 @@ class CompositionOpenGlSwapChainImage extends \System\Object implements
 	\Avalonia\OpenGL\Controls\IGlTexture
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TextureId;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $InternalFormat;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Threading\Tasks\Task
+	 * @property
+	 */
+	public $LastPresent;
+	/**
 	 * @return \System\Threading\Tasks\ValueTask
 	 */
 	public  function DisposeAsync(){}

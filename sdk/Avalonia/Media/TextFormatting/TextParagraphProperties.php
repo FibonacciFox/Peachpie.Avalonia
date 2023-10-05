@@ -5,6 +5,66 @@ namespace Avalonia\Media\TextFormatting;
 class TextParagraphProperties extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public readonly $FlowDirection;
+	/**
+	 * @var \Avalonia\Media\TextAlignment
+	 * @property
+	 */
+	public readonly $TextAlignment;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LineHeight;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $FirstLineInParagraph;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $AlwaysCollapsible;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRunProperties
+	 * @property
+	 */
+	public readonly $DefaultTextRunProperties;
+	/**
+	 * @var \Avalonia\Media\TextDecorationCollection
+	 * @property
+	 */
+	public readonly $TextDecorations;
+	/**
+	 * @var \Avalonia\Media\TextWrapping
+	 * @property
+	 */
+	public readonly $TextWrapping;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Indent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ParagraphIndent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $DefaultIncrementalTab;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LetterSpacing;
+	/**
 	 * @return \Avalonia\Media\FlowDirection
 	 */
 	public  function get_FlowDirection(){}

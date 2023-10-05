@@ -9,6 +9,16 @@ class RunLoopHandler extends \Avalonia\MicroCom\CallbackBase implements
 	\Avalonia\Win32\WinRT\IAsyncActionCompletedHandler
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \Avalonia\Win32\WinRT\IAsyncAction $asyncInfo
 	 * @param \Avalonia\Win32\WinRT\AsyncStatus $asyncStatus
 	 * @return \System\Void|void

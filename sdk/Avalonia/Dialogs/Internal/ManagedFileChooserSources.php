@@ -5,6 +5,26 @@ namespace Avalonia\Dialogs\Internal;
 class ManagedFileChooserSources extends \System\Object
 {
 	/**
+	 * @var \System\Collections\ObjectModel\ObservableCollection_1[Avalonia\Controls\Platform\MountedVolumeInfo]
+	 * @field
+	 */
+	public readonly $MountedVolumes;
+	/**
+	 * @var \System\Func_1[Avalonia\Dialogs\Internal\ManagedFileChooserNavigationItem[]]
+	 * @property
+	 */
+	public $GetUserDirectories;
+	/**
+	 * @var \System\Func_1[Avalonia\Dialogs\Internal\ManagedFileChooserNavigationItem[]]
+	 * @property
+	 */
+	public $GetFileSystemRoots;
+	/**
+	 * @var \System\Func_2[Avalonia\Dialogs\Internal\ManagedFileChooserSources,Avalonia\Dialogs\Internal\ManagedFileChooserNavigationItem[]]
+	 * @property
+	 */
+	public $GetAllItemsDelegate;
+	/**
 	 * @return \System\Func_1
 	 */
 	public  function get_GetUserDirectories(){}

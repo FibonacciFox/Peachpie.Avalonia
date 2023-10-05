@@ -59,6 +59,46 @@ trait UncommonFieldsMethodsOverride
 class UncommonFields extends \System\Object
 {
 	/**
+	 * @var \TValue
+	 * @field
+	 */
+	public $_defaultValue;
+	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	public $_isDefaultValueInitialized;
+	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	public $_hasDataValidation;
+	/**
+	 * @var \Avalonia\Data\BindingValueType
+	 * @field
+	 */
+	public $_dataValidationState;
+	/**
+	 * @var \System\Exception
+	 * @field
+	 */
+	public $_dataValidationError;
+	/**
+	 * @var \System\Func_3[Avalonia\AvaloniaObject,T,T]
+	 * @field
+	 */
+	public $_coerce;
+	/**
+	 * @var \T
+	 * @field
+	 */
+	public $_uncoercedValue;
+	/**
+	 * @var \T
+	 * @field
+	 */
+	public $_uncoercedBaseValue;
+	/**
 	 * @uses UncommonFieldsMethodsOverride::GetType_1 ()
 	 * @uses UncommonFieldsMethodsOverride::GetType_2 ()
 	 * @return mixed|@override

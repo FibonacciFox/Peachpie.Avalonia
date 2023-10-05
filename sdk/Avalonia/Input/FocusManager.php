@@ -20,6 +20,11 @@ class FocusManager extends \System\Object implements
 	\Avalonia\Input\IFocusManager
 {
 	/**
+	 * @var \Avalonia\Input\IFocusScope
+	 * @property
+	 */
+	public $Scope;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

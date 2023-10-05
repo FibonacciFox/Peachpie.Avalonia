@@ -27,6 +27,36 @@ trait BoxShadowMethodsOverride
 class BoxShadow extends \System\ValueType
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OffsetX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $OffsetY;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Blur;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Spread;
+	/**
+	 * @var \Avalonia\Media\Color
+	 * @property
+	 */
+	public $Color;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsInset;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_OffsetX(){}

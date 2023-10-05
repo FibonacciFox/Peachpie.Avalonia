@@ -20,6 +20,41 @@ class GridLength extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Controls\GridLength
+	 * @property
+	 */
+	public readonly $Auto;
+	/**
+	 * @var \Avalonia\Controls\GridLength
+	 * @property
+	 */
+	public readonly $Star;
+	/**
+	 * @var \Avalonia\Controls\GridUnitType
+	 * @property
+	 */
+	public readonly $GridUnitType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsAbsolute;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsAuto;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsStar;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \Avalonia\Controls\GridLength
 	 */
 	public static function get_Auto(){}

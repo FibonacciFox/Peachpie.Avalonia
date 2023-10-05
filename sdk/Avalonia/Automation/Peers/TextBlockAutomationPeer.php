@@ -19,6 +19,11 @@ trait TextBlockAutomationPeerMethodsOverride
 class TextBlockAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
 	/**
+	 * @var \Avalonia\Controls\TextBlock
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @uses TextBlockAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses TextBlockAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

@@ -132,6 +132,31 @@ class TrayIcons extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\TrayIcon]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Controls\TrayIcon
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses TrayIconsMethodsOverride::get_Count_1 ()
 	 * @uses TrayIconsMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

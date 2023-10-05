@@ -22,6 +22,11 @@ class SingleOrDictionary_2 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[TValue]
+	 * @property
+	 */
+	public readonly $Values;
+	/**
 	 * @param \Avalonia\Utilities\TKey $key
 	 * @param \Avalonia\Utilities\TValue $value
 	 * @return \System\Void|void

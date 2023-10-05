@@ -5,6 +5,11 @@ namespace Avalonia\Win32\Interop\Automation;
 class UiaCoreProviderApi extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $UIA_E_ELEMENTNOTENABLED;
+	/**
 	 * @return \System\Boolean
 	 */
 	public static function UiaClientsAreListening(){}

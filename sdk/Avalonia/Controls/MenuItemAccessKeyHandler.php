@@ -6,6 +6,11 @@ class MenuItemAccessKeyHandler extends \System\Object implements
 	\Avalonia\Input\IAccessKeyHandler
 {
 	/**
+	 * @var \Avalonia\Input\IMainMenu
+	 * @property
+	 */
+	public $MainMenu;
+	/**
 	 * @return \Avalonia\Input\IMainMenu
 	 */
 	public  function get_MainMenu(){}

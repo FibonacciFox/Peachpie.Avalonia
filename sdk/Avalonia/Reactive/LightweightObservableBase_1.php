@@ -7,6 +7,11 @@ class LightweightObservableBase_1 extends \System\Object implements
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasObservers(){}

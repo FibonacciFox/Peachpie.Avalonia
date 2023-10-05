@@ -29,6 +29,36 @@ class ExpressionAnimation extends \Avalonia\Rendering\Composition\Animations\Com
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Expression;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Expression(){}

@@ -5,6 +5,31 @@ namespace Avalonia\Input;
 class DragDrop extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\DragEventArgs]
+	 * @field
+	 */
+	public readonly $DragEnterEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\DragEventArgs]
+	 * @field
+	 */
+	public readonly $DragLeaveEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\DragEventArgs]
+	 * @field
+	 */
+	public readonly $DragOverEvent;
+	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Input\DragEventArgs]
+	 * @field
+	 */
+	public readonly $DropEvent;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AllowDropProperty;
+	/**
 	 * @param \Avalonia\Interactivity\Interactive $interactive
 	 * @return \System\Boolean
 	 */

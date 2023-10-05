@@ -6,6 +6,11 @@ class ResourceObservable extends \Avalonia\Reactive\LightweightObservableBase_1 
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\Controls\ResourcesChangedEventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

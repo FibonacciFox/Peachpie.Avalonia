@@ -30,6 +30,26 @@ class __MicroComIDropTargetProxy extends \MicroCom\Runtime\MicroComProxyBase imp
 	\Avalonia\Win32\Win32Com\IDropTarget
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \Avalonia\Win32\Win32Com\IDataObject $pDataObj
 	 * @param \System\Int32|int $grfKeyState
 	 * @param \Avalonia\Win32\Interop\POINT $pt

@@ -6,6 +6,51 @@ class MultiBinding extends \System\Object implements
 	\Avalonia\Data\IBinding
 {
 	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Data\IBinding]
+	 * @property
+	 */
+	public $Bindings;
+	/**
+	 * @var \Avalonia\Data\Converters\IMultiValueConverter
+	 * @property
+	 */
+	public $Converter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ConverterParameter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $FallbackValue;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $TargetNullValue;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \Avalonia\Data\RelativeSource
+	 * @property
+	 */
+	public $RelativeSource;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $StringFormat;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_Bindings(){}

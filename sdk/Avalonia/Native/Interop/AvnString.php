@@ -10,6 +10,26 @@ class AvnString extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnString
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $String;
+	/**
+	 * @var \System\Byte[]
+	 * @property
+	 */
+	public readonly $Bytes;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_String(){}

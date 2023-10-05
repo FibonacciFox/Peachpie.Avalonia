@@ -55,6 +55,61 @@ class DirectProperty_2 extends \Avalonia\DirectPropertyBase_1 implements
 	\Avalonia\IDirectPropertyAccessor
 {
 	/**
+	 * @var \System\Func_2[TOwner,TValue]
+	 * @property
+	 */
+	public readonly $Getter;
+	/**
+	 * @var \System\Action_2[TOwner,TValue]
+	 * @property
+	 */
+	public readonly $Setter;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
 	 * @return \System\Func_2
 	 */
 	public  function get_Getter(){}

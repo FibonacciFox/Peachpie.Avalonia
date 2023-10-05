@@ -159,6 +159,51 @@ class GradientBrush extends \Avalonia\Media\Brush implements
 	\Avalonia\Media\IMutableBrush
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\GradientSpreadMethod]
+	 * @field
+	 */
+	public readonly $SpreadMethodProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\GradientStops]
+	 * @field
+	 */
+	public readonly $GradientStopsProperty;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public $SpreadMethod;
+	/**
+	 * @var \Avalonia\Media\GradientStops
+	 * @property
+	 */
+	public $GradientStops;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\GradientSpreadMethod
 	 */
 	public  function get_SpreadMethod(){}

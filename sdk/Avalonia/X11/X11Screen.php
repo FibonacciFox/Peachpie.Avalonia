@@ -5,6 +5,36 @@ namespace Avalonia\X11;
 class X11Screen extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsPrimary;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\PixelRect
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Size]
+	 * @property
+	 */
+	public $PhysicalSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Scaling;
+	/**
+	 * @var \Avalonia\PixelRect
+	 * @property
+	 */
+	public $WorkingArea;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsPrimary(){}

@@ -20,6 +20,16 @@ class PopupRootAutomationPeer extends \Avalonia\Automation\Peers\WindowBaseAutom
 	\Avalonia\Automation\Provider\IRootProvider
 {
 	/**
+	 * @var \Avalonia\Controls\WindowBase
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Platform\ITopLevelImpl
+	 * @property
+	 */
+	public readonly $PlatformImpl;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \System\EventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

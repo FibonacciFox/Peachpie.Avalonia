@@ -30,6 +30,31 @@ class __MicroComIShellItemProxy extends \MicroCom\Runtime\MicroComProxyBase impl
 	\Avalonia\Win32\Win32Com\IShellItem
 {
 	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Void* $pbc
 	 * @param \System\Guid* $bhid
 	 * @param \System\Guid* $riid

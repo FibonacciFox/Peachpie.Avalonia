@@ -20,6 +20,36 @@ trait UndoRedoHelper_1MethodsOverride
 class UndoRedoHelper_1 extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $DefaultUndoLimit;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Limit;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanUndo;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanRedo;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLastState;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasState;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Limit(){}

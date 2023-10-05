@@ -31,6 +31,41 @@ class __MicroComICompositionTargetProxy extends \Avalonia\Win32\WinRT\Impl\__Mic
 	\Avalonia\Win32\WinRT\ICompositionTarget
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\IVisual
+	 * @property
+	 */
+	public readonly $Root;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\WinRT\IVisual
 	 */
 	public  function get_Root(){}

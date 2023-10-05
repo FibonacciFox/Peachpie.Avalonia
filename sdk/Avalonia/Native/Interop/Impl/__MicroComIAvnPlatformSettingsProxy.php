@@ -30,6 +30,36 @@ class __MicroComIAvnPlatformSettingsProxy extends \MicroCom\Runtime\MicroComProx
 	\Avalonia\Native\Interop\IAvnPlatformSettings
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnPlatformThemeVariant
+	 * @property
+	 */
+	public readonly $PlatformTheme;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $AccentColor;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Native\Interop\AvnPlatformThemeVariant
 	 */
 	public  function get_PlatformTheme(){}

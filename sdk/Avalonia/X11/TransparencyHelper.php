@@ -7,6 +7,16 @@ class TransparencyHelper extends \System\Object implements
 	\Avalonia\X11\IGlobalsSubscriber
 {
 	/**
+	 * @var \System\Action_1[Avalonia\Controls\WindowTransparencyLevel]
+	 * @property
+	 */
+	public $TransparencyLevelChanged;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public $CurrentLevel;
+	/**
 	 * @return \System\Action_1
 	 */
 	public  function get_TransparencyLevelChanged(){}

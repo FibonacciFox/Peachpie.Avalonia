@@ -137,6 +137,41 @@ class GeometryDrawing extends \Avalonia\Media\Drawing implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Geometry]
+	 * @field
+	 */
+	public readonly $GeometryProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $BrushProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IPen]
+	 * @field
+	 */
+	public readonly $PenProperty;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Geometry;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Brush;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $Pen;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\Geometry
 	 */
 	public  function get_Geometry(){}

@@ -6,6 +6,26 @@ class SpringEasing extends \Avalonia\Animation\Easings\Easing implements
 	\Avalonia\Animation\Easings\IEasing
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Mass;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Stiffness;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Damping;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $InitialVelocity;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Mass(){}

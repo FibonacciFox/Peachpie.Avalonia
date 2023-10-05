@@ -24,6 +24,11 @@ class ToggleButtonAutomationPeer extends \Avalonia\Automation\Peers\ContentContr
 	\Avalonia\Automation\Provider\IToggleProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Primitives\ToggleButton
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @uses ToggleButtonAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses ToggleButtonAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @uses ToggleButtonAutomationPeerMethodsOverride::get_Owner_3 ()

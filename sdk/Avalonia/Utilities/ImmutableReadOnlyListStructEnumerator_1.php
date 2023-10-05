@@ -23,6 +23,11 @@ class ImmutableReadOnlyListStructEnumerator_1 extends \System\ValueType implemen
 	\System\Collections\IEnumerator
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @uses ImmutableReadOnlyListStructEnumerator_1MethodsOverride::get_Current_1 ()
 	 * @uses ImmutableReadOnlyListStructEnumerator_1MethodsOverride::get_Current_2 ()
 	 * @return mixed|@override

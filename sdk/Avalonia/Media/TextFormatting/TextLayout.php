@@ -6,6 +6,76 @@ class TextLayout extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LineHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $MaxWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $MaxHeight;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $MaxLines;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LetterSpacing;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\TextFormatting\TextLine]
+	 * @property
+	 */
+	public readonly $TextLines;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Height;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Extent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Baseline;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangAfter;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangLeading;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $OverhangTrailing;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $WidthIncludingTrailingWhitespace;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_LineHeight(){}

@@ -5,6 +5,21 @@ namespace Avalonia\FreeDesktop;
 class X11InputMethodForwardedKey extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $KeyVal;
+	/**
+	 * @var \Avalonia\Input\KeyModifiers
+	 * @property
+	 */
+	public $Modifiers;
+	/**
+	 * @var \Avalonia\Input\Raw\RawKeyEventType
+	 * @property
+	 */
+	public $Type;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_KeyVal(){}

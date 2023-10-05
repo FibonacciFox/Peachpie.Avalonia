@@ -132,6 +132,31 @@ class DrawingCollection extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Media\Drawing]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Media\Drawing
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses DrawingCollectionMethodsOverride::get_Count_1 ()
 	 * @uses DrawingCollectionMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

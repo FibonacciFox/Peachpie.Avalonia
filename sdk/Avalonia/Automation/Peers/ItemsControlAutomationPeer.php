@@ -20,6 +20,41 @@ class ItemsControlAutomationPeer extends \Avalonia\Automation\Peers\ControlAutom
 	\Avalonia\Automation\Provider\IScrollProvider
 {
 	/**
+	 * @var \Avalonia\Controls\ItemsControl
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HorizontallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $HorizontalViewSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $VerticallyScrollable;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalScrollPercent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $VerticalViewSize;
+	/**
 	 * @uses ItemsControlAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses ItemsControlAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

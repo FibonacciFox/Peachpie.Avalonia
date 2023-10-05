@@ -30,6 +30,26 @@ class __MicroComIAvnPredicateCallbackProxy extends \MicroCom\Runtime\MicroComPro
 	\Avalonia\Native\Interop\IAvnPredicateCallback
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function Evaluate(){}

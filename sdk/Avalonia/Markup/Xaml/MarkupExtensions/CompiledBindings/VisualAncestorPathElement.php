@@ -7,6 +7,16 @@ class VisualAncestorPathElement extends \System\Object implements
 	\Avalonia\Markup\Xaml\MarkupExtensions\CompiledBindings\IControlSourceBindingPathElement
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $AncestorType;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Level;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_AncestorType(){}

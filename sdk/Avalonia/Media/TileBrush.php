@@ -150,6 +150,91 @@ class TileBrush extends \Avalonia\Media\Brush implements
 	\Avalonia\Media\ITileBrush
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\AlignmentX]
+	 * @field
+	 */
+	public readonly $AlignmentXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\AlignmentY]
+	 * @field
+	 */
+	public readonly $AlignmentYProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativeRect]
+	 * @field
+	 */
+	public readonly $DestinationRectProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativeRect]
+	 * @field
+	 */
+	public readonly $SourceRectProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Stretch]
+	 * @field
+	 */
+	public readonly $StretchProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TileMode]
+	 * @field
+	 */
+	public readonly $TileModeProperty;
+	/**
+	 * @var \Avalonia\Media\AlignmentX
+	 * @property
+	 */
+	public $AlignmentX;
+	/**
+	 * @var \Avalonia\Media\AlignmentY
+	 * @property
+	 */
+	public $AlignmentY;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $DestinationRect;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $SourceRect;
+	/**
+	 * @var \Avalonia\Media\Stretch
+	 * @property
+	 */
+	public $Stretch;
+	/**
+	 * @var \Avalonia\Media\TileMode
+	 * @property
+	 */
+	public $TileMode;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\AlignmentX
 	 */
 	public  function get_AlignmentX(){}

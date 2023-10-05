@@ -20,6 +20,11 @@ class X11NativeControlHost extends \System\Object implements
 	\Avalonia\Controls\Platform\INativeControlHostImpl
 {
 	/**
+	 * @var \Avalonia\X11\X11Window
+	 * @property
+	 */
+	public readonly $Window;
+	/**
 	 * @return \Avalonia\X11\X11Window
 	 */
 	public  function get_Window(){}

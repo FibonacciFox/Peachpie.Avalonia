@@ -30,6 +30,31 @@ class __MicroComIShellItemArrayProxy extends \MicroCom\Runtime\MicroComProxyBase
 	\Avalonia\Win32\Win32Com\IShellItemArray
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Void* $pbc
 	 * @param \System\Guid* $bhid
 	 * @param \System\Guid* $riid

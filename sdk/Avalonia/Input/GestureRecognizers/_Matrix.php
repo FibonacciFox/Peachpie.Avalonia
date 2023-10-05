@@ -5,6 +5,11 @@ namespace Avalonia\Input\GestureRecognizers;
 class _Matrix extends \System\ValueType
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\Int32|int $row
 	 * @param \System\Int32|int $col
 	 * @return \System\Double|double

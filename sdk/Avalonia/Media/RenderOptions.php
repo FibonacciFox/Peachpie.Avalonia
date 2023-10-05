@@ -20,6 +20,31 @@ class RenderOptions extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Imaging\BitmapInterpolationMode
+	 * @property
+	 */
+	public $BitmapInterpolationMode;
+	/**
+	 * @var \Avalonia\Media\EdgeMode
+	 * @property
+	 */
+	public $EdgeMode;
+	/**
+	 * @var \Avalonia\Media\TextRenderingMode
+	 * @property
+	 */
+	public $TextRenderingMode;
+	/**
+	 * @var \Avalonia\Media\Imaging\BitmapBlendingMode
+	 * @property
+	 */
+	public $BitmapBlendingMode;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public $RequiresFullOpacityHandling;
+	/**
 	 * @return \Avalonia\Media\Imaging\BitmapInterpolationMode
 	 */
 	public  function get_BitmapInterpolationMode(){}

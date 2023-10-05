@@ -5,6 +5,21 @@ namespace Avalonia\Platform\Internal;
 class UnmanagedBlob extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Address;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDisposed;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

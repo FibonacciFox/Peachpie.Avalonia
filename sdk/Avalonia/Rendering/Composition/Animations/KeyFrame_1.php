@@ -5,4 +5,24 @@ namespace Avalonia\Rendering\Composition\Animations;
  */
 class KeyFrame_1 extends \System\ValueType
 {
+	/**
+	 * @var \System\Single
+	 * @field
+	 */
+	public $NormalizedProgressKey;
+	/**
+	 * @var \T
+	 * @field
+	 */
+	public $Value;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Expressions\Expression
+	 * @field
+	 */
+	public $Expression;
+	/**
+	 * @var \Avalonia\Animation\Easings\IEasing
+	 * @field
+	 */
+	public $EasingFunction;
 }

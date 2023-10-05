@@ -20,6 +20,21 @@ class EglSurface extends \System\Runtime\InteropServices\SafeHandle implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $handle;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInvalid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsClosed;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function SwapBuffers(){}

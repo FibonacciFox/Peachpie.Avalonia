@@ -20,6 +20,26 @@ class TextHitTestResult extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\CharacterHit
+	 * @property
+	 */
+	public readonly $CharacterHit;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInside;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TextPosition;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsTrailing;
+	/**
 	 * @return \Avalonia\Media\CharacterHit
 	 */
 	public  function get_CharacterHit(){}

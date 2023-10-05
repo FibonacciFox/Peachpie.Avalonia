@@ -10,6 +10,16 @@ class AvnTextInputMethodClient extends \Avalonia\Native\NativeCallbackBase imple
 	\Avalonia\Native\Interop\IAvnTextInputMethodClient
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @param \System\String|string $preeditText
 	 * @return \System\Void|void
 	 */

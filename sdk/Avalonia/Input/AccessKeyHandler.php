@@ -6,6 +6,16 @@ class AccessKeyHandler extends \System\Object implements
 	\Avalonia\Input\IAccessKeyHandler
 {
 	/**
+	 * @var \Avalonia\Interactivity\RoutedEvent_1[Avalonia\Interactivity\RoutedEventArgs]
+	 * @field
+	 */
+	public readonly $AccessKeyPressedEvent;
+	/**
+	 * @var \Avalonia\Input\IMainMenu
+	 * @property
+	 */
+	public $MainMenu;
+	/**
 	 * @return \Avalonia\Input\IMainMenu
 	 */
 	public  function get_MainMenu(){}

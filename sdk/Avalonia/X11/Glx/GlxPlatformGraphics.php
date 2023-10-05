@@ -6,6 +6,26 @@ class GlxPlatformGraphics extends \System\Object implements
 	\Avalonia\Platform\IPlatformGraphics
 {
 	/**
+	 * @var \Avalonia\X11\Glx\GlxDisplay
+	 * @property
+	 */
+	public $Display;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanCreateContexts;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanShareContexts;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $UsesSharedContext;
+	/**
 	 * @return \Avalonia\X11\Glx\GlxDisplay
 	 */
 	public  function get_Display(){}

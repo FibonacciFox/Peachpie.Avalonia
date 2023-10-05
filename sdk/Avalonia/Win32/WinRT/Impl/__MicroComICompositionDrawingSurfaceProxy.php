@@ -31,6 +31,51 @@ class __MicroComICompositionDrawingSurfaceProxy extends \Avalonia\Win32\WinRT\Im
 	\Avalonia\Win32\WinRT\ICompositionDrawingSurface
 {
 	/**
+	 * @var \Avalonia\Win32\WinRT\DirectXAlphaMode
+	 * @property
+	 */
+	public readonly $AlphaMode;
+	/**
+	 * @var \Avalonia\Win32\WinRT\DirectXPixelFormat
+	 * @property
+	 */
+	public readonly $PixelFormat;
+	/**
+	 * @var \Avalonia\Win32\Interop\UnmanagedMethods+SIZE_F
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\WinRT\DirectXAlphaMode
 	 */
 	public  function get_AlphaMode(){}

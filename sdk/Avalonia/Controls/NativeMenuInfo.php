@@ -5,6 +5,16 @@ namespace Avalonia\Controls;
 class NativeMenuInfo extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ChangingIsExported;
+	/**
+	 * @var \Avalonia\Controls\Platform\ITopLevelNativeMenuExporter
+	 * @property
+	 */
+	public readonly $Exporter;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_ChangingIsExported(){}

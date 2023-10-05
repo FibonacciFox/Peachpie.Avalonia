@@ -30,6 +30,26 @@ class __MicroComIAvnTrayIconProxy extends \MicroCom\Runtime\MicroComProxyBase im
 	\Avalonia\Native\Interop\IAvnTrayIcon
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\Void* $data
 	 * @param \System\IntPtr $length
 	 * @return \System\Void|void

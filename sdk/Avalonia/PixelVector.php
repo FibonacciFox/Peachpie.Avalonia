@@ -27,6 +27,21 @@ trait PixelVectorMethodsOverride
 class PixelVector extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $X;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Y;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Length;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_X(){}

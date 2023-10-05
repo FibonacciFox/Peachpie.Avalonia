@@ -6,6 +6,16 @@ class PixelFormatConversionShim extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $Surface;
+	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public readonly $SurfaceCopyHandler;
+	/**
 	 * @return \SkiaSharp\SKSurface
 	 */
 	public  function get_Surface(){}

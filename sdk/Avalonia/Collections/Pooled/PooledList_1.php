@@ -239,6 +239,31 @@ class PooledList_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	/**
+	 * @var \System\Span_1[T]
+	 * @property
+	 */
+	public readonly $Span;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\Pooled\ClearMode
+	 * @property
+	 */
+	public readonly $ClearMode;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses PooledList_1MethodsOverride::get_Span_1 ()
 	 * @uses PooledList_1MethodsOverride::get_Span_2 ()
 	 * @return mixed|@override

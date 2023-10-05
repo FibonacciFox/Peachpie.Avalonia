@@ -6,6 +6,11 @@ class PaintWrapper extends \System\ValueType implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\SKPaint
+	 * @field
+	 */
+	public readonly $Paint;
+	/**
 	 * @param \SkiaSharp\SKPaint $paint
 	 * @return \System\IDisposable
 	 */

@@ -25,6 +25,26 @@ class FontCollectionBase extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Concurrent\ConcurrentDictionary_2[System\String,System\Collections\Concurrent\ConcurrentDictionary_2[Avalonia\Media\Fonts\FontCollectionKey,Avalonia\Media\IGlyphTypeface]]
+	 * @field
+	 */
+	protected readonly $_glyphTypefaceCache;
+	/**
+	 * @var \System\Uri
+	 * @property
+	 */
+	public readonly $Key;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \System\Uri
 	 */
 	public  function get_Key(){}

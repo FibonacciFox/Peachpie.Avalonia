@@ -20,6 +20,26 @@ class Utf8Buffer extends \System\Runtime\InteropServices\SafeHandle implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $handle;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ByteLen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInvalid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsClosed;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_ByteLen(){}

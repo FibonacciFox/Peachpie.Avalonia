@@ -7,6 +7,11 @@ class InnerObserver extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IDisposable
+	 * @property
+	 */
+	public $Disposable;
+	/**
 	 * @return \System\IDisposable
 	 */
 	public  function get_Disposable(){}

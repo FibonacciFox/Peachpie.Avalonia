@@ -5,6 +5,41 @@ namespace Avalonia\Input\Raw;
 class RawKeyEventArgs extends \Avalonia\Input\Raw\RawInputEventArgs
 {
 	/**
+	 * @var \Avalonia\Input\Key
+	 * @property
+	 */
+	public $Key;
+	/**
+	 * @var \Avalonia\Input\RawInputModifiers
+	 * @property
+	 */
+	public $Modifiers;
+	/**
+	 * @var \Avalonia\Input\Raw\RawKeyEventType
+	 * @property
+	 */
+	public $Type;
+	/**
+	 * @var \Avalonia\Input\IInputDevice
+	 * @property
+	 */
+	public readonly $Device;
+	/**
+	 * @var \Avalonia\Input\IInputRoot
+	 * @property
+	 */
+	public readonly $Root;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Handled;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $Timestamp;
+	/**
 	 * @return \Avalonia\Input\Key
 	 */
 	public  function get_Key(){}

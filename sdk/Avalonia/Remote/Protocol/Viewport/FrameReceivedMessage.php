@@ -5,6 +5,11 @@ namespace Avalonia\Remote\Protocol\Viewport;
 class FrameReceivedMessage extends \System\Object
 {
 	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public $SequenceId;
+	/**
 	 * @return \System\Int64|int
 	 */
 	public  function get_SequenceId(){}

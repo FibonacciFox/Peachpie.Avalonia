@@ -29,6 +29,31 @@ class CompositionAnimation extends \Avalonia\Rendering\Composition\CompositionOb
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function ClearAllParameters(){}

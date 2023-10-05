@@ -6,6 +6,11 @@ namespace Avalonia\Utilities;
 class SingleOrQueue_1 extends \System\Object
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Empty;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

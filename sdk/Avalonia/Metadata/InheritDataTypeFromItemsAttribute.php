@@ -5,6 +5,21 @@ namespace Avalonia\Metadata;
 class InheritDataTypeFromItemsAttribute extends \System\Attribute
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $AncestorItemsProperty;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $AncestorType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $TypeId;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_AncestorItemsProperty(){}

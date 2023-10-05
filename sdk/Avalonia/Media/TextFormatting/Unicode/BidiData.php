@@ -5,6 +5,46 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 class BidiData extends \System\Object
 {
 	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public $ParagraphEmbeddingLevel;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasBrackets;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasEmbeddings;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasIsolates;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Length;
+	/**
+	 * @var \Avalonia\Utilities\ArraySlice_1[Avalonia\Media\TextFormatting\Unicode\BidiClass]
+	 * @property
+	 */
+	public $Classes;
+	/**
+	 * @var \Avalonia\Utilities\ArraySlice_1[Avalonia\Media\TextFormatting\Unicode\BidiPairedBracketType]
+	 * @property
+	 */
+	public $PairedBracketTypes;
+	/**
+	 * @var \Avalonia\Utilities\ArraySlice_1[System\Int32]
+	 * @property
+	 */
+	public $PairedBracketValues;
+	/**
 	 * @return \System\SByte
 	 */
 	public  function get_ParagraphEmbeddingLevel(){}

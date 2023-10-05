@@ -146,6 +146,31 @@ class SubscriptionDic_2 extends \System\Collections\Generic\Dictionary_2 impleme
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	/**
+	 * @var \System\Collections\Generic\IEqualityComparer_1[System\String]
+	 * @property
+	 */
+	public readonly $Comparer;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2+KeyCollection[System\String,Avalonia\Utilities\WeakEventHandlerManager+Subscription_2[T,TSubscriber]]
+	 * @property
+	 */
+	public readonly $Keys;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2+ValueCollection[System\String,Avalonia\Utilities\WeakEventHandlerManager+Subscription_2[T,TSubscriber]]
+	 * @property
+	 */
+	public readonly $Values;
+	/**
+	 * @var \Avalonia\Utilities\WeakEventHandlerManager+Subscription_2[T,TSubscriber]
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses SubscriptionDic_2MethodsOverride::get_Keys_1 ()
 	 * @uses SubscriptionDic_2MethodsOverride::get_Keys_2 ()
 	 * @uses SubscriptionDic_2MethodsOverride::get_Keys_3 ()

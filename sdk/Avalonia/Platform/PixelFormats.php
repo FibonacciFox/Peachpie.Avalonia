@@ -5,6 +5,66 @@ namespace Avalonia\Platform;
 class PixelFormats extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgb565;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgba8888;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgba64;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Bgra8888;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $BlackWhite;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Gray2;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Gray4;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Gray8;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Gray16;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Gray32Float;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Rgb24;
+	/**
+	 * @var \Avalonia\Platform\PixelFormat
+	 * @property
+	 */
+	public readonly $Bgr24;
+	/**
 	 * @return \Avalonia\Platform\PixelFormat
 	 */
 	public static function get_Rgb565(){}

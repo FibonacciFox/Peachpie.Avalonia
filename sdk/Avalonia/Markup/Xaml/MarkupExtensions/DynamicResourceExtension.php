@@ -6,6 +6,11 @@ class DynamicResourceExtension extends \System\Object implements
 	\Avalonia\Data\IBinding
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ResourceKey;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_ResourceKey(){}

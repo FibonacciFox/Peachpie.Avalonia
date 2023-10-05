@@ -23,6 +23,21 @@ class CompositeDisposable extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @param \System\Collections\Generic\IEnumerable_1 $disposables
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

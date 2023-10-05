@@ -132,6 +132,31 @@ class KeyFrames extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\KeyFrame]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\KeyFrame
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses KeyFramesMethodsOverride::get_Count_1 ()
 	 * @uses KeyFramesMethodsOverride::get_Count_2 ()
 	 * @return mixed|@override

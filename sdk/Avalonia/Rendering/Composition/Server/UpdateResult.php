@@ -20,6 +20,21 @@ class UpdateResult extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $InvalidatedOld;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $InvalidatedNew;
+	/**
 	 * @return \System\Nullable_1
 	 */
 	public  function get_Bounds(){}

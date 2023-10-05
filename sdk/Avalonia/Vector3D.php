@@ -36,6 +36,26 @@ class Vector3D extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $X;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Y;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Z;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Length;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_X(){}

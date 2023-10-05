@@ -12,6 +12,31 @@ class TemplateBinding extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Data\Converters\IValueConverter
+	 * @property
+	 */
+	public $Converter;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $ConverterParameter;
+	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
 	 * @param \System\IObserver_1 $observer
 	 * @return \System\IDisposable
 	 */

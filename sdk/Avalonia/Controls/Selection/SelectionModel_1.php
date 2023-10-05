@@ -86,6 +86,51 @@ class SelectionModel_1 extends \Avalonia\Controls\Selection\SelectionNodeBase_1 
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Collections\IEnumerable
+	 * @property
+	 */
+	public $Source;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $SingleSelect;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $SelectedIndex;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Int32]
+	 * @property
+	 */
+	public readonly $SelectedIndexes;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $SelectedItem;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[T]
+	 * @property
+	 */
+	public readonly $SelectedItems;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $AnchorIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	protected $RangesEnabled;
+	/**
 	 * @uses SelectionModel_1MethodsOverride::get_Source_1 ()
 	 * @uses SelectionModel_1MethodsOverride::get_Source_2 ()
 	 * @uses SelectionModel_1MethodsOverride::get_Source_3 ()

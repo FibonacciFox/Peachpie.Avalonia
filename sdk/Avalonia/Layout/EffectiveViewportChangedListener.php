@@ -5,6 +5,16 @@ namespace Avalonia\Layout;
 class EffectiveViewportChangedListener extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Layout\Layoutable
+	 * @property
+	 */
+	public readonly $Listener;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Viewport;
+	/**
 	 * @return \Avalonia\Layout\Layoutable
 	 */
 	public  function get_Listener(){}

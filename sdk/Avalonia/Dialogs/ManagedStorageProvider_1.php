@@ -7,6 +7,21 @@ class ManagedStorageProvider_1 extends \Avalonia\Platform\Storage\FileIO\BclStor
 	\Avalonia\Platform\Storage\IStorageProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSave;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanOpen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanPickFolder;
+	/**
 	 * @param \Avalonia\Dialogs\Internal\ManagedFileChooserViewModel $model
 	 * @param \Avalonia\Controls\Window $parent
 	 * @deprecated this element should not be used by you because it will break your program

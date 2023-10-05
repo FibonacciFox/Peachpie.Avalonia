@@ -1,8 +1,5 @@
 <?php
 namespace Avalonia;
-use Avalonia\Platform\PlatformColorValues;
-use System\Object;
-
 /**
  * @deprecated this element should not be used by you because it will break your program
  */
@@ -148,6 +145,81 @@ class Application extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\IResourceNode,
 	\Avalonia\Platform\IApplicationPlatformEvents
 {
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $DataContextProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ThemeVariant]
+	 * @field
+	 */
+	public readonly $ActualThemeVariantProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ThemeVariant]
+	 * @field
+	 */
+	public readonly $RequestedThemeVariantProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Application,System\String]
+	 * @field
+	 */
+	public readonly $NameProperty;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public $RequestedThemeVariant;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Application
+	 * @property
+	 */
+	public readonly $Current;
+	/**
+	 * @var \Avalonia\Controls\Templates\DataTemplates
+	 * @property
+	 */
+	public readonly $DataTemplates;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \Avalonia\Controls\ApplicationLifetimes\IApplicationLifetime
+	 * @property
+	 */
+	public $ApplicationLifetime;
+	/**
+	 * @var \Avalonia\Platform\IPlatformSettings
+	 * @property
+	 */
+	public readonly $PlatformSettings;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
 	/**
 	 * @param \System\EventHandler_1 $value
 	 * @return \System\Void|void
@@ -353,13 +425,12 @@ class Application extends \Avalonia\AvaloniaObject implements
 	 * @return \System\Void|void
 	 */
 	public  function set_Name($value){}
-
-    /**
-     * @param Object|object $sender
-     * @param PlatformColorValues $e
-     * @return void @deprecated
-     * @deprecated this element should not be used by you because it will break your program
-     */
+	/**
+	 * @param \System\Object|object $sender
+	 * @param \Avalonia\Platform\PlatformColorValues $e
+	 * @deprecated this element should not be used by you because it will break your program
+	 * @return @deprecated
+	 */
 	#[MethodPrivate]  function OnColorValuesChanged($sender, $e){}
 	/**
 	 * @uses ApplicationMethodsOverride::add_PropertyChanged_1 ($value)

@@ -5,6 +5,11 @@ namespace Avalonia\Media\TextFormatting;
 class TextFormatter extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Media\TextFormatting\TextFormatter
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @return \Avalonia\Media\TextFormatting\TextFormatter
 	 */
 	public static function get_Current(){}

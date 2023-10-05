@@ -6,6 +6,11 @@ class IconImpl extends \System\Object implements
 	\Avalonia\Platform\IWindowIconImpl
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $HIcon;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_HIcon(){}

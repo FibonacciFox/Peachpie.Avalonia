@@ -6,6 +6,11 @@ class TransformTrackingHelper extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Nullable_1[Avalonia\Matrix]
+	 * @property
+	 */
+	public $Matrix;
+	/**
 	 * @param \Avalonia\Visual $visual
 	 * @return \System\Void|void
 	 */

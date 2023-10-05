@@ -20,6 +20,11 @@ class UnicodeRange extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\UnicodeRange
+	 * @field
+	 */
+	public readonly $Default;
+	/**
 	 * @return \Avalonia\Media\UnicodeRangeSegment
 	 */
 	protected  function get_Single(){}

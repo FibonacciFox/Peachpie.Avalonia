@@ -5,6 +5,26 @@ namespace Avalonia\Data\Core;
 class SettableNode extends \Avalonia\Data\Core\ExpressionNode
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \Avalonia\Data\Core\ExpressionNode
+	 * @property
+	 */
+	public $Next;
+	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @property
+	 */
+	public $Target;
+	/**
 	 * @param \System\Object|object $value
 	 * @param \Avalonia\Data\BindingPriority $priority
 	 * @return \System\Boolean

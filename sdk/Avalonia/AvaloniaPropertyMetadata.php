@@ -5,6 +5,16 @@ namespace Avalonia;
 class AvaloniaPropertyMetadata extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public readonly $DefaultBindingMode;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public $EnableDataValidation;
+	/**
 	 * @return \Avalonia\Data\BindingMode
 	 */
 	public  function get_DefaultBindingMode(){}

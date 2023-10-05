@@ -6,6 +6,11 @@ class Vector3DInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\Vector3DInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \Avalonia\Vector3D $from
 	 * @param \Avalonia\Vector3D $to
 	 * @param \System\Single $progress

@@ -30,6 +30,26 @@ class __MicroComID3D11Texture2DProxy extends \MicroCom\Runtime\MicroComProxyBase
 	\Avalonia\Win32\DirectX\ID3D11Texture2D
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Void|void
 	 */
 	protected static function __MicroComModuleInit(){}

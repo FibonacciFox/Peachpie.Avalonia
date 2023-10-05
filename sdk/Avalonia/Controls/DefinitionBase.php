@@ -137,6 +137,31 @@ class DefinitionBase extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $_parentIndex;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Controls\DefinitionBase+SharedSizeScope]
+	 * @field
+	 */
+	protected readonly $PrivateSharedSizeScopeProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\String]
+	 * @field
+	 */
+	public readonly $SharedSizeGroupProperty;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SharedSizeGroup;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_SharedSizeGroup(){}

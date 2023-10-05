@@ -20,6 +20,11 @@ class AvaloniaNativePlatform extends \System\Object implements
 	\Avalonia\Platform\IWindowingPlatform
 {
 	/**
+	 * @var \Avalonia\Input\KeyboardDevice
+	 * @field
+	 */
+	protected readonly $KeyboardDevice;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

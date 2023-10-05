@@ -27,6 +27,11 @@ trait ExpressionVisitorNodeBuilderMethodsOverride
 class ExpressionVisitorNodeBuilder extends \System\Linq\Expressions\ExpressionVisitor
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Data\Core\ExpressionNode]
+	 * @property
+	 */
+	public readonly $Nodes;
+	/**
 	 * @return \System\Collections\Generic\List_1
 	 */
 	public  function get_Nodes(){}

@@ -6,6 +6,16 @@ class HStringInterop extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Handle(){}

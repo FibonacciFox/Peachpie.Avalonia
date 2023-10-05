@@ -30,6 +30,31 @@ class __MicroComIAvnAutomationPeerArrayProxy extends \MicroCom\Runtime\MicroComP
 	\Avalonia\Native\Interop\IAvnAutomationPeerArray
 {
 	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\UInt32
 	 */
 	public  function get_Count(){}

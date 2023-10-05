@@ -137,6 +137,21 @@ class LineSegment extends \Avalonia\Media\PathSegment implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $PointProperty;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Point;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_Point(){}

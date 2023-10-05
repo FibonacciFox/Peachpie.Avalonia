@@ -19,6 +19,11 @@ trait DispatcherPriorityQueueMethodsOverride
 class DispatcherPriorityQueue extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @property
+	 */
+	public readonly $MaxPriority;
+	/**
 	 * @return \Avalonia\Threading\DispatcherPriority
 	 */
 	public  function get_MaxPriority(){}

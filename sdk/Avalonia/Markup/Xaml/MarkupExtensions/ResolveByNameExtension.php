@@ -5,6 +5,11 @@ namespace Avalonia\Markup\Xaml\MarkupExtensions;
 class ResolveByNameExtension extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

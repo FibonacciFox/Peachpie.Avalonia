@@ -6,6 +6,16 @@ class DxgiConnection extends \System\Object implements
 	\Avalonia\Rendering\IRenderTimer
 {
 	/**
+	 * @var \System\UInt32
+	 * @field
+	 */
+	public $ENUM_CURRENT_SETTINGS;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $RunsInBackground;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_RunsInBackground(){}

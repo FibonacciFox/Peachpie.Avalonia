@@ -8,6 +8,21 @@ class InpcPropertyAccessor extends \Avalonia\Data\Core\Plugins\PropertyAccessorB
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\WeakReference_1[System\Object]
+	 * @field
+	 */
+	protected readonly $_reference;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\Utilities\WeakEvent $ev
 	 * @param \System\ComponentModel\PropertyChangedEventArgs $e

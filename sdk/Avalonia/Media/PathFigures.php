@@ -132,6 +132,31 @@ class PathFigures extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Media\PathFigure]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Media\PathFigure
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @param \System\String|string $pathData
 	 * @return \Avalonia\Media\PathFigures
 	 */

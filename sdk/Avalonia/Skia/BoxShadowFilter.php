@@ -6,6 +6,16 @@ class BoxShadowFilter extends \System\ValueType implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\SKPaint
+	 * @field
+	 */
+	public readonly $Paint;
+	/**
+	 * @var \SkiaSharp\SKClipOperation
+	 * @field
+	 */
+	public readonly $ClipOperation;
+	/**
 	 * @param \SkiaSharp\SKPaint $paint
 	 * @param \Avalonia\Media\BoxShadow $shadow
 	 * @param \System\Double|double $opacity

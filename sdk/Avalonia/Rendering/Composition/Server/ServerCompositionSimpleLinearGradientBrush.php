@@ -37,6 +37,61 @@ class ServerCompositionSimpleLinearGradientBrush extends \Avalonia\Rendering\Com
 	\Avalonia\Media\ILinearGradientBrush
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfStartPointProperty;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty
+	 * @field
+	 */
+	protected $s_IdOfEndPointProperty;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $StartPoint;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $EndPoint;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]
+	 * @property
+	 */
+	public readonly $GradientStops;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public readonly $SpreadMethod;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\RelativePoint
 	 */
 	public  function get_StartPoint(){}

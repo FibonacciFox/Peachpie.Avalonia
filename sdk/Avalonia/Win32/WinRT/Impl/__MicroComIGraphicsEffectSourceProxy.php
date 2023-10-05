@@ -31,6 +31,36 @@ class __MicroComIGraphicsEffectSourceProxy extends \Avalonia\Win32\WinRT\Impl\__
 	\Avalonia\Win32\WinRT\IGraphicsEffectSource
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @uses __MicroComIGraphicsEffectSourceProxyMethodsOverride::QueryInterface_1 ($guid, $ppv)
 	 * @uses __MicroComIGraphicsEffectSourceProxyMethodsOverride::QueryInterface_2 ()
 	 * @return mixed|@override

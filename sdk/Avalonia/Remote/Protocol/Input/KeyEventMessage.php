@@ -5,6 +5,21 @@ namespace Avalonia\Remote\Protocol\Input;
 class KeyEventMessage extends \Avalonia\Remote\Protocol\Input\InputEventMessageBase
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDown;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Input\Key
+	 * @property
+	 */
+	public $Key;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Input\InputModifiers[]
+	 * @property
+	 */
+	public $Modifiers;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsDown(){}

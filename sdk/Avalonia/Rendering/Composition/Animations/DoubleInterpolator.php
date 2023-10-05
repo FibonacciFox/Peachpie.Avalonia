@@ -6,6 +6,11 @@ class DoubleInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\DoubleInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Double|double $from
 	 * @param \System\Double|double $to
 	 * @param \System\Single $progress

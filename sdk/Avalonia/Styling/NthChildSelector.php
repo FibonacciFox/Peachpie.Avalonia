@@ -27,6 +27,16 @@ trait NthChildSelectorMethodsOverride
 class NthChildSelector extends \Avalonia\Styling\Selector
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Step;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Offset;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Step(){}

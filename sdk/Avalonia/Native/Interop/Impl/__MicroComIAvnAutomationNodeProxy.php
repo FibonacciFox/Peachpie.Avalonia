@@ -34,6 +34,26 @@ class __MicroComIAvnAutomationNodeProxy extends \MicroCom\Runtime\MicroComProxyB
 	\Avalonia\Native\Interop\IAvnAutomationNode
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @uses __MicroComIAvnAutomationNodeProxyMethodsOverride::Dispose_1 ()
 	 * @uses __MicroComIAvnAutomationNodeProxyMethodsOverride::Dispose_2 ($disposing)
 	 * @uses __MicroComIAvnAutomationNodeProxyMethodsOverride::Dispose_3 ()

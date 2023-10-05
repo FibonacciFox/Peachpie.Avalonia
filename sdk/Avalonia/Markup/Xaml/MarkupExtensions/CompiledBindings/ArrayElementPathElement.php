@@ -6,6 +6,16 @@ class ArrayElementPathElement extends \System\Object implements
 	\Avalonia\Markup\Xaml\MarkupExtensions\CompiledBindings\ICompiledBindingPathElement
 {
 	/**
+	 * @var \System\Int32[]
+	 * @property
+	 */
+	public readonly $Indices;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $ElementType;
+	/**
 	 * @return \System\Int32[]
 	 */
 	public  function get_Indices(){}

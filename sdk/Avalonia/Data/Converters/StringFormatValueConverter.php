@@ -6,6 +6,16 @@ class StringFormatValueConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 	/**
+	 * @var \Avalonia\Data\Converters\IValueConverter
+	 * @property
+	 */
+	public readonly $Inner;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @return \Avalonia\Data\Converters\IValueConverter
 	 */
 	public  function get_Inner(){}

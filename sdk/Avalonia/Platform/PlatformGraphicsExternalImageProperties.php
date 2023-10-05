@@ -20,6 +20,36 @@ class PlatformGraphicsExternalImageProperties extends \System\ValueType implemen
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \Avalonia\Platform\PlatformGraphicsExternalImageFormat
+	 * @property
+	 */
+	public $Format;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $MemorySize;
+	/**
+	 * @var \System\UInt64
+	 * @property
+	 */
+	public $MemoryOffset;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $TopLeftOrigin;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Width(){}

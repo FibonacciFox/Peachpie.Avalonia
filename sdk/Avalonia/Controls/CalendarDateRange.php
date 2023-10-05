@@ -5,6 +5,16 @@ namespace Avalonia\Controls;
 class CalendarDateRange extends \System\Object
 {
 	/**
+	 * @var \System\DateTime
+	 * @property
+	 */
+	public $Start;
+	/**
+	 * @var \System\DateTime
+	 * @property
+	 */
+	public $End;
+	/**
 	 * @return \System\DateTime
 	 */
 	public  function get_Start(){}

@@ -5,6 +5,36 @@ namespace Avalonia\Platform\Storage;
 class FilePickerSaveOptions extends \Avalonia\Platform\Storage\PickerOptions
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $SuggestedFileName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $DefaultExtension;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Platform\Storage\FilePickerFileType]
+	 * @property
+	 */
+	public $FileTypeChoices;
+	/**
+	 * @var \System\Nullable_1[System\Boolean]
+	 * @property
+	 */
+	public $ShowOverwritePrompt;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
+	 * @var \Avalonia\Platform\Storage\IStorageFolder
+	 * @property
+	 */
+	public $SuggestedStartLocation;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_SuggestedFileName(){}

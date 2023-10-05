@@ -137,6 +137,41 @@ class BezierSegment extends \Avalonia\Media\PathSegment implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $Point1Property;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $Point2Property;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $Point3Property;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Point1;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Point2;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Point3;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_Point1(){}

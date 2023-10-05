@@ -156,6 +156,46 @@ class Style extends \Avalonia\Styling\StyleBase implements
 	\Avalonia\Controls\IResourceProvider
 {
 	/**
+	 * @var \Avalonia\Styling\Selector
+	 * @property
+	 */
+	public $Selector;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Styling\IStyle]
+	 * @property
+	 */
+	public readonly $Children;
+	/**
+	 * @var \Avalonia\Controls\IResourceHost
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Styling\IStyle
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Styling\SetterBase]
+	 * @property
+	 */
+	public readonly $Setters;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Animation\IAnimation]
+	 * @property
+	 */
+	public readonly $Animations;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Styling\Selector
 	 */
 	public  function get_Selector(){}

@@ -193,6 +193,386 @@ class RelativePanel extends \Avalonia\Controls\Panel implements
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AboveProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignBottomWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignBottomWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignHorizontalCenterWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignHorizontalCenterWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignLeftWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignLeftWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignRightWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignRightWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignTopWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignTopWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $AlignVerticalCenterWithPanelProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $AlignVerticalCenterWithProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $BelowProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $LeftOfProperty;
+	/**
+	 * @var \Avalonia\AttachedProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $RightOfProperty;
+	/**
+	 * @var \Avalonia\Controls\Controls
+	 * @property
+	 */
+	public readonly $Children;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Background;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsItemsHost;
+	/**
+	 * @var \Avalonia\Controls\ITemplate_1[Avalonia\Controls\Control]
+	 * @property
+	 */
+	public $FocusAdorner;
+	/**
+	 * @var \Avalonia\Controls\Templates\DataTemplates
+	 * @property
+	 */
+	public readonly $DataTemplates;
+	/**
+	 * @var \Avalonia\Controls\ContextMenu
+	 * @property
+	 */
+	public $ContextMenu;
+	/**
+	 * @var \Avalonia\Controls\Primitives\FlyoutBase
+	 * @property
+	 */
+	public $ContextFlyout;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsLoaded;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Tag;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Focusable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsEnabled;
+	/**
+	 * @var \Avalonia\Input\Cursor
+	 * @property
+	 */
+	public $Cursor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsKeyboardFocusWithin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsFocused;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsHitTestVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsPointerOver;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsTabStop;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyEnabled;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $TabIndex;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Input\KeyBinding]
+	 * @property
+	 */
+	public readonly $KeyBindings;
+	/**
+	 * @var \Avalonia\Input\GestureRecognizers\GestureRecognizerCollection
+	 * @property
+	 */
+	public readonly $GestureRecognizers;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Width;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Height;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxWidth;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MinHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $MaxHeight;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public $Margin;
+	/**
+	 * @var \Avalonia\Layout\HorizontalAlignment
+	 * @property
+	 */
+	public $HorizontalAlignment;
+	/**
+	 * @var \Avalonia\Layout\VerticalAlignment
+	 * @property
+	 */
+	public $VerticalAlignment;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $DesiredSize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsMeasureValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsArrangeValid;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $UseLayoutRounding;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Media\Geometry
+	 * @property
+	 */
+	public $Clip;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEffectivelyVisible;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsVisible;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \Avalonia\Media\IEffect
+	 * @property
+	 */
+	public $Effect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasMirrorTransform;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $RenderTransform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $RenderTransformOrigin;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public $FlowDirection;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ZIndex;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \Avalonia\AvaloniaObject $obj
 	 * @return \System\Object|object
 	 */

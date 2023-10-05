@@ -32,6 +32,21 @@ trait ArrayBuilder_1MethodsOverride
 class ArrayBuilder_1 extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Length;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Capacity;
+	/**
+	 * @var \T&
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Length(){}

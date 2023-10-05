@@ -19,6 +19,31 @@ trait FontFamilyMethodsOverride
 class FontFamily extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @field
+	 */
+	public $DefaultFontFamilyName;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public readonly $Default;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \Avalonia\Media\Fonts\FamilyNameCollection
+	 * @property
+	 */
+	public readonly $FamilyNames;
+	/**
+	 * @var \Avalonia\Media\Fonts\FontFamilyKey
+	 * @property
+	 */
+	public readonly $Key;
+	/**
 	 * @return \Avalonia\Media\FontFamily
 	 */
 	public static function get_Default(){}

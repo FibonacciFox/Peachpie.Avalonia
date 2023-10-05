@@ -6,6 +6,26 @@ class ZOrderElement extends \System\Object implements
 	\System\IComparable_1
 {
 	/**
+	 * @var \Avalonia\Visual
+	 * @property
+	 */
+	public $Element;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Index;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $ZIndex;
+	/**
+	 * @var \System\Collections\Generic\IComparer_1[Avalonia\VisualTree\VisualExtensions+ZOrderElement]
+	 * @property
+	 */
+	public readonly $Comparer;
+	/**
 	 * @return \Avalonia\Visual
 	 */
 	public  function get_Element(){}

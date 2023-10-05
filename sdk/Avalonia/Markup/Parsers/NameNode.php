@@ -6,6 +6,11 @@ class NameNode extends \System\Object implements
 	\Avalonia\Markup\Parsers\INode
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

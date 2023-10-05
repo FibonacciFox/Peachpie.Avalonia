@@ -57,6 +57,21 @@ class PropertySetterBindingInstance extends \Avalonia\PropertyStore\UntypedBindi
 	\Avalonia\Styling\ISetterInstance
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @uses PropertySetterBindingInstanceMethodsOverride::Start_1 ($produceValue)
 	 * @uses PropertySetterBindingInstanceMethodsOverride::Start_2 ()
 	 * @return mixed|@override

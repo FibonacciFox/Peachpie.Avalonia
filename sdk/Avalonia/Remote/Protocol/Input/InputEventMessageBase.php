@@ -5,6 +5,11 @@ namespace Avalonia\Remote\Protocol\Input;
 class InputEventMessageBase extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Remote\Protocol\Input\InputModifiers[]
+	 * @property
+	 */
+	public $Modifiers;
+	/**
 	 * @return \Avalonia\Remote\Protocol\Input\InputModifiers[]
 	 */
 	public  function get_Modifiers(){}

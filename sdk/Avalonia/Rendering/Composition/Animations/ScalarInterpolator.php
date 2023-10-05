@@ -6,6 +6,11 @@ class ScalarInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
 	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ScalarInterpolator
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Single $from
 	 * @param \System\Single $to
 	 * @param \System\Single $progress

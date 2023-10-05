@@ -6,6 +6,11 @@ namespace Avalonia\Rendering\Composition\Drawing;
 class CompositorResourceHolder_1 extends \System\ValueType
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsAttached;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsAttached(){}

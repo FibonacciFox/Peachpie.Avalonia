@@ -20,6 +20,51 @@ class TextMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Ascent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Descent;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LineGap;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LineHeight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $UnderlineThickness;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $UnderlinePosition;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $StrikethroughThickness;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $StrikethroughPosition;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_FontRenderingEmSize(){}

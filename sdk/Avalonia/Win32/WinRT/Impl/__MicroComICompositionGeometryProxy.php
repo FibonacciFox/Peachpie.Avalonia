@@ -31,6 +31,51 @@ class __MicroComICompositionGeometryProxy extends \Avalonia\Win32\WinRT\Impl\__M
 	\Avalonia\Win32\WinRT\ICompositionGeometry
 {
 	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $TrimEnd;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $TrimOffset;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public readonly $TrimStart;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Single
 	 */
 	public  function get_TrimEnd(){}

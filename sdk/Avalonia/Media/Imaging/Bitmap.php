@@ -31,6 +31,26 @@ class Bitmap extends \System\Object implements
 	\Avalonia\Media\IImageBrushSource
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @param \System\IO\Stream $stream
 	 * @param \System\Int32|int $width
 	 * @param \Avalonia\Media\Imaging\BitmapInterpolationMode $interpolationMode

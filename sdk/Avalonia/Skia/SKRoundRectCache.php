@@ -27,6 +27,11 @@ trait SKRoundRectCacheMethodsOverride
 class SKRoundRectCache extends \Avalonia\Skia\SKCacheBase_2
 {
 	/**
+	 * @var \System\Collections\Concurrent\ConcurrentBag_1[SkiaSharp\SKRoundRect]
+	 * @field
+	 */
+	protected readonly $Cache;
+	/**
 	 * @uses SKRoundRectCacheMethodsOverride::GetAndSetRadii_1 ($rectangle, $roundedRect)
 	 * @uses SKRoundRectCacheMethodsOverride::GetAndSetRadii_2 ($rectangle, $radii)
 	 * @return mixed|@override

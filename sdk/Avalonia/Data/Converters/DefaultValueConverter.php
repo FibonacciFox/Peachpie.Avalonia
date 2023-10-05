@@ -6,6 +6,11 @@ class DefaultValueConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 	/**
+	 * @var \Avalonia\Data\Converters\DefaultValueConverter
+	 * @field
+	 */
+	public readonly $Instance;
+	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $targetType
 	 * @param \System\Object|object $parameter

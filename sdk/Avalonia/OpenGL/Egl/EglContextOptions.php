@@ -5,6 +5,26 @@ namespace Avalonia\OpenGL\Egl;
 class EglContextOptions extends \System\Object
 {
 	/**
+	 * @var \Avalonia\OpenGL\Egl\EglContext
+	 * @property
+	 */
+	public $ShareWith;
+	/**
+	 * @var \Avalonia\OpenGL\Egl\EglSurface
+	 * @property
+	 */
+	public $OffscreenSurface;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $DisposeCallback;
+	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\Type,System\Func_2[Avalonia\OpenGL\Egl\EglContext,System\Object]]
+	 * @property
+	 */
+	public $ExtraFeatures;
+	/**
 	 * @return \Avalonia\OpenGL\Egl\EglContext
 	 */
 	public  function get_ShareWith(){}

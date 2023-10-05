@@ -5,6 +5,21 @@ namespace Avalonia\Native;
 class GlDisplay extends \System\Object
 {
 	/**
+	 * @var \Avalonia\OpenGL\GlInterface
+	 * @property
+	 */
+	public readonly $GlInterface;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SampleCount;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $StencilSize;
+	/**
 	 * @return \Avalonia\OpenGL\GlInterface
 	 */
 	public  function get_GlInterface(){}

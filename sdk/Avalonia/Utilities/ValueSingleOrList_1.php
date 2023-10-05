@@ -6,6 +6,26 @@ namespace Avalonia\Utilities;
 class ValueSingleOrList_1 extends \System\ValueType
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Single;
+	/**
+	 * @var \System\Collections\Generic\List_1[T]
+	 * @property
+	 */
+	public $List;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasList;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSingle;
+	/**
 	 * @return \Avalonia\Utilities\T
 	 */
 	public  function get_Single(){}

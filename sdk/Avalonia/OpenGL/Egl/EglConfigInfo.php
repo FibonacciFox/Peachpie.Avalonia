@@ -5,6 +5,36 @@ namespace Avalonia\OpenGL\Egl;
 class EglConfigInfo extends \System\Object
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Config;
+	/**
+	 * @var \Avalonia\OpenGL\GlVersion
+	 * @property
+	 */
+	public readonly $Version;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SurfaceType;
+	/**
+	 * @var \System\Int32[]
+	 * @property
+	 */
+	public readonly $Attributes;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $SampleCount;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $StencilSize;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Config(){}

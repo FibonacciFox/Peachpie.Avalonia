@@ -19,6 +19,51 @@ trait UnicodeTrieBuilderMethodsOverride
 class UnicodeTrieBuilder extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SHIFT_1;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SHIFT_2;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $OMITTED_BMP_INDEX_1_LENGTH;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $INDEX_2_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $DATA_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $INDEX_SHIFT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $DATA_GRANULARITY;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $LSCP_INDEX_2_OFFSET;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $INDEX_1_OFFSET;
+	/**
 	 * @param \System\Int32|int $codePoint
 	 * @param \System\UInt32 $value
 	 * @return \Avalonia\Media\TextFormatting\Unicode\UnicodeTrieBuilder

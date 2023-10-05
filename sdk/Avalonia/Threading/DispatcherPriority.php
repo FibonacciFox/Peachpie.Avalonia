@@ -29,6 +29,116 @@ class DispatcherPriority extends \System\ValueType implements
 	\System\IComparable_1
 {
 	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Default;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	protected readonly $MinimumForegroundPriority;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Input;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Background;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $ContextIdle;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $ApplicationIdle;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $SystemIdle;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	protected readonly $MinimumActiveValue;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Inactive;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	protected readonly $MinValue;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Invalid;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Loaded;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $UiThreadRender;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	protected readonly $AfterRender;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Render;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $BeforeRender;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $AsyncRenderTargetResize;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $DataBind;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Normal;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $Send;
+	/**
+	 * @var \Avalonia\Threading\DispatcherPriority
+	 * @field
+	 */
+	public readonly $MaxValue;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Value(){}

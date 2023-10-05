@@ -5,6 +5,21 @@ namespace Avalonia\Utilities;
 class AvaloniaResourcesIndexEntry extends \System\Object
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Path;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Size;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Path(){}

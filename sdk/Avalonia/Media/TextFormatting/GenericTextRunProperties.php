@@ -20,6 +20,41 @@ class GenericTextRunProperties extends \Avalonia\Media\TextFormatting\TextRunPro
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Typeface
+	 * @property
+	 */
+	public readonly $Typeface;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $FontRenderingEmSize;
+	/**
+	 * @var \Avalonia\Media\TextDecorationCollection
+	 * @property
+	 */
+	public readonly $TextDecorations;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public readonly $ForegroundBrush;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public readonly $BackgroundBrush;
+	/**
+	 * @var \Avalonia\Media\BaselineAlignment
+	 * @property
+	 */
+	public readonly $BaselineAlignment;
+	/**
+	 * @var \System\Globalization\CultureInfo
+	 * @property
+	 */
+	public readonly $CultureInfo;
+	/**
 	 * @uses GenericTextRunPropertiesMethodsOverride::Equals_1 ($other)
 	 * @uses GenericTextRunPropertiesMethodsOverride::Equals_2 ($obj)
 	 * @return mixed|@override

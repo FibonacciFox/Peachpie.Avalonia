@@ -22,6 +22,16 @@ class DxgiRenderTarget extends \Avalonia\OpenGL\Egl\EglPlatformSurfaceRenderTarg
 	\System\IDisposable
 {
 	/**
+	 * @var \System\UInt32
+	 * @field
+	 */
+	public $DXGI_USAGE_RENDER_TARGET_OUTPUT;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
 	 * @param \Avalonia\Win32\Interop\RECT& $l
 	 * @param \Avalonia\Win32\Interop\RECT& $r
 	 * @return \System\Boolean

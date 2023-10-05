@@ -47,6 +47,11 @@ trait AvaloniaPropertyRegistryMethodsOverride
 class AvaloniaPropertyRegistry extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AvaloniaPropertyRegistry
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\AvaloniaPropertyRegistry
 	 */
 	public static function get_Instance(){}

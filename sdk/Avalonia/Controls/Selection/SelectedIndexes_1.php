@@ -24,6 +24,16 @@ class SelectedIndexes_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
 	 * @param \System\Int32|int $index
 	 * @return \System\Int32|int
 	 */

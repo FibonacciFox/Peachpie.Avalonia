@@ -24,6 +24,26 @@ class WriteableBitmapImpl extends \System\Object implements
 	\Avalonia\Skia\IDrawableBitmapImpl
 {
 	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Version;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]
+	 * @property
+	 */
+	public readonly $Format;
+	/**
 	 * @return \Avalonia\Vector
 	 */
 	public  function get_Dpi(){}

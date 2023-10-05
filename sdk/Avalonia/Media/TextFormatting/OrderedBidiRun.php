@@ -5,6 +5,26 @@ namespace Avalonia\Media\TextFormatting;
 class OrderedBidiRun extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $RunIndex;
+	/**
+	 * @var \System\SByte
+	 * @property
+	 */
+	public readonly $Level;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRun
+	 * @property
+	 */
+	public readonly $Run;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $NextRunIndex;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_RunIndex(){}

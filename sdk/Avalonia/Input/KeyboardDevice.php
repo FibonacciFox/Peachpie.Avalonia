@@ -8,6 +8,21 @@ class KeyboardDevice extends \System\Object implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Input\IInputManager
+	 * @property
+	 */
+	public readonly $InputManager;
+	/**
+	 * @var \Avalonia\Input\IFocusManager
+	 * @property
+	 */
+	public readonly $FocusManager;
+	/**
+	 * @var \Avalonia\Input\IInputElement
+	 * @property
+	 */
+	public readonly $FocusedElement;
+	/**
 	 * @param \System\ComponentModel\PropertyChangedEventHandler $value
 	 * @return \System\Void|void
 	 */

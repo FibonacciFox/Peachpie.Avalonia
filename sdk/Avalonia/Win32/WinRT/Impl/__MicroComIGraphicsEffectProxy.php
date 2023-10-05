@@ -31,6 +31,41 @@ class __MicroComIGraphicsEffectProxy extends \Avalonia\Win32\WinRT\Impl\__MicroC
 	\Avalonia\Win32\WinRT\IGraphicsEffect
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Name(){}

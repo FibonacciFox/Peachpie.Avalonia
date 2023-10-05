@@ -5,6 +5,21 @@ namespace Avalonia\Media\TextFormatting;
 class TextCollapsingProperties extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Width;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRun
+	 * @property
+	 */
+	public readonly $Symbol;
+	/**
+	 * @var \Avalonia\Media\FlowDirection
+	 * @property
+	 */
+	public readonly $FlowDirection;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Width(){}

@@ -71,6 +71,51 @@ class StyledProperty_1 extends \Avalonia\AvaloniaProperty_1 implements
 	\Avalonia\IStyledPropertyAccessor
 {
 	/**
+	 * @var \System\Func_2[TValue,System\Boolean]
+	 * @property
+	 */
+	public readonly $ValidateValue;
+	/**
+	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]
+	 * @property
+	 */
+	public readonly $Changed;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $OwnerType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Inherits;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsAttached;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsDirect;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsReadOnly;
+	/**
 	 * @return \System\Func_2
 	 */
 	public  function get_ValidateValue(){}

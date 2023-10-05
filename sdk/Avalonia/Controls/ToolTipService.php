@@ -5,6 +5,11 @@ namespace Avalonia\Controls;
 class ToolTipService extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Controls\ToolTipService
+	 * @property
+	 */
+	public readonly $Instance;
+	/**
 	 * @return \Avalonia\Controls\ToolTipService
 	 */
 	public static function get_Instance(){}

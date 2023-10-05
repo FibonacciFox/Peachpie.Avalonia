@@ -5,6 +5,26 @@ namespace Avalonia\Data;
 class RelativeSource extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $AncestorLevel;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $AncestorType;
+	/**
+	 * @var \Avalonia\Data\RelativeSourceMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \Avalonia\Data\TreeType
+	 * @property
+	 */
+	public $Tree;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_AncestorLevel(){}

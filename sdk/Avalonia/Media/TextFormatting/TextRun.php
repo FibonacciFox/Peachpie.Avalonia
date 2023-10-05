@@ -5,6 +5,26 @@ namespace Avalonia\Media\TextFormatting;
 class TextRun extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $DefaultTextSourceLength;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \System\ReadOnlyMemory_1[System\Char]
+	 * @property
+	 */
+	public readonly $Text;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRunProperties
+	 * @property
+	 */
+	public readonly $Properties;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Length(){}

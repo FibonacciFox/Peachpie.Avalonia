@@ -36,6 +36,26 @@ class ServerCompositionSurface extends \Avalonia\Rendering\Composition\Server\Se
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	/**
+	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]
+	 * @property
+	 */
+	public readonly $Bitmap;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $Changed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @return \Avalonia\Utilities\IRef_1
 	 */
 	public  function get_Bitmap(){}

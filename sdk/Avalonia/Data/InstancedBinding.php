@@ -19,6 +19,26 @@ trait InstancedBindingMethodsOverride
 class InstancedBinding extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Data\BindingMode
+	 * @property
+	 */
+	public readonly $Mode;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public readonly $Priority;
+	/**
+	 * @var \System\IObservable_1[System\Object]
+	 * @property
+	 */
+	public readonly $Source;
+	/**
+	 * @var \System\IObservable_1[System\Object]
+	 * @property
+	 */
+	public readonly $Observable;
+	/**
 	 * @return \Avalonia\Data\BindingMode
 	 */
 	public  function get_Mode(){}

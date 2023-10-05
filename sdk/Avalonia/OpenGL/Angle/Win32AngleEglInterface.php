@@ -19,6 +19,31 @@ trait Win32AngleEglInterfaceMethodsOverride
 class Win32AngleEglInterface extends \Avalonia\OpenGL\Egl\EglInterface
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCreateDeviceANGLEAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReleaseDeviceANGLEAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsGetPlatformDisplayExtAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsQueryDisplayAttribExtAvailable;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsQueryDeviceAttribExtAvailable;
+	/**
 	 * @param \System\String|string $proc
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

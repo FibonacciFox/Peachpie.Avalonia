@@ -5,6 +5,21 @@ namespace Avalonia\X11;
 class DeviceInfo extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Id;
+	/**
+	 * @var \Avalonia\X11\XIValuatorClassInfo[]
+	 * @property
+	 */
+	public $Valuators;
+	/**
+	 * @var \Avalonia\X11\XIScrollClassInfo[]
+	 * @property
+	 */
+	public $Scrollers;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Id(){}

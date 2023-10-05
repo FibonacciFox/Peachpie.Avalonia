@@ -20,6 +20,11 @@ class PointerOverPreProcessor extends \System\Object implements
 	\System\IObserver_1
 {
 	/**
+	 * @var \System\Nullable_1[Avalonia\PixelPoint]
+	 * @property
+	 */
+	public readonly $LastPosition;
+	/**
 	 * @return \System\Nullable_1
 	 */
 	public  function get_LastPosition(){}

@@ -7,6 +7,21 @@ class AvaloniaNativeCursor extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnCursor
+	 * @property
+	 */
+	public $Cursor;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $HandleDescriptor;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnCursor
 	 */
 	public  function get_Cursor(){}

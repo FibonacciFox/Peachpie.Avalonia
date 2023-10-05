@@ -6,6 +6,11 @@ class ManualRawEventGrouperDispatchQueueDispatcherInputProvider extends \System\
 	\Avalonia\Controls\Platform\IManagedDispatcherInputProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasInput;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasInput(){}

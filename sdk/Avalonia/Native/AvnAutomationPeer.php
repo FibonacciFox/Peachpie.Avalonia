@@ -10,6 +10,81 @@ class AvnAutomationPeer extends \Avalonia\Native\NativeCallbackBase implements
 	\Avalonia\Native\Interop\IAvnAutomationPeer
 {
 	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationNode
+	 * @property
+	 */
+	public $Node;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnString
+	 * @property
+	 */
+	public readonly $AcceleratorKey;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnString
+	 * @property
+	 */
+	public readonly $AccessKey;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnAutomationControlType
+	 * @property
+	 */
+	public readonly $AutomationControlType;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnString
+	 * @property
+	 */
+	public readonly $AutomationId;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnRect
+	 * @property
+	 */
+	public readonly $BoundingRectangle;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeerArray
+	 * @property
+	 */
+	public readonly $Children;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnString
+	 * @property
+	 */
+	public readonly $ClassName;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeer
+	 * @property
+	 */
+	public readonly $LabeledBy;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnString
+	 * @property
+	 */
+	public readonly $Name;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeer
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeer
+	 * @property
+	 */
+	public readonly $VisualRoot;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnAutomationPeer
+	 * @property
+	 */
+	public readonly $RootPeer;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \Avalonia\Native\Interop\IAvnAutomationNode
 	 */
 	public  function get_Node(){}

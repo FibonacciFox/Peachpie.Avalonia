@@ -20,6 +20,21 @@ class TransformedBounds extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Clip;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Transform;
+	/**
 	 * @return \Avalonia\Rect
 	 */
 	public  function get_Bounds(){}

@@ -138,6 +138,16 @@ class Effect extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Media\IAffectsRender
 {
 	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \Avalonia\AvaloniaProperty[] $properties
 	 * @return \System\Void|void
 	 */

@@ -19,6 +19,16 @@ trait ExpressionOperatorGroupMethodsOverride
 class ExpressionOperatorGroup extends \System\ValueType
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $NotEmpty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_NotEmpty(){}

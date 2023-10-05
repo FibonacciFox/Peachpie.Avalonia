@@ -30,6 +30,36 @@ class __MicroComIAvnGlSurfaceRenderingSessionProxy extends \MicroCom\Runtime\Mic
 	\Avalonia\Native\Interop\IAvnGlSurfaceRenderingSession
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnPixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Native\Interop\AvnPixelSize
 	 */
 	public  function get_PixelSize(){}

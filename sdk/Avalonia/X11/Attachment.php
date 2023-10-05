@@ -7,6 +7,11 @@ class Attachment extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\Controls\Platform\INativeControlHostImpl
+	 * @property
+	 */
+	public $AttachedTo;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

@@ -137,6 +137,101 @@ class TextDecoration extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TextDecorationLocation]
+	 * @field
+	 */
+	public readonly $LocationProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\IBrush]
+	 * @field
+	 */
+	public readonly $StrokeProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TextDecorationUnit]
+	 * @field
+	 */
+	public readonly $StrokeThicknessUnitProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Collections\AvaloniaList_1[System\Double]]
+	 * @field
+	 */
+	public readonly $StrokeDashArrayProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $StrokeDashOffsetProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $StrokeThicknessProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\PenLineCap]
+	 * @field
+	 */
+	public readonly $StrokeLineCapProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $StrokeOffsetProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\TextDecorationUnit]
+	 * @field
+	 */
+	public readonly $StrokeOffsetUnitProperty;
+	/**
+	 * @var \Avalonia\Media\TextDecorationLocation
+	 * @property
+	 */
+	public $Location;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Stroke;
+	/**
+	 * @var \Avalonia\Media\TextDecorationUnit
+	 * @property
+	 */
+	public $StrokeThicknessUnit;
+	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[System\Double]
+	 * @property
+	 */
+	public $StrokeDashArray;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $StrokeDashOffset;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $StrokeThickness;
+	/**
+	 * @var \Avalonia\Media\PenLineCap
+	 * @property
+	 */
+	public $StrokeLineCap;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $StrokeOffset;
+	/**
+	 * @var \Avalonia\Media\TextDecorationUnit
+	 * @property
+	 */
+	public $StrokeOffsetUnit;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\TextDecorationLocation
 	 */
 	public  function get_Location(){}

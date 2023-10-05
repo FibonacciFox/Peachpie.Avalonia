@@ -5,6 +5,16 @@ namespace Avalonia\Threading;
 class DispatcherFrame extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Threading\Dispatcher
+	 * @property
+	 */
+	public readonly $Dispatcher;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Continue;
+	/**
 	 * @return \Avalonia\Threading\Dispatcher
 	 */
 	public  function get_Dispatcher(){}

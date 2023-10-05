@@ -5,6 +5,11 @@ namespace Avalonia\Controls;
 class HotKeyManager extends \System\Object
 {
 	/**
+	 * @var \Avalonia\AttachedProperty_1[Avalonia\Input\KeyGesture]
+	 * @field
+	 */
+	public readonly $HotKeyProperty;
+	/**
 	 * @param \Avalonia\AvaloniaObject $target
 	 * @param \Avalonia\Input\KeyGesture $value
 	 * @return \System\Void|void

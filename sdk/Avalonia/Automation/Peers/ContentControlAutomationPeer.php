@@ -19,6 +19,11 @@ trait ContentControlAutomationPeerMethodsOverride
 class ContentControlAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
 	/**
+	 * @var \Avalonia\Controls\ContentControl
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @uses ContentControlAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses ContentControlAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

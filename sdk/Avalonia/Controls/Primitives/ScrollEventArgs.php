@@ -5,6 +5,16 @@ namespace Avalonia\Controls\Primitives;
 class ScrollEventArgs extends \System\EventArgs
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $NewValue;
+	/**
+	 * @var \Avalonia\Controls\Primitives\ScrollEventType
+	 * @property
+	 */
+	public $ScrollEventType;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_NewValue(){}

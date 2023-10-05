@@ -146,6 +146,106 @@ class MenuFlyout extends \Avalonia\Controls\Primitives\PopupFlyoutBase implement
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Collections\IEnumerable]
+	 * @field
+	 */
+	public readonly $ItemsSourceProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Controls\Templates\IDataTemplate]
+	 * @field
+	 */
+	public readonly $ItemTemplateProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ControlTheme]
+	 * @field
+	 */
+	public readonly $ItemContainerThemeProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Styling\ControlTheme]
+	 * @field
+	 */
+	public readonly $FlyoutPresenterThemeProperty;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $FlyoutPresenterClasses;
+	/**
+	 * @var \Avalonia\Controls\ItemCollection
+	 * @property
+	 */
+	public readonly $Items;
+	/**
+	 * @var \System\Collections\IEnumerable
+	 * @property
+	 */
+	public $ItemsSource;
+	/**
+	 * @var \Avalonia\Controls\Templates\IDataTemplate
+	 * @property
+	 */
+	public $ItemTemplate;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $ItemContainerTheme;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $FlyoutPresenterTheme;
+	/**
+	 * @var \Avalonia\Controls\PlacementMode
+	 * @property
+	 */
+	public $Placement;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupGravity
+	 * @property
+	 */
+	public $PlacementGravity;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupAnchor
+	 * @property
+	 */
+	public $PlacementAnchor;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $HorizontalOffset;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $VerticalOffset;
+	/**
+	 * @var \Avalonia\Controls\FlyoutShowMode
+	 * @property
+	 */
+	public $ShowMode;
+	/**
+	 * @var \Avalonia\Input\IInputElement
+	 * @property
+	 */
+	public $OverlayInputPassThroughElement;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsOpen;
+	/**
+	 * @var \Avalonia\Controls\Control
+	 * @property
+	 */
+	public $Target;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Controls\Classes
 	 */
 	public  function get_FlyoutPresenterClasses(){}

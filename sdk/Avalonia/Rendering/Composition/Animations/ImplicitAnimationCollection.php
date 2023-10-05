@@ -56,6 +56,41 @@ class ImplicitAnimationCollection extends \Avalonia\Rendering\Composition\Compos
 	\System\Collections\IEnumerable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @uses ImplicitAnimationCollectionMethodsOverride::GetEnumerator_1 ()
 	 * @uses ImplicitAnimationCollectionMethodsOverride::GetEnumerator_2 ()
 	 * @return mixed|@override

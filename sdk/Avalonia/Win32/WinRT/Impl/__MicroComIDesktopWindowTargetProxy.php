@@ -31,6 +31,41 @@ class __MicroComIDesktopWindowTargetProxy extends \Avalonia\Win32\WinRT\Impl\__M
 	\Avalonia\Win32\WinRT\IDesktopWindowTarget
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsTopmost;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_IsTopmost(){}

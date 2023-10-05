@@ -6,6 +6,16 @@ class CastTypeSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $TypeName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $TypeNamespace;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_TypeName(){}

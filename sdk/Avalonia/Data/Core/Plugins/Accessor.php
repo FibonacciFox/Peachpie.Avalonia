@@ -134,6 +134,16 @@ class Accessor extends \Avalonia\Data\Core\Plugins\PropertyAccessorBase implemen
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $PropertyType;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @uses AccessorMethodsOverride::get_PropertyType_1 ()
 	 * @uses AccessorMethodsOverride::get_PropertyType_2 ()
 	 * @return mixed|@override

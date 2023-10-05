@@ -24,6 +24,11 @@ class ButtonAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAuto
 	\Avalonia\Automation\Provider\IInvokeProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Button
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
 	 * @uses ButtonAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses ButtonAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @uses ButtonAutomationPeerMethodsOverride::get_Owner_3 ()

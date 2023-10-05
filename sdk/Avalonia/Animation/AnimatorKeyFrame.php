@@ -137,6 +137,51 @@ class AnimatorKeyFrame extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \System\Boolean
+	 * @field
+	 */
+	protected $isNeutral;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Animation\AnimatorKeyFrame,System\Object]
+	 * @field
+	 */
+	public readonly $ValueProperty;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $AnimatorType;
+	/**
+	 * @var \System\Func_1[Avalonia\Animation\IAnimator]
+	 * @property
+	 */
+	public readonly $AnimatorFactory;
+	/**
+	 * @var \Avalonia\Animation\Cue
+	 * @property
+	 */
+	public readonly $Cue;
+	/**
+	 * @var \Avalonia\Animation\KeySpline
+	 * @property
+	 */
+	public readonly $KeySpline;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Value;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Type
 	 */
 	public  function get_AnimatorType(){}

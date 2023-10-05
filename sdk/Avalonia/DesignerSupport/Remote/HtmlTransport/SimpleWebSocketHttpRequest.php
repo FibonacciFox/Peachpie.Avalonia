@@ -6,6 +6,26 @@ class SimpleWebSocketHttpRequest extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Collections\Generic\Dictionary_2[System\String,System\String]
+	 * @property
+	 */
+	public readonly $Headers;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Path;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsWebsocketRequest;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]
+	 * @property
+	 */
+	public readonly $WebSocketProtocols;
+	/**
 	 * @return \System\Collections\Generic\Dictionary_2
 	 */
 	public  function get_Headers(){}

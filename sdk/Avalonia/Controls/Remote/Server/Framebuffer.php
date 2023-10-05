@@ -5,6 +5,31 @@ namespace Avalonia\Controls\Remote\Server;
 class Framebuffer extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Controls\Remote\Server\RemoteServerTopLevelImpl+Framebuffer
+	 * @property
+	 */
+	public readonly $Empty;
+	/**
+	 * @var \Avalonia\Remote\Protocol\Viewport\PixelFormat
+	 * @property
+	 */
+	public readonly $Format;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $ClientSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $RenderScaling;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Stride;
+	/**
 	 * @return \Avalonia\Controls\Remote\Server\Framebuffer
 	 */
 	public static function get_Empty(){}

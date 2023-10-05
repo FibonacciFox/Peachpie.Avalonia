@@ -6,6 +6,26 @@ class TransformOperations extends \System\Object implements
 	\Avalonia\Media\ITransform
 {
 	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperations
+	 * @property
+	 */
+	public readonly $Identity;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsIdentity;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\Transformation\TransformOperation]
+	 * @property
+	 */
+	public readonly $Operations;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
 	 * @return \Avalonia\Media\Transformation\TransformOperations
 	 */
 	public static function get_Identity(){}

@@ -5,6 +5,26 @@ namespace Avalonia\Controls;
 class FileDialog extends \Avalonia\Controls\FileSystemDialog
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Controls\FileDialogFilter]
+	 * @property
+	 */
+	public $Filters;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $InitialFileName;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Directory;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Title;
+	/**
 	 * @return \System\Collections\Generic\List_1
 	 */
 	public  function get_Filters(){}

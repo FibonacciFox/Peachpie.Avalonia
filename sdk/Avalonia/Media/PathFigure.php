@@ -137,6 +137,51 @@ class PathFigure extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsClosedProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsFilledProperty;
+	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Media\PathFigure,Avalonia\Media\PathSegments]
+	 * @field
+	 */
+	public readonly $SegmentsProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Point]
+	 * @field
+	 */
+	public readonly $StartPointProperty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsClosed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsFilled;
+	/**
+	 * @var \Avalonia\Media\PathSegments
+	 * @property
+	 */
+	public $Segments;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $StartPoint;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

@@ -8,6 +8,11 @@ class TransitionClock extends \Avalonia\Animation\ClockBase implements
 	\System\IObserver_1
 {
 	/**
+	 * @var \Avalonia\Animation\PlayState
+	 * @property
+	 */
+	public $PlayState;
+	/**
 	 * @param \System\TimeSpan $value
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

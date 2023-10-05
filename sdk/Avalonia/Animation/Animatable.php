@@ -137,6 +137,26 @@ class Animatable extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Animation\IClock]
+	 * @field
+	 */
+	protected readonly $ClockProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Animation\Transitions]
+	 * @field
+	 */
+	public readonly $TransitionsProperty;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

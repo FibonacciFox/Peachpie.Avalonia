@@ -7,6 +7,11 @@ class SkiaGpuRenderTarget extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

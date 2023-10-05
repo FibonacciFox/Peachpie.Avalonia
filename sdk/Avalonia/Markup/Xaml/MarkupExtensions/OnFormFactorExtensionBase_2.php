@@ -7,6 +7,21 @@ class OnFormFactorExtensionBase_2 extends \System\Object implements
 	\Avalonia\Metadata\IAddChild_1
 {
 	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Default;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Desktop;
+	/**
+	 * @var \TReturn
+	 * @property
+	 */
+	public $Mobile;
+	/**
 	 * @return \Avalonia\Markup\Xaml\MarkupExtensions\TReturn
 	 */
 	public  function get_Default(){}

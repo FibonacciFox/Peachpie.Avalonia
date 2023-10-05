@@ -30,6 +30,26 @@ class __MicroComIAvnMenuProxy extends \MicroCom\Runtime\MicroComProxyBase implem
 	\Avalonia\Native\Interop\IAvnMenu
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function RaiseNeedsUpdate(){}

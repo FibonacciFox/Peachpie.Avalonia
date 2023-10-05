@@ -9,6 +9,26 @@ class ClassicDesktopStyleApplicationLifetime extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\String[]
+	 * @property
+	 */
+	public $Args;
+	/**
+	 * @var \Avalonia\Controls\ShutdownMode
+	 * @property
+	 */
+	public $ShutdownMode;
+	/**
+	 * @var \Avalonia\Controls\Window
+	 * @property
+	 */
+	public $MainWindow;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Controls\Window]
+	 * @property
+	 */
+	public readonly $Windows;
+	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\Interactivity\RoutedEventArgs $e
 	 * @deprecated this element should not be used by you because it will break your program

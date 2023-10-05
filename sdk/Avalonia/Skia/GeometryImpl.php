@@ -6,6 +6,26 @@ class GeometryImpl extends \System\Object implements
 	\Avalonia\Platform\IGeometryImpl
 {
 	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \SkiaSharp\SKPath
+	 * @property
+	 */
+	public readonly $StrokePath;
+	/**
+	 * @var \SkiaSharp\SKPath
+	 * @property
+	 */
+	public readonly $FillPath;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

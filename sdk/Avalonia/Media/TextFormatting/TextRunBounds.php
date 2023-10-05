@@ -20,6 +20,26 @@ class TextRunBounds extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $TextSourceCharacterIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Rectangle;
+	/**
+	 * @var \Avalonia\Media\TextFormatting\TextRun
+	 * @property
+	 */
+	public readonly $TextRun;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_TextSourceCharacterIndex(){}

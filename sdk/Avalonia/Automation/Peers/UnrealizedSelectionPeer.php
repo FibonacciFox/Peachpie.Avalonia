@@ -5,6 +5,11 @@ namespace Avalonia\Automation\Peers;
 class UnrealizedSelectionPeer extends \Avalonia\Automation\Peers\UnrealizedElementAutomationPeer
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Item(){}

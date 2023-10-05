@@ -20,6 +20,11 @@ class Win32NativeControlHost extends \System\Object implements
 	\Avalonia\Controls\Platform\INativeControlHostImpl
 {
 	/**
+	 * @var \Avalonia\Win32\WindowImpl
+	 * @property
+	 */
+	public readonly $Window;
+	/**
 	 * @return \Avalonia\Win32\WindowImpl
 	 */
 	public  function get_Window(){}

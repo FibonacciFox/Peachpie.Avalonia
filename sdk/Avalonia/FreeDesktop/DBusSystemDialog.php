@@ -6,6 +6,21 @@ class DBusSystemDialog extends \Avalonia\Platform\Storage\FileIO\BclStorageProvi
 	\Avalonia\Platform\Storage\IStorageProvider
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanOpen;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanSave;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanPickFolder;
+	/**
 	 * @param \Avalonia\Platform\IPlatformHandle $handle
 	 * @return \System\Threading\Tasks\Task_1
 	 */

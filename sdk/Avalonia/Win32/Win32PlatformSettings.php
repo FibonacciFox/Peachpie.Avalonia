@@ -20,6 +20,16 @@ class Win32PlatformSettings extends \Avalonia\Platform\DefaultPlatformSettings i
 	\Avalonia\Platform\IPlatformSettings
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public readonly $HoldWaitDuration;
+	/**
+	 * @var \Avalonia\Input\Platform\PlatformHotkeyConfiguration
+	 * @property
+	 */
+	public readonly $HotkeyConfiguration;
+	/**
 	 * @uses Win32PlatformSettingsMethodsOverride::OnColorValuesChanged_1 ()
 	 * @uses Win32PlatformSettingsMethodsOverride::OnColorValuesChanged_2 ($colorValues)
 	 * @return mixed|@override

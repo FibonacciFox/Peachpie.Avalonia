@@ -23,6 +23,31 @@ trait ImmediateValueFrameMethodsOverride
 class ImmediateValueFrame extends \Avalonia\PropertyStore\ValueFrame
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $EntryCount;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\PropertyStore\ValueStore
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public readonly $Priority;
+	/**
+	 * @var \Avalonia\PropertyStore\FramePriority
+	 * @property
+	 */
+	public readonly $FramePriority;
+	/**
 	 * @uses ImmediateValueFrameMethodsOverride::AddBinding_1 ($property, $source)
 	 * @uses ImmediateValueFrameMethodsOverride::AddBinding_2 ($property, $source)
 	 * @uses ImmediateValueFrameMethodsOverride::AddBinding_3 ($property, $source)

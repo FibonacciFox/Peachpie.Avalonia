@@ -137,6 +137,41 @@ class KeyBinding extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Windows\Input\ICommand]
+	 * @field
+	 */
+	public readonly $CommandProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Object]
+	 * @field
+	 */
+	public readonly $CommandParameterProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Input\KeyGesture]
+	 * @field
+	 */
+	public readonly $GestureProperty;
+	/**
+	 * @var \System\Windows\Input\ICommand
+	 * @property
+	 */
+	public $Command;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $CommandParameter;
+	/**
+	 * @var \Avalonia\Input\KeyGesture
+	 * @property
+	 */
+	public $Gesture;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Windows\Input\ICommand
 	 */
 	public  function get_Command(){}

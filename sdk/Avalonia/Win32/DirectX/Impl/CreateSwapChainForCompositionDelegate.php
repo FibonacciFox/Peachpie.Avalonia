@@ -7,6 +7,36 @@ class CreateSwapChainForCompositionDelegate extends \System\MulticastDelegate im
 	\System\Runtime\Serialization\ISerializable
 {
 	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $_target;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $_methodBase;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $_methodPtr;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $_methodPtrAux;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Target;
+	/**
+	 * @var \System\Reflection\MethodInfo
+	 * @property
+	 */
+	public readonly $Method;
+	/**
 	 * @param \System\Void* $this
 	 * @param \System\Void* $pDevice
 	 * @param \Avalonia\Win32\DirectX\DXGI_SWAP_CHAIN_DESC1* $pDesc

@@ -20,6 +20,31 @@ class CornerRadius extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $TopLeft;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $TopRight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $BottomRight;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $BottomLeft;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsUniform;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_TopLeft(){}

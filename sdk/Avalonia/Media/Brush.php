@@ -149,6 +149,46 @@ class Brush extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $OpacityProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\ITransform]
+	 * @field
+	 */
+	public readonly $TransformProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativePoint]
+	 * @field
+	 */
+	public readonly $TransformOriginProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_Opacity(){}

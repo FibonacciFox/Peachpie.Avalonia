@@ -151,6 +151,71 @@ class DrawingBrush extends \Avalonia\Media\TileBrush implements
 	\Avalonia\Media\ISceneBrush
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Drawing]
+	 * @field
+	 */
+	public readonly $DrawingProperty;
+	/**
+	 * @var \Avalonia\Media\Drawing
+	 * @property
+	 */
+	public $Drawing;
+	/**
+	 * @var \Avalonia\Media\AlignmentX
+	 * @property
+	 */
+	public $AlignmentX;
+	/**
+	 * @var \Avalonia\Media\AlignmentY
+	 * @property
+	 */
+	public $AlignmentY;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $DestinationRect;
+	/**
+	 * @var \Avalonia\RelativeRect
+	 * @property
+	 */
+	public $SourceRect;
+	/**
+	 * @var \Avalonia\Media\Stretch
+	 * @property
+	 */
+	public $Stretch;
+	/**
+	 * @var \Avalonia\Media\TileMode
+	 * @property
+	 */
+	public $TileMode;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Media\Drawing
 	 */
 	public  function get_Drawing(){}

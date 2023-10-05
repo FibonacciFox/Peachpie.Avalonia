@@ -22,6 +22,11 @@ class RenderTarget extends \Avalonia\OpenGL\Egl\EglPlatformSurfaceRenderTargetBa
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
 	 * @uses RenderTargetMethodsOverride::BeginDraw_1 ()
 	 * @uses RenderTargetMethodsOverride::BeginDraw_2 ($surface, $size, $scaling, $onFinish, $isYFlipped)
 	 * @return mixed|@override

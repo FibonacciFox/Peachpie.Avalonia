@@ -57,6 +57,21 @@ class BindingEntryBase_2 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsSubscribed;
+	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasValue(){}

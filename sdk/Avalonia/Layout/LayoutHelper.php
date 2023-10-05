@@ -27,6 +27,11 @@ trait LayoutHelperMethodsOverride
 class LayoutHelper extends \System\Object
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LayoutEpsilon;
+	/**
 	 * @return \System\Double|double
 	 */
 	public static function get_LayoutEpsilon(){}

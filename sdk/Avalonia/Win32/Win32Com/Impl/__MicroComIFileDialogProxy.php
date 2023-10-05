@@ -31,6 +31,56 @@ class __MicroComIFileDialogProxy extends \Avalonia\Win32\Win32Com\Impl\__MicroCo
 	\Avalonia\Win32\Win32Com\IFileDialog
 {
 	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $FileTypeIndex;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\FILEOPENDIALOGOPTIONS
+	 * @property
+	 */
+	public readonly $Options;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $Folder;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $CurrentSelection;
+	/**
+	 * @var \System\Char*
+	 * @property
+	 */
+	public readonly $FileName;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $Result;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt16 $cFileTypes
 	 * @param \System\Void* $rgFilterSpec
 	 * @return \System\Void|void

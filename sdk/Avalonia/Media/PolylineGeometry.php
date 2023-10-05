@@ -137,6 +137,46 @@ class PolylineGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\DirectProperty_2[Avalonia\Media\PolylineGeometry,System\Collections\Generic\IList_1[Avalonia\Point]]
+	 * @field
+	 */
+	public readonly $PointsProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Boolean]
+	 * @field
+	 */
+	public readonly $IsFilledProperty;
+	/**
+	 * @var \System\Collections\Generic\IList_1[Avalonia\Point]
+	 * @property
+	 */
+	public $Points;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsFilled;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\Transform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $ContourLength;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Collections\Generic\IList_1
 	 */
 	public  function get_Points(){}

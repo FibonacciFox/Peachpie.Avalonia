@@ -31,6 +31,46 @@ class __MicroComICompositionScopedBatchProxy extends \Avalonia\Win32\WinRT\Impl\
 	\Avalonia\Win32\WinRT\ICompositionScopedBatch
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $IsEnded;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $RuntimeClassName;
+	/**
+	 * @var \Avalonia\Win32\WinRT\TrustLevel
+	 * @property
+	 */
+	public readonly $TrustLevel;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_IsActive(){}

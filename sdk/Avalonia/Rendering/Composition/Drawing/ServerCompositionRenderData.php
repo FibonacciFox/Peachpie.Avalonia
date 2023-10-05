@@ -26,6 +26,21 @@ class ServerCompositionRenderData extends \Avalonia\Rendering\Composition\Server
 	\System\IDisposable
 {
 	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @param \Avalonia\Utilities\PooledInlineList_1 $items
 	 * @param \Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataServerResourcesCollector $collector
 	 * @deprecated this element should not be used by you because it will break your program

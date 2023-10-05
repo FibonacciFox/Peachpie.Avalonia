@@ -141,6 +141,36 @@ class DropShadowEffectAnimator extends \Avalonia\Animation\Animators\EffectAnima
 	\Avalonia\Animation\IAnimator
 {
 	/**
+	 * @var \Avalonia\AvaloniaProperty
+	 * @property
+	 */
+	public $Property;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \Avalonia\Collections\ResetBehavior
+	 * @property
+	 */
+	public $ResetBehavior;
+	/**
+	 * @var \System\Action_1[Avalonia\Animation\AnimatorKeyFrame]
+	 * @property
+	 */
+	public $Validate;
+	/**
+	 * @var \Avalonia\Animation\AnimatorKeyFrame
+	 * @property
+	 */
+	public $Item;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
 	 * @uses DropShadowEffectAnimatorMethodsOverride::Interpolate_1 ($progress, $oldValue, $newValue)
 	 * @uses DropShadowEffectAnimatorMethodsOverride::Interpolate_2 ($progress, $oldValue, $newValue)
 	 * @return mixed|@override

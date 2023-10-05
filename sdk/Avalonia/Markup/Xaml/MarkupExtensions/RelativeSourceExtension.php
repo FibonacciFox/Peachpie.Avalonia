@@ -5,6 +5,26 @@ namespace Avalonia\Markup\Xaml\MarkupExtensions;
 class RelativeSourceExtension extends \System\Object
 {
 	/**
+	 * @var \Avalonia\Data\RelativeSourceMode
+	 * @property
+	 */
+	public $Mode;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $AncestorType;
+	/**
+	 * @var \Avalonia\Data\TreeType
+	 * @property
+	 */
+	public $Tree;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $AncestorLevel;
+	/**
 	 * @param \System\IServiceProvider $serviceProvider
 	 * @return \Avalonia\Data\RelativeSource
 	 */

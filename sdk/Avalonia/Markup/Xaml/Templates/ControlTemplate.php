@@ -7,6 +7,16 @@ class ControlTemplate extends \System\Object implements
 	\Avalonia\Controls\Templates\ITemplate_2
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Content;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $TargetType;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Content(){}

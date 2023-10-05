@@ -6,6 +6,16 @@ class DefaultPlatformSettings extends \System\Object implements
 	\Avalonia\Platform\IPlatformSettings
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public readonly $HoldWaitDuration;
+	/**
+	 * @var \Avalonia\Input\Platform\PlatformHotkeyConfiguration
+	 * @property
+	 */
+	public readonly $HotkeyConfiguration;
+	/**
 	 * @param \Avalonia\Input\PointerType $type
 	 * @return \Avalonia\Size
 	 */

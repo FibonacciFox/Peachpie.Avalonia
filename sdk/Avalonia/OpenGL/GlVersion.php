@@ -20,6 +20,21 @@ class GlVersion extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\OpenGL\GlProfileType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Major;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Minor;
+	/**
 	 * @return \Avalonia\OpenGL\GlProfileType
 	 */
 	public  function get_Type(){}

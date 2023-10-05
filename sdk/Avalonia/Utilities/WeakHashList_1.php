@@ -6,6 +6,21 @@ namespace Avalonia\Utilities;
 class WeakHashList_1 extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	public $DefaultArraySize;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEmpty;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $NeedCompact;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_IsEmpty(){}

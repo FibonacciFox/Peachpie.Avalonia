@@ -6,6 +6,11 @@ class CornerRadiusToDoubleConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 	/**
+	 * @var \Avalonia\Controls\Converters\Corners
+	 * @property
+	 */
+	public $Corner;
+	/**
 	 * @return \Avalonia\Controls\Converters\Corners
 	 */
 	public  function get_Corner(){}

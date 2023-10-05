@@ -40,6 +40,91 @@ class CompositionContainerVisual extends \Avalonia\Rendering\Composition\Composi
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]
+	 * @field
+	 */
+	protected $PendingAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\CompositionVisualCollection
+	 * @property
+	 */
+	public $Children;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $OpacityMask;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $Visible;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ClipToBounds;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $Offset;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public $AnchorPoint;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $CenterPoint;
+	/**
+	 * @var \System\Single
+	 * @property
+	 */
+	public $RotationAngle;
+	/**
+	 * @var \System\Numerics\Quaternion
+	 * @property
+	 */
+	public $Orientation;
+	/**
+	 * @var \Avalonia\Vector3D
+	 * @property
+	 */
+	public $Scale;
+	/**
+	 * @var \Avalonia\Media\RenderOptions
+	 * @property
+	 */
+	public $RenderOptions;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Animations\ImplicitAnimationCollection
+	 * @property
+	 */
+	public $ImplicitAnimations;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
 	 * @return \Avalonia\Rendering\Composition\CompositionVisualCollection
 	 */
 	public  function get_Children(){}

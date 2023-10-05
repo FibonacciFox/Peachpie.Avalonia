@@ -21,6 +21,36 @@ class ImmutablePen extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public readonly $Brush;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Thickness;
+	/**
+	 * @var \Avalonia\Media\IDashStyle
+	 * @property
+	 */
+	public readonly $DashStyle;
+	/**
+	 * @var \Avalonia\Media\PenLineCap
+	 * @property
+	 */
+	public readonly $LineCap;
+	/**
+	 * @var \Avalonia\Media\PenLineJoin
+	 * @property
+	 */
+	public readonly $LineJoin;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $MiterLimit;
+	/**
 	 * @return \Avalonia\Media\IBrush
 	 */
 	public  function get_Brush(){}

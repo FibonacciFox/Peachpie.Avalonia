@@ -6,6 +6,26 @@ namespace Avalonia\Utilities;
 class FrugalStructList_1 extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Utilities\FrugalListBase_1[T]
+	 * @field
+	 */
+	protected $_listStore;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Capacity;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Capacity(){}

@@ -172,6 +172,121 @@ class Bold extends \Avalonia\Controls\Documents\Span implements
 	\Avalonia\INamed
 {
 	/**
+	 * @var \Avalonia\Controls\Documents\InlineCollection
+	 * @property
+	 */
+	public $Inlines;
+	/**
+	 * @var \Avalonia\Media\TextDecorationCollection
+	 * @property
+	 */
+	public $TextDecorations;
+	/**
+	 * @var \Avalonia\Media\BaselineAlignment
+	 * @property
+	 */
+	public $BaselineAlignment;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Background;
+	/**
+	 * @var \Avalonia\Media\FontFamily
+	 * @property
+	 */
+	public $FontFamily;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $FontSize;
+	/**
+	 * @var \Avalonia\Media\FontStyle
+	 * @property
+	 */
+	public $FontStyle;
+	/**
+	 * @var \Avalonia\Media\FontWeight
+	 * @property
+	 */
+	public $FontWeight;
+	/**
+	 * @var \Avalonia\Media\FontStretch
+	 * @property
+	 */
+	public $FontStretch;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $Foreground;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \Avalonia\Controls\Classes
+	 * @property
+	 */
+	public readonly $Classes;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $DataContext;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsInitialized;
+	/**
+	 * @var \Avalonia\Styling\Styles
+	 * @property
+	 */
+	public readonly $Styles;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $StyleKey;
+	/**
+	 * @var \Avalonia\Controls\IResourceDictionary
+	 * @property
+	 */
+	public $Resources;
+	/**
+	 * @var \Avalonia\AvaloniaObject
+	 * @property
+	 */
+	public $TemplatedParent;
+	/**
+	 * @var \Avalonia\Styling\ControlTheme
+	 * @property
+	 */
+	public $Theme;
+	/**
+	 * @var \Avalonia\StyledElement
+	 * @property
+	 */
+	public readonly $Parent;
+	/**
+	 * @var \Avalonia\Styling\ThemeVariant
+	 * @property
+	 */
+	public readonly $ActualThemeVariant;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @uses BoldMethodsOverride::get_Classes_1 ()
 	 * @uses BoldMethodsOverride::get_Classes_2 ()
 	 * @return mixed|@override

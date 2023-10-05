@@ -36,6 +36,26 @@ class HslColor extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $A;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $H;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $S;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $L;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_A(){}

@@ -6,6 +6,16 @@ class DBusPlatformSettings extends \Avalonia\Platform\DefaultPlatformSettings im
 	\Avalonia\Platform\IPlatformSettings
 {
 	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public readonly $HoldWaitDuration;
+	/**
+	 * @var \Avalonia\Input\Platform\PlatformHotkeyConfiguration
+	 * @property
+	 */
+	public readonly $HotkeyConfiguration;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

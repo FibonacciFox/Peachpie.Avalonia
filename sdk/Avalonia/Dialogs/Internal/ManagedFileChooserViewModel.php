@@ -20,6 +20,71 @@ class ManagedFileChooserViewModel extends \Avalonia\Dialogs\Internal\AvaloniaDia
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Dialogs\Internal\ManagedFileChooserItemViewModel]
+	 * @property
+	 */
+	public readonly $QuickLinks;
+	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Dialogs\Internal\ManagedFileChooserItemViewModel]
+	 * @property
+	 */
+	public readonly $Items;
+	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Dialogs\Internal\ManagedFileChooserFilterViewModel]
+	 * @property
+	 */
+	public readonly $Filters;
+	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Dialogs\Internal\ManagedFileChooserItemViewModel]
+	 * @property
+	 */
+	public readonly $SelectedItems;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Location;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $FileName;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SelectingFolder;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $ShowFilters;
+	/**
+	 * @var \Avalonia\Controls\SelectionMode
+	 * @property
+	 */
+	public readonly $SelectionMode;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Title;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $QuickLinksSelectedIndex;
+	/**
+	 * @var \Avalonia\Dialogs\Internal\ManagedFileChooserFilterViewModel
+	 * @property
+	 */
+	public $SelectedFilter;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $ShowHiddenFiles;
+	/**
 	 * @param \System\Action $value
 	 * @return \System\Void|void
 	 */

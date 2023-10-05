@@ -139,6 +139,26 @@ class DrawingImage extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IAffectsRender
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\Media\Drawing]
+	 * @field
+	 */
+	public readonly $DrawingProperty;
+	/**
+	 * @var \Avalonia\Media\Drawing
+	 * @property
+	 */
+	public $Drawing;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $Size;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @param \System\EventHandler $value
 	 * @return \System\Void|void
 	 */

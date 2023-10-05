@@ -7,6 +7,31 @@ class RenderDataGeometryNode extends \Avalonia\Rendering\Composition\Drawing\Nod
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
 	/**
+	 * @var \Avalonia\Platform\IGeometryImpl
+	 * @property
+	 */
+	public $Geometry;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Rect]
+	 * @property
+	 */
+	public readonly $Bounds;
+	/**
+	 * @var \Avalonia\Media\IBrush
+	 * @property
+	 */
+	public $ServerBrush;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ServerPen;
+	/**
+	 * @var \Avalonia\Media\IPen
+	 * @property
+	 */
+	public $ClientPen;
+	/**
 	 * @return \Avalonia\Platform\IGeometryImpl
 	 */
 	public  function get_Geometry(){}

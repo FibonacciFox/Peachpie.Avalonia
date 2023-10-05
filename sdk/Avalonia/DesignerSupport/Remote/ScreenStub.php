@@ -6,6 +6,16 @@ class ScreenStub extends \System\Object implements
 	\Avalonia\Platform\IScreenImpl
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $ScreenCount;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Platform\Screen]
+	 * @property
+	 */
+	public readonly $AllScreens;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_ScreenCount(){}

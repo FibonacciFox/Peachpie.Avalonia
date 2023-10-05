@@ -160,6 +160,61 @@ class LinearGradientBrush extends \Avalonia\Media\GradientBrush implements
 	\Avalonia\Media\ILinearGradientBrush
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativePoint]
+	 * @field
+	 */
+	public readonly $StartPointProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[Avalonia\RelativePoint]
+	 * @field
+	 */
+	public readonly $EndPointProperty;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $StartPoint;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $EndPoint;
+	/**
+	 * @var \Avalonia\Media\GradientSpreadMethod
+	 * @property
+	 */
+	public $SpreadMethod;
+	/**
+	 * @var \Avalonia\Media\GradientStops
+	 * @property
+	 */
+	public $GradientStops;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Opacity;
+	/**
+	 * @var \Avalonia\Media\ITransform
+	 * @property
+	 */
+	public $Transform;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @property
+	 */
+	public $TransformOrigin;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\RelativePoint
 	 */
 	public  function get_StartPoint(){}

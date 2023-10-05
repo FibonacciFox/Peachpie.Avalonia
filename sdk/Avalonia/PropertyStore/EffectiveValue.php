@@ -5,6 +5,46 @@ namespace Avalonia\PropertyStore;
 class EffectiveValue extends \System\Object
 {
 	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $Priority;
+	/**
+	 * @var \Avalonia\Data\BindingPriority
+	 * @property
+	 */
+	public $BasePriority;
+	/**
+	 * @var \Avalonia\PropertyStore\IValueEntry
+	 * @property
+	 */
+	public $ValueEntry;
+	/**
+	 * @var \Avalonia\PropertyStore\IValueEntry
+	 * @property
+	 */
+	public $BaseValueEntry;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $HasCoercion;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsOverridenCurrentValue;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsCoercedDefaultValue;
+	/**
 	 * @return \System\Object|object
 	 */
 	public  function get_Value(){}

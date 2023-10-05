@@ -20,6 +20,11 @@ class FloatingResourceObservable extends \Avalonia\Reactive\LightweightObservabl
 	\System\IObservable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @uses FloatingResourceObservableMethodsOverride::PublishNext_1 ()
 	 * @uses FloatingResourceObservableMethodsOverride::PublishNext_2 ($value)
 	 * @return mixed|@override

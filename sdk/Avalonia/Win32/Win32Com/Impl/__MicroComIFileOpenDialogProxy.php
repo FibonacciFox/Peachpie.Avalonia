@@ -32,6 +32,66 @@ class __MicroComIFileOpenDialogProxy extends \Avalonia\Win32\Win32Com\Impl\__Mic
 	\Avalonia\Win32\Win32Com\IFileOpenDialog
 {
 	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItemArray
+	 * @property
+	 */
+	public readonly $Results;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItemArray
+	 * @property
+	 */
+	public readonly $SelectedItems;
+	/**
+	 * @var \System\UInt16
+	 * @property
+	 */
+	public readonly $FileTypeIndex;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\FILEOPENDIALOGOPTIONS
+	 * @property
+	 */
+	public readonly $Options;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $Folder;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $CurrentSelection;
+	/**
+	 * @var \System\Char*
+	 * @property
+	 */
+	public readonly $FileName;
+	/**
+	 * @var \Avalonia\Win32\Win32Com\IShellItem
+	 * @property
+	 */
+	public readonly $Result;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \Avalonia\Win32\Win32Com\IShellItemArray
 	 */
 	public  function get_Results(){}

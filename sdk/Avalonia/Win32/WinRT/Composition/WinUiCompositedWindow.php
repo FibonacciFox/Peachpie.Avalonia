@@ -6,6 +6,11 @@ class WinUiCompositedWindow extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\OpenGL\Egl\EglGlPlatformSurface+IEglWindowGlPlatformSurfaceInfo
+	 * @property
+	 */
+	public readonly $WindowInfo;
+	/**
 	 * @return \Avalonia\OpenGL\Egl\IEglWindowGlPlatformSurfaceInfo
 	 */
 	public  function get_WindowInfo(){}

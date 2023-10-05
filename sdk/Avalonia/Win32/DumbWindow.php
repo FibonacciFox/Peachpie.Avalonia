@@ -8,6 +8,16 @@ class DumbWindow extends \System\Object implements
 	\Avalonia\Platform\IPlatformHandle
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $HandleDescriptor;
+	/**
 	 * @return \System\IntPtr
 	 */
 	public  function get_Handle(){}

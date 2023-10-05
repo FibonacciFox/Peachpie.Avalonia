@@ -20,6 +20,31 @@ class RelativePoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\RelativePoint
+	 * @field
+	 */
+	public readonly $TopLeft;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @field
+	 */
+	public readonly $Center;
+	/**
+	 * @var \Avalonia\RelativePoint
+	 * @field
+	 */
+	public readonly $BottomRight;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public readonly $Point;
+	/**
+	 * @var \Avalonia\RelativeUnit
+	 * @property
+	 */
+	public readonly $Unit;
+	/**
 	 * @return \Avalonia\Point
 	 */
 	public  function get_Point(){}

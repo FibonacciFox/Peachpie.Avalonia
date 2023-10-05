@@ -7,6 +7,36 @@ class ValueProvider_GetValueDelegate extends \System\MulticastDelegate implement
 	\System\Runtime\Serialization\ISerializable
 {
 	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $_target;
+	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	protected $_methodBase;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $_methodPtr;
+	/**
+	 * @var \System\IntPtr
+	 * @field
+	 */
+	protected $_methodPtrAux;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $Target;
+	/**
+	 * @var \System\Reflection\MethodInfo
+	 * @property
+	 */
+	public readonly $Method;
+	/**
 	 * @param \System\Void* $this
 	 * @return \System\Void*
 	 */

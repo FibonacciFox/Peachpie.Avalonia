@@ -20,6 +20,21 @@ class AcrylicPlatformCompensationLevels extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $TransparentLevel;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $BlurLevel;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $AcrylicBlurLevel;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_TransparentLevel(){}

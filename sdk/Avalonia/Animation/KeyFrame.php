@@ -137,6 +137,31 @@ class KeyFrame extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	/**
+	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Animation\IAnimationSetter]
+	 * @property
+	 */
+	public readonly $Setters;
+	/**
+	 * @var \System\TimeSpan
+	 * @property
+	 */
+	public $KeyTime;
+	/**
+	 * @var \Avalonia\Animation\Cue
+	 * @property
+	 */
+	public $Cue;
+	/**
+	 * @var \Avalonia\Animation\KeySpline
+	 * @property
+	 */
+	public $KeySpline;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \Avalonia\Collections\AvaloniaList_1
 	 */
 	public  function get_Setters(){}

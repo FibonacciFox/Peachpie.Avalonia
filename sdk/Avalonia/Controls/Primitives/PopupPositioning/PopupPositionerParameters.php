@@ -20,6 +20,36 @@ class PopupPositionerParameters extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public $Size;
+	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public $AnchorRectangle;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupAnchor
+	 * @property
+	 */
+	public $Anchor;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupGravity
+	 * @property
+	 */
+	public $Gravity;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\PopupPositionerConstraintAdjustment
+	 * @property
+	 */
+	public $ConstraintAdjustment;
+	/**
+	 * @var \Avalonia\Point
+	 * @property
+	 */
+	public $Offset;
+	/**
 	 * @return \Avalonia\Size
 	 */
 	public  function get_Size(){}

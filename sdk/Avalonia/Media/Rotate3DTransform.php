@@ -142,6 +142,91 @@ class Rotate3DTransform extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $AngleXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $AngleYProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $AngleZProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $CenterXProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $CenterYProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $CenterZProperty;
+	/**
+	 * @var \Avalonia\StyledProperty_1[System\Double]
+	 * @field
+	 */
+	public readonly $DepthProperty;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $AngleX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $AngleY;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $AngleZ;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $CenterX;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $CenterY;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $CenterZ;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $Depth;
+	/**
+	 * @var \Avalonia\Matrix
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \Avalonia\Animation\Transitions
+	 * @property
+	 */
+	public $Transitions;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public $Item;
+	/**
 	 * @return \System\Double|double
 	 */
 	public  function get_AngleX(){}

@@ -25,6 +25,31 @@ class SurfaceRenderTarget extends \System\Object implements
 	\Avalonia\Skia\IDrawableBitmapImpl
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCorrupted;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $Dpi;
+	/**
+	 * @var \Avalonia\PixelSize
+	 * @property
+	 */
+	public readonly $PixelSize;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $Version;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanBlit;
+	/**
 	 * @param \SkiaSharp\GRContext $gpu
 	 * @param \System\Int32|int $width
 	 * @param \System\Int32|int $height

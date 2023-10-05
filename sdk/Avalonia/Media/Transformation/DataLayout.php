@@ -20,6 +20,26 @@ class DataLayout extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+DataLayout+SkewLayout
+	 * @field
+	 */
+	public $Skew;
+	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+DataLayout+ScaleLayout
+	 * @field
+	 */
+	public $Scale;
+	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+DataLayout+TranslateLayout
+	 * @field
+	 */
+	public $Translate;
+	/**
+	 * @var \Avalonia\Media\Transformation\TransformOperation+DataLayout+RotateLayout
+	 * @field
+	 */
+	public $Rotate;
+	/**
 	 * @param \System\Text\StringBuilder $builder
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

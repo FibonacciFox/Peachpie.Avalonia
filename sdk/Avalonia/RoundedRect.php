@@ -19,6 +19,41 @@ trait RoundedRectMethodsOverride
 class RoundedRect extends \System\ValueType
 {
 	/**
+	 * @var \Avalonia\Rect
+	 * @property
+	 */
+	public readonly $Rect;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $RadiiTopLeft;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $RadiiTopRight;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $RadiiBottomLeft;
+	/**
+	 * @var \Avalonia\Vector
+	 * @property
+	 */
+	public readonly $RadiiBottomRight;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsRounded;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsUniform;
+	/**
 	 * @uses RoundedRectMethodsOverride::Equals_1 ($other)
 	 * @uses RoundedRectMethodsOverride::Equals_2 ($obj)
 	 * @return mixed|@override

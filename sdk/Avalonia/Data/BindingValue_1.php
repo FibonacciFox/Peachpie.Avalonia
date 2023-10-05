@@ -77,6 +77,41 @@ class BindingValue_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasError;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasValue;
+	/**
+	 * @var \Avalonia\Data\BindingValueType
+	 * @property
+	 */
+	public readonly $Type;
+	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Exception
+	 * @property
+	 */
+	public readonly $Error;
+	/**
+	 * @var \Avalonia\Data\BindingValue_1[T]
+	 * @property
+	 */
+	public readonly $Unset;
+	/**
+	 * @var \Avalonia\Data\BindingValue_1[T]
+	 * @property
+	 */
+	public readonly $DoNothing;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_HasError(){}

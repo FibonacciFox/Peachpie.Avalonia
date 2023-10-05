@@ -30,6 +30,26 @@ class __MicroComIAvnGCHandleDeallocatorCallbackProxy extends \MicroCom\Runtime\M
 	\Avalonia\Native\Interop\IAvnGCHandleDeallocatorCallback
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\IntPtr $handle
 	 * @return \System\Void|void
 	 */

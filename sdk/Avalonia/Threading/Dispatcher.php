@@ -100,6 +100,16 @@ class Dispatcher extends \System\Object implements
 	\Avalonia\Threading\IDispatcher
 {
 	/**
+	 * @var \Avalonia\Threading\Dispatcher
+	 * @property
+	 */
+	public readonly $UIThread;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $SupportsRunLoops;
+	/**
 	 * @return \System\Object|object
 	 */
 	protected  function get_InstanceLock(){}

@@ -31,6 +31,11 @@ class DirectBindingObserver_1 extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \Avalonia\DirectPropertyBase_1[T]
+	 * @property
+	 */
+	public readonly $Property;
+	/**
 	 * @return \Avalonia\DirectPropertyBase_1
 	 */
 	public  function get_Property(){}

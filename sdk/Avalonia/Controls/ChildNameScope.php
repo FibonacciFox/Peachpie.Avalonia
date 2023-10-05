@@ -6,6 +6,11 @@ class ChildNameScope extends \System\Object implements
 	\Avalonia\Controls\INameScope
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsCompleted;
+	/**
 	 * @param \System\String|string $name
 	 * @param \System\Object|object $element
 	 * @return \System\Void|void

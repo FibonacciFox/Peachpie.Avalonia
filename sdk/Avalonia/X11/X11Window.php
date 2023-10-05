@@ -34,6 +34,186 @@ class X11Window extends \System\Object implements
 	\Avalonia\X11\IXI2Client
 {
 	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $ClientSize;
+	/**
+	 * @var \System\Nullable_1[Avalonia\Size]
+	 * @property
+	 */
+	public readonly $FrameSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public $RenderScaling;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $DesktopScaling;
+	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[System\Object]
+	 * @property
+	 */
+	public readonly $Surfaces;
+	/**
+	 * @var \System\Action_1[Avalonia\Input\Raw\RawInputEventArgs]
+	 * @property
+	 */
+	public $Input;
+	/**
+	 * @var \System\Action_1[Avalonia\Rect]
+	 * @property
+	 */
+	public $Paint;
+	/**
+	 * @var \System\Action_2[Avalonia\Size,Avalonia\Controls\WindowResizeReason]
+	 * @property
+	 */
+	public $Resized;
+	/**
+	 * @var \System\Action_1[System\Double]
+	 * @property
+	 */
+	public $ScalingChanged;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $Deactivated;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $Activated;
+	/**
+	 * @var \System\Func_2[Avalonia\Controls\WindowCloseReason,System\Boolean]
+	 * @property
+	 */
+	public $Closing;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\WindowState]
+	 * @property
+	 */
+	public $WindowStateChanged;
+	/**
+	 * @var \System\Action_1[Avalonia\Controls\WindowTransparencyLevel]
+	 * @property
+	 */
+	public $TransparencyLevelChanged;
+	/**
+	 * @var \System\Action_1[System\Boolean]
+	 * @property
+	 */
+	public $ExtendClientAreaToDecorationsChanged;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public readonly $ExtendedMargins;
+	/**
+	 * @var \Avalonia\Thickness
+	 * @property
+	 */
+	public readonly $OffScreenMargin;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsClientAreaExtendedToDecorations;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $Closed;
+	/**
+	 * @var \System\Action_1[Avalonia\PixelPoint]
+	 * @property
+	 */
+	public $PositionChanged;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $LostFocus;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Compositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
+	 * @var \Avalonia\Controls\WindowState
+	 * @property
+	 */
+	public $WindowState;
+	/**
+	 * @var \Avalonia\Input\IInputRoot
+	 * @property
+	 */
+	public readonly $InputRoot;
+	/**
+	 * @var \Avalonia\Platform\IPlatformHandle
+	 * @property
+	 */
+	public readonly $Handle;
+	/**
+	 * @var \Avalonia\PixelPoint
+	 * @property
+	 */
+	public $Position;
+	/**
+	 * @var \Avalonia\Input\IMouseDevice
+	 * @property
+	 */
+	public readonly $MouseDevice;
+	/**
+	 * @var \Avalonia\Input\TouchDevice
+	 * @property
+	 */
+	public readonly $TouchDevice;
+	/**
+	 * @var \Avalonia\Platform\IScreenImpl
+	 * @property
+	 */
+	public readonly $Screen;
+	/**
+	 * @var \Avalonia\Size
+	 * @property
+	 */
+	public readonly $MaxAutoSizeHint;
+	/**
+	 * @var \System\Action
+	 * @property
+	 */
+	public $GotInputWhenDisabled;
+	/**
+	 * @var \Avalonia\Controls\Primitives\PopupPositioning\IPopupPositioner
+	 * @property
+	 */
+	public readonly $PopupPositioner;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $TransparencyLevel;
+	/**
+	 * @var \Avalonia\Controls\AcrylicPlatformCompensationLevels
+	 * @property
+	 */
+	public readonly $AcrylicCompensationLevels;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $NeedsManagedDecorations;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsEnabled;
+	/**
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated
 	 */

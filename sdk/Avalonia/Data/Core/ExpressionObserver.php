@@ -25,6 +25,41 @@ class ExpressionObserver extends \Avalonia\Reactive\LightweightObservableBase_1 
 	\Avalonia\IDescription
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Data\Core\Plugins\IPropertyAccessorPlugin]
+	 * @field
+	 */
+	public readonly $PropertyAccessors;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Data\Core\Plugins\IDataValidationPlugin]
+	 * @field
+	 */
+	public readonly $DataValidators;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Data\Core\Plugins\IStreamPlugin]
+	 * @field
+	 */
+	public readonly $StreamHandlers;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Description;
+	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public readonly $Expression;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public readonly $ResultType;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $HasObservers;
+	/**
 	 * @uses ExpressionObserverMethodsOverride::Create_1 ($root, $expression, $enableDataValidation, $description)
 	 * @uses ExpressionObserverMethodsOverride::Create_2 ($rootObservable, $expression, $enableDataValidation, $description)
 	 * @uses ExpressionObserverMethodsOverride::Create_3 ($rootGetter, $expression, $update, $enableDataValidation, $description)

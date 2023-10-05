@@ -10,6 +10,21 @@ class AvnAutomationPeerArray extends \Avalonia\Native\NativeCallbackBase impleme
 	\Avalonia\Native\Interop\IAvnAutomationPeerArray
 {
 	/**
+	 * @var \System\UInt32
+	 * @property
+	 */
+	public readonly $Count;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @return \System\UInt32
 	 */
 	public  function get_Count(){}

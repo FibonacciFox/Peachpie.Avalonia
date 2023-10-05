@@ -30,6 +30,26 @@ class __MicroComIAvnCursorProxy extends \MicroCom\Runtime\MicroComProxyBase impl
 	\Avalonia\Native\Interop\IAvnCursor
 {
 	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @return \System\Void|void
 	 */
 	protected static function __MicroComModuleInit(){}

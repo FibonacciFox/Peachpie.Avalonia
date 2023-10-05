@@ -6,6 +6,11 @@ class NotSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\Collections\Generic\IEnumerable_1[Avalonia\Markup\Parsers\SelectorGrammar+ISyntax]
+	 * @property
+	 */
+	public $Argument;
+	/**
 	 * @return \System\Collections\Generic\IEnumerable_1
 	 */
 	public  function get_Argument(){}

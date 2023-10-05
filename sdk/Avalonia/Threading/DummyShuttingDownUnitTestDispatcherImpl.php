@@ -6,6 +6,16 @@ class DummyShuttingDownUnitTestDispatcherImpl extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImpl
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CurrentThreadIsLoopThread;
+	/**
+	 * @var \System\Int64
+	 * @property
+	 */
+	public readonly $Now;
+	/**
 	 * @return \System\Boolean
 	 */
 	public  function get_CurrentThreadIsLoopThread(){}

@@ -33,23 +33,19 @@ namespace Application\Forms {
             $this->MyUxStackPanel = $this->FindByName("MyUxStackPanel");
             $this->MyListBox = $this->FindByName("MyListBox");
 
-            $list1 = new UxList();
-            $list1->Add("0");
-            $list1->Add("1");
-            $list1->Add("3");
-            $list1->Add("4");
             $list = new UxList();
-
-
-            $list->AddRange($list1);
-
+            $list->Add("0");
+            $list->Add("1");
+            $list->Add("3");
+            $list->Add("4");
+            
             $this->MyListBox->ItemsSource = $list;
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();
                 $text->HorizontalAlignment = HorizontalAlignment::Center;
                 $text->VerticalAlignment = VerticalAlignment::Center;
                 $text->Text = "Added New Text Block";
-                $this->MyUxStackPanel->Children->Add($text);
+               // $this->MyUxStackPanel->Children->Add($text);
             });
 
 

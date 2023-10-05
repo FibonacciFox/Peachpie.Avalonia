@@ -20,6 +20,41 @@ class RangeBaseAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomati
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
 	/**
+	 * @var \Avalonia\Controls\Primitives\RangeBase
+	 * @property
+	 */
+	public readonly $Owner;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsReadOnly;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Maximum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Minimum;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Value;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $SmallChange;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $LargeChange;
+	/**
 	 * @uses RangeBaseAutomationPeerMethodsOverride::get_Owner_1 ()
 	 * @uses RangeBaseAutomationPeerMethodsOverride::get_Owner_2 ()
 	 * @return mixed|@override

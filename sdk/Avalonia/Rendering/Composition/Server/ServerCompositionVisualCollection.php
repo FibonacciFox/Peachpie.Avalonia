@@ -36,6 +36,21 @@ class ServerCompositionVisualCollection extends \Avalonia\Rendering\Composition\
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Rendering\Composition\Server\ServerCompositionVisual]
+	 * @property
+	 */
+	public readonly $List;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsActive;
+	/**
+	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor
+	 * @property
+	 */
+	public readonly $Compositor;
+	/**
 	 * @param \System\String|string $name
 	 * @deprecated this element should not be used by you because it will break your program
 	 * @return @deprecated

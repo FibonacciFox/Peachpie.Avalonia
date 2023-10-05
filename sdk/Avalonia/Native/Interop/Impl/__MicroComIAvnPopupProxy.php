@@ -31,6 +31,46 @@ class __MicroComIAvnPopupProxy extends \Avalonia\Native\Interop\Impl\__MicroComI
 	\Avalonia\Native\Interop\IAvnPopup
 {
 	/**
+	 * @var \Avalonia\Native\Interop\AvnSize
+	 * @property
+	 */
+	public readonly $ClientSize;
+	/**
+	 * @var \System\Double
+	 * @property
+	 */
+	public readonly $Scaling;
+	/**
+	 * @var \Avalonia\Native\Interop\AvnPoint
+	 * @property
+	 */
+	public readonly $Position;
+	/**
+	 * @var \Avalonia\Native\Interop\IAvnTextInputMethod
+	 * @property
+	 */
+	public readonly $InputMethod;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @uses __MicroComIAvnPopupProxyMethodsOverride::QueryInterface_1 ($guid, $ppv)
 	 * @uses __MicroComIAvnPopupProxyMethodsOverride::QueryInterface_2 ()
 	 * @return mixed|@override

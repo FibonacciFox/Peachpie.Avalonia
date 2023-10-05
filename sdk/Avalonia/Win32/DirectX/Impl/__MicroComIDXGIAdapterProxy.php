@@ -31,6 +31,31 @@ class __MicroComIDXGIAdapterProxy extends \Avalonia\Win32\DirectX\Impl\__MicroCo
 	\Avalonia\Win32\DirectX\IDXGIAdapter
 {
 	/**
+	 * @var \Avalonia\Win32\DirectX\DXGI_ADAPTER_DESC
+	 * @property
+	 */
+	public readonly $Desc;
+	/**
+	 * @var \System\IntPtr
+	 * @property
+	 */
+	public readonly $NativePointer;
+	/**
+	 * @var \System\Void***
+	 * @property
+	 */
+	public readonly $PPV;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDisposed;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $OwnsHandle;
+	/**
 	 * @param \System\UInt16 $Output
 	 * @param \System\Void* $ppOutput
 	 * @return \System\Int32|int

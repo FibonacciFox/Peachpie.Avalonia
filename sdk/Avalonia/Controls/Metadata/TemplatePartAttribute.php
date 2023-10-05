@@ -5,6 +5,21 @@ namespace Avalonia\Controls\Metadata;
 class TemplatePartAttribute extends \System\Attribute
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
+	 * @var \System\Type
+	 * @property
+	 */
+	public $Type;
+	/**
+	 * @var \System\Object
+	 * @property
+	 */
+	public readonly $TypeId;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}

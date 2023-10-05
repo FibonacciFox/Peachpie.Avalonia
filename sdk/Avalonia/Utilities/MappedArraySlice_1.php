@@ -6,6 +6,16 @@ namespace Avalonia\Utilities;
 class MappedArraySlice_1 extends \System\ValueType
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public readonly $Length;
+	/**
+	 * @var \T&
+	 * @property
+	 */
+	public readonly $Item;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_Length(){}

@@ -20,6 +20,16 @@ class KeyGesture extends \System\Object implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Input\Key
+	 * @property
+	 */
+	public readonly $Key;
+	/**
+	 * @var \Avalonia\Input\KeyModifiers
+	 * @property
+	 */
+	public readonly $KeyModifiers;
+	/**
 	 * @uses KeyGestureMethodsOverride::Equals_1 ($other)
 	 * @uses KeyGestureMethodsOverride::Equals_2 ($obj)
 	 * @return mixed|@override

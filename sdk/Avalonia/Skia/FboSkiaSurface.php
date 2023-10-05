@@ -7,6 +7,16 @@ class FboSkiaSurface extends \System\Object implements
 	\System\IDisposable
 {
 	/**
+	 * @var \SkiaSharp\SKSurface
+	 * @property
+	 */
+	public readonly $Surface;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $CanBlit;
+	/**
 	 * @return \System\Void|void
 	 */
 	public  function Dispose(){}

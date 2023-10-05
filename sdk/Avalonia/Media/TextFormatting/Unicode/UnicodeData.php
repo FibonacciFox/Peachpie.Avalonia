@@ -5,6 +5,86 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 class UnicodeData extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $CATEGORY_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SCRIPT_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $LINEBREAK_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDIPAIREDBRACKED_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDIPAIREDBRACKEDTYPE_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDICLASS_BITS;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SCRIPT_SHIFT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $LINEBREAK_SHIFT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDIPAIREDBRACKEDTYPE_SHIFT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDICLASS_SHIFT;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $CATEGORY_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $SCRIPT_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $LINEBREAK_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDIPAIREDBRACKED_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDIPAIREDBRACKEDTYPE_MASK;
+	/**
+	 * @var \System\Int32
+	 * @field
+	 */
+	protected $BIDICLASS_MASK;
+	/**
 	 * @param \System\UInt32 $codepoint
 	 * @return \Avalonia\Media\TextFormatting\Unicode\GeneralCategory
 	 */

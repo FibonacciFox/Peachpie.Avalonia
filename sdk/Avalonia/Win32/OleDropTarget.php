@@ -23,6 +23,16 @@ class OleDropTarget extends \Avalonia\MicroCom\CallbackBase implements
 	\Avalonia\Win32\Win32Com\IDropTarget
 {
 	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public readonly $IsDestroyed;
+	/**
+	 * @var \MicroCom\Runtime\MicroComShadow
+	 * @property
+	 */
+	public $Shadow;
+	/**
 	 * @uses OleDropTargetMethodsOverride::ConvertDropEffect_1 ($operation)
 	 * @uses OleDropTargetMethodsOverride::ConvertDropEffect_2 ($effect)
 	 * @return mixed|@override

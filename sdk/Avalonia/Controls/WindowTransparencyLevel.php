@@ -20,6 +20,31 @@ class WindowTransparencyLevel extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $None;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $Transparent;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $Blur;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $AcrylicBlur;
+	/**
+	 * @var \Avalonia\Controls\WindowTransparencyLevel
+	 * @property
+	 */
+	public readonly $Mica;
+	/**
 	 * @return \Avalonia\Controls\WindowTransparencyLevel
 	 */
 	public static function get_None(){}

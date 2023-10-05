@@ -23,6 +23,21 @@ trait GlxDisplayMethodsOverride
 class GlxDisplay extends \System\Object
 {
 	/**
+	 * @var \Avalonia\X11\XVisualInfo*
+	 * @property
+	 */
+	public readonly $VisualInfo;
+	/**
+	 * @var \Avalonia\X11\Glx\GlxContext
+	 * @property
+	 */
+	public readonly $DeferredContext;
+	/**
+	 * @var \Avalonia\X11\Glx\GlxInterface
+	 * @property
+	 */
+	public readonly $Glx;
+	/**
 	 * @return \Avalonia\X11\XVisualInfo*
 	 */
 	public  function get_VisualInfo(){}

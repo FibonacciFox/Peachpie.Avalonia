@@ -23,6 +23,11 @@ class SingleEnumerator_1 extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	/**
+	 * @var \T
+	 * @property
+	 */
+	public readonly $Current;
+	/**
 	 * @uses SingleEnumerator_1MethodsOverride::get_Current_1 ()
 	 * @uses SingleEnumerator_1MethodsOverride::get_Current_2 ()
 	 * @return mixed|@override

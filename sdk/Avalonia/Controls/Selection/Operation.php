@@ -5,6 +5,46 @@ namespace Avalonia\Controls\Selection;
 class Operation extends \System\Object
 {
 	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $UpdateCount;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $IsSourceUpdate;
+	/**
+	 * @var \System\Boolean
+	 * @property
+	 */
+	public $SkipLostSelection;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $AnchorIndex;
+	/**
+	 * @var \System\Int32
+	 * @property
+	 */
+	public $SelectedIndex;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Controls\Selection\IndexRange]
+	 * @property
+	 */
+	public $SelectedRanges;
+	/**
+	 * @var \System\Collections\Generic\List_1[Avalonia\Controls\Selection\IndexRange]
+	 * @property
+	 */
+	public $DeselectedRanges;
+	/**
+	 * @var \System\Collections\Generic\IReadOnlyList_1[T]
+	 * @property
+	 */
+	public $DeselectedItems;
+	/**
 	 * @return \System\Int32|int
 	 */
 	public  function get_UpdateCount(){}

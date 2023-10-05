@@ -5,6 +5,11 @@ namespace Avalonia\Data;
 class BindingOperations extends \System\Object
 {
 	/**
+	 * @var \System\Object
+	 * @field
+	 */
+	public readonly $DoNothing;
+	/**
 	 * @param \Avalonia\AvaloniaObject $target
 	 * @param \Avalonia\AvaloniaProperty $property
 	 * @param \Avalonia\Data\InstancedBinding $binding

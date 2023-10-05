@@ -6,6 +6,11 @@ class NameSyntax extends \System\Object implements
 	\Avalonia\Markup\Parsers\ISyntax
 {
 	/**
+	 * @var \System\String
+	 * @property
+	 */
+	public $Name;
+	/**
 	 * @return \System\String|string
 	 */
 	public  function get_Name(){}
