@@ -40,6 +40,8 @@ public static class StyleKeyOverride
     //public static readonly Type ItemsRepeater = typeof(ItemsRepeater);
     public static readonly Type ListBox = typeof(ListBox);
     public static readonly Type ComboBox = typeof(ComboBox);
+    public static readonly Type Carousel  = typeof(Carousel);
+    
     
     //Text display and editing
     public static readonly Type AutoCompleteBox = typeof(AutoCompleteBox);
@@ -54,6 +56,8 @@ public static class StyleKeyOverride
     public static readonly Type CalendarDatePicker = typeof(CalendarDatePicker);
     public static readonly Type DatePicker = typeof(DatePicker);
     public static readonly Type TimePicker = typeof(TimePicker);
+    public static readonly Type ProgressBar = typeof(ProgressBar);
+    public static readonly Type NumericUpDown = typeof(NumericUpDown);
     
     //Displaying images
     public static readonly Type Image = typeof(Image);
@@ -61,6 +65,9 @@ public static class StyleKeyOverride
     
     //Menus and Popups
     public static readonly Type Menu = typeof(Menu);
+    public static readonly Type MenuItem = typeof(MenuItem);
+    public static readonly Type NativeMenu = typeof(NativeMenu);
+    public static readonly Type NativeMenuItem = typeof(NativeMenuItem);
     public static readonly Type Flyout = typeof(Flyout);
     public static readonly Type ToolTip = typeof(ToolTip);
     

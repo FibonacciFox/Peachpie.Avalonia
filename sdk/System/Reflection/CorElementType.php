@@ -1,0 +1,46 @@
+<?php
+namespace System\Reflection;
+/**
+ */
+enum CorElementType implements 
+	\System\IComparable,
+	\System\IFormattable,
+	\System\IConvertible
+{
+	case ELEMENT_TYPE_END = 0;
+	case ELEMENT_TYPE_VOID = 1;
+	case ELEMENT_TYPE_BOOLEAN = 2;
+	case ELEMENT_TYPE_CHAR = 3;
+	case ELEMENT_TYPE_I1 = 4;
+	case ELEMENT_TYPE_U1 = 5;
+	case ELEMENT_TYPE_I2 = 6;
+	case ELEMENT_TYPE_U2 = 7;
+	case ELEMENT_TYPE_I4 = 8;
+	case ELEMENT_TYPE_U4 = 9;
+	case ELEMENT_TYPE_I8 = 10;
+	case ELEMENT_TYPE_U8 = 11;
+	case ELEMENT_TYPE_R4 = 12;
+	case ELEMENT_TYPE_R8 = 13;
+	case ELEMENT_TYPE_STRING = 14;
+	case ELEMENT_TYPE_PTR = 15;
+	case ELEMENT_TYPE_BYREF = 16;
+	case ELEMENT_TYPE_VALUETYPE = 17;
+	case ELEMENT_TYPE_CLASS = 18;
+	case ELEMENT_TYPE_VAR = 19;
+	case ELEMENT_TYPE_ARRAY = 20;
+	case ELEMENT_TYPE_GENERICINST = 21;
+	case ELEMENT_TYPE_TYPEDBYREF = 22;
+	case ELEMENT_TYPE_I = 24;
+	case ELEMENT_TYPE_U = 25;
+	case ELEMENT_TYPE_FNPTR = 27;
+	case ELEMENT_TYPE_OBJECT = 28;
+	case ELEMENT_TYPE_SZARRAY = 29;
+	case ELEMENT_TYPE_MVAR = 30;
+	case ELEMENT_TYPE_CMOD_REQD = 31;
+	case ELEMENT_TYPE_CMOD_OPT = 32;
+	case ELEMENT_TYPE_INTERNAL = 33;
+	case ELEMENT_TYPE_MAX = 34;
+	case ELEMENT_TYPE_MODIFIER = 64;
+	case ELEMENT_TYPE_SENTINEL = 65;
+	case ELEMENT_TYPE_PINNED = 69;
+}

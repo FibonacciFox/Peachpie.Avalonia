@@ -38,7 +38,8 @@ namespace Application\Forms {
             $list->Add("1");
             $list->Add("3");
             $list->Add("4");
-            
+            $list->Add("5");
+
             $this->MyListBox->ItemsSource = $list;
             $this->MyUxButton->on("Click", function (UxButton $button, $args) {
                 $text = new UxTextBlock();

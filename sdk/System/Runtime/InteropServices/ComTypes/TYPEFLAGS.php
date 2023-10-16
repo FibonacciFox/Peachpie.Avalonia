@@ -1,0 +1,25 @@
+<?php
+namespace System\Runtime\InteropServices\ComTypes;
+/**
+ */
+enum TYPEFLAGS implements 
+	\System\IComparable,
+	\System\IFormattable,
+	\System\IConvertible
+{
+	case TYPEFLAG_FAPPOBJECT = 1;
+	case TYPEFLAG_FCANCREATE = 2;
+	case TYPEFLAG_FLICENSED = 4;
+	case TYPEFLAG_FPREDECLID = 8;
+	case TYPEFLAG_FHIDDEN = 16;
+	case TYPEFLAG_FCONTROL = 32;
+	case TYPEFLAG_FDUAL = 64;
+	case TYPEFLAG_FNONEXTENSIBLE = 128;
+	case TYPEFLAG_FOLEAUTOMATION = 256;
+	case TYPEFLAG_FRESTRICTED = 512;
+	case TYPEFLAG_FAGGREGATABLE = 1024;
+	case TYPEFLAG_FREPLACEABLE = 2048;
+	case TYPEFLAG_FDISPATCHABLE = 4096;
+	case TYPEFLAG_FREVERSEBIND = 8192;
+	case TYPEFLAG_FPROXY = 16384;
+}

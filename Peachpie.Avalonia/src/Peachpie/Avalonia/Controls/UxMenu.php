@@ -1,9 +1,9 @@
 <?php
 
 /**
- * UxMenu short summary.
+ * UxNativeMenu short summary.
  *
- * UxMenu description.
+ * UxNativeMenu description.
  *
  * @version 1.0
  * @author FibonacciFox

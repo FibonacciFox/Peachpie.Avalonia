@@ -1,0 +1,106 @@
+<?php
+namespace System\Security\Principal;
+/**
+ */
+enum WellKnownSidType implements 
+	\System\IComparable,
+	\System\IFormattable,
+	\System\IConvertible
+{
+	case NullSid = 0;
+	case WorldSid = 1;
+	case LocalSid = 2;
+	case CreatorOwnerSid = 3;
+	case CreatorGroupSid = 4;
+	case CreatorOwnerServerSid = 5;
+	case CreatorGroupServerSid = 6;
+	case NTAuthoritySid = 7;
+	case DialupSid = 8;
+	case NetworkSid = 9;
+	case BatchSid = 10;
+	case InteractiveSid = 11;
+	case ServiceSid = 12;
+	case AnonymousSid = 13;
+	case ProxySid = 14;
+	case EnterpriseControllersSid = 15;
+	case SelfSid = 16;
+	case AuthenticatedUserSid = 17;
+	case RestrictedCodeSid = 18;
+	case TerminalServerSid = 19;
+	case RemoteLogonIdSid = 20;
+	case LogonIdsSid = 21;
+	case LocalSystemSid = 22;
+	case LocalServiceSid = 23;
+	case NetworkServiceSid = 24;
+	case BuiltinDomainSid = 25;
+	case BuiltinAdministratorsSid = 26;
+	case BuiltinUsersSid = 27;
+	case BuiltinGuestsSid = 28;
+	case BuiltinPowerUsersSid = 29;
+	case BuiltinAccountOperatorsSid = 30;
+	case BuiltinSystemOperatorsSid = 31;
+	case BuiltinPrintOperatorsSid = 32;
+	case BuiltinBackupOperatorsSid = 33;
+	case BuiltinReplicatorSid = 34;
+	case BuiltinPreWindows2000CompatibleAccessSid = 35;
+	case BuiltinRemoteDesktopUsersSid = 36;
+	case BuiltinNetworkConfigurationOperatorsSid = 37;
+	case AccountAdministratorSid = 38;
+	case AccountGuestSid = 39;
+	case AccountKrbtgtSid = 40;
+	case AccountDomainAdminsSid = 41;
+	case AccountDomainUsersSid = 42;
+	case AccountDomainGuestsSid = 43;
+	case AccountComputersSid = 44;
+	case AccountControllersSid = 45;
+	case AccountCertAdminsSid = 46;
+	case AccountSchemaAdminsSid = 47;
+	case AccountEnterpriseAdminsSid = 48;
+	case AccountPolicyAdminsSid = 49;
+	case AccountRasAndIasServersSid = 50;
+	case NtlmAuthenticationSid = 51;
+	case DigestAuthenticationSid = 52;
+	case SChannelAuthenticationSid = 53;
+	case ThisOrganizationSid = 54;
+	case OtherOrganizationSid = 55;
+	case BuiltinIncomingForestTrustBuildersSid = 56;
+	case BuiltinPerformanceMonitoringUsersSid = 57;
+	case BuiltinPerformanceLoggingUsersSid = 58;
+	case BuiltinAuthorizationAccessSid = 59;
+	case WinBuiltinTerminalServerLicenseServersSid = 60;
+	case MaxDefined = 60;
+	case WinBuiltinDCOMUsersSid = 61;
+	case WinBuiltinIUsersSid = 62;
+	case WinIUserSid = 63;
+	case WinBuiltinCryptoOperatorsSid = 64;
+	case WinUntrustedLabelSid = 65;
+	case WinLowLabelSid = 66;
+	case WinMediumLabelSid = 67;
+	case WinHighLabelSid = 68;
+	case WinSystemLabelSid = 69;
+	case WinWriteRestrictedCodeSid = 70;
+	case WinCreatorOwnerRightsSid = 71;
+	case WinCacheablePrincipalsGroupSid = 72;
+	case WinNonCacheablePrincipalsGroupSid = 73;
+	case WinEnterpriseReadonlyControllersSid = 74;
+	case WinAccountReadonlyControllersSid = 75;
+	case WinBuiltinEventLogReadersGroup = 76;
+	case WinNewEnterpriseReadonlyControllersSid = 77;
+	case WinBuiltinCertSvcDComAccessGroup = 78;
+	case WinMediumPlusLabelSid = 79;
+	case WinLocalLogonSid = 80;
+	case WinConsoleLogonSid = 81;
+	case WinThisOrganizationCertificateSid = 82;
+	case WinApplicationPackageAuthoritySid = 83;
+	case WinBuiltinAnyPackageSid = 84;
+	case WinCapabilityInternetClientSid = 85;
+	case WinCapabilityInternetClientServerSid = 86;
+	case WinCapabilityPrivateNetworkClientServerSid = 87;
+	case WinCapabilityPicturesLibrarySid = 88;
+	case WinCapabilityVideosLibrarySid = 89;
+	case WinCapabilityMusicLibrarySid = 90;
+	case WinCapabilityDocumentsLibrarySid = 91;
+	case WinCapabilitySharedUserCertificatesSid = 92;
+	case WinCapabilityEnterpriseAuthenticationSid = 93;
+	case WinCapabilityRemovableStorageSid = 94;
+}

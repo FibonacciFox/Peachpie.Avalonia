@@ -1,0 +1,23 @@
+<?php
+namespace System\Runtime\InteropServices\ComTypes;
+/**
+ */
+enum FUNCFLAGS implements 
+	\System\IComparable,
+	\System\IFormattable,
+	\System\IConvertible
+{
+	case FUNCFLAG_FRESTRICTED = 1;
+	case FUNCFLAG_FSOURCE = 2;
+	case FUNCFLAG_FBINDABLE = 4;
+	case FUNCFLAG_FREQUESTEDIT = 8;
+	case FUNCFLAG_FDISPLAYBIND = 16;
+	case FUNCFLAG_FDEFAULTBIND = 32;
+	case FUNCFLAG_FHIDDEN = 64;
+	case FUNCFLAG_FUSESGETLASTERROR = 128;
+	case FUNCFLAG_FDEFAULTCOLLELEM = 256;
+	case FUNCFLAG_FUIDEFAULT = 512;
+	case FUNCFLAG_FNONBROWSABLE = 1024;
+	case FUNCFLAG_FREPLACEABLE = 2048;
+	case FUNCFLAG_FIMMEDIATEBIND = 4096;
+}
