@@ -1,7 +1,8 @@
 <?php
 namespace Application {
 
-    use Application\Forms\Form1;
+    use Application\Views\Form1;
+    use Application\ViewModels\Form1ViewModel;
     use Avalonia\Application;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
@@ -14,7 +15,10 @@ namespace Application {
         }
 
         public function OnFrameworkInitializationCompleted() : void {
-            $this->ApplicationLifetime->MainWindow = new Form1();
+
+            $form1 = new Form1();
+            $form1->DataContext = new Form1ViewModel();
+            $this->ApplicationLifetime->MainWindow = $form1;
 
         }
 

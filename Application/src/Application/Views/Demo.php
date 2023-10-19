@@ -1,7 +1,9 @@
 <?php
 
-namespace Application\Forms {
+namespace Application\Views {
 
+    use Avalonia\Controls\DataGridCheckBoxColumn;
+    use Avalonia\Controls\DataGridTextColumn;
     use Avalonia\Data\Binding;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxDictionary;
@@ -43,17 +45,17 @@ namespace Application\Forms {
             $list->Add(new Person("Peachpie","Avalonia", false));
            
 
-            $Name  =  new \Avalonia\Controls\DataGridTextColumn();
+            $Name  =  new DataGridTextColumn();
             $Name->Header = "Name";
             $Name->Binding = new Binding("[Name]");
             $this->Grid->Columns->Add($Name);
 
-            $Surname  =  new \Avalonia\Controls\DataGridTextColumn();
+            $Surname  =  new DataGridTextColumn();
             $Surname->Header = "Surname";
             $Surname->Binding = new Binding("[Surname]");
             $this->Grid->Columns->Add($Surname);
 
-            $IsTrue  =  new \Avalonia\Controls\DataGridCheckBoxColumn();
+            $IsTrue  =  new DataGridCheckBoxColumn();
             $IsTrue->Header = "IsTrue";
             $IsTrue->Binding = new Binding("[IsTrue]");
             $this->Grid->Columns->Add($IsTrue);

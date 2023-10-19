@@ -1,6 +1,6 @@
 <?php
 
-namespace Application\Forms {
+namespace Application\Views {
 
     use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
@@ -46,7 +46,7 @@ namespace Application\Forms {
                 $text->HorizontalAlignment = HorizontalAlignment::Center;
                 $text->VerticalAlignment = VerticalAlignment::Center;
                 $text->Text = "Added New Text Block";
-               // $this->MyUxStackPanel->Children->Add($text);
+                $this->MyUxStackPanel->Children->Add($text);
             });
 
 

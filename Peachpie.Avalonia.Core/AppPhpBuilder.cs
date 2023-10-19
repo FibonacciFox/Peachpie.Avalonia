@@ -3,35 +3,66 @@ using System.Linq;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 
-namespace Peachpie.Avalonia.Core;
-
-public class AppPhpBuilder
+namespace Peachpie.Avalonia.Core
 {
-    public static AppPhpBuilder Configure(string application)
+    public class AppPhpBuilder
     {
-        var method =
-            typeof(AppBuilder).GetMethods().Where(x => x.Name == "Configure")
-                .FirstOrDefault(x => x.IsGenericMethod)!.MakeGenericMethod(Type.GetType(application));
-       
-        var builder = (AppBuilder)method.Invoke(typeof(AppBuilder), null)!;
+        private AppBuilder _appBuilder;
 
-        return new AppPhpBuilder()
+        public static AppPhpBuilder Configure(string applicationType)
         {
-            _appBuilder = builder
-        };
-    }
-    
-    public AppPhpBuilder UsePlatformDetect()
-    {
-        _appBuilder = _appBuilder.UsePlatformDetect();
-        return this;
-    }
+            if (string.IsNullOrWhiteSpace(applicationType))
+            {
+                throw new ArgumentException("Application type must be provided.");
+            }
 
-    public AppPhpBuilder SetupWithLifetime(IApplicationLifetime lifetime)
-    {
-        _appBuilder = _appBuilder.SetupWithLifetime(lifetime);
-        return this;
-    }
+            Type appType = Type.GetType(applicationType);
+            if (appType == null)
+            {
+                throw new ArgumentException("Invalid application type.");
+            }
 
-    private AppBuilder _appBuilder;
+            AppBuilder appBuilder = CreateAppBuilder(appType);
+            return new AppPhpBuilder(appBuilder);
+        }
+
+        private static AppBuilder CreateAppBuilder(Type applicationType)
+        {
+            var configureMethod = typeof(AppBuilder)
+                .GetMethods()
+                .Where(method => method.Name == "Configure")
+                .FirstOrDefault(method => method.IsGenericMethod);
+
+            if (configureMethod == null)
+            {
+                throw new InvalidOperationException("Configure method not found.");
+            }
+
+            var genericConfigureMethod = configureMethod.MakeGenericMethod(applicationType);
+            return (AppBuilder)genericConfigureMethod.Invoke(null, null);
+        }
+
+        private AppPhpBuilder(AppBuilder appBuilder)
+        {
+            _appBuilder = appBuilder;
+        }
+
+        public AppPhpBuilder UsePlatformDetect()
+        {
+            _appBuilder.UsePlatformDetect();
+            return this;
+        }
+
+        public AppPhpBuilder SetupWithLifetime(IApplicationLifetime lifetime)
+        {
+            _appBuilder.SetupWithLifetime(lifetime);
+            return this;
+        }
+
+        public AppPhpBuilder WithInterFont()
+        {
+            _appBuilder.WithInterFont();
+            return this;
+        }
+    }
 }

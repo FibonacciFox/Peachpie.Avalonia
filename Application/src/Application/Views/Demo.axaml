@@ -2,12 +2,12 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                  xmlns:controls="clr-namespace:Peachpie.Avalonia.Controls;assembly=Peachpie.Avalonia"
+                  xmlns:controls="using:Peachpie.Avalonia.Controls"
                   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
                   Width="300" Height="300"
                   WindowStartupLocation="CenterOwner"
                   Icon="/Assets/icon.png"
-                  x:Class="Application.Forms.Demo"
+                  x:Class="Application.Views.Demo"
                   Title="Demo">
     <controls:UxStackPanel Orientation="Vertical" Spacing="4">
         <controls:UxDataGrid Margin="20"

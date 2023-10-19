@@ -25,9 +25,10 @@
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="11.0.4" />
-        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.4" />
-        <PackageReference Include="Avalonia.Desktop" Version="11.0.4" />
+        <PackageReference Include="Avalonia" Version="11.0.5" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.5" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.0.5" />
+        <PackageReference Include="Avalonia.Desktop" Version="11.0.5" />
         <PackageReference Include="Peachpie.Runtime" Version="1.2.0-r16166" />
     </ItemGroup>
     <ItemGroup>

@@ -28,7 +28,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Peachpie.Avalonia.Core" Version="0.0.2-alpha" />
-    <!-- <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" /> -->
+    <!--<PackageReference Include="Peachpie.Avalonia.Core" Version="0.0.2-alpha" />-->
+     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
   </ItemGroup>
 </Project>

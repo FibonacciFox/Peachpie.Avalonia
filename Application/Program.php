@@ -1,14 +1,17 @@
 <?php
 
+use Avalonia\Controls\ShutdownMode;
 use Peachpie\Avalonia\Core\AppPhpBuilder;
 use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
 
 $lifetime = new ClassicDesktopStyleApplicationLifetime();
 
 $lifetime->Args = null;
-$lifetime->ShutdownMode = \Avalonia\Controls\ShutdownMode::OnLastWindowClose;
+$lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
 
+AppPhpBuilder::Configure("Application.App, Application")
+    ->UsePlatformDetect()
+    ->WithInterFont()
+    ->SetupWithLifetime($lifetime);
 
-AppPhpBuilder::Configure("Application.App, Application")->UsePlatformDetect()->SetupWithLifetime($lifetime);
-
-$lifetime->Start(null);
+$lifetime->Start(args: null);
