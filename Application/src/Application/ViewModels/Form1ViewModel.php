@@ -8,6 +8,6 @@ class Form1ViewModel extends UxObservableDictionary
 {
     public function __construct()
     {
-        $this["Name"] = "Maxim";
+        $this["Name"] = "Maxim1";
     }
 }

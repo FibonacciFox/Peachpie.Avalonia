@@ -5,7 +5,8 @@ using Avalonia.Controls.ApplicationLifetimes;
 
 namespace Peachpie.Avalonia.Core
 {
-    public class AppPhpBuilder
+    public class 
+        AppPhpBuilder
     {
         private AppBuilder _appBuilder;
 

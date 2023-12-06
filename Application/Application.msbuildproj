@@ -10,9 +10,10 @@
     <Compile Include="**/*.php" />
     <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
+  
   <ItemGroup>
-    <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.4" />
-    <!-- <PackageReference Include="Peachpie.Avalonia" Version="0.0.2-alpha" />-->
-    <ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <!--<ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" /> -->
+    <PackageReference Include="Peachpie.Avalonia" Version="0.0.4-alpha" />
   </ItemGroup>
+
 </Project>

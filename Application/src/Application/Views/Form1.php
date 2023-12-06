@@ -5,7 +5,7 @@ namespace Application\Views {
     use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
     use Avalonia\Layout\VerticalAlignment;
-    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxListBox;

@@ -5,7 +5,7 @@ namespace Application\Views {
     use Avalonia\Controls\DataGridCheckBoxColumn;
     use Avalonia\Controls\DataGridTextColumn;
     use Avalonia\Data\Binding;
-    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxDictionary;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;

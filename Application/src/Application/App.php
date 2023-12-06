@@ -4,7 +4,7 @@ namespace Application {
     use Application\Views\Form1;
     use Application\ViewModels\Form1ViewModel;
     use Avalonia\Application;
-    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
     class App extends Application
     {
