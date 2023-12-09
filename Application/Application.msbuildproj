@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <Description>.NET class library in PHP</Description>
   </PropertyGroup>
   
@@ -12,8 +12,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <!--<ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" /> -->
-    <PackageReference Include="Peachpie.Avalonia" Version="0.0.4-alpha" />
+    <ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <!--<PackageReference Include="Peachpie.Avalonia" Version="$(AvaloniaVersion)" /> -->
   </ItemGroup>
 
 </Project>
