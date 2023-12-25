@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Core", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.msbuildproj", "{8F70B892-89D7-4196-8EAB-13D1F8F1F671}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppViewer", "AppViewer\AppViewer.csproj", "{217F88B0-4597-4F3F-BCAA-2B80D03BDBE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{217F88B0-4597-4F3F-BCAA-2B80D03BDBE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217F88B0-4597-4F3F-BCAA-2B80D03BDBE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217F88B0-4597-4F3F-BCAA-2B80D03BDBE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217F88B0-4597-4F3F-BCAA-2B80D03BDBE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

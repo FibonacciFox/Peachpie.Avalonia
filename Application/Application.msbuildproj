@@ -1,6 +1,6 @@
 <Project Sdk="Peachpie.NET.Sdk/1.2.0-r16166">
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <Description>.NET class library in PHP</Description>

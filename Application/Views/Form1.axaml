@@ -1,0 +1,24 @@
+﻿<controls:UxWindow xmlns="https://github.com/avaloniaui"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:controls="using:Peachpie.Avalonia.Controls"
+                  xmlns:myc="using:Views"
+                  xmlns:viewModels="using:ViewModels"
+                  mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                  Width="500" Height="500"
+                  Icon="/Assets/icon.png"
+                  x:Class="Views.Form1"
+                  Title="{Binding [Name]}">
+    <controls:UxWindow.DataContext>
+        <viewModels:Form1ViewModel/>
+    </controls:UxWindow.DataContext>
+    <controls:UxStackPanel Name="MyUxStackPanel" >
+        <controls:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
+        <controls:UxTextBox HorizontalAlignment="Center" Text="{Binding [Name]}" Name="MyUxTextBox"/>
+        <controls:UxButton HorizontalAlignment="Center" Content="Show Demo Form" Name="OpenDemo"/>
+        <controls:UxListBox Name="MyListBox"/>
+        <myc:MyControl />
+    </controls:UxStackPanel>
+
+</controls:UxWindow>

@@ -2,11 +2,11 @@
 using System.Linq;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Logging;
 
 namespace Peachpie.Avalonia.Core
 {
-    public class 
-        AppPhpBuilder
+    public class AppPhpBuilder
     {
         private AppBuilder _appBuilder;
 
@@ -65,5 +65,12 @@ namespace Peachpie.Avalonia.Core
             _appBuilder.WithInterFont();
             return this;
         }
+        
+        public AppPhpBuilder LogToTrace()
+        {
+            _appBuilder.LogToTrace();
+            return this;
+        }
+        
     }
 }

@@ -9,7 +9,7 @@
     "authors": [ { "name": "FibonacciFox" } ],
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "": ""
         }
     }
 }
