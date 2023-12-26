@@ -2,7 +2,7 @@
 
 namespace Peachpie\Avalonia
 {
-    use Avalonia\Application;
+    use Peachpie\Avalonia\Application;
     use Peachpie\Avalonia\Traits\EventsTrait;
     use Peachpie\Avalonia\Traits\GetComponentTrait;
 	/**

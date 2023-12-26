@@ -4,6 +4,7 @@ use Views\Form1;
 use ViewModels\Form1ViewModel;
 use Peachpie\Avalonia\UxApplication;
 use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+use Views\MyControl;
 
 
 class App extends UxApplication
@@ -16,11 +17,19 @@ class App extends UxApplication
 
     public function OnFrameworkInitializationCompleted(): void
     {
+        //Desktop
+        if ($this->IsClassicDesktopStyleApplicationLifetime()) {
+            $form1 = new Form1();
+            $form1->DataContext = new Form1ViewModel();
+            $this->ApplicationLifetime->MainWindow = $form1;
+        }
 
-        $form1 = new Form1();
-        $form1->DataContext = new Form1ViewModel();
-        $this->ApplicationLifetime->MainWindow = $form1;
+        //Mobile
+        if ($this->IsSingleViewApplicationLifetime()) {
+            $this->ApplicationLifetime->MainView = new MyControl();
+        }
 
+        parent::OnFrameworkInitializationCompleted();
     }
 
     public function InitializeComponent(): void
