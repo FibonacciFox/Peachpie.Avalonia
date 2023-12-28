@@ -6,5 +6,8 @@
                        xmlns:controls="using:Peachpie.Avalonia.Controls"
                        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="300"
                        x:Class="Views.MyControl">
-    Welcome to Avalonia!
+    <controls:UxUserControl.Styles>
+        <StyleInclude Source="MainStyles.axaml" />
+    </controls:UxUserControl.Styles>
+    <TextBlock Classes="h1">HELLO PHP AVALONIA!</TextBlock>
 </controls:UxUserControl>
