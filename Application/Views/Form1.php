@@ -6,7 +6,6 @@ namespace Views {
     use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
     use Avalonia\Layout\VerticalAlignment;
-    use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxListBox;
@@ -19,12 +18,8 @@ namespace Views {
     class Form1 extends UxWindow
     {
         public UxButton $MyUxButton;
-        public UxButton $OpenDemo;
         public UxStackPanel $MyUxStackPanel;
         private UxListBox $MyListBox;
-
-        private UxWindow $Demo;
-
 
         public function __construct()
         {
@@ -54,23 +49,17 @@ namespace Views {
                 $this->MyUxStackPanel->Children->Add($text);
             });
 
-
-            $this->Demo = new Demo();
-
-            $this->OpenDemo->on("Click", callback: function (UxButton $button, RoutedEventArgs $args) {
-                if(!$this->Demo->IsVisible){
-                    $button->Content = "Hide Demo Window";
-                    $this->Demo->Show();
-                } else{
-                    $button->Content = "Open Demo Window";
-                    $this->Demo->Hide();
-                }
-            });
+            
+            //$this->on('Closing', function (UxWindow $demo, $e){
+            //                $this->Hide();
+            //                $e->Cancel = true;
+            //            });
+           
         }
 
         public function InitializeComponent(): void
         {
-            AvaloniaXamlLoader::Load($this);
+            Load();
         }
     }
 

@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
     <Nullable>enable</Nullable>
-    <AvaloniaVersion>11.0.5-peachpie</AvaloniaVersion>
+    <AvaloniaVersion>11.0.10</AvaloniaVersion>
     <TargetFrameworkVersion>net7.0</TargetFrameworkVersion>
     <PeachpieAvaloniaVersion>0.0.4-alpha</PeachpieAvaloniaVersion>
   </PropertyGroup>

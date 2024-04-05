@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r16166">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17054">
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <LangVersion>latest</LangVersion>
@@ -27,7 +27,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
-    <!--<PackageReference Include="Peachpie.Avalonia.Core" Version="$(AvaloniaVersion)" /> -->
   </ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r16166">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17054">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <StartupObject>Program.php</StartupObject>
@@ -13,7 +13,6 @@
   
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
-    <!--<PackageReference Include="Peachpie.Avalonia" Version="$(AvaloniaVersion)" /> -->
   </ItemGroup>
 
 </Project>

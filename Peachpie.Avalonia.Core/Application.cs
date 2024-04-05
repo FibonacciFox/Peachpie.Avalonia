@@ -1,7 +1,7 @@
 ﻿using Avalonia.Controls.ApplicationLifetimes;
+using Pchp.Core;
 
 namespace Peachpie.Avalonia;
-
 public class Application : global::Avalonia.Application
 {
     public bool IsClassicDesktopStyleApplicationLifetime()

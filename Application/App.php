@@ -3,8 +3,8 @@
 use Views\Form1;
 use ViewModels\Form1ViewModel;
 use Peachpie\Avalonia\UxApplication;
-use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 use Views\MyControl;
+use  Avalonia\Themes\Fluent\FluentTheme;
 
 
 class App extends UxApplication
@@ -13,6 +13,7 @@ class App extends UxApplication
     {
         //Сначала всегда инициализируем axaml.
         $this->InitializeComponent();
+
     }
 
     public function OnFrameworkInitializationCompleted(): void
@@ -20,7 +21,6 @@ class App extends UxApplication
         //Desktop
         if ($this->IsClassicDesktopStyleApplicationLifetime()) {
             $form1 = new Form1();
-            $form1->DataContext = new Form1ViewModel();
             $this->ApplicationLifetime->MainWindow = $form1;
         }
 
@@ -34,6 +34,8 @@ class App extends UxApplication
 
     public function InitializeComponent(): void
     {
-        AvaloniaXamlLoader::Load($this);
+         Load();
     }
+    
+    
 }

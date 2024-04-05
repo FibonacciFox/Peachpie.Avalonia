@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-        <LangVersion>latest</LangVersion>
+        <LangVersion>preview</LangVersion>
         <Platforms>AnyCPU</Platforms>
         <OutputType>Library</OutputType>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -29,7 +29,7 @@
         <PackageReference Include="Avalonia.Controls.DataGrid" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
-        <PackageReference Include="Peachpie.Runtime" Version="1.2.0-r16166" />
+        <PackageReference Include="Peachpie.Runtime" Version="1.2.0-r17054" />
     </ItemGroup>
     
 </Project>
