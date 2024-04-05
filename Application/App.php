@@ -4,16 +4,14 @@ use Views\Form1;
 use ViewModels\Form1ViewModel;
 use Peachpie\Avalonia\UxApplication;
 use Views\MyControl;
-use  Avalonia\Themes\Fluent\FluentTheme;
-
+use Avalonia\Themes\Fluent\FluentTheme;
 
 class App extends UxApplication
 {
     public function __construct()
     {
         //Сначала всегда инициализируем axaml.
-        $this->InitializeComponent();
-
+        $this->InitializeComponent(); 
     }
 
     public function OnFrameworkInitializationCompleted(): void

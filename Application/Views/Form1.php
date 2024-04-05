@@ -1,7 +1,7 @@
 <?php
 
 namespace Views {
-
+    use Avalonia\DevToolsExtensions;
     use Avalonia\Controls\Button;
     use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
@@ -12,7 +12,7 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxStackPanel;
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
-
+    
     use Avalonia\Media\Brushes;
 
     class Form1 extends UxWindow
@@ -53,13 +53,16 @@ namespace Views {
             //$this->on('Closing', function (UxWindow $demo, $e){
             //                $this->Hide();
             //                $e->Cancel = true;
-            //            });
+            //});
            
         }
 
         public function InitializeComponent(): void
         {
             Load();
+            
+            //DevTools press F12
+            DevToolsExtensions::AttachDevTools($this);
         }
     }
 

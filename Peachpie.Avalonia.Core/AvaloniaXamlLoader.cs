@@ -3,7 +3,6 @@ using Pchp.Core;
 [assembly: PhpExtension] 
 
 namespace Avalonia.Markup.Xaml;
-
 public static class AvaloniaXamlLoader
 {
     /// <summary>
