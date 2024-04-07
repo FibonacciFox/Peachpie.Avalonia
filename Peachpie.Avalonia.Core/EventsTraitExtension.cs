@@ -1,97 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
+﻿using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Pchp.Core;
+using System;
+using System.Collections.Generic;
 
 namespace Peachpie.Avalonia.Core
 {
     public static class EventsTraitExtension
     {
-        // Кэш для хранения информации о событиях для различных типов объектов
-        private static readonly Dictionary<Type, Dictionary<string, EventInfo>> _cachedEventInfos = new Dictionary<Type, Dictionary<string, EventInfo>>();
-
-        // Метод для подключения обработчика события к объекту
-        public static void On(object targetClass, string eventName, Closure callback)
+        private static readonly Dictionary<string, (RoutedEvent, EventHandler)> CachedEvent = new();
+        
+        public static void On(Control? targetClass, RoutedEvent eventType, Closure callback , string eventName)
         {
             if (targetClass == null)
             {
-                throw new ArgumentNullException(nameof(targetClass));
+                throw new ArgumentException($"Event '{eventType}' not found on object of type '{targetClass?.GetType().Name}'");
+            }
+            
+            if (CachedEvent.ContainsKey(eventName))
+            {
+                throw new ArgumentException($"Event handler '{eventName}' already exists");
             }
 
-            // Получаем тип объекта
-            var targetType = targetClass.GetType();
-            // Получаем информацию о событии из кэша
-            var eventInfo = GetCachedEventInfo(targetType, eventName);
-
-            if (eventInfo != null)
+            EventHandler handler = (sender, e) =>
             {
-                // Создаем делегат для вызова замыкания при возникновении события
-                eventInfo.AddEventHandler(targetClass,
-                    CreateDelegate(eventInfo.EventHandlerType,
-                        (sender, e) =>
-                        {
-                            // Вызываем замыкание, передавая аргументы в PHP-значениях
-                            callback.__invoke(PhpValue.FromClass(sender), PhpValue.FromClass(e));
-                        }));
+                callback.__invoke(PhpValue.FromClass(sender), PhpValue.FromClass(e));
+            };
+            
+            targetClass.AddHandler(eventType, handler);
+            
+            CachedEvent.Add(eventName, (eventType, handler));
+        }
+
+        public static void Off(Control? targetClass, string eventName )
+        {
+            if (targetClass == null)
+            {
+                throw new ArgumentException($"Event not found on object of type '{targetClass?.GetType().Name}'");
+            }
+            
+            if (CachedEvent.TryGetValue(eventName, out var eventHandlerPair))
+            {
+                targetClass.RemoveHandler(eventHandlerPair.Item1, eventHandlerPair.Item2);
+
+                CachedEvent.Remove(eventName);
             }
             else
             {
-                // Если событие не найдено, выбрасываем исключение
-                throw new ArgumentException($"Событие '{eventName}' не найдено на объекте типа '{targetType.Name}'");
+                throw new ArgumentException($"Event handler '{eventName}' not found");
             }
-        }
-        
-        // Метод для получения информации о событии из кэша
-        private static EventInfo GetCachedEventInfo(Type targetType, string eventName)
-        {
-            // Если в кэше нет информации о данном типе, создаем запись в словаре
-            if (!_cachedEventInfos.TryGetValue(targetType, out var eventDictionary))
-            {
-                eventDictionary = new Dictionary<string, EventInfo>();
-                _cachedEventInfos[targetType] = eventDictionary;
-            }
-
-            // Если в записи нет информации о данном событии, получаем информацию о событии и сохраняем в словаре
-            if (!eventDictionary.TryGetValue(eventName, out var eventInfo))
-            {
-                eventInfo = targetType.GetEvent(eventName);
-                eventDictionary[eventName] = eventInfo;
-            }
-
-            // Возвращаем информацию о событии
-            return eventInfo;
-        }
-
-        private static Delegate CreateDelegate(Type type, EventHandler handler)
-        {
-            return (Delegate) type.GetConstructor(new[] {typeof(object), typeof(IntPtr)})
-                ?.Invoke(new[] {handler.Target, handler.Method.MethodHandle.GetFunctionPointer()});
         }
     }
 }
-
-
-/*
-public static class Events
-{
-    public static void On(object targetClass, string eventName, Closure callback)
-    {
-        var eventInfo = targetClass.GetType().GetEvent(eventName);
-        if (eventInfo != null)
-            eventInfo.AddEventHandler(targetClass,
-                CreateDelegate(eventInfo.EventHandlerType,
-                    (sender, e) =>
-                    {
-                        callback.__invoke(PhpValue.FromClass(sender), PhpValue.FromClass(e));
-                    }));
-        else
-            throw new ArgumentException(
-                $"Event '{eventName}' not found on object of type '{targetClass.GetType().Name}'");
-    }
-    
-    private static Delegate CreateDelegate(Type type, EventHandler handler)
-    {
-        return (Delegate) type.GetConstructor(new[] {typeof(object), typeof(IntPtr)})
-            ?.Invoke(new[] {handler.Target, handler.Method.MethodHandle.GetFunctionPointer()});
-    }
-}*/

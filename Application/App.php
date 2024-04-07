@@ -6,6 +6,8 @@ use Peachpie\Avalonia\UxApplication;
 use Views\MyControl;
 use Avalonia\Themes\Fluent\FluentTheme;
 
+use Pchp\Core\ImportValueAttribute;
+
 class App extends UxApplication
 {
     public function __construct()
@@ -32,8 +34,8 @@ class App extends UxApplication
 
     public function InitializeComponent(): void
     {
+         //\Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
          Load();
     }
-    
-    
+  
 }

@@ -10,9 +10,8 @@
                     x:Class="Views.Form1"
                     Title="Form1">
     <controls:UxStackPanel Name="MyUxStackPanel">
-        <controls:UxButton HorizontalAlignment="Center" Content="Click me!" Name="MyUxButton"/>
-        <controls:UxListBox Name="MyListBox"/>
-        <myc:MyControl />
+        <controls:UxButton HorizontalAlignment="Center" Content="Click Me" Name="MyUxButton"/>
+        <controls:UxButton HorizontalAlignment="Center" Content="Click Me" Name="MyUxButton2" Click="MyUxButton2_click"/>
     </controls:UxStackPanel>
 
 </controls:UxWindow>
