@@ -3,9 +3,9 @@
 namespace Peachpie\Avalonia\Traits;
 
 use Closure;
-use Peachpie\Avalonia\Core\EventsTraitExtension;
+use Peachpie\Avalonia\Core\Extension\Event;
 
-trait EventsTrait
+trait EventTrait
 {
 
     /**
@@ -16,7 +16,7 @@ trait EventsTrait
      */
     public function on( $eventType, Closure $callback , string $eventName): void
     {
-        EventsTraitExtension::on($this, $eventType, $callback, $eventName);
+        Event::on($this, $eventType, $callback, $eventName);
     }
     
     /**
@@ -26,7 +26,7 @@ trait EventsTrait
      */
     public function off(string $eventName ): void
     {
-         EventsTraitExtension::off($this, $eventName);
+         Event::off($this, $eventName);
     }
 
 }

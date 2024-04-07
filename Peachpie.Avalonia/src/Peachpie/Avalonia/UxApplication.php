@@ -3,8 +3,8 @@
 namespace Peachpie\Avalonia
 {
     use Peachpie\Avalonia\Application;
-    use Peachpie\Avalonia\Traits\EventsTrait;
-    use Peachpie\Avalonia\Traits\GetComponentTrait;
+    use Peachpie\Avalonia\Traits\EventTrait;
+    use Peachpie\Avalonia\Traits\GetControlTrait;
 	/**
 	 * UxApplication short summary.
 	 *
@@ -15,7 +15,7 @@ namespace Peachpie\Avalonia
 	 */
 	class UxApplication extends Application
 	{
-        use EventsTrait;
-        use GetComponentTrait;
+        use EventTrait;
+        use GetControlTrait;
 	}
 }

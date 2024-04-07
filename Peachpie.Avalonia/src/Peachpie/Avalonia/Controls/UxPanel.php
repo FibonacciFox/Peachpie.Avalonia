@@ -13,11 +13,11 @@ namespace Peachpie\Avalonia\Controls;
 
 use Peachpie\Avalonia\Core\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventsTrait;
+use Peachpie\Avalonia\Traits\EventTrait;
 
 class UxPanel extends \Avalonia\Controls\Panel implements IStyleKeyOverride
 {
-    use EventsTrait;
+    use EventTrait;
 
     public function get_StyleKeyOverride(): \System\Type
     {

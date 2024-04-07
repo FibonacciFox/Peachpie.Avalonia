@@ -11,13 +11,13 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Traits\EventsTrait;
-use Peachpie\Avalonia\Traits\GetComponentTrait;
+use Peachpie\Avalonia\Traits\EventTrait;
+use Peachpie\Avalonia\Traits\GetControlTrait;
 use Peachpie\Avalonia\Traits\AvaloniaPropertyTrait;
 
 class UxUserControl extends \Avalonia\Controls\UserControl
 {
     use AvaloniaPropertyTrait;
-    use GetComponentTrait;
-    use EventsTrait;
+    use GetControlTrait;
+    use EventTrait;
 }

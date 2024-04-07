@@ -13,13 +13,14 @@ namespace Peachpie\Avalonia\Controls;
 
 use Peachpie\Avalonia\Core\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventsTrait;
-use Peachpie\Avalonia\Traits\GetComponentTrait;
+use Peachpie\Avalonia\Traits\EventTrait;
+use Peachpie\Avalonia\Traits\GetControlTrait;
 
 class UxWindow extends \Avalonia\Controls\Window implements IStyleKeyOverride
 {
-    use EventsTrait;
-    use GetComponentTrait;
+    use EventTrait;
+    use GetControlTrait;
+    
     public function get_StyleKeyOverride(): \System\Type
     {
        return StyleKeyOverride::$Window;

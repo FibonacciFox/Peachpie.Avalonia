@@ -24,10 +24,10 @@ class App extends UxApplication
             $this->ApplicationLifetime->MainWindow = $form1;
         }
 
-        //Mobile
-        if ($this->IsSingleViewApplicationLifetime()) {
-            $this->ApplicationLifetime->MainView = new MyControl();
-        }
+       //Mobile
+       // if ($this->IsSingleViewApplicationLifetime()) {
+       //     $this->ApplicationLifetime->MainView = new MyControl();
+       // }
 
         parent::OnFrameworkInitializationCompleted();
     }

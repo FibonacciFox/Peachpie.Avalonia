@@ -1,8 +1,8 @@
 ﻿using Avalonia.Controls;
 
-namespace Peachpie.Avalonia.Core;
+namespace Peachpie.Avalonia.Core.Extension;
 
-public class GetComponentTraitExtension
+public class GetControl
 {
     public static Control? FindByName(Control targetComponent, string name)
     {

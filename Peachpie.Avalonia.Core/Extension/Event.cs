@@ -1,12 +1,12 @@
-﻿using Avalonia.Controls;
+﻿using System;
+using System.Collections.Generic;
+using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Pchp.Core;
-using System;
-using System.Collections.Generic;
 
-namespace Peachpie.Avalonia.Core
+namespace Peachpie.Avalonia.Core.Extension
 {
-    public static class EventsTraitExtension
+    public static class Event
     {
         private static readonly Dictionary<string, (RoutedEvent, EventHandler)> CachedEvent = new();
         

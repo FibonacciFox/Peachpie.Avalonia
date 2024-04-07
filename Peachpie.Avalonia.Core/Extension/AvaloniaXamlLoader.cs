@@ -2,6 +2,7 @@ using Pchp.Core;
 
 [assembly: PhpExtension] 
 
+// ReSharper disable once CheckNamespace
 namespace Avalonia.Markup.Xaml;
 public static class AvaloniaXamlLoader
 {

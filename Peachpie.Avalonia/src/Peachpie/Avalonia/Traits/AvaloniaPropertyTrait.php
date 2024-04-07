@@ -1,7 +1,7 @@
 <?php
 
 namespace Peachpie\Avalonia\Traits;
-use Peachpie\Avalonia\Core\AvaloniaPropertyExt;
+use Peachpie\Avalonia\Core\Extension\AvaloniaProperty;
 
 trait AvaloniaPropertyTrait
 {
@@ -11,7 +11,7 @@ trait AvaloniaPropertyTrait
      */
     public function Register(string $name): mixed
     {
-        return AvaloniaPropertyExt::Register($this, $name);
+        return AvaloniaProperty::Register($this, $name);
     }
 
 }
