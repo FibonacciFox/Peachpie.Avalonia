@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\TabControl;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxTabControl extends \Avalonia\Controls\TabControl implements IStyleKeyOverride
+class UxTabControl extends TabControl
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$TabControl;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

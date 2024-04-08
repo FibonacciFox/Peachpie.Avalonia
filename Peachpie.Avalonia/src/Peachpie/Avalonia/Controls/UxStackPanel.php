@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\StackPanel;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxStackPanel extends \Avalonia\Controls\StackPanel implements IStyleKeyOverride
+class UxStackPanel extends StackPanel
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$StackPanel;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

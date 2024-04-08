@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\ScrollViewer;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxScrollViewer extends \Avalonia\Controls\ScrollViewer implements IStyleKeyOverride
+class UxScrollViewer extends ScrollViewer
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$ScrollViewer;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

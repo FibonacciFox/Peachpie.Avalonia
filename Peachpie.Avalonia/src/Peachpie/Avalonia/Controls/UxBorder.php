@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\Border;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxBorder extends \Avalonia\Controls\Border implements IStyleKeyOverride
+class UxBorder extends Border 
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$Border;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

@@ -3,30 +3,31 @@
 namespace Peachpie\Avalonia\Traits;
 
 use Closure;
+use Avalonia\Controls\Control;
 use Peachpie\Avalonia\Core\Extension\Event;
 
 trait EventTrait
 {
 
     /**
-     * @param Control $eventName
+     * @param object|string|Control $eventType
      * @param Closure $callback
-     * @param string $eventName
+     * @param string $eventId
      * @return void
      */
-    public function on( $eventType, Closure $callback , string $eventName): void
+    public function on( $eventType, Closure $callback , string $eventId): void
     {
-        Event::on($this, $eventType, $callback, $eventName);
+        Event::on($this, $eventType, $callback, $eventId);
     }
-    
+
+
     /**
-     * @param Control $eventType
-     * @param string $eventName
+     * @param string $eventId
      * @return void
      */
-    public function off(string $eventName ): void
+    public function off(string $eventId): void
     {
-         Event::off($this, $eventName);
+         Event::off($this, $eventId);
     }
 
 }

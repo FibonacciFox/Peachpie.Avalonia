@@ -11,18 +11,17 @@
 
 namespace Peachpie\Avalonia\Controls;
 
+use System\Type;
+use Avalonia\Controls\Window;
 use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
-use Peachpie\Avalonia\Traits\GetControlTrait;
+use Peachpie\Avalonia\Traits\BaseTrait;
 
-class UxWindow extends \Avalonia\Controls\Window implements IStyleKeyOverride
+class UxWindow extends Window
 {
-    use EventTrait;
-    use GetControlTrait;
-    
-    public function get_StyleKeyOverride(): \System\Type
+    use BaseTrait;
+
+    public function get_StyleKeyOverride(): Type
     {
-       return StyleKeyOverride::$Window;
+        return StyleKeyOverride::$Window;
     }
 }

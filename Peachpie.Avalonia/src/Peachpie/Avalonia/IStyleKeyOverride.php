@@ -2,9 +2,10 @@
 
 namespace Peachpie\Avalonia;
 
+use JetBrains\PhpStorm\Deprecated;
 use System\Type;
 
-
+#[Deprecated]
 interface IStyleKeyOverride
 {
     /**

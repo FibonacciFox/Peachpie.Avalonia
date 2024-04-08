@@ -10,18 +10,13 @@
  */
 
 namespace Peachpie\Avalonia\Controls;
-use System\Type;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\AutoCompleteBox;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxAutoCompleteBox extends \Avalonia\Controls\AutoCompleteBox implements IStyleKeyOverride
+class UxAutoCompleteBox extends AutoCompleteBox
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): Type
-    {
-       return StyleKeyOverride::$AutoCompleteBox;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

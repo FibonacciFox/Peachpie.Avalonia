@@ -1,21 +1,21 @@
 <?php
 
 /**
- * UxTimePicker short summary.
+ * UxUniformGrid short summary.
  *
- * UxTimePicker description.
+ * UxUniformGrid description.
  *
  * @version 1.0
  * @author FibonacciFox
  */
 
-namespace Peachpie\Avalonia\Controls;
+namespace Peachpie\Avalonia\Controls\Primitives;
 
-use Avalonia\Controls\TimePicker;
+use Avalonia\Controls\Primitives\UniformGrid;
 use Peachpie\Avalonia\Traits\BaseTrait;
 use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxTimePicker extends TimePicker
+class UxUniformGrid extends UniformGrid
 {
     use BaseTrait;
     use StyleKeyOverrideTrait;

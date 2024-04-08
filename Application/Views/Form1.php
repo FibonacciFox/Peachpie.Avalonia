@@ -5,14 +5,10 @@ namespace Views {
     use Avalonia\Interactivity\RoutedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
     use Avalonia\Layout\VerticalAlignment;
-    use Peachpie\Avalonia\Collections\UxList;
     use Peachpie\Avalonia\Controls\UxButton;
-    use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxStackPanel;
-    use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
-    use Peachpie\Avalonia\Controls\UxButtonSpinner;
-    
+
     use Avalonia\Media\Brushes;
 
     class Form1 extends UxWindow
@@ -31,18 +27,21 @@ namespace Views {
             $this->MyUxStackPanel = $this->FindByName("MyUxStackPanel");
      
             $MyUxButton_Click = function(object $sender , RoutedEventArgs $e) {
-                    $this->MyUxButton->Content = "Clicked!";
+                    $this->MyUxButton->Content = "Clicked!1";
             };
-          
-            $this->MyUxButton->on(UxButton::$ClickEvent , $MyUxButton_Click , "Click");
 
-           // $this->MyUxButton->off("Entered");
-            
 
-        }
-        
-        public function MyUxButton2_click( object $sender , RoutedEventArgs $e) : void {
-            $this->MyUxButton2->Content = "Clicked Button2!";
+            $this->MyUxButton->on("Click" , $MyUxButton_Click  , "MyUxButton_Click");
+
+
+            $this->MyUxButton2->on(UxButton::$ClickEvent , function(object $sender , RoutedEventArgs $e) {
+                $this->MyUxButton2->Content = "Clicked!2";
+            },"MyUxButton2_Click");
+
+           // $this->MyUxButton->off("MyUxButton_Click");
+           // $this->MyUxButton2->off("MyUxButton2_Click");
+
+
         }
 
         public function InitializeComponent(): void

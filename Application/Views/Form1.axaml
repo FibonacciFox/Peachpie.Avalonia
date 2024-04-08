@@ -11,7 +11,7 @@
                     Title="Form1">
     <controls:UxStackPanel Name="MyUxStackPanel">
         <controls:UxButton HorizontalAlignment="Center" Content="Click Me" Name="MyUxButton"/>
-        <controls:UxButton HorizontalAlignment="Center" Content="Click Me" Name="MyUxButton2" Click="MyUxButton2_click"/>
+        <controls:UxButton HorizontalAlignment="Center" Content="Click Me" Name="MyUxButton2"/>
     </controls:UxStackPanel>
 
 </controls:UxWindow>

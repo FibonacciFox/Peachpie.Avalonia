@@ -11,14 +11,16 @@
 
 namespace Peachpie\Avalonia\Controls;
 
+use System\Type;
+use Avalonia\Controls\ToggleSplitButton;
 use Peachpie\Avalonia\Core\StyleKeyOverride;
 use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
-
-class UxToggleSplitButton extends \Avalonia\Controls\ToggleSplitButton implements IStyleKeyOverride
+use Peachpie\Avalonia\Traits\BaseTrait;
+class UxToggleSplitButton extends ToggleSplitButton implements IStyleKeyOverride
 {
-    use EventTrait;
-    public function get_StyleKeyOverride(): \System\Type
+    use BaseTrait;
+
+    public function get_StyleKeyOverride(): Type
     {
        return StyleKeyOverride::$ToggleSplitButton;
     }

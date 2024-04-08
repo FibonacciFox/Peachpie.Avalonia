@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\ButtonSpinner;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxButtonSpinner extends \Avalonia\Controls\ButtonSpinner implements IStyleKeyOverride
+class UxButtonSpinner extends ButtonSpinner
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$ButtonSpinner;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

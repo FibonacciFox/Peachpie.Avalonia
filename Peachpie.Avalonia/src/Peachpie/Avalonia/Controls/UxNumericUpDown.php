@@ -11,16 +11,13 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\NumericUpDown;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxNumericUpDown extends \Avalonia\Controls\NumericUpDown implements IStyleKeyOverride
+
+class UxNumericUpDown extends NumericUpDown
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$NumericUpDown;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

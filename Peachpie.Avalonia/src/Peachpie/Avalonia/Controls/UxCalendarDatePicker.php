@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\CalendarDatePicker;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxCalendarDatePicker extends \Avalonia\Controls\CalendarDatePicker implements IStyleKeyOverride
+class UxCalendarDatePicker extends CalendarDatePicker
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$CalendarDatePicker;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

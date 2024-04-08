@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\MaskedTextBox;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxMaskedTextBox extends \Avalonia\Controls\MaskedTextBox implements IStyleKeyOverride
+class UxMaskedTextBox extends MaskedTextBox
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$MaskedTextBox;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

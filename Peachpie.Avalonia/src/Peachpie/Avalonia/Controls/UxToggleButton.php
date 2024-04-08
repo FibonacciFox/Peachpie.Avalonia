@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\Primitives\ToggleButton;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxToggleButton extends \Avalonia\Controls\Primitives\ToggleButton implements IStyleKeyOverride
+class UxToggleButton extends ToggleButton
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$ToggleButton;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }

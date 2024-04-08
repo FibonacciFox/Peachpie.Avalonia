@@ -11,16 +11,12 @@
 
 namespace Peachpie\Avalonia\Controls;
 
-use Peachpie\Avalonia\Core\StyleKeyOverride;
-use Peachpie\Avalonia\IStyleKeyOverride;
-use Peachpie\Avalonia\Traits\EventTrait;
+use Avalonia\Controls\NativeMenuItem;
+use Peachpie\Avalonia\Traits\BaseTrait;
+use Peachpie\Avalonia\Traits\StyleKeyOverrideTrait;
 
-class UxNativeMenuItem extends \Avalonia\Controls\NativeMenuItem implements IStyleKeyOverride
+class UxNativeMenuItem extends NativeMenuItem
 {
-    use EventTrait;
-
-    public function get_StyleKeyOverride(): \System\Type
-    {
-       return StyleKeyOverride::$NativeMenuItem;
-    }
+    use BaseTrait;
+    use StyleKeyOverrideTrait;
 }
