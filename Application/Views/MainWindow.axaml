@@ -1,0 +1,34 @@
+﻿<controls:UxWindow xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                    xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+                    xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+                    xmlns:controls="using:Peachpie.Avalonia.Controls"
+                    xmlns:pages="using:Views.Pages"
+                    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                    Icon="/Assets/icon.png"
+                    x:Class="Views.MainWindow"
+                    Title="Application">
+        <controls:UxGrid ColumnDefinitions="Auto,*">
+            <controls:UxStackPanel Background="#293659" Grid.Column="0" Width="300"  IsVisible="{Binding !#BurgerButton.IsChecked }">
+                <controls:UxTextBlock Padding="17" HorizontalAlignment="Center" Classes="Headline6"> <icons:MaterialIcon Kind="ApplicationBrackets"/> PeachPie.Avalonia</controls:UxTextBlock>
+                <controls:UxListBox Name="ItemMenu" Tapped="ItemMenu_OnTapped" Background="Transparent">
+                    <controls:UxTextBlock Classes="Headline5" VerticalAlignment="Center" HorizontalAlignment="Left"> <icons:MaterialIcon Kind="Home" Width="25" Height="25" /> Home</controls:UxTextBlock>
+                    <controls:UxTextBlock Classes="Headline5" VerticalAlignment="Center" HorizontalAlignment="Left"> <icons:MaterialIcon Kind="ButtonCursor" Width="25" Height="25" /> Buttons</controls:UxTextBlock>
+                    <controls:UxTextBlock Classes="Headline5" VerticalAlignment="Center" HorizontalAlignment="Left"> <icons:MaterialIcon Kind="PageLayoutHeader" Width="25" Height="25" /> Header</controls:UxTextBlock>
+                    <controls:UxTextBlock Classes="Headline5" VerticalAlignment="Center" HorizontalAlignment="Left"> <icons:MaterialIcon Kind="TextBoxEditOutline" Width="25" Height="25" /> Fields</controls:UxTextBlock>
+                    <controls:UxTextBlock Classes="Headline5" VerticalAlignment="Center" HorizontalAlignment="Left"> <icons:MaterialIcon Kind="ProgressHelper" Width="25" Height="25" /> Progress Indicators</controls:UxTextBlock>
+                </controls:UxListBox>
+            </controls:UxStackPanel>
+            <controls:UxStackPanel Background="#161E35" Grid.Column="1">
+                <material:ColorZone Grid.Column="1" VerticalAlignment="Top"  Height="56" Padding="12" Mode="Accent">
+                    <controls:UxGrid VerticalAlignment="Top" HorizontalAlignment="Stretch" ColumnDefinitions="Auto,24,*">
+                        <controls:UxToggleButton Name="BurgerButton" ToolTip.Tip="Burger" Grid.Column="0" Classes="Flat TransparentBack" Padding="10" Width="{Binding $self.Bounds.Height}" Content="{icons:MaterialIconExt Menu}" />
+                        <controls:UxTextBlock Grid.Column="2" Classes="Headline6" VerticalAlignment="Center" Text="Material Peachpie.Avalonia" />
+                    </controls:UxGrid>
+                </material:ColorZone>
+                <controls:UxContentControl Name="PageView" />
+            </controls:UxStackPanel>
+        </controls:UxGrid>
+</controls:UxWindow>

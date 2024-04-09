@@ -4,6 +4,7 @@
 
 The **Peachpie.Avalonia** library is a collection of user interface (UI) controls based on the Avalonia UI framework that can be easily used in the PHP language. This library enables PHP developers to create modern cross-platform applications with a rich user interface, harnessing the power and flexibility of Avalonia UI.
 
+There will be Nuget package available later.
 ## Features
 
 - Includes a wide range of ready-to-use UI controls such as buttons, text fields, lists, and more, which can be easily employed in a PHP application.
@@ -18,6 +19,7 @@ The **Peachpie.Avalonia** library is a powerful tool for developers looking to u
 
 Библиотека **Peachpie.Avalonia** представляет собой набор элементов управления пользовательского интерфейса (UI) на основе фреймворка Avalonia UI, которые могут быть легко использованы на языке PHP. Эта библиотека позволяет PHP-разработчикам создавать современные кросс-платформенные приложения с богатым пользовательским интерфейсом, используя мощь и гибкость Avalonia UI.
 
+Пакет Nuget будет доступен позже.
 ## Особенности
 
 - Включает в себя широкий набор готовых элементов управления, таких как кнопки, текстовые поля, списки и другие, которые могут быть легко использованы в приложении на PHP.

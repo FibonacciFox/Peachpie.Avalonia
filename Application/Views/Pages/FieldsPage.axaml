@@ -1,0 +1,49 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:assists="clr-namespace:Material.Styles.Assists;assembly=Material.Styles"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Views.Pages.FieldsPage">
+    <StackPanel>
+        <TextBlock Classes="Headline6" Padding="20,20,0,0">Single Line</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <TextBox UseFloatingWatermark="True" Watermark="Type something..." assists:TextFieldAssist.Label="Classic TextBox"/>
+            <TextBox UseFloatingWatermark="False" Watermark="No floating label" />
+            <TextBox UseFloatingWatermark="True" Width="150" Classes="revealPasswordButton" assists:TextFieldAssist.Label="Password" PasswordChar="*" />
+            <TextBox UseFloatingWatermark="True" Classes="clearButton" assists:TextFieldAssist.Label="Text field"/>
+            <TextBox UseFloatingWatermark="True" IsEnabled="False" assists:TextFieldAssist.Label="Disabled Field" Text="Hello World!"/>
+        </StackPanel>
+        <TextBlock Classes="Headline6" Padding="20,20,0,0">Filled fields</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,10,0,0">
+            <TextBox Width="150" Height="50" UseFloatingWatermark="True" Theme="{StaticResource FilledTextBox}" assists:TextFieldAssist.Label="Filled TextBox"/>
+            <TextBox Width="150" Height="50" UseFloatingWatermark="False" Theme="{StaticResource FilledTextBox}" Watermark="No floating label" />
+            <TextBox Width="150" Height="50" UseFloatingWatermark="True" Classes="filled revealPasswordButton" Theme="{StaticResource FilledTextBox}" assists:TextFieldAssist.Label="Password" PasswordChar="*" />
+        </StackPanel>
+        <TextBlock Classes="Headline6" Padding="20,20,0,0">Outline fields</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,10,0,0">
+            <TextBox Width="150" Height="60" UseFloatingWatermark="True" Classes="outline" Theme="{StaticResource OutlineTextBox}" assists:TextFieldAssist.Label="Outline TextBox"/>
+            <TextBox Width="150" Height="60" UseFloatingWatermark="True" Classes="outline revealPasswordButton" Theme="{StaticResource OutlineTextBox}" assists:TextFieldAssist.Label="Password" PasswordChar="*" />
+        </StackPanel>
+        <TextBlock Classes="Headline6" Padding="20,20,0,0">Solo fields</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,10,0,0">
+            <material:Card Padding="0" Margin="8" Background="Transparent">
+                <TextBox Classes="solo" Theme="{StaticResource SoloTextBox}" Watermark="Solo field with Card">
+                    <TextBox.InnerRightContent>
+                        <Button Classes="Flat" Padding="4" Width="{Binding $self.Bounds.Height}" Content="{icons:MaterialIconExt Search, Size=24}" />
+                    </TextBox.InnerRightContent>
+                </TextBox>
+            </material:Card>
+            <TextBox Width="150" BorderBrush="{Binding $self.Foreground}" BorderThickness="2" Classes="solo" Theme="{StaticResource SoloTextBox}" Watermark="Search field" CornerRadius="32" Margin="8">
+                <TextBox.InnerLeftContent>
+                    <Border Height="{Binding $parent[TextBox].Height}" Width="{Binding $self.Bounds.Height}">
+                        <icons:MaterialIcon HorizontalAlignment="Center" VerticalAlignment="Center" Kind="Magnify" Width="20" Height="20" />
+                    </Border>
+                </TextBox.InnerLeftContent>
+            </TextBox>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
+

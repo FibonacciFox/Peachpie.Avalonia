@@ -1,0 +1,50 @@
+<controls:UxUserControl xmlns="https://github.com/avaloniaui"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+                        xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+                        xmlns:controls="using:Peachpie.Avalonia.Controls"
+                        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                        x:Class="Views.Pages.ProgressIndicatorsPage">
+    <controls:UxStackPanel>
+        <controls:UxTextBlock Classes="Headline3" Margin="20">Progress Indicators</controls:UxTextBlock>
+        <controls:UxTextBlock Classes="Headline7" Padding="20">Horizontal</controls:UxTextBlock>
+        <controls:UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <controls:UxProgressBar Width="100" Value="0" />
+            <controls:UxProgressBar Width="100" Value="30" />
+            <controls:UxProgressBar Name="Bar1" Width="100" ShowProgressText="True" />
+            <controls:UxProgressBar Name="Bar2" Width="100" Classes="no-transitions" />
+            <controls:UxProgressBar Width="100" IsIndeterminate="True" />
+        </controls:UxStackPanel>
+        <controls:UxTextBlock Classes="Headline7" Padding="20">Vertical</controls:UxTextBlock>
+        <controls:UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <controls:UxProgressBar Name="Bar3" Orientation="Vertical" Height="100" Value="80" />
+            <controls:UxProgressBar Name="Bar4" Orientation="Vertical" Height="100" Value="80" ShowProgressText="True" />
+        </controls:UxStackPanel>
+        <controls:UxTextBlock Classes="Headline7" Padding="20">Circular</controls:UxTextBlock>
+        <controls:UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <controls:UxProgressBar Classes="circular" Value="30" Margin="4"  />
+            <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:UxProgressBar Classes="circular" Value="90" />
+            </material:Card>
+            <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:UxProgressBar Classes="circular" IsIndeterminate="True" />
+            </material:Card>
+            <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:UxProgressBar Name="Bar5" Classes="circular"/>
+            </material:Card>
+            <material:Card Background="White" CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:UxProgressBar Name="Bar6" Classes="circular" Height="80" Width="80" />
+            </material:Card>
+        </controls:UxStackPanel>
+        <controls:UxTextBlock Classes="Headline7" Padding="20">With Progress</controls:UxTextBlock>
+        <controls:UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <controls:UxProgressBar Name="Bar7" Classes="circular" ShowProgressText="True" />
+            <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <controls:UxProgressBar Name="Bar8" Classes="circular" Height="80" Width="80" ShowProgressText="True" />
+            </material:Card>
+        </controls:UxStackPanel>
+    </controls:UxStackPanel>
+</controls:UxUserControl>
+

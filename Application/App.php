@@ -1,12 +1,7 @@
 <?php
 
-use Views\Form1;
-use ViewModels\Form1ViewModel;
+use Views\MainWindow;
 use Peachpie\Avalonia\UxApplication;
-use Views\MyControl;
-use Avalonia\Themes\Fluent\FluentTheme;
-
-use Pchp\Core\ImportValueAttribute;
 
 class App extends UxApplication
 {
@@ -20,8 +15,7 @@ class App extends UxApplication
     {
         //Desktop
         if ($this->IsClassicDesktopStyleApplicationLifetime()) {
-            $form1 = new Form1();
-            $this->ApplicationLifetime->MainWindow = $form1;
+            $this->ApplicationLifetime->MainWindow = new MainWindow();
         }
 
        //Mobile
@@ -32,9 +26,9 @@ class App extends UxApplication
         parent::OnFrameworkInitializationCompleted();
     }
 
-    public function InitializeComponent(): void
+    private function InitializeComponent(): void
     {
-         //\Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
+         //Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
          Load();
     }
   

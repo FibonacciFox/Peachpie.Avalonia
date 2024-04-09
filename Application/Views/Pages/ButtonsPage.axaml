@@ -1,0 +1,45 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+             xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Views.Pages.ButtonsPage">
+    <StackPanel>
+        <TextBlock Classes="Headline3" Margin="20">Buttons</TextBlock>
+        <TextBlock Classes="Headline7" Padding="20">Buttons</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <Button Classes="light" Content="Light" ToolTip.Tip="Button with classes &quot;Light&quot;" />
+            <Button Content="Mid (Default)" ToolTip.Tip="Regular button without any classes." />
+            <Button Classes="dark" Content="Dark" ToolTip.Tip="Button with classes &quot;Dark&quot;" />
+            <Button Classes="accent" Content="Accent" ToolTip.Tip="Button with classes &quot;Accent&quot;" />
+            <Button Content="Custom corner radius" ToolTip.Tip="Regular button with customized corner radius (16dp)." CornerRadius="16" />
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">Outline Buttons</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <Button Theme="{StaticResource MaterialOutlineButton}" Classes="light" Content="Light" ToolTip.Tip="Button with classes &quot;Light&quot; and &quot;Outline&quot;" />
+            <Button Theme="{StaticResource MaterialOutlineButton}" Content="Mid (Default)" ToolTip.Tip="Button with classes &quot;Outline&quot;" />
+            <Button Theme="{StaticResource MaterialOutlineButton}" Classes="dark" Content="Dark" ToolTip.Tip="Button with classes &quot;Dark&quot; and &quot;Outline&quot;" />
+            <Button Theme="{StaticResource MaterialOutlineButton}" Classes="accent" Content="Accent" ToolTip.Tip="Button with classes &quot;Accent&quot; and &quot;Outline&quot;" />
+            <Button Theme="{StaticResource MaterialOutlineButton}" Content="Custom corner radius" ToolTip.Tip="Outline button with customized corner radius (16dp)." CornerRadius="16" />
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">Floating button with icon</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <material:FloatingButton Classes="Light Mini"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Mini"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Dark Mini"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Accent Mini"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Light"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Dark"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton>
+            <material:FloatingButton Classes="Accent"><icons:MaterialIcon Kind="AccountPlus"/></material:FloatingButton> 
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">Flat Buttons</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <Button Theme="{StaticResource MaterialFlatButton}" Content="Default" ToolTip.Tip="Regular button with class &quot;Flat&quot;" />
+            <Button Theme="{StaticResource MaterialFlatButton}" Classes="accent" Content="Accent" ToolTip.Tip="Button with classes &quot;Accent&quot; and &quot;Flat&quot;" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>
+
