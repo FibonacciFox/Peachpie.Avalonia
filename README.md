@@ -1,5 +1,5 @@
 # Peachpie.Avalonia
-
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/6631c6a1-ac50-4f6c-8c40-f224cecf7d6f)
 ## Description
 
 The **Peachpie.Avalonia** library is a collection of user interface (UI) controls based on the Avalonia UI framework that can be easily used in the PHP language. This library enables PHP developers to create modern cross-platform applications with a rich user interface, harnessing the power and flexibility of Avalonia UI.
@@ -30,7 +30,9 @@ The **Peachpie.Avalonia** library is a powerful tool for developers looking to u
 
 Библиотека **Peachpie.Avalonia** является мощным инструментом для разработчиков, желающих использовать PHP для создания кросс-платформенных приложений с современным и привлекательным пользовательским интерфейсом. С ее помощью вы можете легко интегрировать Avalonia UI в ваши проекты на PHP и создавать приложения, которые работают на разных операционных системах.
 
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/cbb31e39-e54e-48d9-81ac-0b187f7fa250)
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/f350c46c-27e8-4d86-8c10-6e8a632c97d6)
+## A demo application using the library Material.Avalonia
 
-  
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/da3395cf-4317-437a-abe0-808438aa6e24)
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/29a259c1-9657-4d6f-88f8-e5e7b21fc95f)
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/1f2f289f-f51c-48e4-bcac-220fec2f420a)
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/27591571-2b0a-456c-979a-b6745f759d58)
