@@ -1,0 +1,12 @@
+<?php
+
+enum ActivityControl
+{
+	
+	case EVENT_ACTIVITY_CTRL_GET_ID = '1';
+	case EVENT_ACTIVITY_CTRL_SET_ID = '2';
+	case EVENT_ACTIVITY_CTRL_CREATE_ID = '3';
+	case EVENT_ACTIVITY_CTRL_GET_SET_ID = '4';
+	case EVENT_ACTIVITY_CTRL_CREATE_SET_ID = '5';
+
+}

@@ -1,0 +1,7 @@
+<?php
+
+enum CompositionContainerVisualChangedFields
+{
+	
+
+}

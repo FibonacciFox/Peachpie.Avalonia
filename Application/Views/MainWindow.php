@@ -6,9 +6,7 @@ namespace Views {
     use Avalonia\Input\TappedEventArgs;
     use Avalonia\Layout\HorizontalAlignment;
     use Avalonia\Layout\VerticalAlignment;
-    use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxContentControl;
-    use Peachpie\Avalonia\Controls\UxStackPanel;
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Views\Pages\ButtonsPage;
@@ -31,6 +29,7 @@ namespace Views {
             $this->ItemMenu = $this->FindByName("ItemMenu");
 
             $this->PageView->Content = new HomePage();
+
         }
 
         public function ItemMenu_OnTapped(object $sender, TappedEventArgs $e) : void {
