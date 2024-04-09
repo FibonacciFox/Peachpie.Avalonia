@@ -29,7 +29,6 @@ namespace Views {
             $this->ItemMenu = $this->FindByName("ItemMenu");
 
             $this->PageView->Content = new HomePage();
-
         }
 
         public function ItemMenu_OnTapped(object $sender, TappedEventArgs $e) : void {
