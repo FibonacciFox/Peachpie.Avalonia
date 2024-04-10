@@ -5,7 +5,7 @@ namespace Peachpie\Avalonia\Collections;
 
 use Closure;
 use Peachpie\Avalonia\Core\Collections\AvaloniaObjectList;
-use Peachpie\Avalonia\Core\EventsTraitExtension;
+use Peachpie\Avalonia\Core\Extension\Event;
 
 
 /**
@@ -105,6 +105,6 @@ class UxList extends AvaloniaObjectList
      * @return void
      */
     public function onCollectionChanged(Closure $callback) : void {
-        EventsTraitExtension::on($this, "CollectionChanged", $callback);
+        Event::on($this, "CollectionChanged", $callback , "CollectionChanged");
     }
 }
