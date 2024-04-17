@@ -4,8 +4,11 @@ namespace Views {
 
     use Avalonia\DevToolsExtensions;
     use Avalonia\Input\TappedEventArgs;
+    use Avalonia\Interactivity\RoutedEventArgs;
+    use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxContentControl;
     use Peachpie\Avalonia\Controls\UxListBox;
+    use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
@@ -24,13 +27,16 @@ namespace Views {
         public FieldsPage $FieldsPage;
         public ProgressIndicatorsPage $ProgressIndicatorsPage;
 
-
+        public UxToggleButton $BurgerButton;
 
         public function __construct()
         {
             $this->InitializeComponent();
+
             $this->PageView = $this->FindByName("PageView");
             $this->ItemMenu = $this->FindByName("ItemMenu");
+            $this->BurgerButton = $this->FindByName("BurgerButton");
+
 
             $this->HomePage = new HomePage();
             $this->ButtonsPage = new ButtonsPage();
@@ -38,10 +44,34 @@ namespace Views {
             $this->FieldsPage = new FieldsPage();
             $this->ProgressIndicatorsPage = new ProgressIndicatorsPage();
 
-
             $this->PageView->Content = $this->HomePage;
+
+            /**
+             * Testing events
+             */
+
+            $handler = function(){
+                $this->Title = "Anonymous function";
+            };
+
+
+            $this->BurgerButton->on('Click', $handler) ;
+            //$this->BurgerButton->on('Click', [$this, 'BurgerButton_onClickArgs'], 'BurgerButton_onClickArgs') ;
+            //$this->BurgerButton->on('Click', [$this, 'BurgerButton_onClick'], 'BurgerButton_onClick') ;
+
+
         }
 
+        public function BurgerButton_onClickArgs(UxToggleButton $sender, RoutedEventArgs $e): void
+        {
+            $this->Title = "BurgerButton_onClickArgs function";
+        }
+
+        public function BurgerButton_onClick($sender, $e): void
+        {
+            $this->Title = "BurgerButton_onClick function";
+        }
+        ####################################################
         public function ItemMenu_OnTapped(object $sender, TappedEventArgs $e) : void {
             switch ($this->ItemMenu->SelectedIndex) {
                 case 0:

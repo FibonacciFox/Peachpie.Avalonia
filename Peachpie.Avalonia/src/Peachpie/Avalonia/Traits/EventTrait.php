@@ -2,22 +2,20 @@
 
 namespace Peachpie\Avalonia\Traits;
 
-use Closure;
-use Avalonia\Controls\Control;
 use Peachpie\Avalonia\Core\Extension\Event;
 
 trait EventTrait
 {
 
     /**
-     * @param object|string|Control $eventType
-     * @param Closure $callback
-     * @param string $eventId
+     * @param string $event
+     * @param callable $handler
+     * @param string|null $eventId
      * @return void
      */
-    public function on( $eventType, Closure $callback , string $eventId): void
+    public function on(string $event, callable $handler , string $eventId = NULL): void
     {
-        Event::on($this, $eventType, $callback, $eventId);
+        Event::on($this, $event, $handler, $eventId);
     }
 
 

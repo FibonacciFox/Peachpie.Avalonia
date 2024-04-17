@@ -8,7 +8,6 @@ use Avalonia\AppBuilderDesktopExtensions;
 use Avalonia\AppBuilderExtension;
 use Avalonia\LoggingExtensions;
 
-
 $lifetime = new ClassicDesktopStyleApplicationLifetime();
 
 $lifetime->Args = null;
