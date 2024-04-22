@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17054"> <!-- Peachpie.NET.Sdk/1.2.0-r17395 -->
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17395"> <!-- Peachpie.NET.Sdk/1.2.0-r17395 -->
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <LangVersion>latest</LangVersion>
