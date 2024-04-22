@@ -7,7 +7,6 @@ using Pchp.Core;
 
 namespace Peachpie.Avalonia.Core.Collections;
 
-[PhpHidden]
 public class ObservableDictionary<TKey, TValue> : IDictionary<TKey, TValue>, INotifyCollectionChanged, INotifyPropertyChanged
     where TKey : notnull
     where TValue : notnull

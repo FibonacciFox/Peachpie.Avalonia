@@ -5,8 +5,7 @@
                     xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
                     xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
                     xmlns:controls="using:Peachpie.Avalonia.Controls"
-                    xmlns:pages="using:Views.Pages"
-                    mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                    mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="700"
                     Icon="/Assets/icon.png"
                     x:Class="Views.MainWindow"
                     Title="Application">

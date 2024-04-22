@@ -3,9 +3,8 @@
                         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                         xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
-                        xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
                         xmlns:controls="using:Peachpie.Avalonia.Controls"
-                        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+                        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="650"
                         x:Class="Views.Pages.ProgressIndicatorsPage">
     <controls:UxStackPanel>
         <controls:UxTextBlock Classes="Headline3" Margin="20">Progress Indicators</controls:UxTextBlock>

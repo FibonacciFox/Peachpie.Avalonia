@@ -2,8 +2,8 @@
   <PropertyGroup>
     <Nullable>enable</Nullable>
     <AvaloniaVersion>11.0.10</AvaloniaVersion>
-    <PeachpieVersion>1.2.0-r17054</PeachpieVersion>
-    <TargetFrameworkVersion>net7.0</TargetFrameworkVersion>
+    <PeachpieVersion>1.2.0-r17054</PeachpieVersion> <!-- 1.2.0-r17395 -->
+    <TargetFrameworkVersion>net8.0</TargetFrameworkVersion>
     <PeachpieAvaloniaVersion>0.0.4-alpha</PeachpieAvaloniaVersion>
   </PropertyGroup>
 </Project>

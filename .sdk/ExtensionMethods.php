@@ -1,6 +1,10 @@
 <?php
 
-function Load(){
+/**
+ * Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
+ * @return void
+ */
+function Load() : void {
 
 }
 
@@ -10,6 +14,6 @@ function Load(){
  * @param mixed $message
  * @return void
  */
-function alert(mixed $message) : void{
+function alert(mixed $message) : void {
 
 }

@@ -7,7 +7,6 @@ class App extends UxApplication
 {
     public function __construct()
     {
-        //Сначала всегда инициализируем axaml.
         $this->InitializeComponent(); 
     }
 
@@ -28,7 +27,6 @@ class App extends UxApplication
 
     private function InitializeComponent(): void
     {
-         //Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
          Load();
     }
   

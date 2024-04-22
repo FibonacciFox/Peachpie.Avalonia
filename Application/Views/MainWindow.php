@@ -5,7 +5,6 @@ namespace Views {
     use Avalonia\DevToolsExtensions;
     use Avalonia\Input\TappedEventArgs;
     use Avalonia\Interactivity\RoutedEventArgs;
-    use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxContentControl;
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
@@ -46,32 +45,8 @@ namespace Views {
 
             $this->PageView->Content = $this->HomePage;
 
-            /**
-             * Testing events
-             */
-
-            $handler = function(){
-                $this->Title = "Anonymous function";
-            };
-
-
-            $this->BurgerButton->on('Click', $handler) ;
-            //$this->BurgerButton->on('Click', [$this, 'BurgerButton_onClickArgs'], 'BurgerButton_onClickArgs') ;
-            //$this->BurgerButton->on('Click', [$this, 'BurgerButton_onClick'], 'BurgerButton_onClick') ;
-
-
         }
 
-        public function BurgerButton_onClickArgs(UxToggleButton $sender, RoutedEventArgs $e): void
-        {
-            $this->Title = "BurgerButton_onClickArgs function";
-        }
-
-        public function BurgerButton_onClick($sender, $e): void
-        {
-            $this->Title = "BurgerButton_onClick function";
-        }
-        ####################################################
         public function ItemMenu_OnTapped(object $sender, TappedEventArgs $e) : void {
             switch ($this->ItemMenu->SelectedIndex) {
                 case 0:

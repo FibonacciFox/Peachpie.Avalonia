@@ -16,7 +16,7 @@ namespace Peachpie.Avalonia.Core.Extension
         {
             if (eventId == null)
             {
-                eventId = $"{eventName}:{targetObect.GetHashCode()}";
+                eventId = $"{eventName}:{eventHandler.GetHashCode()}";
             }
             
             if (CachedEventAll.TryGetValue(eventId, out _))

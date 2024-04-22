@@ -2,10 +2,13 @@
 
 namespace Peachpie\Avalonia
 {
-    use Peachpie\Avalonia\Application;
+
+    use Avalonia\Application;
+    use Avalonia\Controls\ApplicationLifetimes\IClassicDesktopStyleApplicationLifetime;
+    use Avalonia\Controls\ApplicationLifetimes\ISingleViewApplicationLifetime;
     use Peachpie\Avalonia\Traits\EventTrait;
-    use Peachpie\Avalonia\Traits\GetControlTrait;
-	/**
+
+    /**
 	 * UxApplication short summary.
 	 *
 	 * UxApplication description.
@@ -16,6 +19,21 @@ namespace Peachpie\Avalonia
 	class UxApplication extends Application
 	{
         use EventTrait;
-        use GetControlTrait;
+
+        public function IsClassicDesktopStyleApplicationLifetime() : bool
+        {
+            if($this->ApplicationLifetime instanceof IClassicDesktopStyleApplicationLifetime) {
+                return true;
+            }
+            return false;
+        }
+
+        public function IsSingleViewApplicationLifetime() : bool
+        {
+            if($this->ApplicationLifetime instanceof ISingleViewApplicationLifetime) {
+                return true;
+            }
+            return false;
+        }
 	}
 }

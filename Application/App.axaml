@@ -1,11 +1,10 @@
-<app:UxApplication xmlns="https://github.com/avaloniaui"
+<Application xmlns="https://github.com/avaloniaui"
                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                   xmlns:app="using:Peachpie.Avalonia"
                    xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
                    xmlns:materialIcons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
                    x:Class="App">
-    <app:UxApplication.Styles>
+    <Application.Styles>
         <themes:MaterialTheme BaseTheme='Dark' PrimaryColor="LightBlue" SecondaryColor="Blue"/>
         <materialIcons:MaterialIconStyles />
-    </app:UxApplication.Styles>
-</app:UxApplication>
+    </Application.Styles>
+</Application>

@@ -6,7 +6,6 @@ use Avalonia\Controls\ShutdownMode;
 
 use Avalonia\AppBuilderDesktopExtensions;
 use Avalonia\AppBuilderExtension;
-use Avalonia\LoggingExtensions;
 
 $lifetime = new ClassicDesktopStyleApplicationLifetime();
 

@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17054">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17054"> <!-- Peachpie.NET.Sdk/1.2.0-r17395 -->
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <LangVersion>latest</LangVersion>
@@ -27,5 +27,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
+      <_Parameter1>https://github.com/FibonacciFox/Peachpie.Avalonia</_Parameter1>
+      <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
+    </AssemblyAttribute>
   </ItemGroup>
 </Project>
