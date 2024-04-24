@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17406"> <!-- Peachpie.NET.Sdk/1.2.0-r17395 -->
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17406">
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <LangVersion>latest</LangVersion>
@@ -8,9 +8,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <Title>Peachpie.Avalonia</Title>
+    <Title>Peachpie.Avalonia.Controls</Title>
     <Authors>FibonacciFox</Authors>
-    <PackageId>Peachpie.Avalonia</PackageId>
+    <PackageId>Peachpie.Avalonia.Controls</PackageId>
     <PackageVersion>$(PeachpieAvaloniaVersion)</PackageVersion>
     <Description>
       The Peachpie.Avalonia library is a collection of user interface (UI) controls based on the Avalonia UI framework that can be easily used in the PHP language. 
@@ -26,11 +26,11 @@
     <Compile Include="**/*.php" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
+    <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
     <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
-      <_Parameter1>https://github.com/FibonacciFox/Peachpie.Avalonia</_Parameter1>
+      <_Parameter1>https://github.com/avaloniaui</_Parameter1>
       <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
     </AssemblyAttribute>
   </ItemGroup>
