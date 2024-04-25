@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Controls", "Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj", "{24CE10FE-1EA5-441E-99A9-19158242E720}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Base", "Peachpie.Base\Peachpie.Base.csproj", "{5343DFF1-F656-40C5-9E58-4274AC89AA40}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection

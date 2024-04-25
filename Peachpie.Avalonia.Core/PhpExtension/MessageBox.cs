@@ -7,7 +7,7 @@ using Pchp.Core;
 [assembly: PhpExtension]
 
 
-namespace Peachpie.Avalonia.Core.Extension;
+namespace Peachpie.Avalonia.Core.PhpExtension;
 
 public static class MessageBox
 {

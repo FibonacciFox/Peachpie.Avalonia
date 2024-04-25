@@ -2,14 +2,18 @@
 
 namespace Peachpie\Avalonia\Traits;
 use System\Type;
-use Peachpie\Avalonia\Core\Extension\BaseType;
+use Peachpie\Base\ObjectType;
 
 trait StyleKeyOverrideTrait
 {
 
+    /**
+     * Override a control's style key
+     * @return Type
+     */
     public function get_StyleKeyOverride() : Type
     {
-        return BaseType::Get($this);
+        return ObjectType::GetBaseType($this);
     }
 
 }
