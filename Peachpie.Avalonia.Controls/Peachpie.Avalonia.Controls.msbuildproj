@@ -1,34 +1,25 @@
 <Project Sdk="Peachpie.NET.Sdk/1.2.0-r17406">
+
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <LangVersion>latest</LangVersion>
-    <Platforms>AnyCPU</Platforms>
-    <OutputType>Library</OutputType>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <Title>Peachpie.Avalonia.Controls</Title>
-    <Authors>FibonacciFox</Authors>
+    <NoWarn>$(NoWarn);1591;8632</NoWarn>
+    <AssemblyName>Peachpie.Avalonia.Controls</AssemblyName>
     <PackageId>Peachpie.Avalonia.Controls</PackageId>
-    <PackageVersion>$(PeachpieAvaloniaVersion)</PackageVersion>
-    <Description>
-      The Peachpie.Avalonia library is a collection of user interface (UI) controls based on the Avalonia UI framework that can be easily used in the PHP language. 
-      This library enables PHP developers to create modern cross-platform applications with a rich user interface, harnessing the power and flexibility of Avalonia UI.
-    </Description>
-    <RepositoryUrl>
-      https://github.com/FibonacciFox/Peachpie.Avalonia
-    </RepositoryUrl>
-    <PackageTags>Avalonia;AvaloniaUI;PeachpieAvalonia;PeachpieAvaloniaUI</PackageTags>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>peachpie;peachpie-avalonia-controls;</PackageTags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
+    <RootNamespace>Peachpie.Avalonia.Controls</RootNamespace>
   </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
     <ProjectReference Include="..\Peachpie.Base\Peachpie.Base.csproj" />
   </ItemGroup>
+
   <ItemGroup>
     <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
       <_Parameter1>https://github.com/avaloniaui</_Parameter1>

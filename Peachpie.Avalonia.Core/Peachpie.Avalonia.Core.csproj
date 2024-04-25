@@ -1,34 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-        <LangVersion>preview</LangVersion>
-        <Platforms>AnyCPU</Platforms>
-        <OutputType>Library</OutputType>
-        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    </PropertyGroup>
-    <PropertyGroup>
-        <Title>Peachpie.Avalonia.Core</Title>
-        <Authors>FibonacciFox</Authors>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <AssemblyName>Peachpie.Avalonia.Core</AssemblyName>
         <PackageId>Peachpie.Avalonia.Core</PackageId>
-        <PackageVersion>$(PeachpieAvaloniaVersion)</PackageVersion>
-        <PackageTags>Avalonia;AvaloniaUI;PeachpieAvalonia;PeachpieAvaloniaUI</PackageTags>
-        <Description>
-            The 'Peachpie.Avalonia.Core' library provides support for the Avalonia UI framework within the PeachPie environment.
-            -It allows you to leverage the functionality of the Avalonia UI framework in applications developed using PeachPie.
-            -It serves as a bridge between the two frameworks, enabling the creation of cross-platform applications based on Avalonia UI and PeachPie.
-            -It provides a set of extension classes that simplify interaction with Avalonia UI controls, styles, and layouts from PHP code.
-        </Description>
-        <RepositoryUrl>
-            https://github.com/FibonacciFox/Peachpie.Avalonia
-        </RepositoryUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>peachpie;peachpie-avalonia-core;</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
+        <RootNamespace>Peachpie.Avalonia.Core</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)"/>
         <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
         <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
-        <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
+        <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)"/>
         <PackageReference Include="MessageBox.Avalonia" Version="3.1.5.1" />
     </ItemGroup>
 </Project>

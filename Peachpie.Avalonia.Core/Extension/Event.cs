@@ -10,7 +10,7 @@ namespace Peachpie.Avalonia.Core.Extension
     {
         private static readonly Dictionary<string, (RoutedEvent, EventHandler)> CachedEventAvalonia = new();
         
-        public static void On(Context ctx, Control? targetObect, RoutedEvent eventType, IPhpCallable eventHandler , string? eventId)
+        public static void Bind(Context ctx, Control? targetObect, RoutedEvent eventType, IPhpCallable eventHandler , string? eventId)
         {
             if (targetObect == null || CachedEventAvalonia.TryGetValue(eventId, out var _))
             {

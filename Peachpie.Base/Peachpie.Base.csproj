@@ -1,13 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <TargetFramework>net5.0</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <AssemblyName>Peachpie.Base</AssemblyName>
+        <PackageId>Peachpie.Base</PackageId>
+        <PackageTags>peachpie;base</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>A library that extends the capabilities of PeachPie</Description>
+        <RootNamespace>Peachpie.Base</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="PhpExtension\" />
-    </ItemGroup>
 </Project>
+

@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Pchp.Core;
 
@@ -60,6 +62,6 @@ public static class Event
             ?.Invoke(new object[] { handler.Target, handler.Method.MethodHandle.GetFunctionPointer() });
     }
     
-    private static readonly Dictionary<string, (EventInfo?, Delegate?)> CachedEventAll = new();
+    private static readonly Dictionary<string, (EventInfo, Delegate)> CachedEventAll = new();
 }
 

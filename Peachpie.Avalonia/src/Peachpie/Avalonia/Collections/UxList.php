@@ -105,6 +105,6 @@ class UxList extends AvaloniaObjectList
      * @return void
      */
     public function onCollectionChanged(Closure $callback) : void {
-        Event::on($this, "CollectionChanged", $callback , "CollectionChanged");
+        Event::bind($this, "CollectionChanged", $callback , "CollectionChanged");
     }
 }

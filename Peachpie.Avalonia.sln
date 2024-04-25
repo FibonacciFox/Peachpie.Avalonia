@@ -4,11 +4,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia", "Peachp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Core", "Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj", "{39539F17-A93F-4326-A578-BDD96B3FDC6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.msbuildproj", "{8F70B892-89D7-4196-8EAB-13D1F8F1F671}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Controls", "Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj", "{24CE10FE-1EA5-441E-99A9-19158242E720}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Base", "Peachpie.Base\Peachpie.Base.csproj", "{5343DFF1-F656-40C5-9E58-4274AC89AA40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{0191F172-8F65-4422-8F60-EF376C117165}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Samples\Application\Application.msbuildproj", "{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A2F46BD5-2304-4293-99DE-66B6F6DC1E57}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeachpieLibrary", "PeachpieLibrary", "{CD97F7F1-372D-47BE-977D-1AAF88BCD698}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharpLibrary", "SharpLibrary", "{295C327C-C2E5-4AD6-A825-FD8768B91DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +35,6 @@ Global
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.Build.0 = Release|Any CPU
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24CE10FE-1EA5-441E-99A9-19158242E720}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,7 +43,16 @@ Global
 		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5343DFF1-F656-40C5-9E58-4274AC89AA40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F} = {0191F172-8F65-4422-8F60-EF376C117165}
+		{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0} = {CD97F7F1-372D-47BE-977D-1AAF88BCD698}
+		{24CE10FE-1EA5-441E-99A9-19158242E720} = {CD97F7F1-372D-47BE-977D-1AAF88BCD698}
+		{39539F17-A93F-4326-A578-BDD96B3FDC6D} = {295C327C-C2E5-4AD6-A825-FD8768B91DCA}
+		{5343DFF1-F656-40C5-9E58-4274AC89AA40} = {295C327C-C2E5-4AD6-A825-FD8768B91DCA}
 	EndGlobalSection
 EndGlobal

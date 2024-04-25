@@ -1,3 +1,5 @@
+using System;
+
 namespace Peachpie.Base;
 
 public static class ObjectType
