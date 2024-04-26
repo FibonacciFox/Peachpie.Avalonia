@@ -4,11 +4,11 @@ namespace Views {
 
     use Avalonia\DevToolsExtensions;
     use Avalonia\Input\TappedEventArgs;
-    use Avalonia\Interactivity\RoutedEventArgs;
     use Peachpie\Avalonia\Controls\UxContentControl;
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
+    use Peachpie\Base\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
     use Views\Pages\FieldsPage;
@@ -44,6 +44,8 @@ namespace Views {
             $this->ProgressIndicatorsPage = new ProgressIndicatorsPage();
 
             $this->PageView->Content = $this->HomePage;
+
+            Logger::Info("Hello Peachpie Avalonia!");
 
         }
 
