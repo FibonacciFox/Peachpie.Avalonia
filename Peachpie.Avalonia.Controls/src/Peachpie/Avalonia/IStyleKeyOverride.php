@@ -11,5 +11,5 @@ interface IStyleKeyOverride
     /**
      * @return Type
      */
-    public function get_StyleKeyOverride() : Type;
+     public function get_StyleKeyOverride() : Type;
 }

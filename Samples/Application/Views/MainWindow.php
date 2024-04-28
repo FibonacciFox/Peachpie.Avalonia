@@ -9,6 +9,9 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Peachpie\Base\Output\Logger;
+    use System\Int32;
+    use System\String;
+    use System\Type;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
     use Views\Pages\FieldsPage;
@@ -25,6 +28,8 @@ namespace Views {
         public ColorZonePage $ColorZonePage;
         public FieldsPage $FieldsPage;
         public ProgressIndicatorsPage $ProgressIndicatorsPage;
+
+        private int $propertyName;
 
         public UxToggleButton $BurgerButton;
 

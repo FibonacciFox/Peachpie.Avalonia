@@ -16,4 +16,11 @@ trait StyleKeyOverrideTrait
         return ObjectType::GetBaseType($this);
     }
 
+    /**
+     * @return void
+     */
+    private function set_StyleKeyOverride(Type $value) : void {
+    
+    }
+
 }
