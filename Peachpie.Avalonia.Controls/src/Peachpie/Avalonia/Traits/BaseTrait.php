@@ -6,4 +6,5 @@ trait BaseTrait
 {
     use EventTrait;
     use GetControlTrait;
+    use PropertyTrait;
 }

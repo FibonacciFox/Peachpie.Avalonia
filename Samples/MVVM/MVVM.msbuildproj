@@ -1,0 +1,15 @@
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17449">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Program.php</StartupObject>
+    <TargetFramework>net8.0</TargetFramework>
+    <Description>My PHP MVVM App</Description>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="**/*.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+  </ItemGroup>
+</Project>
