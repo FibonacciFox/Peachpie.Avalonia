@@ -2,35 +2,32 @@
 
 namespace ViewModels;
 
-use Avalonia\Threading\DispatcherTimer;
-use Peachpie\Base\Output\Logger;
-use System\TimeSpan;
-
+use Models\TodoItem;
+use Services\Database;
+use Peachpie\Base\Collections\ObjectModel\ObservableCollection;
 class MainViewModel extends ViewModelBase
 {
-    private \System\String $name;
-    
+    private ObservableCollection $listItems;
+
     public function __construct()
     {
-      
-        DispatcherTimer::Run( action: function() : bool {
-            $this->set_Name("MVVM App - ".date("Y-m-d H:i:s"));
-            return true;
-        }, interval: TimeSpan::FromSeconds(1), priority: null);
-        
-    }
+        $database = new Database();
+        $this->listItems = new ObservableCollection();
 
-    public function get_Name() : \System\String {
-        return $this->name;
-    }
-
-    public function set_Name(\System\String $value) : void {
-        $this->name = $value;
-        $this->OnPropertyChanged("Name");
+        foreach ($database->GetItems() as $key => $value) {
+            $this->listItems->Add($value);
+        }
     }
 
     public function ButtonClickedCommand() : void
     {
-      $this->set_Name("ButtonClickedCommand");
+        $tditem = new TodoItem(date('d.m.Y H:i:s'), false);
+        $this->get_ListItems()->Add($tditem);
     }
+
+    public function get_ListItems() : ObservableCollection
+    {
+        return $this->listItems;
+    }
+
 }

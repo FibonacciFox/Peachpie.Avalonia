@@ -10,5 +10,16 @@
     <UxWindow.DataContext>
         <viewModels:MainViewModel/>
     </UxWindow.DataContext>
-    <UxButton HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding Name}" Command="{Binding ButtonClickedCommand}"/>
+    <StackPanel>
+        <ItemsControl ItemsSource="{Binding ListItems}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Margin="4"
+                              IsChecked="{Binding IsChecked}"
+                              Content="{Binding Description}"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <UxButton HorizontalAlignment="Center" VerticalAlignment="Center" Content="Add an Item" Command="{Binding ButtonClickedCommand}"/>
+    </StackPanel>
 </UxWindow>

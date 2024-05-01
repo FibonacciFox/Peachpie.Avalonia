@@ -6,12 +6,10 @@ namespace Views {
 
     class Main extends UxWindow
     {
-
         public function __construct()
         {
             $this->InitializeComponent();
         }
-
 
         //Не удаляйте метод, если используете разметку axaml
         public function InitializeComponent(): void
