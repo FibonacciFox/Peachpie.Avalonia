@@ -10,7 +10,8 @@ class ToDoListService
         return array(
             new TodoItem("Walk the dog"),
             new TodoItem("Buy some milk"),
-            new TodoItem("Learn Avalonia", true)
+            new TodoItem("Learn Avalonia", true),
+            new TodoItem("Learn PeachPie", false)
         );
     }
 }

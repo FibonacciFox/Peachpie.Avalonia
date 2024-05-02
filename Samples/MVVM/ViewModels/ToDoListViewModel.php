@@ -4,7 +4,6 @@ namespace ViewModels;
 
 use Peachpie\Base\Collections\ObjectModel\ObservableCollection;
 
-
 class ToDoListViewModel extends ViewModelBase
 {
     private ObservableCollection $listItems;
@@ -13,9 +12,7 @@ class ToDoListViewModel extends ViewModelBase
     {
         $this->listItems = new ObservableCollection();
 
-        foreach ($Items as $key => $value) {
-            $this->listItems->Add($value);
-        }
+        $this->listItems->SetAll($Items);
     }
 
     public function get_ListItems() : ObservableCollection
