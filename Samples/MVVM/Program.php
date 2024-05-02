@@ -17,6 +17,5 @@ AppPhpBuilder::Configure("App, MVVM")
     ->WithInterFont()
     ->LogToTrace()
     ->SetupWithLifetime($lifetime);
-    
- 
+
 $lifetime->Start(args: null);

@@ -2,9 +2,8 @@
 namespace {
 
     use Avalonia\Application;
-    use Peachpie\Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use ViewModels\MainViewModel;
-    use Views\Main;
+    use ViewModels\MainWindowViewModel;
+    use Views\MainWindow;
 
     class App extends Application
     {
@@ -15,11 +14,9 @@ namespace {
         }
 
         public function OnFrameworkInitializationCompleted() : void {
-
-            $main = new Main();
-            $main->DataContext = new MainViewModel();
+            $main = new MainWindow();
+            $main->DataContext = new MainWindowViewModel();
             $this->ApplicationLifetime->MainWindow = $main;
-
         }
 
         public function InitializeComponent(): void

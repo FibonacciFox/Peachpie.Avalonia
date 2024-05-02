@@ -4,7 +4,7 @@ namespace Services;
 
 use Models\TodoItem;
 
-class Database
+class ToDoListService
 {
     public function GetItems() : array {
         return array(

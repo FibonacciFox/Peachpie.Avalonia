@@ -2,7 +2,9 @@
 
 namespace ViewModels;
 
-class ViewModelBase extends \Peachpie\Base\Reactive\ReactiveObject
+use \Peachpie\Base\Reactive\ReactiveObject;
+
+class ViewModelBase extends ReactiveObject
 {
 
 }

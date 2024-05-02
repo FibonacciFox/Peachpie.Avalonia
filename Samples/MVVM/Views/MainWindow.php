@@ -4,7 +4,7 @@ namespace Views {
 
     use Peachpie\Avalonia\Controls\UxWindow;
 
-    class Main extends UxWindow
+    class MainWindow extends UxWindow
     {
         public function __construct()
         {
