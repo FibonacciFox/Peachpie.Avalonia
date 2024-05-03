@@ -2,7 +2,7 @@
 
 namespace ViewModels;
 
-use Peachpie\Base\Collections\ObjectModel\ObservableCollection;
+use Peachpie\Base\Collections\ObservableCollection;
 
 class ToDoListViewModel extends ViewModelBase
 {
@@ -11,7 +11,6 @@ class ToDoListViewModel extends ViewModelBase
     public function __construct( array $Items )
     {
         $this->listItems = new ObservableCollection();
-
         $this->listItems->SetAll($Items);
     }
 
@@ -19,5 +18,7 @@ class ToDoListViewModel extends ViewModelBase
     {
         return $this->listItems;
     }
+
+
 
 }

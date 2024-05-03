@@ -2,8 +2,6 @@
 
 namespace ViewModels;
 
-use Models\TodoItem;
-use Peachpie\Base\Output\Logger;
 use Services\ToDoListService;
 
 class MainWindowViewModel extends ViewModelBase
