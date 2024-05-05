@@ -12,5 +12,14 @@
     <ItemGroup>
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
+    
+    <!-- PHP SDK generation -->
+    <ItemGroup>
+        <Content Include="sdk/**/*.*">
+            <PackagePath>sdk</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+        <None Include="build\Peachpie.Base.targets" Pack="true" PackagePath="build" />
+    </ItemGroup>
+    
 </Project>
-

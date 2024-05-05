@@ -1,0 +1,8 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="CopyFiles" AfterTargets="Restore">
+        <ItemGroup>
+            <SourceFiles Include="$(MSBuildThisFileDirectory)..\sdk\**\*.*" />
+        </ItemGroup>
+        <Copy SourceFiles="@(SourceFiles)" DestinationFolder="$(ProjectDir)sdk\%(RecursiveDir)" />
+    </Target>
+</Project>

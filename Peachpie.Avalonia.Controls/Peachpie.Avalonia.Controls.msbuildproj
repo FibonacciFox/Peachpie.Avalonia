@@ -16,7 +16,6 @@
   
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
-    <ProjectReference Include="..\Peachpie.Base\Peachpie.Base.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,5 +23,12 @@
       <_Parameter1>https://github.com/avaloniaui</_Parameter1>
       <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <!-- PHP SDK generation -->
+  <ItemGroup>
+    <Content Include="src/**/*.*">
+      <PackagePath>sdk</PackagePath>
+    </Content>
   </ItemGroup>
 </Project>

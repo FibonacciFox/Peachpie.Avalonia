@@ -17,5 +17,12 @@
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
   </ItemGroup>
+
+  <!-- PHP SDK generation -->
+  <ItemGroup>
+    <Content Include="src/**/*.*">
+      <PackagePath>sdk</PackagePath>
+    </Content>
+  </ItemGroup>
   
 </Project>

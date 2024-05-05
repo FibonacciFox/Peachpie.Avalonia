@@ -19,6 +19,4 @@ class ToDoListViewModel extends ViewModelBase
         return $this->listItems;
     }
 
-
-
 }

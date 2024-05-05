@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A2F46BD5-2304-4293-99DE-66B6F6DC1E57}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
+		nuget.config = nuget.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeachpieLibrary", "PeachpieLibrary", "{CD97F7F1-372D-47BE-977D-1AAF88BCD698}"
