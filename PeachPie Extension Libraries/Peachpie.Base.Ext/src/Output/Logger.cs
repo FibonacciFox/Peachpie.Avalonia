@@ -1,6 +1,6 @@
 using System;
 
-namespace Peachpie.Base.Ext.Output;
+namespace Php.Output;
 
 public class Logger
 {

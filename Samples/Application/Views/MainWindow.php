@@ -8,10 +8,7 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
-    use Peachpie\Base\Ext\Output\Logger;
-    use System\Int32;
-    use System\String;
-    use System\Type;
+    use Php\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
     use Views\Pages\FieldsPage;
@@ -54,6 +51,7 @@ namespace Views {
 
         }
 
+        //look <UxListBox Name="ItemMenu" Tapped="ItemMenu_OnTapped" Background="Transparent"> MainWindow.axaml
         public function ItemMenu_OnTapped(object $sender, TappedEventArgs $e) : void {
             switch ($this->ItemMenu->SelectedIndex) {
                 case 0:
@@ -77,7 +75,8 @@ namespace Views {
         private function InitializeComponent(): void
         {
             Load();
-            //DevTools press F12
+
+            //DevTools press F12 Debug build
             DevToolsExtensions::AttachDevTools($this);
         }
     }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Reflection;
 using Pchp.Core;
 
-namespace Peachpie.Base.Ext.Listener;
+namespace Php.Listener;
 
 public static class Event
 {
-    public static void On(Context ctx, object targetObect, string eventName, IPhpCallable eventHandler,
+    public static void On(Context ctx, object targetObject, string eventName, IPhpCallable eventHandler,
         string? eventId = null)
     {
         if (eventId == null)
@@ -20,29 +20,29 @@ public static class Event
             throw new ArgumentException($"Event handler '{eventId}' already exists");
         }
 
-        var eventInfo = targetObect.GetType().GetEvent(eventName);
+        var eventInfo = targetObject.GetType().GetEvent(eventName);
         if (eventInfo == null)
         {
             throw new ArgumentException(
-                $"Event '{eventName}' not found on object of type '{targetObect?.GetType().Name}'");
+                $"Event '{eventName}' not found on object of type '{targetObject?.GetType().Name}'");
         }
 
         var handler = CreateHandler(ctx, eventHandler);
         var newDelegate = CreateDelegate(eventInfo.EventHandlerType, handler);
-        eventInfo.AddEventHandler(targetObect, newDelegate);
+        eventInfo.AddEventHandler(targetObject, newDelegate);
         CachedEventAll.Add(eventId, (eventInfo, newDelegate));
     }
     
-    public static void Off(object targetObect, string? eventId)
+    public static void Off(object targetObject, string? eventId)
     {
-        if (targetObect == null)
+        if (targetObject == null)
         {
-            throw new ArgumentException($"Event not found on object of type '{targetObect.GetType().Name}'");
+            throw new ArgumentException($"Event not found on object of type '{targetObject.GetType().Name}'");
         }
         
         if (CachedEventAll.TryGetValue(eventId, out var eventHandlerPairAll))
         {
-            eventHandlerPairAll.Item1?.RemoveEventHandler(targetObect, eventHandlerPairAll.Item2);
+            eventHandlerPairAll.Item1?.RemoveEventHandler(targetObject, eventHandlerPairAll.Item2);
             CachedEventAll.Remove(eventId);
         }
         else

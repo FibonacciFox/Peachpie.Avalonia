@@ -1,8 +1,8 @@
 <?php
 
 namespace Peachpie\Avalonia\Traits;
+use Php\ObjectType;
 use System\Type;
-use Peachpie\Base\Ext\ObjectType;
 
 trait StyleKeyOverrideTrait
 {
@@ -15,4 +15,5 @@ trait StyleKeyOverrideTrait
     {
         return ObjectType::GetBaseType($this);
     }
+
 }

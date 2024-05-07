@@ -2,18 +2,17 @@
 
 namespace Peachpie\Avalonia\Traits;
 
-use Peachpie\Base\Ext\Listener\Event;
+use Php\Listener\Event;
 
 trait EventTrait
 {
-
     /**
      * @param string $event
      * @param callable $handler
      * @param string|null $eventId
      * @return void
      */
-    public function on(string $event, callable $handler , string $eventId = NULL): void
+    public function on(string $event, callable $handler , string $eventId = null): void
     {
         Event::on($this, $event, $handler, $eventId);
     }
@@ -27,5 +26,4 @@ trait EventTrait
     {
          Event::off($this, $eventId);
     }
-
 }

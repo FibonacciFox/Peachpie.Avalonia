@@ -1,6 +1,6 @@
 <?php
 
-namespace Peachpie\Base\Collections;
+namespace Php\Collections;
 
 use ArrayAccess;
 use Countable;
@@ -102,7 +102,74 @@ class ObservableCollection implements Iterator, Countable, ArrayAccess
     /**
      * @param array $Items
      */
-    public function SetAll(iterable $Items)
+    public function setAll(iterable $Items)
     {
     }
+
+    /**
+     * @return void
+     */
+    public function clear()
+    {
+    }
+
+    /**
+     * @param mixed $object
+     * @return void
+     */
+    public function add(mixed $object): void
+    {
+    }
+
+    /**
+     * @param mixed $object
+     * @return bool
+     */
+    public function contains(mixed $object) : bool
+    {
+    }
+
+    /**
+     * @param mixed $object
+     * @return int
+     */
+    public function indexOf(mixed $object) : int
+    {
+    }
+
+    /**
+     * @param int $index
+     * @param mixed $object
+     * @return int
+     */
+    public function insert(int $index, mixed $object): int
+    {
+    }
+
+    /**
+     * @param mixed $item
+     * @return bool
+     */
+    public function remove(mixed $item) : bool
+    {
+    }
+
+    /**
+     * @param int $index
+     * @return void
+     */
+    public function removeAt(int $index) : void
+    {
+    }
+
+    /**
+     * @param int $oldIndex
+     * @param int $newIndex
+     * @return void
+     */
+    public function move(int $oldIndex, int $newIndex) : void
+    {
+    }
+
+
 }

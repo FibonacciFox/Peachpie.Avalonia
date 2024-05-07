@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Peachpie.Base.Ext.Reactive;
+namespace Php.Reactive;
 
 public class ReactiveObject : INotifyPropertyChanged
 {

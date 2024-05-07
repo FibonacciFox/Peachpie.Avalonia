@@ -6,6 +6,7 @@
         <PackageTags>peachpie;base</PackageTags>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Description>A library that extends the capabilities of PeachPie</Description>
+        <RootNamespace>Php</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
@@ -18,6 +19,9 @@
             <PackageCopyToOutput>true</PackageCopyToOutput>
         </Content>
         <None Include="build\Peachpie.Base.Ext.targets" Pack="true" PackagePath="build" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="sdk\Php\" />
     </ItemGroup>
     
 </Project>

@@ -2,7 +2,8 @@
 
 namespace ViewModels;
 
-use Peachpie\Base\Ext\Collections\ObservableCollection;
+
+use Php\Collections\ObservableCollection;
 
 class ToDoListViewModel extends ViewModelBase
 {

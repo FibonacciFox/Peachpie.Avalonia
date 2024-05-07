@@ -2,7 +2,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Pchp.Core;
 
-namespace Peachpie.Base.Ext.Collections;
+namespace Php.Collections;
 
 public class ObservableCollection : ObservableCollection<object>, Iterator, ArrayAccess
 {
@@ -69,12 +69,7 @@ public class ObservableCollection : ObservableCollection<object>, Iterator, Arra
     {
         return offset.ToInt() >= 0 && offset.ToInt() < Count;
     }
-
-    public int count()
-    {
-        return Count;
-    }
-
+    
     public PhpArray toArray()
     {
         return new PhpArray(this.ToArray());

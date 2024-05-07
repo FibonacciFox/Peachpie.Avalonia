@@ -1,6 +1,6 @@
 using System;
 
-namespace Peachpie.Base.Ext;
+namespace Php;
 
 public static class ObjectType
 {
