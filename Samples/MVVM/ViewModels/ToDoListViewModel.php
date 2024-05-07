@@ -2,7 +2,7 @@
 
 namespace ViewModels;
 
-use Peachpie\Base\Collections\ObservableCollection;
+use Peachpie\Base\Ext\Collections\ObservableCollection;
 
 class ToDoListViewModel extends ViewModelBase
 {

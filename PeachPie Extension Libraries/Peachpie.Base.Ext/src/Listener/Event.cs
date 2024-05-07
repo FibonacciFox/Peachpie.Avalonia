@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Pchp.Core;
 
-namespace Peachpie.Base.Listener;
+namespace Peachpie.Base.Ext.Listener;
 
 public static class Event
 {
@@ -37,7 +37,7 @@ public static class Event
     {
         if (targetObect == null)
         {
-            throw new ArgumentException($"Event not found on object of type '{targetObect?.GetType().Name}'");
+            throw new ArgumentException($"Event not found on object of type '{targetObect.GetType().Name}'");
         }
         
         if (CachedEventAll.TryGetValue(eventId, out var eventHandlerPairAll))

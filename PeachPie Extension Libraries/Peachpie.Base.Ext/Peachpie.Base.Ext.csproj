@@ -2,24 +2,22 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
-        <AssemblyName>Peachpie.Base</AssemblyName>
-        <PackageId>Peachpie.Base</PackageId>
+        <PackageId>Peachpie.Base.Ext</PackageId>
         <PackageTags>peachpie;base</PackageTags>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Description>A library that extends the capabilities of PeachPie</Description>
-        <RootNamespace>Peachpie.Base</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
     
-    <!-- PHP SDK generation -->
+    <!-- PHP SDK Include -->
     <ItemGroup>
         <Content Include="sdk/**/*.*">
             <PackagePath>sdk</PackagePath>
             <PackageCopyToOutput>true</PackageCopyToOutput>
         </Content>
-        <None Include="build\Peachpie.Base.targets" Pack="true" PackagePath="build" />
+        <None Include="build\Peachpie.Base.Ext.targets" Pack="true" PackagePath="build" />
     </ItemGroup>
     
 </Project>

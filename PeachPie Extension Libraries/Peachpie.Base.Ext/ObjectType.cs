@@ -1,6 +1,6 @@
 using System;
 
-namespace Peachpie.Base;
+namespace Peachpie.Base.Ext;
 
 public static class ObjectType
 {

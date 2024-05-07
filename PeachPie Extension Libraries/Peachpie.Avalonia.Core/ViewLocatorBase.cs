@@ -1,7 +1,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Peachpie.Base.Reactive;
+using Peachpie.Base.Ext.Reactive;
 
 namespace Peachpie.Avalonia.Core;
 

@@ -9,7 +9,9 @@
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\..\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
   </ItemGroup>
+  
 </Project>

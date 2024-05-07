@@ -2,7 +2,7 @@
 
 namespace Peachpie\Avalonia\Traits;
 use System\Type;
-use Peachpie\Base\ObjectType;
+use Peachpie\Base\Ext\ObjectType;
 
 trait StyleKeyOverrideTrait
 {
@@ -15,12 +15,4 @@ trait StyleKeyOverrideTrait
     {
         return ObjectType::GetBaseType($this);
     }
-
-    /**
-     * @return void
-     */
-    private function set_StyleKeyOverride(Type $value) : void {
-    
-    }
-
 }

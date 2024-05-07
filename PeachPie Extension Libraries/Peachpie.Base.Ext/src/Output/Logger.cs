@@ -1,6 +1,6 @@
 using System;
 
-namespace Peachpie.Base.Output;
+namespace Peachpie.Base.Ext.Output;
 
 public class Logger
 {

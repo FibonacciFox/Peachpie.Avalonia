@@ -2,7 +2,7 @@
 
 namespace Peachpie\Avalonia\Traits;
 
-use Peachpie\Base\Listener\Event;
+use Peachpie\Base\Ext\Listener\Event;
 
 trait EventTrait
 {

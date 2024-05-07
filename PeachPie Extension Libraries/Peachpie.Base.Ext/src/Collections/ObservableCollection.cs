@@ -2,7 +2,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using Pchp.Core;
 
-namespace Peachpie.Base.Collections;
+namespace Peachpie.Base.Ext.Collections;
 
 public class ObservableCollection : ObservableCollection<object>, Iterator, ArrayAccess
 {

@@ -8,7 +8,7 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
-    use Peachpie\Base\Output\Logger;
+    use Peachpie\Base\Ext\Output\Logger;
     use System\Int32;
     use System\String;
     use System\Type;

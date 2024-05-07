@@ -2,29 +2,22 @@
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <NoWarn>$(NoWarn);1591;8632</NoWarn>
-    <AssemblyName>Peachpie.Avalonia.Controls</AssemblyName>
-    <PackageId>Peachpie.Avalonia.Controls</PackageId>
-    <PackageTags>peachpie;peachpie-avalonia-controls;</PackageTags>
+    <AssemblyName>Peachpie.Avalonia</AssemblyName>
+    <PackageId>Peachpie.Avalonia</PackageId>
+    <PackageTags>peachpie;peachpie-avalonia;</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
     <RootNamespace>Peachpie.Avalonia.Controls</RootNamespace>
   </PropertyGroup>
-
+  
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
+  </ItemGroup>
   
-  <ItemGroup>
-    <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
-      <_Parameter1>https://github.com/avaloniaui</_Parameter1>
-      <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
-    </AssemblyAttribute>
-  </ItemGroup>
-
   <!-- PHP SDK generation -->
   <ItemGroup>
     <Content Include="src/**/*.*">
