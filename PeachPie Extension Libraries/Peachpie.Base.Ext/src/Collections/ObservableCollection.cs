@@ -8,6 +8,24 @@ public class ObservableCollection : ObservableCollection<object>, Iterator, Arra
 {
     private int _position = 0;
 
+    public ObservableCollection() : base()
+    {
+        
+    }
+
+    public ObservableCollection(PhpArray phpArray)
+    {
+        if (phpArray.IntrinsicEnumerator == null)
+        {
+            return;
+        }
+        
+        foreach (var item in phpArray)
+        {
+            Add(item.Value.Alias);
+        }
+    }
+    
     public void SetAll(PhpArray phpArray)
     {
         if (phpArray.IntrinsicEnumerator == null)

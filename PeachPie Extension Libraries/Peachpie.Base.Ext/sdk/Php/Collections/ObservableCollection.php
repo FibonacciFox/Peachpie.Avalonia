@@ -10,6 +10,11 @@ use Iterator;
 class ObservableCollection implements Iterator, Countable, ArrayAccess
 {
 
+    function __construct(iterable $Items = null)
+    {
+        
+    }
+    
     /**
      * @readonly
      * @var int

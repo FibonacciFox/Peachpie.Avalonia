@@ -11,8 +11,7 @@ class ToDoListViewModel extends ViewModelBase
 
     public function __construct( array $Items )
     {
-        $this->listItems = new ObservableCollection();
-        $this->listItems->SetAll($Items);
+        $this->listItems = new ObservableCollection($Items);
     }
 
     public function get_ListItems() : ObservableCollection
