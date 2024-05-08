@@ -20,8 +20,5 @@
         </Content>
         <None Include="build\Peachpie.Base.Ext.targets" Pack="true" PackagePath="build" />
     </ItemGroup>
-    <ItemGroup>
-      <Folder Include="sdk\Php\" />
-    </ItemGroup>
     
 </Project>

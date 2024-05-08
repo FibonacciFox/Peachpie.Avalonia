@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17449">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17515">
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <NoWarn>$(NoWarn);1591;8632</NoWarn>
@@ -7,7 +7,7 @@
     <PackageTags>peachpie;peachpie-avalonia;</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
-    <RootNamespace>Peachpie.Avalonia.Controls</RootNamespace>
+    <RootNamespace>Peachpie.Avalonia</RootNamespace>
   </PropertyGroup>
   
   <ItemGroup>
@@ -18,10 +18,4 @@
     <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
   </ItemGroup>
   
-  <!-- PHP SDK generation -->
-  <ItemGroup>
-    <Content Include="src/**/*.*">
-      <PackagePath>sdk</PackagePath>
-    </Content>
-  </ItemGroup>
 </Project>
