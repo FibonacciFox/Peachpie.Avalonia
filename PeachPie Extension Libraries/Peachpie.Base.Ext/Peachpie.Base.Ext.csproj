@@ -4,6 +4,7 @@
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
         <PackageId>Peachpie.Base.Ext</PackageId>
         <PackageTags>peachpie;base</PackageTags>
+        <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Description>A library that extends the capabilities of PeachPie</Description>
         <RootNamespace>Php</RootNamespace>
@@ -14,11 +15,10 @@
     
     <!-- PHP SDK Include -->
     <ItemGroup>
-        <Content Include="sdk/**/*.*">
-            <PackagePath>sdk</PackagePath>
+        <Content Include=".sdk/**/*.*">
+            <PackagePath>.sdk</PackagePath>
             <PackageCopyToOutput>true</PackageCopyToOutput>
         </Content>
-        <None Include="build\Peachpie.Base.Ext.targets" Pack="true" PackagePath="build" />
     </ItemGroup>
     
 </Project>

@@ -12,7 +12,6 @@ class ObservableCollection implements Iterator, Countable, ArrayAccess
 
     function __construct(iterable $Items = null)
     {
-        
     }
     
     /**
@@ -168,6 +167,9 @@ class ObservableCollection implements Iterator, Countable, ArrayAccess
     }
 
     /**
+     * 
+     * 
+     * 
      * @param int $oldIndex
      * @param int $newIndex
      * @return void

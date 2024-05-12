@@ -26,8 +26,6 @@ namespace Views {
         public FieldsPage $FieldsPage;
         public ProgressIndicatorsPage $ProgressIndicatorsPage;
 
-        private int $propertyName;
-
         public UxToggleButton $BurgerButton;
 
         public function __construct()
@@ -75,9 +73,12 @@ namespace Views {
         private function InitializeComponent(): void
         {
             Load();
-
-            //DevTools press F12 Debug build
-            DevToolsExtensions::AttachDevTools($this);
+            
+            if ( defined('DEBUG') ) {
+                Logger::Info("Debug Build!");
+                //DevTools press F12 Debug build
+                DevToolsExtensions::AttachDevTools($this);
+            }
         }
     }
 

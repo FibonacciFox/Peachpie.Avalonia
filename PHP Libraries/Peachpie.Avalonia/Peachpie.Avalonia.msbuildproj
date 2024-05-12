@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17515">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17532">
   <PropertyGroup>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <NoWarn>$(NoWarn);1591;8632</NoWarn>
@@ -17,5 +17,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
   </ItemGroup>
-  
+
+  <!-- PHP SDK generation -->
+  <ItemGroup>
+    <Content Include="src/**/*.*">
+      <PackagePath>.sdk</PackagePath>
+    </Content>
+  </ItemGroup>
 </Project>
