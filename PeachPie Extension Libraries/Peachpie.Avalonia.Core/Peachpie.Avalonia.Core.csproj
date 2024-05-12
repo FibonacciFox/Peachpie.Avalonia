@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <AssemblyName>Peachpie.Avalonia.Core</AssemblyName>
+        <PackageId>Peachpie.Avalonia.Core</PackageId>
+        <PackageTags>peachpie;peachpie-avalonia-core;</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
+        <RootNamespace>Peachpie.Avalonia.Core</RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Desktop" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="MessageBox.Avalonia" Version="3.1.5.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Peachpie.Base.Ext\Peachpie.Base.Ext.csproj" />
+    </ItemGroup>
+</Project>

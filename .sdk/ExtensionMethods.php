@@ -1,6 +1,7 @@
 <?php
 
 /**
+ * Loads the XAML into a Avalonia component.
  * Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
  * @return void
  */

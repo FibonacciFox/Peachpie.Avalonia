@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <PackageId>PhpSdkSync</PackageId>
+        <PackageTags>php;sdk;sync</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>The library synchronizes PHP stubs from Nuget libraries with the project root directory.</Description>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="build\PhpSdkSync.targets" Pack="true" PackagePath="build" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.9.5" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+</Project>

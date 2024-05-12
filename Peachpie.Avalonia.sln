@@ -1,10 +1,30 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia", "Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj", "{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{0191F172-8F65-4422-8F60-EF376C117165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Core", "Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj", "{39539F17-A93F-4326-A578-BDD96B3FDC6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Samples\Application\Application.msbuildproj", "{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.msbuildproj", "{8F70B892-89D7-4196-8EAB-13D1F8F1F671}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A2F46BD5-2304-4293-99DE-66B6F6DC1E57}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM", "Samples\MVVM\MVVM.msbuildproj", "{A37BD3B3-A95D-420F-8B3F-351CB1954383}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PHP Libraries", "PHP Libraries", "{B22CAE32-C023-4097-8863-974943AEFA9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeachPie Extension Libraries", "PeachPie Extension Libraries", "{76F04F62-A72F-490A-8806-C5E3B4F18B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Core", "PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj", "{592C31E9-A053-4E86-BBEC-ED1308D8608B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Base.Ext", "PeachPie Extension Libraries\Peachpie.Base.Ext\Peachpie.Base.Ext.csproj", "{1AFE5BD4-74A9-4C56-B45D-EF8757742953}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia.Controls", "PHP Libraries\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj", "{533F9D4C-1004-4E59-96FA-9D5B925A7E7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peachpie.Avalonia", "PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj", "{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhpSdkSync", "PeachPie Extension Libraries\PhpSdkSync\PhpSdkSync.csproj", "{A2396816-DCE6-4D7E-928B-C81F59ACA5F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,19 +32,42 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEB77A97-94FB-4001-9D9F-8CF9019F1BD0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39539F17-A93F-4326-A578-BDD96B3FDC6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F70B892-89D7-4196-8EAB-13D1F8F1F671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A37BD3B3-A95D-420F-8B3F-351CB1954383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A37BD3B3-A95D-420F-8B3F-351CB1954383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A37BD3B3-A95D-420F-8B3F-351CB1954383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A37BD3B3-A95D-420F-8B3F-351CB1954383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592C31E9-A053-4E86-BBEC-ED1308D8608B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592C31E9-A053-4E86-BBEC-ED1308D8608B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592C31E9-A053-4E86-BBEC-ED1308D8608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592C31E9-A053-4E86-BBEC-ED1308D8608B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AFE5BD4-74A9-4C56-B45D-EF8757742953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AFE5BD4-74A9-4C56-B45D-EF8757742953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AFE5BD4-74A9-4C56-B45D-EF8757742953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AFE5BD4-74A9-4C56-B45D-EF8757742953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533F9D4C-1004-4E59-96FA-9D5B925A7E7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533F9D4C-1004-4E59-96FA-9D5B925A7E7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533F9D4C-1004-4E59-96FA-9D5B925A7E7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533F9D4C-1004-4E59-96FA-9D5B925A7E7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2396816-DCE6-4D7E-928B-C81F59ACA5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2396816-DCE6-4D7E-928B-C81F59ACA5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2396816-DCE6-4D7E-928B-C81F59ACA5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2396816-DCE6-4D7E-928B-C81F59ACA5F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{3D0D7BED-9DCA-414F-8322-EE2B5DDFB28F} = {0191F172-8F65-4422-8F60-EF376C117165}
+		{A37BD3B3-A95D-420F-8B3F-351CB1954383} = {0191F172-8F65-4422-8F60-EF376C117165}
+		{592C31E9-A053-4E86-BBEC-ED1308D8608B} = {76F04F62-A72F-490A-8806-C5E3B4F18B08}
+		{1AFE5BD4-74A9-4C56-B45D-EF8757742953} = {76F04F62-A72F-490A-8806-C5E3B4F18B08}
+		{533F9D4C-1004-4E59-96FA-9D5B925A7E7B} = {B22CAE32-C023-4097-8863-974943AEFA9B}
+		{77BB1A20-A66A-4A5E-A59C-1552D6A2F04A} = {B22CAE32-C023-4097-8863-974943AEFA9B}
+		{A2396816-DCE6-4D7E-928B-C81F59ACA5F9} = {76F04F62-A72F-490A-8806-C5E3B4F18B08}
 	EndGlobalSection
 EndGlobal
