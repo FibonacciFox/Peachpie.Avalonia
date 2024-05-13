@@ -155,8 +155,7 @@ $this->textblock1 = $this->FindByName("textblock1");
 $this->Text = "Hello";
 
 ## A demo application using the library Material.Avalonia
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/6631c6a1-ac50-4f6c-8c40-f224cecf7d6f)
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/da3395cf-4317-437a-abe0-808438aa6e24)
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/29a259c1-9657-4d6f-88f8-e5e7b21fc95f)
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/1f2f289f-f51c-48e4-bcac-220fec2f420a)
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/27591571-2b0a-456c-979a-b6745f759d58)
+
+
+![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/45de92b3-a425-4bb7-9cde-046877bb2602)
+
