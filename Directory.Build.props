@@ -4,7 +4,7 @@
     <!-- version -->
     <AvaloniaVersion>11.0.10</AvaloniaVersion>
     <PeachpieVersion>1.2.0-r17582</PeachpieVersion>
-    <Version Condition=" '$(Version)'=='' ">1.0.16-dev</Version>
+    <Version Condition=" '$(Version)'=='' ">1.0.17-dev</Version>
     <PackageVersion>$(Version)</PackageVersion>
     <TargetFrameworkVersion>net8.0</TargetFrameworkVersion>
 
