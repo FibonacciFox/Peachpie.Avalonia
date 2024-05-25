@@ -1,0 +1,19 @@
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17582">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <StartupObject>Program.php</StartupObject>
+    <TargetFramework>net8.0</TargetFramework>
+    <Description>ThreadsApp</Description>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Include="**/*.php"/>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+  </ItemGroup>
+
+</Project>

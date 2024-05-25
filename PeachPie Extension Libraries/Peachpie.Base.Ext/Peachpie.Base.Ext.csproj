@@ -10,6 +10,7 @@
         <RootNamespace>Php</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
+        <PackageReference Include="Peachpie.Library" Version="1.2.0-r17582" />
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
     
