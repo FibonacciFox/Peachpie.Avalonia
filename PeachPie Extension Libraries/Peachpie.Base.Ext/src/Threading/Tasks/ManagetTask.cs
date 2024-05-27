@@ -1,6 +1,8 @@
+
 using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Pchp.Core;
 
 namespace Php.Threading.Tasks
 {
@@ -15,30 +17,58 @@ namespace Php.Threading.Tasks
         public bool IsPaused => _isPaused;
         public bool IsStarted => _isStarted;
 
-        public ManagedTask(Action<CancellationToken, AutoResetEvent> action)
+        public event EventHandler<TaskCompletedEventArgs> TaskCompleted;
+
+        private CancellationTokenSource _cancellationTokenSource;
+        private AutoResetEvent _pauseEvent;
+        private Context _ctx;
+        private IPhpCallable _action;
+        private Task _task;
+        private bool _isStarted;
+        private bool _isPaused;
+
+        public ManagedTask(Context ctx, IPhpCallable callable)
         {
-            _action = action;
+            _ctx = ctx ?? throw new ArgumentNullException(nameof(ctx));
+            _action = callable ?? throw new ArgumentNullException(nameof(callable));
             _cancellationTokenSource = new CancellationTokenSource();
             _pauseEvent = new AutoResetEvent(true);
             _isStarted = false;
-            _task = CreateNewTask(); 
+            _isPaused = false;
+            _task = CreateNewTask();
         }
 
         private Task CreateNewTask()
         {
-            return new Task(() => InnerInvoke(), _cancellationTokenSource.Token, TaskCreationOptions.LongRunning);
+            return new Task(() => 
+            {
+                var result = InnerInvoke();
+                OnTaskCompleted(new TaskCompletedEventArgs(Id, result));
+            }, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning);
         }
 
-        private void InnerInvoke()
+        private object InnerInvoke()
         {
             try
             {
-                _action(_cancellationTokenSource.Token, _pauseEvent);
+                return _action.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token), PhpValue.FromClass(_pauseEvent)).ToClr();
             }
             catch (OperationCanceledException)
             {
                 // Handle cancellation
+                return null;
             }
+            catch (Exception ex)
+            {
+                // Log the critical error and rethrow the exception to crash the program
+                Console.Error.WriteLine($"Critical error in task {Id}: {ex.Message} - {ex.HelpLink}");
+                throw;
+            }
+        }
+
+        protected virtual void OnTaskCompleted(TaskCompletedEventArgs e)
+        {
+            TaskCompleted?.Invoke(this, e);
         }
 
         public void Start()
@@ -54,12 +84,18 @@ namespace Php.Threading.Tasks
             }
             else if (_task.Status == TaskStatus.Canceled || _task.Status == TaskStatus.Faulted || _task.Status == TaskStatus.RanToCompletion)
             {
-                _cancellationTokenSource = new CancellationTokenSource();
-                _task = CreateNewTask();
-                _task.Start();
+                RestartTask();
             }
 
             _isStarted = true;
+        }
+
+        private void RestartTask()
+        {
+            _cancellationTokenSource.Dispose();
+            _cancellationTokenSource = new CancellationTokenSource();
+            _task = CreateNewTask();
+            _task.Start();
         }
 
         public void Pause()
@@ -88,12 +124,5 @@ namespace Php.Threading.Tasks
             _cancellationTokenSource.Dispose();
             _pauseEvent.Dispose();
         }
-
-        private CancellationTokenSource _cancellationTokenSource;
-        private AutoResetEvent _pauseEvent;
-        private Action<CancellationToken, AutoResetEvent> _action;
-        private Task _task;
-        private bool _isStarted;
-        private bool _isPaused;
     }
 }

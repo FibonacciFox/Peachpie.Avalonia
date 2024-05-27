@@ -12,5 +12,6 @@
                 <UxButton Name="button_pause_resume" Content="Pause ManagedTask"/>
             </StackPanel>
             <UxTextBlock Name="textblock1" Text="$x value: 0"/>
+            <UxImage Width="64" Height="64"  Name="image1"/>
 </StackPanel>
 </Window>
