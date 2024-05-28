@@ -17,13 +17,13 @@ namespace Php.Threading.Tasks
         public bool IsPaused => _isPaused;
         public bool IsStarted => _isStarted;
 
-        public event EventHandler<TaskCompletedEventArgs> TaskCompleted;
+        public event EventHandler<ManagedTaskEventArgs> Completed;
 
         private CancellationTokenSource _cancellationTokenSource;
         private AutoResetEvent _pauseEvent;
         private Context _ctx;
         private IPhpCallable _action;
-        private Task _task;
+        private Task<object> _task;
         private bool _isStarted;
         private bool _isPaused;
 
@@ -38,12 +38,13 @@ namespace Php.Threading.Tasks
             _task = CreateNewTask();
         }
 
-        private Task CreateNewTask()
+        private Task<object> CreateNewTask()
         {
-            return new Task(() => 
+            return new Task<object>(() =>
             {
                 var result = InnerInvoke();
-                OnTaskCompleted(new TaskCompletedEventArgs(Id, result));
+                OnCompleted(new ManagedTaskEventArgs(Id, result));
+                return result;
             }, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning);
         }
 
@@ -51,7 +52,8 @@ namespace Php.Threading.Tasks
         {
             try
             {
-                return _action.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token), PhpValue.FromClass(_pauseEvent)).ToClr();
+                return _action.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token),
+                    PhpValue.FromClass(_pauseEvent)).ToClr();
             }
             catch (OperationCanceledException)
             {
@@ -61,28 +63,28 @@ namespace Php.Threading.Tasks
             catch (Exception ex)
             {
                 // Log the critical error and rethrow the exception to crash the program
-                Console.Error.WriteLine($"Critical error in task {Id}: {ex.Message} - {ex.HelpLink}");
-                throw;
+                throw new ManagedTaskException($"Critical error in ManagedTask {Id}: {ex.Message} - {ex.HelpLink}");
             }
         }
 
-        protected virtual void OnTaskCompleted(TaskCompletedEventArgs e)
+        protected virtual void OnCompleted(ManagedTaskEventArgs e)
         {
-            TaskCompleted?.Invoke(this, e);
+            Completed?.Invoke(this, e);
         }
 
         public void Start()
         {
             if (_isStarted && _task.Status == TaskStatus.Running)
             {
-                throw new TaskAlreadyStartedException();
+                throw new ManagedTaskException("ManagedTask already started.");
             }
 
             if (_task.Status == TaskStatus.Created)
             {
                 _task.Start();
             }
-            else if (_task.Status == TaskStatus.Canceled || _task.Status == TaskStatus.Faulted || _task.Status == TaskStatus.RanToCompletion)
+            else if (_task.Status == TaskStatus.Canceled || _task.Status == TaskStatus.Faulted ||
+                     _task.Status == TaskStatus.RanToCompletion)
             {
                 RestartTask();
             }
@@ -93,7 +95,9 @@ namespace Php.Threading.Tasks
         private void RestartTask()
         {
             _cancellationTokenSource.Dispose();
+            _pauseEvent.Dispose();
             _cancellationTokenSource = new CancellationTokenSource();
+            _pauseEvent = new AutoResetEvent(true);
             _task = CreateNewTask();
             _task.Start();
         }
@@ -116,6 +120,33 @@ namespace Php.Threading.Tasks
             _pauseEvent.Set();
             _isStarted = false;
             _isPaused = false;
+        }
+
+        public void Wait()
+        {
+            _task.Wait();
+        }
+
+        public object GetResultSync()
+        {
+            return _task.Result;
+        }
+
+        public ManagedTask ContinueWith(IPhpCallable continuationAction)
+        {
+            var continuationTask = _task.ContinueWith(prevTask =>
+            {
+                var result = continuationAction.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token),
+                    PhpValue.FromClass(_pauseEvent), PhpValue.FromClr(prevTask.Result)).ToClr();
+                return result;
+            }, _cancellationTokenSource.Token, TaskContinuationOptions.LongRunning, TaskScheduler.Current);
+
+            return new ManagedTask(_ctx, continuationAction)
+            {
+                _task = continuationTask,
+                _cancellationTokenSource = _cancellationTokenSource,
+                _pauseEvent = _pauseEvent
+            };
         }
 
         public void Dispose()

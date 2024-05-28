@@ -9,6 +9,7 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Php\Threading\Tasks\ManagedTask;
+    use Php\Threading\Tasks\ManagedTaskEventArgs;
     use System\Net\Http\HttpClient;
     use System\Threading\AutoResetEvent;
     use System\Threading\CancellationToken;
@@ -37,11 +38,20 @@ namespace Views {
 
             $managedTask = new ManagedTask([$this, 'Load']);
 
-            $managedTask->TaskCompleted->add(function ($sender, $e) {
+            $continuedTask = $managedTask->ContinueWith([$this, 'RunContinuation']);
+
+            $managedTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e) {
                 Logger::Info("Task $e->TaskId completed with result: " . $e->Result);
 
                 Dispatcher::$UIThread->Post(function() use ($e) {
                     $this->image1->Source = $e->Result;
+                });
+            });
+
+            $continuedTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e) {
+                Logger::Info("Continuation task $e->TaskId completed with result: " . $e->Result);
+                Dispatcher::$UIThread->Post(function() use ($e) {
+                    $this->textblock1->Text = 'Continuation task result: ' . $e->Result;
                 });
             });
 
@@ -81,7 +91,6 @@ namespace Views {
 
                 try {
                     $this->x++;
-                    $btn = new UxButton();
                     // Start the job on the UI thread and return immediately.
                     Dispatcher::$UIThread->Post(function () {
                         $this->textblock1->Text = '$x value: ' . $this->x;
@@ -107,7 +116,33 @@ namespace Views {
             $response->EnsureSuccessStatusCode();
 
             $stream = $response->Content->ReadAsStreamAsync()->Result;
+
+            $httpClient->Dispose();
+
             return new Bitmap($stream);
+        }
+
+        public function RunContinuation(CancellationToken $cancellationToken, AutoResetEvent $autoResetEvent, $previousResult): string
+        {
+            while (!$cancellationToken->IsCancellationRequested) {
+                $autoResetEvent->WaitOne();
+                $this->mutex->WaitOne(); // Sync Task to access $this->x
+
+                try {
+                    $this->x++;
+                    // Start the job on the UI thread and return immediately.
+                    Dispatcher::$UIThread->Post(function () use ($previousResult) {
+                        $this->textblock1->Text = 'Continuation with previous result: ' . $previousResult . ' and new $x value: ' . $this->x;
+                    });
+                } finally {
+                    $this->mutex->ReleaseMutex();
+                }
+
+                $autoResetEvent->Set();
+                Logger::Warn("Continuation %%%%%%%%%%%%%%");
+                Thread::Sleep(500);
+            }
+            return 'Continuation result with $x value: ' . $this->x;
         }
 
         private function InitializeComponent(): void

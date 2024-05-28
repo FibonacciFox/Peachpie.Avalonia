@@ -59,13 +59,12 @@ class ManagedTask implements IDisposable
      */
     public function __construct(callable $runnable)
     {
-
     }
 
     /**
      * Starts the ManagedTask
      * @return void
-     * @throws TaskAlreadyStartedException
+     * @throws ManagedTaskException
      */
     public function start() : void {
     }
@@ -92,10 +91,30 @@ class ManagedTask implements IDisposable
     }
 
     /**
+     * Gets the result value of this ManagedTask.
+     * @return mixed
+     */
+    public function GetResultSync() : mixed
+    {
+
+    }
+
+
+/**
+     * @param callable $continuationAction
+     * @return ManagedTask
+     */
+    public function ContinueWith(callable $continuationAction) : ManagedTask
+    {
+        return new ManagedTask($continuationAction);
+    }
+
+    /**
      * Disposes the ManagedTask, releasing all of its unmanaged resources.
      * @return void
      */
     public function Dispose() : void {
+
     }
 
 }
