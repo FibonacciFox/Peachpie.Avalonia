@@ -42,12 +42,20 @@ namespace Php.Threading.Tasks
         {
             return new Task<object>(() =>
             {
-                var result = InnerInvoke();
-                OnCompleted(new ManagedTaskEventArgs(Id, result));
-                return result;
+                try
+                {
+                    var result = InnerInvoke();
+                    OnCompleted(new ManagedTaskEventArgs(Id, result));
+                    return result;
+                }
+                catch (ManagedTaskException ex)
+                {
+                    OnCompleted(new ManagedTaskEventArgs(Id, ex));
+                    throw;
+                }
             }, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning);
         }
-
+        
         private object InnerInvoke()
         {
             try
@@ -58,14 +66,15 @@ namespace Php.Threading.Tasks
             catch (OperationCanceledException)
             {
                 // Handle cancellation
-                return null;
+                throw new ManagedTaskException("Task was cancelled.");
             }
             catch (Exception ex)
             {
-                // Log the critical error and rethrow the exception to crash the program
-                throw new ManagedTaskException($"Critical error in ManagedTask {Id}: {ex.Message} - {ex.HelpLink}");
+                // Throw a ManagedTaskException to indicate a critical error
+                throw new ManagedTaskException($"Critical error in ManagedTask {Id}: {ex.Message}", ex.HResult);
             }
         }
+
 
         protected virtual void OnCompleted(ManagedTaskEventArgs e)
         {
@@ -144,8 +153,8 @@ namespace Php.Threading.Tasks
             return new ManagedTask(_ctx, continuationAction)
             {
                 _task = continuationTask,
-                _cancellationTokenSource = _cancellationTokenSource,
-                _pauseEvent = _pauseEvent
+                _cancellationTokenSource = new CancellationTokenSource(),
+                _pauseEvent = new AutoResetEvent(true)
             };
         }
 

@@ -4,12 +4,14 @@ namespace Views {
 
     use Avalonia\Media\Imaging\Bitmap;
     use Avalonia\Threading\Dispatcher;
+    use Exception;
     use Peachpie\Avalonia\Controls\UxButton;
     use Peachpie\Avalonia\Controls\UxImage;
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Php\Threading\Tasks\ManagedTask;
     use Php\Threading\Tasks\ManagedTaskEventArgs;
+    use Php\Threading\Tasks\ManagedTaskException;
     use System\Net\Http\HttpClient;
     use System\Threading\AutoResetEvent;
     use System\Threading\CancellationToken;
@@ -17,46 +19,72 @@ namespace Views {
     use System\Threading\Mutex;
     use System\Threading\Thread;
 
+    // Главный класс окна приложения, унаследованный от UxWindow
     class MainWindow extends UxWindow
     {
-        public int $x = 1;
-        private Mutex $mutex;
+        public int $x = 1;  // Переменная для хранения состояния
+        private Mutex $mutex;  // Мьютекс для синхронизации потоков
 
-        public UxButton $button_start;
-        public UxButton $button_pause_resume;
-        public UxTextBlock $textblock1;
-        public UxImage $image1;
+        public UxButton $button_start;  // Кнопка для запуска и остановки задачи
+        public UxButton $button_pause_resume;  // Кнопка для паузы и возобновления задачи
+        public UxTextBlock $textblock1;  // Текстовый блок для отображения результатов
+        public UxImage $image1;  // Изображение для отображения результатов
 
+        // Конструктор класса MainWindow
         public function __construct()
         {
             $this->InitializeComponent();
 
+            // Находим элементы управления по их именам
             $this->button_start = $this->FindByName("button_start");
             $this->button_pause_resume = $this->FindByName("button_pause_resume");
             $this->textblock1 = $this->FindByName("textblock1");
             $this->image1 = $this->FindByName("image1");
 
+            // Создаем и настраиваем ManagedTask для загрузки изображения
             $managedTask = new ManagedTask([$this, 'Load']);
 
+            // Создаем задачу-продолжение для обработки результата первой задачи
             $continuedTask = $managedTask->ContinueWith([$this, 'RunContinuation']);
 
+            // Обработчик завершения первой задачи
             $managedTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e) {
                 Logger::Info("Task $e->TaskId completed with result: " . $e->Result);
 
-                Dispatcher::$UIThread->Post(function() use ($e) {
-                    $this->image1->Source = $e->Result;
-                });
+                // Проверяем, является ли результат исключением
+                if ($e->Result instanceof ManagedTaskException) {
+                    Logger::Error("Task error: " . $e->Result->getMessage());
+                    Dispatcher::$UIThread->Post(function() use ($e) {
+                        $this->textblock1->Text = 'Task error: ' . $e->Result->getMessage();
+                    });
+                } else {
+                    Dispatcher::$UIThread->Post(function() use ($e) {
+                        $this->image1->Source = $e->Result;
+                    });
+                }
             });
 
+            // Обработчик завершения задачи-продолжения
             $continuedTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e) {
                 Logger::Info("Continuation task $e->TaskId completed with result: " . $e->Result);
-                Dispatcher::$UIThread->Post(function() use ($e) {
-                    $this->textblock1->Text = 'Continuation task result: ' . $e->Result;
-                });
+
+                // Проверяем, является ли результат исключением
+                if ($e->Result instanceof ManagedTaskException) {
+                    Logger::Error("Continuation task error: " . $e->Result->getMessage());
+                    Dispatcher::$UIThread->Post(function() use ($e) {
+                        $this->textblock1->Text = 'Continuation task error: ' . $e->Result->getMessage();
+                    });
+                } else {
+                    Dispatcher::$UIThread->Post(function() use ($e) {
+                        $this->textblock1->Text = 'Continuation task result: ' . $e->Result;
+                    });
+                }
             });
 
-            $this->mutex = new Mutex(); // Required for task synchronization
+            // Инициализация мьютекса
+            $this->mutex = new Mutex(); // Необходим для синхронизации задач
 
+            // Обработчик клика для кнопки "Start"
             $this->button_start->on("Click", function () use ($managedTask) {
                 if ($managedTask->IsStarted) {
                     $managedTask->Stop();
@@ -70,6 +98,7 @@ namespace Views {
                 }
             });
 
+            // Обработчик клика для кнопки "Pause/Resume"
             $this->button_pause_resume->on("Click", function () use ($managedTask) {
                 if (!$managedTask->IsPaused) {
                     $managedTask->Pause();
@@ -83,68 +112,60 @@ namespace Views {
             });
         }
 
-        public function Run(CancellationToken $cancellationToken, AutoResetEvent $autoResetEvent)
-        {
-            while (!$cancellationToken->IsCancellationRequested) {
-                $autoResetEvent->WaitOne();
-                $this->mutex->WaitOne(); // Sync Task to access $this->x
-
-                try {
-                    $this->x++;
-                    // Start the job on the UI thread and return immediately.
-                    Dispatcher::$UIThread->Post(function () {
-                        $this->textblock1->Text = '$x value: ' . $this->x;
-                    });
-                }
-
-                finally {
-                    $this->mutex->ReleaseMutex();
-                }
-
-                $autoResetEvent->Set();
-                Logger::Warn("%%%%%%%%%%%%%%");
-                Thread::Sleep(500);
-            }
-
-        }
-
+        // Метод для загрузки изображения
         public function Load(CancellationToken $cancellationToken, AutoResetEvent $autoResetEvent) : Bitmap
         {
             $httpClient = new HttpClient();
 
-            $response = $httpClient->GetAsync("https://www.kindpng.com/picc/m/748-7482253_pixel-icon-hd-png-download.png")->Result;
-            $response->EnsureSuccessStatusCode();
+            try {
+                // Загружаем изображение по URL
+                $response = $httpClient->GetAsync("https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/Samples/Application/Assets/Logo.png?raw=true")->Result;
+                $response->EnsureSuccessStatusCode();
 
-            $stream = $response->Content->ReadAsStreamAsync()->Result;
+                $stream = $response->Content->ReadAsStreamAsync()->Result;
 
-            $httpClient->Dispose();
-
-            return new Bitmap($stream);
+                return new Bitmap($stream);
+            } catch (Exception $ex) {
+                // Обрабатываем исключения и выбрасываем ManagedTaskException
+                throw new ManagedTaskException("Error in Load method: " . $ex->getMessage(), $ex->getCode());
+            } finally {
+                // Освобождаем ресурсы
+                $httpClient->Dispose();
+            }
         }
 
+        // Метод-продолжение для обработки результата первой задачи
         public function RunContinuation(CancellationToken $cancellationToken, AutoResetEvent $autoResetEvent, $previousResult): string
         {
-            while (!$cancellationToken->IsCancellationRequested) {
-                $autoResetEvent->WaitOne();
-                $this->mutex->WaitOne(); // Sync Task to access $this->x
+            try {
+                // Пока задача не отменена
+                while (!$cancellationToken->IsCancellationRequested) {
+                    $autoResetEvent->WaitOne();
+                    $this->mutex->WaitOne(); // Синхронизируем доступ к $this->x
 
-                try {
-                    $this->x++;
-                    // Start the job on the UI thread and return immediately.
-                    Dispatcher::$UIThread->Post(function () use ($previousResult) {
-                        $this->textblock1->Text = 'Continuation with previous result: ' . $previousResult . ' and new $x value: ' . $this->x;
-                    });
-                } finally {
-                    $this->mutex->ReleaseMutex();
+                    try {
+                        $this->x++;
+                        // Обновляем UI из потока диспетчера
+                        Dispatcher::$UIThread->Post(function () use ($previousResult) {
+                            $this->textblock1->Text = 'Continuation with previous result: ' . $previousResult . ' and new $x value: ' . $this->x;
+                        });
+                    } finally {
+                        // Освобождаем мьютекс
+                        $this->mutex->ReleaseMutex();
+                    }
+
+                    $autoResetEvent->Set();
+                    Logger::Warn("Continuation %%%%%%%%%%%%%%");
+                    Thread::Sleep(500);
                 }
-
-                $autoResetEvent->Set();
-                Logger::Warn("Continuation %%%%%%%%%%%%%%");
-                Thread::Sleep(500);
+            } catch (Exception $ex) {
+                // Обрабатываем исключения и выбрасываем ManagedTaskException
+                throw new ManagedTaskException("Error in RunContinuation method: " . $ex->getMessage(), $ex->getCode());
             }
             return 'Continuation result with $x value: ' . $this->x;
         }
 
+        // Метод инициализации компонентов
         private function InitializeComponent(): void
         {
             Load();
