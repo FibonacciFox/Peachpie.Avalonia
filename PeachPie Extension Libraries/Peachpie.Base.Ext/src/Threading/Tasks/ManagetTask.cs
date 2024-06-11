@@ -42,9 +42,10 @@ namespace Php.Threading.Tasks
         private Task<object> _task;
         private bool _isStarted;
         private bool _isPaused;
-
+        private ManagedTaskCreationOptions _options;
+        
         // Конструктор, инициализирующий новый экземпляр класса ManagedTask. / Constructor that initializes a new instance of the ManagedTask class.
-        public ManagedTask(Context ctx, IPhpCallable callable)
+        public ManagedTask(Context ctx, IPhpCallable callable, ManagedTaskCreationOptions options = ManagedTaskCreationOptions.None)
         {
             _ctx = ctx ?? throw new ArgumentNullException(nameof(ctx));
             _action = callable ?? throw new ArgumentNullException(nameof(callable), "Callable cannot be null.");
@@ -52,6 +53,7 @@ namespace Php.Threading.Tasks
             _pauseEvent = new AutoResetEvent(true);
             _isStarted = false;
             _isPaused = false;
+            _options = options;
             _task = CreateNewTask();
         }
 
@@ -71,7 +73,7 @@ namespace Php.Threading.Tasks
                     OnCompleted(new ManagedTaskEventArgs(Id, ex));
                     throw;
                 }
-            }, _cancellationTokenSource.Token, TaskCreationOptions.LongRunning);
+            }, _cancellationTokenSource.Token, (TaskCreationOptions)_options);
         }
 
         // Внутренний метод для вызова действия задачи. / Internal method to invoke the task action.
@@ -122,11 +124,11 @@ namespace Php.Threading.Tasks
         }
 
         // Статический метод для создания и запуска новой задачи. / Static method to create and start a new task.
-        public static ManagedTask Run(Context ctx, IPhpCallable callable)
+        public static ManagedTask Run(Context ctx, IPhpCallable callable, ManagedTaskCreationOptions options = ManagedTaskCreationOptions.None)
         {
             if (callable == null) throw new ArgumentNullException(nameof(callable), "Callable cannot be null.");
 
-            var managedTask = new ManagedTask(ctx, callable);
+            var managedTask = new ManagedTask(ctx, callable, options);
             managedTask.Start();
             return managedTask;
         }
@@ -178,7 +180,7 @@ namespace Php.Threading.Tasks
         }
 
         // Создает задачу-продолжение. / Creates a continuation task.
-        public ManagedTask ContinueWith(IPhpCallable continuationAction)
+        public ManagedTask ContinueWith(IPhpCallable continuationAction, ManagedTaskCreationOptions options = ManagedTaskCreationOptions.None)
         {
             if (continuationAction == null) throw new ArgumentNullException(nameof(continuationAction), "Callable cannot be null.");
 
@@ -187,9 +189,9 @@ namespace Php.Threading.Tasks
                 var result = continuationAction.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token),
                     PhpValue.FromClass(_pauseEvent), PhpValue.FromClr(prevTask.Result)).ToClr();
                 return result;
-            }, _cancellationTokenSource.Token, TaskContinuationOptions.LongRunning, TaskScheduler.Current);
+            }, _cancellationTokenSource.Token, (TaskContinuationOptions)options , TaskScheduler.Current);
 
-            return new ManagedTask(_ctx, continuationAction)
+            return new ManagedTask(_ctx, continuationAction, options)
             {
                 _task = continuationTask,
                 _cancellationTokenSource = new CancellationTokenSource(),

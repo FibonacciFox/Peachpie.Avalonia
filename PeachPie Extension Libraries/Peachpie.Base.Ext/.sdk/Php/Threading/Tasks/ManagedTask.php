@@ -56,17 +56,21 @@ class ManagedTask implements IDisposable
 
     /**
      * @param callable $runnable
+     * @param ManagedTaskCreationOptions $options
      */
-    public function __construct(callable $runnable)
+    public function __construct(callable $runnable , ManagedTaskCreationOptions $options = ManagedTaskCreationOptions::None )
     {
     }
 
     /**
      * Starts the ManagedTask
      * @return void
-     * @throws ManagedTaskException
      */
     public function start() : void {
+    }
+
+    public static function run(callable $runnable , ManagedTaskCreationOptions $options = ManagedTaskCreationOptions::None) : ManagedTask {
+
     }
 
     /**
@@ -100,11 +104,11 @@ class ManagedTask implements IDisposable
     }
 
 
-/**
+    /**
      * @param callable $continuationAction
      * @return ManagedTask
      */
-    public function ContinueWith(callable $continuationAction) : ManagedTask
+    public function ContinueWith(callable $continuationAction , ManagedTaskCreationOptions $options = ManagedTaskCreationOptions::None) : ManagedTask
     {
         return new ManagedTask($continuationAction);
     }
