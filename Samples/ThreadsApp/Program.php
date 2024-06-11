@@ -17,6 +17,6 @@ AppPhpBuilder::Configure("App, ThreadsApp")
     ->WithInterFont()
     ->LogToTrace()
     ->SetupWithLifetime($lifetime);
-    
- 
+
+
 $lifetime->Start(args: null);

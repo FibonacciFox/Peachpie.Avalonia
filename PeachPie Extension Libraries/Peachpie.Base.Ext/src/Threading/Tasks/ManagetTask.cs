@@ -1,8 +1,8 @@
-
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Pchp.Core;
+using Exception = Pchp.Library.Spl.Exception;
 
 namespace Php.Threading.Tasks
 {
