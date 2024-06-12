@@ -1,32 +1,22 @@
 <?php
 
-use Php\Threading\Tasks\ManagedTask;
-use Php\Threading\Tasks\ManagedTaskCreationOptions;
-use Php\Output\Logger;
+use Peachpie\Avalonia\Core\AppPhpBuilder;
+use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
+use Avalonia\Controls\ShutdownMode;
 
-function task1(): string {
-    sleep(2);
-    return "Задача 1 выполнена";
-}
+use Avalonia\AppBuilderDesktopExtensions;
+use Avalonia\AppBuilderExtension;
 
-function task2(): string {
-    sleep(3);
-    return "Задача 2 выполнена";
-}
+$lifetime = new ClassicDesktopStyleApplicationLifetime();
 
-function task3(): string {
-    sleep(1);
-    return "Задача 3 выполнена";
-}
+$lifetime->Args = null;
+$lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
 
-$task1 = ManagedTask::Run('task1');
-$task2 = ManagedTask::Run('task2');
-$task3 = ManagedTask::Run('task3');
+AppPhpBuilder::Configure("App, ThreadsApp")
+    ->UsePlatformDetect()
+    ->WithInterFont()
+    ->LogToTrace()
+    ->SetupWithLifetime($lifetime);
 
-$tasks = [$task1, $task2, $task3];
 
-// Ожидаем завершения любой задачи
-$completedTaskIndex = ManagedTask::WaitAny($tasks);
-
-Logger::Info("Задача с индексом {$completedTaskIndex} завершена первой");
-
+$lifetime->Start(args: null);
