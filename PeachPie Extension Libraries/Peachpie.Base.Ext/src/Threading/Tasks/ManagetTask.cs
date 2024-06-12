@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Pchp.Core;
@@ -171,6 +172,50 @@ namespace Php.Threading.Tasks
         public void Wait()
         {
             _task.Wait();
+        }
+        
+        // Ожидает завершения всех переданных задач. / Waits for all the provided tasks to complete.
+        public static void WaitAll(PhpArray managedTasks)
+        {
+            if (managedTasks == null) throw new ArgumentNullException(nameof(managedTasks), "Managed tasks array cannot be null.");
+
+            var tasks = new List<Task>();
+
+            foreach (var item in managedTasks.Values)
+            {
+                if (item.AsObject() is ManagedTask managedTask)
+                {
+                    tasks.Add(managedTask._task);
+                }
+                else
+                {
+                    throw new ArgumentException("All elements in the array must be of type ManagedTask.");
+                }
+            }
+
+            Task.WaitAll(tasks.ToArray());
+        }
+        
+        // Ожидает завершения любой из переданных задач. / Waits for any of the provided tasks to complete.
+        public static int WaitAny(PhpArray managedTasks)
+        {
+            if (managedTasks == null) throw new ArgumentNullException(nameof(managedTasks), "Managed tasks array cannot be null.");
+
+            var tasks = new List<Task>();
+
+            foreach (var item in managedTasks.Values)
+            {
+                if (item.AsObject() is ManagedTask managedTask)
+                {
+                    tasks.Add(managedTask._task);
+                }
+                else
+                {
+                    throw new ArgumentException("All elements in the array must be of type ManagedTask.");
+                }
+            }
+
+            return Task.WaitAny(tasks.ToArray());
         }
 
         // Получает результат задачи синхронно. / Gets the task result synchronously.
