@@ -184,7 +184,7 @@ class Dispatcher extends \System\Object implements
 	 * @var \Avalonia\Threading\Dispatcher
 	 * @since readonly
 	 */
-	public $UIThread;
+	public static $UIThread;
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
