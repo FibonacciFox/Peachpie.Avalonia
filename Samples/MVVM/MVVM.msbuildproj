@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17582">
+<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17797">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
