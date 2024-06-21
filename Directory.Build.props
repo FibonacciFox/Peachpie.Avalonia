@@ -2,7 +2,7 @@
   
   <PropertyGroup>
     <!-- version -->
-    <AvaloniaVersion>11.0.10</AvaloniaVersion>
+    <AvaloniaVersion>11.0.11</AvaloniaVersion>
     <PeachpieVersion>1.2.0-r17797</PeachpieVersion>
     <Version Condition=" '$(Version)'=='' ">1.0.17-dev</Version>
     <PackageVersion>$(Version)</PackageVersion>
