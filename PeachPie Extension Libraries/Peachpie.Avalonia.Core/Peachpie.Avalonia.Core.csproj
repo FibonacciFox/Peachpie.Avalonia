@@ -19,7 +19,13 @@
     <ItemGroup>
         <ProjectReference Include="..\Peachpie.Base.Ext\Peachpie.Base.Ext.csproj" />
     </ItemGroup>
+
+
+    <!-- PHP SDK Include -->
     <ItemGroup>
-      <Folder Include=".sdk\Peachpie\Avalonia\Core\" />
+        <Content Include=".sdk/**/*.*">
+            <PackagePath>.sdk</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
     </ItemGroup>
 </Project>
