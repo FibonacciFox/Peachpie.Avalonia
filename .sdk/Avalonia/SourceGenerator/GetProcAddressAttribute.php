@@ -24,6 +24,7 @@ trait VisualOverride {
 final class GetProcAddressAttribute extends \System\Attribute
 {
 	use VisualOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

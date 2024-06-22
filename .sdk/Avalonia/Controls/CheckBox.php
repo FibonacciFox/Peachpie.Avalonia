@@ -23,6 +23,7 @@ class CheckBox extends \Avalonia\Controls\Primitives\ToggleButton implements
 	\Avalonia\Input\ICommandSource,
 	\Avalonia\Input\IClickableControl
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\Boolean]
@@ -457,7 +458,7 @@ class CheckBox extends \Avalonia\Controls\Primitives\ToggleButton implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

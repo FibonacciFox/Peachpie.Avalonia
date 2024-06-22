@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class PreciseEllipticArcHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Media\StreamGeometryContext $streamGeometryContextImpl
 	 * @param \Avalonia\Point $currentPoint

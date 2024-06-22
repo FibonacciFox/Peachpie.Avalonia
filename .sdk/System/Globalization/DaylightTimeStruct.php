@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class DaylightTimeStruct extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -20,6 +20,7 @@ final class IncrementingCounterPayload extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use IncrementingCounterPayloadOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class ScrollPatternIdentifiers extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Double|double

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum SizeToContent
 {
+
 	
 	case Manual = '0';
 	case Width = '1';

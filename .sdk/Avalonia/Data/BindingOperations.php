@@ -2,6 +2,7 @@
 namespace Avalonia\Data;
 class BindingOperations extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

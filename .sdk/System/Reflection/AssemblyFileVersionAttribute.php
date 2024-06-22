@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class AssemblyFileVersionAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

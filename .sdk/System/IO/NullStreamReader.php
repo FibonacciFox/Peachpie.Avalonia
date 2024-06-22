@@ -3,6 +3,7 @@ namespace System\IO;
 final class NullStreamReader extends \System\IO\StreamReader implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Text\Encoding

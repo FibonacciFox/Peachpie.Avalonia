@@ -2,6 +2,7 @@
 namespace System;
 enum Flags
 {
+
 	
 	case Zero = '0';
 	case SchemeNotCanonical = '1';

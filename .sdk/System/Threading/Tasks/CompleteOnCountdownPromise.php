@@ -5,6 +5,7 @@ final class CompleteOnCountdownPromise extends \System\Threading\Tasks\Task_1 im
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\Tasks\Task[]

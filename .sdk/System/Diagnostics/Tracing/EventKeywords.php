@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventKeywords
 {
+
 	
 	case None = '0';
 	case All = '-1';

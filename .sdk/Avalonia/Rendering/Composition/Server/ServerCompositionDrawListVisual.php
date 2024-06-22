@@ -4,6 +4,7 @@ class ServerCompositionDrawListVisual extends \Avalonia\Rendering\Composition\Se
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject,
 	\Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

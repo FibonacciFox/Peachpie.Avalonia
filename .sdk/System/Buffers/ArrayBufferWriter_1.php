@@ -16,6 +16,7 @@ final class ArrayBufferWriter_1 extends \System\Object implements
 	\System\Buffers\IBufferWriter_1
 {
 	use SequenceReaderExtensionsOverride;
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlyMemory_1[T]

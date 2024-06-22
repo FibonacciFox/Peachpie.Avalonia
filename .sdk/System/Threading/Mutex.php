@@ -27,6 +27,7 @@ final class Mutex extends \System\Threading\WaitHandle implements
 	\System\IDisposable
 {
 	use MutexOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

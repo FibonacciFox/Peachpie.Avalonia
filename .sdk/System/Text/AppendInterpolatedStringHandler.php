@@ -85,6 +85,7 @@ trait AppendInterpolatedStringHandlerOverride {
 final class AppendInterpolatedStringHandler extends \System\ValueType
 {
 	use AppendInterpolatedStringHandlerOverride;
+
 	/**
 	 * @field
 	 * @since readonly

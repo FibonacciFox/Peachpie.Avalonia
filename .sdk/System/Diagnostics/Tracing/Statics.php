@@ -34,6 +34,7 @@ trait StaticsOverride {
 class Statics extends \System\Object
 {
 	use StaticsOverride;
+
 	/**
 	 * @field
 	 * @since readonly

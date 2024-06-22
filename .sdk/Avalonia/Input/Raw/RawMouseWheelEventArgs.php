@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 class RawMouseWheelEventArgs extends \Avalonia\Input\Raw\RawPointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

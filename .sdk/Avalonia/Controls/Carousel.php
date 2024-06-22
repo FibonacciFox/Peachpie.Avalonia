@@ -20,6 +20,7 @@ class Carousel extends \Avalonia\Controls\Primitives\SelectingItemsControl imple
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -499,7 +500,7 @@ class Carousel extends \Avalonia\Controls\Primitives\SelectingItemsControl imple
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

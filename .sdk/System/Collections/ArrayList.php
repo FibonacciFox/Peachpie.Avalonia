@@ -199,6 +199,7 @@ class ArrayList extends \System\Object implements
 	\System\ICloneable
 {
 	use ArrayListOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

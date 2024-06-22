@@ -23,6 +23,7 @@ class RadioButton extends \Avalonia\Controls\Primitives\ToggleButton implements
 	\Avalonia\Input\ICommandSource,
 	\Avalonia\Input\IClickableControl
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -468,7 +469,7 @@ class RadioButton extends \Avalonia\Controls\Primitives\ToggleButton implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

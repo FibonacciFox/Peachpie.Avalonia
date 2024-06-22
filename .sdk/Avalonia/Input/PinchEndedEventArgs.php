@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PinchEndedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

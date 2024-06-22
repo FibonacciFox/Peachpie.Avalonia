@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ComInterfaceEntry extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Guid

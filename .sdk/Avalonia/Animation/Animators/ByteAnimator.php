@@ -16,6 +16,7 @@ class ByteAnimator extends \Avalonia\Animation\Animators\Animator_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

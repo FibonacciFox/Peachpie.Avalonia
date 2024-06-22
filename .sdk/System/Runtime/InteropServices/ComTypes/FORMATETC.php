@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class FORMATETC extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int16

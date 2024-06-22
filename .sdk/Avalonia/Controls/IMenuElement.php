@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface IMenuElement
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

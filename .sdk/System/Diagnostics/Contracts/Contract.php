@@ -130,6 +130,7 @@ class Contract extends \System\Object
 {
 	use ContractOverride;
 
+
 	/**
 	 * @uses ContractOverride::Assume_1 <br>public , args: ($condition)<br>
 	 * @uses ContractOverride::Assume_2 <br>public , args: ($condition, $userMessage)<br>

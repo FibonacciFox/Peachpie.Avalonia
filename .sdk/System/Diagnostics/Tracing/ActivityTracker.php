@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class ActivityTracker extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\Tracing\ActivityTracker

@@ -53,6 +53,7 @@ class FileStreamHelpers extends \System\Object
 {
 	use FileStreamHelpersOverride;
 
+
 	/**
 	 * @uses FileStreamHelpersOverride::ChooseStrategy_1 <br>protected , args: ($fileStream, $handle, $access, $bufferSize, $isAsync)<br>
 	 * @uses FileStreamHelpersOverride::ChooseStrategy_2 <br>protected , args: ($fileStream, $path, $mode, $access, $share, $bufferSize, $options, $preallocationSize, $unixCreateMode)<br>

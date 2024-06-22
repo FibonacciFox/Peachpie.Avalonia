@@ -90,6 +90,7 @@ trait ValueStoreOverride {
 class ValueStore extends \System\Object
 {
 	use ValueStoreOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaObject

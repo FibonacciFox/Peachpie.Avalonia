@@ -30,8 +30,9 @@ trait EffectiveValue_1Override {
 final class EffectiveValue_1 extends \Avalonia\PropertyStore\EffectiveValue
 {
 	use EffectiveValue_1Override;
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \T|object|\System\Object|object
 	 */
 	public $Value;

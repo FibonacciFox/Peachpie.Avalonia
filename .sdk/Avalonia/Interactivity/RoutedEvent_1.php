@@ -2,6 +2,7 @@
 namespace Avalonia\Interactivity;
 class RoutedEvent_1 extends \Avalonia\Interactivity\RoutedEvent
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

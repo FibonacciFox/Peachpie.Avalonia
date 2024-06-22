@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class RadioButtonGroupManager extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

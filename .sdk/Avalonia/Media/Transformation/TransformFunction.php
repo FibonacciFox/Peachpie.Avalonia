@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Transformation;
 enum TransformFunction
 {
+
 	
 	case Invalid = '0';
 	case Translate = '1';

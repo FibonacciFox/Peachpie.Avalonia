@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class CounterGroup extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Diagnostics\Tracing\DiagnosticCounter $eventCounter
 	 * @return \System\Void|void

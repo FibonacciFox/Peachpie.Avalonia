@@ -2,6 +2,7 @@
 
 final class ParsedStatus extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt64

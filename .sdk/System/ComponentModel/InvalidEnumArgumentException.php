@@ -27,6 +27,7 @@ class InvalidEnumArgumentException extends \System\ArgumentException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidEnumArgumentExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

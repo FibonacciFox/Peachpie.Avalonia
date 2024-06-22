@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface IAccessKeyHandler
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputRoot $owner
 	 * @return \System\Void|void

@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IRuntimePlatform
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\RuntimePlatformInfo
 	 */

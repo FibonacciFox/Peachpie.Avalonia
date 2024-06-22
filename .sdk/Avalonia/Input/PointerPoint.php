@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 final class PointerPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IPointer

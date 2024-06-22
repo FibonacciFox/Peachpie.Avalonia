@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 final class HandleMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\SafeHandle $handle
 	 * @param \System\StubHelpers\CleanupWorkListElement& $cleanupWorkList

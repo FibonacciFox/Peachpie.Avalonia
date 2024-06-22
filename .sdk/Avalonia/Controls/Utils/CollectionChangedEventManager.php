@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Utils;
 class CollectionChangedEventManager extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Utils\CollectionChangedEventManager

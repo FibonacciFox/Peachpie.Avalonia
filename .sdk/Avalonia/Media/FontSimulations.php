@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum FontSimulations
 {
+
 	
 	case None = '0';
 	case Bold = '1';

@@ -194,6 +194,7 @@ trait AppDomainOverride {
 final class AppDomain extends \System\MarshalByRefObject
 {
 	use AppDomainOverride;
+
 	/**
 	 * @property
 	 * @var \System\AppDomain

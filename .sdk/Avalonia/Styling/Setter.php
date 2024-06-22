@@ -29,6 +29,7 @@ class Setter extends \Avalonia\Styling\SetterBase implements
 	\Avalonia\Animation\IAnimationSetter
 {
 	use SetterOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

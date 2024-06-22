@@ -4,4 +4,5 @@ class IsExternalInit extends \System\Object
 {
 
 
+
 }

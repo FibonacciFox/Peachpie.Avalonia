@@ -21,6 +21,7 @@ final class ThemeVariant extends \System\Object implements
 	\System\IEquatable_1
 {
 	use ThemeVariantOverride;
+
 	/**
 	 * @field
 	 * @since readonly

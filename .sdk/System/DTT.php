@@ -2,6 +2,7 @@
 namespace System;
 enum DTT
 {
+
 	
 	case End = '0';
 	case NumEnd = '1';

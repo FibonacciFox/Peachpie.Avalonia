@@ -21,6 +21,7 @@ final class AmbiguousImplementationException extends \System\Exception implement
 	\System\Runtime\Serialization\ISerializable
 {
 	use AmbiguousImplementationExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

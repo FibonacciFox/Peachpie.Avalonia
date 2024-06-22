@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum DragDropEffects
 {
+
 	
 	case None = '0';
 	case Copy = '1';

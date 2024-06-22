@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum DateTimeFormatFlags
 {
+
 	
 	case None = '0';
 	case UseGenitiveMonth = '1';

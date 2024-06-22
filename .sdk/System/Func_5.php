@@ -1,9 +1,10 @@
 <?php
 namespace System;
-final class Func_4 extends \System\MulticastDelegate implements
+final class Func_5 extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object
@@ -40,18 +41,20 @@ final class Func_4 extends \System\MulticastDelegate implements
 	 * @param \T1 $arg1
 	 * @param \T2 $arg2
 	 * @param \T3 $arg3
+	 * @param \T4 $arg4
 	 * @return \TResult
 	 */
-	public function Invoke($arg1, $arg2, $arg3){}
+	public function Invoke($arg1, $arg2, $arg3, $arg4){}
 	/**
 	 * @param \T1 $arg1
 	 * @param \T2 $arg2
 	 * @param \T3 $arg3
+	 * @param \T4 $arg4
 	 * @param \System\AsyncCallback $callback
 	 * @param \System\Object|object $object
 	 * @return \System\IAsyncResult
 	 */
-	public function BeginInvoke($arg1, $arg2, $arg3, $callback, $object){}
+	public function BeginInvoke($arg1, $arg2, $arg3, $arg4, $callback, $object){}
 	/**
 	 * @param \System\IAsyncResult $result
 	 * @return \TResult

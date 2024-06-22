@@ -20,6 +20,7 @@ class TypeUtilities extends \System\Object
 {
 	use TypeUtilitiesOverride;
 
+
 	/**
 	 * @uses TypeUtilitiesOverride::AcceptsNull_1 <br>public , args: ($type)<br>
 	 * @uses TypeUtilitiesOverride::AcceptsNull_2 <br>public , args: ()<br>

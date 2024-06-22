@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CalendarWeekRule
 {
+
 	
 	case FirstDay = '0';
 	case FirstFullWeek = '1';

@@ -4,6 +4,7 @@ final class SignatureGenericMethodParameterType extends \System\Reflection\Signa
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

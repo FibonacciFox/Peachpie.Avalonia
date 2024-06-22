@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 enum ExtendClientAreaChromeHints
 {
+
 	
 	case NoChrome = '0';
 	case Default = '2';

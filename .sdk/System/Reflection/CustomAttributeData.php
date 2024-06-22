@@ -32,6 +32,7 @@ trait CustomAttributeDataOverride {
 class CustomAttributeData extends \System\Object
 {
 	use CustomAttributeDataOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type

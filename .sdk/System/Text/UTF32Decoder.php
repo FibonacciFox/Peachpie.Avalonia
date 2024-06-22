@@ -2,6 +2,7 @@
 namespace System\Text;
 final class UTF32Decoder extends \System\Text\DecoderNLS
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

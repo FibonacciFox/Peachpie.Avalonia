@@ -2,6 +2,7 @@
 namespace Avalonia\Automation\Peers;
 class ControlAutomationPeer extends \Avalonia\Automation\Peers\AutomationPeer
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Control

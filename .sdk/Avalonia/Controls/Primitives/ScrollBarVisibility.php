@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 enum ScrollBarVisibility
 {
+
 	
 	case Disabled = '0';
 	case Auto = '1';

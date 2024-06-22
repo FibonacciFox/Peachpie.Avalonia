@@ -57,6 +57,7 @@ class EmbeddableControlRoot extends \Avalonia\Controls\TopLevel implements
 	\System\IDisposable
 {
 	use EmbeddableControlRootOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\IHitTester
@@ -529,7 +530,7 @@ class EmbeddableControlRoot extends \Avalonia\Controls\TopLevel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

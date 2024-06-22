@@ -4,6 +4,7 @@ class CompositionGpuImportedObjectBase extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositionGpuImportedObject,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IPlatformRenderInterfaceContext

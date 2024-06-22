@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface INumberBase_1
 {
 
+
 	/**
 	 * @param \TSelf $value
 	 * @return \TSelf

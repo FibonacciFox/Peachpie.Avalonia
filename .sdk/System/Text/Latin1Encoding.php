@@ -3,6 +3,7 @@ namespace System\Text;
 class Latin1Encoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @since readonly

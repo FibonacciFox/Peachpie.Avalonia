@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Converters;
 class CornerRadiusFilterConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Converters\Corners

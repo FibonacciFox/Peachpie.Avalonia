@@ -51,6 +51,7 @@ trait PoolingAsyncValueTaskMethodBuilder_1Override {
 final class PoolingAsyncValueTaskMethodBuilder_1 extends \System\ValueType
 {
 	use PoolingAsyncValueTaskMethodBuilder_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -77,6 +77,7 @@ final class FileInfo extends \System\IO\FileSystemInfo implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use FileInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class FpsCounter extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

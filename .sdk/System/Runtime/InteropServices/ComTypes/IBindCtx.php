@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IBindCtx
 {
 
+
 	/**
 	 * @param \System\Object|object $punk
 	 * @return \System\Void|void

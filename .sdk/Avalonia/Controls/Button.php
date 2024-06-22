@@ -43,6 +43,7 @@ class Button extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Input\IClickableControl
 {
 	use ButtonOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -520,7 +521,7 @@ class Button extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

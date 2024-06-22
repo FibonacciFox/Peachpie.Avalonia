@@ -3,6 +3,7 @@ namespace System\ComponentModel;
 final class EventHandlerList extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Delegate

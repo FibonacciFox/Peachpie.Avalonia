@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class NotNullIfNotNullAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

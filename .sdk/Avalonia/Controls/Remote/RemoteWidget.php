@@ -19,6 +19,7 @@ class RemoteWidget extends \Avalonia\Controls\Control implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Remote\RemoteWidget+SizingMode
@@ -321,7 +322,7 @@ class RemoteWidget extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

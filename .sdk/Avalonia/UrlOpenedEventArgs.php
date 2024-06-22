@@ -2,6 +2,7 @@
 namespace Avalonia;
 class UrlOpenedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

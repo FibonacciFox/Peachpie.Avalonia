@@ -5,6 +5,7 @@ final class TwoTaskWhenAnyPromise_1 extends \System\Threading\Tasks\Task_1 imple
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @field
 	 * @var \TTask

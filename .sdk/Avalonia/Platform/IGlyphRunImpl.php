@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IGlyphRunImpl
 {
 
+
 	/**
 	 * @param \System\Single $lowerLimit
 	 * @param \System\Single $upperLimit

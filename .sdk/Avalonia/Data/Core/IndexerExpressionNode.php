@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class IndexerExpressionNode extends \Avalonia\Data\Core\IndexerNodeBase implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

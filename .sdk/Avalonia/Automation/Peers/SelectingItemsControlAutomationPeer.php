@@ -4,6 +4,7 @@ class SelectingItemsControlAutomationPeer extends \Avalonia\Automation\Peers\Ite
 	\Avalonia\Automation\Provider\IScrollProvider,
 	\Avalonia\Automation\Provider\ISelectionProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -17,7 +18,7 @@ class SelectingItemsControlAutomationPeer extends \Avalonia\Automation\Peers\Ite
 	 */
 	public $IsSelectionRequired;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\ItemsControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

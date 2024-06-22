@@ -69,6 +69,7 @@ trait UmAlQuraCalendarOverride {
 class DefaultValueAttribute extends \System\Attribute
 {
 	use UmAlQuraCalendarOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

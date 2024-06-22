@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 final class PixelFormat extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Platform\PixelFormatEnum

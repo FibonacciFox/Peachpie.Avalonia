@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class SegmentState extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \Internal\PaddingFor32

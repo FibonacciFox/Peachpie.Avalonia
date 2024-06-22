@@ -16,6 +16,7 @@ trait SEHExceptionOverride {
 final class StructLayoutAttribute extends \System\Attribute
 {
 	use SEHExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

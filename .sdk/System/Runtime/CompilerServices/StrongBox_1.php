@@ -16,6 +16,7 @@ class StrongBox_1 extends \System\Object implements
 	\System\Runtime\CompilerServices\IStrongBox
 {
 	use RuntimeWrappedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \T|object

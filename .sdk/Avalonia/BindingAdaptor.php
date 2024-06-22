@@ -4,6 +4,7 @@ class BindingAdaptor extends \System\Object implements
 	\Avalonia\Data\IBinding
 {
 
+
 	/**
 	 * @param \Avalonia\AvaloniaObject $target
 	 * @param \Avalonia\AvaloniaProperty $targetProperty

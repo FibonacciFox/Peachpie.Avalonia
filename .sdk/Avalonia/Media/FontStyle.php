@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum FontStyle
 {
+
 	
 	case Normal = '0';
 	case Italic = '1';

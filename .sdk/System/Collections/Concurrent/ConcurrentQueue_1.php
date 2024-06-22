@@ -74,6 +74,7 @@ class ConcurrentQueue_1 extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use ConcurrentQueue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

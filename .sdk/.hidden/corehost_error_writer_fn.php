@@ -4,6 +4,7 @@ final class corehost_error_writer_fn extends \System\MulticastDelegate implement
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

@@ -4,6 +4,7 @@ class ChildTraversalPropertyPathElement extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyPathElement
 {
 
+
 	/**
 	 */
 	public function __construct(){}

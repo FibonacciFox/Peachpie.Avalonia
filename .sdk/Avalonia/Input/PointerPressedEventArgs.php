@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PointerPressedEventArgs extends \Avalonia\Input\PointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

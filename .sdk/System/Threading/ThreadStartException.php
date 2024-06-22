@@ -3,6 +3,7 @@ namespace System\Threading;
 final class ThreadStartException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

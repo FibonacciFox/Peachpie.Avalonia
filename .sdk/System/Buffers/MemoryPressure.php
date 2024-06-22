@@ -2,6 +2,7 @@
 namespace System\Buffers;
 enum MemoryPressure
 {
+
 	
 	case Low = '0';
 	case Medium = '1';

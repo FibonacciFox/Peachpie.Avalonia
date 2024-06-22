@@ -3,6 +3,7 @@ namespace System\Collections;
 interface IList
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @return \System\Int32|int

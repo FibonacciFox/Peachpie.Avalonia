@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class Messages extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class AutomationProperties extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

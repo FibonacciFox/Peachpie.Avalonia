@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface ISet_1
 {
 
+
 	/**
 	 * @param \T|object $item
 	 * @return \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class IcuEnumCalendarsData extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\List_1[System\String]

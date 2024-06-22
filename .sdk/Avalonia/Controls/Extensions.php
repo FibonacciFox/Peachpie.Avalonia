@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class Extensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Double|double $d
 	 * @return \System\Boolean|bool

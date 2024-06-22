@@ -2,6 +2,7 @@
 namespace System\Linq;
 final class SystemLinq_GroupingDebugView_2 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \TKey

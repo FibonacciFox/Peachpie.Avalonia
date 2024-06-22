@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextRun extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

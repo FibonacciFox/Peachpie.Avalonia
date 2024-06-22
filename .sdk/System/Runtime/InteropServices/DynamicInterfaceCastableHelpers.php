@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 class DynamicInterfaceCastableHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\IDynamicInterfaceCastable $castable
 	 * @param \System\RuntimeType $interfaceType

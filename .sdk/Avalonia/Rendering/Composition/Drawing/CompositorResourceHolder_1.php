@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Drawing;
 final class CompositorResourceHolder_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

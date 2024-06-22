@@ -39,6 +39,7 @@ class IndexerNodeBase extends \Avalonia\Data\Core\SettableNode implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 	use IndexerNodeBaseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type

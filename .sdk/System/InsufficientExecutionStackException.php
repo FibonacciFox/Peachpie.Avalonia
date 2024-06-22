@@ -21,6 +21,7 @@ final class InsufficientExecutionStackException extends \System\SystemException 
 	\System\Runtime\Serialization\ISerializable
 {
 	use InsufficientExecutionStackExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -20,6 +20,7 @@ final class TimerQueueTimer extends \System\Object implements
 	\System\Threading\IThreadPoolWorkItem
 {
 	use TimerQueueTimerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\TimerQueueTimer

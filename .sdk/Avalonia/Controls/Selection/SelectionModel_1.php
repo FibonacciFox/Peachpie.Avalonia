@@ -111,6 +111,7 @@ class SelectionModel_1 extends \Avalonia\Controls\Selection\SelectionNodeBase_1 
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use SelectionModel_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\IEnumerable

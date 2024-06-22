@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface IPseudoClasses
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @return \System\Void|void

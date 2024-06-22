@@ -22,6 +22,7 @@ class LocatorExtensions extends \System\Object
 {
 	use LocatorExtensionsOverride;
 
+
 	/**
 	 * @param \Avalonia\IAvaloniaDependencyResolver $resolver
 	 * @return \T|object

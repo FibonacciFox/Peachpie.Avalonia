@@ -167,6 +167,7 @@ trait SequenceReader_1Override {
 final class SequenceReader_1 extends \System\ValueType
 {
 	use SequenceReader_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

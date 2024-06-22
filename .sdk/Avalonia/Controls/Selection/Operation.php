@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Selection;
 class Operation extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

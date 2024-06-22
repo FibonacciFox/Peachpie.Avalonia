@@ -605,6 +605,7 @@ trait VectorOverride {
 class Vector extends \System\Object
 {
 	use VectorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

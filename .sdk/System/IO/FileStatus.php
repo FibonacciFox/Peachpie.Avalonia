@@ -262,6 +262,7 @@ final class FileStatus extends \System\ValueType
 {
 	use FileStatusOverride;
 
+
 	private function IsModeReadOnlyCore(){}
 	/**
 	 * @return \System\Void|void

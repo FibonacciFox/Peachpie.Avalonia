@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum PosixSignal
 {
+
 	
 	case SIGHUP = '-1';
 	case SIGINT = '-2';

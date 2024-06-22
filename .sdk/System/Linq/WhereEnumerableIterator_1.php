@@ -8,6 +8,7 @@ final class WhereEnumerableIterator_1 extends \System\Linq\Iterator_1 implements
 	\System\Collections\IEnumerator,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

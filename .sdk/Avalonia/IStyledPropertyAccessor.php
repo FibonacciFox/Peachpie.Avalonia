@@ -3,6 +3,7 @@ namespace Avalonia;
 interface IStyledPropertyAccessor
 {
 
+
 	/**
 	 * @param \System\Type $type
 	 * @return \System\Object|object

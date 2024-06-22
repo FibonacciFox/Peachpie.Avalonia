@@ -3,6 +3,7 @@ namespace System\Text;
 final class DefaultDecoder extends \System\Text\Decoder implements
 	\System\Runtime\Serialization\IObjectReference
 {
+
 	/**
 	 * @field
 	 * @var \System\Text\DecoderFallback

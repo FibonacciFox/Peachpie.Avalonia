@@ -85,6 +85,7 @@ class LazyInitializer extends \System\Object
 {
 	use LazyInitializerOverride;
 
+
 	/**
 	 * @uses LazyInitializerOverride::EnsureInitialized_1 <br>public , args: ($target)<br>
 	 * @uses LazyInitializerOverride::EnsureInitialized_2 <br>public , args: ($target, $valueFactory)<br>

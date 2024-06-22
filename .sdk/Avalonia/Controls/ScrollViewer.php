@@ -23,6 +23,7 @@ class ScrollViewer extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Controls\Primitives\IScrollable,
 	\Avalonia\Controls\IScrollAnchorProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -624,7 +625,7 @@ class ScrollViewer extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

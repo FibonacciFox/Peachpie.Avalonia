@@ -113,6 +113,7 @@ class Hashtable extends \System\Object implements
 	\System\ICloneable
 {
 	use HashtableOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\IHashCodeProvider

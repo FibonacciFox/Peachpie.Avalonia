@@ -5,6 +5,7 @@ class RelativePointTransition extends \Avalonia\Animation\Transition_1 implement
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Animation\ITransition
 {
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan
@@ -26,7 +27,7 @@ class RelativePointTransition extends \Avalonia\Animation\Transition_1 implement
 	 */
 	public $Property;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

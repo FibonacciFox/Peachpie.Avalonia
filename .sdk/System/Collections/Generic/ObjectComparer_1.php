@@ -5,6 +5,7 @@ final class ObjectComparer_1 extends \System\Collections\Generic\Comparer_1 impl
 	\System\Collections\Generic\IComparer_1
 {
 
+
 	/**
 	 */
 	public function __construct(){}

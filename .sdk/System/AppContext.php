@@ -2,6 +2,7 @@
 namespace System;
 class AppContext extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

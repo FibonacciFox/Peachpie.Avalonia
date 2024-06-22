@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class PlatformGraphicsContextLostException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

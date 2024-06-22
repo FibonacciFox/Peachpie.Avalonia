@@ -25,6 +25,7 @@ class ImmediateRenderDataSceneBrushContent extends \System\Object implements
 	\System\IDisposable
 {
 	use ImmediateRenderDataSceneBrushContentOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\ITileBrush

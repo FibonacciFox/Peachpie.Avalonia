@@ -22,6 +22,7 @@ final class GroupedResultEnumerable_4 extends \System\Object implements
 {
 	use GroupedResultEnumerable_4Override;
 
+
 	/**
 	 * @return \TResult[]
 	 */

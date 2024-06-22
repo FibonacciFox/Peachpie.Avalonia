@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class DefaultDependencyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\CompilerServices\LoadHint

@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class ConcurrentSet_2 extends \System\ValueType
 {
 
+
 	/**
 	 * @param \KeyType $key
 	 * @return \ItemType

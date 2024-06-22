@@ -28,6 +28,7 @@ trait RawPointerPointOverride {
 class RawTouchEventArgs extends \Avalonia\Input\Raw\RawPointerEventArgs
 {
 	use RawPointerPointOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int64|int

@@ -44,6 +44,7 @@ final class ReadOnlyMemory_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ReadOnlyMemory_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

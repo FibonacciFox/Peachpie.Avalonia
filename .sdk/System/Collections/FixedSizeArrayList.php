@@ -6,6 +6,7 @@ final class FixedSizeArrayList extends \System\Collections\ArrayList implements
 	\System\Collections\IEnumerable,
 	\System\ICloneable
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

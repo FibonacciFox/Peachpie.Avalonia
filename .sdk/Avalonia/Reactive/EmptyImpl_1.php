@@ -3,6 +3,7 @@ namespace Avalonia\Reactive;
 final class EmptyImpl_1 extends \System\Object implements
 	\System\IObservable_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

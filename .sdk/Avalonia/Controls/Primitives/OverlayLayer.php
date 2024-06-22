@@ -21,6 +21,7 @@ class OverlayLayer extends \Avalonia\Controls\Canvas implements
 	\Avalonia\LogicalTree\IChildIndexProvider,
 	\Avalonia\Input\INavigableContainer
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size
@@ -339,7 +340,7 @@ class OverlayLayer extends \Avalonia\Controls\Canvas implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

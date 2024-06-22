@@ -21,6 +21,7 @@ class LogicalExtensions extends \System\Object
 {
 	use LogicalExtensionsOverride;
 
+
 	/**
 	 * @param \Avalonia\LogicalTree\ILogical $logical
 	 * @return \System\Collections\Generic\IEnumerable_1[Avalonia\LogicalTree\ILogical]

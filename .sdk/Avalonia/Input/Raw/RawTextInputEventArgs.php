@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 class RawTextInputEventArgs extends \Avalonia\Input\Raw\RawInputEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

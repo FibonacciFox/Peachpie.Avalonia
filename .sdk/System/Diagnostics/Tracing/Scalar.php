@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class Scalar extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

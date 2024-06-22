@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Animations;
 final class ServerKeyFrame_1 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \T|object

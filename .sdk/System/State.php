@@ -2,6 +2,7 @@
 namespace System;
 enum State
 {
+
 	
 	case Escaped = '0';
 	case NotEscaped = '1';

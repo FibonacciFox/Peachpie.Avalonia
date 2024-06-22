@@ -26,6 +26,7 @@ final class EventDescriptor extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use EventDescriptorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

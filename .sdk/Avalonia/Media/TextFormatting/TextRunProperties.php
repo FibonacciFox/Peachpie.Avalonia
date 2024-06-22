@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 class TextRunProperties extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Typeface

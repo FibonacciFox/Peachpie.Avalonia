@@ -28,6 +28,7 @@ final class TypeNameBuilder extends \System\Object
 {
 	use TypeNameBuilderOverride;
 
+
 	private function OpenGenericArguments(){}
 	private function CloseGenericArguments(){}
 	private function OpenGenericArgument(){}

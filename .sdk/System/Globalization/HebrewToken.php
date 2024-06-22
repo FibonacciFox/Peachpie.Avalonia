@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum HebrewToken
 {
+
 	
 	case Invalid = '-1';
 	case Digit400 = '0';

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum SelectionMode
 {
+
 	
 	case Single = '0';
 	case Multiple = '1';

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class BIND_OPTS extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

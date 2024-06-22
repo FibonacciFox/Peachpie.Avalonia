@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class WeakHashList_1 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

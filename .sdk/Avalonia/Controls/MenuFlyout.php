@@ -5,6 +5,7 @@ class MenuFlyout extends \Avalonia\Controls\Primitives\PopupFlyoutBase implement
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -112,7 +113,7 @@ class MenuFlyout extends \Avalonia\Controls\Primitives\PopupFlyoutBase implement
 	 */
 	public $Target;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

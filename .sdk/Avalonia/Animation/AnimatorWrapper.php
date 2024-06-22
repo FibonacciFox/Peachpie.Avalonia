@@ -16,6 +16,7 @@ class AnimatorWrapper extends \Avalonia\Animation\Animators\Animator_1 implement
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

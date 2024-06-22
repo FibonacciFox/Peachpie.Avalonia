@@ -35,6 +35,7 @@ final class EmptyPartition_1 extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use EmptyPartition_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

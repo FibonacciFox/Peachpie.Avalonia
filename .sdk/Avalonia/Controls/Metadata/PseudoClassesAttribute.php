@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Metadata;
 final class PseudoClassesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]

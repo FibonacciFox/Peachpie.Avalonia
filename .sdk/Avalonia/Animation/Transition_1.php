@@ -5,6 +5,7 @@ class Transition_1 extends \Avalonia\Animation\TransitionBase implements
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Animation\ITransition
 {
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan
@@ -26,7 +27,7 @@ class Transition_1 extends \Avalonia\Animation\TransitionBase implements
 	 */
 	public $Property;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

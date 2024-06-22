@@ -4,6 +4,7 @@ class InpcPropertyAccessorPlugin extends \System\Object implements
 	\Avalonia\Data\Core\Plugins\IPropertyAccessorPlugin
 {
 
+
 	/**
 	 * @param \System\Object|object $obj
 	 * @param \System\String|string $propertyName

@@ -6,6 +6,7 @@ class UntypedBindingEntry extends \Avalonia\PropertyStore\BindingEntryBase_2 imp
 	\System\IObserver_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

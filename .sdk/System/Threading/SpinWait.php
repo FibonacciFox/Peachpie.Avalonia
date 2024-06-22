@@ -39,6 +39,7 @@ trait SpinWaitOverride {
 final class SpinWait extends \System\ValueType
 {
 	use SpinWaitOverride;
+
 	/**
 	 * @field
 	 * @since readonly

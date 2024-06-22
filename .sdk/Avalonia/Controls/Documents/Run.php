@@ -28,6 +28,7 @@ class Run extends \Avalonia\Controls\Documents\Inline implements
 	\Avalonia\INamed
 {
 	use RunOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -151,7 +152,7 @@ class Run extends \Avalonia\Controls\Documents\Inline implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

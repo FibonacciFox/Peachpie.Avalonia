@@ -4,6 +4,7 @@ final class ValueTaskSourceAsTask extends \System\Threading\Tasks\Task_1 impleme
 	\System\IAsyncResult,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \TResult

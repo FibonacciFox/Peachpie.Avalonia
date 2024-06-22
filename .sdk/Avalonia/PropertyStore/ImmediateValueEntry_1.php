@@ -31,6 +31,7 @@ class ImmediateValueEntry_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use ImmediateValueEntry_1Override;
+
 	/**
 	 * @property
 	 * @var \Avalonia\StyledProperty_1[T]

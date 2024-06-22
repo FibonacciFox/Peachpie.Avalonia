@@ -16,6 +16,7 @@ trait ReaderWriterLockSlimOverride {
 final class TimeoutTracker extends \System\ValueType
 {
 	use ReaderWriterLockSlimOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

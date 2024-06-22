@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface ILogarithmicFunctions_1
 {
 
+
 	/**
 	 * @param \TSelf $x
 	 * @return \TSelf

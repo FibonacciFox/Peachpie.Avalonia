@@ -3,6 +3,7 @@ namespace System\Globalization;
 class JapaneseCalendar extends \System\Globalization\Calendar implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Globalization\GregorianCalendarHelper

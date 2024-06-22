@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 enum Script
 {
+
 	
 	case Unknown = '0';
 	case Common = '1';

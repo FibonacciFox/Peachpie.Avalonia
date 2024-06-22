@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventPipeSessionInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

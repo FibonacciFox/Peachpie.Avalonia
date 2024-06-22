@@ -20,6 +20,7 @@ class Border extends \Avalonia\Controls\Decorator implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\VisualTree\IVisualWithRoundRectClip
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -388,7 +389,7 @@ class Border extends \Avalonia\Controls\Decorator implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

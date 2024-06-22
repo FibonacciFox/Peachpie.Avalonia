@@ -22,6 +22,7 @@ class ServerCompositionSimplePen extends \Avalonia\Rendering\Composition\Server\
 	\Avalonia\Media\IPen
 {
 	use ServerCompositionSimplePenOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

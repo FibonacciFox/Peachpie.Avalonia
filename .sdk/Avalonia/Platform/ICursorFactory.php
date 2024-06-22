@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface ICursorFactory
 {
 
+
 	/**
 	 * @param \Avalonia\Input\StandardCursorType $cursorType
 	 * @return \Avalonia\Platform\ICursorImpl

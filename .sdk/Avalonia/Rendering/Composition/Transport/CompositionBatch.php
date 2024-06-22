@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Transport;
 class CompositionBatch extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\Task

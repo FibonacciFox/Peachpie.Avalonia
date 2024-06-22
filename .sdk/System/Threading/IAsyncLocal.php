@@ -3,6 +3,7 @@ namespace System\Threading;
 interface IAsyncLocal
 {
 
+
 	/**
 	 * @param \System\Object|object $previousValue
 	 * @param \System\Object|object $currentValue

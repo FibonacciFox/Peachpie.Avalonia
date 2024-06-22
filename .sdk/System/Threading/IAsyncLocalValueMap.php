@@ -3,6 +3,7 @@ namespace System\Threading;
 interface IAsyncLocalValueMap
 {
 
+
 	/**
 	 * @param \System\Threading\IAsyncLocal $key
 	 * @param \System\Object& &$value

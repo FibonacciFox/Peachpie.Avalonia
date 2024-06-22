@@ -2,6 +2,7 @@
 namespace System;
 class ProgressStatics extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

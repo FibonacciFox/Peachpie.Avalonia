@@ -2,6 +2,7 @@
 namespace Avalonia\Animation\Utils;
 class EasingUtils extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Double|double

@@ -4,4 +4,5 @@ final class StringHandleOnStack extends \System\ValueType
 {
 
 
+
 }

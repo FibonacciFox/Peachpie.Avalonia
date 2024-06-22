@@ -216,6 +216,7 @@ trait RdmOverride {
 class Rdm extends \System\Runtime\Intrinsics\Arm\AdvSimd
 {
 	use RdmOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

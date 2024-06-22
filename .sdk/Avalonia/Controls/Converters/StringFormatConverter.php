@@ -4,6 +4,7 @@ class StringFormatConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IMultiValueConverter
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\IList_1 $values [generic: System\Object]
 	 * @param \System\Type $targetType

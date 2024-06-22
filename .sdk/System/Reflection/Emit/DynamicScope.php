@@ -64,6 +64,7 @@ trait DynamicScopeOverride {
 final class DynamicScope extends \System\Object
 {
 	use DynamicScopeOverride;
+
 	/**
 	 * @field
 	 * @since readonly

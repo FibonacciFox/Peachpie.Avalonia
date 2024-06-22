@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum TYPEKIND
 {
+
 	
 	case TKIND_ENUM = '0';
 	case TKIND_RECORD = '1';

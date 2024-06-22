@@ -15,6 +15,7 @@ class Span extends \Avalonia\Controls\Documents\Inline implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -138,7 +139,7 @@ class Span extends \Avalonia\Controls\Documents\Inline implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

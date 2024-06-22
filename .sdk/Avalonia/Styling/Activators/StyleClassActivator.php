@@ -5,6 +5,7 @@ final class StyleClassActivator extends \Avalonia\Styling\Activators\StyleActiva
 	\System\IDisposable,
 	\Avalonia\Controls\IClassesChangedListener
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

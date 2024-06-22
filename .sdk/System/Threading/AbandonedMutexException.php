@@ -39,6 +39,7 @@ class AbandonedMutexException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AbandonedMutexExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

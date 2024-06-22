@@ -21,6 +21,7 @@ final class DataMisalignedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DataMisalignedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

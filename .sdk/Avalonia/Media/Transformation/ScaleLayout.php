@@ -3,6 +3,7 @@ namespace Avalonia\Media\Transformation;
 final class ScaleLayout extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Double|double

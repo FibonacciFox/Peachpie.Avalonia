@@ -14,6 +14,7 @@ trait BoxShadowOverride {
 final class BoxShadow extends \System\ValueType
 {
 	use BoxShadowOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

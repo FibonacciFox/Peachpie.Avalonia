@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum UnicodeCategory
 {
+
 	
 	case UppercaseLetter = '0';
 	case LowercaseLetter = '1';

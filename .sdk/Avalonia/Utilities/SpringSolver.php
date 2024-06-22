@@ -28,6 +28,7 @@ final class SpringSolver extends \System\ValueType
 {
 	use SpanRiderOverride;
 
+
 	/**
 	 * @param \System\Double|double $t
 	 * @return \System\Double|double

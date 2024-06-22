@@ -42,6 +42,7 @@ class ScrollContentPresenter extends \Avalonia\Controls\Presenters\ContentPresen
 	\Avalonia\Controls\IScrollAnchorProvider
 {
 	use ScrollContentPresenterOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -565,7 +566,7 @@ class ScrollContentPresenter extends \Avalonia\Controls\Presenters\ContentPresen
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -16,6 +16,7 @@ class FormattableString extends \System\Object implements
 	\System\IFormattable
 {
 	use FormattableStringOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

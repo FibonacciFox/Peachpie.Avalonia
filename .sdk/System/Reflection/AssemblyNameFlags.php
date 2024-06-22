@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum AssemblyNameFlags
 {
+
 	
 	case None = '0';
 	case PublicKey = '1';

@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 enum ExpressionType
 {
+
 	
 	case Add = '0';
 	case Subtract = '1';

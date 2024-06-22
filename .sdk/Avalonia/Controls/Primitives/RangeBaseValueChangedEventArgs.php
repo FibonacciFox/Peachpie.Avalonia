@@ -21,6 +21,7 @@ trait RangeBaseOverride {
 class RangeBaseValueChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use RangeBaseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

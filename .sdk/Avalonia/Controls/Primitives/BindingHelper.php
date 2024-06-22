@@ -15,6 +15,7 @@ class BindingHelper extends \Avalonia\StyledElement implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -88,7 +89,7 @@ class BindingHelper extends \Avalonia\StyledElement implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

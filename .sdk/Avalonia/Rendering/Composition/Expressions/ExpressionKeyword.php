@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 enum ExpressionKeyword
 {
+
 	
 	case StartingValue = '0';
 	case CurrentValue = '1';

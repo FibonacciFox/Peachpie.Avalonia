@@ -21,6 +21,7 @@ class TypeUnloadedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TypeUnloadedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

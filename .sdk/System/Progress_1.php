@@ -17,6 +17,7 @@ class Progress_1 extends \System\Object implements
 {
 	use PlatformNotSupportedExceptionOverride;
 
+
 	/**
 	 * @param \System\EventHandler_1 $value [generic: T]
 	 * @return \System\Void|void

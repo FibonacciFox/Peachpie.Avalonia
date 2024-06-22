@@ -9,6 +9,7 @@ namespace Avalonia\Controls\Primitives;
 interface IScrollSnapPointsInfo
 {
 
+
 	/**
 	 * @param \Avalonia\Layout\Orientation $orientation
 	 * @param \Avalonia\Controls\Primitives\SnapPointsAlignment $snapPointsAlignment

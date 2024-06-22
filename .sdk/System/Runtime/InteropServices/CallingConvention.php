@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum CallingConvention
 {
+
 	
 	case Winapi = '1';
 	case Cdecl = '2';

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 final class DiagnosticTextRenderer extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Double|double
 	 */

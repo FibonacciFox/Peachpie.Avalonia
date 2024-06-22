@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class NumericUpDownValueChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\Decimal]

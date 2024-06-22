@@ -5,6 +5,7 @@ final class SymbolType extends \System\Reflection\TypeInfo implements
 	\System\Reflection\IReflect,
 	\System\Reflection\IReflectableType
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\TypeKind

@@ -3,6 +3,7 @@ namespace Avalonia;
 class VisualExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $visual
 	 * @param \Avalonia\PixelPoint $point

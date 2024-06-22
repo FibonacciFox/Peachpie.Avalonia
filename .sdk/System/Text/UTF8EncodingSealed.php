@@ -3,6 +3,7 @@ namespace System\Text;
 final class UTF8EncodingSealed extends \System\Text\UTF8Encoding implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

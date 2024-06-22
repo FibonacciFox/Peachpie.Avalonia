@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IMacOSTopLevelPlatformHandle
 {
 
+
 	/**
 	 * @return \System\IntPtr
 	 */

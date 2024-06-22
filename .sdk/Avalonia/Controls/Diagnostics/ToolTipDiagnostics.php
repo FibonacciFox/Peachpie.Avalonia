@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Diagnostics;
 class ToolTipDiagnostics extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

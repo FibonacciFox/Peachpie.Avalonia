@@ -5,6 +5,7 @@ final class SimpleTextSource extends \System\ValueType implements
 	\System\IEquatable_1
 {
 
+
 	/**
 	 * @param \System\Int32|int $textSourceIndex
 	 * @return \Avalonia\Media\TextFormatting\TextRun

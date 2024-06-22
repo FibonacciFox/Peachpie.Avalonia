@@ -4,6 +4,7 @@ class StringReader extends \System\IO\TextReader implements
 	\System\IDisposable
 {
 
+
 	private static function ThrowObjectDisposedException_ReaderClosed(){}
 	/**
 	 * @param \System\String|string $s

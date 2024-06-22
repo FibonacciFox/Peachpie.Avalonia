@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum UnmanagedType
 {
+
 	
 	case Bool = '2';
 	case I1 = '3';

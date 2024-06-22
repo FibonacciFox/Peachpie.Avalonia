@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum RefreshVisualizerState
 {
+
 	
 	case Idle = '0';
 	case Peeking = '1';

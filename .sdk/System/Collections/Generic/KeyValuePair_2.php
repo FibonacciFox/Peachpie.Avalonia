@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class KeyValuePair_2 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \TKey

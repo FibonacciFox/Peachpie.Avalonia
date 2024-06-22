@@ -20,6 +20,7 @@ class ChromeOverlayLayer extends \Avalonia\Controls\Panel implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Controls
@@ -333,7 +334,7 @@ class ChromeOverlayLayer extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

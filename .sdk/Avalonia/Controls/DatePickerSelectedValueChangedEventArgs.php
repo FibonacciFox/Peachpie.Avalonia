@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class DatePickerSelectedValueChangedEventArgs extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\DateTimeOffset]

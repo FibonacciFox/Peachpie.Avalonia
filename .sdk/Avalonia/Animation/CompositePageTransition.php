@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 class CompositePageTransition extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\List_1[Avalonia\Animation\IPageTransition]

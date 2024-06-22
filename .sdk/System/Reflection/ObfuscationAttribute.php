@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class ObfuscationAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

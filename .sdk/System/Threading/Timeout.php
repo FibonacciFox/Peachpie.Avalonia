@@ -2,6 +2,7 @@
 namespace System\Threading;
 class Timeout extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

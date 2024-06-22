@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CorrectionAlgorithm
 {
+
 	
 	case Default = '0';
 	case Year1988to2019 = '1';

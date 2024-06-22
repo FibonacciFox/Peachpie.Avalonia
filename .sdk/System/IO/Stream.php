@@ -179,6 +179,7 @@ class Stream extends \System\MarshalByRefObject implements
 	\System\IAsyncDisposable
 {
 	use StreamOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

@@ -223,6 +223,7 @@ class AvaloniaList_1 extends \System\Object implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use AvaloniaList_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

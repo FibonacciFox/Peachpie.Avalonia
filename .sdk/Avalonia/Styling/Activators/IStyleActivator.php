@@ -3,6 +3,7 @@ namespace Avalonia\Styling\Activators;
 interface IStyleActivator
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

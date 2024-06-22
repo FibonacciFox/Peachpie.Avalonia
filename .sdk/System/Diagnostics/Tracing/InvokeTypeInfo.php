@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class InvokeTypeInfo extends \System\Diagnostics\Tracing\TraceLoggingTypeInfo
 {
+
 	/**
 	 * @field
 	 * @since readonly

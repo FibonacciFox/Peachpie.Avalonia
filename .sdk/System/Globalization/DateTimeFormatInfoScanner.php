@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class DateTimeFormatInfoScanner extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\List_1[System\String]

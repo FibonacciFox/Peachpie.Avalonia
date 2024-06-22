@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Animations;
 final class KeyFrame_1 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Single

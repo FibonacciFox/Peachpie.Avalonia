@@ -19,6 +19,7 @@ trait TimerHolderOverride {
 final class TimerHolder extends \System\Object
 {
 	use TimerHolderOverride;
+
 	/**
 	 * @field
 	 * @since readonly

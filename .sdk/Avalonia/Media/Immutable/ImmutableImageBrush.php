@@ -29,6 +29,7 @@ class ImmutableImageBrush extends \Avalonia\Media\Immutable\ImmutableTileBrush i
 	\Avalonia\Media\IImageBrush
 {
 	use ImmutableDashStyleOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IImageBrushSource

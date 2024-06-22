@@ -3,6 +3,7 @@ namespace System\Buffers;
 interface IBufferWriter_1
 {
 
+
 	/**
 	 * @param \System\Int32|int $count
 	 * @return \System\Void|void

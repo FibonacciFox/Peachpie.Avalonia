@@ -342,6 +342,7 @@ final class TimeOnly extends \System\ValueType implements
 	\System\IParsable_1
 {
 	use TimeOnlyOverride;
+
 	/**
 	 * @property
 	 * @var \System\TimeOnly

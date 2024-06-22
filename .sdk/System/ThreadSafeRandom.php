@@ -3,6 +3,7 @@ namespace System;
 final class ThreadSafeRandom extends \System\Random
 {
 
+
 	private static function Create(){}
 	/**
 	 */

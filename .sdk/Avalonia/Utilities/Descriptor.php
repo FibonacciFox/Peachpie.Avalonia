@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class Descriptor extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\WeakReference_1[TSubscriber]

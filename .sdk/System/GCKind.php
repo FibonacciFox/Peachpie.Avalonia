@@ -2,6 +2,7 @@
 namespace System;
 enum GCKind
 {
+
 	
 	case Any = '0';
 	case Ephemeral = '1';

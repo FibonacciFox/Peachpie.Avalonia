@@ -18,6 +18,7 @@ final class TypeBuilderInstantiation extends \System\Reflection\TypeInfo impleme
 	\System\Reflection\IReflectableType
 {
 	use TypeBuilderInstantiationOverride;
+
 	/**
 	 * @field
 	 * @var \System\Collections\Hashtable

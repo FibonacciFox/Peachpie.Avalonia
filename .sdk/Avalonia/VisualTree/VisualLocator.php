@@ -3,6 +3,7 @@ namespace Avalonia\VisualTree;
 class VisualLocator extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $relativeTo
 	 * @param \System\Int32|int $ancestorLevel

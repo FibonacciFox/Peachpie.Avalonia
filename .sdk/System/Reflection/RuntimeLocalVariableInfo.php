@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class RuntimeLocalVariableInfo extends \System\Reflection\LocalVariableInfo
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

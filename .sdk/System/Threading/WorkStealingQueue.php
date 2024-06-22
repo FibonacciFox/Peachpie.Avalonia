@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class WorkStealingQueue extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Object[]|array

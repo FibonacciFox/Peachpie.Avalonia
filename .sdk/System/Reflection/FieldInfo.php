@@ -39,6 +39,7 @@ class FieldInfo extends \System\Reflection\MemberInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use FieldInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

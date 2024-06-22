@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 class IncrementingPollingCounter extends \System\Diagnostics\Tracing\DiagnosticCounter implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan

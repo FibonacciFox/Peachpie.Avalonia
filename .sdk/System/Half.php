@@ -460,6 +460,7 @@ final class Half extends \System\ValueType implements
 	\System\Numerics\IMinMaxValue_1
 {
 	use HalfOverride;
+
 	/**
 	 * @field
 	 * @since readonly

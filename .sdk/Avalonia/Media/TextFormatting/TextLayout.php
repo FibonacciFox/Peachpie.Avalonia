@@ -36,6 +36,7 @@ class TextLayout extends \System\Object implements
 	\System\IDisposable
 {
 	use ShapedBufferOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

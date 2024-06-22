@@ -16,6 +16,7 @@ trait ComAwareEventInfoOverride {
 final class NullableAttribute extends \System\Attribute
 {
 	use ComAwareEventInfoOverride;
+
 	/**
 	 * @field
 	 * @since readonly

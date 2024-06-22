@@ -2,6 +2,7 @@
 namespace System\Resources;
 final class SatelliteContractVersionAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

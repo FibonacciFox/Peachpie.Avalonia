@@ -2,6 +2,7 @@
 namespace System;
 final class ParsingInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Globalization\Calendar

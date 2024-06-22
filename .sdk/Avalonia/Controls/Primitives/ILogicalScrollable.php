@@ -7,6 +7,7 @@ namespace Avalonia\Controls\Primitives;
 interface ILogicalScrollable
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\Control $target
 	 * @param \Avalonia\Rect $targetRect

@@ -38,6 +38,7 @@ class OffscreenTopLevel extends \Avalonia\Controls\TopLevel implements
 	\Avalonia\Input\TextInput\ITextInputMethodRoot
 {
 	use OffscreenTopLevelOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\IHitTester
@@ -511,7 +512,7 @@ class OffscreenTopLevel extends \Avalonia\Controls\TopLevel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

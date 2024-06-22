@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class NavigationDirectionExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Input\NavigationDirection $direction
 	 * @return \System\Boolean|bool

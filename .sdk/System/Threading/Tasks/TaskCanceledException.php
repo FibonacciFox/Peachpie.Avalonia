@@ -31,6 +31,7 @@ class TaskCanceledException extends \System\OperationCanceledException implement
 	\System\Runtime\Serialization\ISerializable
 {
 	use TaskCanceledExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

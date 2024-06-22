@@ -21,6 +21,7 @@ final class EncoderFallbackException extends \System\ArgumentException implement
 	\System\Runtime\Serialization\ISerializable
 {
 	use EncoderFallbackExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

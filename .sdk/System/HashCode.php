@@ -104,6 +104,7 @@ final class HashCode extends \System\ValueType
 {
 	use HashCodeOverride;
 
+
 	private static function GenerateGlobalSeed(){}
 	/**
 	 * @uses HashCodeOverride::Combine_1 <br>public , args: ($value1)<br>

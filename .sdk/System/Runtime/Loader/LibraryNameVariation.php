@@ -2,6 +2,7 @@
 namespace System\Runtime\Loader;
 final class LibraryNameVariation extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

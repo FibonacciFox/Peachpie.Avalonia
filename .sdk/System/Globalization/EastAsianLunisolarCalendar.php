@@ -16,6 +16,7 @@ class EastAsianLunisolarCalendar extends \System\Globalization\Calendar implemen
 	\System\ICloneable
 {
 	use EastAsianLunisolarCalendarOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

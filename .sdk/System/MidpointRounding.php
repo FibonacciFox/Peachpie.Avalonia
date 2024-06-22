@@ -2,6 +2,7 @@
 namespace System;
 enum MidpointRounding
 {
+
 	
 	case ToEven = '0';
 	case AwayFromZero = '1';

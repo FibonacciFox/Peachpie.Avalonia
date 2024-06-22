@@ -17,6 +17,7 @@ class Clock extends \Avalonia\Animation\ClockBase implements
 	\System\IObservable_1
 {
 	use AnimatorKeyFrameOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\IClock

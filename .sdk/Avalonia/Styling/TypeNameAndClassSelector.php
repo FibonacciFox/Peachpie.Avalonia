@@ -2,6 +2,7 @@
 namespace Avalonia\Styling;
 final class TypeNameAndClassSelector extends \Avalonia\Styling\Selector
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

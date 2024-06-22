@@ -21,6 +21,7 @@ final class StackOverflowException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use StackOverflowExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

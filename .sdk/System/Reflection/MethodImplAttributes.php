@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MethodImplAttributes
 {
+
 	
 	case CodeTypeMask = '3';
 	case IL = '0';

@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage\FileIO;
 class StorageProviderHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $path
 	 * @return \Avalonia\Platform\Storage\IStorageItem

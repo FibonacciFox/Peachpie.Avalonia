@@ -22,6 +22,7 @@ trait ComplexOverride {
 final class Complex extends \System\ValueType
 {
 	use ComplexOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

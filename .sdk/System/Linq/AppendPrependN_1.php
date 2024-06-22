@@ -8,6 +8,7 @@ final class AppendPrependN_1 extends \System\Linq\AppendPrependIterator_1 implem
 	\System\Collections\IEnumerator,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

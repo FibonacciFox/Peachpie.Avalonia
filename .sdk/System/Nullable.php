@@ -3,6 +3,7 @@ namespace System;
 class Nullable extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Nullable_1 $n1 [generic: T]
 	 * @param \System\Nullable_1 $n2 [generic: T]

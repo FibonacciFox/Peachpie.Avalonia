@@ -4,6 +4,7 @@ final class ArrayEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator,
 	\System\ICloneable
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

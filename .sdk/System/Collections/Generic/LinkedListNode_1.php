@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class LinkedListNode_1 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\LinkedList_1[T]

@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum MouseButton
 {
+
 	
 	case None = '0';
 	case Left = '1';

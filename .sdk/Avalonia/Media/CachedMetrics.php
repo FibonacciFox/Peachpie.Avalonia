@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class CachedMetrics extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Double|double

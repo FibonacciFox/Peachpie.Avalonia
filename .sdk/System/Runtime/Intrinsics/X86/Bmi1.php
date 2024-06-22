@@ -23,6 +23,7 @@ trait Bmi1Override {
 class Bmi1 extends \System\Runtime\Intrinsics\X86\X86Base
 {
 	use Bmi1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

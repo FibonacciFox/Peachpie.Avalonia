@@ -16,6 +16,7 @@ final class AsyncLocal_1 extends \System\Object implements
 	\System\Threading\IAsyncLocal
 {
 	use AbandonedMutexExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \T|object

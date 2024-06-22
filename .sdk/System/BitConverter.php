@@ -315,6 +315,7 @@ trait BitConverterOverride {
 class BitConverter extends \System\Object
 {
 	use BitConverterOverride;
+
 	/**
 	 * @field
 	 * @since readonly

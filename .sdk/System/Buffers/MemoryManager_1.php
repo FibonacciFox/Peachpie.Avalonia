@@ -35,6 +35,7 @@ class MemoryManager_1 extends \System\Object implements
 	\System\Buffers\IPinnable
 {
 	use MemoryManager_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Memory_1[T]

@@ -2,6 +2,7 @@
 namespace System;
 class LocalAppContextSwitches extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

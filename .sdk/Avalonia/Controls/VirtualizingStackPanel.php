@@ -42,6 +42,7 @@ class VirtualizingStackPanel extends \Avalonia\Controls\VirtualizingPanel implem
 	\Avalonia\Controls\Primitives\IScrollSnapPointsInfo
 {
 	use VirtualizingStackPanelOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -418,7 +419,7 @@ class VirtualizingStackPanel extends \Avalonia\Controls\VirtualizingPanel implem
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

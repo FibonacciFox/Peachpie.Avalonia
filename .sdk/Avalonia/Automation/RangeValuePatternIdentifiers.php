@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class RangeValuePatternIdentifiers extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Automation\AutomationProperty

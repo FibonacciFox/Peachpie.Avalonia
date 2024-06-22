@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 class FolderPickerOpenOptions extends \Avalonia\Platform\Storage\PickerOptions
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

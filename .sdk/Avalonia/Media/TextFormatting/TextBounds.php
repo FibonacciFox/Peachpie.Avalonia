@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class TextBounds extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

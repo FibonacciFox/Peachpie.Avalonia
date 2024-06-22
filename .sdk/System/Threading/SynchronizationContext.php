@@ -2,6 +2,7 @@
 namespace System\Threading;
 class SynchronizationContext extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\SynchronizationContext

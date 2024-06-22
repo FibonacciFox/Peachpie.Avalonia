@@ -21,6 +21,7 @@ class CustomAttributeFormatException extends \System\FormatException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use CustomAttributeFormatExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace System\Collections\ObjectModel;
 final class SimpleMonitor extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CalendarDataType
 {
+
 	
 	case Uninitialized = '0';
 	case NativeName = '1';

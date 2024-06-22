@@ -21,6 +21,7 @@ class TimeoutException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TimeoutExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CalendarAlgorithmType
 {
+
 	
 	case Unknown = '0';
 	case SolarCalendar = '1';

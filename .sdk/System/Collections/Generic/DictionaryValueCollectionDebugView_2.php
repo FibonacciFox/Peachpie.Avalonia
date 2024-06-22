@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class DictionaryValueCollectionDebugView_2 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \TValue[]

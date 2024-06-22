@@ -37,6 +37,7 @@ final class Vector3D extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use Vector3DOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

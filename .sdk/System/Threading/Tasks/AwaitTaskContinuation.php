@@ -23,6 +23,7 @@ class AwaitTaskContinuation extends \System\Threading\Tasks\TaskContinuation imp
 	\System\Threading\IThreadPoolWorkItem
 {
 	use AwaitTaskContinuationOverride;
+
 	/**
 	 * @field
 	 * @since readonly

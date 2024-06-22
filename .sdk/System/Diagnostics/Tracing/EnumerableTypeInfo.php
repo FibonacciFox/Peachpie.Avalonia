@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EnumerableTypeInfo extends \System\Diagnostics\Tracing\TraceLoggingTypeInfo
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

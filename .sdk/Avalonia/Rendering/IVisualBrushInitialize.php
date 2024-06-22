@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 interface IVisualBrushInitialize
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

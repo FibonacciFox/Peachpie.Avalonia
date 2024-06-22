@@ -44,6 +44,7 @@ class HeaderedItemsControl extends \Avalonia\Controls\ItemsControl implements
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
 	use HeaderedItemsControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -489,7 +490,7 @@ class HeaderedItemsControl extends \Avalonia\Controls\ItemsControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

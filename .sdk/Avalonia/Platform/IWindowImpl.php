@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IWindowImpl
 {
 
+
 	/**
 	 * @param \System\String|string $title
 	 * @return \System\Void|void

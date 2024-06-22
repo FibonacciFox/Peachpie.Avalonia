@@ -4,6 +4,7 @@ class ManagedPopupPositioner extends \System\Object implements
 	\Avalonia\Controls\Primitives\PopupPositioning\IPopupPositioner
 {
 
+
 	private static function GetAnchorPoint($anchorRect, $edge){}
 	private static function Gravitate($anchorPoint, $size, $gravity){}
 	/**

@@ -49,6 +49,7 @@ final class ArraySlice_1 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	use ArraySlice_1Override;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\ArraySlice_1[T]

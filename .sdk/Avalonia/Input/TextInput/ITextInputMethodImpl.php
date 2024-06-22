@@ -3,6 +3,7 @@ namespace Avalonia\Input\TextInput;
 interface ITextInputMethodImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Input\TextInput\TextInputMethodClient $client
 	 * @return \System\Void|void

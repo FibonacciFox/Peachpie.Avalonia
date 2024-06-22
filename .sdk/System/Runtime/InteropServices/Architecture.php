@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum Architecture
 {
+
 	
 	case X86 = '0';
 	case X64 = '1';

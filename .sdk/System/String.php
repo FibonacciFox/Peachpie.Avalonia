@@ -1245,6 +1245,7 @@ final class String extends \System\Object implements
 	\System\ICloneable
 {
 	use StringOverride;
+
 	/**
 	 * @field
 	 * @since readonly

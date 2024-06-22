@@ -2,6 +2,7 @@
 namespace System;
 class HexConverter extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlySpan_1[System\Byte]

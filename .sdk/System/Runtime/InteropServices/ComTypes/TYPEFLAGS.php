@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum TYPEFLAGS
 {
+
 	
 	case TYPEFLAG_FAPPOBJECT = '1';
 	case TYPEFLAG_FCANCREATE = '2';

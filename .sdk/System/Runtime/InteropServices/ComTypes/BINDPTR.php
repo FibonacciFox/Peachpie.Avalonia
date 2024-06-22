@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class BINDPTR extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

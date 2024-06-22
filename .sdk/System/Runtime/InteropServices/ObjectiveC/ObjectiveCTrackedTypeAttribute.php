@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ObjectiveC;
 final class ObjectiveCTrackedTypeAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

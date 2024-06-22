@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class ListEntry extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

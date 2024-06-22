@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PointerDeltaEventArgs extends \Avalonia\Input\PointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

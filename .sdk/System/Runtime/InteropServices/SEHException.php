@@ -21,6 +21,7 @@ class SEHException extends \System\Runtime\InteropServices\ExternalException imp
 	\System\Runtime\Serialization\ISerializable
 {
 	use SEHExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

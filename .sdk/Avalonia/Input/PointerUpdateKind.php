@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum PointerUpdateKind
 {
+
 	
 	case LeftButtonPressed = '0';
 	case MiddleButtonPressed = '1';

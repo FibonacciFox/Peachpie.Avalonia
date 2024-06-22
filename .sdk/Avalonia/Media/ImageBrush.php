@@ -24,6 +24,7 @@ final class ImageBrush extends \Avalonia\Media\TileBrush implements
 	\Avalonia\Media\IMutableBrush
 {
 	use ImageBrushOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -86,7 +87,7 @@ final class ImageBrush extends \Avalonia\Media\TileBrush implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class Entry extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

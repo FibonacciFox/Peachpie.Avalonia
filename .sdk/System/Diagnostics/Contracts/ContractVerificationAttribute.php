@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 final class ContractVerificationAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

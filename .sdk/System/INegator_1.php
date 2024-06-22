@@ -3,6 +3,7 @@ namespace System;
 interface INegator_1
 {
 
+
 	/**
 	 * @param \System\Boolean|bool $equals
 	 * @return \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace System;
 final class TupleSlim_4 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

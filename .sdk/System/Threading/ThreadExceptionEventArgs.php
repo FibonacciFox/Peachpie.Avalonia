@@ -2,6 +2,7 @@
 namespace System\Threading;
 class ThreadExceptionEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Exception

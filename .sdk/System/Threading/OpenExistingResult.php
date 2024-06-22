@@ -2,6 +2,7 @@
 namespace System\Threading;
 enum OpenExistingResult
 {
+
 	
 	case Success = '0';
 	case NameNotFound = '1';

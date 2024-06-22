@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum ProcessorArchitecture
 {
+
 	
 	case None = '0';
 	case MSIL = '1';

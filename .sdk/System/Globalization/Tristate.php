@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum Tristate
 {
+
 	
 	case NotInitialized = '0';
 	case False = '1';

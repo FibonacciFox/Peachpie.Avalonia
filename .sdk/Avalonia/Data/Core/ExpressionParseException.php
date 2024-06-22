@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class ExpressionParseException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum ClassInterfaceType
 {
+
 	
 	case None = '0';
 	case AutoDispatch = '1';

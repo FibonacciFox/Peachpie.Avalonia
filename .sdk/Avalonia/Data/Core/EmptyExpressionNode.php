@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Core;
 class EmptyExpressionNode extends \Avalonia\Data\Core\ExpressionNode
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class OutAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

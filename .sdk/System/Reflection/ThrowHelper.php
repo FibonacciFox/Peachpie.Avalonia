@@ -3,6 +3,7 @@ namespace System\Reflection;
 class ThrowHelper extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

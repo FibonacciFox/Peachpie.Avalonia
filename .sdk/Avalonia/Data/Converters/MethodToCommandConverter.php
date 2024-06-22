@@ -25,6 +25,7 @@ class MethodToCommandConverter extends \System\Object implements
 {
 	use MethodToCommandConverterOverride;
 
+
 	private function OnPropertyChanged($sender, $args){}
 	/**
 	 * @param \System\EventHandler $value

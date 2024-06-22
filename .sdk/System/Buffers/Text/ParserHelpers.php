@@ -30,6 +30,7 @@ class ParserHelpers extends \System\Object
 {
 	use ParserHelpersOverride;
 
+
 	/**
 	 * @param \System\Int32|int $i
 	 * @return \System\Boolean|bool

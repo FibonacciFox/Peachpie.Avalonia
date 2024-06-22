@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class NameScope extends \System\Object implements
 	\Avalonia\Controls\INameScope
 {
+
 	/**
 	 * @field
 	 * @since readonly

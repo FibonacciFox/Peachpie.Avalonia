@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class Opcodes extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventOpcode

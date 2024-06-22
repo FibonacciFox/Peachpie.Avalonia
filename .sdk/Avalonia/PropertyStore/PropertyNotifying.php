@@ -4,6 +4,7 @@ final class PropertyNotifying extends \System\ValueType implements
 	\System\IDisposable
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

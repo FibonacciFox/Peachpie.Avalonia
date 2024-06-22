@@ -3,6 +3,7 @@ namespace System\Text;
 class ASCIIEncoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @since readonly

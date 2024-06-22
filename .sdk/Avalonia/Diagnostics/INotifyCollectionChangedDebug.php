@@ -3,6 +3,7 @@ namespace Avalonia\Diagnostics;
 interface INotifyCollectionChangedDebug
 {
 
+
 	/**
 	 * @return \System\Delegate[]
 	 */

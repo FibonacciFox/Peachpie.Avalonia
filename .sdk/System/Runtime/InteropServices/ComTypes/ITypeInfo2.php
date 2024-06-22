@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface ITypeInfo2
 {
 
+
 	/**
 	 * @param \System\IntPtr& &$ppTypeAttr
 	 * @return \System\Void|void

@@ -21,6 +21,7 @@ final class SortedListKeyEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use SortedListKeyEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \TKey

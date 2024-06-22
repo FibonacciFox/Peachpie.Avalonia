@@ -18,3 +18,14 @@ function Load() : void {
 function alert(mixed $message) : void {
 
 }
+
+
+/**
+ * Выполняет указанный вызываемый объект PHP в потоке пользовательского интерфейса.
+ *
+ * @param callable $callable Вызываемый объект PHP.
+ */
+function uiLater(callable $callable)
+{
+
+}

@@ -26,6 +26,7 @@ trait TraceLoggingEventTypesOverride {
 class TraceLoggingEventTypes extends \System\Object
 {
 	use TraceLoggingEventTypesOverride;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -574,6 +574,7 @@ final class StringBuilder extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use StringBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Char[]

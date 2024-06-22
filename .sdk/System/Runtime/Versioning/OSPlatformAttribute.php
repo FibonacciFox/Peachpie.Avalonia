@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 class OSPlatformAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

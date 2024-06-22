@@ -4,6 +4,7 @@ final class ArrayMemoryPoolBuffer extends \System\Object implements
 	\System\Buffers\IMemoryOwner_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Memory_1[T]

@@ -109,6 +109,7 @@ class Delegate extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DelegateOverride;
+
 	/**
 	 * @field
 	 * @var \System\Object|object

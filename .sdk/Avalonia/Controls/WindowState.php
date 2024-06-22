@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum WindowState
 {
+
 	
 	case Normal = '0';
 	case Minimized = '1';

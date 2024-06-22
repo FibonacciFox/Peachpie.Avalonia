@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 final class ExpressionEvaluationContext extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionVariant

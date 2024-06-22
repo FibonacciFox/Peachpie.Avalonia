@@ -19,6 +19,7 @@ class TemplateResult_1 extends \System\Object implements
 	\Avalonia\Controls\Templates\ITemplateResult
 {
 	use TemplateResult_1Override;
+
 	/**
 	 * @property
 	 * @var \T|object

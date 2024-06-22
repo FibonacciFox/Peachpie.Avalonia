@@ -4,8 +4,9 @@ class AvaloniaProperty_1 extends \Avalonia\AvaloniaProperty implements
 	\System\IEquatable_1,
 	\Avalonia\Data\Core\IPropertyInfo
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]|\System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs]
 	 */
 	public $Changed;

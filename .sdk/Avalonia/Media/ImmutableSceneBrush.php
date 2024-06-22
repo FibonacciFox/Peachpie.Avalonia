@@ -5,6 +5,7 @@ class ImmutableSceneBrush extends \Avalonia\Media\Immutable\ImmutableTileBrush i
 	\Avalonia\Media\IBrush,
 	\Avalonia\Media\IImmutableBrush
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\AlignmentX

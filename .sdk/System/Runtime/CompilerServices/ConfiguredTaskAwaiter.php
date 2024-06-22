@@ -5,6 +5,7 @@ final class ConfiguredTaskAwaiter extends \System\ValueType implements
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\Runtime\CompilerServices\IConfiguredTaskAwaiter
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

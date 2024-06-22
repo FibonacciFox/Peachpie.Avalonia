@@ -6,6 +6,7 @@ class NonRandomizedStringEqualityComparer extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	/**
 	 * @return \System\Collections\Generic\RandomizedStringEqualityComparer
 	 */

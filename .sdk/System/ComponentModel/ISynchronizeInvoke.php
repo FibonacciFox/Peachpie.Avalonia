@@ -3,6 +3,7 @@ namespace System\ComponentModel;
 interface ISynchronizeInvoke
 {
 
+
 	/**
 	 * @param \System\Delegate $method
 	 * @param \System\Object $args

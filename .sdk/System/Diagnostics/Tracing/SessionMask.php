@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class SessionMask extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\Tracing\SessionMask

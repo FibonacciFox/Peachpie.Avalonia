@@ -114,6 +114,7 @@ class SemaphoreSlim extends \System\Object implements
 	\System\IDisposable
 {
 	use SemaphoreSlimOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

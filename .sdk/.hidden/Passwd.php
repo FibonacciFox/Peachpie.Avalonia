@@ -2,6 +2,7 @@
 
 final class Passwd extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Byte*

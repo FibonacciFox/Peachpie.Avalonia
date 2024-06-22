@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum RegistrationConnectionType
 {
+
 	
 	case SingleUse = '0';
 	case MultipleUse = '1';

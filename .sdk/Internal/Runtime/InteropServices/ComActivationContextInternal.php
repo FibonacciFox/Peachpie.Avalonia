@@ -2,6 +2,7 @@
 namespace Internal\Runtime\InteropServices;
 final class ComActivationContextInternal extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Guid

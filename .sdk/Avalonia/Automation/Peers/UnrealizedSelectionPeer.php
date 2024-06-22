@@ -2,6 +2,7 @@
 namespace Avalonia\Automation\Peers;
 class UnrealizedSelectionPeer extends \Avalonia\Automation\Peers\UnrealizedElementAutomationPeer
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

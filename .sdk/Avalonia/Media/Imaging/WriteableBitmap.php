@@ -28,6 +28,7 @@ class WriteableBitmap extends \Avalonia\Media\Imaging\Bitmap implements
 	\Avalonia\Media\IImageBrushSource
 {
 	use WriteableBitmapOverride;
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[Avalonia\Platform\PixelFormat]

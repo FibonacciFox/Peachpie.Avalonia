@@ -2,6 +2,7 @@
 namespace System\Threading;
 enum EnterSpinLockReason
 {
+
 	
 	case EnterAnyRead = '0';
 	case ExitAnyRead = '1';

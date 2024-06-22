@@ -15,6 +15,7 @@ class ScrollGestureRecognizer extends \Avalonia\Input\GestureRecognizers\Gesture
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -136,7 +137,7 @@ class ScrollGestureRecognizer extends \Avalonia\Input\GestureRecognizers\Gesture
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

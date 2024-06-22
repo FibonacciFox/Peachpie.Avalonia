@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum TypeAttributes
 {
+
 	
 	case VisibilityMask = '7';
 	case NotPublic = '0';

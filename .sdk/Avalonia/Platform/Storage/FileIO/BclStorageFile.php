@@ -24,6 +24,7 @@ class BclStorageFile extends \System\Object implements
 	\Avalonia\Platform\Storage\IStorageBookmarkItem
 {
 	use BclStorageFileOverride;
+
 	/**
 	 * @property
 	 * @var \System\IO\FileInfo

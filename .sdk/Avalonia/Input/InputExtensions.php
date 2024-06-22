@@ -24,6 +24,7 @@ class InputExtensions extends \System\Object
 {
 	use InputExtensionsOverride;
 
+
 	/**
 	 * @param \Avalonia\Input\IInputElement $element
 	 * @param \Avalonia\Point $p

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum TypeLibVarFlags
 {
+
 	
 	case FReadOnly = '1';
 	case FSource = '2';

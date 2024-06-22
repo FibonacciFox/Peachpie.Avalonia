@@ -19,6 +19,7 @@ class SpringEasing extends \Avalonia\Animation\Easings\Easing implements
 	\Avalonia\Animation\Easings\IEasing
 {
 	use EasingTypeConverterOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

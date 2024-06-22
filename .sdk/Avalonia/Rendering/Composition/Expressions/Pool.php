@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Expressions;
 final class Pool extends \System\ValueType
 {
 
+
 	/**
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionTrackedObjects
 	 */

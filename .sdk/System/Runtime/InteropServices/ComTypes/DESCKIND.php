@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum DESCKIND
 {
+
 	
 	case DESCKIND_NONE = '0';
 	case DESCKIND_FUNCDESC = '1';

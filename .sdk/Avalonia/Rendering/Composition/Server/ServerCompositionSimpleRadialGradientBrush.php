@@ -8,6 +8,7 @@ class ServerCompositionSimpleRadialGradientBrush extends \Avalonia\Rendering\Com
 	\Avalonia\Media\IGradientBrush,
 	\Avalonia\Media\IRadialGradientBrush
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

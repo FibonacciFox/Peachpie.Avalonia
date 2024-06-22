@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class BidiRange extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\SByte

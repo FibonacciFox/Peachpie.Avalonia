@@ -156,6 +156,7 @@ final class Matrix4x4 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use Matrix4x4Override;
+
 	/**
 	 * @field
 	 * @var \System\Single

@@ -6,6 +6,7 @@ class ServerCompositionSimpleTransform extends \Avalonia\Rendering\Composition\S
 	\System\IDisposable,
 	\Avalonia\Media\ITransform
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

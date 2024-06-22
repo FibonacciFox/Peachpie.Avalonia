@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class ResourcesChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -4,6 +4,7 @@ class LocalValueBindingObserver_1 extends \Avalonia\PropertyStore\LocalValueBind
 	\System\IObserver_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\IDisposable

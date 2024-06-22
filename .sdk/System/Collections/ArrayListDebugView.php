@@ -2,6 +2,7 @@
 namespace System\Collections;
 final class ArrayListDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object[]|array

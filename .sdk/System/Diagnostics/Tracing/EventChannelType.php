@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventChannelType
 {
+
 	
 	case Admin = '1';
 	case Operational = '2';

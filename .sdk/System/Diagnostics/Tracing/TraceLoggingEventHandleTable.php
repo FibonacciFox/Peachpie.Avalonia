@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class TraceLoggingEventHandleTable extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $eventID
 	 * @param \System\IntPtr $eventHandle

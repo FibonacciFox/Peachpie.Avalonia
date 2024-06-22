@@ -22,6 +22,7 @@ class StackPanel extends \Avalonia\Controls\Panel implements
 	\Avalonia\Input\INavigableContainer,
 	\Avalonia\Controls\Primitives\IScrollSnapPointsInfo
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -391,7 +392,7 @@ class StackPanel extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

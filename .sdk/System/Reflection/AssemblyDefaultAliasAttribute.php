@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class AssemblyDefaultAliasAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

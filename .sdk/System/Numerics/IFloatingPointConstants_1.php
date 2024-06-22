@@ -4,4 +4,5 @@ interface IFloatingPointConstants_1
 {
 
 
+
 }

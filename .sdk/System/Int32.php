@@ -182,6 +182,7 @@ final class Int32 extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use Int32Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

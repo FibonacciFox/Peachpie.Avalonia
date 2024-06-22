@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class TextRunBounds extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

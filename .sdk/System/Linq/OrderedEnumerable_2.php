@@ -7,6 +7,7 @@ final class OrderedEnumerable_2 extends \System\Linq\OrderedEnumerable_1 impleme
 	\System\Collections\IEnumerable,
 	\System\Linq\IOrderedEnumerable_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\IEnumerable_1[TElement]

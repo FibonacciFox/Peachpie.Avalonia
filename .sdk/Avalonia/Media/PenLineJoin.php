@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum PenLineJoin
 {
+
 	
 	case Bevel = '0';
 	case Miter = '1';

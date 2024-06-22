@@ -4,6 +4,7 @@ final class KeyFrame extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Collections\AvaloniaList_1[Avalonia\Animation\IAnimationSetter]
@@ -26,7 +27,7 @@ final class KeyFrame extends \Avalonia\AvaloniaObject implements
 	 */
 	public $KeySpline;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

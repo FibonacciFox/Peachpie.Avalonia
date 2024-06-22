@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class OpCode extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Emit\OperandType

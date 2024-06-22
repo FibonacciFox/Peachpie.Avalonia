@@ -3,6 +3,7 @@ namespace Avalonia\Interactivity;
 class EventRoute extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

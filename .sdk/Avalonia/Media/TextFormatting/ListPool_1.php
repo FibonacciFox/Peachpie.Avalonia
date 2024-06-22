@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class ListPool_1 extends \System\Object
 {
 
+
 	/**
 	 * @return \Avalonia\Media\TextFormatting\FormattingObjectPool+RentedList_1[T]
 	 */

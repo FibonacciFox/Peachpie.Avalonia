@@ -21,6 +21,7 @@ class RenderTargetBitmap extends \Avalonia\Media\Imaging\Bitmap implements
 	\Avalonia\Media\IImageBrushSource
 {
 	use RenderTargetBitmapOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

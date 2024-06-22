@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class InputMethod extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

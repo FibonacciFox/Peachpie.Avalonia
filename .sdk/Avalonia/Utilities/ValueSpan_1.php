@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 final class ValueSpan_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

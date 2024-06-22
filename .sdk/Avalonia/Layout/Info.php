@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 final class Info extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

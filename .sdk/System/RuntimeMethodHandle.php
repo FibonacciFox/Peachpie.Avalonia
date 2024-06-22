@@ -158,6 +158,7 @@ final class RuntimeMethodHandle extends \System\ValueType implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RuntimeMethodHandleOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum VarEnum
 {
+
 	
 	case VT_EMPTY = '0';
 	case VT_NULL = '1';

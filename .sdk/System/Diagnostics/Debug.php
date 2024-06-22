@@ -228,6 +228,7 @@ trait DebugOverride {
 class Debug extends \System\Object
 {
 	use DebugOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

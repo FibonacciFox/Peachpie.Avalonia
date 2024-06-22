@@ -2,6 +2,7 @@
 namespace System\Threading;
 class BlockingConfig extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

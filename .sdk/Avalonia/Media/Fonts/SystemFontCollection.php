@@ -8,6 +8,7 @@ class SystemFontCollection extends \Avalonia\Media\Fonts\FontCollectionBase impl
 	\System\Collections\IEnumerable,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

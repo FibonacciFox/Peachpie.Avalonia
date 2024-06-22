@@ -4,6 +4,7 @@ final class Action_1 extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

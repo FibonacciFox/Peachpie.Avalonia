@@ -16,6 +16,7 @@ class FileStreamStrategy extends \System\IO\Stream implements
 	\System\IAsyncDisposable
 {
 	use FileStreamStrategyOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

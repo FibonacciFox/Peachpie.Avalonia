@@ -3,6 +3,7 @@ namespace System\Linq;
 interface IPartition_1
 {
 
+
 	/**
 	 * @param \System\Int32|int $count
 	 * @return \System\Linq\IPartition_1[TElement]

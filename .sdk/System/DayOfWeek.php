@@ -2,6 +2,7 @@
 namespace System;
 enum DayOfWeek
 {
+
 	
 	case Sunday = '0';
 	case Monday = '1';

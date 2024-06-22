@@ -34,6 +34,7 @@ final class EncodingCharBuffer extends \System\Object
 {
 	use EncodingCharBufferOverride;
 
+
 	/**
 	 * @uses EncodingCharBufferOverride::AddChar_1 <br>protected , args: ($ch, $numBytes)<br>
 	 * @uses EncodingCharBufferOverride::AddChar_2 <br>protected , args: ($ch)<br>

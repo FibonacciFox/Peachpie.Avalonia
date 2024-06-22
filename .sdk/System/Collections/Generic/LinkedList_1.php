@@ -115,6 +115,7 @@ class LinkedList_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use LinkedList_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\LinkedListNode_1[T]

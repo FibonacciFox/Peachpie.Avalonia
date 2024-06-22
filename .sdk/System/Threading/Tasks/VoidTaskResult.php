@@ -4,4 +4,5 @@ final class VoidTaskResult extends \System\ValueType
 {
 
 
+
 }

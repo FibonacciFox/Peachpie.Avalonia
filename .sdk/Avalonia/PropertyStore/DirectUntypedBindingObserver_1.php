@@ -4,6 +4,7 @@ class DirectUntypedBindingObserver_1 extends \System\Object implements
 	\System\IObserver_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\DirectPropertyBase_1[T]

@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Drawing\Nodes;
 enum RenderDataPopNodeType
 {
+
 	
 	case Transform = '0';
 	case Clip = '1';

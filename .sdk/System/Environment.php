@@ -81,6 +81,7 @@ trait EnvironmentOverride {
 class Environment extends \System\Object
 {
 	use EnvironmentOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -2,6 +2,7 @@
 
 final class TimeSpec extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

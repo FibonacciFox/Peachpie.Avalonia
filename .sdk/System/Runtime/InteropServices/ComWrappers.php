@@ -68,6 +68,7 @@ class ComWrappers extends \System\Object
 {
 	use ComWrappersOverride;
 
+
 	/**
 	 * @param \System\Object|object $instance
 	 * @param \System\Runtime\InteropServices\CreateComInterfaceFlags $flags

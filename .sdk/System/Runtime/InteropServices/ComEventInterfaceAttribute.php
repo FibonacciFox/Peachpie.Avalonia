@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ComEventInterfaceAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

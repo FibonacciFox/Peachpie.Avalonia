@@ -45,6 +45,7 @@ trait UriOverride {
 class UriBuilder extends \System\Object
 {
 	use UriOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

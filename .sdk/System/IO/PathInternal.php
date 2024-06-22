@@ -60,6 +60,7 @@ class PathInternal extends \System\Object
 {
 	use PathInternalOverride;
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $path [generic: System\Char]
 	 * @return \System\Boolean|bool

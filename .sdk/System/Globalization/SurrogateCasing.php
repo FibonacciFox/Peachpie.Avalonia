@@ -3,6 +3,7 @@ namespace System\Globalization;
 class SurrogateCasing extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Char $h
 	 * @param \System\Char $l

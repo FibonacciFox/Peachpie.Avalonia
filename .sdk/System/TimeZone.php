@@ -21,6 +21,7 @@ trait TimeZoneOverride {
 class TimeZone extends \System\Object
 {
 	use TimeZoneOverride;
+
 	/**
 	 * @property
 	 * @var \System\TimeZone

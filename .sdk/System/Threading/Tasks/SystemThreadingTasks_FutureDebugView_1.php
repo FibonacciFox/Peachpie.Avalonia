@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class SystemThreadingTasks_FutureDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \TResult

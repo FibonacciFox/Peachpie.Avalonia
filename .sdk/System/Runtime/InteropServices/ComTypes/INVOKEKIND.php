@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum INVOKEKIND
 {
+
 	
 	case INVOKE_FUNC = '1';
 	case INVOKE_PROPERTYGET = '2';

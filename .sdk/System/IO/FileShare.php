@@ -2,6 +2,7 @@
 namespace System\IO;
 enum FileShare
 {
+
 	
 	case None = '0';
 	case Read = '1';

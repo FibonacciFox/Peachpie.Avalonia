@@ -4,6 +4,7 @@ final class NthChildActivator extends \Avalonia\Styling\Activators\StyleActivato
 	\Avalonia\Styling\Activators\IStyleActivator,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

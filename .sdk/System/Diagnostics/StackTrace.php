@@ -61,6 +61,7 @@ trait StackTraceOverride {
 class StackTrace extends \System\Object
 {
 	use StackTraceOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

@@ -17,6 +17,7 @@ trait ContractOverride {
 final class StringSyntaxAttribute extends \System\Attribute
 {
 	use ContractOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace System;
 final class Range extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Index

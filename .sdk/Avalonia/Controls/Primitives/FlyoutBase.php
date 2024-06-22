@@ -4,6 +4,7 @@ class FlyoutBase extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -33,7 +34,7 @@ class FlyoutBase extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Target;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

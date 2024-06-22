@@ -2,6 +2,7 @@
 namespace System\Runtime;
 final class AssemblyTargetedPatchBandAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

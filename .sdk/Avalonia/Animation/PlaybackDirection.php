@@ -2,6 +2,7 @@
 namespace Avalonia\Animation;
 enum PlaybackDirection
 {
+
 	
 	case Normal = '0';
 	case Reverse = '1';

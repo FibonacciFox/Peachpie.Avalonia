@@ -36,6 +36,7 @@ trait EncodingByteBufferOverride {
 final class EncodingByteBuffer extends \System\Object
 {
 	use EncodingByteBufferOverride;
+
 	/**
 	 * @field
 	 * @var \System\Text\EncoderFallbackBuffer

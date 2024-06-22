@@ -19,6 +19,7 @@ class TimePickerPresenter extends \Avalonia\Controls\Primitives\PickerPresenterB
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -409,7 +410,7 @@ class TimePickerPresenter extends \Avalonia\Controls\Primitives\PickerPresenterB
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

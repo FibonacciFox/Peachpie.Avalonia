@@ -3,6 +3,7 @@ namespace Avalonia\Data\Converters;
 interface IValueConverter
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $targetType

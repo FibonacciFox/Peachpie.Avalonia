@@ -19,6 +19,7 @@ class BatchStreamReader extends \System\Object implements
 	\System\IDisposable
 {
 	use BatchStreamReaderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

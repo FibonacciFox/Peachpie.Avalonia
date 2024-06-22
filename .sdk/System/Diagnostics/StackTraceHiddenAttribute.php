@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 final class StackTraceHiddenAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

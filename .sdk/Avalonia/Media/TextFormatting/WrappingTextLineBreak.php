@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class WrappingTextLineBreak extends \Avalonia\Media\TextFormatting\TextLineBreak
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\TextEndOfLine

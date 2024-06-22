@@ -53,6 +53,7 @@ final class Thickness extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ThicknessOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

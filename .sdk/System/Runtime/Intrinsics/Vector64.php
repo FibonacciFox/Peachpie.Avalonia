@@ -814,6 +814,7 @@ trait Vector64Override {
 class Vector64 extends \System\Object
 {
 	use Vector64Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

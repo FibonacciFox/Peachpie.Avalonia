@@ -2,6 +2,7 @@
 namespace System\Text;
 final class EncoderLatin1BestFitFallback extends \System\Text\EncoderFallback
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class ContainerPreparedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Control

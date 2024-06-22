@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class UriExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Uri $uri
 	 * @return \System\Boolean|bool

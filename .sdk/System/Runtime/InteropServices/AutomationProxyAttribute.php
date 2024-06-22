@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class AutomationProxyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

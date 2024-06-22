@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class CSTRMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $flags
 	 * @param \System\String|string $strManaged

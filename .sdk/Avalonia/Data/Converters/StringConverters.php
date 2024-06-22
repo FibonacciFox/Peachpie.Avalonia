@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Converters;
 class StringConverters extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -3,6 +3,7 @@ namespace Avalonia;
 class ClassBindingManager extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\StyledElement $target
 	 * @param \System\String|string $className

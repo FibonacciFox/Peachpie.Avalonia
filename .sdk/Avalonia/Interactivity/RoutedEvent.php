@@ -23,6 +23,7 @@ trait RoutedEventOverride {
 class RoutedEvent extends \System\Object
 {
 	use RoutedEventOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type

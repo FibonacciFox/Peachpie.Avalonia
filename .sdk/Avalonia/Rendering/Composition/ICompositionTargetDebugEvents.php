@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 interface ICompositionTargetDebugEvents
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

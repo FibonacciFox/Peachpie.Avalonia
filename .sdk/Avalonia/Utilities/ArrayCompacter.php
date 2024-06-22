@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class ArrayCompacter extends \Avalonia\Utilities\Compacter
 {
+
 	/**
 	 * @field
 	 * @since readonly

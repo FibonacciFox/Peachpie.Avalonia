@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Interop;
 class Utf8Buffer extends \System\Runtime\InteropServices\SafeHandle implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

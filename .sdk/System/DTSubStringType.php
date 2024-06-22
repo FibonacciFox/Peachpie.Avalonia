@@ -2,6 +2,7 @@
 namespace System;
 enum DTSubStringType
 {
+
 	
 	case Unknown = '0';
 	case Invalid = '1';

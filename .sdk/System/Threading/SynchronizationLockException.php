@@ -21,6 +21,7 @@ class SynchronizationLockException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SynchronizationLockExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

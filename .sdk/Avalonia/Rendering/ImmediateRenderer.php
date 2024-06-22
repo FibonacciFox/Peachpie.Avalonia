@@ -24,6 +24,7 @@ class ImmediateRenderer extends \System\Object
 {
 	use ImmediateRendererOverride;
 
+
 	/**
 	 * @uses ImmediateRendererOverride::Render_1 <br>public , args: ($visual, $context)<br>
 	 * @uses ImmediateRendererOverride::Render_2 <br>public , args: ($context, $visual, $clipRect)<br>

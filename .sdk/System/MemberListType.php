@@ -2,6 +2,7 @@
 namespace System;
 enum MemberListType
 {
+
 	
 	case All = '0';
 	case CaseSensitive = '1';

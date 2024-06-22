@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class InterfaceMapping extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Type

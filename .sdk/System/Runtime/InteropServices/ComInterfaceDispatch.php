@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ComInterfaceDispatch extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

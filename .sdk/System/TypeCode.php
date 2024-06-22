@@ -2,6 +2,7 @@
 namespace System;
 enum TypeCode
 {
+
 	
 	case Empty = '0';
 	case Object = '1';

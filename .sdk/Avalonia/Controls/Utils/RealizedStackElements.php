@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Utils;
 class RealizedStackElements extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

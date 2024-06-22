@@ -2,6 +2,7 @@
 namespace System\Text;
 class DecoderFallback extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Text\DecoderFallback

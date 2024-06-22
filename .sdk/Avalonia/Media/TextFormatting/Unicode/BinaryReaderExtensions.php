@@ -23,6 +23,7 @@ class BinaryReaderExtensions extends \System\Object
 {
 	use BinaryReaderExtensionsOverride;
 
+
 	/**
 	 * @param \System\IO\BinaryReader $reader
 	 * @return \System\Int32|int

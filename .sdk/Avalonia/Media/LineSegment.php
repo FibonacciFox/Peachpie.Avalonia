@@ -4,6 +4,7 @@ final class LineSegment extends \Avalonia\Media\PathSegment implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -16,7 +17,7 @@ final class LineSegment extends \Avalonia\Media\PathSegment implements
 	 */
 	public $Point;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

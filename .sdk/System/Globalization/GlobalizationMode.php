@@ -3,6 +3,7 @@ namespace System\Globalization;
 class GlobalizationMode extends \System\Object
 {
 
+
 	private static function TryGetAppLocalIcuSwitchValue(&$value){}
 	private static function TryGetStringValue($switchName, $envVariable, &$value){}
 	private static function LoadAppLocalIcu($icuSuffixAndVersion){}

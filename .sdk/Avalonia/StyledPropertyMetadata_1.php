@@ -19,6 +19,7 @@ class StyledPropertyMetadata_1 extends \Avalonia\AvaloniaPropertyMetadata implem
 	\Avalonia\IStyledPropertyMetadata
 {
 	use StyledPropertyMetadata_1Override;
+
 	/**
 	 * @property
 	 * @var \TValue

@@ -5,6 +5,7 @@ class Sink_2 extends \Avalonia\Reactive\Operators\Sink_1 implements
 	\System\IObserver_1
 {
 
+
 	/**
 	 * @param \System\IObservable_1 $source [generic: TSource]
 	 * @return \System\Void|void

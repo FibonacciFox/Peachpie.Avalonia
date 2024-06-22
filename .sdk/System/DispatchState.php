@@ -2,6 +2,7 @@
 namespace System;
 final class DispatchState extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

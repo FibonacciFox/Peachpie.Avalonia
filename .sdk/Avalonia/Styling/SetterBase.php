@@ -3,6 +3,7 @@ namespace Avalonia\Styling;
 class SetterBase extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Styling\IStyleInstance $styleInstance
 	 * @param \Avalonia\StyledElement $target

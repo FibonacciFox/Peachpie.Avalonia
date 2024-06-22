@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class PseudolassesExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\IPseudoClasses $classes
 	 * @param \System\String|string $name

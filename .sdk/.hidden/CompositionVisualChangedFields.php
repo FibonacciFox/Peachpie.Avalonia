@@ -2,6 +2,7 @@
 
 enum CompositionVisualChangedFields
 {
+
 	
 	case Root = '1';
 	case Parent = '2';

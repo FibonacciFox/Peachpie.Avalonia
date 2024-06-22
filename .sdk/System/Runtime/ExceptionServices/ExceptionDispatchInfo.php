@@ -19,6 +19,7 @@ trait ExceptionDispatchInfoOverride {
 final class ExceptionDispatchInfo extends \System\Object
 {
 	use ExceptionDispatchInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Exception

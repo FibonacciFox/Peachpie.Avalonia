@@ -3,6 +3,7 @@ namespace System;
 class Grisu3 extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Double|double $value
 	 * @param \System\Int32|int $requestedDigits

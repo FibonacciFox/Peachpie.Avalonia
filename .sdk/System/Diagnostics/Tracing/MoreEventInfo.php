@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class MoreEventInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

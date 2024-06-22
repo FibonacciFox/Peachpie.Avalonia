@@ -19,6 +19,7 @@ class Viewbox extends \Avalonia\Controls\Control implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -349,7 +350,7 @@ class Viewbox extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

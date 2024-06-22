@@ -38,6 +38,7 @@ class ItemsControl extends \Avalonia\Controls\Primitives\TemplatedControl implem
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
 	use ItemsControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -490,7 +491,7 @@ class ItemsControl extends \Avalonia\Controls\Primitives\TemplatedControl implem
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

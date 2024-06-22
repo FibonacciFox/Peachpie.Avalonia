@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 class ICastableHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Runtime\CompilerServices\ICastable $castable
 	 * @param \System\RuntimeType $type

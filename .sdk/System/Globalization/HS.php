@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum HS
 {
+
 	
 	case _err = '-1';
 	case Start = '0';

@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 final class TransformContainer extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

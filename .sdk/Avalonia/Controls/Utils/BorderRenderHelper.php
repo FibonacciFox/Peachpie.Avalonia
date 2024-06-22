@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 class BorderRenderHelper extends \System\Object
 {
 
+
 	private function Update($finalSize, $borderThickness, $cornerRadius){}
 	/**
 	 * @param \Avalonia\Media\DrawingContext $context

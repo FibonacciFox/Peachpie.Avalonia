@@ -17,6 +17,7 @@ trait SerializationInfoEnumeratorOverride {
 final class StreamingContext extends \System\ValueType
 {
 	use SerializationInfoEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Serialization\StreamingContextStates

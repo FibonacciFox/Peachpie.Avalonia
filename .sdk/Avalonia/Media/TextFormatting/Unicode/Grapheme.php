@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 final class Grapheme extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\Unicode\Codepoint

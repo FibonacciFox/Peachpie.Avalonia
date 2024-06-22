@@ -99,6 +99,7 @@ trait DynamicILInfoOverride {
 class DynamicILInfo extends \System\Object
 {
 	use DynamicILInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Emit\DynamicMethod

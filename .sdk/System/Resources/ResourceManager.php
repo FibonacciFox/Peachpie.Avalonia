@@ -70,6 +70,7 @@ trait ResourceManagerOverride {
 class ResourceManager extends \System\Object
 {
 	use ResourceManagerOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

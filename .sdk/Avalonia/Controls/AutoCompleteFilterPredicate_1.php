@@ -4,6 +4,7 @@ final class AutoCompleteFilterPredicate_1 extends \System\MulticastDelegate impl
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

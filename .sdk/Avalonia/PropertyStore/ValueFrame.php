@@ -2,6 +2,7 @@
 namespace Avalonia\PropertyStore;
 class ValueFrame extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

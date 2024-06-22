@@ -33,6 +33,7 @@ final class MethodBuilder extends \System\Reflection\MethodInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use MethodBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

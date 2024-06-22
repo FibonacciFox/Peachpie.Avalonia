@@ -81,6 +81,7 @@ class ReaderWriterLockSlim extends \System\Object implements
 	\System\IDisposable
 {
 	use ReaderWriterLockSlimOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

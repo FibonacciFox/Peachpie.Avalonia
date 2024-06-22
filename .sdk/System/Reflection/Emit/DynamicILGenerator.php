@@ -92,6 +92,7 @@ trait DynamicILGeneratorOverride {
 final class DynamicILGenerator extends \System\Reflection\Emit\ILGenerator
 {
 	use DynamicILGeneratorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\DynamicScope

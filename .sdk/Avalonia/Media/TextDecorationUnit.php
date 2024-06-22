@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum TextDecorationUnit
 {
+
 	
 	case FontRecommended = '0';
 	case FontRenderingEmSize = '1';

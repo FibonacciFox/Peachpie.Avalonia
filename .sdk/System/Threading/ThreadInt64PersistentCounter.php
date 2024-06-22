@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class ThreadInt64PersistentCounter extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int64|int

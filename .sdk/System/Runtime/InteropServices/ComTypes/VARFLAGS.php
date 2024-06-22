@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum VARFLAGS
 {
+
 	
 	case VARFLAG_FREADONLY = '1';
 	case VARFLAG_FSOURCE = '2';

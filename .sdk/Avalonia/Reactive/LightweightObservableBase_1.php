@@ -3,6 +3,7 @@ namespace Avalonia\Reactive;
 class LightweightObservableBase_1 extends \System\Object implements
 	\System\IObservable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

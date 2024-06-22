@@ -5,6 +5,7 @@ class ServerCompositionRenderData extends \Avalonia\Rendering\Composition\Server
 	\Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[Avalonia\Rect]

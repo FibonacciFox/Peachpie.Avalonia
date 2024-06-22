@@ -94,6 +94,7 @@ final class PixelRect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PixelRectOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

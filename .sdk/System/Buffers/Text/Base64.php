@@ -3,6 +3,7 @@ namespace System\Buffers\Text;
 class Base64 extends \System\Object
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $bytes [generic: System\Byte]
 	 * @param \System\Span_1 $utf8 [generic: System\Byte]

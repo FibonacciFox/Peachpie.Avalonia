@@ -53,6 +53,7 @@ class Interactive extends \Avalonia\Layout\Layoutable implements
 	\Avalonia\INamed
 {
 	use InteractiveOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double
@@ -254,7 +255,7 @@ class Interactive extends \Avalonia\Layout\Layoutable implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

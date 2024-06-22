@@ -15,6 +15,7 @@ trait FrameworkNameOverride {
 final class RequiresPreviewFeaturesAttribute extends \System\Attribute
 {
 	use FrameworkNameOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

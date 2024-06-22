@@ -2,6 +2,7 @@
 namespace Avalonia\Input\TextInput;
 class TextInputOptions extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -7,6 +7,7 @@ namespace Avalonia\Automation\Provider;
 interface IEmbeddedRootProvider
 {
 
+
 	/**
 	 * @return \Avalonia\Automation\Peers\AutomationPeer
 	 */

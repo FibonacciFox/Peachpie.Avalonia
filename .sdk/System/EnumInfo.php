@@ -2,6 +2,7 @@
 namespace System;
 final class EnumInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

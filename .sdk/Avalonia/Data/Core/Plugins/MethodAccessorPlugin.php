@@ -4,6 +4,7 @@ class MethodAccessorPlugin extends \System\Object implements
 	\Avalonia\Data\Core\Plugins\IPropertyAccessorPlugin
 {
 
+
 	/**
 	 * @param \System\Object|object $obj
 	 * @param \System\String|string $methodName

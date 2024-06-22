@@ -25,6 +25,7 @@ class DoubleKeyFrameAnimation extends \Avalonia\Rendering\Composition\Animations
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	use DoubleKeyFrameAnimationOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage;
 interface IStorageFile
 {
 
+
 	/**
 	 * @return \System\Threading\Tasks\Task_1[System\IO\Stream]
 	 */

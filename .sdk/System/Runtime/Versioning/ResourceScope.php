@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 enum ResourceScope
 {
+
 	
 	case None = '0';
 	case Machine = '1';

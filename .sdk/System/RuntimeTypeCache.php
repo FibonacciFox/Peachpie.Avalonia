@@ -3,6 +3,7 @@ namespace System;
 final class RuntimeTypeCache extends \System\Object
 {
 
+
 	private function ConstructName($name, $formatFlags){}
 	private function GetMemberList($m_cache, $listType, $name, $cacheType){}
 	private function GetMemberCache($m_cache){}

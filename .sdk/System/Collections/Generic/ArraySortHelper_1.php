@@ -23,6 +23,7 @@ final class ArraySortHelper_1 extends \System\Object implements
 	\System\Collections\Generic\IArraySortHelper_1
 {
 	use ArraySortHelper_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IArraySortHelper_1[T]

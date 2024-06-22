@@ -66,6 +66,7 @@ class ReadOnlyObservableCollection_1 extends \System\Collections\ObjectModel\Rea
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use ReadOnlyObservableCollection_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

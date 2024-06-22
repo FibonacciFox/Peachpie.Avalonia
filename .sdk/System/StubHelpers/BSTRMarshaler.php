@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class BSTRMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $strManaged
 	 * @param \System\IntPtr $pNativeBuffer

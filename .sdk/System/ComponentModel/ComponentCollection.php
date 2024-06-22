@@ -29,8 +29,9 @@ class ComponentCollection extends \System\Collections\ReadOnlyCollectionBase imp
 	\System\Collections\IEnumerable
 {
 	use ComponentCollectionOverride;
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\ComponentModel\IComponent
 	 */
 	public $Item;

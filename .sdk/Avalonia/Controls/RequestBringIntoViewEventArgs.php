@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class RequestBringIntoViewEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Visual

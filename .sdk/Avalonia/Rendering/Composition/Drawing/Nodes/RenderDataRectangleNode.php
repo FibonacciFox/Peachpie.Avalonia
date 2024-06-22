@@ -4,6 +4,7 @@ class RenderDataRectangleNode extends \Avalonia\Rendering\Composition\Drawing\No
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItemWithServerResources,
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\RoundedRect

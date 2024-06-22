@@ -19,6 +19,7 @@ final class SerializationInfoEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use SerializationInfoEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Serialization\SerializationEntry

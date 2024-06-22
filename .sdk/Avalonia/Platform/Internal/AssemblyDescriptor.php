@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Internal;
 class AssemblyDescriptor extends \System\Object implements
 	\Avalonia\Platform\Internal\IAssemblyDescriptor
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Assembly

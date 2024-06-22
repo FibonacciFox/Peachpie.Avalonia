@@ -4,6 +4,7 @@ final class Comparer extends \System\Object implements
 	\System\Collections\IComparer,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @since readonly

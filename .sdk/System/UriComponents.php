@@ -2,6 +2,7 @@
 namespace System;
 enum UriComponents
 {
+
 	
 	case Scheme = '1';
 	case UserInfo = '2';

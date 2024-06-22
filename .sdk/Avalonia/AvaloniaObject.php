@@ -224,8 +224,9 @@ class AvaloniaObject extends \System\Object implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use AvaloniaObjectOverride;
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

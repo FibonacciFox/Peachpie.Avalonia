@@ -3,6 +3,7 @@ namespace System\Text\Unicode;
 class Utf16Utility extends \System\Object
 {
 
+
 	/**
 	 * @param \System\UInt32 $value
 	 * @return \System\Boolean|bool

@@ -4,6 +4,7 @@ class IndexerDescriptor extends \System\Object implements
 	\System\IObservable_1,
 	\Avalonia\IDescription
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\BindingMode

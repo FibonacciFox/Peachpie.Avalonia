@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class DependencyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

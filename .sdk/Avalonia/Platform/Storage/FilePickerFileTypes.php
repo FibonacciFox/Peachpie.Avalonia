@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 class FilePickerFileTypes extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\Storage\FilePickerFileType

@@ -47,6 +47,7 @@ trait SseOverride {
 class Sse extends \System\Runtime\Intrinsics\X86\X86Base
 {
 	use SseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

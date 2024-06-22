@@ -15,6 +15,7 @@ trait DispatcherOverride {
 class DispatcherFrame extends \System\Object
 {
 	use DispatcherOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\Dispatcher

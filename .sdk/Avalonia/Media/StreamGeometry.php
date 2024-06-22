@@ -4,6 +4,7 @@ class StreamGeometry extends \Avalonia\Media\Geometry implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect
@@ -22,7 +23,7 @@ class StreamGeometry extends \Avalonia\Media\Geometry implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

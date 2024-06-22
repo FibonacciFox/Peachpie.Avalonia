@@ -39,6 +39,7 @@ class WindowNotificationManager extends \Avalonia\Controls\Primitives\TemplatedC
 	\Avalonia\Controls\Notifications\INotificationManager
 {
 	use WindowNotificationManagerOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -418,7 +419,7 @@ class WindowNotificationManager extends \Avalonia\Controls\Primitives\TemplatedC
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

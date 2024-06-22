@@ -39,6 +39,7 @@ final class RelativeRect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use RelativeRectOverride;
+
 	/**
 	 * @field
 	 * @since readonly

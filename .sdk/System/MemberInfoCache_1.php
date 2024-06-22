@@ -59,6 +59,7 @@ final class MemberInfoCache_1 extends \System\Object
 {
 	use MemberInfoCache_1Override;
 
+
 	/**
 	 * @param \System\RuntimeType $declaringType
 	 * @param \System\RuntimeMethodHandleInternal $method

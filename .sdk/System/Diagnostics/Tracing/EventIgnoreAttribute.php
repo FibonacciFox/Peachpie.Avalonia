@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class EventIgnoreAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

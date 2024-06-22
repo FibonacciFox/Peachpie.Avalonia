@@ -2,6 +2,7 @@
 namespace System\Configuration\Assemblies;
 enum AssemblyHashAlgorithm
 {
+
 	
 	case None = '0';
 	case MD5 = '32771';

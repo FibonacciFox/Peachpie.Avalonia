@@ -37,6 +37,7 @@ class ObjectDisposedException extends \System\InvalidOperationException implemen
 	\System\Runtime\Serialization\ISerializable
 {
 	use ObjectDisposedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

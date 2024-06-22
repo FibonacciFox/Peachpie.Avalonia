@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum NumberStyles
 {
+
 	
 	case None = '0';
 	case AllowLeadingWhite = '1';

@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class ScrollViewerAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IScrollProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\ScrollViewer|\Avalonia\Controls\Control
 	 */
 	public $Owner;

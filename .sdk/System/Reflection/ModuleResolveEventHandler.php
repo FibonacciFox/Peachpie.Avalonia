@@ -4,6 +4,7 @@ final class ModuleResolveEventHandler extends \System\MulticastDelegate implemen
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

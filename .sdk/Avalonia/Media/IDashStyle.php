@@ -1,7 +1,8 @@
 <?php
 namespace Avalonia\Media;
-interface IDashStyle
+interface IConicGradientBrush
 {
+
 
 
 }

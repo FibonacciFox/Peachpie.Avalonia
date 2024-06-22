@@ -2,6 +2,7 @@
 namespace System;
 enum EndNoGCRegionStatus
 {
+
 	
 	case Succeeded = '0';
 	case NotInProgress = '1';

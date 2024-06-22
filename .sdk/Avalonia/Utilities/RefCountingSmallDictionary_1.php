@@ -26,6 +26,7 @@ final class RefCountingSmallDictionary_1 extends \System\ValueType implements
 {
 	use RefCountingSmallDictionary_1Override;
 
+
 	/**
 	 * @param \TKey $key
 	 * @return \System\Boolean|bool

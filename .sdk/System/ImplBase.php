@@ -57,6 +57,7 @@ class ImplBase extends \System\Object
 {
 	use ImplBaseOverride;
 
+
 	/**
 	 * @return \System\Double|double
 	 */

@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class TextInputEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\IO;
 final class Join3Payload extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

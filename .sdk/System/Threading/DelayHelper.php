@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class DelayHelper extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

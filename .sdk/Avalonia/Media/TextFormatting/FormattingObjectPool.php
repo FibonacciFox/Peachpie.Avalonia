@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class FormattingObjectPool extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\FormattingObjectPool

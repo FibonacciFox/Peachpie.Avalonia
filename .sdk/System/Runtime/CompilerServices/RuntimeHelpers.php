@@ -98,6 +98,7 @@ trait RuntimeHelpersOverride {
 class RuntimeHelpers extends \System\Object
 {
 	use RuntimeHelpersOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

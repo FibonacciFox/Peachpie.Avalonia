@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class EffectExtensions extends \System\Object
 {
 
+
 	private static function AdjustPaddingRadius($radius){}
 	/**
 	 * @param \Avalonia\Media\IEffect $effect

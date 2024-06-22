@@ -73,6 +73,7 @@ final class WriteIfInterpolatedStringHandler extends \System\ValueType
 {
 	use WriteIfInterpolatedStringHandlerOverride;
 
+
 	/**
 	 * @return \System\String|string
 	 */

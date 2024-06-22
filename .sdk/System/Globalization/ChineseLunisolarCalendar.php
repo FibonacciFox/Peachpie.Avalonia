@@ -3,6 +3,7 @@ namespace System\Globalization;
 class ChineseLunisolarCalendar extends \System\Globalization\EastAsianLunisolarCalendar implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

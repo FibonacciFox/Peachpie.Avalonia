@@ -6,6 +6,7 @@ class TrayIcon extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\Platform\INativeMenuExporterProvider,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -85,7 +86,7 @@ class TrayIcon extends \Avalonia\AvaloniaObject implements
 	 */
 	public $NativeMenuExporter;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -317,6 +317,7 @@ class Interlocked extends \System\Object
 {
 	use InterlockedOverride;
 
+
 	/**
 	 * @uses InterlockedOverride::Increment_1 <br>public , args: ($location)<br>
 	 * @uses InterlockedOverride::Increment_2 <br>public , args: ($location)<br>

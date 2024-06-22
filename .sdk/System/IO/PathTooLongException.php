@@ -21,6 +21,7 @@ class PathTooLongException extends \System\IO\IOException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use PathTooLongExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

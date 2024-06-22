@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 class EffectiveViewportChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

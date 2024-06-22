@@ -3,6 +3,7 @@ namespace Avalonia\Reactive;
 final class SerialDisposableValue extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\IDisposable

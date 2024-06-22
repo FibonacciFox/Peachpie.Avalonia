@@ -17,6 +17,7 @@ trait FrameworkNameOverride {
 final class UnsupportedOSPlatformAttribute extends \System\Runtime\Versioning\OSPlatformAttribute
 {
 	use FrameworkNameOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class Compacter extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $start
 	 * @param \System\Int32|int $end

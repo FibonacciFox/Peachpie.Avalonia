@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class JustificationProperties extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

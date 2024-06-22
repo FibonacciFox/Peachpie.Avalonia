@@ -63,6 +63,7 @@ final class IndexRange extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use IndexRangeOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

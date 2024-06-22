@@ -5,6 +5,7 @@ class TypeInfo extends \System\Type implements
 	\System\Reflection\IReflect,
 	\System\Reflection\IReflectableType
 {
+
 	/**
 	 * @property
 	 * @var \System\Type[]

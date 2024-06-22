@@ -3,6 +3,7 @@ namespace System\Threading;
 final class ThreadCounts extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int16

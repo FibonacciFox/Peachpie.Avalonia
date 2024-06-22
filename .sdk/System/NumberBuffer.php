@@ -19,6 +19,7 @@ trait DiyFpOverride {
 final class NumberBuffer extends \System\ValueType
 {
 	use DiyFpOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

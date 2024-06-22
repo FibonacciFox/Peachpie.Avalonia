@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class TraceLoggingMetadataCollector extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @return \System\Diagnostics\Tracing\TraceLoggingMetadataCollector

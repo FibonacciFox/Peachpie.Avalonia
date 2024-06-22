@@ -56,6 +56,7 @@ final class ImmediateDrawingContext extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider
 {
 	use ImmediateDrawingContextOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IDrawingContextImpl

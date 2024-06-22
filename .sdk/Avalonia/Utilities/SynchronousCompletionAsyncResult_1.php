@@ -4,6 +4,7 @@ final class SynchronousCompletionAsyncResult_1 extends \System\ValueType impleme
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

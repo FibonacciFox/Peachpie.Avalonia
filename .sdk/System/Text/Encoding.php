@@ -441,6 +441,7 @@ class Encoding extends \System\Object implements
 	\System\ICloneable
 {
 	use EncodingOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

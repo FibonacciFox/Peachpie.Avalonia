@@ -16,6 +16,7 @@ trait AmbiguousMatchExceptionOverride {
 final class AssemblyAlgorithmIdAttribute extends \System\Attribute
 {
 	use AmbiguousMatchExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\UInt32

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum ExceptionHandlingClauseOptions
 {
+
 	
 	case Clause = '0';
 	case Filter = '1';

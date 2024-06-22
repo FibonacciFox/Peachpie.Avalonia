@@ -998,6 +998,7 @@ trait Vector128Override {
 class Vector128 extends \System\Object
 {
 	use Vector128Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

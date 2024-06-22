@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Selection;
 class SelectionModelSelectionChangedEventArgs_1 extends \Avalonia\Controls\Selection\SelectionModelSelectionChangedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Int32]
@@ -15,12 +16,12 @@ class SelectionModelSelectionChangedEventArgs_1 extends \Avalonia\Controls\Selec
 	 */
 	public $SelectedIndexes;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Collections\Generic\IReadOnlyList_1[T]|\System\Collections\Generic\IReadOnlyList_1[System\Object]
 	 */
 	public $DeselectedItems;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Collections\Generic\IReadOnlyList_1[T]|\System\Collections\Generic\IReadOnlyList_1[System\Object]
 	 */
 	public $SelectedItems;

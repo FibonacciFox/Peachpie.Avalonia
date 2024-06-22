@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum PhysicalKey
 {
+
 	
 	case None = '0';
 	case Backquote = '1';

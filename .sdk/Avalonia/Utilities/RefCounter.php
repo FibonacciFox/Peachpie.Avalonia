@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class RefCounter extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

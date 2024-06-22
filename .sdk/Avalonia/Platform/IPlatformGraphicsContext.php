@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IPlatformGraphicsContext
 {
 
+
 	/**
 	 * @return \System\IDisposable
 	 */

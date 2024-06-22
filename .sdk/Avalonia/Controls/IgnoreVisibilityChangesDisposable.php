@@ -4,6 +4,7 @@ final class IgnoreVisibilityChangesDisposable extends \System\ValueType implemen
 	\System\IDisposable
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

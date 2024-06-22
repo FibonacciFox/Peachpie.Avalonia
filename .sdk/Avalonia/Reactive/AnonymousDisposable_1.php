@@ -3,6 +3,7 @@ namespace Avalonia\Reactive;
 final class AnonymousDisposable_1 extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

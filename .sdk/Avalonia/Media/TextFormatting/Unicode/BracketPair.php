@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 final class BracketPair extends \System\ValueType implements
 	\System\IComparable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

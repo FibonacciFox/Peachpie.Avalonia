@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 enum ContractFailureKind
 {
+
 	
 	case Precondition = '0';
 	case Postcondition = '1';

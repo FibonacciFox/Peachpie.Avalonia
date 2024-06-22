@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Fonts;
 class FontFamilyKey extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Uri

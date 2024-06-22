@@ -8,6 +8,7 @@ final class DropShadowEffect extends \Avalonia\Media\DropShadowEffectBase implem
 	\Avalonia\Media\IEffect,
 	\Avalonia\Media\IMutableEffect
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -51,7 +52,7 @@ final class DropShadowEffect extends \Avalonia\Media\DropShadowEffectBase implem
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

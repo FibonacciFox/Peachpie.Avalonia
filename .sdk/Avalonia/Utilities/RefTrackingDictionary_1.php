@@ -12,6 +12,7 @@ class RefTrackingDictionary_1 extends \System\Collections\Generic\Dictionary_2 i
 	\System\Runtime\Serialization\ISerializable,
 	\System\Runtime\Serialization\IDeserializationCallback
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEqualityComparer_1[TKey]

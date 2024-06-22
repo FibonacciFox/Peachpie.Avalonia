@@ -4,6 +4,7 @@ final class CompressedStack extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	/**
 	 * @param \System\Runtime\Serialization\SerializationInfo $info
 	 * @param \System\Runtime\Serialization\StreamingContext $context

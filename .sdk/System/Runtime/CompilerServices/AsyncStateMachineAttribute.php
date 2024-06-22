@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class AsyncStateMachineAttribute extends \System\Runtime\CompilerServices\StateMachineAttribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

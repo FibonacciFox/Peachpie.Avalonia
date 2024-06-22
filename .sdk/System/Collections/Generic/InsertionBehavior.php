@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 enum InsertionBehavior
 {
+
 	
 	case None = '0';
 	case OverwriteExisting = '1';

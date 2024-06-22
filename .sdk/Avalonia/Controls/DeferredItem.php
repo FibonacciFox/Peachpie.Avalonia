@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class DeferredItem extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Func_2[System\IServiceProvider,System\Object]

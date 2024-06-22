@@ -4,6 +4,7 @@ class ClockBase extends \System\Object implements
 	\Avalonia\Animation\IClock,
 	\System\IObservable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\PlayState

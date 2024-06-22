@@ -5,6 +5,7 @@ class StreamGeometryContext extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	/**
 	 * @param \Avalonia\Media\FillRule $fillRule
 	 * @return \System\Void|void

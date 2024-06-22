@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface INativeControlHostImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\IPlatformHandle $parent
 	 * @return \Avalonia\Controls\Platform\INativeControlHostDestroyableControlHandle

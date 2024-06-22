@@ -103,6 +103,7 @@ trait UriHelperOverride {
 class UriHelper extends \System\Object
 {
 	use UriHelperOverride;
+
 	/**
 	 * @field
 	 * @since readonly

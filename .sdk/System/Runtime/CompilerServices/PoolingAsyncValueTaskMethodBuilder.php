@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class PoolingAsyncValueTaskMethodBuilder extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\ValueTask

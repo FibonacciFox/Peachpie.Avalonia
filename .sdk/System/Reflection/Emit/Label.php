@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class Label extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

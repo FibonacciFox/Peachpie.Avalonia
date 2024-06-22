@@ -2,6 +2,7 @@
 namespace System\Collections;
 final class DictionaryEntry extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

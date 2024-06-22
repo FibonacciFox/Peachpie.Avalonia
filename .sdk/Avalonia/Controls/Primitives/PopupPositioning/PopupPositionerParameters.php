@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Primitives\PopupPositioning;
 final class PopupPositionerParameters extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size

@@ -29,6 +29,7 @@ trait MetadataUpdaterOverride {
 class MetadataUpdater extends \System\Object
 {
 	use MetadataUpdaterOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

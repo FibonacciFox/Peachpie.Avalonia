@@ -2,6 +2,7 @@
 namespace System;
 final class FloatingPointInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

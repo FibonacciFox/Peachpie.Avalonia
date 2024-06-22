@@ -3,6 +3,7 @@ namespace Avalonia;
 class AvaloniaPropertyExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\AvaloniaProperty $property
 	 * @return \System\Boolean|bool

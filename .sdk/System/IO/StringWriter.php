@@ -26,6 +26,7 @@ class StringWriter extends \System\IO\TextWriter implements
 	\System\IAsyncDisposable
 {
 	use StringWriterOverride;
+
 	/**
 	 * @field
 	 * @var \System\Char[]

@@ -81,6 +81,7 @@ final class RuntimeType extends \System\Reflection\TypeInfo implements
 	\System\ICloneable
 {
 	use RuntimeTypeOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

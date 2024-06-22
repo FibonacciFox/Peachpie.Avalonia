@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class TYPEATTR extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Guid

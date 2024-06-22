@@ -2,6 +2,7 @@
 namespace System\Buffers;
 final class ReadOnlySequenceDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Buffers\ReadOnlySequenceDebugView_1+ReadOnlySequenceDebugViewSegments[T]

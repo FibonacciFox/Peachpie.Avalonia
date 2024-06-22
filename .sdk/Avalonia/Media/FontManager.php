@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 final class FontManager extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Uri

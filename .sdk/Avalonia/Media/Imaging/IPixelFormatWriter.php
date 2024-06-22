@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 interface IPixelFormatWriter
 {
 
+
 	/**
 	 * @param \Avalonia\Media\Imaging\Rgba8888Pixel $pixel
 	 * @return \System\Void|void

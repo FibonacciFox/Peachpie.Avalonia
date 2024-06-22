@@ -15,6 +15,7 @@ class LineBreak extends \Avalonia\Controls\Documents\Inline implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextDecorationCollection
@@ -127,7 +128,7 @@ class LineBreak extends \Avalonia\Controls\Documents\Inline implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

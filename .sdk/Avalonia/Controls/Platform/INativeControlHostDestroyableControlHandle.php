@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface INativeControlHostDestroyableControlHandle
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

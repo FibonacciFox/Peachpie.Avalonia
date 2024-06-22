@@ -22,6 +22,7 @@ final class EventBuilder extends \System\Object
 {
 	use EventBuilderOverride;
 
+
 	private function SetMethodSemantics($mdBuilder, $semantics){}
 	/**
 	 * @param \System\Reflection\Emit\MethodBuilder $mdBuilder

@@ -34,6 +34,7 @@ class CompositionInterop extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositionGpuInterop
 {
 	use CompositionInteropOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[System\String]

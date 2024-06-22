@@ -26,6 +26,7 @@ trait UnicodeTrieBuilderOverride {
 class UnicodeTrieBuilder extends \System\Object
 {
 	use UnicodeTrieBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

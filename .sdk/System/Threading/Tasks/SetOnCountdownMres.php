@@ -4,6 +4,7 @@ final class SetOnCountdownMres extends \System\Threading\ManualResetEventSlim im
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

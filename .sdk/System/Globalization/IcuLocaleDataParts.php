@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum IcuLocaleDataParts
 {
+
 	
 	case Lcid = '0';
 	case AnsiCodePage = '1';

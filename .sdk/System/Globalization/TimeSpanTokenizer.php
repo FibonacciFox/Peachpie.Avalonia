@@ -3,6 +3,7 @@ namespace System\Globalization;
 final class TimeSpanTokenizer extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Globalization\TimeSpanParse+TimeSpanToken
 	 */

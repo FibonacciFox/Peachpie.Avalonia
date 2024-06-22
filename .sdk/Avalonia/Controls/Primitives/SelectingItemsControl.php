@@ -65,6 +65,7 @@ class SelectingItemsControl extends \Avalonia\Controls\ItemsControl implements
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
 	use SelectingItemsControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -611,7 +612,7 @@ class SelectingItemsControl extends \Avalonia\Controls\ItemsControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

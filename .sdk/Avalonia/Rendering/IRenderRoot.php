@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 interface IRenderRoot
 {
 
+
 	/**
 	 * @param \Avalonia\PixelPoint $point
 	 * @return \Avalonia\Point

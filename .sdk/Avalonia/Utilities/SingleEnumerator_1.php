@@ -21,6 +21,7 @@ class SingleEnumerator_1 extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use SingleEnumerator_1Override;
+
 	/**
 	 * @property
 	 * @var \T|object

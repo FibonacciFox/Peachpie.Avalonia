@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IConnectionPoint
 {
 
+
 	/**
 	 * @param \System\Guid& &$pIID
 	 * @return \System\Void|void

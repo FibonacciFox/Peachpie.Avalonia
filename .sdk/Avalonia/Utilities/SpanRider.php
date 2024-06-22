@@ -32,6 +32,7 @@ trait SpanRiderOverride {
 final class SpanRider extends \System\ValueType
 {
 	use SpanRiderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

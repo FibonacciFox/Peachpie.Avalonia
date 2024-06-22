@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class RuntimeEventSource extends \System\Diagnostics\Tracing\EventSource implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

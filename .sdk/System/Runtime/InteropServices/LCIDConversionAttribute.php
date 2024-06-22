@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class LCIDConversionAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -21,6 +21,7 @@ class TaskToApm extends \System\Object
 {
 	use TaskToApmOverride;
 
+
 	/**
 	 * @param \System\Threading\Tasks\Task $task
 	 * @param \System\AsyncCallback $callback

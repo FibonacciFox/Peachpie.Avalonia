@@ -15,6 +15,7 @@ trait SROverride {
 class CategoryAttribute extends \System\Attribute
 {
 	use SROverride;
+
 	/**
 	 * @property
 	 * @var \System\ComponentModel\CategoryAttribute

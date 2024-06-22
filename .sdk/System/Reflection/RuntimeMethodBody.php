@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class RuntimeMethodBody extends \System\Reflection\MethodBody
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\MethodBase

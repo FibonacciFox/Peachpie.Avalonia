@@ -16,6 +16,7 @@ trait ContractOverride {
 final class MemberNotNullAttribute extends \System\Attribute
 {
 	use ContractOverride;
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

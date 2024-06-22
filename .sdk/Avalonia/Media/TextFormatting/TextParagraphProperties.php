@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextParagraphProperties extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\FlowDirection

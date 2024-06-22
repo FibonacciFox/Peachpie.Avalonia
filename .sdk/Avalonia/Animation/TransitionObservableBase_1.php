@@ -6,6 +6,7 @@ class TransitionObservableBase_1 extends \Avalonia\Reactive\SingleSubscriberObse
 	\System\IObserver_1
 {
 
+
 	/**
 	 * @param \System\Double|double $progress
 	 * @return \T|object

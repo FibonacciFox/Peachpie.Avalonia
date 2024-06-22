@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class UnknownWrapper extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

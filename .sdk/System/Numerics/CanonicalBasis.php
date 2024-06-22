@@ -2,6 +2,7 @@
 namespace System\Numerics;
 final class CanonicalBasis extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Numerics\Vector3

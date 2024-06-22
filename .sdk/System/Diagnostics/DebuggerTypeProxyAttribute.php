@@ -16,6 +16,7 @@ trait WriteIfInterpolatedStringHandlerOverride {
 final class DebuggerTypeProxyAttribute extends \System\Attribute
 {
 	use WriteIfInterpolatedStringHandlerOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

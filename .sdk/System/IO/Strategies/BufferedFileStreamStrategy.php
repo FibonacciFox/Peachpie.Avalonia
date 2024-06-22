@@ -4,6 +4,7 @@ final class BufferedFileStreamStrategy extends \System\IO\Strategies\FileStreamS
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

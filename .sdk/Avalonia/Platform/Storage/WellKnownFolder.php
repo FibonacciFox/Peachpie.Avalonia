@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 enum WellKnownFolder
 {
+
 	
 	case Desktop = '0';
 	case Documents = '1';

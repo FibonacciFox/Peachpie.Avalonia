@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class RendererDiagnostics extends \System\Object implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\RendererDebugOverlays

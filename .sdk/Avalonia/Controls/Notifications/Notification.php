@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Notifications;
 class Notification extends \System\Object implements
 	\Avalonia\Controls\Notifications\INotification
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

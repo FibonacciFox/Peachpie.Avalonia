@@ -4,6 +4,7 @@ class ImmutableDashStyle extends \System\Object implements
 	\Avalonia\Media\IDashStyle,
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[System\Double]

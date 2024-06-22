@@ -3,6 +3,7 @@ namespace System\Globalization;
 class Normalization extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $strInput
 	 * @param \System\Text\NormalizationForm $normalizationForm

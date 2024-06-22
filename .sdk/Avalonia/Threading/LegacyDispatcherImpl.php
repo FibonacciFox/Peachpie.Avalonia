@@ -3,6 +3,7 @@ namespace Avalonia\Threading;
 class LegacyDispatcherImpl extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImpl
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class CalendarModeChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\CalendarMode

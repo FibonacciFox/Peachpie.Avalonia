@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 enum RawDragEventType
 {
+
 	
 	case DragEnter = '0';
 	case DragOver = '1';

@@ -20,6 +20,7 @@ class InterpolatingAnimator_1 extends \System\Object implements
 {
 	use InterpolatingAnimator_1Override;
 
+
 	/**
 	 * @param \System\Double|double $progress
 	 * @param \T|object $oldValue

@@ -2,6 +2,7 @@
 namespace System;
 class ContextStaticAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

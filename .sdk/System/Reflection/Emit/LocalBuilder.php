@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class LocalBuilder extends \System\Reflection\LocalVariableInfo
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

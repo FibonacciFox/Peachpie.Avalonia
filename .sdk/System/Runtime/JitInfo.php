@@ -3,6 +3,7 @@ namespace System\Runtime;
 class JitInfo extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Boolean|bool $currentThread
 	 * @return \System\Int64|int

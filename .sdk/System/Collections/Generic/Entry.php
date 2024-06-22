@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class Entry extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

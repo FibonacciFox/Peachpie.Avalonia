@@ -27,6 +27,7 @@ final class UnorderedItemsCollection extends \System\Object implements
 	\System\Collections\ICollection
 {
 	use UnorderedItemsCollectionOverride;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -42,6 +42,7 @@ trait LayoutHelperOverride {
 class LayoutHelper extends \System\Object
 {
 	use LayoutHelperOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

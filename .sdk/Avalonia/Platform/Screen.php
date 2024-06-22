@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 class Screen extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

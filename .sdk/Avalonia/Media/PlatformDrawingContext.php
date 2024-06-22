@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class PlatformDrawingContext extends \Avalonia\Media\DrawingContext implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\RenderOptions

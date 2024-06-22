@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 final class Rgba64Pixel extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt16

@@ -23,6 +23,7 @@ class ServerCompositionTarget extends \Avalonia\Rendering\Composition\Server\Ser
 	\System\IDisposable
 {
 	use ServerCompositionTargetOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

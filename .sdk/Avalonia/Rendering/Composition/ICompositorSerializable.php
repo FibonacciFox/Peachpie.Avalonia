@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 interface ICompositorSerializable
 {
 
+
 	/**
 	 * @param \Avalonia\Rendering\Composition\Compositor $c
 	 * @return \Avalonia\Rendering\Composition\Server\SimpleServerObject

@@ -11,6 +11,7 @@ final class TreeSubSet extends \System\Collections\Generic\SortedSet_1 implement
 	\System\Runtime\Serialization\ISerializable,
 	\System\Runtime\Serialization\IDeserializationCallback
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

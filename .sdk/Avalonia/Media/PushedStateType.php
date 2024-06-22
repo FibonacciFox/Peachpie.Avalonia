@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum PushedStateType
 {
+
 	
 	case None = '0';
 	case Matrix = '1';

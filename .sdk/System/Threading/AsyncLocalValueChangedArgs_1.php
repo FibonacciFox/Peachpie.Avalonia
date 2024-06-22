@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class AsyncLocalValueChangedArgs_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \T|object

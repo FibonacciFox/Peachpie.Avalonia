@@ -2,6 +2,7 @@
 namespace System\Buffers;
 final class ThreadLocalArray extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \T[]

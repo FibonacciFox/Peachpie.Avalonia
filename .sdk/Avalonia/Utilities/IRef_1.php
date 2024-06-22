@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 interface IRef_1
 {
 
+
 	/**
 	 * @return \Avalonia\Utilities\IRef_1[T]
 	 */

@@ -4,6 +4,7 @@ class Pointer extends \System\Object implements
 	\Avalonia\Input\IPointer,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class STATSTG extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

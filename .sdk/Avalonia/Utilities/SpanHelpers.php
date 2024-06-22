@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class SpanHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $span [generic: System\Char]
 	 * @param \System\Globalization\NumberStyles $style

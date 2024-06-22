@@ -2,6 +2,7 @@
 namespace System\Runtime\ConstrainedExecution;
 enum Cer
 {
+
 	
 	case None = '0';
 	case MayFail = '1';

@@ -3,6 +3,7 @@ namespace System\Buffers;
 final class ArrayPoolEventSource extends \System\Diagnostics\Tracing\EventSource implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

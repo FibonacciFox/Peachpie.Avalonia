@@ -3,6 +3,7 @@ namespace System\Text;
 final class Latin1EncodingSealed extends \System\Text\Latin1Encoding implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

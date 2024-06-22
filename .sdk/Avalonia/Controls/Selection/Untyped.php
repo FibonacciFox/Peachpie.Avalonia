@@ -22,6 +22,7 @@ class Untyped extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use UntypedOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

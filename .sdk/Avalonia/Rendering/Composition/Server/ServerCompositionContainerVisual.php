@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class ServerCompositionContainerVisual extends \Avalonia\Rendering\Composition\Server\ServerCompositionVisual implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

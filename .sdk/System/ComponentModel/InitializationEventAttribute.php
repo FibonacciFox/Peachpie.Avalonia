@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class InitializationEventAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

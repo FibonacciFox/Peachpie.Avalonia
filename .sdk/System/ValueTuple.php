@@ -135,6 +135,7 @@ final class ValueTuple extends \System\ValueType implements
 {
 	use ValueTupleOverride;
 
+
 	/**
 	 * @uses ValueTupleOverride::CompareTo_1 <br>private , args: ($other)<br>
 	 * @uses ValueTupleOverride::CompareTo_2 <br>public , args: ($other)<br>

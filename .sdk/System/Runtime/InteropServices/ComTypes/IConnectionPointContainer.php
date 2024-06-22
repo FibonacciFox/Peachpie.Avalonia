@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IConnectionPointContainer
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\ComTypes\IEnumConnectionPoints& &$ppEnum
 	 * @return \System\Void|void

@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class AccessKeyHandler extends \System\Object implements
 	\Avalonia\Input\IAccessKeyHandler
 {
+
 	/**
 	 * @field
 	 * @since readonly

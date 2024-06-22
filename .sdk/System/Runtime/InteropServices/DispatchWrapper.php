@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DispatchWrapper extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

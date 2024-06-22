@@ -2,6 +2,7 @@
 namespace Avalonia\LogicalTree;
 class LogicalTreeAttachmentEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\LogicalTree\ILogicalRoot

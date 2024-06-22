@@ -15,6 +15,7 @@ class RefreshInfoProvider extends \Avalonia\Interactivity\Interactive implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -272,7 +273,7 @@ class RefreshInfoProvider extends \Avalonia\Interactivity\Interactive implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

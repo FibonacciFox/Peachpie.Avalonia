@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum ThreadAdjustmentReasonMap
 {
+
 	
 	case Warmup = '0';
 	case Initializing = '1';

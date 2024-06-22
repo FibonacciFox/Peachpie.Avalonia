@@ -21,6 +21,7 @@ class CannotUnloadAppDomainException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use CannotUnloadAppDomainExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

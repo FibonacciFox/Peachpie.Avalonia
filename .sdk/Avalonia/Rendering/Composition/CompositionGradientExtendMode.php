@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition;
 enum CompositionGradientExtendMode
 {
+
 	
 	case Clamp = '0';
 	case Wrap = '1';

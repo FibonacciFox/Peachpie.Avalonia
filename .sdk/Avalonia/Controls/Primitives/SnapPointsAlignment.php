@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 enum SnapPointsAlignment
 {
+
 	
 	case Near = '0';
 	case Center = '1';

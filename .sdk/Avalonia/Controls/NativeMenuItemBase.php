@@ -4,6 +4,7 @@ class NativeMenuItemBase extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -16,7 +17,7 @@ class NativeMenuItemBase extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Parent;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

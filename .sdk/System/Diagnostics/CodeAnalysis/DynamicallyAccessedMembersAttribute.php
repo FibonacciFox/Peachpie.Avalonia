@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class DynamicallyAccessedMembersAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\CodeAnalysis\DynamicallyAccessedMemberTypes

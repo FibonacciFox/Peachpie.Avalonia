@@ -4,6 +4,7 @@ class EnumToBoolConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $targetType

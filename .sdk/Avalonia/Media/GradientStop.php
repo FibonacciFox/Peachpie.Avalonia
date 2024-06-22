@@ -19,6 +19,7 @@ final class GradientStop extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IGradientStop
 {
 	use GradientStopOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -42,7 +43,7 @@ final class GradientStop extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Color;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

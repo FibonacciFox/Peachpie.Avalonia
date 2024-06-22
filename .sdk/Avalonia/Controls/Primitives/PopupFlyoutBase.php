@@ -5,6 +5,7 @@ class PopupFlyoutBase extends \Avalonia\Controls\Primitives\FlyoutBase implement
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -104,7 +105,7 @@ class PopupFlyoutBase extends \Avalonia\Controls\Primitives\FlyoutBase implement
 	 */
 	public $Target;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

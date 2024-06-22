@@ -18,6 +18,7 @@ final class AssemblyName extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AssemblyOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

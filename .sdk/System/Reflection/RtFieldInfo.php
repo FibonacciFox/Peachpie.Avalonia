@@ -4,6 +4,7 @@ final class RtFieldInfo extends \System\Reflection\RuntimeFieldInfo implements
 	\System\Reflection\ICustomAttributeProvider,
 	\System\IRuntimeFieldInfo
 {
+
 	/**
 	 * @field
 	 * @var \System\RuntimeType+RuntimeTypeCache

@@ -17,6 +17,7 @@ final class CULong extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CULongOverride;
+
 	/**
 	 * @property
 	 * @var \System\UIntPtr

@@ -5,6 +5,7 @@ final class DelegateEnumerator extends \System\IO\Enumeration\FileSystemEnumerat
 	\System\IDisposable,
 	\System\Collections\IEnumerator
 {
+
 	/**
 	 * @property
 	 * @var \TResult

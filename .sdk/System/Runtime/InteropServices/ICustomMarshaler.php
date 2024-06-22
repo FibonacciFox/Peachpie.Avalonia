@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 interface ICustomMarshaler
 {
 
+
 	/**
 	 * @param \System\IntPtr $pNativeData
 	 * @return \System\Object|object

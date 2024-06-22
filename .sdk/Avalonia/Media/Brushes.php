@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class Brushes extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IImmutableSolidColorBrush

@@ -105,6 +105,7 @@ class StyledElement extends \Avalonia\Animation\Animatable implements
 	\Avalonia\INamed
 {
 	use StyledElementOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -200,7 +201,7 @@ class StyledElement extends \Avalonia\Animation\Animatable implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

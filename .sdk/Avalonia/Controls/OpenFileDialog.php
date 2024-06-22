@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class OpenFileDialog extends \Avalonia\Controls\FileDialog
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class NativeOverlapped extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

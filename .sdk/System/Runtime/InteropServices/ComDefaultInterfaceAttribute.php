@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ComDefaultInterfaceAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

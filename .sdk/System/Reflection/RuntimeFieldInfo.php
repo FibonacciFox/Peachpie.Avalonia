@@ -3,6 +3,7 @@ namespace System\Reflection;
 class RuntimeFieldInfo extends \System\Reflection\FieldInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @field
 	 * @var \System\RuntimeType+RuntimeTypeCache

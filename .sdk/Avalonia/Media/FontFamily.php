@@ -30,6 +30,7 @@ trait FontFamilyOverride {
 final class FontFamily extends \System\Object
 {
 	use FontFamilyOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

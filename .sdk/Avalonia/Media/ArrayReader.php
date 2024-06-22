@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class ArrayReader extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\String& &$s
 	 * @return \System\Boolean|bool

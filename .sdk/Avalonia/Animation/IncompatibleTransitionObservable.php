@@ -6,6 +6,7 @@ final class IncompatibleTransitionObservable extends \Avalonia\Animation\Transit
 	\System\IObserver_1
 {
 
+
 	private function OnCompleted(){}
 	private function OnError($error){}
 	private function OnNext($value){}

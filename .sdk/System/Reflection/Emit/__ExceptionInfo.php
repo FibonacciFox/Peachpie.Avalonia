@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class __ExceptionInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

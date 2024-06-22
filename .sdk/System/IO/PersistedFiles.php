@@ -3,6 +3,7 @@ namespace System\IO;
 class PersistedFiles extends \System\Object
 {
 
+
 	/**
 	 * @return \System\String|string
 	 */

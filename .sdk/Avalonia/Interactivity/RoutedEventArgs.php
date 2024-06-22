@@ -20,6 +20,7 @@ trait RoutedEvent_1Override {
 class RoutedEventArgs extends \System\EventArgs
 {
 	use RoutedEvent_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

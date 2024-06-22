@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 class CompositionSurfaceVisual extends \Avalonia\Rendering\Composition\CompositionContainerVisual implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

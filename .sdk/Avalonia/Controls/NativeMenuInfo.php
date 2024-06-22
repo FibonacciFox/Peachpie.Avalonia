@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 final class NativeMenuInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

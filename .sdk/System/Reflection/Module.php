@@ -138,6 +138,7 @@ class Module extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ModuleOverride;
+
 	/**
 	 * @field
 	 * @since readonly

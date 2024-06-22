@@ -25,6 +25,7 @@ class QuaternionKeyFrameAnimation extends \Avalonia\Rendering\Composition\Animat
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	use QuaternionKeyFrameAnimationOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

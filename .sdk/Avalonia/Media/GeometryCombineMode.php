@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum GeometryCombineMode
 {
+
 	
 	case Union = '0';
 	case Intersect = '1';

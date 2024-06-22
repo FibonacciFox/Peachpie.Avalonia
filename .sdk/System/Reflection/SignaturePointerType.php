@@ -4,6 +4,7 @@ final class SignaturePointerType extends \System\Reflection\SignatureHasElementT
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

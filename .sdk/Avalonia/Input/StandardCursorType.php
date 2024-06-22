@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum StandardCursorType
 {
+
 	
 	case Arrow = '0';
 	case Ibeam = '1';

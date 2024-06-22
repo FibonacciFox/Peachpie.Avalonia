@@ -2,6 +2,7 @@
 namespace System\Buffers\Text;
 enum ComponentParseResult
 {
+
 	
 	case NoMoreData = '0';
 	case Colon = '1';

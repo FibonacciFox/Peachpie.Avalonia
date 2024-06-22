@@ -2,6 +2,7 @@
 namespace Avalonia\Styling;
 class NthLastChildSelector extends \Avalonia\Styling\NthChildSelector
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

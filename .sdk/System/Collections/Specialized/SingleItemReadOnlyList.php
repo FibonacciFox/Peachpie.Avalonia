@@ -5,6 +5,7 @@ final class SingleItemReadOnlyList extends \System\Object implements
 	\System\Collections\ICollection,
 	\System\Collections\IEnumerable
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

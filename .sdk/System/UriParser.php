@@ -2,6 +2,7 @@
 namespace System;
 class UriParser extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

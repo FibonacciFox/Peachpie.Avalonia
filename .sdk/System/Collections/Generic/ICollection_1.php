@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface ICollection_1
 {
 
+
 	/**
 	 * @param \T|object $item
 	 * @return \System\Void|void

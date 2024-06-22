@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 class RuntimeInformation extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

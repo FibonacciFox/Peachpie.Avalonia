@@ -4,6 +4,7 @@ class ServerCompositionCustomVisual extends \Avalonia\Rendering\Composition\Serv
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject,
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

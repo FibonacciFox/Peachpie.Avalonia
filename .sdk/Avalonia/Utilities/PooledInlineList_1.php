@@ -33,6 +33,7 @@ final class PooledInlineList_1 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	use PooledInlineList_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

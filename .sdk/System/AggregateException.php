@@ -39,6 +39,7 @@ class AggregateException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AggregateExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

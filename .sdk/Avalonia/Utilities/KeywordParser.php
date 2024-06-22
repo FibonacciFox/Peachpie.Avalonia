@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class KeywordParser extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Utilities\CharacterReader& $r
 	 * @param \System\String|string $keyword

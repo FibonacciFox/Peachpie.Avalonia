@@ -19,6 +19,7 @@ class NativeMenuBar extends \Avalonia\Controls\Primitives\TemplatedControl imple
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -382,7 +383,7 @@ class NativeMenuBar extends \Avalonia\Controls\Primitives\TemplatedControl imple
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

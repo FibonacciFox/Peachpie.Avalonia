@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PointerReleasedEventArgs extends \Avalonia\Input\PointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\MouseButton

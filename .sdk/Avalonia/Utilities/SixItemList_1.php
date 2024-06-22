@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class SixItemList_1 extends \Avalonia\Utilities\FrugalListBase_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

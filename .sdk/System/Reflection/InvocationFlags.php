@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum InvocationFlags
 {
+
 	
 	case Unknown = '0';
 	case Initialized = '1';

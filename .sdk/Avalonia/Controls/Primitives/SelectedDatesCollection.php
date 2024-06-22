@@ -12,6 +12,7 @@ final class SelectedDatesCollection extends \System\Collections\ObjectModel\Obse
 	\System\Collections\Specialized\INotifyCollectionChanged,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

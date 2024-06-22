@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Core;
 class AvaloniaPropertyAccessorNode extends \Avalonia\Data\Core\SettableNode
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

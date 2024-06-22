@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition;
 enum CompositionBlendMode
 {
+
 	
 	case Clear = '0';
 	case Src = '1';

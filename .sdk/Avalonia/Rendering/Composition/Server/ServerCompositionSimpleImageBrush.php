@@ -9,6 +9,7 @@ class ServerCompositionSimpleImageBrush extends \Avalonia\Rendering\Composition\
 	\Avalonia\Media\ITileBrush,
 	\Avalonia\Media\IImageBrushSource
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IImageBrushSource

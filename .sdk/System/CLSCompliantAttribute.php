@@ -2,6 +2,7 @@
 namespace System;
 final class CLSCompliantAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -51,6 +51,7 @@ class AutoCompleteBox extends \Avalonia\Controls\Primitives\TemplatedControl imp
 	\Avalonia\Styling\ISetterValue
 {
 	use AutoCompleteBoxOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -617,7 +618,7 @@ class AutoCompleteBox extends \Avalonia\Controls\Primitives\TemplatedControl imp
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

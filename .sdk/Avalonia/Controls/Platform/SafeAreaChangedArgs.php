@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Platform;
 class SafeAreaChangedArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Thickness

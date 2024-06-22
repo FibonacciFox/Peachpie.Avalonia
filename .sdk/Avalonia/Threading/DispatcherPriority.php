@@ -22,6 +22,7 @@ final class DispatcherPriority extends \System\ValueType implements
 	\System\IComparable_1
 {
 	use DispatcherPriorityOverride;
+
 	/**
 	 * @field
 	 * @since readonly

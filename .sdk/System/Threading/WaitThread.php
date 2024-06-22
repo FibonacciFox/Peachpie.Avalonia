@@ -22,6 +22,7 @@ final class WaitThread extends \System\Object
 {
 	use WaitThreadOverride;
 
+
 	private function WaitThreadStart(){}
 	private function ProcessRemovals(){}
 	private function QueueWaitCompletion($registeredHandle, $timedOut){}

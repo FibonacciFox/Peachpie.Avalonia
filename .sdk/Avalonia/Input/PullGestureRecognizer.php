@@ -28,6 +28,7 @@ class PullGestureRecognizer extends \Avalonia\Input\GestureRecognizers\GestureRe
 	\Avalonia\INamed
 {
 	use PullGestureRecognizerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int
@@ -111,7 +112,7 @@ class PullGestureRecognizer extends \Avalonia\Input\GestureRecognizers\GestureRe
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

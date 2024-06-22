@@ -20,6 +20,7 @@ trait ObjectDisposedExceptionOverride {
 final class ObsoleteAttribute extends \System\Attribute
 {
 	use ObjectDisposedExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\IO;
 class EncodingCache extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

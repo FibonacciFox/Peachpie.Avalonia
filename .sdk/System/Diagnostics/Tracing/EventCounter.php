@@ -21,6 +21,7 @@ class EventCounter extends \System\Diagnostics\Tracing\DiagnosticCounter impleme
 	\System\IDisposable
 {
 	use EventCounterOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

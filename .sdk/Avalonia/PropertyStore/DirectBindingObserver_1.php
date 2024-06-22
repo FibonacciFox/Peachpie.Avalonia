@@ -34,6 +34,7 @@ class DirectBindingObserver_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use DirectBindingObserver_1Override;
+
 	/**
 	 * @property
 	 * @var \Avalonia\DirectPropertyBase_1[T]

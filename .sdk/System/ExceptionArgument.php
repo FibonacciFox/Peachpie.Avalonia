@@ -2,6 +2,7 @@
 namespace System;
 enum ExceptionArgument
 {
+
 	
 	case length = '0';
 	case start = '1';

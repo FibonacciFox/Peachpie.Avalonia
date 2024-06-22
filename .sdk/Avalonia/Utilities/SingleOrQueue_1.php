@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class SingleOrQueue_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

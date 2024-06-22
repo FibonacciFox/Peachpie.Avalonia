@@ -2,6 +2,7 @@
 namespace System;
 class AssemblyLoadEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Assembly

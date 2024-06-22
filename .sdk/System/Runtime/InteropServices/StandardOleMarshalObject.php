@@ -4,4 +4,5 @@ class StandardOleMarshalObject extends \System\MarshalByRefObject
 {
 
 
+
 }

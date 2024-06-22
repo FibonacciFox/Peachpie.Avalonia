@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition;
 enum CompositionTileMode
 {
+
 	
 	case None = '0';
 	case TileX = '1';

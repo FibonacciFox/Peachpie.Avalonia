@@ -54,6 +54,7 @@ final class SafeFileHandle extends \Microsoft\Win32\SafeHandles\SafeHandleZeroOr
 	\System\IDisposable
 {
 	use SafeFileHandleOverride;
+
 	/**
 	 * @field
 	 * @var \System\Nullable_1[Interop+ErrorInfo]

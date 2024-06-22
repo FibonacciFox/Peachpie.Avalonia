@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Templates;
 interface IRecyclingDataTemplate
 {
 
+
 	/**
 	 * @param \System\Object|object $data
 	 * @param \Avalonia\Controls\Control $existing

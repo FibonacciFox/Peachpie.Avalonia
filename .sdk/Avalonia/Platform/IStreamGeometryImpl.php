@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IStreamGeometryImpl
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\IStreamGeometryImpl
 	 */

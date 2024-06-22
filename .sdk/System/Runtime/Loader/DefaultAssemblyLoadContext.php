@@ -2,6 +2,7 @@
 namespace System\Runtime\Loader;
 final class DefaultAssemblyLoadContext extends \System\Runtime\Loader\AssemblyLoadContext
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -15,6 +15,7 @@ trait ShapedBufferOverride {
 class TextEndOfParagraph extends \Avalonia\Media\TextFormatting\TextEndOfLine
 {
 	use ShapedBufferOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

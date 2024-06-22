@@ -28,6 +28,7 @@ trait TimeSpanParseOverride {
 final class TimeSpanToken extends \System\ValueType
 {
 	use TimeSpanParseOverride;
+
 	/**
 	 * @field
 	 * @var \System\Globalization\TimeSpanParse+TTT

@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface IKeyboardNavigationHandler
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputRoot $owner
 	 * @return \System\Void|void

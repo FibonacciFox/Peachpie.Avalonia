@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 class TemplateAppliedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\INameScope

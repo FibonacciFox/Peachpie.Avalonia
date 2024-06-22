@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class TypeAnalysis extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

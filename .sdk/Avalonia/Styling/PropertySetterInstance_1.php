@@ -24,6 +24,7 @@ class PropertySetterInstance_1 extends \Avalonia\Reactive\SingleSubscriberObserv
 {
 	use PropertySetterInstance_1Override;
 
+
 	/**
 	 * @param \System\Boolean|bool $hasActivator
 	 * @return \System\Void|void

@@ -4,6 +4,7 @@ final class UnixFileStreamStrategy extends \System\IO\Strategies\OSFileStreamStr
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

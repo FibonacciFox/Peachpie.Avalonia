@@ -19,6 +19,7 @@ trait RoutedEventRegistryOverride {
 class RoutedEventRegistry extends \System\Object
 {
 	use RoutedEventRegistryOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Interactivity\RoutedEventRegistry

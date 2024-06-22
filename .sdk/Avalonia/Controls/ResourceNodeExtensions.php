@@ -66,6 +66,7 @@ class ResourceNodeExtensions extends \System\Object
 {
 	use ResourceNodeExtensionsOverride;
 
+
 	/**
 	 * @uses ResourceNodeExtensionsOverride::FindResource_1 <br>public , args: ($control, $key)<br>
 	 * @uses ResourceNodeExtensionsOverride::FindResource_2 <br>public , args: ($control, $theme, $key)<br>

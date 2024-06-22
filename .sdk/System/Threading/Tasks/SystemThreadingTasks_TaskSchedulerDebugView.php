@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class SystemThreadingTasks_TaskSchedulerDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

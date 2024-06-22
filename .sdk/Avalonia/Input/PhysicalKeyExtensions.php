@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class PhysicalKeyExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Input\PhysicalKey $physicalKey
 	 * @return \Avalonia\Input\Key

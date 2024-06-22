@@ -2,6 +2,7 @@
 namespace System\Numerics;
 final class VectorDebugView_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Byte[]

@@ -3,6 +3,7 @@ namespace Avalonia\Data;
 class DataValidationException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

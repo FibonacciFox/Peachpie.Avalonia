@@ -3,6 +3,7 @@ namespace System\Reflection;
 interface ICustomAttributeProvider
 {
 
+
 	/**
 	 * @param \System\Boolean|bool $inherit
 	 * @return \System\Object[]|array

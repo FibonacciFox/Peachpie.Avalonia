@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IExternalObjectsRenderInterfaceContextFeature
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\IPlatformHandle $handle
 	 * @param \Avalonia\Platform\PlatformGraphicsExternalImageProperties $properties

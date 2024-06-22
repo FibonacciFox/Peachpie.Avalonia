@@ -16,6 +16,7 @@ trait ArrayWithOffsetOverride {
 final class BStrWrapper extends \System\Object
 {
 	use ArrayWithOffsetOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

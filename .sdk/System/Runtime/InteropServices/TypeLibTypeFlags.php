@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum TypeLibTypeFlags
 {
+
 	
 	case FAppObject = '1';
 	case FCanCreate = '2';

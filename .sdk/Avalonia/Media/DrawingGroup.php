@@ -4,6 +4,7 @@ final class DrawingGroup extends \Avalonia\Media\Drawing implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -60,7 +61,7 @@ final class DrawingGroup extends \Avalonia\Media\Drawing implements
 	 */
 	public $Children;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

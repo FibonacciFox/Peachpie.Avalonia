@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class RefreshPropertiesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

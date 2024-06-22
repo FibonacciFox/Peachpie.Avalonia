@@ -3,6 +3,7 @@ namespace System;
 final class SafeTypeNameParserHandle extends \Microsoft\Win32\SafeHandles\SafeHandleZeroOrMinusOneIsInvalid implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

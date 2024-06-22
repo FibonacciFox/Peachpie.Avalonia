@@ -4,6 +4,7 @@ final class IListWrapperEnumWrapper extends \System\Object implements
 	\System\Collections\IEnumerator,
 	\System\ICloneable
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

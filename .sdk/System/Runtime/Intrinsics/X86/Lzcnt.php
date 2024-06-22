@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics\X86;
 class Lzcnt extends \System\Runtime\Intrinsics\X86\X86Base
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

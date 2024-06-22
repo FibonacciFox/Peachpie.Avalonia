@@ -5,6 +5,7 @@ final class CancellationTokenRegistration extends \System\ValueType implements
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\CancellationToken

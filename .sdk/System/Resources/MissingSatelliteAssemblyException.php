@@ -26,6 +26,7 @@ class MissingSatelliteAssemblyException extends \System\SystemException implemen
 	\System\Runtime\Serialization\ISerializable
 {
 	use MissingSatelliteAssemblyExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

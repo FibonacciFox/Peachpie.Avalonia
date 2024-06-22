@@ -3,6 +3,7 @@ namespace System\Security;
 interface IStackWalk
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

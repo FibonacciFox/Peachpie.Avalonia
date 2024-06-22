@@ -7,6 +7,7 @@ final class CultureAwareComparer extends \System\StringComparer implements
 	\System\Collections\Generic\IEqualityComparer_1,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface INativeMenuExporterEventsImplBridge
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

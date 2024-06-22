@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class VectorEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

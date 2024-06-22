@@ -27,6 +27,7 @@ trait BidiAlgorithmOverride {
 final class BidiAlgorithm extends \System\Object
 {
 	use BidiAlgorithmOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\ArraySlice_1[System\SByte]

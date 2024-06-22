@@ -4,6 +4,7 @@ final class Func_15 extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

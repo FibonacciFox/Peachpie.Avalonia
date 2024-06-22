@@ -4,6 +4,7 @@ class RenderDataPushNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class TYPELIBATTR extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Guid

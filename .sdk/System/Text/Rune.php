@@ -138,6 +138,7 @@ final class Rune extends \System\ValueType implements
 	\System\IFormattable
 {
 	use RuneOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

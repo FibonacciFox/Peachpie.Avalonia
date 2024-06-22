@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum StretchDirection
 {
+
 	
 	case UpOnly = '0';
 	case DownOnly = '1';

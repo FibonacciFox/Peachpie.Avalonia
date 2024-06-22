@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 final class InlinesTextSource extends \System\ValueType implements
 	\Avalonia\Media\TextFormatting\ITextSource
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\TextFormatting\TextRun]

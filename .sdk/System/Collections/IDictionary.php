@@ -3,6 +3,7 @@ namespace System\Collections;
 interface IDictionary
 {
 
+
 	/**
 	 * @param \System\Object|object $key
 	 * @return \System\Boolean|bool

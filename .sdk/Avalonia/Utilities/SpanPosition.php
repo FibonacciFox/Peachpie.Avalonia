@@ -4,4 +4,5 @@ final class SpanPosition extends \System\ValueType
 {
 
 
+
 }

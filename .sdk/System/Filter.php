@@ -3,6 +3,7 @@ namespace System;
 final class Filter extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\MdUtf8String $name
 	 * @return \System\Boolean|bool

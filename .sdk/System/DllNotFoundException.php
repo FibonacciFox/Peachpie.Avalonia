@@ -21,6 +21,7 @@ class DllNotFoundException extends \System\TypeLoadException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DllNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

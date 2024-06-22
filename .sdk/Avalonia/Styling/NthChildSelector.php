@@ -18,6 +18,7 @@ trait NthChildSelectorOverride {
 class NthChildSelector extends \Avalonia\Styling\Selector
 {
 	use NthChildSelectorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

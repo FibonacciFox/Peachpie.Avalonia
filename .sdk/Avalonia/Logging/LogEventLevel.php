@@ -2,6 +2,7 @@
 namespace Avalonia\Logging;
 enum LogEventLevel
 {
+
 	
 	case Verbose = '0';
 	case Debug = '1';

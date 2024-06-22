@@ -5,6 +5,7 @@ final class ValueTaskAwaiter_1 extends \System\ValueType implements
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\Runtime\CompilerServices\IStateMachineBoxAwareAwaiter
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

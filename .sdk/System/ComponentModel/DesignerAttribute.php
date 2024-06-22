@@ -31,6 +31,7 @@ trait ComponentCollectionOverride {
 final class DesignerAttribute extends \System\Attribute
 {
 	use ComponentCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

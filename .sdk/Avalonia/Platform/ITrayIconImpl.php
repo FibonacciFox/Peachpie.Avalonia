@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface ITrayIconImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\IWindowIconImpl $icon
 	 * @return \System\Void|void

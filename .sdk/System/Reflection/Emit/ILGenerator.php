@@ -232,6 +232,7 @@ trait ILGeneratorOverride {
 class ILGenerator extends \System\Object
 {
 	use ILGeneratorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\ScopeTree

@@ -4,6 +4,7 @@ class SignatureGenericParameterType extends \System\Reflection\SignatureType imp
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

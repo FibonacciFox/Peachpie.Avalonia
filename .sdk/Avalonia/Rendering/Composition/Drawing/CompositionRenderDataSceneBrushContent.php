@@ -6,6 +6,7 @@ class CompositionRenderDataSceneBrushContent extends \System\Object implements
 	\Avalonia\Media\IBrush,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Drawing\CompositionRenderData

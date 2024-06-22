@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Server;
 class SimpleServerObject extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Server\ServerCompositor

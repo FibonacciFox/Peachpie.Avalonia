@@ -2,6 +2,7 @@
 namespace System;
 final class SerializableAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

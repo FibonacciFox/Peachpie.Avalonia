@@ -51,6 +51,7 @@ class VisualExtensions extends \System\Object
 {
 	use VisualExtensionsOverride;
 
+
 	/**
 	 * @param \Avalonia\Visual $visual
 	 * @param \Avalonia\Visual $ancestor

@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Generators;
 class ItemContainerGenerator extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Object|object $item
 	 * @param \System\Int32|int $index

@@ -47,6 +47,7 @@ class Visual extends \Avalonia\StyledElement implements
 	\Avalonia\INamed
 {
 	use VisualOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -258,7 +259,7 @@ class Visual extends \Avalonia\StyledElement implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

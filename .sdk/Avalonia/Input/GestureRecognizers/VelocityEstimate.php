@@ -3,6 +3,7 @@ namespace Avalonia\Input\GestureRecognizers;
 class VelocityEstimate extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

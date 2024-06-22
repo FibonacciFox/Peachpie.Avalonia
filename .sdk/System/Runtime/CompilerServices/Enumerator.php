@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class Enumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \T|object

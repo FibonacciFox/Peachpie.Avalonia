@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Converters;
 class MenuScrollingVisibilityConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IMultiValueConverter
 {
+
 	/**
 	 * @field
 	 * @since readonly

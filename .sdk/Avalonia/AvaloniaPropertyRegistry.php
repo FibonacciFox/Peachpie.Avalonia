@@ -67,6 +67,7 @@ trait AvaloniaPropertyRegistryOverride {
 class AvaloniaPropertyRegistry extends \System\Object
 {
 	use AvaloniaPropertyRegistryOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaPropertyRegistry

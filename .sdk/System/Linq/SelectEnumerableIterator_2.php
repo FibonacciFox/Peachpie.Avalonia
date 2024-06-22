@@ -8,6 +8,7 @@ final class SelectEnumerableIterator_2 extends \System\Linq\Iterator_1 implement
 	\System\Collections\IEnumerator,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

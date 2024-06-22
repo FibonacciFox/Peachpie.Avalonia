@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class KeyComparer extends \System\Object implements
 	\System\Collections\Generic\IEqualityComparer_1
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\WeakHashList_1+KeyComparer[T]

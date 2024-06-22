@@ -8,6 +8,7 @@ final class BlurEffect extends \Avalonia\Media\Effect implements
 	\Avalonia\Media\IEffect,
 	\Avalonia\Media\IMutableEffect
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -25,7 +26,7 @@ final class BlurEffect extends \Avalonia\Media\Effect implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -4,6 +4,7 @@ class PathGeometry extends \Avalonia\Media\StreamGeometry implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -44,7 +45,7 @@ class PathGeometry extends \Avalonia\Media\StreamGeometry implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

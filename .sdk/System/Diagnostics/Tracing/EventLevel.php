@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventLevel
 {
+
 	
 	case LogAlways = '0';
 	case Critical = '1';

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 final class UVSize extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Double|double

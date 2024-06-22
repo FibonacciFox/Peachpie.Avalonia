@@ -19,6 +19,7 @@ class Ellipse extends \Avalonia\Controls\Shapes\Shape implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Geometry
@@ -368,7 +369,7 @@ class Ellipse extends \Avalonia\Controls\Shapes\Shape implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

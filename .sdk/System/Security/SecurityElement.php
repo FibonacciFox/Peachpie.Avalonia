@@ -24,6 +24,7 @@ trait SecurityElementOverride {
 final class SecurityElement extends \System\Object
 {
 	use SecurityElementOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

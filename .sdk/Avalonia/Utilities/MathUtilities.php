@@ -142,6 +142,7 @@ trait MathUtilitiesOverride {
 class MathUtilities extends \System\Object
 {
 	use MathUtilitiesOverride;
+
 	/**
 	 * @field
 	 * @var \System\Double|double

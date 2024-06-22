@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class MediaContext extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositorScheduler
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\IGlobalClock

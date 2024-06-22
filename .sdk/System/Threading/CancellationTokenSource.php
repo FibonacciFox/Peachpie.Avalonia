@@ -79,6 +79,7 @@ class CancellationTokenSource extends \System\Object implements
 	\System\IDisposable
 {
 	use CancellationTokenSourceOverride;
+
 	/**
 	 * @field
 	 * @since readonly

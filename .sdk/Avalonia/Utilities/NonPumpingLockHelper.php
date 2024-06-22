@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class NonPumpingLockHelper extends \System\Object
 {
 
+
 	/**
 	 * @return \System\IDisposable
 	 */

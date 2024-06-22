@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 final class LevelRun extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

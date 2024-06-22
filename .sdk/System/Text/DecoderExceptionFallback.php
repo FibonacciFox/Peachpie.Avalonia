@@ -2,6 +2,7 @@
 namespace System\Text;
 final class DecoderExceptionFallback extends \System\Text\DecoderFallback
 {
+
 	/**
 	 * @field
 	 * @since readonly

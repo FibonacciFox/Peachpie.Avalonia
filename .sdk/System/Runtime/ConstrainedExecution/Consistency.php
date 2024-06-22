@@ -2,6 +2,7 @@
 namespace System\Runtime\ConstrainedExecution;
 enum Consistency
 {
+
 	
 	case MayCorruptProcess = '0';
 	case MayCorruptAppDomain = '1';

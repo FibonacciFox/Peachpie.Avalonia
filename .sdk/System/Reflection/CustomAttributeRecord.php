@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class CustomAttributeRecord extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\ConstArray

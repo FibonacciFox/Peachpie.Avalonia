@@ -21,6 +21,7 @@ class InvalidOperationException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidOperationExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

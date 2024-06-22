@@ -5,13 +5,14 @@ class Effect extends \Avalonia\Animation\Animatable implements
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Media\IAffectsRender
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\Transitions
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

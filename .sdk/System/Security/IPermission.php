@@ -3,6 +3,7 @@ namespace System\Security;
 interface IPermission
 {
 
+
 	/**
 	 * @return \System\Security\IPermission
 	 */

@@ -3,6 +3,7 @@ namespace Avalonia\Collections;
 interface IAvaloniaList_1
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\IEnumerable_1 $items [generic: T]
 	 * @return \System\Void|void

@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 final class UnicodeTrieHeader extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

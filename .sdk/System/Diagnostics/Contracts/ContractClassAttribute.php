@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 final class ContractClassAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

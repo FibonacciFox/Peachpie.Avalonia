@@ -3,6 +3,7 @@ namespace System\Text;
 class Latin1Utility extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Char* $pBuffer
 	 * @param \System\UIntPtr $bufferLength

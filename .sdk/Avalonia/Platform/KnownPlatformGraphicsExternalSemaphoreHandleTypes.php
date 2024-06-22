@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 class KnownPlatformGraphicsExternalSemaphoreHandleTypes extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

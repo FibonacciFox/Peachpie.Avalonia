@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Documents;
 class EmbeddedControlRun extends \Avalonia\Media\TextFormatting\DrawableTextRun
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Control

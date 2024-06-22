@@ -17,6 +17,7 @@ final class CLong extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CLongOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

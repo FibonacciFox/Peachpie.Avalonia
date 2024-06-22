@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class SortKey extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

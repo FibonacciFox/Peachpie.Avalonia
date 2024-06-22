@@ -30,6 +30,7 @@ class SelectedIndexes_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use SelectedIndexes_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

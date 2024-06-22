@@ -29,6 +29,7 @@ final class ArgIterator extends \System\ValueType
 {
 	use ArgIteratorOverride;
 
+
 	/**
 	 * @return \System\Void|void
 	 */

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ProgIdAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

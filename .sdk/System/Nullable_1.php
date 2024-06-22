@@ -19,6 +19,7 @@ trait Nullable_1Override {
 final class Nullable_1 extends \System\ValueType
 {
 	use Nullable_1Override;
+
 	/**
 	 * @field
 	 * @var \T|object

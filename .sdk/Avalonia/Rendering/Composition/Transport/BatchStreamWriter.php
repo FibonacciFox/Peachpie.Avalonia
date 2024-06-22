@@ -4,6 +4,7 @@ class BatchStreamWriter extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	private function CommitDataSegment(){}
 	private function NextDataSegment(){}
 	private function CommitObjectSegment(){}

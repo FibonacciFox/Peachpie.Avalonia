@@ -417,6 +417,7 @@ final class Char extends \System\ValueType implements
 	\System\Numerics\IUnsignedNumber_1
 {
 	use CharOverride;
+
 	/**
 	 * @field
 	 * @var \System\Char

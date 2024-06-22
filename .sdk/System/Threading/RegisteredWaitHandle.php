@@ -3,6 +3,7 @@ namespace System\Threading;
 final class RegisteredWaitHandle extends \System\MarshalByRefObject
 {
 
+
 	private static function IsValidHandle($handle){}
 	/**
 	 * @param \System\IntPtr $nativeRegisteredWaitHandle

@@ -6,4 +6,5 @@ class IdentitySink_1 extends \Avalonia\Reactive\Operators\Sink_2 implements
 {
 
 
+
 }

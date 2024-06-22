@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 class DebugProvider extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Action_4[System\String,System\String,System\String,System\String]

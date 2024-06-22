@@ -49,6 +49,7 @@ class StyledProperty_1 extends \Avalonia\AvaloniaProperty_1 implements
 	\Avalonia\IStyledPropertyAccessor
 {
 	use StyledProperty_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Func_2[TValue,System\Boolean]
@@ -56,7 +57,7 @@ class StyledProperty_1 extends \Avalonia\AvaloniaProperty_1 implements
 	 */
 	public $ValidateValue;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]|\System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs]
 	 */
 	public $Changed;

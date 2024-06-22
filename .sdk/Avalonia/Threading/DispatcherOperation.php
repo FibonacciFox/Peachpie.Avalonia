@@ -19,6 +19,7 @@ trait DispatcherOperationOverride {
 class DispatcherOperation extends \System\Object
 {
 	use DispatcherOperationOverride;
+
 	/**
 	 * @field
 	 * @since readonly

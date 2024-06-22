@@ -21,6 +21,7 @@ class FocusManager extends \System\Object implements
 {
 	use FocusManagerOverride;
 
+
 	/**
 	 * @uses FocusManagerOverride::GetFocusedElement_1 <br>public , args: ()<br>
 	 * @uses FocusManagerOverride::GetFocusedElement_2 <br>public , args: ($scope)<br>

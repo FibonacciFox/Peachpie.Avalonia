@@ -182,6 +182,7 @@ final class UInt64 extends \System\ValueType implements
 	\System\Numerics\IUnsignedNumber_1
 {
 	use UInt64Override;
+
 	/**
 	 * @field
 	 * @var \System\UInt64

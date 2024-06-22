@@ -3,6 +3,7 @@ namespace Avalonia\Automation\Provider;
 interface IScrollProvider
 {
 
+
 	/**
 	 * @param \Avalonia\Automation\Provider\ScrollAmount $horizontalAmount
 	 * @param \Avalonia\Automation\Provider\ScrollAmount $verticalAmount

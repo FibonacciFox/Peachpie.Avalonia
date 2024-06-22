@@ -2,6 +2,7 @@
 namespace System\Text;
 final class ChunkEnumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlyMemory_1[System\Char]

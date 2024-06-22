@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 final class DebuggerDisplayAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

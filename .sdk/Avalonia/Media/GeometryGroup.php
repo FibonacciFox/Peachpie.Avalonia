@@ -4,6 +4,7 @@ class GeometryGroup extends \Avalonia\Media\Geometry implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -44,7 +45,7 @@ class GeometryGroup extends \Avalonia\Media\Geometry implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

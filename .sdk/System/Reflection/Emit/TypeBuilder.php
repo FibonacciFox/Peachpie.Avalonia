@@ -379,6 +379,7 @@ final class TypeBuilder extends \System\Reflection\TypeInfo implements
 	\System\Reflection\IReflectableType
 {
 	use TypeBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\List_1[System\Reflection\Emit\MethodBuilder]

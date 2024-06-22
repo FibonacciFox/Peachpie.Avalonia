@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum LocaleStringData
 {
+
 	
 	case LocalizedDisplayName = '2';
 	case EnglishDisplayName = '114';

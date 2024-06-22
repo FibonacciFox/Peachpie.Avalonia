@@ -80,6 +80,7 @@ final class ModuleHandle extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ModuleHandleOverride;
+
 	/**
 	 * @field
 	 * @since readonly

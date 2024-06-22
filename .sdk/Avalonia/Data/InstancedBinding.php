@@ -22,6 +22,7 @@ trait InstancedBindingOverride {
 class InstancedBinding extends \System\Object
 {
 	use InstancedBindingOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\BindingMode

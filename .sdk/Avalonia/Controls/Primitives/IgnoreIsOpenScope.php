@@ -4,6 +4,7 @@ final class IgnoreIsOpenScope extends \System\ValueType implements
 	\System\IDisposable
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

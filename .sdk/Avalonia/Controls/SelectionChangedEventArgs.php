@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class SelectionChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\IList

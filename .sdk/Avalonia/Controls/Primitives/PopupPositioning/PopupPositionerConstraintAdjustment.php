@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives\PopupPositioning;
 enum PopupPositionerConstraintAdjustment
 {
+
 	
 	case None = '0';
 	case SlideX = '1';

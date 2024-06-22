@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage;
 interface IStorageFolder
 {
 
+
 	/**
 	 * @return \System\Collections\Generic\IAsyncEnumerable_1[Avalonia\Platform\Storage\IStorageItem]
 	 */

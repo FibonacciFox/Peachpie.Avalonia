@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class Marker extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

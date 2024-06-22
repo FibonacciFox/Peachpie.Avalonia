@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class Manager extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

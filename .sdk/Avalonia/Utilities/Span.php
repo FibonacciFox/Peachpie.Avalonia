@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class Span extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -37,6 +37,7 @@ final class AssemblyNameParser extends \System\ValueType
 {
 	use AssemblyNameParserOverride;
 
+
 	/**
 	 * @uses AssemblyNameParserOverride::Parse_1 <br>public , args: ($name)<br>
 	 * @uses AssemblyNameParserOverride::Parse_2 <br>public , args: ($name)<br>

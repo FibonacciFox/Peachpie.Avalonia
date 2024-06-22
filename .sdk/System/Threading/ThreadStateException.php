@@ -21,6 +21,7 @@ class ThreadStateException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ThreadStateExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

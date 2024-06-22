@@ -31,6 +31,7 @@ class TextBlock extends \Avalonia\Controls\Control implements
 	\Avalonia\Controls\Documents\IInlineHost
 {
 	use TextBlockOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -543,7 +544,7 @@ class TextBlock extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

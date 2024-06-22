@@ -28,6 +28,7 @@ class StyleInstance extends \Avalonia\PropertyStore\ValueFrame implements
 	\System\IDisposable
 {
 	use StyleInstanceOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

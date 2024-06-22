@@ -72,6 +72,7 @@ trait AvxVnniOverride {
 class AvxVnni extends \System\Runtime\Intrinsics\X86\Avx2
 {
 	use AvxVnniOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

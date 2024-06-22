@@ -15,6 +15,7 @@ class PinchGestureRecognizer extends \Avalonia\Input\GestureRecognizers\GestureR
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string
@@ -82,7 +83,7 @@ class PinchGestureRecognizer extends \Avalonia\Input\GestureRecognizers\GestureR
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

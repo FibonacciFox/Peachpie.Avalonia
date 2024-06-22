@@ -61,6 +61,7 @@ final class PixelSize extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PixelSizeOverride;
+
 	/**
 	 * @field
 	 * @since readonly

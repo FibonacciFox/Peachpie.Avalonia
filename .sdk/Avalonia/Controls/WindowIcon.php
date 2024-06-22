@@ -21,6 +21,7 @@ class WindowIcon extends \System\Object
 {
 	use WindowBaseOverride;
 
+
 	/**
 	 * @param \System\IO\Stream $stream
 	 * @return \System\Void|void

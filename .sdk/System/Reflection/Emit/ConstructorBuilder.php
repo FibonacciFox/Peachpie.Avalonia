@@ -33,6 +33,7 @@ final class ConstructorBuilder extends \System\Reflection\ConstructorInfo implem
 	\System\Reflection\ICustomAttributeProvider
 {
 	use ConstructorBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

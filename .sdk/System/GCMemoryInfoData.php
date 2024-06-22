@@ -2,6 +2,7 @@
 namespace System;
 final class GCMemoryInfoData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

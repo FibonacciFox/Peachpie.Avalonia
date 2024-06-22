@@ -5,6 +5,7 @@ class RenderDataOpacityMaskNode extends \Avalonia\Rendering\Composition\Drawing\
 	\System\IDisposable,
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItemWithServerResources
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]

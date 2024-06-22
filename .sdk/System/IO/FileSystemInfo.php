@@ -3,6 +3,7 @@ namespace System\IO;
 class FileSystemInfo extends \System\MarshalByRefObject implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

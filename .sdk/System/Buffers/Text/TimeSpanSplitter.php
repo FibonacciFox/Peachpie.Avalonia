@@ -2,6 +2,7 @@
 namespace System\Buffers\Text;
 final class TimeSpanSplitter extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt32

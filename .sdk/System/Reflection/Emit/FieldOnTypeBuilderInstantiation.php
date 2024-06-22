@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class FieldOnTypeBuilderInstantiation extends \System\Reflection\FieldInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

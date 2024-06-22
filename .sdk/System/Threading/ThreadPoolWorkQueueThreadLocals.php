@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class ThreadPoolWorkQueueThreadLocals extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

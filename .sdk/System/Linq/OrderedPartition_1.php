@@ -23,6 +23,7 @@ final class OrderedPartition_1 extends \System\Object implements
 {
 	use OrderedPartition_1Override;
 
+
 	/**
 	 * @uses OrderedPartition_1Override::GetEnumerator_1 <br>public , args: ()<br>
 	 * @uses OrderedPartition_1Override::GetEnumerator_2 <br>private , args: ()<br>

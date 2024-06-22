@@ -2,6 +2,7 @@
 namespace System\Security\Permissions;
 enum SecurityPermissionFlag
 {
+
 	
 	case AllFlags = '16383';
 	case Assertion = '1';

@@ -56,6 +56,7 @@ final class BufferedStream extends \System\IO\Stream implements
 	\System\IAsyncDisposable
 {
 	use BufferedStreamOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

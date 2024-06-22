@@ -3,6 +3,7 @@ namespace Avalonia\Media\Fonts;
 final class FontCollectionKey extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\FontStyle

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum ImageFileMachine
 {
+
 	
 	case I386 = '332';
 	case IA64 = '512';

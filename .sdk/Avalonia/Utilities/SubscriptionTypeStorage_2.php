@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class SubscriptionTypeStorage_2 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

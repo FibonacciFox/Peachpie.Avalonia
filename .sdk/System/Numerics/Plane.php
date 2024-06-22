@@ -39,6 +39,7 @@ final class Plane extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PlaneOverride;
+
 	/**
 	 * @field
 	 * @var \System\Numerics\Vector3

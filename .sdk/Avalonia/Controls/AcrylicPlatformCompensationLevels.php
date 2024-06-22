@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 final class AcrylicPlatformCompensationLevels extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

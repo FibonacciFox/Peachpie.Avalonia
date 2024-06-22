@@ -77,6 +77,7 @@ class Selectors extends \System\Object
 {
 	use SelectorsOverride;
 
+
 	/**
 	 * @param \Avalonia\Styling\Selector $previous
 	 * @return \Avalonia\Styling\Selector

@@ -35,6 +35,7 @@ class PlatformKeyGestureConverter extends \System\Object implements
 {
 	use PlatformKeyGestureConverterOverride;
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $targetType

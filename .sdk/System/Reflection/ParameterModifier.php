@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class ParameterModifier extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -21,6 +21,7 @@ class ListDictionaryInternal extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use ListDictionaryInternalOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

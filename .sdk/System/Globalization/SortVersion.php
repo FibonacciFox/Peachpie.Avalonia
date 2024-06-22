@@ -3,6 +3,7 @@ namespace System\Globalization;
 final class SortVersion extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class WeakEvents extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

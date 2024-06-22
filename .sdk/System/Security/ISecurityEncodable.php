@@ -3,6 +3,7 @@ namespace System\Security;
 interface ISecurityEncodable
 {
 
+
 	/**
 	 * @param \System\Security\SecurityElement $e
 	 * @return \System\Void|void

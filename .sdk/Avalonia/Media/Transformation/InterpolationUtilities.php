@@ -3,6 +3,7 @@ namespace Avalonia\Media\Transformation;
 class InterpolationUtilities extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Double|double $from
 	 * @param \System\Double|double $to

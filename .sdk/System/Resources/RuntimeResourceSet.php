@@ -18,6 +18,7 @@ final class RuntimeResourceSet extends \System\Resources\ResourceSet implements
 	\System\Collections\IEnumerable
 {
 	use RuntimeResourceSetOverride;
+
 	/**
 	 * @field
 	 * @var \System\Resources\IResourceReader

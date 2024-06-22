@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class PopulatingEventArgs extends \System\ComponentModel\CancelEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

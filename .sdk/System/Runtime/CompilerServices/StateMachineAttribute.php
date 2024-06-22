@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 class StateMachineAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

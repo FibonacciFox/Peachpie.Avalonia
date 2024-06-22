@@ -4,6 +4,7 @@ final class corehost_resolve_component_dependencies_result_fn extends \System\Mu
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

@@ -3,6 +3,7 @@ namespace Avalonia\Input\Raw;
 final class RawPointerPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Point

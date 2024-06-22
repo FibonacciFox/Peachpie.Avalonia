@@ -24,6 +24,7 @@ trait ContainerOverride {
 final class DecimalConstantAttribute extends \System\Attribute
 {
 	use ContainerOverride;
+
 	/**
 	 * @property
 	 * @var \System\Decimal

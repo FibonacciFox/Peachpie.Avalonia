@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class DrawableTextRun extends \Avalonia\Media\TextFormatting\TextRun
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size

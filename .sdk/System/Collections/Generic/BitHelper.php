@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 final class BitHelper extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\Int32|int $bitPosition
 	 * @return \System\Void|void

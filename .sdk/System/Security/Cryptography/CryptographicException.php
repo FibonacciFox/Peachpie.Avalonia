@@ -30,6 +30,7 @@ class CryptographicException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use CryptographicExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

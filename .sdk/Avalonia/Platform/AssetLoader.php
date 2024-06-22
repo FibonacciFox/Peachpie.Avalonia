@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class AssetLoader extends \System\Object
 {
 
+
 	private static function GetAssetLoader(){}
 	/**
 	 * @param \System\Reflection\Assembly $assembly

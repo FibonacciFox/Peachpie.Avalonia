@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class AnsiCharMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $str
 	 * @param \System\Boolean|bool $fBestFit

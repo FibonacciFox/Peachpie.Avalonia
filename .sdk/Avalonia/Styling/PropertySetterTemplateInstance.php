@@ -4,6 +4,7 @@ class PropertySetterTemplateInstance extends \System\Object implements
 	\Avalonia\PropertyStore\IValueEntry,
 	\Avalonia\Styling\ISetterInstance
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

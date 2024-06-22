@@ -21,6 +21,7 @@ trait DispatcherPriorityQueueOverride {
 class DispatcherTimer extends \System\Object
 {
 	use DispatcherPriorityQueueOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\Dispatcher

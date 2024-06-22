@@ -18,6 +18,7 @@ final class UpdateResult extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use UpdateResultOverride;
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[Avalonia\Rect]

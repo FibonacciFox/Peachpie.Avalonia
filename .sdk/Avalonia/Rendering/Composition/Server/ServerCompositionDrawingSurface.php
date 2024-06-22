@@ -4,6 +4,7 @@ class ServerCompositionDrawingSurface extends \Avalonia\Rendering\Composition\Se
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]

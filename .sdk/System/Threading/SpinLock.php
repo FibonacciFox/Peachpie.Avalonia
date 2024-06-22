@@ -39,6 +39,7 @@ trait SpinLockOverride {
 final class SpinLock extends \System\ValueType
 {
 	use SpinLockOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

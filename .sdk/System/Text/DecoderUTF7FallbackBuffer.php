@@ -2,6 +2,7 @@
 namespace System\Text;
 final class DecoderUTF7FallbackBuffer extends \System\Text\DecoderFallbackBuffer
 {
+
 	/**
 	 * @field
 	 * @var \System\Byte*

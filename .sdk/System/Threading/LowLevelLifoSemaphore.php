@@ -4,6 +4,7 @@ final class LowLevelLifoSemaphore extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	private function Create($maximumSignalCount){}
 	/**
 	 * @param \System\Int32|int $timeoutMs

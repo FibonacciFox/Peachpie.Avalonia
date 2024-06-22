@@ -483,6 +483,7 @@ class PooledList_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use PooledList_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Span_1[T]

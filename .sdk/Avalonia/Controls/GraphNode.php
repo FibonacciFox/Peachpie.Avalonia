@@ -21,6 +21,7 @@ trait GraphNodeOverride {
 class GraphNode extends \System\Object
 {
 	use GraphNodeOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

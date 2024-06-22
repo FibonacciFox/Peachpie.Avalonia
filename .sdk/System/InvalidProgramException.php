@@ -21,6 +21,7 @@ final class InvalidProgramException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidProgramExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

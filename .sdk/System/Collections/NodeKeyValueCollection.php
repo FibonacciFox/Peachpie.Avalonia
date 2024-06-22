@@ -5,6 +5,7 @@ final class NodeKeyValueCollection extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 
+
 	private function CopyTo($array, $index){}
 	private function get_Count(){}
 	private function get_IsSynchronized(){}

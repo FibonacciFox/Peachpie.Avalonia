@@ -21,6 +21,7 @@ final class DateTimeFormatInfo extends \System\Object implements
 	\System\ICloneable
 {
 	use DateTimeFormatInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

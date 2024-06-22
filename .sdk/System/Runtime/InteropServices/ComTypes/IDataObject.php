@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IDataObject
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\ComTypes\FORMATETC& &$format
 	 * @param \System\Runtime\InteropServices\ComTypes\STGMEDIUM& &$medium

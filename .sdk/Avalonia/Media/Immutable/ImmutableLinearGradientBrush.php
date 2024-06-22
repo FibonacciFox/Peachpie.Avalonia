@@ -26,6 +26,7 @@ class ImmutableLinearGradientBrush extends \Avalonia\Media\Immutable\ImmutableGr
 	\Avalonia\Media\ILinearGradientBrush
 {
 	use ImmutableDashStyleOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\RelativePoint

@@ -15,6 +15,7 @@ trait EncoderNLSOverride {
 final class EncoderReplacementFallback extends \System\Text\EncoderFallback
 {
 	use EncoderNLSOverride;
+
 	/**
 	 * @field
 	 * @since readonly

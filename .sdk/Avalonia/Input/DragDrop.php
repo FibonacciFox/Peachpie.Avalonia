@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class DragDrop extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

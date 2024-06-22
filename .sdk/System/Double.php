@@ -198,6 +198,7 @@ final class Double extends \System\ValueType implements
 	\System\Numerics\IMinMaxValue_1
 {
 	use DoubleOverride;
+
 	/**
 	 * @field
 	 * @var \System\Double|double

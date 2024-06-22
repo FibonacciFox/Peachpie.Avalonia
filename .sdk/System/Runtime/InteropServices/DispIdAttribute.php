@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DispIdAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

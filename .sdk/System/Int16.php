@@ -199,6 +199,7 @@ final class Int16 extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use Int16Override;
+
 	/**
 	 * @field
 	 * @var \System\Int16

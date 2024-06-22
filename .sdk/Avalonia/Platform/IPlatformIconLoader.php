@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IPlatformIconLoader
 {
 
+
 	/**
 	 * @param \System\String|string $fileName
 	 * @return \Avalonia\Platform\IWindowIconImpl

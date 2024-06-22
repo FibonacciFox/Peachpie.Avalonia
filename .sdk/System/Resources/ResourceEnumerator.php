@@ -4,6 +4,7 @@ final class ResourceEnumerator extends \System\Object implements
 	\System\Collections\IDictionaryEnumerator,
 	\System\Collections\IEnumerator
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

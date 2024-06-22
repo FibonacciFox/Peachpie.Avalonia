@@ -21,6 +21,7 @@ class DirectoryNotFoundException extends \System\IO\IOException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DirectoryNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

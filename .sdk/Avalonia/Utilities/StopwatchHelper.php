@@ -22,6 +22,7 @@ class StopwatchHelper extends \System\Object
 {
 	use StopwatchHelperOverride;
 
+
 	/**
 	 * @uses StopwatchHelperOverride::GetElapsedTime_1 <br>public , args: ($startingTimestamp)<br>
 	 * @uses StopwatchHelperOverride::GetElapsedTime_2 <br>public , args: ($startingTimestamp, $endingTimestamp)<br>

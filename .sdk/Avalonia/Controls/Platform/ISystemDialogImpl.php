@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface ISystemDialogImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\FileDialog $dialog
 	 * @param \Avalonia\Controls\Window $parent

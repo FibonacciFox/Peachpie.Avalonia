@@ -5,6 +5,7 @@ class KeyboardDevice extends \System\Object implements
 	\Avalonia\Input\IInputDevice,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IInputManager

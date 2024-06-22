@@ -2,6 +2,7 @@
 namespace System\Buffers;
 final class Enumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlyMemory_1[T]

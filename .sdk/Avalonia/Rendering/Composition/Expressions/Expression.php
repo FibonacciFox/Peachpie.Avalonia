@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 class Expression extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionType

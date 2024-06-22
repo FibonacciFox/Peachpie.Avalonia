@@ -49,6 +49,7 @@ trait DiyFpOverride {
 final class DiyFp extends \System\ValueType
 {
 	use DiyFpOverride;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 class KnownPlatformGraphicsExternalImageHandleTypes extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

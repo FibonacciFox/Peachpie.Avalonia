@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 class TextEllipsisHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Media\TextFormatting\TextLine $textLine
 	 * @param \Avalonia\Media\TextFormatting\TextCollapsingProperties $properties

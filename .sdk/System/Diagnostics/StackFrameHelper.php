@@ -3,6 +3,7 @@ namespace System\Diagnostics;
 final class StackFrameHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $iSkip
 	 * @param \System\Boolean|bool $fNeedFileInfo

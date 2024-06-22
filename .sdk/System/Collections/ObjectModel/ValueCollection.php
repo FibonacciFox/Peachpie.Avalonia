@@ -37,6 +37,7 @@ final class ValueCollection extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use ValueCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

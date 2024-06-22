@@ -3,6 +3,7 @@ namespace Avalonia\Interactivity;
 class InteractiveExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Interactivity\Interactive $o
 	 * @param \Avalonia\Interactivity\RoutedEvent_1 $routedEvent [generic: TEventArgs]

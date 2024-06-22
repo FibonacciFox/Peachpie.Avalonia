@@ -4,4 +4,5 @@ final class DoNothingType extends \System\Object
 {
 
 
+
 }

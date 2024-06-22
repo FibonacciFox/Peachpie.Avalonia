@@ -4,4 +4,5 @@ class ReadOnlySpanMarshaller_2 extends \System\Object
 {
 
 
+
 }

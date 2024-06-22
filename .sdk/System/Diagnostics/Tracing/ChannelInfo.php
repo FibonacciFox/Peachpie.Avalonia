@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class ChannelInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

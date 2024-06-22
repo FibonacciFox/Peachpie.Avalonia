@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum PackingSize
 {
+
 	
 	case Unspecified = '0';
 	case Size1 = '1';

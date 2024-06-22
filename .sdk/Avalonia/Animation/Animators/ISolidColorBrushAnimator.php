@@ -16,6 +16,7 @@ class ISolidColorBrushAnimator extends \Avalonia\Animation\Animators\Animator_1 
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

@@ -21,6 +21,7 @@ class OverflowException extends \System\ArithmeticException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use OverflowExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

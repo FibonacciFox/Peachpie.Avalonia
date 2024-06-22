@@ -25,6 +25,7 @@ class ClassicDesktopStyleApplicationLifetimeExtensions extends \System\Object
 {
 	use ClassicDesktopStyleApplicationLifetimeExtensionsOverride;
 
+
 	private static function PrepareLifetime($builder, $args, $lifetimeBuilder){}
 	/**
 	 * @param \Avalonia\AppBuilder $builder

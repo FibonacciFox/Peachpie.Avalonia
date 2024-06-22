@@ -48,6 +48,7 @@ final class HslColor extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use HslColorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

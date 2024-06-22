@@ -199,6 +199,7 @@ final class SByte extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use SByteOverride;
+
 	/**
 	 * @field
 	 * @var \System\SByte

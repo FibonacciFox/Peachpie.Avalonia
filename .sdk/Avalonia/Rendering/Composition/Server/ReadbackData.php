@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Server;
 final class ReadbackData extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Matrix

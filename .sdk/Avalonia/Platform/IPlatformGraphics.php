@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IPlatformGraphics
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\IPlatformGraphicsContext
 	 */

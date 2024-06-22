@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 final class KeyGesture extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\Key

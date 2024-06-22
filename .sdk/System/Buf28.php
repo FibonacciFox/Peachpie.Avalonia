@@ -2,6 +2,7 @@
 namespace System;
 final class Buf28 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Decimal+DecCalc+Buf24

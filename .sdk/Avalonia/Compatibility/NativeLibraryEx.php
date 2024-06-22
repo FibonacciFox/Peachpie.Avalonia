@@ -22,6 +22,7 @@ class NativeLibraryEx extends \System\Object
 {
 	use NativeLibraryExOverride;
 
+
 	/**
 	 * @uses NativeLibraryExOverride::Load_1 <br>public , args: ($dll, $assembly)<br>
 	 * @uses NativeLibraryExOverride::Load_2 <br>public , args: ($dll)<br>

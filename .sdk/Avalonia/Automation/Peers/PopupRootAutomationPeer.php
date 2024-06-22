@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class PopupRootAutomationPeer extends \Avalonia\Automation\Peers\WindowBaseAutomationPeer implements
 	\Avalonia\Automation\Provider\IRootProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\WindowBase|\Avalonia\Controls\Control
 	 */
 	public $Owner;

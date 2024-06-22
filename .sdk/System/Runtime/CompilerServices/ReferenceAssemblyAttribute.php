@@ -15,6 +15,7 @@ trait DefaultInterpolatedStringHandlerOverride {
 final class ReferenceAssemblyAttribute extends \System\Attribute
 {
 	use DefaultInterpolatedStringHandlerOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

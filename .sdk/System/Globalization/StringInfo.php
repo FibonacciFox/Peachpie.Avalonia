@@ -73,6 +73,7 @@ trait StringInfoOverride {
 class StringInfo extends \System\Object
 {
 	use StringInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

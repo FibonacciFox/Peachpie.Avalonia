@@ -1,9 +1,10 @@
 <?php
 namespace System;
-final class Comparison_1 extends \System\MulticastDelegate implements
+final class Converter_2 extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object
@@ -37,22 +38,20 @@ final class Comparison_1 extends \System\MulticastDelegate implements
 	 */
 	public $Method;
 	/**
-	 * @param \T|object $x
-	 * @param \T|object $y
-	 * @return \System\Int32|int
+	 * @param \TInput $input
+	 * @return \TOutput
 	 */
-	public function Invoke($x, $y){}
+	public function Invoke($input){}
 	/**
-	 * @param \T|object $x
-	 * @param \T|object $y
+	 * @param \TInput $input
 	 * @param \System\AsyncCallback $callback
 	 * @param \System\Object|object $object
 	 * @return \System\IAsyncResult
 	 */
-	public function BeginInvoke($x, $y, $callback, $object){}
+	public function BeginInvoke($input, $callback, $object){}
 	/**
 	 * @param \System\IAsyncResult $result
-	 * @return \System\Int32|int
+	 * @return \TOutput
 	 */
 	public function EndInvoke($result){}
 	/**

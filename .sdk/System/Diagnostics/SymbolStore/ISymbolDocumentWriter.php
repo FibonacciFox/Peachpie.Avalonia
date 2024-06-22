@@ -3,6 +3,7 @@ namespace System\Diagnostics\SymbolStore;
 interface ISymbolDocumentWriter
 {
 
+
 	/**
 	 * @param \System\Guid $algorithmId
 	 * @param \System\Byte $checkSum

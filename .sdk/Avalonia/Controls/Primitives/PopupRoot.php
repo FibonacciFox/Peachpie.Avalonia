@@ -114,6 +114,7 @@ final class PopupRoot extends \Avalonia\Controls\WindowBase implements
 	\Avalonia\Input\IFocusScope
 {
 	use PopupRootOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -126,7 +127,7 @@ final class PopupRoot extends \Avalonia\Controls\WindowBase implements
 	 */
 	protected $HitTesterOverride;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Platform\IPopupImpl|\Avalonia\Platform\IWindowBaseImpl|\Avalonia\Platform\ITopLevelImpl
 	 */
 	public $PlatformImpl;
@@ -625,7 +626,7 @@ final class PopupRoot extends \Avalonia\Controls\WindowBase implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

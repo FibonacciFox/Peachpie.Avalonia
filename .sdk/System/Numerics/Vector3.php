@@ -132,6 +132,7 @@ final class Vector3 extends \System\ValueType implements
 	\System\IFormattable
 {
 	use Vector3Override;
+
 	/**
 	 * @field
 	 * @var \System\Single

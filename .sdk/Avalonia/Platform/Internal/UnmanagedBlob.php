@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Internal;
 class UnmanagedBlob extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

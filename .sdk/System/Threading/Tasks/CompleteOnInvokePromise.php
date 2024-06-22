@@ -5,6 +5,7 @@ final class CompleteOnInvokePromise extends \System\Threading\Tasks\Task_1 imple
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\Tasks\Task

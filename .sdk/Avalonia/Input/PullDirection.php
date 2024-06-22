@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum PullDirection
 {
+
 	
 	case TopToBottom = '0';
 	case BottomToTop = '1';

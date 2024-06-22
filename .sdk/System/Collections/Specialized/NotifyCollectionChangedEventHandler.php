@@ -4,6 +4,7 @@ final class NotifyCollectionChangedEventHandler extends \System\MulticastDelegat
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

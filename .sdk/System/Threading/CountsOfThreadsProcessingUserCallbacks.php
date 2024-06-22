@@ -3,6 +3,7 @@ namespace System\Threading;
 final class CountsOfThreadsProcessingUserCallbacks extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int16

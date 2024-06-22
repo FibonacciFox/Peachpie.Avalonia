@@ -23,6 +23,7 @@ trait LoggerOverride {
 class Logger extends \System\Object
 {
 	use LoggerOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Logging\ILogSink

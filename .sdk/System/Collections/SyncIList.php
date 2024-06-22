@@ -5,6 +5,7 @@ final class SyncIList extends \System\Object implements
 	\System\Collections\ICollection,
 	\System\Collections\IEnumerable
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

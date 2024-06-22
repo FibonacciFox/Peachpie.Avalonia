@@ -2,6 +2,7 @@
 namespace System\Text\Unicode;
 enum GraphemeClusterBreakType
 {
+
 	
 	case Other = '0';
 	case CR = '1';

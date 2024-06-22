@@ -22,6 +22,7 @@ class ToolTip extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -447,7 +448,7 @@ class ToolTip extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

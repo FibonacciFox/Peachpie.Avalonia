@@ -4,6 +4,7 @@ final class CompletionState extends \System\Threading\Tasks\Task implements
 	\System\IAsyncResult,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

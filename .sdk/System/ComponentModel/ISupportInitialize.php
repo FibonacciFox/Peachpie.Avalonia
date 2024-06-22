@@ -3,6 +3,7 @@ namespace System\ComponentModel;
 interface ISupportInitialize
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 enum FrugalListStoreState
 {
+
 	
 	case Success = '0';
 	case SingleItemList = '1';

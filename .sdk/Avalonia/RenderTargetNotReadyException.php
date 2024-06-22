@@ -25,6 +25,7 @@ class RenderTargetNotReadyException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RenderTargetNotReadyExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

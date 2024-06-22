@@ -3,6 +3,7 @@ namespace System\ComponentModel;
 interface IContainer
 {
 
+
 	/**
 	 * @param \System\ComponentModel\IComponent $component
 	 * @return \System\Void|void

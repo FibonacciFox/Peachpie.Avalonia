@@ -2,6 +2,7 @@
 namespace System\Runtime\Serialization;
 final class SerializationEntry extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

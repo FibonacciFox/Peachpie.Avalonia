@@ -2,6 +2,7 @@
 namespace Avalonia\Data;
 enum BindingMode
 {
+
 	
 	case Default = '0';
 	case OneWay = '1';

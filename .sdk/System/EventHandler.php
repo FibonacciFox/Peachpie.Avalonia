@@ -1,23 +1,10 @@
 <?php
 namespace System;
-class EventArgs extends \System\Object
-{
-	/**
-	 * @field
-	 * @since readonly
-	 * @var \System\EventArgs
-	 */
-	public static $Empty;
-	/**
-	 */
-	public function __construct(){}
-}
-<?php
-namespace System;
 final class EventHandler extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

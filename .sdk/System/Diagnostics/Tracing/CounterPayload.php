@@ -20,6 +20,7 @@ final class CounterPayload extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use CounterPayloadOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

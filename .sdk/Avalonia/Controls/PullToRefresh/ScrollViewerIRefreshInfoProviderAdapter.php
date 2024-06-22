@@ -3,6 +3,7 @@ namespace Avalonia\Controls\PullToRefresh;
 class ScrollViewerIRefreshInfoProviderAdapter extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $root
 	 * @param \System\Nullable_1 $refreshVIsualizerSize [generic: Avalonia\Size]

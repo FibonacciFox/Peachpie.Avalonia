@@ -32,6 +32,7 @@ class Compositor extends \System\Object
 {
 	use CompositorOverride;
 
+
 	/**
 	 * @param \System\Action $value
 	 * @return \System\Void|void

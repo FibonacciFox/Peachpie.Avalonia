@@ -4,6 +4,7 @@ final class DictionaryEnumerator extends \System\ValueType implements
 	\System\Collections\IDictionaryEnumerator,
 	\System\Collections\IEnumerator
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\DictionaryEntry

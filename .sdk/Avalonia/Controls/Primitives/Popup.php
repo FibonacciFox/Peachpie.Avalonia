@@ -20,6 +20,7 @@ class Popup extends \Avalonia\Controls\Control implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -521,7 +522,7 @@ class Popup extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum RefreshVisualizerOrientation
 {
+
 	
 	case Auto = '0';
 	case Normal = '1';

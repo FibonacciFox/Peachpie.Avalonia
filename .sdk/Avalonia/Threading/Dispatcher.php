@@ -179,12 +179,13 @@ class Dispatcher extends \System\Object implements
 	\Avalonia\Threading\IDispatcher
 {
 	use DispatcherOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\Dispatcher
 	 * @since readonly
 	 */
-	public static $UIThread;
+	public $UIThread;
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

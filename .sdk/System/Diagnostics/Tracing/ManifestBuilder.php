@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class ManifestBuilder extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IList_1[System\String]

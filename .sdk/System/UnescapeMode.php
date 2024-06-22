@@ -2,6 +2,7 @@
 namespace System;
 enum UnescapeMode
 {
+
 	
 	case CopyOnly = '0';
 	case Escape = '1';

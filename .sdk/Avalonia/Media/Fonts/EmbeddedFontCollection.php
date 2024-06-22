@@ -8,6 +8,7 @@ class EmbeddedFontCollection extends \Avalonia\Media\Fonts\FontCollectionBase im
 	\System\Collections\IEnumerable,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -4,4 +4,5 @@ final class NativeDecimal extends \System\ValueType
 {
 
 
+
 }

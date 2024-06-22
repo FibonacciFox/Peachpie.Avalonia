@@ -2,6 +2,7 @@
 namespace System;
 final class CORINFO_EH_CLAUSE extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

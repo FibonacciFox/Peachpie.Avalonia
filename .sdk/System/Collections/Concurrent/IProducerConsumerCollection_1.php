@@ -3,6 +3,7 @@ namespace System\Collections\Concurrent;
 interface IProducerConsumerCollection_1
 {
 
+
 	/**
 	 * @param \T $array
 	 * @param \System\Int32|int $index

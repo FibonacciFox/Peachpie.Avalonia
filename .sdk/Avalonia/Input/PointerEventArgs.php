@@ -21,6 +21,7 @@ trait PointerEventArgsOverride {
 class PointerEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use PointerEventArgsOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IPointer

@@ -7,6 +7,7 @@ namespace Avalonia\Automation\Provider;
 interface IRootProvider
 {
 
+
 	/**
 	 * @return \Avalonia\Automation\Peers\AutomationPeer
 	 */

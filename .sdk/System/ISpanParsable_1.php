@@ -3,6 +3,7 @@ namespace System;
 interface ISpanParsable_1
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $s [generic: System\Char]
 	 * @param \System\IFormatProvider $provider

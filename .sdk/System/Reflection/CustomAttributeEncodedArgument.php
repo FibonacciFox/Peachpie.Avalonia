@@ -27,6 +27,7 @@ trait CustomAttributeEncodedArgumentOverride {
 final class CustomAttributeEncodedArgument extends \System\ValueType
 {
 	use CustomAttributeEncodedArgumentOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\CustomAttributeType

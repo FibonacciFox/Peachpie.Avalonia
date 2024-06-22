@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum HebrewNumberParsingState
 {
+
 	
 	case InvalidHebrewNumber = '0';
 	case NotHebrewDigit = '1';

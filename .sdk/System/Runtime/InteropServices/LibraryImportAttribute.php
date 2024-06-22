@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class LibraryImportAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

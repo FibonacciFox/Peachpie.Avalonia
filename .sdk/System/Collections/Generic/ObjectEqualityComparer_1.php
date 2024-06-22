@@ -5,6 +5,7 @@ final class ObjectEqualityComparer_1 extends \System\Collections\Generic\Equalit
 	\System\Collections\Generic\IEqualityComparer_1
 {
 
+
 	/**
 	 */
 	public function __construct(){}

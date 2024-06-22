@@ -3,6 +3,7 @@ namespace System\Reflection;
 interface IReflect
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @param \System\Reflection\BindingFlags $bindingAttr

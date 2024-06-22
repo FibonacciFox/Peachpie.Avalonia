@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class InputManager extends \System\Object implements
 	\Avalonia\Input\IInputManager
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IInputManager

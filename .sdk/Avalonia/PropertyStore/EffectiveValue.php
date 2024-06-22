@@ -2,6 +2,7 @@
 namespace Avalonia\PropertyStore;
 class EffectiveValue extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

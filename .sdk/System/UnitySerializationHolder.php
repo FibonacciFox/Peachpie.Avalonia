@@ -5,6 +5,7 @@ final class UnitySerializationHolder extends \System\Object implements
 	\System\Runtime\Serialization\IObjectReference
 {
 
+
 	/**
 	 * @param \System\Runtime\Serialization\SerializationInfo $info
 	 * @param \System\Int32|int $unityType

@@ -3,6 +3,7 @@ namespace System;
 interface IDisposable
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

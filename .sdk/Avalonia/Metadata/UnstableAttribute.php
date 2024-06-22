@@ -15,6 +15,7 @@ trait SlicedStreamOverride {
 final class UnstableAttribute extends \System\Attribute
 {
 	use SlicedStreamOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

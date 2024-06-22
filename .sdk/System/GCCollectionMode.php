@@ -2,6 +2,7 @@
 namespace System;
 enum GCCollectionMode
 {
+
 	
 	case Default = '0';
 	case Forced = '1';

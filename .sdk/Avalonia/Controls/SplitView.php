@@ -39,6 +39,7 @@ class SplitView extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
 	use SplitViewOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -556,7 +557,7 @@ class SplitView extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

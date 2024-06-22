@@ -4,6 +4,7 @@ final class ImmutableExperimentalAcrylicMaterial extends \System\ValueType imple
 	\Avalonia\Media\IExperimentalAcrylicMaterial,
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\AcrylicBackgroundSource

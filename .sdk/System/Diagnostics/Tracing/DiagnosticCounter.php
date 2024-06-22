@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 class DiagnosticCounter extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

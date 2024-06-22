@@ -3,6 +3,7 @@ namespace System\Text;
 class UnicodeUtility extends \System\Object
 {
 
+
 	/**
 	 * @param \System\UInt32 $codePoint
 	 * @return \System\Int32|int

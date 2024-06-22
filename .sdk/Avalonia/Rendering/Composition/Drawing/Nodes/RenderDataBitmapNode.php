@@ -4,6 +4,7 @@ class RenderDataBitmapNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]

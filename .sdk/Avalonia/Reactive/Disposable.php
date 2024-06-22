@@ -21,6 +21,7 @@ trait DisposableOverride {
 class Disposable extends \System\Object
 {
 	use DisposableOverride;
+
 	/**
 	 * @property
 	 * @var \System\IDisposable

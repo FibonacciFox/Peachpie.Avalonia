@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Animations;
 final class Value extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Expressions\ExpressionVariant

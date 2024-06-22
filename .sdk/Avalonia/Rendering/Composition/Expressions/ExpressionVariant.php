@@ -86,6 +86,7 @@ trait ExpressionVariantOverride {
 final class ExpressionVariant extends \System\ValueType
 {
 	use ExpressionVariantOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Expressions\VariantType

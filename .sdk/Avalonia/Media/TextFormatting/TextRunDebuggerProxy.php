@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextRunDebuggerProxy extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

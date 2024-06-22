@@ -22,6 +22,7 @@ final class CharEnumerator extends \System\Object implements
 	\System\ICloneable
 {
 	use CharEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Char

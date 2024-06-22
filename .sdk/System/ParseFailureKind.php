@@ -2,6 +2,7 @@
 namespace System;
 enum ParseFailureKind
 {
+
 	
 	case None = '0';
 	case ArgumentNull = '1';

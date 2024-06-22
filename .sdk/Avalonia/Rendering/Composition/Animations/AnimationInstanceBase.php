@@ -25,6 +25,7 @@ class AnimationInstanceBase extends \System\Object implements
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
 	use AnimationInstanceBaseOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Server\ServerObject

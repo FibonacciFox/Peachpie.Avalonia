@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 enum HorizontalAlignment
 {
+
 	
 	case Stretch = '0';
 	case Left = '1';

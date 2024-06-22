@@ -22,6 +22,7 @@ final class RuntimeFieldHandle extends \System\ValueType implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RuntimeFieldHandleOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

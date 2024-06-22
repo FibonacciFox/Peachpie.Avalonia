@@ -64,6 +64,7 @@ class WebUtility extends \System\Object
 {
 	use WebUtilityOverride;
 
+
 	/**
 	 * @uses WebUtilityOverride::HtmlEncode_1 <br>public , args: ($value)<br>
 	 * @uses WebUtilityOverride::HtmlEncode_2 <br>public , args: ($value, $output)<br>

@@ -64,6 +64,7 @@ class Window extends \Avalonia\Controls\WindowBase implements
 	\Avalonia\Input\IFocusScope
 {
 	use WindowOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -172,7 +173,7 @@ class Window extends \Avalonia\Controls\WindowBase implements
 	 */
 	protected $HitTesterOverride;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Platform\IWindowImpl|\Avalonia\Platform\IWindowBaseImpl|\Avalonia\Platform\ITopLevelImpl
 	 */
 	public $PlatformImpl;
@@ -746,7 +747,7 @@ class Window extends \Avalonia\Controls\WindowBase implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

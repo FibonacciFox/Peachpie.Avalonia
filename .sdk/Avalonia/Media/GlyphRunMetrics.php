@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class GlyphRunMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

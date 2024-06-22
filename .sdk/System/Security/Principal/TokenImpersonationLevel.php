@@ -2,6 +2,7 @@
 namespace System\Security\Principal;
 enum TokenImpersonationLevel
 {
+
 	
 	case None = '0';
 	case Anonymous = '1';

@@ -19,6 +19,7 @@ trait ComAwareEventInfoOverride {
 final class HandleCollector extends \System\Object
 {
 	use ComAwareEventInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

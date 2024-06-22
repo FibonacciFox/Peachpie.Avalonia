@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 interface IMutableExperimentalAcrylicMaterial
 {
 
+
 	/**
 	 * @return \Avalonia\Media\IExperimentalAcrylicMaterial
 	 */

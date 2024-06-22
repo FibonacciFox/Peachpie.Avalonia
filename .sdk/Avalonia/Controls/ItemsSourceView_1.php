@@ -10,6 +10,7 @@ final class ItemsSourceView_1 extends \Avalonia\Controls\ItemsSourceView impleme
 	\System\Collections\Specialized\INotifyCollectionChanged,
 	\Avalonia\Controls\Utils\ICollectionChangedListener
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\ItemsSourceView_1[T]
@@ -17,7 +18,7 @@ final class ItemsSourceView_1 extends \Avalonia\Controls\ItemsSourceView impleme
 	 */
 	public $Empty;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \T|object|\System\Object|object
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace System;
 enum Check
 {
+
 	
 	case None = '0';
 	case EscapedCanonical = '1';

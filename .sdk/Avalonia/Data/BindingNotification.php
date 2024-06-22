@@ -23,6 +23,7 @@ trait BindingNotificationOverride {
 class BindingNotification extends \System\Object
 {
 	use BindingNotificationOverride;
+
 	/**
 	 * @field
 	 * @since readonly

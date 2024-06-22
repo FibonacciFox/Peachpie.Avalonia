@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class MergablePropertyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

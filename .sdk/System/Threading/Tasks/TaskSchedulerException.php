@@ -25,6 +25,7 @@ class TaskSchedulerException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TaskSchedulerExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

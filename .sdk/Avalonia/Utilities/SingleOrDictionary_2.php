@@ -20,6 +20,7 @@ class SingleOrDictionary_2 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use SingleOrDictionary_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[TValue]

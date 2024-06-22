@@ -138,6 +138,7 @@ class SortedSet_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use SortedSet_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

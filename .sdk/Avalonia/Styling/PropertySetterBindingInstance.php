@@ -7,6 +7,7 @@ class PropertySetterBindingInstance extends \Avalonia\PropertyStore\UntypedBindi
 	\System\IDisposable,
 	\Avalonia\Styling\ISetterInstance
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

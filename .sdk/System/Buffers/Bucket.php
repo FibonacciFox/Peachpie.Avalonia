@@ -2,6 +2,7 @@
 namespace System\Buffers;
 final class Bucket extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

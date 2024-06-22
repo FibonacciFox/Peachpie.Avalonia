@@ -23,6 +23,7 @@ trait ArrayItemList_1Override {
 final class ArrayItemList_1 extends \Avalonia\Utilities\FrugalListBase_1
 {
 	use ArrayItemList_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

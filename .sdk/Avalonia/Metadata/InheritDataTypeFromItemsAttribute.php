@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class InheritDataTypeFromItemsAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

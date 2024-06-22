@@ -306,6 +306,7 @@ class List_1 extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use List_1Override;
+
 	/**
 	 * @field
 	 * @var \T[]

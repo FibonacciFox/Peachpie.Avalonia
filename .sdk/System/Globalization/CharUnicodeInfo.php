@@ -126,6 +126,7 @@ class CharUnicodeInfo extends \System\Object
 {
 	use CharUnicodeInfoOverride;
 
+
 	/**
 	 * @uses CharUnicodeInfoOverride::GetBidiCategory_1 <br>protected , args: ($s, $index)<br>
 	 * @uses CharUnicodeInfoOverride::GetBidiCategory_2 <br>protected , args: ($s, $index)<br>

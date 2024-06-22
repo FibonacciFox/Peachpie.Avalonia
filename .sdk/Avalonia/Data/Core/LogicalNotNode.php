@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class LogicalNotNode extends \Avalonia\Data\Core\ExpressionNode implements
 	\Avalonia\Data\Core\ITransformNode
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

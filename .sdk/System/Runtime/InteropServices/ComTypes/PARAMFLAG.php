@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum PARAMFLAG
 {
+
 	
 	case PARAMFLAG_NONE = '0';
 	case PARAMFLAG_FIN = '1';

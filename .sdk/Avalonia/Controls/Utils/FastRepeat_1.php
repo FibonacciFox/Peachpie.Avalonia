@@ -21,6 +21,7 @@ class FastRepeat_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use FastRepeat_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

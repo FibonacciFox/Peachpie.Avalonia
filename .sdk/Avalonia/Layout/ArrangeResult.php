@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 enum ArrangeResult
 {
+
 	
 	case Arranged = '0';
 	case NotVisible = '1';

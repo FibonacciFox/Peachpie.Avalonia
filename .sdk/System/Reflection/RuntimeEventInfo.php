@@ -3,6 +3,7 @@ namespace System\Reflection;
 final class RuntimeEventInfo extends \System\Reflection\EventInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

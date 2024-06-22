@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 interface IServerRenderResource
 {
 
+
 	/**
 	 * @param \Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver $observer
 	 * @return \System\Void|void

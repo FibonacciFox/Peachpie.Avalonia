@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 final class BidiData extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\SByte

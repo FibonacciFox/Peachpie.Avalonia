@@ -68,6 +68,7 @@ class BinaryReader extends \System\Object implements
 	\System\IDisposable
 {
 	use BinaryReaderOverride;
+
 	/**
 	 * @property
 	 * @var \System\IO\Stream

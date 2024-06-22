@@ -22,6 +22,7 @@ class AncestorFinder extends \System\Object
 {
 	use AncestorFinderOverride;
 
+
 	/**
 	 * @uses AncestorFinderOverride::Create_1 <br>public , args: ($control)<br>
 	 * @uses AncestorFinderOverride::Create_2 <br>public , args: ($control, $ancestorType)<br>

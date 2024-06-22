@@ -3,6 +3,7 @@ namespace Avalonia\Input\Platform;
 interface IPlatformDragSource
 {
 
+
 	/**
 	 * @param \Avalonia\Input\PointerEventArgs $triggerEvent
 	 * @param \Avalonia\Input\IDataObject $data

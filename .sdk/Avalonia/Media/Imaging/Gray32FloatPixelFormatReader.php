@@ -4,6 +4,7 @@ final class Gray32FloatPixelFormatReader extends \System\ValueType implements
 	\Avalonia\Media\Imaging\IPixelFormatReader
 {
 
+
 	/**
 	 * @return \Avalonia\Media\Imaging\Rgba8888Pixel
 	 */

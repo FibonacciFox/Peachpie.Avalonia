@@ -19,6 +19,7 @@ class Thumb extends \Avalonia\Controls\Primitives\TemplatedControl implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -394,7 +395,7 @@ class Thumb extends \Avalonia\Controls\Primitives\TemplatedControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

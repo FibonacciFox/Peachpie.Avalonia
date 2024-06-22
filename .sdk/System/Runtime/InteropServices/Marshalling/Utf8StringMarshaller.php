@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\Marshalling;
 class Utf8StringMarshaller extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $managed
 	 * @return \System\Byte*

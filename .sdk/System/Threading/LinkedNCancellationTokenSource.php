@@ -3,6 +3,7 @@ namespace System\Threading;
 final class LinkedNCancellationTokenSource extends \System\Threading\CancellationTokenSource implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

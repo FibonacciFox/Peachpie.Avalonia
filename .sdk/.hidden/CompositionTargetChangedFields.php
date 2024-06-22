@@ -2,6 +2,7 @@
 
 enum CompositionTargetChangedFields
 {
+
 	
 	case Root = '1';
 	case IsEnabled = '2';

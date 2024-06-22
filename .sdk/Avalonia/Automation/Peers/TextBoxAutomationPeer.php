@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class TextBoxAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IValueProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\TextBox|\Avalonia\Controls\Control
 	 */
 	public $Owner;

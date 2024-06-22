@@ -50,6 +50,7 @@ class CultureNotFoundException extends \System\ArgumentException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use CultureNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

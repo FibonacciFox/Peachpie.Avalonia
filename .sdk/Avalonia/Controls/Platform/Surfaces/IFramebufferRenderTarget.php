@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform\Surfaces;
 interface IFramebufferRenderTarget
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\ILockedFramebuffer
 	 */

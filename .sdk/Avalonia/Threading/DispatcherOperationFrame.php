@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 class DispatcherOperationFrame extends \Avalonia\Threading\DispatcherFrame
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\Dispatcher

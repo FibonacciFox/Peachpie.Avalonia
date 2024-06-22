@@ -16,6 +16,7 @@ class AvaloniaLocator extends \System\Object implements
 	\Avalonia\IAvaloniaDependencyResolver
 {
 	use AvaloniaInternalExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\IAvaloniaDependencyResolver

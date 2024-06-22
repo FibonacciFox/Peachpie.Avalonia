@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class OverrideEventProvider extends \System\Diagnostics\Tracing\EventProvider implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\IEventProvider

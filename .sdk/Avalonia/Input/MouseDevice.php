@@ -25,6 +25,7 @@ class MouseDevice extends \System\Object implements
 {
 	use MouseDeviceOverride;
 
+
 	/**
 	 * @uses MouseDeviceOverride::ProcessRawEvent_1 <br>public , args: ($e)<br>
 	 * @uses MouseDeviceOverride::ProcessRawEvent_2 <br>private , args: ($e)<br>

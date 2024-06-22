@@ -29,6 +29,7 @@ final class GenericArraySortHelper_1 extends \System\Object implements
 {
 	use GenericArraySortHelper_1Override;
 
+
 	/**
 	 * @param \System\Span_1 $keys [generic: T]
 	 * @param \System\Collections\Generic\IComparer_1 $comparer [generic: T]

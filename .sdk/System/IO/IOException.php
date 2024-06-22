@@ -26,6 +26,7 @@ class IOException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use IOExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

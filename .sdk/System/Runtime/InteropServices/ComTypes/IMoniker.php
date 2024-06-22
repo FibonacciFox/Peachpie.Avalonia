@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IMoniker
 {
 
+
 	/**
 	 * @param \System\Guid& &$pClassID
 	 * @return \System\Void|void

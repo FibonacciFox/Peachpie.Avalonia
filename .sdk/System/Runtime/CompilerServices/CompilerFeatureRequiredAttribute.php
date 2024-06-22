@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class CompilerFeatureRequiredAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

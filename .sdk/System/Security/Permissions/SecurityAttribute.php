@@ -2,6 +2,7 @@
 namespace System\Security\Permissions;
 class SecurityAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Security\Permissions\SecurityAction

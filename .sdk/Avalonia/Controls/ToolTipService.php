@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 final class ToolTipService extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\ToolTipService

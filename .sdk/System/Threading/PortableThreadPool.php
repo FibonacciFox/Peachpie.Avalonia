@@ -33,6 +33,7 @@ trait PortableThreadPoolOverride {
 final class PortableThreadPool extends \System\Object
 {
 	use PortableThreadPoolOverride;
+
 	/**
 	 * @field
 	 * @since readonly

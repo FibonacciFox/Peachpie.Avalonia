@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Remote;
 class RemoteServer extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

@@ -4,6 +4,7 @@ class SystemDialogImpl extends \System\Object implements
 	\Avalonia\Controls\Platform\ISystemDialogImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\FileDialog $dialog
 	 * @param \Avalonia\Controls\Window $parent

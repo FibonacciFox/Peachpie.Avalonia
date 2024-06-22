@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 final class Colors extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Color

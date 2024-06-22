@@ -2,6 +2,7 @@
 namespace System;
 final class Buf24 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt32

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum TYMED
 {
+
 	
 	case TYMED_HGLOBAL = '1';
 	case TYMED_FILE = '2';

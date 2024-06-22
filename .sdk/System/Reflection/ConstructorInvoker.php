@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class ConstructorInvoker extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\InvocationFlags

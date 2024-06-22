@@ -7,6 +7,7 @@ namespace Avalonia\Input;
 interface IMainMenu
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

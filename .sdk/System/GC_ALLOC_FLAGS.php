@@ -2,6 +2,7 @@
 namespace System;
 enum GC_ALLOC_FLAGS
 {
+
 	
 	case GC_ALLOC_NO_FLAGS = '0';
 	case GC_ALLOC_ZEROING_OPTIONAL = '16';

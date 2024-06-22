@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface ITypeLib
 {
 
+
 	/**
 	 * @return \System\Int32|int
 	 */

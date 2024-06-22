@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class Key extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\WeakReference_1[T]

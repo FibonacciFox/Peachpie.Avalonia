@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum RegistrationClassContext
 {
+
 	
 	case InProcessServer = '1';
 	case InProcessHandler = '2';

@@ -117,6 +117,7 @@ trait EllipticalArcOverride {
 final class EllipticalArc extends \System\Object
 {
 	use EllipticalArcOverride;
+
 	/**
 	 * @field
 	 * @var \System\Double|double

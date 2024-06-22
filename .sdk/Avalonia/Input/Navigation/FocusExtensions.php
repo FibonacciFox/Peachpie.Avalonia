@@ -3,6 +3,7 @@ namespace Avalonia\Input\Navigation;
 class FocusExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputElement $e
 	 * @return \System\Boolean|bool

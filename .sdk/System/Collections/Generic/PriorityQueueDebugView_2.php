@@ -16,6 +16,7 @@ trait EnumeratorOverride {
 final class PriorityQueueDebugView_2 extends \System\Object
 {
 	use EnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\ValueTuple_2[TElement,TPriority][]

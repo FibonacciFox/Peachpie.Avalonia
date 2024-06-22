@@ -152,6 +152,7 @@ class FileStream extends \System\IO\Stream implements
 	\System\IAsyncDisposable
 {
 	use FileStreamOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

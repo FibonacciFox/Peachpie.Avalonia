@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface IFocusManager
 {
 
+
 	/**
 	 * @return \Avalonia\Input\IInputElement
 	 */

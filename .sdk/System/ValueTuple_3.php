@@ -53,6 +53,7 @@ final class ValueTuple_3 extends \System\ValueType implements
 	\System\Runtime\CompilerServices\ITuple
 {
 	use ValueTuple_3Override;
+
 	/**
 	 * @field
 	 * @var \T1

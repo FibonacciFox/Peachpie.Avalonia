@@ -26,6 +26,7 @@ trait TextSelectionOverride {
 class RawPointerEventArgs extends \Avalonia\Input\Raw\RawInputEventArgs
 {
 	use TextSelectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int64|int

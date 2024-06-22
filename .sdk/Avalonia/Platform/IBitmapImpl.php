@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IBitmapImpl
 {
 
+
 	/**
 	 * @param \System\String|string $fileName
 	 * @param \System\Nullable_1 $quality [generic: System\Int32]

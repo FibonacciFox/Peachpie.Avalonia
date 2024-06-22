@@ -6,6 +6,7 @@ final class EnumEqualityComparer_1 extends \System\Collections\Generic\EqualityC
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	/**
 	 * @param \System\Runtime\Serialization\SerializationInfo $info
 	 * @param \System\Runtime\Serialization\StreamingContext $context

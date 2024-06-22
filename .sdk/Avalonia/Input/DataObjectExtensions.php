@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class DataObjectExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IDataObject $dataObject
 	 * @return \System\Collections\Generic\IEnumerable_1[Avalonia\Platform\Storage\IStorageItem]

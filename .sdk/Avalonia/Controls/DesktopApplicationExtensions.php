@@ -30,6 +30,7 @@ class DesktopApplicationExtensions extends \System\Object
 {
 	use DesktopApplicationExtensionsOverride;
 
+
 	/**
 	 * @uses DesktopApplicationExtensionsOverride::Run_1 <br>public , args: ($app, $closable)<br>
 	 * @uses DesktopApplicationExtensionsOverride::Run_2 <br>public , args: ($app, $mainWindow)<br>

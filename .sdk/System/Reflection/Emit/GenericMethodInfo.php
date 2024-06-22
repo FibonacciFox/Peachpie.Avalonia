@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class GenericMethodInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\RuntimeMethodHandle

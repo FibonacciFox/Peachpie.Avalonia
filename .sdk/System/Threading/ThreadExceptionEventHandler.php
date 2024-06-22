@@ -4,6 +4,7 @@ final class ThreadExceptionEventHandler extends \System\MulticastDelegate implem
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

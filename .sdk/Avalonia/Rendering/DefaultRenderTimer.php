@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class DefaultRenderTimer extends \System\Object implements
 	\Avalonia\Rendering\IRenderTimer
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

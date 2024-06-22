@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 final class RuntimePlatformInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\FormFactorType

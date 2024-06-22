@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class GlyphInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\UInt16

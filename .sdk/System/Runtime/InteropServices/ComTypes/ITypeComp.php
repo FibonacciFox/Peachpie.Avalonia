@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface ITypeComp
 {
 
+
 	/**
 	 * @param \System\String|string $szName
 	 * @param \System\Int32|int $lHashVal

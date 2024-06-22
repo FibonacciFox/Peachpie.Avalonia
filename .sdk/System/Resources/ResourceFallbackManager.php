@@ -21,6 +21,7 @@ final class ResourceFallbackManager extends \System\Object implements
 {
 	use ResourceFallbackManagerOverride;
 
+
 	/**
 	 * @uses ResourceFallbackManagerOverride::GetEnumerator_1 <br>private , args: ()<br>
 	 * @uses ResourceFallbackManagerOverride::GetEnumerator_2 <br>public , args: ()<br>

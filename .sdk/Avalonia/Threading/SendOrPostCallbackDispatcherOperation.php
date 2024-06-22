@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 class SendOrPostCallbackDispatcherOperation extends \Avalonia\Threading\DispatcherOperation
 {
+
 	/**
 	 * @field
 	 * @since readonly

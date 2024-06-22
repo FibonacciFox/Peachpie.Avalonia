@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 class UnicodeData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

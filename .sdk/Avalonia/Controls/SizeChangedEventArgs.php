@@ -24,6 +24,7 @@ trait SeparatorOverride {
 class SizeChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use SeparatorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

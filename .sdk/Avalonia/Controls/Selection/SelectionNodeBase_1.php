@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Selection;
 class SelectionNodeBase_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\IEnumerable

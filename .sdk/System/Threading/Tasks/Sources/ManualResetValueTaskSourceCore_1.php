@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks\Sources;
 final class ManualResetValueTaskSourceCore_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

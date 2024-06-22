@@ -2,6 +2,7 @@
 namespace Avalonia\Animation;
 enum FillMode
 {
+
 	
 	case None = '0';
 	case Forward = '1';

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class UiThreadRenderTimer extends \Avalonia\Rendering\DefaultRenderTimer implements
 	\Avalonia\Rendering\IRenderTimer
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

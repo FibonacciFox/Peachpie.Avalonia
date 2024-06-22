@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IPlatformRenderInterfaceImportedImage
 {
 
+
 	/**
 	 * @param \System\UInt32 $acquireIndex
 	 * @param \System\UInt32 $releaseIndex

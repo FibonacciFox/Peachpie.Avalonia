@@ -2,6 +2,7 @@
 namespace System\Text;
 final class CodePageDataItem extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

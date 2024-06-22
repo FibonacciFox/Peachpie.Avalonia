@@ -8,6 +8,7 @@ class ServerCompositionSimpleContentBrush extends \Avalonia\Rendering\Compositio
 	\Avalonia\Media\ITileBrush,
 	\Avalonia\Media\ISceneBrush
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\AlignmentX

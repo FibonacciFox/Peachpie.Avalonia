@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class VarArgMethod extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\RuntimeMethodInfo

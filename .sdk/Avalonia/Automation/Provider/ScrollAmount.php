@@ -2,6 +2,7 @@
 namespace Avalonia\Automation\Provider;
 enum ScrollAmount
 {
+
 	
 	case LargeDecrement = '0';
 	case SmallDecrement = '1';

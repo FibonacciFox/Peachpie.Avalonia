@@ -19,6 +19,7 @@ class Control extends \Avalonia\Input\InputElement implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -370,7 +371,7 @@ class Control extends \Avalonia\Input\InputElement implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

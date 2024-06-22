@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 enum TreeRotation
 {
+
 	
 	case Left = '0';
 	case LeftRight = '1';

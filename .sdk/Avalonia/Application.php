@@ -13,6 +13,7 @@ class Application extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\IResourceNode,
 	\Avalonia\Platform\IApplicationPlatformEvents
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -93,7 +94,7 @@ class Application extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Name;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

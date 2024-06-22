@@ -9,6 +9,7 @@ final class RepeatIterator_1 extends \System\Linq\Iterator_1 implements
 	\System\Linq\IPartition_1,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

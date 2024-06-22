@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 class StorageItemProperties extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\UInt64]

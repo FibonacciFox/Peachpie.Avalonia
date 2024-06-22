@@ -32,6 +32,7 @@ trait FormattingBufferHelperOverride {
 final class GenericTextParagraphProperties extends \Avalonia\Media\TextFormatting\TextParagraphProperties
 {
 	use FormattingBufferHelperOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\FlowDirection

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum PortableExecutableKinds
 {
+
 	
 	case NotAPortableExecutableImage = '0';
 	case ILOnly = '1';

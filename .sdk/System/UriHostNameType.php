@@ -2,6 +2,7 @@
 namespace System;
 enum UriHostNameType
 {
+
 	
 	case Unknown = '0';
 	case Basic = '1';

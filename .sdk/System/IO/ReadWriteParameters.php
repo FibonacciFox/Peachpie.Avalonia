@@ -2,6 +2,7 @@
 namespace System\IO;
 final class ReadWriteParameters extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Byte[]

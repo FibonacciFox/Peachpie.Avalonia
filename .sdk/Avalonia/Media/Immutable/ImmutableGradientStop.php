@@ -3,6 +3,7 @@ namespace Avalonia\Media\Immutable;
 class ImmutableGradientStop extends \System\Object implements
 	\Avalonia\Media\IGradientStop
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

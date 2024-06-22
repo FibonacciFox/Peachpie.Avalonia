@@ -52,6 +52,7 @@ class Queue_1 extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use Queue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

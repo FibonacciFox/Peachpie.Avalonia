@@ -74,6 +74,7 @@ trait ReadOnlyObservableCollection_1Override {
 class NotifyCollectionChangedEventArgs extends \System\EventArgs
 {
 	use ReadOnlyObservableCollection_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Specialized\NotifyCollectionChangedAction

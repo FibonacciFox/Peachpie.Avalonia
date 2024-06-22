@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventManifestOptions
 {
+
 	
 	case None = '0';
 	case Strict = '1';

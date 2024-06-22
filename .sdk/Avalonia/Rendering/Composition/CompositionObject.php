@@ -38,6 +38,7 @@ class CompositionObject extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	use CompositionObjectOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

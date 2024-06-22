@@ -22,6 +22,7 @@ class StrongNameKeyPair extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SignatureTypeExtensionsOverride;
+
 	/**
 	 * @property
 	 * @var \System\Byte[]

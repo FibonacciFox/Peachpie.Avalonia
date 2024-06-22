@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class SystemThreading_ThreadLocalDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

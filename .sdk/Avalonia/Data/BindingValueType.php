@@ -2,6 +2,7 @@
 namespace Avalonia\Data;
 enum BindingValueType
 {
+
 	
 	case UnsetValue = '0';
 	case DoNothing = '1';

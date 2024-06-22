@@ -4,6 +4,7 @@ final class ArrayWithOffset extends \System\ValueType implements
 	\System\IEquatable_1
 {
 
+
 	/**
 	 * @return \System\Object|object
 	 */

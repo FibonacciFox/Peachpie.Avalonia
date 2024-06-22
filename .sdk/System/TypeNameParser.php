@@ -21,6 +21,7 @@ final class TypeNameParser extends \System\Object implements
 {
 	use TypeNameParserOverride;
 
+
 	private static function _CreateTypeNameParser($typeName, $retHandle, $throwOnError){}
 	private static function _GetNames($pTypeNameParser, $retArray){}
 	private static function _GetTypeArguments($pTypeNameParser, $retArray){}

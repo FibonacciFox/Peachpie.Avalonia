@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class NullableContextAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

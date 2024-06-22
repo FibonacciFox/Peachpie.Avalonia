@@ -2,6 +2,7 @@
 namespace Avalonia\PropertyStore;
 class UncommonFields extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Func_3[Avalonia\AvaloniaObject,T,T]

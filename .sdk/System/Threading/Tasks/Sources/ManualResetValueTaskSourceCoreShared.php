@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks\Sources;
 class ManualResetValueTaskSourceCoreShared extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

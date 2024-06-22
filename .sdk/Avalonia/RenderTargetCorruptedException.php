@@ -25,6 +25,7 @@ class RenderTargetCorruptedException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RenderTargetCorruptedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

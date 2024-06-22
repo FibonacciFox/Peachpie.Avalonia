@@ -18,6 +18,7 @@ class PolylineGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use PolylineGeometryOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -58,7 +59,7 @@ class PolylineGeometry extends \Avalonia\Media\Geometry implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

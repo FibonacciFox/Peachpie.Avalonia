@@ -2,8 +2,9 @@
 namespace Avalonia\Automation\Peers;
 class MenuItemAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\MenuItem|\Avalonia\Controls\Control
 	 */
 	public $Owner;

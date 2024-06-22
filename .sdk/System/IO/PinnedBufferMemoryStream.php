@@ -4,6 +4,7 @@ final class PinnedBufferMemoryStream extends \System\IO\UnmanagedMemoryStream im
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

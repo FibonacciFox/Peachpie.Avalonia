@@ -2,6 +2,7 @@
 namespace System;
 class ThreadStaticAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

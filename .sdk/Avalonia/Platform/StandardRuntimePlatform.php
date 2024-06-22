@@ -4,6 +4,7 @@ class StandardRuntimePlatform extends \System\Object implements
 	\Avalonia\Platform\IRuntimePlatform
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\RuntimePlatformInfo
 	 */

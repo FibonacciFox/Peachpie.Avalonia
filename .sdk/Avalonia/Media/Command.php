@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum Command
 {
+
 	
 	case None = '0';
 	case FillRule = '1';

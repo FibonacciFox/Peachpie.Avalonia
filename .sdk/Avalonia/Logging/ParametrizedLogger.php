@@ -79,6 +79,7 @@ final class ParametrizedLogger extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ParametrizedLoggerOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

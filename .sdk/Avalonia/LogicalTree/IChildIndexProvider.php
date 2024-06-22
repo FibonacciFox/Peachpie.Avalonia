@@ -7,6 +7,7 @@ namespace Avalonia\LogicalTree;
 interface IChildIndexProvider
 {
 
+
 	/**
 	 * @param \Avalonia\LogicalTree\ILogical $child
 	 * @return \System\Int32|int

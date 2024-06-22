@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class RenderOptions extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Imaging\BitmapInterpolationMode

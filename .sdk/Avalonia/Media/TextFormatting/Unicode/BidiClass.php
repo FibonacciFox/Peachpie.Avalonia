@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 enum BidiClass
 {
+
 	
 	case LeftToRight = '0';
 	case ArabicLetter = '1';

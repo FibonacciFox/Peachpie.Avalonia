@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class StackAllocedArguments extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

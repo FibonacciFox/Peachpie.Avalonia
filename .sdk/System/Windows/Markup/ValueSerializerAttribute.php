@@ -16,6 +16,7 @@ trait RotateLayoutOverride {
 final class ValueSerializerAttribute extends \System\Attribute
 {
 	use RotateLayoutOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type

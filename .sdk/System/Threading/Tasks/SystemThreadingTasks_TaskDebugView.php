@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class SystemThreadingTasks_TaskDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

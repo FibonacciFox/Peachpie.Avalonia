@@ -28,6 +28,7 @@ final class SolidColorBrush extends \Avalonia\Media\Brush implements
 	\Avalonia\Media\IMutableBrush
 {
 	use SolidColorBrushOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -60,7 +61,7 @@ final class SolidColorBrush extends \Avalonia\Media\Brush implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

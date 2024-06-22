@@ -24,6 +24,7 @@ final class CustomAttributeTypedArgument extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CustomAttributeTypedArgumentOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type

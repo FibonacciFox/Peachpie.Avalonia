@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 interface ICriticalNotifyCompletion
 {
 
+
 	/**
 	 * @param \System\Action $continuation
 	 * @return \System\Void|void

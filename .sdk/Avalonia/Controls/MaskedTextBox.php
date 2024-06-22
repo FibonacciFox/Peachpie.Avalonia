@@ -33,6 +33,7 @@ class MaskedTextBox extends \Avalonia\Controls\TextBox implements
 	\Avalonia\Controls\Utils\IUndoRedoHost
 {
 	use MaskedTextBoxOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -666,7 +667,7 @@ class MaskedTextBox extends \Avalonia\Controls\TextBox implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

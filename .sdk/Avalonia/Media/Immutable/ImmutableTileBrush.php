@@ -5,6 +5,7 @@ class ImmutableTileBrush extends \System\Object implements
 	\Avalonia\Media\IBrush,
 	\Avalonia\Media\IImmutableBrush
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\AlignmentX

@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class TextDecorations extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextDecorationCollection

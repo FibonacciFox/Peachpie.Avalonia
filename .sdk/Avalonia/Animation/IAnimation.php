@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 interface IAnimation
 {
 
+
 	/**
 	 * @param \Avalonia\Animation\Animatable $control
 	 * @param \Avalonia\Animation\IClock $clock

@@ -58,6 +58,7 @@ class ItemCollection extends \Avalonia\Controls\ItemsSourceView implements
 	\Avalonia\Controls\Utils\ICollectionChangedListener
 {
 	use ItemCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

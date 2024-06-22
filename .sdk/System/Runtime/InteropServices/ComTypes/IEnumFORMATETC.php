@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IEnumFORMATETC
 {
 
+
 	/**
 	 * @param \System\Int32|int $celt
 	 * @param \System\Runtime\InteropServices\ComTypes\FORMATETC &$rgelt

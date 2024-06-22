@@ -22,6 +22,7 @@ class ServerCompositionSimpleBrush extends \Avalonia\Rendering\Composition\Serve
 	\Avalonia\Media\IBrush
 {
 	use ServerCompositionSimpleBrushOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

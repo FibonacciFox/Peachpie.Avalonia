@@ -144,6 +144,7 @@ trait SerializationInfoOverride {
 final class SerializationInfo extends \System\Object
 {
 	use SerializationInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 interface ISwapchainImage
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

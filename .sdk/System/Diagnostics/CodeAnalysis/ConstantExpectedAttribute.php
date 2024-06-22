@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class ConstantExpectedAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

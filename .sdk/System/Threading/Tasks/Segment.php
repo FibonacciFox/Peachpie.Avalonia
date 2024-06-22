@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class Segment extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\Tasks\SingleProducerSingleConsumerQueue_1+Segment[T]

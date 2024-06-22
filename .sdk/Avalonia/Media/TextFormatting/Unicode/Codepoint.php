@@ -37,6 +37,7 @@ final class Codepoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CodepointOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\Unicode\Codepoint

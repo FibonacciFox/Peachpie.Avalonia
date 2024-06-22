@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class FormatLiterals extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

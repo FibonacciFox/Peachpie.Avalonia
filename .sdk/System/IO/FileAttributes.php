@@ -2,6 +2,7 @@
 namespace System\IO;
 enum FileAttributes
 {
+
 	
 	case ReadOnly = '1';
 	case Hidden = '2';

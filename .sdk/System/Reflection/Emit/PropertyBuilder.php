@@ -22,6 +22,7 @@ final class PropertyBuilder extends \System\Reflection\PropertyInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use PropertyBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Module

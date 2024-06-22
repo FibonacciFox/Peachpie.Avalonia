@@ -45,6 +45,7 @@ class Grid extends \Avalonia\Controls\Panel implements
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
 	use GridOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -409,7 +410,7 @@ class Grid extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

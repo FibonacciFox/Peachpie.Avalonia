@@ -18,6 +18,7 @@ trait KeySplineTypeConverterOverride {
 class Spring extends \System\Object
 {
 	use KeySplineTypeConverterOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

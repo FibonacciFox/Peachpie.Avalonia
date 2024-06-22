@@ -21,6 +21,7 @@ class InvalidTimeZoneException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidTimeZoneExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

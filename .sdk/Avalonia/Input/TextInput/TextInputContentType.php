@@ -2,6 +2,7 @@
 namespace Avalonia\Input\TextInput;
 enum TextInputContentType
 {
+
 	
 	case Normal = '0';
 	case Alpha = '1';

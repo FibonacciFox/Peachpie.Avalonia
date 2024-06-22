@@ -28,6 +28,7 @@ class UriFormatException extends \System\FormatException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use UriFormatExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

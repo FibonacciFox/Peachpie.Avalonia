@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 enum RawPointerEventType
 {
+
 	
 	case LeaveWindow = '0';
 	case LeftButtonDown = '1';

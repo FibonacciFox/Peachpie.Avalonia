@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum TextRenderingMode
 {
+
 	
 	case Unspecified = '0';
 	case SubpixelAntialias = '1';

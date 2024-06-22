@@ -4,6 +4,7 @@ class RenderDataRenderOptionsNode extends \Avalonia\Rendering\Composition\Drawin
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]

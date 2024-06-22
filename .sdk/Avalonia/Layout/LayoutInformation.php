@@ -3,6 +3,7 @@ namespace Avalonia\Layout;
 class LayoutInformation extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Layout\Layoutable $control
 	 * @return \System\Nullable_1[Avalonia\Size]

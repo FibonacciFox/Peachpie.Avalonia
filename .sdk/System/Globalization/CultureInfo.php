@@ -68,6 +68,7 @@ class CultureInfo extends \System\Object implements
 	\System\ICloneable
 {
 	use CultureInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\Globalization\NumberFormatInfo

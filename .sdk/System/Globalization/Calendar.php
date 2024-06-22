@@ -133,6 +133,7 @@ class Calendar extends \System\Object implements
 	\System\ICloneable
 {
 	use CalendarOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

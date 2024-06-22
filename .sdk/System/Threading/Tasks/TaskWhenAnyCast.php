@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 class TaskWhenAnyCast extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

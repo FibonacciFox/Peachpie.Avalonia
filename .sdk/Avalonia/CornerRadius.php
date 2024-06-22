@@ -25,6 +25,7 @@ final class CornerRadius extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CornerRadiusOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

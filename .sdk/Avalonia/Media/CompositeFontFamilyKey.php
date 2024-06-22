@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class CompositeFontFamilyKey extends \Avalonia\Media\Fonts\FontFamilyKey
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\Fonts\FontFamilyKey]

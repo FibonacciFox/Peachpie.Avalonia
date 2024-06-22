@@ -2,6 +2,7 @@
 namespace System\Buffers\Text;
 final class DecomposedGuid extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Guid

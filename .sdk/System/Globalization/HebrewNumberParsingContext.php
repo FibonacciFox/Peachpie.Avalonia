@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class HebrewNumberParsingContext extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Globalization\HebrewNumber+HS

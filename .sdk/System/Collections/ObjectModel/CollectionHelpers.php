@@ -3,6 +3,7 @@ namespace System\Collections\ObjectModel;
 class CollectionHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $sourceCount
 	 * @param \System\Array|array $array

@@ -16,6 +16,7 @@ trait ArrayWithOffsetOverride {
 final class ClassInterfaceAttribute extends \System\Attribute
 {
 	use ArrayWithOffsetOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\ClassInterfaceType

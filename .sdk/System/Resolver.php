@@ -3,6 +3,7 @@ namespace System;
 class Resolver extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32& &$securityControlFlags
 	 * @return \System\RuntimeType

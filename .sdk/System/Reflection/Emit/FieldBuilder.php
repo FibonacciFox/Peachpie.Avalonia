@@ -22,6 +22,7 @@ final class FieldBuilder extends \System\Reflection\FieldInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use FieldBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

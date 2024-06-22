@@ -6,8 +6,9 @@ class ComboBoxAutomationPeer extends \Avalonia\Automation\Peers\SelectingItemsCo
 	\Avalonia\Automation\Provider\IExpandCollapseProvider,
 	\Avalonia\Automation\Provider\IValueProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\ComboBox|\Avalonia\Controls\ItemsControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

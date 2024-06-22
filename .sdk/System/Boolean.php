@@ -50,6 +50,7 @@ final class Boolean extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use BooleanOverride;
+
 	/**
 	 * @field
 	 * @since readonly

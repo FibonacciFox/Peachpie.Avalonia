@@ -38,6 +38,7 @@ final class Semaphore extends \System\Threading\WaitHandle implements
 	\System\IDisposable
 {
 	use SemaphoreOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

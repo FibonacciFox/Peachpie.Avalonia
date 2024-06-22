@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 class UnobservedTaskExceptionEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

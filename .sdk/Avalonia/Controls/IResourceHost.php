@@ -7,6 +7,7 @@ namespace Avalonia\Controls;
 interface IResourceHost
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\ResourcesChangedEventArgs $e
 	 * @return \System\Void|void

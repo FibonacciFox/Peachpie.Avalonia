@@ -29,6 +29,7 @@ class AvaloniaListExtensions extends \System\Object
 {
 	use AvaloniaListExtensionsOverride;
 
+
 	/**
 	 * @uses AvaloniaListExtensionsOverride::ForEachItem_1 <br>public , args: ($collection, $added, $removed, $reset, $weakSubscription)<br>
 	 * @uses AvaloniaListExtensionsOverride::ForEachItem_2 <br>public , args: ($collection, $added, $removed, $reset, $weakSubscription)<br>

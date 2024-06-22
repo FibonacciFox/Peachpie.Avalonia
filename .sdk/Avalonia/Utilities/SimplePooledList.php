@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class SimplePooledList extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

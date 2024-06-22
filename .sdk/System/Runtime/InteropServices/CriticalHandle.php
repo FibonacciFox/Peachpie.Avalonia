@@ -20,6 +20,7 @@ class CriticalHandle extends \System\Runtime\ConstrainedExecution\CriticalFinali
 	\System\IDisposable
 {
 	use CriticalHandleOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

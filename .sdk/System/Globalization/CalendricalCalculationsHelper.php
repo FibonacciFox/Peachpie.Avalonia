@@ -3,6 +3,7 @@ namespace System\Globalization;
 class CalendricalCalculationsHelper extends \System\Object
 {
 
+
 	private static function RadiansFromDegrees($degree){}
 	private static function SinOfDegree($degree){}
 	private static function CosOfDegree($degree){}

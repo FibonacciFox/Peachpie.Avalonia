@@ -17,6 +17,7 @@ final class SelectorMatch extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use SelectorMatchOverride;
+
 	/**
 	 * @field
 	 * @since readonly

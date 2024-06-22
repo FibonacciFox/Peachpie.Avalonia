@@ -34,6 +34,7 @@ trait COMExceptionOverride {
 final class ComSourceInterfacesAttribute extends \System\Attribute
 {
 	use COMExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

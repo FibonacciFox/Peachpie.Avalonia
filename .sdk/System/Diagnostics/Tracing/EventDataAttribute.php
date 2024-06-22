@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class EventDataAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

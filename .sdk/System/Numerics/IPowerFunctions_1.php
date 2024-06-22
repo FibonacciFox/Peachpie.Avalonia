@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface IPowerFunctions_1
 {
 
+
 	/**
 	 * @param \TSelf $x
 	 * @param \TSelf $y

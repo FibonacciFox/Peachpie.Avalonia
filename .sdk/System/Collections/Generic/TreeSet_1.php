@@ -24,6 +24,7 @@ final class TreeSet_1 extends \System\Collections\Generic\SortedSet_1 implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use TreeSet_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

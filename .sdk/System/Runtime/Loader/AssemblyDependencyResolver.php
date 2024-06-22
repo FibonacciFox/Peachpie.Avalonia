@@ -3,6 +3,7 @@ namespace System\Runtime\Loader;
 final class AssemblyDependencyResolver extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Reflection\AssemblyName $assemblyName
 	 * @return \System\String|string

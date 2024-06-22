@@ -445,6 +445,7 @@ final class Int128 extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use Int128Override;
+
 	/**
 	 * @property
 	 * @var \System\Int128

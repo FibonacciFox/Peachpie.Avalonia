@@ -4,6 +4,7 @@ class SpanMaxDistributionOrderComparer extends \System\Object implements
 	\System\Collections\IComparer
 {
 
+
 	/**
 	 * @param \System\Object|object $x
 	 * @param \System\Object|object $y

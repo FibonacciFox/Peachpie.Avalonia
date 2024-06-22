@@ -17,6 +17,7 @@ trait WriteIfInterpolatedStringHandlerOverride {
 final class DebuggableAttribute extends \System\Attribute
 {
 	use WriteIfInterpolatedStringHandlerOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\SourceGenerator;
 final class SubtypesFactoryAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

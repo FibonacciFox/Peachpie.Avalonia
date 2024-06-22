@@ -27,6 +27,7 @@ final class DecCalc extends \System\ValueType
 {
 	use DecCalcOverride;
 
+
 	/**
 	 * @since @override => public | private | protected
 	 * @internal Please ensure that this item can interact with your program before using it, as it may not be available and its use is your responsibility.

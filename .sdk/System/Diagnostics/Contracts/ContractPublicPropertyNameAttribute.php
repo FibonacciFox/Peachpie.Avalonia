@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 final class ContractPublicPropertyNameAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

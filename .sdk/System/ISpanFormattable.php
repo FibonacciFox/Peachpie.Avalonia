@@ -3,6 +3,7 @@ namespace System;
 interface ISpanFormattable
 {
 
+
 	/**
 	 * @param \System\Span_1 $destination [generic: System\Char]
 	 * @param \System\Int32& &$charsWritten

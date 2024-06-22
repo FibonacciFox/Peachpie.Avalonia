@@ -38,6 +38,7 @@ class EventWaitHandle extends \System\Threading\WaitHandle implements
 	\System\IDisposable
 {
 	use EventWaitHandleOverride;
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

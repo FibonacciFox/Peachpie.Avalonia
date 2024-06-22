@@ -190,6 +190,7 @@ trait ReadOnlySequence_1Override {
 final class ReadOnlySequence_1 extends \System\ValueType
 {
 	use ReadOnlySequence_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

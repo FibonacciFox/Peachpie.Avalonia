@@ -2,6 +2,7 @@
 namespace System\Text;
 class EncoderFallback extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Text\EncoderFallback

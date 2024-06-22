@@ -20,6 +20,7 @@ class TextBox extends \Avalonia\Controls\Primitives\TemplatedControl implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\Controls\Utils\IUndoRedoHost
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -782,7 +783,7 @@ class TextBox extends \Avalonia\Controls\Primitives\TemplatedControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

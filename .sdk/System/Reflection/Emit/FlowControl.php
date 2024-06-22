@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum FlowControl
 {
+
 	
 	case Branch = '0';
 	case Break = '1';

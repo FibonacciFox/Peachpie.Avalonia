@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IEnumerator
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

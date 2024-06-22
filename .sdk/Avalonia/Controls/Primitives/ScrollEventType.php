@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 enum ScrollEventType
 {
+
 	
 	case SmallDecrement = '0';
 	case SmallIncrement = '1';

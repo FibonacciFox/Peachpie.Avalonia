@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\Marshalling;
 class PointerArrayMarshaller_2 extends \System\Object
 {
 
+
 	/**
 	 * @param \T* $managed
 	 * @param \System\Int32& &$numElements

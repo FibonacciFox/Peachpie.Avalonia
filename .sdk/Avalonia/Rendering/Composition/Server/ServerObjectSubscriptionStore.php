@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Server;
 class ServerObjectSubscriptionStore extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

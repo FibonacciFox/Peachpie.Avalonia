@@ -25,6 +25,7 @@ class VectorMath extends \System\Object
 {
 	use VectorMathOverride;
 
+
 	/**
 	 * @uses VectorMathOverride::ConditionalSelectBitwise_1 <br>public , args: ($selector, $ifTrue, $ifFalse)<br>
 	 * @uses VectorMathOverride::ConditionalSelectBitwise_2 <br>public , args: ($selector, $ifTrue, $ifFalse)<br>

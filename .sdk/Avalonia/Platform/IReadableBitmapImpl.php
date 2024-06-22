@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IReadableBitmapImpl
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\ILockedFramebuffer
 	 */

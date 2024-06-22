@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class RangeBaseAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Primitives\RangeBase|\Avalonia\Controls\Control
 	 */
 	public $Owner;

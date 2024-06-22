@@ -20,6 +20,7 @@ class ControlTheme extends \Avalonia\Styling\StyleBase implements
 	\Avalonia\Controls\IResourceProvider
 {
 	use ControlThemeOverride;
+
 	/**
 	 * @property
 	 * @var \System\Type
@@ -66,7 +67,7 @@ class ControlTheme extends \Avalonia\Styling\StyleBase implements
 	 */
 	public $Animations;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

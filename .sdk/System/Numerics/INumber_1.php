@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface INumber_1
 {
 
+
 	/**
 	 * @param \TSelf $value
 	 * @param \TSelf $min

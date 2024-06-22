@@ -2,6 +2,7 @@
 namespace System;
 enum ExceptionResource
 {
+
 	
 	case ArgumentOutOfRange_IndexMustBeLessOrEqual = '0';
 	case ArgumentOutOfRange_IndexMustBeLess = '1';

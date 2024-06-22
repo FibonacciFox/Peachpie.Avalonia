@@ -3,6 +3,7 @@ namespace Avalonia\Styling;
 class DescendantSelector extends \Avalonia\Styling\Selector
 {
 
+
 	/**
 	 * @param \Avalonia\Styling\Selector $parent
 	 */

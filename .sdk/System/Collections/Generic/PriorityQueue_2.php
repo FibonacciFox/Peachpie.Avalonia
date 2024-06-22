@@ -46,6 +46,7 @@ trait PriorityQueue_2Override {
 class PriorityQueue_2 extends \System\Object
 {
 	use PriorityQueue_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

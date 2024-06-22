@@ -37,6 +37,7 @@ final class ValueList extends \System\Object implements
 	\System\Collections\ICollection
 {
 	use ValueListOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

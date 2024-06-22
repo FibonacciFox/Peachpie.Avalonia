@@ -3,6 +3,7 @@ namespace Avalonia\Input\TextInput;
 class TextInputMethodManager extends \System\Object
 {
 
+
 	private function PopulateImWithInitialValues(){}
 	private function OnResetRequested($sender, $args){}
 	private function OnIsInputMethodEnabledChanged($obj){}

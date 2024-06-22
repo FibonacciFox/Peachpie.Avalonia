@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 enum SxSRequirements
 {
+
 	
 	case None = '0';
 	case AppDomainID = '1';

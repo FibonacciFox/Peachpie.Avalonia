@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class Keywords extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventKeywords

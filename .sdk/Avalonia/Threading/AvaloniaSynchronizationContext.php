@@ -28,6 +28,7 @@ trait AvaloniaSynchronizationContextOverride {
 class AvaloniaSynchronizationContext extends \System\Threading\SynchronizationContext
 {
 	use AvaloniaSynchronizationContextOverride;
+
 	/**
 	 * @field
 	 * @since readonly

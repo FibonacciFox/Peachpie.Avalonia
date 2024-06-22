@@ -3,6 +3,7 @@ namespace Avalonia\PropertyStore;
 class FramePriorityExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Data\BindingPriority $priority
 	 * @param \Avalonia\PropertyStore\FrameType $type

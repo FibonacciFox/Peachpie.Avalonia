@@ -153,6 +153,7 @@ class Utf8Formatter extends \System\Object
 {
 	use Utf8FormatterOverride;
 
+
 	/**
 	 * @uses Utf8FormatterOverride::TryFormat_1 <br>public , args: ($value, $destination, &$bytesWritten, $format)<br>
 	 * @uses Utf8FormatterOverride::TryFormat_2 <br>public , args: ($value, $destination, &$bytesWritten, $format)<br>

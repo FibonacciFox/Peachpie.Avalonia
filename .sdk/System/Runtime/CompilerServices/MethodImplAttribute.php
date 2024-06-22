@@ -19,6 +19,7 @@ trait DefaultInterpolatedStringHandlerOverride {
 final class MethodImplAttribute extends \System\Attribute
 {
 	use DefaultInterpolatedStringHandlerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Runtime\CompilerServices\MethodCodeType

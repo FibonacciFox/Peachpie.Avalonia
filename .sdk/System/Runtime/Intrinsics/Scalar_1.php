@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics;
 class Scalar_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T|object

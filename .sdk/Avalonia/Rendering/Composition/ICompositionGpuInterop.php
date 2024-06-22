@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 interface ICompositionGpuInterop
 {
 
+
 	/**
 	 * @param \System\String|string $imageHandleType
 	 * @return \Avalonia\Rendering\Composition\CompositionGpuImportedImageSynchronizationCapabilities

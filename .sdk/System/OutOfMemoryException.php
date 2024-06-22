@@ -21,6 +21,7 @@ class OutOfMemoryException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use OutOfMemoryExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

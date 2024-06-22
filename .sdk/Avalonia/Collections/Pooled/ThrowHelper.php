@@ -132,6 +132,7 @@ class ThrowHelper extends \System\Object
 {
 	use ThrowHelperOverride;
 
+
 	/**
 	 * @return \System\Void|void
 	 */

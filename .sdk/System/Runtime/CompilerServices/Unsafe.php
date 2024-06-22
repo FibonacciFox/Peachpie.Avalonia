@@ -221,6 +221,7 @@ class Unsafe extends \System\Object
 {
 	use UnsafeOverride;
 
+
 	/**
 	 * @param \T& $value
 	 * @return \System\Void*

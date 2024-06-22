@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 enum AccessibilityView
 {
+
 	
 	case Default = '0';
 	case Raw = '1';

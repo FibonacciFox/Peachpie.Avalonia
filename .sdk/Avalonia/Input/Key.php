@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum Key
 {
+
 	
 	case None = '0';
 	case Cancel = '1';

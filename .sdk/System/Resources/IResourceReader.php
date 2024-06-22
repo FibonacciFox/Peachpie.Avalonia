@@ -3,6 +3,7 @@ namespace System\Resources;
 interface IResourceReader
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

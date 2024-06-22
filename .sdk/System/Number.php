@@ -189,6 +189,7 @@ class Number extends \System\Object
 {
 	use NumberOverride;
 
+
 	/**
 	 * @param \System\Double|double $value
 	 * @param \System\Int32|int $cutoffNumber

@@ -5,6 +5,7 @@ final class TaskAwaiter extends \System\ValueType implements
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\Runtime\CompilerServices\ITaskAwaiter
 {
+
 	/**
 	 * @field
 	 * @since readonly

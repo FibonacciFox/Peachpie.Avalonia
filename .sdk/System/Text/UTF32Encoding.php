@@ -23,6 +23,7 @@ final class UTF32Encoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
 	use UTF32EncodingOverride;
+
 	/**
 	 * @field
 	 * @since readonly

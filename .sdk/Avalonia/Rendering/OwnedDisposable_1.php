@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 final class OwnedDisposable_1 extends \System\ValueType implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \T|object

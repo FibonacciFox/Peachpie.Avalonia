@@ -22,6 +22,7 @@ final class UnicodeRange extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use UnicodeRangeOverride;
+
 	/**
 	 * @field
 	 * @since readonly

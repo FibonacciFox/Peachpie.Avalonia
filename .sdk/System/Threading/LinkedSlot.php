@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class LinkedSlot extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\ThreadLocal_1+LinkedSlot[T]

@@ -18,6 +18,7 @@ final class GridLength extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use GridLengthOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\GridLength

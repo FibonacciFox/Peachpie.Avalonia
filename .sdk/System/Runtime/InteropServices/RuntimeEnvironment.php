@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 class RuntimeEnvironment extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

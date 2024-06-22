@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class TemplateContentAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

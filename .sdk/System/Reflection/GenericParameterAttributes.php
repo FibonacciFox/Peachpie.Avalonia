@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum GenericParameterAttributes
 {
+
 	
 	case None = '0';
 	case VarianceMask = '3';

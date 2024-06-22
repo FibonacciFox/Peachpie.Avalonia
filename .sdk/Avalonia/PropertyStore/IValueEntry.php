@@ -3,6 +3,7 @@ namespace Avalonia\PropertyStore;
 interface IValueEntry
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

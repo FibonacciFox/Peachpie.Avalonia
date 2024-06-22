@@ -40,6 +40,7 @@ class SelectingItemsControlSelectionAdapter extends \System\Object implements
 	\Avalonia\Controls\Utils\ISelectionAdapter
 {
 	use SelectingItemsControlSelectionAdapterOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Primitives\SelectingItemsControl

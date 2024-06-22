@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 class CustomAnimatorBase_1 extends \Avalonia\Animation\CustomAnimatorBase
 {
 
+
 	/**
 	 * @param \System\Double|double $progress
 	 * @param \T|object $oldValue

@@ -4,6 +4,7 @@ class ZOrderComparer extends \System\Object implements
 	\System\Collections\Generic\IComparer_1
 {
 
+
 	/**
 	 * @param \Avalonia\VisualTree\VisualExtensions+ZOrderElement $x
 	 * @param \Avalonia\VisualTree\VisualExtensions+ZOrderElement $y

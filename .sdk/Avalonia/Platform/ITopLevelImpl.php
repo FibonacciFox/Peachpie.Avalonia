@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface ITopLevelImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputRoot $inputRoot
 	 * @return \System\Void|void

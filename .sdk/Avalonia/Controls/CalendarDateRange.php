@@ -17,6 +17,7 @@ trait CalendarOverride {
 final class CalendarDateRange extends \System\Object
 {
 	use CalendarOverride;
+
 	/**
 	 * @property
 	 * @var \System\DateTime

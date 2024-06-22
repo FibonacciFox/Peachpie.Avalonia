@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class IndexedTextRun extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

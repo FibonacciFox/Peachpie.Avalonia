@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class PropertyPathBuilder extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Data\Core\IPropertyInfo $property
 	 * @return \Avalonia\Data\Core\PropertyPathBuilder

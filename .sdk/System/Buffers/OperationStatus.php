@@ -2,6 +2,7 @@
 namespace System\Buffers;
 enum OperationStatus
 {
+
 	
 	case Done = '0';
 	case DestinationTooSmall = '1';

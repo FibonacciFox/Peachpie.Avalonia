@@ -4,6 +4,7 @@ class StandardAssetLoader extends \System\Object implements
 	\Avalonia\Platform\IAssetLoader
 {
 
+
 	/**
 	 * @param \System\Reflection\Assembly $assembly
 	 * @return \System\Void|void

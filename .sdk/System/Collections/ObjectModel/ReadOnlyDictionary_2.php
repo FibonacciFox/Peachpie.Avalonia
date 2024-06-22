@@ -187,6 +187,7 @@ class ReadOnlyDictionary_2 extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use ReadOnlyDictionary_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\ObjectModel\ReadOnlyDictionary_2+KeyCollection[TKey,TValue]

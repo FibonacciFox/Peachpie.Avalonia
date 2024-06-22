@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum WriteEventErrorCode
 {
+
 	
 	case NoError = '0';
 	case NoFreeBuffers = '1';

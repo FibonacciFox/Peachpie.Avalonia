@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class AssemblyKeyNameAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

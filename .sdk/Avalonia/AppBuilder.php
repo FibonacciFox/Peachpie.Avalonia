@@ -37,6 +37,7 @@ trait AppBuilderOverride {
 final class AppBuilder extends \System\Object
 {
 	use AppBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Action

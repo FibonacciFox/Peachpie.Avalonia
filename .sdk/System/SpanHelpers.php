@@ -662,6 +662,7 @@ class SpanHelpers extends \System\Object
 {
 	use SpanHelpersOverride;
 
+
 	/**
 	 * @uses SpanHelpersOverride::BinarySearch_1 <br>public , args: ($span, $comparable)<br>
 	 * @uses SpanHelpersOverride::BinarySearch_2 <br>public , args: ($spanStart, $length, $comparable)<br>

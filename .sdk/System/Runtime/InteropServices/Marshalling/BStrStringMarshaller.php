@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\Marshalling;
 class BStrStringMarshaller extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $managed
 	 * @return \System\UInt16*

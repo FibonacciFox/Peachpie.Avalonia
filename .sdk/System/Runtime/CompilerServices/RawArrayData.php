@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class RawArrayData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt32

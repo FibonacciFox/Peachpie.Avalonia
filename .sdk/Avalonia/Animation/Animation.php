@@ -73,6 +73,7 @@ final class Animation extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Animation\IAnimation
 {
 	use AnimationOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -168,7 +169,7 @@ final class Animation extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Children;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

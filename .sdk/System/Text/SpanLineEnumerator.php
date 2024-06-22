@@ -2,6 +2,7 @@
 namespace System\Text;
 final class SpanLineEnumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlySpan_1[System\Char]

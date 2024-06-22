@@ -2,6 +2,7 @@
 namespace System\Runtime\Serialization;
 final class OptionalFieldAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

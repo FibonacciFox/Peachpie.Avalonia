@@ -108,6 +108,7 @@ class EncodingExtensions extends \System\Object
 {
 	use EncodingExtensionsOverride;
 
+
 	/**
 	 * @uses EncodingExtensionsOverride::GetBytes_1 <br>public , args: ($encoding, $chars, $writer)<br>
 	 * @uses EncodingExtensionsOverride::GetBytes_2 <br>public , args: ($encoding, &$chars, $writer)<br>

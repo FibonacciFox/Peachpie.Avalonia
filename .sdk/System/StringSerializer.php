@@ -3,6 +3,7 @@ namespace System;
 final class StringSerializer extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\TimeZoneInfo $zone
 	 * @return \System\String|string

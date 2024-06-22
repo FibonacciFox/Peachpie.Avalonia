@@ -4,6 +4,7 @@ class ImmutableGlyphRunReference extends \System\Object implements
 	\Avalonia\Media\IImmutableGlyphRunReference,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IGlyphRunImpl]

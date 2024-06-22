@@ -2,6 +2,7 @@
 namespace System;
 enum ParseFlags
 {
+
 	
 	case HaveYear = '1';
 	case HaveMonth = '2';

@@ -4,6 +4,7 @@ class AvaloniaPropertyObservable_2 extends \Avalonia\Reactive\LightweightObserva
 	\System\IObservable_1,
 	\Avalonia\IDescription
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

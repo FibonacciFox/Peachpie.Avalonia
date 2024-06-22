@@ -4,6 +4,7 @@ class KeyBinding extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -38,7 +39,7 @@ class KeyBinding extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Gesture;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

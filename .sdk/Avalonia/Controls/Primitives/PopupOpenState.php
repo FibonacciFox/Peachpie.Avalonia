@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Primitives;
 class PopupOpenState extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\TopLevel

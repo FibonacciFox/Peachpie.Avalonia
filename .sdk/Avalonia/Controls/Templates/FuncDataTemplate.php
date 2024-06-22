@@ -23,6 +23,7 @@ class FuncDataTemplate extends \Avalonia\Controls\Templates\FuncTemplate_2 imple
 	\Avalonia\Controls\Templates\IDataTemplate
 {
 	use FuncDataTemplateOverride;
+
 	/**
 	 * @field
 	 * @since readonly

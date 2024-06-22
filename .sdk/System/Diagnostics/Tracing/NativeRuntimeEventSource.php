@@ -64,6 +64,7 @@ final class NativeRuntimeEventSource extends \System\Diagnostics\Tracing\EventSo
 	\System\IDisposable
 {
 	use NativeRuntimeEventSourceOverride;
+
 	/**
 	 * @field
 	 * @since readonly

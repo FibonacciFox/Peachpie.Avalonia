@@ -2,6 +2,7 @@
 namespace System\Collections\Concurrent;
 final class ConcurrentQueueSegment_1 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

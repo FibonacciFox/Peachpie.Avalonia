@@ -22,6 +22,7 @@ class RowDefinition extends \Avalonia\Controls\DefinitionBase implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use RowDefinitionOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -72,7 +73,7 @@ class RowDefinition extends \Avalonia\Controls\DefinitionBase implements
 	 */
 	public $SharedSizeGroup;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Input\TextInput;
 enum TextInputReturnKeyType
 {
+
 	
 	case Default = '0';
 	case Return = '1';

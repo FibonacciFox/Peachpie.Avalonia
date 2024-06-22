@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface IScrollAnchorProvider
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\Control $element
 	 * @return \System\Void|void

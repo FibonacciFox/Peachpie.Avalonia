@@ -56,6 +56,7 @@ final class AssemblyBuilder extends \System\Reflection\Assembly implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AssemblyBuilderOverride;
+
 	/**
 	 * @field
 	 * @since readonly

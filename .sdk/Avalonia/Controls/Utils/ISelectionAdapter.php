@@ -11,6 +11,7 @@ namespace Avalonia\Controls\Utils;
 interface ISelectionAdapter
 {
 
+
 	/**
 	 * @param \Avalonia\Input\KeyEventArgs $e
 	 * @return \System\Void|void

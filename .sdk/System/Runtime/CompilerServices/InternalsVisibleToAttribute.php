@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class InternalsVisibleToAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

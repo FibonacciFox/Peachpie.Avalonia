@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IGeometryImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Media\IPen $pen
 	 * @return \Avalonia\Rect

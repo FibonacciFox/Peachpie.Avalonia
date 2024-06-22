@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Expressions;
 interface IExpressionForeignFunctionInterface
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $arguments [generic: Avalonia\Rendering\Composition\Expressions\ExpressionVariant]

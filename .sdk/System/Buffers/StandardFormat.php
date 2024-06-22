@@ -21,6 +21,7 @@ final class StandardFormat extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use StandardFormatOverride;
+
 	/**
 	 * @field
 	 * @var \System\Byte

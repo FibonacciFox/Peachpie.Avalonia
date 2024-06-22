@@ -278,6 +278,7 @@ final class IntPtr extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use IntPtrOverride;
+
 	/**
 	 * @field
 	 * @since readonly

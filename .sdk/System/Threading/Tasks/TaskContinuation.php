@@ -3,6 +3,7 @@ namespace System\Threading\Tasks;
 class TaskContinuation extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Threading\Tasks\Task $completedTask
 	 * @param \System\Boolean|bool $canInlineContinuationTask

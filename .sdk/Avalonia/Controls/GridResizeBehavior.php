@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum GridResizeBehavior
 {
+
 	
 	case BasedOnAlignment = '0';
 	case CurrentAndNext = '1';

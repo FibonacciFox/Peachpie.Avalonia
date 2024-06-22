@@ -264,6 +264,7 @@ trait FmaOverride {
 class Fma extends \System\Runtime\Intrinsics\X86\Avx
 {
 	use FmaOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

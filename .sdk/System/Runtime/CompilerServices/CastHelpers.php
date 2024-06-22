@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 class CastHelpers extends \System\Object
 {
 
+
 	private static function KeyToBucket($tableData, $source, $target){}
 	private static function TableData($table){}
 	private static function Element($tableData, $index){}

@@ -22,6 +22,7 @@ class TemplateBinding extends \System\Object implements
 	\System\IDisposable
 {
 	use Optional_1Override;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\Converters\IValueConverter

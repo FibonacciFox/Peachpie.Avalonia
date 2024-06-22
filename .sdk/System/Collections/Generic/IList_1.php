@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface IList_1
 {
 
+
 	/**
 	 * @param \T|object $item
 	 * @return \System\Int32|int

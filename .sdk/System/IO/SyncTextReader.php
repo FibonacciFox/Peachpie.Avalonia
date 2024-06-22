@@ -3,6 +3,7 @@ namespace System\IO;
 final class SyncTextReader extends \System\IO\TextReader implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class DataFormats extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

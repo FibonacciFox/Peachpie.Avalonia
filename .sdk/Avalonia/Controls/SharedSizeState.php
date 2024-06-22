@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class SharedSizeState extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\DefinitionBase $member
 	 * @return \System\Void|void

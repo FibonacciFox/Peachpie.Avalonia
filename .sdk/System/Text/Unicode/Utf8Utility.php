@@ -3,6 +3,7 @@ namespace System\Text\Unicode;
 class Utf8Utility extends \System\Object
 {
 
+
 	private static function ExtractCharFromFirstThreeByteSequence($value){}
 	private static function ExtractCharFromFirstTwoByteSequence($value){}
 	private static function ExtractCharsFromFourByteSequence($value){}

@@ -70,6 +70,7 @@ trait IdnMappingOverride {
 final class IdnMapping extends \System\Object
 {
 	use IdnMappingOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

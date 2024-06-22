@@ -11,6 +11,7 @@ class KeyFrames_1 extends \System\Collections\Generic\List_1 implements
 	\System\Collections\Generic\IReadOnlyCollection_1,
 	\Avalonia\Rendering\Composition\Animations\IKeyFrames
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Animations\KeyFrame_1[T][]

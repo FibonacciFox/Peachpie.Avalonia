@@ -3,6 +3,7 @@ namespace Avalonia\Input\TextInput;
 class TransformTrackingHelper extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[Avalonia\Matrix]

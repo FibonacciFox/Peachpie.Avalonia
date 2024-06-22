@@ -3,6 +3,7 @@ namespace System\Threading;
 final class ThreadAbortException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

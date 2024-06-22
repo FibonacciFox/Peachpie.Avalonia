@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface IBinaryNumber_1
 {
 
+
 	/**
 	 * @param \TSelf $value
 	 * @return \System\Boolean|bool

@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 class IEnumerableUtils extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Collections\IEnumerable $items
 	 * @param \System\Object|object $item

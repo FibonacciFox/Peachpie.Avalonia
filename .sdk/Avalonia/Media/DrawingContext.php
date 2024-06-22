@@ -111,6 +111,7 @@ class DrawingContext extends \System\Object implements
 {
 	use DrawingContextOverride;
 
+
 	/**
 	 * @return \System\Void|void
 	 */

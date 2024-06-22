@@ -16,6 +16,7 @@ class ElementNotEnabledException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ElementNotEnabledExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

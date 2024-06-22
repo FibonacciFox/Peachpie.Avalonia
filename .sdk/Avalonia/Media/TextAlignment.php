@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum TextAlignment
 {
+
 	
 	case Left = '0';
 	case Center = '1';

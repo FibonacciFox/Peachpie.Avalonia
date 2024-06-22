@@ -22,6 +22,7 @@ final class GroupedEnumerable_2 extends \System\Object implements
 {
 	use GroupedEnumerable_2Override;
 
+
 	/**
 	 * @return \System\Linq\IGrouping_2[TKey,TSource][]
 	 */

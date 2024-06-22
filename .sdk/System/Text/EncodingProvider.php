@@ -65,6 +65,7 @@ class EncodingProvider extends \System\Object
 {
 	use EncodingProviderOverride;
 
+
 	/**
 	 * @uses EncodingProviderOverride::GetEncoding_1 <br>public , args: ($name)<br>
 	 * @uses EncodingProviderOverride::GetEncoding_2 <br>public , args: ($codepage)<br>

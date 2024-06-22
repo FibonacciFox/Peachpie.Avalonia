@@ -3,6 +3,7 @@
 class HostPolicy extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $componentMainAssemblyPath
 	 * @param \Interop+HostPolicy+corehost_resolve_component_dependencies_result_fn $result

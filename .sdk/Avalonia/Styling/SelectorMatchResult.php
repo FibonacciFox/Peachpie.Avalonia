@@ -2,6 +2,7 @@
 namespace Avalonia\Styling;
 enum SelectorMatchResult
 {
+
 	
 	case NeverThisType = '0';
 	case NeverThisInstance = '1';

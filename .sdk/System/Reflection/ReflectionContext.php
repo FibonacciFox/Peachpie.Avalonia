@@ -3,6 +3,7 @@ namespace System\Reflection;
 class ReflectionContext extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Reflection\Assembly $assembly
 	 * @return \System\Reflection\Assembly

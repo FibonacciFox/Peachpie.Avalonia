@@ -18,6 +18,7 @@ final class IterationCount extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use IterationCountOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\IterationCount

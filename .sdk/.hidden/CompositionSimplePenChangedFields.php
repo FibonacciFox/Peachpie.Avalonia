@@ -2,6 +2,7 @@
 
 enum CompositionSimplePenChangedFields
 {
+
 	
 	case Brush = '1';
 	case DashStyle = '2';

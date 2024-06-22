@@ -20,6 +20,7 @@ trait LayoutQueue_1Override {
 class CancelRoutedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use LayoutQueue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

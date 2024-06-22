@@ -3,6 +3,7 @@ namespace Avalonia\Input\GestureRecognizers;
 class LeastSquaresSolver extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $degree
 	 * @param \System\ReadOnlySpan_1 $x [generic: System\Double]

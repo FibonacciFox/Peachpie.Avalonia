@@ -3,6 +3,7 @@ namespace System\Collections;
 interface IStructuralEquatable
 {
 
+
 	/**
 	 * @param \System\Object|object $other
 	 * @param \System\Collections\IEqualityComparer $comparer

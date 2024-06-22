@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class TextTrailingWordEllipsis extends \Avalonia\Media\TextFormatting\TextCollapsingProperties
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

@@ -22,6 +22,7 @@ class StateMachineBox extends \System\Object implements
 	\System\Threading\Tasks\Sources\IValueTaskSource
 {
 	use StateMachineBoxOverride;
+
 	/**
 	 * @field
 	 * @var \System\Action

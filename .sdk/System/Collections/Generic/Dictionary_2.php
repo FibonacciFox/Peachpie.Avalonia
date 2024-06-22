@@ -249,6 +249,7 @@ class Dictionary_2 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use Dictionary_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEqualityComparer_1[TKey]

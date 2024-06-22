@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum GCHandleType
 {
+
 	
 	case Weak = '0';
 	case WeakTrackResurrection = '1';

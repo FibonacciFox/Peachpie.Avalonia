@@ -3,6 +3,7 @@ namespace System;
 final class ProbabilisticMap extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\UInt32* $charMap
 	 * @param \System\ReadOnlySpan_1 $values [generic: System\Char]

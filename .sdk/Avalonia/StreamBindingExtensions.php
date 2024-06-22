@@ -26,6 +26,7 @@ trait StreamBindingExtensionsOverride {
 class StreamBindingExtensions extends \System\Object
 {
 	use StreamBindingExtensionsOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -19,6 +19,7 @@ class GridSplitter extends \Avalonia\Controls\Primitives\Thumb implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -442,7 +443,7 @@ class GridSplitter extends \Avalonia\Controls\Primitives\Thumb implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -35,6 +35,7 @@ final class Pen extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	use PenOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -102,7 +103,7 @@ final class Pen extends \Avalonia\AvaloniaObject implements
 	 */
 	public $MiterLimit;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

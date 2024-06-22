@@ -3,6 +3,7 @@ namespace Avalonia\Input\GestureRecognizers;
 final class Velocity extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

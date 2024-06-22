@@ -18,6 +18,7 @@ class Cursor extends \System\Object implements
 	\System\IDisposable
 {
 	use RoutedEventRegistryOverride;
+
 	/**
 	 * @field
 	 * @since readonly

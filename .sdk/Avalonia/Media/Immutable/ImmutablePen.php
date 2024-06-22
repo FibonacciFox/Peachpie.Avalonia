@@ -28,6 +28,7 @@ class ImmutablePen extends \System\Object implements
 	\System\IEquatable_1
 {
 	use ImmutablePenOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IBrush

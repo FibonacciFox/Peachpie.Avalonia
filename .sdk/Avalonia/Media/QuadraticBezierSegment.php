@@ -4,6 +4,7 @@ final class QuadraticBezierSegment extends \Avalonia\Media\PathSegment implement
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -27,7 +28,7 @@ final class QuadraticBezierSegment extends \Avalonia\Media\PathSegment implement
 	 */
 	public $Point2;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

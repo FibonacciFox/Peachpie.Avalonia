@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextEndOfLine extends \Avalonia\Media\TextFormatting\TextRun
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

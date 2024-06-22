@@ -43,6 +43,7 @@ class ParseNumbers extends \System\Object
 {
 	use ParseNumbersOverride;
 
+
 	/**
 	 * @uses ParseNumbersOverride::StringToLong_1 <br>public , args: ($s, $radix, $flags)<br>
 	 * @uses ParseNumbersOverride::StringToLong_2 <br>public , args: ($s, $radix, $flags, $currPos)<br>

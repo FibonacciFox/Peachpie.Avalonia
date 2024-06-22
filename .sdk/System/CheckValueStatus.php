@@ -2,6 +2,7 @@
 namespace System;
 enum CheckValueStatus
 {
+
 	
 	case Success = '0';
 	case ArgumentException = '1';

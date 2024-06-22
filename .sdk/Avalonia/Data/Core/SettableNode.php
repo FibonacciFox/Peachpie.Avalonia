@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Core;
 class SettableNode extends \Avalonia\Data\Core\ExpressionNode
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

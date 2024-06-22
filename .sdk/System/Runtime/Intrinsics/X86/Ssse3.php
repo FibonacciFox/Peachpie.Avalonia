@@ -111,6 +111,7 @@ trait Ssse3Override {
 class Ssse3 extends \System\Runtime\Intrinsics\X86\Sse3
 {
 	use Ssse3Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

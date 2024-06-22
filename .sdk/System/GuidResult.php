@@ -2,6 +2,7 @@
 namespace System;
 final class GuidResult extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt32

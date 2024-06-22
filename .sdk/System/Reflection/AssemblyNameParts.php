@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class AssemblyNameParts extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

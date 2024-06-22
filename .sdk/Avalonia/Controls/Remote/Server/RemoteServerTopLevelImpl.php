@@ -6,6 +6,7 @@ class RemoteServerTopLevelImpl extends \Avalonia\Controls\Embedding\Offscreen\Of
 	\System\IDisposable,
 	\Avalonia\Controls\Platform\Surfaces\IFramebufferPlatformSurface
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[System\Object]

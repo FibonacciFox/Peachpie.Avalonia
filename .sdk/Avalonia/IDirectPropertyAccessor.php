@@ -1,5 +1,8 @@
+<?php
+namespace Avalonia;
 interface IDirectPropertyAccessor
 {
+
 
 	/**
 	 * @param \Avalonia\AvaloniaObject $instance

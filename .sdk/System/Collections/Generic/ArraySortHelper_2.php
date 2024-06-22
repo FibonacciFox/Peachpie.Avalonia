@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 final class ArraySortHelper_2 extends \System\Object implements
 	\System\Collections\Generic\IArraySortHelper_2
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IArraySortHelper_2[TKey,TValue]

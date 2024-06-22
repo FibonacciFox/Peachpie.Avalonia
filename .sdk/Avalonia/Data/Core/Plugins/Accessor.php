@@ -4,6 +4,7 @@ final class Accessor extends \Avalonia\Data\Core\Plugins\PropertyAccessorBase im
 	\Avalonia\Data\Core\Plugins\IPropertyAccessor,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

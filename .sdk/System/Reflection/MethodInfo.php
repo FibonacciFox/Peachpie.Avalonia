@@ -33,6 +33,7 @@ class MethodInfo extends \System\Reflection\MethodBase implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use MethodInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

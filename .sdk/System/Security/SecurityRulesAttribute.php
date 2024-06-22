@@ -2,6 +2,7 @@
 namespace System\Security;
 final class SecurityRulesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

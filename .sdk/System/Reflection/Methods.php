@@ -3,6 +3,7 @@ namespace System\Reflection;
 class Methods extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Reflection\FieldInfo
 	 */

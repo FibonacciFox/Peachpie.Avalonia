@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 class GenericDelegateCache_2 extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Func_3[System\Threading\Tasks\Task_1[System\Threading\Tasks\Task],System\Object,TResult]

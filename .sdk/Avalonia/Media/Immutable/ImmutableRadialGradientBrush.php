@@ -27,6 +27,7 @@ class ImmutableRadialGradientBrush extends \Avalonia\Media\Immutable\ImmutableGr
 	\Avalonia\Media\IRadialGradientBrush
 {
 	use ImmutablePenOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\RelativePoint

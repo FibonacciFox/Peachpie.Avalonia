@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class WeakEventHandlerManager extends \System\Object
 {
 
+
 	/**
 	 * @param \TTarget $target
 	 * @param \System\String|string $eventName

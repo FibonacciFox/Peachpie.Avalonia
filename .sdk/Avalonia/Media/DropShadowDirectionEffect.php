@@ -9,6 +9,7 @@ final class DropShadowDirectionEffect extends \Avalonia\Media\DropShadowEffectBa
 	\Avalonia\Media\IEffect,
 	\Avalonia\Media\IMutableEffect
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -64,7 +65,7 @@ final class DropShadowDirectionEffect extends \Avalonia\Media\DropShadowEffectBa
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

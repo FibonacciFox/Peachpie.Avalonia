@@ -50,6 +50,7 @@ class Styles extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\IResourceProvider
 {
 	use StylesOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int
@@ -67,7 +68,7 @@ class Styles extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Resources;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Styling\IStyle|\System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives\PopupPositioning;
 enum PopupGravity
 {
+
 	
 	case None = '0';
 	case Top = '1';

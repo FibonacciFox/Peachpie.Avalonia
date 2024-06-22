@@ -1,9 +1,10 @@
 <?php
 namespace System;
-final class Action_9 extends \System\MulticastDelegate implements
+final class Action_10 extends \System\MulticastDelegate implements
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object
@@ -46,9 +47,10 @@ final class Action_9 extends \System\MulticastDelegate implements
 	 * @param \T7 $arg7
 	 * @param \T8 $arg8
 	 * @param \T9 $arg9
+	 * @param \T10 $arg10
 	 * @return \System\Void|void
 	 */
-	public function Invoke($arg1, $arg2, $arg3, $arg4, $arg5, $arg6, $arg7, $arg8, $arg9){}
+	public function Invoke($arg1, $arg2, $arg3, $arg4, $arg5, $arg6, $arg7, $arg8, $arg9, $arg10){}
 	/**
 	 * @param \T1 $arg1
 	 * @param \T2 $arg2
@@ -59,11 +61,12 @@ final class Action_9 extends \System\MulticastDelegate implements
 	 * @param \T7 $arg7
 	 * @param \T8 $arg8
 	 * @param \T9 $arg9
+	 * @param \T10 $arg10
 	 * @param \System\AsyncCallback $callback
 	 * @param \System\Object|object $object
 	 * @return \System\IAsyncResult
 	 */
-	public function BeginInvoke($arg1, $arg2, $arg3, $arg4, $arg5, $arg6, $arg7, $arg8, $arg9, $callback, $object){}
+	public function BeginInvoke($arg1, $arg2, $arg3, $arg4, $arg5, $arg6, $arg7, $arg8, $arg9, $arg10, $callback, $object){}
 	/**
 	 * @param \System\IAsyncResult $result
 	 * @return \System\Void|void

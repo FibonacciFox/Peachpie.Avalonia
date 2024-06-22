@@ -15,6 +15,7 @@ class DefinitionList_1 extends \Avalonia\Collections\AvaloniaList_1 implements
 	\System\Collections\ICollection,
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

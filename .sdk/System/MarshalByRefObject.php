@@ -3,6 +3,7 @@ namespace System;
 class MarshalByRefObject extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Object|object
 	 */

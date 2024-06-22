@@ -16,6 +16,7 @@ class GregorianCalendar extends \System\Globalization\Calendar implements
 	\System\ICloneable
 {
 	use GregorianCalendarOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

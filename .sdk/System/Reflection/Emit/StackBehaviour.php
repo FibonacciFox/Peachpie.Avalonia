@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum StackBehaviour
 {
+
 	
 	case Pop0 = '0';
 	case Pop1 = '1';

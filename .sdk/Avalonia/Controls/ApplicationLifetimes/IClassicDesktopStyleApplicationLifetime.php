@@ -7,6 +7,7 @@ namespace Avalonia\Controls\ApplicationLifetimes;
 interface IClassicDesktopStyleApplicationLifetime
 {
 
+
 	/**
 	 * @param \System\Int32|int $exitCode
 	 * @return \System\Boolean|bool

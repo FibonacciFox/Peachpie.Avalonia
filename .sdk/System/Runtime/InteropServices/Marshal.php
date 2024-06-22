@@ -713,6 +713,7 @@ trait MarshalOverride {
 class Marshal extends \System\Object
 {
 	use MarshalOverride;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -35,6 +35,7 @@ class Grouping_2 extends \System\Object implements
 	\System\Collections\Generic\ICollection_1
 {
 	use Grouping_2Override;
+
 	/**
 	 * @field
 	 * @since readonly

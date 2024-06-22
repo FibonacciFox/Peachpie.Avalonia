@@ -6,6 +6,7 @@ class ServerCompositionSimpleTileBrush extends \Avalonia\Rendering\Composition\S
 	\System\IDisposable,
 	\Avalonia\Media\IBrush
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

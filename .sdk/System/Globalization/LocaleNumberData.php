@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum LocaleNumberData
 {
+
 	
 	case LanguageId = '1';
 	case GeoId = '91';

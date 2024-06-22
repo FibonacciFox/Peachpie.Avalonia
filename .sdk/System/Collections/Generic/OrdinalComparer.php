@@ -6,5 +6,6 @@ final class OrdinalComparer extends \System\Collections\Generic\NonRandomizedStr
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	private function GetObjectData($info, $context){}
 }

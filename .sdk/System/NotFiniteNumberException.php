@@ -36,6 +36,7 @@ class NotFiniteNumberException extends \System\ArithmeticException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use NotFiniteNumberExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

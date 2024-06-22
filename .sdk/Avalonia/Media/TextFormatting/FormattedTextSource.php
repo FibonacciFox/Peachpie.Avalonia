@@ -4,6 +4,7 @@ final class FormattedTextSource extends \System\ValueType implements
 	\Avalonia\Media\TextFormatting\ITextSource
 {
 
+
 	/**
 	 * @param \System\Int32|int $textSourceIndex
 	 * @return \Avalonia\Media\TextFormatting\TextRun

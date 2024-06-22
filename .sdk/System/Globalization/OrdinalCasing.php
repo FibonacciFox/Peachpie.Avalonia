@@ -3,6 +3,7 @@ namespace System\Globalization;
 class OrdinalCasing extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Char $c
 	 * @return \System\Char

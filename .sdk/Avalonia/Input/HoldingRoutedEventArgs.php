@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class HoldingRoutedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\HoldingState

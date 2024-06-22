@@ -2,6 +2,7 @@
 
 enum LockOperations
 {
+
 	
 	case LOCK_SH = '1';
 	case LOCK_EX = '2';

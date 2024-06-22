@@ -21,6 +21,7 @@ class ContextMarshalException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ContextMarshalExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

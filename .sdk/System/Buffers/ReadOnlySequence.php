@@ -3,6 +3,7 @@ namespace System\Buffers;
 class ReadOnlySequence extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $endIndex
 	 * @return \System\Int32|int

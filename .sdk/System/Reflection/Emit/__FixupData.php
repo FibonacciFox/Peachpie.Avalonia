@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class __FixupData extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\Label

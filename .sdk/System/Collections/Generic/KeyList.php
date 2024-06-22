@@ -37,6 +37,7 @@ final class KeyList extends \System\Object implements
 	\System\Collections\ICollection
 {
 	use KeyListOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -21,6 +21,7 @@ class NotImplementedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use NotImplementedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

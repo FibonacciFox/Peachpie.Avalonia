@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum TraceLoggingDataType
 {
+
 	
 	case Nil = '0';
 	case Utf16String = '1';

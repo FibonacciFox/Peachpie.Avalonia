@@ -21,6 +21,7 @@ class TransitioningContentControl extends \Avalonia\Controls\ContentControl impl
 	\Avalonia\Controls\IContentControl,
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -426,7 +427,7 @@ class TransitioningContentControl extends \Avalonia\Controls\ContentControl impl
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

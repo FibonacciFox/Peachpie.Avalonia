@@ -51,6 +51,7 @@ final class TplEventSource extends \System\Diagnostics\Tracing\EventSource imple
 	\System\IDisposable
 {
 	use TplEventSourceOverride;
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

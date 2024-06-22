@@ -4,6 +4,7 @@ final class NumberFormatInfo extends \System\Object implements
 	\System\IFormatProvider,
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32[]|array

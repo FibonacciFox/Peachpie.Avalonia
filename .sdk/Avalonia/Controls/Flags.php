@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum Flags
 {
+
 	
 	case ValidDefinitionsUStructure = '1';
 	case ValidDefinitionsVStructure = '2';

@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface IClassesChangedListener
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

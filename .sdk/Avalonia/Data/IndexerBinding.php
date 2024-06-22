@@ -3,6 +3,7 @@ namespace Avalonia\Data;
 class IndexerBinding extends \System\Object implements
 	\Avalonia\Data\IBinding
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

@@ -3,6 +3,7 @@ namespace System\Threading;
 final class DeferredDisposableLifetime_1 extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

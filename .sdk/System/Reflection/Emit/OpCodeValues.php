@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum OpCodeValues
 {
+
 	
 	case Nop = '0';
 	case Break = '1';

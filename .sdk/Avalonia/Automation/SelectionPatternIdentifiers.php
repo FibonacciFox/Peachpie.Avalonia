@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class SelectionPatternIdentifiers extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Automation\AutomationProperty

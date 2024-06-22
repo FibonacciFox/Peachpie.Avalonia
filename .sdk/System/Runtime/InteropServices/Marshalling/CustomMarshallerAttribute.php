@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\Marshalling;
 final class CustomMarshallerAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

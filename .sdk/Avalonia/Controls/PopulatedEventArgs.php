@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class PopulatedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\IEnumerable

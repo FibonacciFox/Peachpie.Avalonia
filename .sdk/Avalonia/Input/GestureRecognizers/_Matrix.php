@@ -2,6 +2,7 @@
 namespace Avalonia\Input\GestureRecognizers;
 final class _Matrix extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

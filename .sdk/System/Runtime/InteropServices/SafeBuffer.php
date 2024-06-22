@@ -28,6 +28,7 @@ class SafeBuffer extends \Microsoft\Win32\SafeHandles\SafeHandleZeroOrMinusOneIs
 	\System\IDisposable
 {
 	use SafeBufferOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

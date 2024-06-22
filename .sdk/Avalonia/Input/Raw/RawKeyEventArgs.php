@@ -28,6 +28,7 @@ trait TextSelectionOverride {
 class RawKeyEventArgs extends \Avalonia\Input\Raw\RawInputEventArgs
 {
 	use TextSelectionOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\Key

@@ -18,6 +18,7 @@ class Rotate3DTransition extends \Avalonia\Animation\PageSlide implements
 	\Avalonia\Animation\IPageTransition
 {
 	use RelativePointTransitionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\Double]

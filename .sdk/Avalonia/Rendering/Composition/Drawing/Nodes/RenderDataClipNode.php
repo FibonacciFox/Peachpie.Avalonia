@@ -4,6 +4,7 @@ class RenderDataClipNode extends \Avalonia\Rendering\Composition\Drawing\Nodes\R
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\PooledInlineList_1[Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem]

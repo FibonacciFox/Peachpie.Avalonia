@@ -21,6 +21,7 @@ final class UnreachableException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use UnreachableExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

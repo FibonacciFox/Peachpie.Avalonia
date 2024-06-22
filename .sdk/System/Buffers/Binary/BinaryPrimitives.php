@@ -87,6 +87,7 @@ class BinaryPrimitives extends \System\Object
 {
 	use BinaryPrimitivesOverride;
 
+
 	/**
 	 * @uses BinaryPrimitivesOverride::ReverseEndianness_1 <br>public , args: ($value)<br>
 	 * @uses BinaryPrimitivesOverride::ReverseEndianness_2 <br>public , args: ($value)<br>

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum CustomQueryInterfaceResult
 {
+
 	
 	case Handled = '0';
 	case NotHandled = '1';

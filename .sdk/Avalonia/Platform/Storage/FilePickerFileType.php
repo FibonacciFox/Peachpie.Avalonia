@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 final class FilePickerFileType extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

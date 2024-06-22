@@ -77,6 +77,7 @@ trait ValueStringBuilderOverride {
 final class ValueStringBuilder extends \System\ValueType
 {
 	use ValueStringBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

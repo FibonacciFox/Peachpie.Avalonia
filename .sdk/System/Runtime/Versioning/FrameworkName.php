@@ -24,6 +24,7 @@ final class FrameworkName extends \System\Object implements
 	\System\IEquatable_1
 {
 	use FrameworkNameOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

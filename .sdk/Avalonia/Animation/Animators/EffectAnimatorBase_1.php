@@ -30,6 +30,7 @@ class EffectAnimatorBase_1 extends \Avalonia\Animation\Animators\Animator_1 impl
 	\Avalonia\Animation\IAnimator
 {
 	use EffectAnimatorBase_1Override;
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

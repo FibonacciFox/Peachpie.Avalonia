@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 final class Status extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\SByte

@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering;
 class PlatformRenderInterfaceContextManager extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IPlatformRenderInterfaceContext

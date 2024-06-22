@@ -50,6 +50,7 @@ final class Memory_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use Memory_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Memory_1[T]

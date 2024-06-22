@@ -2,6 +2,7 @@
 namespace System;
 final class ThreeObjects extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

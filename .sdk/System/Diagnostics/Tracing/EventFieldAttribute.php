@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class EventFieldAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\Tracing\EventFieldTags

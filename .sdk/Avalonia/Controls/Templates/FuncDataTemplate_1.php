@@ -29,6 +29,7 @@ class FuncDataTemplate_1 extends \Avalonia\Controls\Templates\FuncDataTemplate i
 {
 	use FuncDataTemplate_1Override;
 
+
 	private static function CastMatch($f){}
 	private static function CastBuild($f){}
 	/**

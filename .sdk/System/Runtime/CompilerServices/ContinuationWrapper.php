@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class ContinuationWrapper extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

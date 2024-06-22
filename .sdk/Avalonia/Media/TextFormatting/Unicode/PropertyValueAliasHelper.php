@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 class PropertyValueAliasHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Media\TextFormatting\Unicode\Script $script
 	 * @return \System\String|string

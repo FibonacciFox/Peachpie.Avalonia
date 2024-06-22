@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 class ElementComposition extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $visual
 	 * @return \Avalonia\Rendering\Composition\CompositionVisual

@@ -112,6 +112,7 @@ trait DpOverride {
 class Dp extends \System\Runtime\Intrinsics\Arm\AdvSimd
 {
 	use DpOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

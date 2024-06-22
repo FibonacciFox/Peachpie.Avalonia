@@ -15,6 +15,7 @@ trait ArrayItemList_1Override {
 class FrugalObjectList_1 extends \System\Object
 {
 	use ArrayItemList_1Override;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\FrugalListBase_1[T]

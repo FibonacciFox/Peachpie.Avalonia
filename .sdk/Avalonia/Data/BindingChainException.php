@@ -22,6 +22,7 @@ class BindingChainException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use BindingChainExceptionOverride;
+
 	/**
 	 * @field dublicate
 	 * @var \System\String|string

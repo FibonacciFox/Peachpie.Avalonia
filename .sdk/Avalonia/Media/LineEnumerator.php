@@ -20,6 +20,7 @@ final class LineEnumerator extends \System\ValueType implements
 	\System\IDisposable
 {
 	use LineEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

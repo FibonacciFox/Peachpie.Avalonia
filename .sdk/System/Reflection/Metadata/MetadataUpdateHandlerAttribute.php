@@ -2,6 +2,7 @@
 namespace System\Reflection\Metadata;
 final class MetadataUpdateHandlerAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

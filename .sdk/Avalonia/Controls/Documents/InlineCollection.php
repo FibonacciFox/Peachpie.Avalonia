@@ -15,6 +15,7 @@ class InlineCollection extends \Avalonia\Collections\AvaloniaList_1 implements
 	\System\Collections\ICollection,
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering;
 class SceneInvalidatedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

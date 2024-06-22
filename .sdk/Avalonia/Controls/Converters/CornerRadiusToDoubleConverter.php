@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Converters;
 class CornerRadiusToDoubleConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Converters\Corners

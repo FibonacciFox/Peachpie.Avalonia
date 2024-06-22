@@ -34,6 +34,7 @@ trait ContractOverride {
 final class DynamicDependencyAttribute extends \System\Attribute
 {
 	use ContractOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

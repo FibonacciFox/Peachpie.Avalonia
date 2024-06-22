@@ -108,6 +108,7 @@ final class Version extends \System\Object implements
 	\System\IFormattable
 {
 	use VersionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

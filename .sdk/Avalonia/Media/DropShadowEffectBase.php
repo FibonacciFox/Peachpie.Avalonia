@@ -5,6 +5,7 @@ class DropShadowEffectBase extends \Avalonia\Media\Effect implements
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Media\IAffectsRender
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -44,7 +45,7 @@ class DropShadowEffectBase extends \Avalonia\Media\Effect implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

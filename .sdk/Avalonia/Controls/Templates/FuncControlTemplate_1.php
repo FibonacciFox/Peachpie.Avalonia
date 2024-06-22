@@ -5,6 +5,7 @@ class FuncControlTemplate_1 extends \Avalonia\Controls\Templates\FuncControlTemp
 	\Avalonia\Controls\Templates\IControlTemplate
 {
 
+
 	/**
 	 * @param \System\Func_3 $build [generic: T,Avalonia\Controls\INameScope,Avalonia\Controls\Control]
 	 */

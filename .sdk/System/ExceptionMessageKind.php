@@ -2,6 +2,7 @@
 namespace System;
 enum ExceptionMessageKind
 {
+
 	
 	case ThreadAbort = '1';
 	case ThreadInterrupted = '2';

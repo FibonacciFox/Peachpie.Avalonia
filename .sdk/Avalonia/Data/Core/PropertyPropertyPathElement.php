@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class PropertyPropertyPathElement extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyPathElement
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\Core\IPropertyInfo

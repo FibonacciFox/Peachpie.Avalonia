@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Transformation;
 final class UnitValue extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

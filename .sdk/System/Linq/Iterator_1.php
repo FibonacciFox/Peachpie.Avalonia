@@ -33,6 +33,7 @@ class Iterator_1 extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use Iterator_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

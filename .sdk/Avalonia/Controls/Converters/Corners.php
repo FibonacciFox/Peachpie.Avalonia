@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Converters;
 enum Corners
 {
+
 	
 	case None = '0';
 	case TopLeft = '1';

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DefaultDllImportSearchPathsAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\DllImportSearchPath

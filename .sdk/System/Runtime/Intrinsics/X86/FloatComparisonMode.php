@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics\X86;
 enum FloatComparisonMode
 {
+
 	
 	case OrderedEqualNonSignaling = '0';
 	case OrderedLessThanSignaling = '1';

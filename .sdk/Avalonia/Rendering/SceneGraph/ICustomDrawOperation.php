@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\SceneGraph;
 interface ICustomDrawOperation
 {
 
+
 	/**
 	 * @param \Avalonia\Point $p
 	 * @return \System\Boolean|bool

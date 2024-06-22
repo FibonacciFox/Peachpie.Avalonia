@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class ScopeTree extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32[]|array

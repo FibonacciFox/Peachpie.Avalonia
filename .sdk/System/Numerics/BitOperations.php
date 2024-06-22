@@ -219,6 +219,7 @@ class BitOperations extends \System\Object
 {
 	use BitOperationsOverride;
 
+
 	/**
 	 * @uses BitOperationsOverride::IsPow2_1 <br>public , args: ($value)<br>
 	 * @uses BitOperationsOverride::IsPow2_2 <br>public , args: ($value)<br>

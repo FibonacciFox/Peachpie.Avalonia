@@ -191,6 +191,7 @@ class Volatile extends \System\Object
 {
 	use VolatileOverride;
 
+
 	/**
 	 * @uses VolatileOverride::Read_1 <br>public , args: ($location)<br>
 	 * @uses VolatileOverride::Read_2 <br>public , args: ($location)<br>

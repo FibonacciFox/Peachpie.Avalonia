@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 final class Cue extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

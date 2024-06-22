@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class MaybeNullWhenAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

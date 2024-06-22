@@ -5,6 +5,7 @@ class MediaContextClock extends \System\Object implements
 	\Avalonia\Animation\IClock,
 	\System\IObservable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

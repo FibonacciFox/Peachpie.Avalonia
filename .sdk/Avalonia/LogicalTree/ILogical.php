@@ -9,6 +9,7 @@ namespace Avalonia\LogicalTree;
 interface ILogical
 {
 
+
 	/**
 	 * @param \Avalonia\LogicalTree\LogicalTreeAttachmentEventArgs $e
 	 * @return \System\Void|void

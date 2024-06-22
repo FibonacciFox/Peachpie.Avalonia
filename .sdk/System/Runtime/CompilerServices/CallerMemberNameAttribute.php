@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class CallerMemberNameAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

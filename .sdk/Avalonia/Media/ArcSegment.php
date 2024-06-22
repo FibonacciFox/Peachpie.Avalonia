@@ -4,6 +4,7 @@ final class ArcSegment extends \Avalonia\Media\PathSegment implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -60,7 +61,7 @@ final class ArcSegment extends \Avalonia\Media\PathSegment implements
 	 */
 	public $SweepDirection;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

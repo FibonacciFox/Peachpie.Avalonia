@@ -4,6 +4,7 @@ class HotkeyCommandWrapper extends \System\Object implements
 	\System\Windows\Input\ICommand
 {
 
+
 	/**
 	 * @return \System\Windows\Input\ICommand
 	 */

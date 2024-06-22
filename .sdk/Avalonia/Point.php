@@ -70,6 +70,7 @@ final class Point extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PointOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

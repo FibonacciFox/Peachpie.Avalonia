@@ -93,6 +93,7 @@ class BuiltInExpressionFfi extends \System\Object implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionForeignFunctionInterface
 {
 	use BuiltInExpressionFfiOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Expressions\BuiltInExpressionFfi

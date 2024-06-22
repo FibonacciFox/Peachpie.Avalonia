@@ -16,6 +16,7 @@ trait RotateLayoutOverride {
 final class TypeDescriptionProviderAttribute extends \System\Attribute
 {
 	use RotateLayoutOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

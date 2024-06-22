@@ -50,6 +50,7 @@ trait Crc32Override {
 class Crc32 extends \System\Runtime\Intrinsics\Arm\ArmBase
 {
 	use Crc32Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

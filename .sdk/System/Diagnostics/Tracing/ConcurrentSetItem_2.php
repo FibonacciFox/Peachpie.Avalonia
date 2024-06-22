@@ -21,6 +21,7 @@ class ConcurrentSetItem_2 extends \System\Object
 {
 	use ConcurrentSetItem_2Override;
 
+
 	/**
 	 * @uses ConcurrentSetItem_2Override::Compare_1 <br>public , args: ($other)<br>
 	 * @uses ConcurrentSetItem_2Override::Compare_2 <br>public , args: ($key)<br>

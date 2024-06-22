@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 class EffectiveViewportChangedListener extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Layout\Layoutable

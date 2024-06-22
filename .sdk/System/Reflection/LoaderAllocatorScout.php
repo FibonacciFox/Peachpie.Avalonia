@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class LoaderAllocatorScout extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

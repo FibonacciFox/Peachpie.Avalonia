@@ -15,6 +15,7 @@ trait ComponentCollectionOverride {
 class DisplayNameAttribute extends \System\Attribute
 {
 	use ComponentCollectionOverride;
+
 	/**
 	 * @field
 	 * @since readonly

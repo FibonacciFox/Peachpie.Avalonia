@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Drawing;
 class CompositorRefCountableResource_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T|object

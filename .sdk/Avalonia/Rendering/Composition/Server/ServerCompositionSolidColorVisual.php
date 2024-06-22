@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class ServerCompositionSolidColorVisual extends \Avalonia\Rendering\Composition\Server\ServerCompositionContainerVisual implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

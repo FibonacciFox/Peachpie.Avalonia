@@ -2,6 +2,7 @@
 namespace System;
 final class DateTimeToken extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\DateTimeParse+DTT

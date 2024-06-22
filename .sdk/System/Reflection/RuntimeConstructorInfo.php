@@ -33,6 +33,7 @@ final class RuntimeConstructorInfo extends \System\Reflection\ConstructorInfo im
 	\System\IRuntimeMethodInfo
 {
 	use RuntimeConstructorInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

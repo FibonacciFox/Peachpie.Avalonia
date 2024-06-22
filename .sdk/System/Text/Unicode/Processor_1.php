@@ -2,6 +2,7 @@
 namespace System\Text\Unicode;
 final class Processor_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

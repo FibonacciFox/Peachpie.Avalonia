@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 final class RuntimeWrappedException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

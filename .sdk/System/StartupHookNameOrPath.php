@@ -2,6 +2,7 @@
 namespace System;
 final class StartupHookNameOrPath extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\AssemblyName

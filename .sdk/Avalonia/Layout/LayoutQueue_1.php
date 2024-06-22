@@ -22,6 +22,7 @@ class LayoutQueue_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use LayoutQueue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

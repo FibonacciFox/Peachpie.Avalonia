@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum DllImportSearchPath
 {
+
 	
 	case UseDllDirectoryForDependencies = '256';
 	case ApplicationDirectory = '512';

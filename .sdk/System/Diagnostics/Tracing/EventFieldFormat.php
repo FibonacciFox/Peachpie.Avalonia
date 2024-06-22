@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventFieldFormat
 {
+
 	
 	case Default = '0';
 	case String = '2';

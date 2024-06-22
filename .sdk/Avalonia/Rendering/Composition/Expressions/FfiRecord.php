@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 final class FfiRecord extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Expressions\VariantType[]

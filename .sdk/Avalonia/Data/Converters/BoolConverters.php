@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Converters;
 class BoolConverters extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

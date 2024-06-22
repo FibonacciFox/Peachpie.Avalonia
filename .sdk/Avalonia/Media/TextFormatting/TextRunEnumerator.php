@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class TextRunEnumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\TextRun

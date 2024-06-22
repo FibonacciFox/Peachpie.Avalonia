@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum Token
 {
+
 	
 	case Equals = '1';
 	case Comma = '2';

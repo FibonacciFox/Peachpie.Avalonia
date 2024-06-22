@@ -3,6 +3,7 @@ namespace Avalonia\Automation\Peers;
 class AutomationPeer extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

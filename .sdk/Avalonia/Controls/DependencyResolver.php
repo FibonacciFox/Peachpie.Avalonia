@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class DependencyResolver extends \System\Object implements
 	\Avalonia\IAvaloniaDependencyResolver
 {
+
 	/**
 	 * @field
 	 * @since readonly

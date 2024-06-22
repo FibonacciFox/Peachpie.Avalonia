@@ -2,6 +2,7 @@
 namespace System\Text;
 final class EncoderLatin1BestFitFallbackBuffer extends \System\Text\EncoderFallbackBuffer
 {
+
 	/**
 	 * @field
 	 * @var \System\Char*

@@ -2,6 +2,7 @@
 namespace Avalonia\Layout;
 final class MinMax extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

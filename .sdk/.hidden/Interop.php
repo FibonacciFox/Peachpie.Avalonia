@@ -41,6 +41,7 @@ class Interop extends \System\Object
 {
 	use InteropOverride;
 
+
 	/**
 	 * @param \System\Buffers\SpanFunc_5 $interopCall [generic: System\Char,TArg1,TArg2,TArg3,Interop+Globalization+ResultCode]
 	 * @param \TArg1 $arg1

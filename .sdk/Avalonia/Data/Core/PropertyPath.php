@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Core;
 class PropertyPath extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Data\Core\IPropertyPathElement]

@@ -26,6 +26,7 @@ trait CalendarDataOverride {
 final class CalendarData extends \System\Object
 {
 	use CalendarDataOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -24,6 +24,7 @@ final class GenericTypeParameterBuilder extends \System\Reflection\TypeInfo impl
 	\System\Reflection\IReflectableType
 {
 	use GenericTypeParameterBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\TypeBuilder

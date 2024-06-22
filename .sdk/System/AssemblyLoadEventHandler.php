@@ -4,6 +4,7 @@ final class AssemblyLoadEventHandler extends \System\MulticastDelegate implement
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

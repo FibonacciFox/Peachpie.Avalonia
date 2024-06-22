@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class ExtendedData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Controls\ColumnDefinitions

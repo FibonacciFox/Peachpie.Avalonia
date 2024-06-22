@@ -2,6 +2,7 @@
 namespace System\Security;
 final class UnverifiableCodeAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

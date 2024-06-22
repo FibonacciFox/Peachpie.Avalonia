@@ -18,6 +18,7 @@ trait RefreshContainerOverride {
 class RefreshRequestedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use RefreshContainerOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

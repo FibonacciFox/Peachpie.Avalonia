@@ -3,6 +3,7 @@ namespace Internal\Runtime\InteropServices;
 class ComponentActivator extends \System\Object
 {
 
+
 	private static function OnDisabledGetFunctionPointerCall($typeNameNative, $methodNameNative){}
 	private static function InitializeIsSupported(){}
 	private static function MarshalToString($arg, $argName){}

@@ -379,6 +379,7 @@ class Enum extends \System\ValueType implements
 {
 	use EnumOverride;
 
+
 	private static function GetEnumValuesAndNames($enumType, $values, $names, $getNames){}
 	private static function InternalBoxEnum($enumType, $value){}
 	/**

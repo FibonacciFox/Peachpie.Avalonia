@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 enum DispatcherOperationStatus
 {
+
 	
 	case Pending = '0';
 	case Aborted = '1';

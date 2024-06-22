@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ObjectiveC;
 enum MessageSendFunction
 {
+
 	
 	case MsgSend = '0';
 	case MsgSendFpret = '1';

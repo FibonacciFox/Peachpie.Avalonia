@@ -9,6 +9,7 @@ final class SelectListPartitionIterator_2 extends \System\Linq\Iterator_1 implem
 	\System\Linq\IPartition_1,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

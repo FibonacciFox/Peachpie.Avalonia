@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class NullableAttributeStateParser extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\NullabilityInfoContext+NullableAttributeStateParser

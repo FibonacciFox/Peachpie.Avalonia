@@ -3,6 +3,7 @@ namespace System\Globalization;
 class IcuLocaleData extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $culture
 	 * @return \System\String|string

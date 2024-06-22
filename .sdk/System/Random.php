@@ -63,6 +63,7 @@ trait RandomOverride {
 class Random extends \System\Object
 {
 	use RandomOverride;
+
 	/**
 	 * @property
 	 * @var \System\Random

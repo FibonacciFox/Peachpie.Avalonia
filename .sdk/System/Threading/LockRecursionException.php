@@ -21,6 +21,7 @@ class LockRecursionException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use LockRecursionExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

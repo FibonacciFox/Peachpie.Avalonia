@@ -3,6 +3,7 @@ namespace System\Globalization;
 class ISOWeek extends \System\Object
 {
 
+
 	/**
 	 * @param \System\DateTime $date
 	 * @return \System\Int32|int

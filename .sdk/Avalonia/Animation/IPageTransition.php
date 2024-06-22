@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 interface IPageTransition
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $from
 	 * @param \Avalonia\Visual $to

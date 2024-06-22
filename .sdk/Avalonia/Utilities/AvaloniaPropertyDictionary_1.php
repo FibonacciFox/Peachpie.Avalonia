@@ -40,6 +40,7 @@ trait AvaloniaPropertyDictionary_1Override {
 final class AvaloniaPropertyDictionary_1 extends \System\ValueType
 {
 	use AvaloniaPropertyDictionary_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int
@@ -47,7 +48,7 @@ final class AvaloniaPropertyDictionary_1 extends \System\ValueType
 	 */
 	public $Count;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \TValue
 	 */
 	public $Item;

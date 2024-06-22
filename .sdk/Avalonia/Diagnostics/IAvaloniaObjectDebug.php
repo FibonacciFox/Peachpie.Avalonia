@@ -3,6 +3,7 @@ namespace Avalonia\Diagnostics;
 interface IAvaloniaObjectDebug
 {
 
+
 	/**
 	 * @return \System\Delegate[]
 	 */

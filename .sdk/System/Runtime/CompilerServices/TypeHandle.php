@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class TypeHandle extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

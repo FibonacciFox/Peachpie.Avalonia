@@ -4,6 +4,7 @@ final class GeometryDrawing extends \Avalonia\Media\Drawing implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -38,7 +39,7 @@ final class GeometryDrawing extends \Avalonia\Media\Drawing implements
 	 */
 	public $Pen;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

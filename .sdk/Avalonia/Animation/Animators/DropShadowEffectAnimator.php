@@ -16,6 +16,7 @@ class DropShadowEffectAnimator extends \Avalonia\Animation\Animators\EffectAnima
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

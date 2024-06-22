@@ -2,6 +2,7 @@
 namespace System\Runtime;
 final class Canceler extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class PrimaryInteropAssemblyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

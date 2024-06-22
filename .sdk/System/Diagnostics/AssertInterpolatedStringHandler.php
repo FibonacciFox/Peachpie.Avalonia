@@ -73,6 +73,7 @@ final class AssertInterpolatedStringHandler extends \System\ValueType
 {
 	use AssertInterpolatedStringHandlerOverride;
 
+
 	/**
 	 * @return \System\String|string
 	 */

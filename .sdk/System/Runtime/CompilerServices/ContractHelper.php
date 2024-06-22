@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 class ContractHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\EventHandler_1 $value [generic: System\Diagnostics\Contracts\ContractFailedEventArgs]
 	 * @return \System\Void|void

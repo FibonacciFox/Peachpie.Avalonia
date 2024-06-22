@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class SplitResult_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \T|object

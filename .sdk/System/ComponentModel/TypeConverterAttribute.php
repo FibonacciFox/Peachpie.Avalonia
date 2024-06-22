@@ -19,6 +19,7 @@ trait RotateLayoutOverride {
 final class TypeConverterAttribute extends \System\Attribute
 {
 	use RotateLayoutOverride;
+
 	/**
 	 * @field
 	 * @since readonly

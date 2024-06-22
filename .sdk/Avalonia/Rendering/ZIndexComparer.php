@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class ZIndexComparer extends \System\Object implements
 	\System\Collections\Generic\IComparer_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

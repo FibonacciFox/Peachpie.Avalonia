@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class TappedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IPointer

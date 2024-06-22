@@ -28,6 +28,7 @@ final class Negate_1 extends \System\ValueType implements
 {
 	use Negate_1Override;
 
+
 	/**
 	 * @uses Negate_1Override::NegateIfNeeded_1 <br>public , args: ($equals)<br>
 	 * @uses Negate_1Override::NegateIfNeeded_2 <br>public , args: ($equals)<br>

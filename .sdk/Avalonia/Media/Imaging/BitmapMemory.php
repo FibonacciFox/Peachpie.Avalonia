@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 class BitmapMemory extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

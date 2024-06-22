@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class PlatformHandle extends \System\Object implements
 	\Avalonia\Platform\IPlatformHandle
 {
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

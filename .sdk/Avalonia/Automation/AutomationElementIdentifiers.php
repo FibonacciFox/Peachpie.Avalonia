@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class AutomationElementIdentifiers extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Automation\AutomationProperty

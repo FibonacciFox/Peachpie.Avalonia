@@ -3,8 +3,9 @@ namespace Avalonia\Controls\Automation\Peers;
 class SliderAutomationPeer extends \Avalonia\Automation\Peers\RangeBaseAutomationPeer implements
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Primitives\RangeBase|\Avalonia\Controls\Control
 	 */
 	public $Owner;

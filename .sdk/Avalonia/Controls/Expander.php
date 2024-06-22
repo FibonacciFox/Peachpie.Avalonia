@@ -22,6 +22,7 @@ class Expander extends \Avalonia\Controls\Primitives\HeaderedContentControl impl
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Controls\IHeadered
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -478,7 +479,7 @@ class Expander extends \Avalonia\Controls\Primitives\HeaderedContentControl impl
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

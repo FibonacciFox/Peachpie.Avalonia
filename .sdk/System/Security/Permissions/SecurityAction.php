@@ -2,6 +2,7 @@
 namespace System\Security\Permissions;
 enum SecurityAction
 {
+
 	
 	case Assert = '3';
 	case Demand = '2';

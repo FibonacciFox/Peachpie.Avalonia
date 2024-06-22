@@ -4,6 +4,7 @@ final class OperatingSystem extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable,
 	\System\ICloneable
 {
+
 	/**
 	 * @property
 	 * @var \System\PlatformID

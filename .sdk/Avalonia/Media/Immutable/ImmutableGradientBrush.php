@@ -5,6 +5,7 @@ class ImmutableGradientBrush extends \System\Object implements
 	\Avalonia\Media\IBrush,
 	\Avalonia\Media\IImmutableBrush
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]

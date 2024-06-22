@@ -3,6 +3,7 @@ namespace System\Buffers;
 final class MemoryHandle extends \System\ValueType implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Void*

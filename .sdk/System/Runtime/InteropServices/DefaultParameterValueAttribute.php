@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DefaultParameterValueAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

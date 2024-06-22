@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Expressions;
 class ExpressionParser extends \System\Object
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $s [generic: System\Char]
 	 * @return \Avalonia\Rendering\Composition\Expressions\Expression

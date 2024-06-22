@@ -3,6 +3,7 @@ namespace Microsoft\Win32\SafeHandles;
 class SafeHandleMinusOneIsInvalid extends \System\Runtime\InteropServices\SafeHandle implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

@@ -3,6 +3,7 @@ namespace System;
 class SR extends \System\Object
 {
 
+
 	private static function UsingResourceKeys(){}
 	/**
 	 * @param \System\String|string $resourceKey

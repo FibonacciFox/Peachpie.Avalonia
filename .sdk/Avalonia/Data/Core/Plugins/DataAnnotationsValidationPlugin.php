@@ -4,6 +4,7 @@ class DataAnnotationsValidationPlugin extends \System\Object implements
 	\Avalonia\Data\Core\Plugins\IDataValidationPlugin
 {
 
+
 	/**
 	 * @param \System\WeakReference_1 $reference [generic: System\Object]
 	 * @param \System\String|string $memberName

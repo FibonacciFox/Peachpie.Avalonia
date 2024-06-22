@@ -3,6 +3,7 @@ namespace System;
 class UncNameHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $str
 	 * @param \System\Int32|int $start

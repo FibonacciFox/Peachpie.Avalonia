@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class Table extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \K[]

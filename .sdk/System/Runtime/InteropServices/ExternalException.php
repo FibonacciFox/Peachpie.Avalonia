@@ -26,6 +26,7 @@ class ExternalException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ExternalExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

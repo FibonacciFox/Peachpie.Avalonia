@@ -22,6 +22,7 @@ class TemplateExtensions extends \System\Object
 {
 	use TemplateExtensionsOverride;
 
+
 	/**
 	 * @uses TemplateExtensionsOverride::GetTemplateChildren_1 <br>public , args: ($control)<br>
 	 * @uses TemplateExtensionsOverride::GetTemplateChildren_2 <br>private , args: ($control, $templatedParent)<br>

@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 interface IHelperImpl
 {
 
+
 	/**
 	 * @param \System\IntPtr $waitHandles
 	 * @param \System\Boolean|bool $waitAll

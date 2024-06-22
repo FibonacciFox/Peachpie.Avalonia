@@ -9,6 +9,7 @@ namespace Avalonia\Threading;
 interface IDispatcherImpl
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

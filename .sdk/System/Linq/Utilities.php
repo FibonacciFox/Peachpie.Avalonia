@@ -3,6 +3,7 @@ namespace System\Linq;
 class Utilities extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\IEqualityComparer_1 $left [generic: TSource]
 	 * @param \System\Collections\Generic\IEqualityComparer_1 $right [generic: TSource]

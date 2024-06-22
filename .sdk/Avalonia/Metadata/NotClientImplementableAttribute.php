@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class NotClientImplementableAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

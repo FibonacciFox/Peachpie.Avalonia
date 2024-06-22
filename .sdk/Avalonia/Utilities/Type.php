@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 enum Type
 {
+
 	
 	case Empty = '0';
 	case Single = '1';

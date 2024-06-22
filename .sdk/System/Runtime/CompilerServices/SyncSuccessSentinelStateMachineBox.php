@@ -4,6 +4,7 @@ final class SyncSuccessSentinelStateMachineBox extends \System\Runtime\CompilerS
 	\System\Threading\Tasks\Sources\IValueTaskSource_1,
 	\System\Threading\Tasks\Sources\IValueTaskSource
 {
+
 	/**
 	 * @field
 	 * @var \System\Action

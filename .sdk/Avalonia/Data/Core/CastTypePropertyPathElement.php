@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class CastTypePropertyPathElement extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyPathElement
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

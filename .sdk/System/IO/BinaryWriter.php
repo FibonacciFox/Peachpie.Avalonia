@@ -166,6 +166,7 @@ class BinaryWriter extends \System\Object implements
 	\System\IAsyncDisposable
 {
 	use BinaryWriterOverride;
+
 	/**
 	 * @field
 	 * @var \System\IO\Stream

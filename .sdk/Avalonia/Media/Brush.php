@@ -28,6 +28,7 @@ class Brush extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	use BrushOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -67,7 +68,7 @@ class Brush extends \Avalonia\Animation\Animatable implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

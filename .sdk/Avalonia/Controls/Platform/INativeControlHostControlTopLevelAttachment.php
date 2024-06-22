@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface INativeControlHostControlTopLevelAttachment
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\Platform\INativeControlHostImpl $host
 	 * @return \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\Interactivity;
 final class EventSubscription extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Action_3[System\Delegate,System\Object,Avalonia\Interactivity\RoutedEventArgs]

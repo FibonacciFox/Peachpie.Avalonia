@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IRunningObjectTable
 {
 
+
 	/**
 	 * @param \System\Int32|int $grfFlags
 	 * @param \System\Object|object $punkObject

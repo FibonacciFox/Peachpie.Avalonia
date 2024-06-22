@@ -7,6 +7,7 @@ namespace Avalonia\Threading;
 interface IDispatcherImplWithExplicitBackgroundProcessing
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

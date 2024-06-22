@@ -23,6 +23,7 @@ final class TranslateTransform extends \Avalonia\Media\Transform implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	use TranslateTransformOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -57,7 +58,7 @@ final class TranslateTransform extends \Avalonia\Media\Transform implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

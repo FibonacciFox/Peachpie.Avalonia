@@ -18,6 +18,7 @@ trait ShapedBufferOverride {
 class TextCharacters extends \Avalonia\Media\TextFormatting\TextRun
 {
 	use ShapedBufferOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

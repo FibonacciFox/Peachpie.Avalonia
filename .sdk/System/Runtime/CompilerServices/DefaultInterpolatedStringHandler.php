@@ -102,6 +102,7 @@ final class DefaultInterpolatedStringHandler extends \System\ValueType
 {
 	use DefaultInterpolatedStringHandlerOverride;
 
+
 	/**
 	 * @param \System\Int32|int $literalLength
 	 * @param \System\Int32|int $formattedCount

@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class Subscription_2 extends \System\Object
 {
 
+
 	private function Destroy(){}
 	/**
 	 * @param \System\EventHandler_1 $s [generic: T]

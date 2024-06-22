@@ -2,6 +2,7 @@
 namespace System\Runtime\Loader;
 final class IndividualAssemblyLoadContext extends \System\Runtime\Loader\AssemblyLoadContext
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[System\Reflection\Assembly]

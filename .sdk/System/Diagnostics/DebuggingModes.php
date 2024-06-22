@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 enum DebuggingModes
 {
+
 	
 	case None = '0';
 	case Default = '1';

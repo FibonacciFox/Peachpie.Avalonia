@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class EnsureTypePropertyPathElement extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyPathElement
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

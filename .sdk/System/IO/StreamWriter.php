@@ -104,6 +104,7 @@ class StreamWriter extends \System\IO\TextWriter implements
 	\System\IAsyncDisposable
 {
 	use StreamWriterOverride;
+
 	/**
 	 * @field
 	 * @since readonly

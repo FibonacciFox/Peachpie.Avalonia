@@ -69,6 +69,7 @@ class Bitmap extends \System\Object implements
 	\Avalonia\Media\IImageBrushSource
 {
 	use BitmapOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

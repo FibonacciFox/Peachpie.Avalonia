@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum VARKIND
 {
+
 	
 	case VAR_PERINSTANCE = '0';
 	case VAR_STATIC = '1';

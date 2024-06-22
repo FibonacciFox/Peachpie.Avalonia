@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 final class GraphemeEnumerator extends \System\ValueType
 {
 
+
 	/**
 	 * @param \Avalonia\Media\TextFormatting\Unicode\Grapheme& &$grapheme
 	 * @return \System\Boolean|bool

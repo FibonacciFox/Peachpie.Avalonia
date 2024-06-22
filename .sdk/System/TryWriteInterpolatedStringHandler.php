@@ -87,6 +87,7 @@ trait TryWriteInterpolatedStringHandlerOverride {
 final class TryWriteInterpolatedStringHandler extends \System\ValueType
 {
 	use TryWriteInterpolatedStringHandlerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

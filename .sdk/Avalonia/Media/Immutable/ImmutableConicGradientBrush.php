@@ -26,6 +26,7 @@ class ImmutableConicGradientBrush extends \Avalonia\Media\Immutable\ImmutableGra
 	\Avalonia\Media\IConicGradientBrush
 {
 	use UnicodeTrieBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\RelativePoint

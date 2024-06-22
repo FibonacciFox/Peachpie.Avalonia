@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 class PickerOptions extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

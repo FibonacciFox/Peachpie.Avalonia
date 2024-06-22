@@ -19,6 +19,7 @@ class IndentedTextWriter extends \System\IO\TextWriter implements
 	\System\IAsyncDisposable
 {
 	use IndentedTextWriterOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

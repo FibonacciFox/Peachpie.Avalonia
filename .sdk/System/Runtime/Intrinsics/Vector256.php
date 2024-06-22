@@ -1040,6 +1040,7 @@ trait Vector256Override {
 class Vector256 extends \System\Object
 {
 	use Vector256Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\LogicalTree;
 class ChildIndexChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\LogicalTree\ChildIndexChangedAction

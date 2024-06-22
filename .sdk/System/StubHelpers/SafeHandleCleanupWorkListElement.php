@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 final class SafeHandleCleanupWorkListElement extends \System\StubHelpers\CleanupWorkListElement
 {
 
+
 	/**
 	 * @return \System\IntPtr
 	 */

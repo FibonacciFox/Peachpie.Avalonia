@@ -3,6 +3,7 @@ namespace System\Globalization;
 class Ordinal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Char& $strA
 	 * @param \System\Int32|int $lengthA

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum CorElementType
 {
+
 	
 	case ELEMENT_TYPE_END = '0';
 	case ELEMENT_TYPE_VOID = '1';

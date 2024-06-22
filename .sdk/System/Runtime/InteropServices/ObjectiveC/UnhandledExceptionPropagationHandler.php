@@ -4,6 +4,7 @@ final class UnhandledExceptionPropagationHandler extends \System\MulticastDelega
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

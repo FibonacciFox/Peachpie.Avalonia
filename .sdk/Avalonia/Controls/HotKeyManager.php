@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class HotKeyManager extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

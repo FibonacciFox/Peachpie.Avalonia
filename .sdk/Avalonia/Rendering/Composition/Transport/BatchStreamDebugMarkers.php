@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Transport;
 class BatchStreamDebugMarkers extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

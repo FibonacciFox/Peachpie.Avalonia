@@ -5,6 +5,7 @@ class DataValidationBase extends \Avalonia\Data\Core\Plugins\PropertyAccessorBas
 	\System\IDisposable,
 	\System\IObserver_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

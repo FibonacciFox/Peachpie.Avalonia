@@ -148,6 +148,7 @@ trait FormattedTextOverride {
 class FormattedText extends \System\Object
 {
 	use FormattedTextOverride;
+
 	/**
 	 * @field
 	 * @var \System\Double|double

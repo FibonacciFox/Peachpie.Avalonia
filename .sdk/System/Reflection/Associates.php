@@ -34,6 +34,7 @@ class Associates extends \System\Object
 {
 	use AssociatesOverride;
 
+
 	/**
 	 * @param \System\Reflection\MethodInfo $associate
 	 * @param \System\Boolean|bool $nonPublic

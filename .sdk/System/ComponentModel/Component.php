@@ -21,6 +21,7 @@ class Component extends \System\MarshalByRefObject implements
 	\System\IDisposable
 {
 	use ComponentOverride;
+
 	/**
 	 * @property
 	 * @var \System\ComponentModel\ISite

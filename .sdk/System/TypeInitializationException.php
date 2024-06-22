@@ -3,6 +3,7 @@ namespace System;
 final class TypeInitializationException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

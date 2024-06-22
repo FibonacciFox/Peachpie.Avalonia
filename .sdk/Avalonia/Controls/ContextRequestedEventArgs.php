@@ -15,6 +15,7 @@ trait ContextMenuOverride {
 class ContextRequestedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use ContextMenuOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

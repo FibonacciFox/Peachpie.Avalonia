@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class SharedSizeScope extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $sharedSizeGroup
 	 * @return \Avalonia\Controls\DefinitionBase+SharedSizeState

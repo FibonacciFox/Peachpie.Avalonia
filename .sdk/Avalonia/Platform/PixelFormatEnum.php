@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 enum PixelFormatEnum
 {
+
 	
 	case Rgb565 = '0';
 	case Rgba8888 = '1';

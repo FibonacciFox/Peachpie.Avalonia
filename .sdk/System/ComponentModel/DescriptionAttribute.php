@@ -15,6 +15,7 @@ trait ComponentCollectionOverride {
 class DescriptionAttribute extends \System\Attribute
 {
 	use ComponentCollectionOverride;
+
 	/**
 	 * @field
 	 * @since readonly

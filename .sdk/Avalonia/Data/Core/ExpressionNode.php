@@ -21,6 +21,7 @@ trait ExpressionNodeOverride {
 class ExpressionNode extends \System\Object
 {
 	use ExpressionNodeOverride;
+
 	/**
 	 * @field
 	 * @since readonly

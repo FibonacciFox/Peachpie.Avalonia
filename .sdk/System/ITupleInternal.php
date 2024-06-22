@@ -3,6 +3,7 @@ namespace System;
 interface ITupleInternal
 {
 
+
 	/**
 	 * @param \System\Text\StringBuilder $sb
 	 * @return \System\String|string

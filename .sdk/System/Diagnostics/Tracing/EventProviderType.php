@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventProviderType
 {
+
 	
 	case None = '0';
 	case ETW = '1';

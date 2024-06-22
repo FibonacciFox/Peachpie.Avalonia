@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class WindowClosingEventArgs extends \System\ComponentModel\CancelEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\WindowCloseReason

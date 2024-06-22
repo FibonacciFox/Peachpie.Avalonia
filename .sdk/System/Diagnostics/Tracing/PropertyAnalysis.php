@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class PropertyAnalysis extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

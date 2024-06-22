@@ -2,6 +2,7 @@
 namespace System\Text;
 class DecoderNLS extends \System\Text\Decoder
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

@@ -81,6 +81,7 @@ final class Timer extends \System\MarshalByRefObject implements
 	\System\IAsyncDisposable
 {
 	use TimerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\TimerHolder

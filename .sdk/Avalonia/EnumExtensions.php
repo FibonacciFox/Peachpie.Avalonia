@@ -3,6 +3,7 @@ namespace Avalonia;
 class EnumExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \T|object $value
 	 * @param \T|object $flags

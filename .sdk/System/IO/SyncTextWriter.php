@@ -4,6 +4,7 @@ final class SyncTextWriter extends \System\IO\TextWriter implements
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Char[]

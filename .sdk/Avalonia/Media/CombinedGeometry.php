@@ -31,6 +31,7 @@ class CombinedGeometry extends \Avalonia\Media\Geometry implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use CombinedGeometryOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -82,7 +83,7 @@ class CombinedGeometry extends \Avalonia\Media\Geometry implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

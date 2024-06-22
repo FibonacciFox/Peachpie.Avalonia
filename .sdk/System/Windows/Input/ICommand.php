@@ -7,6 +7,7 @@ namespace System\Windows\Input;
 interface ICommand
 {
 
+
 	/**
 	 * @param \System\Object|object $parameter
 	 * @return \System\Boolean|bool

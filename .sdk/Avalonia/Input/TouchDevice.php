@@ -6,6 +6,7 @@ class TouchDevice extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	private static function GetModifiers($modifiers, $isLeftButtonDown){}
 	/**
 	 * @param \Avalonia\Input\Raw\RawInputEventArgs $ev

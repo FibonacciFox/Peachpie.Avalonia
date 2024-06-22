@@ -17,6 +17,7 @@ final class SafeWaitHandle extends \Microsoft\Win32\SafeHandles\SafeHandleZeroOr
 	\System\IDisposable
 {
 	use SafeWaitHandleOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

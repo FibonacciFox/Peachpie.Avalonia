@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventSourceAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

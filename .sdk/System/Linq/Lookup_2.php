@@ -61,6 +61,7 @@ class Lookup_2 extends \System\Object implements
 	\System\Linq\ILookup_2
 {
 	use Lookup_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

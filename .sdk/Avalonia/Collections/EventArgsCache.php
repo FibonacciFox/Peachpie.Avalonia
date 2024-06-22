@@ -2,6 +2,7 @@
 namespace Avalonia\Collections;
 class EventArgsCache extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

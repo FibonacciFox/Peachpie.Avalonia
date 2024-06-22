@@ -14,6 +14,7 @@ trait MetadataImportOverride {
 final class MetadataImport extends \System\ValueType
 {
 	use MetadataImportOverride;
+
 	/**
 	 * @field
 	 * @since readonly

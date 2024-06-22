@@ -3,6 +3,7 @@ namespace System\Globalization;
 final class StringParser extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

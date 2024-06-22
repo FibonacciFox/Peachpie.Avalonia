@@ -2,6 +2,7 @@
 namespace System\Linq;
 class CachingComparer_2 extends \System\Linq\CachingComparer_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

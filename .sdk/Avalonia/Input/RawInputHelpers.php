@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 class RawInputHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Input\RawInputModifiers $modifiers
 	 * @return \Avalonia\Input\KeyModifiers

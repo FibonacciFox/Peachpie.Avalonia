@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum BindingFlags
 {
+
 	
 	case Default = '0';
 	case IgnoreCase = '1';

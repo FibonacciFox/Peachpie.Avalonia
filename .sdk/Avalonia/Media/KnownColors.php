@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class KnownColors extends \System\Object
 {
 
+
 	private static function GetKnownColors(){}
 	/**
 	 * @param \System\String|string $s

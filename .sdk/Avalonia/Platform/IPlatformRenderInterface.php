@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IPlatformRenderInterface
 {
 
+
 	/**
 	 * @param \Avalonia\Rect $rect
 	 * @return \Avalonia\Platform\IGeometryImpl

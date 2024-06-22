@@ -103,6 +103,7 @@ final class ArraySegment_1 extends \System\ValueType implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use ArraySegment_1Override;
+
 	/**
 	 * @property
 	 * @var \System\ArraySegment_1[T]

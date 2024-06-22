@@ -21,6 +21,7 @@ final class EmptyReadOnlyDictionaryInternal extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use EmptyReadOnlyDictionaryInternalOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -4,6 +4,7 @@ final class Pointer extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	/**
 	 * @param \System\Void* $ptr
 	 * @param \System\Type $type

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum FUNCKIND
 {
+
 	
 	case FUNC_VIRTUAL = '0';
 	case FUNC_PUREVIRTUAL = '1';

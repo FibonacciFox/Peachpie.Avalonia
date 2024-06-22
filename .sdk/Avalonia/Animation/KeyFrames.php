@@ -28,6 +28,7 @@ final class KeyFrames extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use KeyFramesOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

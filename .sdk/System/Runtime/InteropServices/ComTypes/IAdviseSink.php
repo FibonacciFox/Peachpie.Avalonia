@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IAdviseSink
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\ComTypes\FORMATETC& &$format
 	 * @param \System\Runtime\InteropServices\ComTypes\STGMEDIUM& &$stgmedium

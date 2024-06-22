@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class BrowsableAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

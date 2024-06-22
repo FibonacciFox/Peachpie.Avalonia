@@ -2,6 +2,7 @@
 namespace System;
 enum CacheType
 {
+
 	
 	case Method = '0';
 	case Constructor = '1';

@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IWindowingPlatform
 {
 
+
 	/**
 	 * @return \Avalonia\Platform\IWindowImpl
 	 */

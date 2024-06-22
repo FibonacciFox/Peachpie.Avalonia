@@ -28,6 +28,7 @@ final class DontNegate_1 extends \System\ValueType implements
 {
 	use DontNegate_1Override;
 
+
 	/**
 	 * @uses DontNegate_1Override::NegateIfNeeded_1 <br>public , args: ($equals)<br>
 	 * @uses DontNegate_1Override::NegateIfNeeded_2 <br>public , args: ($equals)<br>

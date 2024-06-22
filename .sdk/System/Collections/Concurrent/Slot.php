@@ -2,6 +2,7 @@
 namespace System\Collections\Concurrent;
 final class Slot extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \T|object

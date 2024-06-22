@@ -24,6 +24,7 @@ class AutoCompleteSearch extends \System\Object
 {
 	use AutoCompleteSearchOverride;
 
+
 	/**
 	 * @param \Avalonia\Controls\AutoCompleteFilterMode $FilterMode
 	 * @return \Avalonia\Controls\AutoCompleteFilterPredicate_1[System\String]

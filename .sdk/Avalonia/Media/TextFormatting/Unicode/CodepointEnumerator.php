@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 final class CodepointEnumerator extends \System\ValueType
 {
 
+
 	/**
 	 * @param \Avalonia\Media\TextFormatting\Unicode\Codepoint& &$codepoint
 	 * @return \System\Boolean|bool

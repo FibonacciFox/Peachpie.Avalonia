@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Animations;
 class VectorInterpolator extends \System\Object implements
 	\Avalonia\Rendering\Composition\Animations\IInterpolator_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Animations\VectorInterpolator

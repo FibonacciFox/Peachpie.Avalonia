@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface IFloatingPoint_1
 {
 
+
 	/**
 	 * @param \TSelf $x
 	 * @return \TSelf

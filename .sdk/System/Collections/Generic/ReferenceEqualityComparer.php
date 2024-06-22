@@ -4,6 +4,7 @@ final class ReferenceEqualityComparer extends \System\Object implements
 	\System\Collections\Generic\IEqualityComparer_1,
 	\System\Collections\IEqualityComparer
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\ReferenceEqualityComparer

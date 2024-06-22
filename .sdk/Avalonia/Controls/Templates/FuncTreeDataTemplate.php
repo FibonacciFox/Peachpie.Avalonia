@@ -25,6 +25,7 @@ class FuncTreeDataTemplate extends \Avalonia\Controls\Templates\FuncDataTemplate
 {
 	use FuncTreeDataTemplateOverride;
 
+
 	/**
 	 * @param \System\Object|object $item
 	 * @return \Avalonia\Data\InstancedBinding

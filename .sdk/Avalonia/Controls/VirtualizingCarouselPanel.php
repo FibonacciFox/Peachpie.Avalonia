@@ -49,6 +49,7 @@ class VirtualizingCarouselPanel extends \Avalonia\Controls\VirtualizingPanel imp
 	\Avalonia\Controls\Primitives\IScrollable
 {
 	use VirtualizingCarouselPanelOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Generators\ItemContainerGenerator
@@ -368,7 +369,7 @@ class VirtualizingCarouselPanel extends \Avalonia\Controls\VirtualizingPanel imp
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

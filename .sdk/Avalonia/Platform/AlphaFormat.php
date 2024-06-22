@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 enum AlphaFormat
 {
+
 	
 	case Premul = '0';
 	case Unpremul = '1';

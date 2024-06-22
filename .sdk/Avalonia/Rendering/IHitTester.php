@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 interface IHitTester
 {
 
+
 	/**
 	 * @param \Avalonia\Point $p
 	 * @param \Avalonia\Visual $root

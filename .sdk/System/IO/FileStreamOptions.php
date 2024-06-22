@@ -2,6 +2,7 @@
 namespace System\IO;
 final class FileStreamOptions extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\IO\FileMode

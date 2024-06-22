@@ -25,6 +25,7 @@ final class InlineDictionary_2 extends \System\ValueType implements
 	\System\Collections\IEnumerable
 {
 	use InlineDictionary_2Override;
+
 	/**
 	 * @property
 	 * @var \TValue

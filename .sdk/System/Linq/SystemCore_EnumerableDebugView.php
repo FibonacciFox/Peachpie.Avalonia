@@ -2,6 +2,7 @@
 namespace System\Linq;
 final class SystemCore_EnumerableDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Object[]|array

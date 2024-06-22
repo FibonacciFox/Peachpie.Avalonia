@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 class SequenceMarshal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Buffers\ReadOnlySequence_1 $sequence [generic: T]
 	 * @param \System\Buffers\ReadOnlySequenceSegment_1 &$startSegment [generic: T]

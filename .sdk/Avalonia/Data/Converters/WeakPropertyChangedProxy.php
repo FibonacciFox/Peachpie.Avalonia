@@ -17,6 +17,7 @@ class WeakPropertyChangedProxy extends \System\Object
 {
 	use _Override;
 
+
 	/**
 	 * @param \System\ComponentModel\INotifyPropertyChanged $source
 	 * @param \System\ComponentModel\PropertyChangedEventHandler $listener

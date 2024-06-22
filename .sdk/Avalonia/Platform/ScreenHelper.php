@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class ScreenHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\PixelPoint $point
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $screens [generic: Avalonia\Platform\Screen]

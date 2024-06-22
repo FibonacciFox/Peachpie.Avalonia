@@ -19,6 +19,7 @@ final class CustomAttributeNamedArgument extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CustomAttributeNamedArgumentOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberInfo

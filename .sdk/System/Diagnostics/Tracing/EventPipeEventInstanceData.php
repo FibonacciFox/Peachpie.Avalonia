@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventPipeEventInstanceData extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

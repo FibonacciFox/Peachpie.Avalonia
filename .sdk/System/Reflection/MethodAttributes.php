@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MethodAttributes
 {
+
 	
 	case MemberAccessMask = '7';
 	case PrivateScope = '0';

@@ -28,6 +28,7 @@ trait SliderOverride {
 class SpinEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use SliderOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\SpinDirection

@@ -50,6 +50,7 @@ final class FastResourceComparer extends \System\Object implements
 	\System\Collections\Generic\IEqualityComparer_1
 {
 	use FastResourceComparerOverride;
+
 	/**
 	 * @field
 	 * @since readonly

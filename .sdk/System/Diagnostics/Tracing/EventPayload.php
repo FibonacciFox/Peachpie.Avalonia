@@ -47,6 +47,7 @@ final class EventPayload extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use EventPayloadOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\ICollection_1[System\String]

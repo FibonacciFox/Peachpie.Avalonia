@@ -3,6 +3,7 @@ namespace System\Threading;
 final class ManualResetEvent extends \System\Threading\EventWaitHandle implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

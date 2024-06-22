@@ -3,6 +3,7 @@ namespace Avalonia\PropertyStore;
 class UntypedValueUtils extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $targetType

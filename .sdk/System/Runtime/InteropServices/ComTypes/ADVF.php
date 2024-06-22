@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum ADVF
 {
+
 	
 	case ADVF_NODATA = '1';
 	case ADVF_PRIMEFIRST = '2';

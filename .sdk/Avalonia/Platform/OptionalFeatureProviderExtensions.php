@@ -22,6 +22,7 @@ class OptionalFeatureProviderExtensions extends \System\Object
 {
 	use OptionalFeatureProviderExtensionsOverride;
 
+
 	/**
 	 * @uses OptionalFeatureProviderExtensionsOverride::TryGetFeature_1 <br>public , args: ($provider)<br>
 	 * @uses OptionalFeatureProviderExtensionsOverride::TryGetFeature_2 <br>public , args: ($provider, &$rv)<br>

@@ -35,6 +35,7 @@ class NativeMemory extends \System\Object
 {
 	use NativeMemoryOverride;
 
+
 	/**
 	 * @uses NativeMemoryOverride::Alloc_1 <br>public , args: ($elementCount, $elementSize)<br>
 	 * @uses NativeMemoryOverride::Alloc_2 <br>public , args: ($byteCount)<br>

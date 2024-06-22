@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class MethodTable extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt16

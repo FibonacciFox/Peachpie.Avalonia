@@ -21,6 +21,7 @@ final class InsufficientMemoryException extends \System\OutOfMemoryException imp
 	\System\Runtime\Serialization\ISerializable
 {
 	use InsufficientMemoryExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventOpcode
 {
+
 	
 	case Info = '0';
 	case Start = '1';

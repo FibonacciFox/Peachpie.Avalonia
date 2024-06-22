@@ -25,6 +25,7 @@ class PenDevice extends \System\Object implements
 {
 	use PenDeviceOverride;
 
+
 	/**
 	 * @uses PenDeviceOverride::ProcessRawEvent_1 <br>public , args: ($e)<br>
 	 * @uses PenDeviceOverride::ProcessRawEvent_2 <br>private , args: ($e)<br>

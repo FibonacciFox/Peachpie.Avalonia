@@ -2,6 +2,7 @@
 namespace System\IO;
 enum SearchTarget
 {
+
 	
 	case Files = '1';
 	case Directories = '2';

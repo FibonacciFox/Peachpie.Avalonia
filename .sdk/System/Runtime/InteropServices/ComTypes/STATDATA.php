@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class STATDATA extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Runtime\InteropServices\ComTypes\FORMATETC

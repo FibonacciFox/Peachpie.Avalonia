@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 class StringUtils extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Char $c
 	 * @return \System\Boolean|bool

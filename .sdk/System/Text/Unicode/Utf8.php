@@ -3,6 +3,7 @@ namespace System\Text\Unicode;
 class Utf8 extends \System\Object
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $source [generic: System\Char]
 	 * @param \System\Span_1 $destination [generic: System\Byte]

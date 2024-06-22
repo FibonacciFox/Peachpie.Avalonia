@@ -4,6 +4,7 @@ class SignatureHasElementType extends \System\Reflection\SignatureType implement
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

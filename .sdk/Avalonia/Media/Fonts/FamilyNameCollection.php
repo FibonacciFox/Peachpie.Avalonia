@@ -27,6 +27,7 @@ final class FamilyNameCollection extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use FamilyNameCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

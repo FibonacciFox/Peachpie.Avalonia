@@ -5,6 +5,7 @@ final class WhenAllPromise_1 extends \System\Threading\Tasks\Task_1 implements
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @field
 	 * @var \T[]

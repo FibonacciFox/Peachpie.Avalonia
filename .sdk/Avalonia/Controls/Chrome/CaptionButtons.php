@@ -19,6 +19,7 @@ class CaptionButtons extends \Avalonia\Controls\Primitives\TemplatedControl impl
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IBrush
@@ -376,7 +377,7 @@ class CaptionButtons extends \Avalonia\Controls\Primitives\TemplatedControl impl
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

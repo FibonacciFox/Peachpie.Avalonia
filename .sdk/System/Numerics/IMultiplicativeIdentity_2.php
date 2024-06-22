@@ -4,4 +4,5 @@ interface IMultiplicativeIdentity_2
 {
 
 
+
 }

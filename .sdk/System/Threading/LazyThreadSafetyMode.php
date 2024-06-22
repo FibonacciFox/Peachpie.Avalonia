@@ -2,6 +2,7 @@
 namespace System\Threading;
 enum LazyThreadSafetyMode
 {
+
 	
 	case None = '0';
 	case PublicationOnly = '1';

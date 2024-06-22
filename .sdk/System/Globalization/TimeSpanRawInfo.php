@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class TimeSpanRawInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Globalization\TimeSpanParse+TTT

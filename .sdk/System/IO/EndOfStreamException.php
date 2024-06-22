@@ -21,6 +21,7 @@ class EndOfStreamException extends \System\IO\IOException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use EndOfStreamExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

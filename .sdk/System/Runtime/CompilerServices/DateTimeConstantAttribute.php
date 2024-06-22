@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class DateTimeConstantAttribute extends \System\Runtime\CompilerServices\CustomConstantAttribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

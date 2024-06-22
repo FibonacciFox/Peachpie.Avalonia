@@ -4,6 +4,7 @@ final class WeakEventSubscriber_1 extends \System\Object implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 
+
 	/**
 	 * @param \System\Action_3 $value [generic: System\Object,Avalonia\Utilities\WeakEvent,TEventArgs]
 	 * @return \System\Void|void

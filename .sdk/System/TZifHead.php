@@ -2,6 +2,7 @@
 namespace System;
 final class TZifHead extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

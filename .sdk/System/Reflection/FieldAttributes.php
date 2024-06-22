@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum FieldAttributes
 {
+
 	
 	case FieldAccessMask = '7';
 	case PrivateScope = '0';

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class SaveFileDialog extends \Avalonia\Controls\FileDialog
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum CALLCONV
 {
+
 	
 	case CC_CDECL = '1';
 	case CC_MSCPASCAL = '2';

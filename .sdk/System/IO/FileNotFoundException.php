@@ -32,6 +32,7 @@ class FileNotFoundException extends \System\IO\IOException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use FileNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

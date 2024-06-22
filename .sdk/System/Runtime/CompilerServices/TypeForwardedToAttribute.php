@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class TypeForwardedToAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

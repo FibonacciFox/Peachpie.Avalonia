@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class FileDialog extends \Avalonia\Controls\FileSystemDialog
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\List_1[Avalonia\Controls\FileDialogFilter]

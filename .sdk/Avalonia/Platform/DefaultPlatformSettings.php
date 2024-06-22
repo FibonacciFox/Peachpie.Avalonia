@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class DefaultPlatformSettings extends \System\Object implements
 	\Avalonia\Platform\IPlatformSettings
 {
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan

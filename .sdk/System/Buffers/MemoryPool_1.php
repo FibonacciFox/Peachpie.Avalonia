@@ -20,6 +20,7 @@ class MemoryPool_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use MemoryPool_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Buffers\MemoryPool_1[T]

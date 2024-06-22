@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class TextFormatterImpl extends \Avalonia\Media\TextFormatting\TextFormatter
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $textRuns [generic: Avalonia\Media\TextFormatting\TextRun]
 	 * @param \System\Int32|int $length

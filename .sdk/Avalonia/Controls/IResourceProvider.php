@@ -7,6 +7,7 @@ namespace Avalonia\Controls;
 interface IResourceProvider
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\IResourceHost $owner
 	 * @return \System\Void|void

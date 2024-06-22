@@ -3,6 +3,7 @@ namespace System;
 interface ICustomFormatter
 {
 
+
 	/**
 	 * @param \System\String|string $format
 	 * @param \System\Object|object $arg

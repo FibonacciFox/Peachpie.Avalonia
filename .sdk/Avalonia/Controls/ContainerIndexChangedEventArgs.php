@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class ContainerIndexChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Control

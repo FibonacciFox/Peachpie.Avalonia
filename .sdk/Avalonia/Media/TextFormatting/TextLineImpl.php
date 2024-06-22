@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 class TextLineImpl extends \Avalonia\Media\TextFormatting\TextLine implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\TextFormatting\IndexedTextRun]

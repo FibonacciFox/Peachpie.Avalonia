@@ -32,6 +32,7 @@ class ArgumentOutOfRangeException extends \System\ArgumentException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ArgumentOutOfRangeExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

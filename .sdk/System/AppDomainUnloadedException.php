@@ -21,6 +21,7 @@ class AppDomainUnloadedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AppDomainUnloadedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

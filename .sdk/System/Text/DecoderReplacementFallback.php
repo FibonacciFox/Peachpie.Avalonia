@@ -15,6 +15,7 @@ trait DecoderNLSOverride {
 final class DecoderReplacementFallback extends \System\Text\DecoderFallback
 {
 	use DecoderNLSOverride;
+
 	/**
 	 * @field
 	 * @since readonly

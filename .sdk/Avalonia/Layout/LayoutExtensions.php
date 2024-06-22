@@ -3,6 +3,7 @@ namespace Avalonia\Layout;
 class LayoutExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Rect $rect
 	 * @param \Avalonia\Rect $constraint

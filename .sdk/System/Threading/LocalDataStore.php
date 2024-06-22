@@ -3,6 +3,7 @@ namespace System\Threading;
 class LocalDataStore extends \System\Object
 {
 
+
 	/**
 	 * @return \System\LocalDataStoreSlot
 	 */

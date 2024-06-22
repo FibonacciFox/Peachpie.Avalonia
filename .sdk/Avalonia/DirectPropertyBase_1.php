@@ -23,6 +23,7 @@ class DirectPropertyBase_1 extends \Avalonia\AvaloniaProperty_1 implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	use DirectPropertyBase_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Type
@@ -30,7 +31,7 @@ class DirectPropertyBase_1 extends \Avalonia\AvaloniaProperty_1 implements
 	 */
 	public $Owner;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]|\System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs]
 	 */
 	public $Changed;

@@ -4,6 +4,7 @@ class Easing extends \System\Object implements
 	\Avalonia\Animation\Easings\IEasing
 {
 
+
 	/**
 	 * @param \System\Double|double $progress
 	 * @return \System\Double|double

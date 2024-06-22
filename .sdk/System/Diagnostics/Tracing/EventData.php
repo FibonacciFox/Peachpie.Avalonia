@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventData extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt64

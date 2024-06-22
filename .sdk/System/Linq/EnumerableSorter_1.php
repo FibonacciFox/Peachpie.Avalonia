@@ -24,6 +24,7 @@ trait EnumerableSorter_1Override {
 class EnumerableSorter_1 extends \System\Object
 {
 	use EnumerableSorter_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -2,6 +2,7 @@
 namespace System\Threading;
 enum StateOrTransition
 {
+
 	
 	case Warmup = '0';
 	case Initializing = '1';

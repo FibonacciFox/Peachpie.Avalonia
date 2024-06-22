@@ -2,6 +2,7 @@
 namespace System\Text;
 enum NormalizationForm
 {
+
 	
 	case FormC = '1';
 	case FormD = '2';

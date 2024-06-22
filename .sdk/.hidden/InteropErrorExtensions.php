@@ -3,6 +3,7 @@
 class InteropErrorExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Interop+Error $error
 	 * @return \Interop+ErrorInfo

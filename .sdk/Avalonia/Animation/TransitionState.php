@@ -2,6 +2,7 @@
 namespace Avalonia\Animation;
 class TransitionState extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\IDisposable

@@ -36,6 +36,7 @@ class ContentPresenter extends \Avalonia\Controls\Control implements
 	\Avalonia\Styling\ISetterValue
 {
 	use ContentPresenterOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -586,7 +587,7 @@ class ContentPresenter extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

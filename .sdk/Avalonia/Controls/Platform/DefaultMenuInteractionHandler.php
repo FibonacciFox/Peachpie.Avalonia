@@ -33,6 +33,7 @@ class DefaultMenuInteractionHandler extends \System\Object implements
 	\Avalonia\Controls\Platform\IMenuInteractionHandler
 {
 	use DefaultMenuInteractionHandlerOverride;
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan

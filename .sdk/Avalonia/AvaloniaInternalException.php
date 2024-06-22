@@ -3,6 +3,7 @@ namespace Avalonia;
 class AvaloniaInternalException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum TimeSpanStandardStyles
 {
+
 	
 	case None = '0';
 	case Invariant = '1';

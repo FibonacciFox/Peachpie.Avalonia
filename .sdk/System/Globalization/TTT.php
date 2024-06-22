@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum TTT
 {
+
 	
 	case None = '0';
 	case End = '1';

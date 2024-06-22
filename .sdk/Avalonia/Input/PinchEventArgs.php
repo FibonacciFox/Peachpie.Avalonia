@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PinchEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

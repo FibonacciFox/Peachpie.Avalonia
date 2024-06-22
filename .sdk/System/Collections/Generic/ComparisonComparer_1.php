@@ -5,6 +5,7 @@ final class ComparisonComparer_1 extends \System\Collections\Generic\Comparer_1 
 	\System\Collections\Generic\IComparer_1
 {
 
+
 	/**
 	 * @param \System\Comparison_1 $comparison [generic: T]
 	 */

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Expressions;
 interface IExpressionParameterCollection
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionVariant

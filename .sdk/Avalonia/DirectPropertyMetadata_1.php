@@ -19,6 +19,7 @@ class DirectPropertyMetadata_1 extends \Avalonia\AvaloniaPropertyMetadata implem
 	\Avalonia\IDirectPropertyMetadata
 {
 	use DirectPropertyMetadata_1Override;
+
 	/**
 	 * @property
 	 * @var \TValue

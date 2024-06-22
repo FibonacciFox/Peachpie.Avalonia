@@ -4,4 +4,5 @@ final class Void extends \System\ValueType
 {
 
 
+
 }

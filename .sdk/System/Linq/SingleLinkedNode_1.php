@@ -2,6 +2,7 @@
 namespace System\Linq;
 final class SingleLinkedNode_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \TSource

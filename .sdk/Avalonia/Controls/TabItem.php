@@ -23,6 +23,7 @@ class TabItem extends \Avalonia\Controls\Primitives\HeaderedContentControl imple
 	\Avalonia\Controls\IHeadered,
 	\Avalonia\Controls\ISelectable
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -444,7 +445,7 @@ class TabItem extends \Avalonia\Controls\Primitives\HeaderedContentControl imple
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

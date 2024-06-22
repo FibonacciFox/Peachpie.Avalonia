@@ -29,6 +29,7 @@ class WeakEvent extends \System\Object
 {
 	use WeakEventOverride;
 
+
 	/**
 	 * @uses WeakEventOverride::Register_1 <br>public , args: ($subscribe, $unsubscribe)<br>
 	 * @uses WeakEventOverride::Register_2 <br>public , args: ($subscribe)<br>

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class ServerCompositionSurface extends \Avalonia\Rendering\Composition\Server\ServerObject implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\IRef_1[Avalonia\Platform\IBitmapImpl]

@@ -46,6 +46,7 @@ trait LargeArrayBuilder_1Override {
 final class LargeArrayBuilder_1 extends \System\ValueType
 {
 	use LargeArrayBuilder_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

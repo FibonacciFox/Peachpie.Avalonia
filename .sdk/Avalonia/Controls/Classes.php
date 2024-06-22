@@ -45,6 +45,7 @@ class Classes extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Controls\IPseudoClasses
 {
 	use ClassesOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

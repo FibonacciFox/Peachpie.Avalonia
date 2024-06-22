@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 class LineBreakPairTable extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Byte

@@ -304,6 +304,7 @@ class ModuleBuilder extends \System\Reflection\Module implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ModuleBuilderOverride;
+
 	/**
 	 * @field
 	 * @since readonly

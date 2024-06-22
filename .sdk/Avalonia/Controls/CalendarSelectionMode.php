@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum CalendarSelectionMode
 {
+
 	
 	case SingleDate = '0';
 	case SingleRange = '1';

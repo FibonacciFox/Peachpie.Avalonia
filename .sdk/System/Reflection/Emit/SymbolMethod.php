@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class SymbolMethod extends \System\Reflection\MethodInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

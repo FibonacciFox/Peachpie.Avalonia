@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class Gestures extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

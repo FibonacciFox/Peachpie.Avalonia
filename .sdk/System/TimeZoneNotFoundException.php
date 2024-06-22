@@ -21,6 +21,7 @@ class TimeZoneNotFoundException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TimeZoneNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

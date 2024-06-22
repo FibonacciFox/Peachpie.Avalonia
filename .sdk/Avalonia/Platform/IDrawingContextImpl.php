@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IDrawingContextImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Media\Color $color
 	 * @return \System\Void|void

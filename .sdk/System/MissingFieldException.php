@@ -26,6 +26,7 @@ class MissingFieldException extends \System\MissingMemberException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use MissingFieldExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

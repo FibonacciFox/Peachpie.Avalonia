@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class ThrowHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Object|object $argument
 	 * @param \System\String|string $paramName

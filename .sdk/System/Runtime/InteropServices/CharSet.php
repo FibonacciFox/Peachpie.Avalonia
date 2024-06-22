@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum CharSet
 {
+
 	
 	case None = '1';
 	case Ansi = '2';

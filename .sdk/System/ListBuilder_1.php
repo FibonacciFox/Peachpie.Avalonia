@@ -2,6 +2,7 @@
 namespace System;
 final class ListBuilder_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \T|object

@@ -32,6 +32,7 @@ trait ArmBaseOverride {
 class ArmBase extends \System\Object
 {
 	use ArmBaseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

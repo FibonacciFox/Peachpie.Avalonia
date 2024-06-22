@@ -4,6 +4,7 @@ class InternalSelectionModel extends \Avalonia\Controls\Selection\SelectionModel
 	\Avalonia\Controls\Selection\ISelectionModel,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\IList

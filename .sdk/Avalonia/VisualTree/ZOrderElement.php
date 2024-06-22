@@ -3,6 +3,7 @@ namespace Avalonia\VisualTree;
 class ZOrderElement extends \System\Object implements
 	\System\IComparable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Visual

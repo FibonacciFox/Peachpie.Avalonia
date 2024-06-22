@@ -2,6 +2,7 @@
 namespace System\Runtime\Serialization;
 enum StreamingContextStates
 {
+
 	
 	case CrossProcess = '1';
 	case CrossMachine = '2';

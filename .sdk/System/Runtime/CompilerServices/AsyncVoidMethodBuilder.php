@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 final class AsyncVoidMethodBuilder extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Runtime\CompilerServices\AsyncVoidMethodBuilder
 	 */

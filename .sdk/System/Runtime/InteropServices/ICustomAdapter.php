@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 interface ICustomAdapter
 {
 
+
 	/**
 	 * @return \System\Object|object
 	 */

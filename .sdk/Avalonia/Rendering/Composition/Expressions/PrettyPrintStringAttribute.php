@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 final class PrettyPrintStringAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

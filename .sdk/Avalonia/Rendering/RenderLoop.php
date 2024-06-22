@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class RenderLoop extends \System\Object implements
 	\Avalonia\Rendering\IRenderLoop
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\IRenderLoop

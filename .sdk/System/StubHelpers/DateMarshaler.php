@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class DateMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\DateTime $managedDate
 	 * @return \System\Double|double

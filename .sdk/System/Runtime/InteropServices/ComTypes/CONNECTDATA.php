@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class CONNECTDATA extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

@@ -23,6 +23,7 @@ class CompositionPropertySet extends \Avalonia\Rendering\Composition\Composition
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
 	use CompositionPropertySetOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

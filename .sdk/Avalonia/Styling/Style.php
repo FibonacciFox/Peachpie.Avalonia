@@ -20,6 +20,7 @@ class Style extends \Avalonia\Styling\StyleBase implements
 	\Avalonia\Controls\IResourceProvider
 {
 	use StyleOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Styling\Selector
@@ -61,7 +62,7 @@ class Style extends \Avalonia\Styling\StyleBase implements
 	 */
 	public $Animations;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

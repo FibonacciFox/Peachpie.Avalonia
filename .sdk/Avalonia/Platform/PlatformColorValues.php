@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 class PlatformColorValues extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\PlatformThemeVariant

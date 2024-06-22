@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class CopyPosition extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\CopyPosition

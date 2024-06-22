@@ -44,6 +44,7 @@ final class AdjustmentRule extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use AdjustmentRuleOverride;
+
 	/**
 	 * @property
 	 * @var \System\DateTime

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class CalendarDateChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\DateTime]

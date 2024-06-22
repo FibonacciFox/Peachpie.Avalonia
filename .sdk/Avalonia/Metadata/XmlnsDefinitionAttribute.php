@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class XmlnsDefinitionAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

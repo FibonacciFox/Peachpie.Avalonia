@@ -3,6 +3,7 @@ namespace System\Reflection;
 class RuntimeReflectionExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Type $type
 	 * @return \System\Collections\Generic\IEnumerable_1[System\Reflection\FieldInfo]

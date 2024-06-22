@@ -2,6 +2,7 @@
 namespace System\Collections;
 class HashHelpers extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\CompilerServices\ConditionalWeakTable_2[System\Object,System\Runtime\Serialization\SerializationInfo]

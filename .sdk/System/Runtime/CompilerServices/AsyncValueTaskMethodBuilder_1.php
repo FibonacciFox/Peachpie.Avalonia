@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class AsyncValueTaskMethodBuilder_1 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

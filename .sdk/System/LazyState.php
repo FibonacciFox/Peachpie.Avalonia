@@ -2,6 +2,7 @@
 namespace System;
 enum LazyState
 {
+
 	
 	case NoneViaConstructor = '0';
 	case NoneViaFactory = '1';

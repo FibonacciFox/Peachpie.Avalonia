@@ -47,6 +47,7 @@ class WindowBase extends \Avalonia\Controls\TopLevel implements
 	\Avalonia\Input\TextInput\ITextInputMethodRoot
 {
 	use WindowBaseOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -71,7 +72,7 @@ class WindowBase extends \Avalonia\Controls\TopLevel implements
 	 */
 	protected $HitTesterOverride;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Platform\IWindowBaseImpl|\Avalonia\Platform\ITopLevelImpl
 	 */
 	public $PlatformImpl;
@@ -558,7 +559,7 @@ class WindowBase extends \Avalonia\Controls\TopLevel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -3,6 +3,7 @@ namespace System\Threading;
 final class LowLevelSpinWaiter extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\Func_2 $condition [generic: System\Object,System\Boolean]
 	 * @param \System\Object|object $state

@@ -37,6 +37,7 @@ final class KeyCollection extends \System\Object implements
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
 	use KeyCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

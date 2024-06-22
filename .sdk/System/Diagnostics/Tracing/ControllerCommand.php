@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum ControllerCommand
 {
+
 	
 	case Update = '0';
 	case SendManifest = '-1';

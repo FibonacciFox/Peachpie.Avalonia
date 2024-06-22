@@ -18,6 +18,7 @@ trait ContractOverride {
 final class MemberNotNullWhenAttribute extends \System\Attribute
 {
 	use ContractOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

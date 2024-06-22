@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ObjectiveC;
 class ObjectiveCMarshal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\IntPtr $beginEndCallback
 	 * @param \System\IntPtr $isReferencedCallback

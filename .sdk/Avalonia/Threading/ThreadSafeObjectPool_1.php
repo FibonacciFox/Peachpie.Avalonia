@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 class ThreadSafeObjectPool_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\ThreadSafeObjectPool_1[T]

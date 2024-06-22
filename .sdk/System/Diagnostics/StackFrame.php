@@ -35,6 +35,7 @@ trait DelegateEnumeratorOverride {
 class StackFrame extends \System\Object
 {
 	use DelegateEnumeratorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

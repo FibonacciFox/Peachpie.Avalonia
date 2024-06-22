@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class TopLevelInfo extends \System\Object implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Compositor

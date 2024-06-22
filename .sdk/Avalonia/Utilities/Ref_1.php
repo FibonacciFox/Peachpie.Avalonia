@@ -4,6 +4,7 @@ class Ref_1 extends \System\Runtime\ConstrainedExecution\CriticalFinalizerObject
 	\Avalonia\Utilities\IRef_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \T|object

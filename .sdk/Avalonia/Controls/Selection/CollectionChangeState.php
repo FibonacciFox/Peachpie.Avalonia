@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Selection;
 class CollectionChangeState extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

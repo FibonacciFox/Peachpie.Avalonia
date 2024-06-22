@@ -28,6 +28,7 @@ final class DrawingCollection extends \Avalonia\Collections\AvaloniaList_1 imple
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use DrawingCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

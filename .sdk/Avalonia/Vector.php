@@ -80,6 +80,7 @@ final class Vector extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use VectorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

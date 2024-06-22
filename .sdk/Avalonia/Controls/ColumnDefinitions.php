@@ -28,6 +28,7 @@ class ColumnDefinitions extends \Avalonia\Controls\DefinitionList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use ColumnDefinitionsOverride;
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

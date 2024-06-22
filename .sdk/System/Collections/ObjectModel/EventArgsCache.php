@@ -2,6 +2,7 @@
 namespace System\Collections\ObjectModel;
 class EventArgsCache extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

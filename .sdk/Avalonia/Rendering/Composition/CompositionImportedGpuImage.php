@@ -5,6 +5,7 @@ class CompositionImportedGpuImage extends \Avalonia\Rendering\Composition\Compos
 	\System\IAsyncDisposable,
 	\Avalonia\Rendering\Composition\ICompositionImportedGpuImage
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IPlatformRenderInterfaceImportedImage

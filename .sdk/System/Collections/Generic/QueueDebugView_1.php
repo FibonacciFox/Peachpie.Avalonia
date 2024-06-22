@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class QueueDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T[]

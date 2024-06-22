@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics\X86;
 class X86Base extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

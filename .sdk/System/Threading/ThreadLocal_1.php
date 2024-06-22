@@ -36,6 +36,7 @@ class ThreadLocal_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use ThreadLocal_1Override;
+
 	/**
 	 * @property
 	 * @var \T|object

@@ -22,6 +22,7 @@ class DateTimePickerPanel extends \Avalonia\Controls\Panel implements
 	\Avalonia\Controls\Primitives\ILogicalScrollable,
 	\Avalonia\Controls\Primitives\IScrollable
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -444,7 +445,7 @@ class DateTimePickerPanel extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

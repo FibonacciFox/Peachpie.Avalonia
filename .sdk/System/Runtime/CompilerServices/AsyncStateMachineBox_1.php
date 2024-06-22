@@ -22,6 +22,7 @@ class AsyncStateMachineBox_1 extends \System\Threading\Tasks\Task_1 implements
 	\System\Runtime\CompilerServices\IAsyncStateMachineBox
 {
 	use AsyncStateMachineBox_1Override;
+
 	/**
 	 * @field
 	 * @var \TStateMachine

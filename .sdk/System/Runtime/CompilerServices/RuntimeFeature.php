@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 class RuntimeFeature extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

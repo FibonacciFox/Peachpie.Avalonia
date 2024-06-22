@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives\PopupPositioning;
 class ManagedPopupPositionerScreenInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

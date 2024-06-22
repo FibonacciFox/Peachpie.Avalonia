@@ -3,6 +3,7 @@ namespace Avalonia\Styling;
 class PropertyEqualsSelector extends \Avalonia\Styling\Selector
 {
 
+
 	/**
 	 * @param \System\Type $propertyType
 	 * @param \System\Object|object $propertyValue

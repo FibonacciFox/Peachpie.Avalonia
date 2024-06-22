@@ -18,6 +18,7 @@ final class CustAttr extends \System\Object
 {
 	use TypeBuilderOverride;
 
+
 	/**
 	 * @param \System\Reflection\Emit\ModuleBuilder $module
 	 * @param \System\Int32|int $token

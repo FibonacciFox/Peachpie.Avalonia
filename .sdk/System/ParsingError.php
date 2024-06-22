@@ -2,6 +2,7 @@
 namespace System;
 enum ParsingError
 {
+
 	
 	case None = '0';
 	case BadFormat = '1';

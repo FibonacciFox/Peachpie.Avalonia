@@ -3,6 +3,7 @@ namespace System\Threading;
 final class _ThreadPoolWaitOrTimerCallback extends \System\Object
 {
 
+
 	private static function WaitOrTimerCallback_Context_t($state){}
 	private static function WaitOrTimerCallback_Context_f($state){}
 	private static function WaitOrTimerCallback_Context($state, $timedOut){}

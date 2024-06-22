@@ -2,6 +2,7 @@
 namespace System\Collections;
 final class Bucket extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

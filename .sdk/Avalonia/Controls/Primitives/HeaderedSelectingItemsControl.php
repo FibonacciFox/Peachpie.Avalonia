@@ -44,6 +44,7 @@ class HeaderedSelectingItemsControl extends \Avalonia\Controls\Primitives\Select
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
 	use HeaderedSelectingItemsControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -539,7 +540,7 @@ class HeaderedSelectingItemsControl extends \Avalonia\Controls\Primitives\Select
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -21,6 +21,7 @@ class Sink_1 extends \System\Object implements
 {
 	use Sink_1Override;
 
+
 	/**
 	 * @uses Sink_1Override::Dispose_1 <br>public , args: ()<br>
 	 * @uses Sink_1Override::Dispose_2 <br>protected , args: ($disposing)<br>

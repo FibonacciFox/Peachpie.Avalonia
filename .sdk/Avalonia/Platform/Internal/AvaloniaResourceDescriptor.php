@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Internal;
 class AvaloniaResourceDescriptor extends \System\Object implements
 	\Avalonia\Platform\Internal\IAssetDescriptor
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Assembly

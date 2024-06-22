@@ -34,6 +34,7 @@ trait DesignOverride {
 class Design extends \System\Object
 {
 	use DesignOverride;
+
 	/**
 	 * @field
 	 * @since readonly

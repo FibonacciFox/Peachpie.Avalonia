@@ -16,6 +16,7 @@ trait Span_1Override {
 final class SpanDebugView_1 extends \System\Object
 {
 	use Span_1Override;
+
 	/**
 	 * @property
 	 * @var \T[]

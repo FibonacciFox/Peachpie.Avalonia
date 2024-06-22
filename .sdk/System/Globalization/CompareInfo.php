@@ -484,6 +484,7 @@ final class CompareInfo extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use CompareInfoOverride;
+
 	/**
 	 * @field
 	 * @since readonly

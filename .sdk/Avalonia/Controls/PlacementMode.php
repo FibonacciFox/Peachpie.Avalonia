@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum PlacementMode
 {
+
 	
 	case Pointer = '0';
 	case Bottom = '1';

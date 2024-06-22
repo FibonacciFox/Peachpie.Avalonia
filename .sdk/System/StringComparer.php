@@ -40,6 +40,7 @@ class StringComparer extends \System\Object implements
 	\System\Collections\Generic\IEqualityComparer_1
 {
 	use StringComparerOverride;
+
 	/**
 	 * @property
 	 * @var \System\StringComparer

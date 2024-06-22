@@ -3,6 +3,7 @@ namespace Internal\Runtime\InteropServices;
 interface IClassFactory
 {
 
+
 	/**
 	 * @param \System\Object|object $pUnkOuter
 	 * @param \System\Guid& $riid

@@ -3,6 +3,7 @@ namespace Internal\Runtime\InteropServices;
 class InMemoryAssemblyLoader extends \System\Object
 {
 
+
 	/**
 	 * @param \System\IntPtr $moduleHandle
 	 * @param \System\IntPtr $assemblyPath

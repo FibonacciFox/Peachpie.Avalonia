@@ -2,6 +2,7 @@
 namespace System\Runtime\Serialization;
 final class SafeSerializationEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Serialization\StreamingContext

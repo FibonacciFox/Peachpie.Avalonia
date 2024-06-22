@@ -5,6 +5,7 @@ final class ByteEqualityComparer extends \System\Collections\Generic\EqualityCom
 	\System\Collections\Generic\IEqualityComparer_1
 {
 
+
 	/**
 	 */
 	public function __construct(){}

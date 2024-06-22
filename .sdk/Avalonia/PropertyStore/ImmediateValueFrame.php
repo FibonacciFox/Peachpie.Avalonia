@@ -29,6 +29,7 @@ trait ImmediateValueFrameOverride {
 final class ImmediateValueFrame extends \Avalonia\PropertyStore\ValueFrame
 {
 	use ImmediateValueFrameOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

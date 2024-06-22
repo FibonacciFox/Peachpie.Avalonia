@@ -21,6 +21,7 @@ class ObservableStreamPlugin extends \System\Object implements
 {
 	use ObservableStreamPluginOverride;
 
+
 	/**
 	 * @param \System\WeakReference_1 $reference [generic: System\Object]
 	 * @return \System\Boolean|bool

@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class ShapedTextRun extends \Avalonia\Media\TextFormatting\DrawableTextRun implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

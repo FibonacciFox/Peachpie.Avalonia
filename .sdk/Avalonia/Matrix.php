@@ -56,6 +56,7 @@ final class Matrix extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use MatrixOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Matrix

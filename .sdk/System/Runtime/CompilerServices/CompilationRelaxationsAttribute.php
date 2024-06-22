@@ -16,6 +16,7 @@ trait AsyncStateMachineBox_1Override {
 class CompilationRelaxationsAttribute extends \System\Attribute
 {
 	use AsyncStateMachineBox_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

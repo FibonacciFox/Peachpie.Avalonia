@@ -36,6 +36,7 @@ trait WriteIfInterpolatedStringHandlerOverride {
 final class DebuggerVisualizerAttribute extends \System\Attribute
 {
 	use WriteIfInterpolatedStringHandlerOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

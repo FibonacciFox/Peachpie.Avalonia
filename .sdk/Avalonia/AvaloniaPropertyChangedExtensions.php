@@ -3,6 +3,7 @@ namespace Avalonia;
 class AvaloniaPropertyChangedExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\AvaloniaPropertyChangedEventArgs $e
 	 * @return \T|object

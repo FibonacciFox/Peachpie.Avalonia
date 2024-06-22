@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextLineBreak extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\TextEndOfLine

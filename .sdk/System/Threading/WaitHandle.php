@@ -196,6 +196,7 @@ class WaitHandle extends \System\MarshalByRefObject implements
 	\System\IDisposable
 {
 	use WaitHandleOverride;
+
 	/**
 	 * @field
 	 * @since readonly

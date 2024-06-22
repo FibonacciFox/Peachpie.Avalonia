@@ -19,6 +19,7 @@ class TimePicker extends \Avalonia\Controls\Primitives\TemplatedControl implemen
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -409,7 +410,7 @@ class TimePicker extends \Avalonia\Controls\Primitives\TemplatedControl implemen
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

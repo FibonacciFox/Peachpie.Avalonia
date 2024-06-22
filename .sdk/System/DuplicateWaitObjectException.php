@@ -26,6 +26,7 @@ class DuplicateWaitObjectException extends \System\ArgumentException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DuplicateWaitObjectExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -30,8 +30,9 @@ class ProgressBarAutomationPeer extends \Avalonia\Automation\Peers\RangeBaseAuto
 	\Avalonia\Automation\Provider\IRangeValueProvider
 {
 	use ProgressBarAutomationPeerOverride;
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Primitives\RangeBase|\Avalonia\Controls\Control
 	 */
 	public $Owner;

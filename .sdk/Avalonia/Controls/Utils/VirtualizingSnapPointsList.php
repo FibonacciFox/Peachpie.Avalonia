@@ -22,6 +22,7 @@ class VirtualizingSnapPointsList extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use VirtualizingSnapPointsListOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

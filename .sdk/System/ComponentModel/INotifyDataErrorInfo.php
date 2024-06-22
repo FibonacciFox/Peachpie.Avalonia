@@ -7,6 +7,7 @@ namespace System\ComponentModel;
 interface INotifyDataErrorInfo
 {
 
+
 	/**
 	 * @param \System\String|string $propertyName
 	 * @return \System\Collections\IEnumerable

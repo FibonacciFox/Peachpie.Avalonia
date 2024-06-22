@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class ManifestEnvelope extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\ManifestEnvelope+ManifestFormats

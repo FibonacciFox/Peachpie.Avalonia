@@ -4,6 +4,7 @@ class ClassHandlerObserver_1 extends \System\Object implements
 	\System\IObserver_1
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

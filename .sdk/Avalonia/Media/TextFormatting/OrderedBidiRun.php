@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class OrderedBidiRun extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

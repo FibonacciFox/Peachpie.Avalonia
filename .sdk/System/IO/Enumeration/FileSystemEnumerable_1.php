@@ -20,6 +20,7 @@ class FileSystemEnumerable_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use FileSystemEnumerable_1Override;
+
 	/**
 	 * @property
 	 * @var \System\IO\Enumeration\FileSystemEnumerable_1+FindPredicate[TResult]

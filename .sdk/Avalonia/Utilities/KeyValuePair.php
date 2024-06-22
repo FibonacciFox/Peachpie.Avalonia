@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class KeyValuePair extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \TKey

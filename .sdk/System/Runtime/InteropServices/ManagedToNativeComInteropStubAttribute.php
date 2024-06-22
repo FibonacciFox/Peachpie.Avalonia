@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ManagedToNativeComInteropStubAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

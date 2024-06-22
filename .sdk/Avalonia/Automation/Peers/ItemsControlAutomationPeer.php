@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class ItemsControlAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IScrollProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\ItemsControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

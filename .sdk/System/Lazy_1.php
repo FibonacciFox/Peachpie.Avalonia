@@ -37,6 +37,7 @@ trait LazyHelperOverride {
 class Lazy_1 extends \System\Object
 {
 	use LazyHelperOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

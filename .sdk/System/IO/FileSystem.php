@@ -196,6 +196,7 @@ class FileSystem extends \System\Object
 {
 	use FileSystemOverride;
 
+
 	/**
 	 * @param \System\String|string $path
 	 * @param \System\String|string $argName

@@ -21,6 +21,7 @@ final class SingleProducerSingleConsumerQueue_1 extends \System\Object implement
 	\System\Collections\IEnumerable
 {
 	use SingleProducerSingleConsumerQueue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

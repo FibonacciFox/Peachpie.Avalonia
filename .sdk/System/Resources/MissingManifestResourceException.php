@@ -21,6 +21,7 @@ class MissingManifestResourceException extends \System\SystemException implement
 	\System\Runtime\Serialization\ISerializable
 {
 	use MissingManifestResourceExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

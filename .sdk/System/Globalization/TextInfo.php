@@ -67,6 +67,7 @@ final class TextInfo extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use TextInfoOverride;
+
 	/**
 	 * @field
 	 * @since readonly

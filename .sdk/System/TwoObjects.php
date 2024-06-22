@@ -2,6 +2,7 @@
 namespace System;
 final class TwoObjects extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

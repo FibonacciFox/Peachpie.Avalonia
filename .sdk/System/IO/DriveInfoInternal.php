@@ -3,6 +3,7 @@ namespace System\IO;
 class DriveInfoInternal extends \System\Object
 {
 
+
 	/**
 	 * @return \System\String[]|array
 	 */

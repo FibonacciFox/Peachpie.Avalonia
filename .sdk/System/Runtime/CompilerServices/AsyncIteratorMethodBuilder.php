@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 final class AsyncIteratorMethodBuilder extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Runtime\CompilerServices\AsyncIteratorMethodBuilder
 	 */

@@ -53,6 +53,7 @@ class EventProvider extends \System\Object implements
 	\System\IDisposable
 {
 	use EventProviderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\IEventProvider

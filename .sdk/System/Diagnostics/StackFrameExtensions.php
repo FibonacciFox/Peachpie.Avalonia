@@ -3,6 +3,7 @@ namespace System\Diagnostics;
 class StackFrameExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Diagnostics\StackFrame $stackFrame
 	 * @return \System\Boolean|bool

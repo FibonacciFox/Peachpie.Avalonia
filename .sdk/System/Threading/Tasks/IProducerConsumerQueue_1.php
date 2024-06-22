@@ -3,6 +3,7 @@ namespace System\Threading\Tasks;
 interface IProducerConsumerQueue_1
 {
 
+
 	/**
 	 * @param \T|object $item
 	 * @return \System\Void|void

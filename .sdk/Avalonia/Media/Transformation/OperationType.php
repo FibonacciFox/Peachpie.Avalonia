@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Transformation;
 enum OperationType
 {
+
 	
 	case Translate = '0';
 	case Rotate = '1';

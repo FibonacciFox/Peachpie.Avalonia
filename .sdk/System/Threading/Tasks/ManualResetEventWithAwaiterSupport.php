@@ -3,6 +3,7 @@ namespace System\Threading\Tasks;
 final class ManualResetEventWithAwaiterSupport extends \System\Threading\ManualResetEventSlim implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\WaitHandle

@@ -21,6 +21,7 @@ final class Sha1ForNonSecretPurposes extends \System\ValueType
 {
 	use Sha1ForNonSecretPurposesOverride;
 
+
 	/**
 	 * @return \System\Void|void
 	 */

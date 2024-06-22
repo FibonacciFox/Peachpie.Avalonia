@@ -3,6 +3,7 @@ namespace System\Reflection;
 class AssemblyNameFormatter extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @param \System\Version $version

@@ -51,6 +51,7 @@ class TransitionBase extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Animation\ITransition
 {
 	use TransitionBaseOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -96,7 +97,7 @@ class TransitionBase extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Property;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

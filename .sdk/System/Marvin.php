@@ -24,6 +24,7 @@ trait MarvinOverride {
 class Marvin extends \System\Object
 {
 	use MarvinOverride;
+
 	/**
 	 * @property
 	 * @var \System\UInt64

@@ -2,6 +2,7 @@
 namespace System\IO;
 class EnumerationOptions extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

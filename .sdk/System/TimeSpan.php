@@ -279,6 +279,7 @@ final class TimeSpan extends \System\ValueType implements
 	\System\IParsable_1
 {
 	use TimeSpanOverride;
+
 	/**
 	 * @field
 	 * @since readonly

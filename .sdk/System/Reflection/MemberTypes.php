@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MemberTypes
 {
+
 	
 	case Constructor = '1';
 	case Event = '2';

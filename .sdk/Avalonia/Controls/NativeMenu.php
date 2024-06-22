@@ -23,6 +23,7 @@ class NativeMenu extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\INativeMenuExporterEventsImplBridge
 {
 	use NativeMenuOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -53,7 +54,7 @@ class NativeMenu extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Parent;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -4,6 +4,7 @@ final class FromAsyncTrimPromise_1 extends \System\Threading\Tasks\Task_1 implem
 	\System\IAsyncResult,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

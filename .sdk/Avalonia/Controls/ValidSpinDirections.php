@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum ValidSpinDirections
 {
+
 	
 	case None = '0';
 	case Increase = '1';

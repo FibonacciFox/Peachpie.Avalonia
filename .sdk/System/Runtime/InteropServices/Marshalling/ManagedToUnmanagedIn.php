@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\Marshalling;
 final class ManagedToUnmanagedIn extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

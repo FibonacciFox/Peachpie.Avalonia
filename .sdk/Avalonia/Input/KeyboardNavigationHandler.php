@@ -4,6 +4,7 @@ final class KeyboardNavigationHandler extends \System\Object implements
 	\Avalonia\Input\IKeyboardNavigationHandler
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputRoot $owner
 	 * @return \System\Void|void

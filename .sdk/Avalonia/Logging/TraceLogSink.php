@@ -47,6 +47,7 @@ class TraceLogSink extends \System\Object implements
 {
 	use TraceLogSinkOverride;
 
+
 	/**
 	 * @param \Avalonia\Logging\LogEventLevel $level
 	 * @param \System\String|string $area

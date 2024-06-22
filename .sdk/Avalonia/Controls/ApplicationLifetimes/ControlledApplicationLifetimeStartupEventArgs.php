@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\ApplicationLifetimes;
 class ControlledApplicationLifetimeStartupEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

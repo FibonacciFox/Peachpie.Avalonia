@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class RuntimeExceptionHandlingClause extends \System\Reflection\ExceptionHandlingClause
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\ExceptionHandlingClauseOptions

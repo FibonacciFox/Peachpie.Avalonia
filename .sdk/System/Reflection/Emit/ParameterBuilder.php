@@ -21,6 +21,7 @@ trait ParameterBuilderOverride {
 class ParameterBuilder extends \System\Object
 {
 	use ParameterBuilderOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

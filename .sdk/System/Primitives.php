@@ -2,6 +2,7 @@
 namespace System;
 enum Primitives
 {
+
 	
 	case Boolean = '8';
 	case Char = '16';

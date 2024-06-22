@@ -2,6 +2,7 @@
 namespace System;
 final class Empty extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

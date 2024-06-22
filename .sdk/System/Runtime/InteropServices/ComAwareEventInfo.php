@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 class ComAwareEventInfo extends \System\Reflection\EventInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\EventAttributes

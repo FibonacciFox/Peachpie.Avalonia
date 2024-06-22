@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class Impl extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

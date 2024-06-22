@@ -165,6 +165,7 @@ final class Vector_1 extends \System\ValueType implements
 	\System\IFormattable
 {
 	use Vector_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

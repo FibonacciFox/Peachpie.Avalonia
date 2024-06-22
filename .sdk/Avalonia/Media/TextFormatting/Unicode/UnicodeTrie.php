@@ -23,6 +23,7 @@ class UnicodeTrie extends \System\Object
 {
 	use LineBreakOverride;
 
+
 	/**
 	 * @param \System\IO\Stream $stream
 	 * @return \System\Void|void

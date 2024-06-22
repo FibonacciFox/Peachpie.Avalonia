@@ -17,6 +17,7 @@ trait _Override {
 final class OldNewValue extends \System\ValueType
 {
 	use _Override;
+
 	/**
 	 * @field
 	 * @since readonly

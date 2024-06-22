@@ -21,6 +21,7 @@ class RankException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RankExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

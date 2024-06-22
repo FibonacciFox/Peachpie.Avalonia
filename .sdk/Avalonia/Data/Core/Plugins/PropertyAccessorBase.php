@@ -4,6 +4,7 @@ class PropertyAccessorBase extends \System\Object implements
 	\Avalonia\Data\Core\Plugins\IPropertyAccessor,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

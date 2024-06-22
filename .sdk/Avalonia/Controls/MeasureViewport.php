@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 final class MeasureViewport extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

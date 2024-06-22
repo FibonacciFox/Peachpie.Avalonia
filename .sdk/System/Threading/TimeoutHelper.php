@@ -3,6 +3,7 @@ namespace System\Threading;
 class TimeoutHelper extends \System\Object
 {
 
+
 	/**
 	 * @return \System\UInt32
 	 */

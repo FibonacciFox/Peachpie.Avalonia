@@ -72,6 +72,7 @@ class TopLevel extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Input\TextInput\ITextInputMethodRoot
 {
 	use TopLevelOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\IHitTester
@@ -597,7 +598,7 @@ class TopLevel extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

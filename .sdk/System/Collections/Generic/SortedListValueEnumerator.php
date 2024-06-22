@@ -21,6 +21,7 @@ final class SortedListValueEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use SortedListValueEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \TValue

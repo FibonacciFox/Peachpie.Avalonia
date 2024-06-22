@@ -182,6 +182,7 @@ final class Int64 extends \System\ValueType implements
 	\System\Numerics\ISignedNumber_1
 {
 	use Int64Override;
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

@@ -2,6 +2,7 @@
 namespace System;
 final class DTSubString extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\ReadOnlySpan_1[System\Char]

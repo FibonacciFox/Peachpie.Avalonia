@@ -4,6 +4,7 @@ class NeverEndingSynchronousCompletionAsyncResultObservable_1 extends \System\Ob
 	\System\IObservable_1
 {
 
+
 	/**
 	 * @param \System\IObserver_1 $observer [generic: T]
 	 * @return \System\IDisposable

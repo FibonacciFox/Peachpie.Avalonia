@@ -45,6 +45,7 @@ class ContextMenu extends \Avalonia\Controls\MenuBase implements
 	\Avalonia\Controls\Diagnostics\IPopupHostProvider
 {
 	use ContextMenuOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -628,7 +629,7 @@ class ContextMenu extends \Avalonia\Controls\MenuBase implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

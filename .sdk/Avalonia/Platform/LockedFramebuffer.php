@@ -4,6 +4,7 @@ class LockedFramebuffer extends \System\Object implements
 	\Avalonia\Platform\ILockedFramebuffer,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\IntPtr

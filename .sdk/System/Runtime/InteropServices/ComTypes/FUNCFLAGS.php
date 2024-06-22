@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum FUNCFLAGS
 {
+
 	
 	case FUNCFLAG_FRESTRICTED = '1';
 	case FUNCFLAG_FSOURCE = '2';

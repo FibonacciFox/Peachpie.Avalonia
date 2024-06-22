@@ -26,6 +26,7 @@ trait ComponentCollectionOverride {
 final class EditorAttribute extends \System\Attribute
 {
 	use ComponentCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CultureTypes
 {
+
 	
 	case NeutralCultures = '1';
 	case SpecificCultures = '2';

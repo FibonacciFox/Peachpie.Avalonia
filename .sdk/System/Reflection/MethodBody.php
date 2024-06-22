@@ -2,6 +2,7 @@
 namespace System\Reflection;
 class MethodBody extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class WindowAutomationPeer extends \Avalonia\Automation\Peers\WindowBaseAutomationPeer implements
 	\Avalonia\Automation\Provider\IRootProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Window|\Avalonia\Controls\WindowBase|\Avalonia\Controls\Control
 	 */
 	public $Owner;

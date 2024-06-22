@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Notifications;
 enum NotificationType
 {
+
 	
 	case Information = '0';
 	case Success = '1';

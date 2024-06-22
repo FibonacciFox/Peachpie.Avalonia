@@ -59,6 +59,7 @@ class ListBox extends \Avalonia\Controls\Primitives\SelectingItemsControl implem
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
 	use ListBoxOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -556,7 +557,7 @@ class ListBox extends \Avalonia\Controls\Primitives\SelectingItemsControl implem
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

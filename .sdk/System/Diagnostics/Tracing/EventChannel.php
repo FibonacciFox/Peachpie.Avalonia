@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 enum EventChannel
 {
+
 	
 	case None = '0';
 	case Admin = '16';

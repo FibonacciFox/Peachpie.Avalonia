@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 interface IMutableBrush
 {
 
+
 	/**
 	 * @return \Avalonia\Media\IImmutableBrush
 	 */

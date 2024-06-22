@@ -2,6 +2,7 @@
 namespace System;
 enum GCNotificationStatus
 {
+
 	
 	case Succeeded = '0';
 	case Failed = '1';

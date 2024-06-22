@@ -2,6 +2,7 @@
 namespace System\Resources;
 final class CultureNameResourceSetPair extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

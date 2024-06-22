@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 interface IWeakEventSubscriber_1
 {
 
+
 	/**
 	 * @param \System\Object|object $sender
 	 * @param \Avalonia\Utilities\WeakEvent $ev

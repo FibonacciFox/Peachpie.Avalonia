@@ -2,6 +2,7 @@
 namespace Avalonia\Automation\Peers;
 enum AutomationControlType
 {
+
 	
 	case None = '0';
 	case Button = '1';

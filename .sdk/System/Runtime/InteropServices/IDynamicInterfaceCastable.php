@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 interface IDynamicInterfaceCastable
 {
 
+
 	/**
 	 * @param \System\RuntimeTypeHandle $interfaceType
 	 * @param \System\Boolean|bool $throwIfNotImplemented

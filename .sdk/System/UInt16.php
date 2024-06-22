@@ -199,6 +199,7 @@ final class UInt16 extends \System\ValueType implements
 	\System\Numerics\IUnsignedNumber_1
 {
 	use UInt16Override;
+
 	/**
 	 * @field
 	 * @var \System\UInt16

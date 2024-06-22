@@ -4,6 +4,7 @@ class CompositionAnimationGroup extends \Avalonia\Rendering\Composition\Composit
 	\Avalonia\Rendering\Composition\ICompositorSerializable,
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

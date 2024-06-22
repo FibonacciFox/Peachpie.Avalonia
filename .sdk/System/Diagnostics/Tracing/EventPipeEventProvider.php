@@ -24,6 +24,7 @@ final class EventPipeEventProvider extends \System\Object implements
 {
 	use EventPipeEventProviderOverride;
 
+
 	private function EventRegister($eventSource, $enableCallback, $callbackContext, $registrationHandle){}
 	private function EventUnregister($registrationHandle){}
 	private function EventWriteTransfer($registrationHandle, &$eventDescriptor, $eventHandle, $activityId, $relatedActivityId, $userDataCount, $userData){}

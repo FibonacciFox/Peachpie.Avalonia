@@ -27,6 +27,7 @@ class BinarySearchExtension extends \System\Object
 {
 	use BinarySearchExtensionOverride;
 
+
 	private static function GetMedian($low, $hi){}
 	/**
 	 * @uses BinarySearchExtensionOverride::BinarySearch_1 <br>public , args: ($list, $value, $comparer)<br>

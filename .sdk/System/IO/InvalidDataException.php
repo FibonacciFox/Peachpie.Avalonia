@@ -21,6 +21,7 @@ final class InvalidDataException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidDataExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

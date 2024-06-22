@@ -22,6 +22,7 @@ class TreeViewItem extends \Avalonia\Controls\Primitives\HeaderedItemsControl im
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Controls\ISelectable
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -489,7 +490,7 @@ class TreeViewItem extends \Avalonia\Controls\Primitives\HeaderedItemsControl im
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

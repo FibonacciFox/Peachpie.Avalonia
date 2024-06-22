@@ -3,6 +3,7 @@ namespace Avalonia\Compatibility;
 final class OperatingSystemEx extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

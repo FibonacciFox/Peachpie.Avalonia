@@ -23,6 +23,7 @@ final class Typeface extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use TypefaceOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Typeface

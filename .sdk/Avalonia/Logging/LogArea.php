@@ -2,6 +2,7 @@
 namespace Avalonia\Logging;
 class LogArea extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

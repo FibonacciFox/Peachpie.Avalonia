@@ -2,6 +2,7 @@
 
 enum NodeType
 {
+
 	
 	case DT_UNKNOWN = '0';
 	case DT_FIFO = '1';

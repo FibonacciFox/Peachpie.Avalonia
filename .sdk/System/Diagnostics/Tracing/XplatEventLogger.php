@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class XplatEventLogger extends \System\Diagnostics\Tracing\EventListener implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventListener

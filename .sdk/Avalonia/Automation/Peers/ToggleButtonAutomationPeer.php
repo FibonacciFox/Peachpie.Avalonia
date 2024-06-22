@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class ToggleButtonAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IToggleProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Primitives\ToggleButton|\Avalonia\Controls\ContentControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

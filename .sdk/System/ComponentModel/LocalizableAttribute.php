@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class LocalizableAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

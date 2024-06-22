@@ -2,6 +2,7 @@
 namespace System\IO;
 enum FileOptions
 {
+
 	
 	case None = '0';
 	case WriteThrough = '-2147483648';

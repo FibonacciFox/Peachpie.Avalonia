@@ -5,6 +5,7 @@ class OrActivator extends \Avalonia\Styling\Activators\StyleActivatorBase implem
 	\System\IDisposable,
 	\Avalonia\Styling\Activators\IStyleActivatorSink
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

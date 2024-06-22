@@ -5,6 +5,7 @@ final class GenericEqualityComparer_1 extends \System\Collections\Generic\Equali
 	\System\Collections\Generic\IEqualityComparer_1
 {
 
+
 	/**
 	 */
 	public function __construct(){}

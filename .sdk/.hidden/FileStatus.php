@@ -2,6 +2,7 @@
 
 final class FileStatus extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \Interop+Sys+FileStatusFlags

@@ -5,6 +5,7 @@ class PropertySetSnapshot extends \System\Object implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @return \Avalonia\Rendering\Composition\Expressions\ExpressionVariant

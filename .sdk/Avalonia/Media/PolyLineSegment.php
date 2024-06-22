@@ -17,6 +17,7 @@ final class PolyLineSegment extends \Avalonia\Media\PathSegment implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use PolyLineSegmentOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -29,7 +30,7 @@ final class PolyLineSegment extends \Avalonia\Media\PathSegment implements
 	 */
 	public $Points;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -25,6 +25,7 @@ class Vector3KeyFrameAnimation extends \Avalonia\Rendering\Composition\Animation
 	\Avalonia\Rendering\Composition\Animations\ICompositionAnimationBase
 {
 	use Vector3KeyFrameAnimationOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IFontManagerImpl
 {
 
+
 	/**
 	 * @return \System\String|string
 	 */

@@ -5,6 +5,7 @@ class CompositionImportedGpuSemaphore extends \Avalonia\Rendering\Composition\Co
 	\System\IAsyncDisposable,
 	\Avalonia\Rendering\Composition\ICompositionImportedGpuSemaphore
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IPlatformRenderInterfaceImportedSemaphore

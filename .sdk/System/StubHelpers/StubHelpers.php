@@ -21,6 +21,7 @@ class StubHelpers extends \System\Object
 {
 	use StubHelpersOverride;
 
+
 	/**
 	 * @param \System\IntPtr $pMD
 	 * @return \System\IntPtr

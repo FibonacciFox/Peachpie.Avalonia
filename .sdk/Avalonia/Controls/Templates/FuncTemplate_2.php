@@ -4,6 +4,7 @@ class FuncTemplate_2 extends \System\Object implements
 	\Avalonia\Controls\Templates\ITemplate_2
 {
 
+
 	/**
 	 * @param \TParam $param
 	 * @return \TControl

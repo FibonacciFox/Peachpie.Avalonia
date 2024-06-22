@@ -5,6 +5,7 @@ class OffscreenTopLevelImplBase extends \System\Object implements
 	\Avalonia\Platform\IOptionalFeatureProvider,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IInputRoot

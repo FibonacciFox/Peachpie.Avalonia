@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Remote\Server;
 final class Framebuffer extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Remote\Server\RemoteServerTopLevelImpl+Framebuffer

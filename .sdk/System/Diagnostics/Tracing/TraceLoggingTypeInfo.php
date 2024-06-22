@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class TraceLoggingTypeInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

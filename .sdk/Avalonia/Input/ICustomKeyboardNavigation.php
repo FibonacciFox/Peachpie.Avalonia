@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface ICustomKeyboardNavigation
 {
 
+
 	/**
 	 * @param \Avalonia\Input\IInputElement $element
 	 * @param \Avalonia\Input\NavigationDirection $direction

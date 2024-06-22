@@ -25,6 +25,7 @@ class SafeEnumerableList_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use SafeEnumerableList_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

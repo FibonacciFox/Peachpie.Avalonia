@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 enum TaskContinuationOptions
 {
+
 	
 	case None = '0';
 	case PreferFairness = '1';

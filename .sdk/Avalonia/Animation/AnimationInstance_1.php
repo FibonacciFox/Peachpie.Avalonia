@@ -5,6 +5,7 @@ class AnimationInstance_1 extends \Avalonia\Reactive\SingleSubscriberObservableB
 	\System\IDisposable
 {
 
+
 	private function FetchProperties(){}
 	/**
 	 * @param \System\TimeSpan $frameTick

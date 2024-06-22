@@ -51,6 +51,7 @@ trait OverlappedOverride {
 class Overlapped extends \System\Object
 {
 	use OverlappedOverride;
+
 	/**
 	 * @property
 	 * @var \System\IAsyncResult

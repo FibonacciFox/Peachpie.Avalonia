@@ -7,6 +7,7 @@ namespace Avalonia\Platform;
 interface IPlatformThreadingInterface
 {
 
+
 	/**
 	 * @param \Avalonia\Threading\DispatcherPriority $priority
 	 * @param \System\TimeSpan $interval

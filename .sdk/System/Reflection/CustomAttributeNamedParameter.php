@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class CustomAttributeNamedParameter extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\CustomAttributeEncodedArgument

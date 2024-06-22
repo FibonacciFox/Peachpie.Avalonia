@@ -182,6 +182,7 @@ final class UInt32 extends \System\ValueType implements
 	\System\Numerics\IUnsignedNumber_1
 {
 	use UInt32Override;
+
 	/**
 	 * @field
 	 * @var \System\UInt32

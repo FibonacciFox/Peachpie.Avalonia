@@ -43,6 +43,7 @@ trait DateTimeResultOverride {
 final class DateTimeResult extends \System\ValueType
 {
 	use DateTimeResultOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

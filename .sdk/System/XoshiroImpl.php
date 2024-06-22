@@ -3,6 +3,7 @@ namespace System;
 final class XoshiroImpl extends \System\ImplBase
 {
 
+
 	/**
 	 * @return \System\UInt32
 	 */

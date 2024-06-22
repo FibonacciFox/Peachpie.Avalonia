@@ -4,6 +4,7 @@ final class DrawingGroupDrawingContext extends \Avalonia\Media\DrawingContext im
 	\System\IDisposable
 {
 
+
 	private function Pop(){}
 	private function PushNewDrawingGroup(){}
 	private function AddNewGeometryDrawing($brush, $pen, $geometry){}

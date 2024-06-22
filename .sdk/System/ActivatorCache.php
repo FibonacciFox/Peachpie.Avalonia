@@ -3,6 +3,7 @@ namespace System;
 final class ActivatorCache extends \System\Object
 {
 
+
 	/**
 	 * @param \System\RuntimeType $rt
 	 * @return \System\Object|object

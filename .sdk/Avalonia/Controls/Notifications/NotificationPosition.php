@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Notifications;
 enum NotificationPosition
 {
+
 	
 	case TopLeft = '0';
 	case TopRight = '1';

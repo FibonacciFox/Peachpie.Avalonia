@@ -21,6 +21,7 @@ class ItemsPresenter extends \Avalonia\Controls\Control implements
 	\Avalonia\Controls\Primitives\ILogicalScrollable,
 	\Avalonia\Controls\Primitives\IScrollable
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -334,7 +335,7 @@ class ItemsPresenter extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

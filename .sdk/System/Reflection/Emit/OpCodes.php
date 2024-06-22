@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 class OpCodes extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

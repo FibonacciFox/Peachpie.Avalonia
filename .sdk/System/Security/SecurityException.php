@@ -32,6 +32,7 @@ class SecurityException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SecurityExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

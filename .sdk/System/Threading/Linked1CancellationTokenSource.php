@@ -3,6 +3,7 @@ namespace System\Threading;
 final class Linked1CancellationTokenSource extends \System\Threading\CancellationTokenSource implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

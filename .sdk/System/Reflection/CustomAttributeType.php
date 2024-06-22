@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class CustomAttributeType extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\CustomAttributeEncoding

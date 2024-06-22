@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 interface IPropertyInfo
 {
 
+
 	/**
 	 * @param \System\Object|object $target
 	 * @return \System\Object|object

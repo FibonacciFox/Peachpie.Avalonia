@@ -37,6 +37,7 @@ class Menu extends \Avalonia\Controls\MenuBase implements
 	\Avalonia\Input\IMainMenu
 {
 	use MenuOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -510,7 +511,7 @@ class Menu extends \Avalonia\Controls\MenuBase implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

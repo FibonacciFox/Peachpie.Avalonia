@@ -564,6 +564,7 @@ trait Sse2Override {
 class Sse2 extends \System\Runtime\Intrinsics\X86\Sse
 {
 	use Sse2Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

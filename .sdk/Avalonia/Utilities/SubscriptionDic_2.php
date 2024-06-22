@@ -12,6 +12,7 @@ class SubscriptionDic_2 extends \System\Collections\Generic\Dictionary_2 impleme
 	\System\Runtime\Serialization\ISerializable,
 	\System\Runtime\Serialization\IDeserializationCallback
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEqualityComparer_1[System\String]

@@ -162,6 +162,7 @@ class AvaloniaDictionary_2 extends \System\Object implements
 	\System\Collections\ICollection
 {
 	use AvaloniaDictionary_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

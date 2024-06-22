@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class IdentifierParser extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Utilities\CharacterReader& $r
 	 * @return \System\ReadOnlySpan_1[System\Char]

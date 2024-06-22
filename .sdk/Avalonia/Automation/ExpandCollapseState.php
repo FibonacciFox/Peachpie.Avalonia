@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 enum ExpandCollapseState
 {
+
 	
 	case Collapsed = '0';
 	case Expanded = '1';

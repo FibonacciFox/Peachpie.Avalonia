@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class IncrementingEventCounterPayloadType extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\Tracing\IncrementingCounterPayload

@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IScreenImpl
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\IWindowBaseImpl $window
 	 * @return \Avalonia\Platform\Screen

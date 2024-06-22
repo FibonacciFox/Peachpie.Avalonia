@@ -19,6 +19,7 @@ class PathIcon extends \Avalonia\Controls\IconElement implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -387,7 +388,7 @@ class PathIcon extends \Avalonia\Controls\IconElement implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

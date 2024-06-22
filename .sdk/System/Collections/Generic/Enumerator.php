@@ -21,6 +21,7 @@ final class Enumerator extends \System\ValueType implements
 	\System\Collections\IEnumerator
 {
 	use EnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \T|object

@@ -6,6 +6,7 @@ class CompositingRenderer extends \System\Object implements
 	\System\IDisposable,
 	\Avalonia\Rendering\IHitTester
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\RendererDiagnostics

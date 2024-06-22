@@ -6,6 +6,7 @@ final class StateMachineBox_1 extends \System\Runtime\CompilerServices\StateMach
 	\System\Runtime\CompilerServices\IAsyncStateMachineBox,
 	\System\Threading\IThreadPoolWorkItem
 {
+
 	/**
 	 * @field
 	 * @var \TStateMachine

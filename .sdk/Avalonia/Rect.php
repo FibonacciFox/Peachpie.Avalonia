@@ -105,6 +105,7 @@ final class Rect extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use RectOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

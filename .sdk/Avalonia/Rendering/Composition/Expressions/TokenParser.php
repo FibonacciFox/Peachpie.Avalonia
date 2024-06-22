@@ -33,6 +33,7 @@ trait TokenParserOverride {
 final class TokenParser extends \System\ValueType
 {
 	use TokenParserOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

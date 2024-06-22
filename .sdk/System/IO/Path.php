@@ -307,6 +307,7 @@ trait PathOverride {
 class Path extends \System\Object
 {
 	use PathOverride;
+
 	/**
 	 * @field
 	 * @since readonly

@@ -19,6 +19,7 @@ class LayoutTransformControl extends \Avalonia\Controls\Decorator implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -354,7 +355,7 @@ class LayoutTransformControl extends \Avalonia\Controls\Decorator implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -24,6 +24,7 @@ class MarkupBindingChainException extends \Avalonia\Data\BindingChainException i
 	\System\Runtime\Serialization\ISerializable
 {
 	use MarkupBindingChainExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

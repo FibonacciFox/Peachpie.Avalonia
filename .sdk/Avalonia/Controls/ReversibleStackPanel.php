@@ -22,6 +22,7 @@ class ReversibleStackPanel extends \Avalonia\Controls\StackPanel implements
 	\Avalonia\Input\INavigableContainer,
 	\Avalonia\Controls\Primitives\IScrollSnapPointsInfo
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -366,7 +367,7 @@ class ReversibleStackPanel extends \Avalonia\Controls\StackPanel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

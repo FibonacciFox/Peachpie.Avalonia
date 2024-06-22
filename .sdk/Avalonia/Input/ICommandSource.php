@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface ICommandSource
 {
 
+
 	/**
 	 * @param \System\Object|object $sender
 	 * @param \System\EventArgs $e

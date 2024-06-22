@@ -660,6 +660,7 @@ class Task extends \System\Object implements
 	\System\IDisposable
 {
 	use TaskOverride;
+
 	/**
 	 * @field
 	 * @var \System\Delegate

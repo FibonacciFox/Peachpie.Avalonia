@@ -3,6 +3,7 @@ namespace System\Linq;
 class ThrowHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Linq\ExceptionArgument $argument
 	 * @return \System\Void|void

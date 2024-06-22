@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 interface IEventProvider
 {
 
+
 	/**
 	 * @param \System\Diagnostics\Tracing\EventSource $eventSource
 	 * @param \Interop+Advapi32+EtwEnableCallback $enableCallback

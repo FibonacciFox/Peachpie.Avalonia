@@ -2,6 +2,7 @@
 
 enum CompositionSimpleTileBrushChangedFields
 {
+
 	
 	case AlignmentX = '1';
 	case AlignmentY = '2';

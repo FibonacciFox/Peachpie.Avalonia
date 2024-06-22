@@ -4,4 +4,5 @@ interface IRenderTargetBitmapImpl
 {
 
 
+
 }

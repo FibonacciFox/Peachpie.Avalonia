@@ -26,6 +26,7 @@ final class PointerPointProperties extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PointerPointPropertiesOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

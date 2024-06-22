@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class AssemblyCultureAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

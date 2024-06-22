@@ -6,5 +6,6 @@ final class OrdinalIgnoreCaseComparer extends \System\Collections\Generic\NonRan
 	\System\Runtime\Serialization\ISerializable
 {
 
+
 	private function GetObjectData($info, $context){}
 }

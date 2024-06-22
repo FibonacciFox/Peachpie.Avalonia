@@ -4,6 +4,7 @@ final class NullStream extends \System\IO\Stream implements
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

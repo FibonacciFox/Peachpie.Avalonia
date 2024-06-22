@@ -5,6 +5,7 @@ class SingleSubscriberObservableBase_1 extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	/**
 	 * @param \System\IObserver_1 $observer [generic: T]
 	 * @return \System\IDisposable

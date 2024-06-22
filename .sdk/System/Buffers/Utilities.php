@@ -3,6 +3,7 @@ namespace System\Buffers;
 class Utilities extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $bufferSize
 	 * @return \System\Int32|int

@@ -4,6 +4,7 @@ final class Gray8PixelFormatReader extends \System\ValueType implements
 	\Avalonia\Media\Imaging\IPixelFormatReader
 {
 
+
 	/**
 	 * @param \System\IntPtr $address
 	 * @return \System\Void|void

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MethodSemanticsAttributes
 {
+
 	
 	case Setter = '1';
 	case Getter = '2';

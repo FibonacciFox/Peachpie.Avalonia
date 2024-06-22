@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class NotifyParentPropertyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

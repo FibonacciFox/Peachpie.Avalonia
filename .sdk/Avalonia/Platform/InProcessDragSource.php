@@ -4,6 +4,7 @@ class InProcessDragSource extends \System\Object implements
 	\Avalonia\Input\Platform\IPlatformDragSource
 {
 
+
 	/**
 	 * @param \Avalonia\Input\PointerEventArgs $triggerEvent
 	 * @param \Avalonia\Input\IDataObject $data

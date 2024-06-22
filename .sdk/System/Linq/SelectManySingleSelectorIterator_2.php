@@ -8,6 +8,7 @@ final class SelectManySingleSelectorIterator_2 extends \System\Linq\Iterator_1 i
 	\System\Collections\IEnumerator,
 	\System\Linq\IIListProvider_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

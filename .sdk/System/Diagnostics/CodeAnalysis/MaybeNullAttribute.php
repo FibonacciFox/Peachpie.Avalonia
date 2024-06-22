@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class MaybeNullAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

@@ -2,6 +2,7 @@
 namespace Avalonia\Automation\Peers;
 class PopupAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Control

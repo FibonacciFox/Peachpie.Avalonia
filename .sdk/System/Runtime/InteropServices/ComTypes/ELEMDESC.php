@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class ELEMDESC extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Runtime\InteropServices\ComTypes\TYPEDESC

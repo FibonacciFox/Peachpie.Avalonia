@@ -3,6 +3,7 @@ namespace System;
 final class SZArrayHelper extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Collections\Generic\IEnumerator_1[T]
 	 */

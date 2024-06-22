@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class PixelPointEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\PixelPoint

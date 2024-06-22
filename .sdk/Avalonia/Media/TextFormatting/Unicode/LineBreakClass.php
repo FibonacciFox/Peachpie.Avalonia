@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 enum LineBreakClass
 {
+
 	
 	case OpenPunctuation = '0';
 	case ClosePunctuation = '1';

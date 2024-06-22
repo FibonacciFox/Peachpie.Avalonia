@@ -15,6 +15,7 @@ final class OSPlatform extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use OSPlatformOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\OSPlatform

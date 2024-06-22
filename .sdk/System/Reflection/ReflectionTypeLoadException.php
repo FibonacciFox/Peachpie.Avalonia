@@ -20,6 +20,7 @@ final class ReflectionTypeLoadException extends \System\SystemException implemen
 	\System\Runtime\Serialization\ISerializable
 {
 	use ReflectionTypeLoadExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

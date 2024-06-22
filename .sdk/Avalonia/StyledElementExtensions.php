@@ -3,6 +3,7 @@ namespace Avalonia;
 class StyledElementExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\StyledElement $target
 	 * @param \System\String|string $className

@@ -3,6 +3,7 @@ namespace System\Threading;
 final class IdManager extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Boolean|bool $trackAllValues
 	 * @return \System\Int32|int

@@ -4,6 +4,7 @@ class SignatureType extends \System\Type implements
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

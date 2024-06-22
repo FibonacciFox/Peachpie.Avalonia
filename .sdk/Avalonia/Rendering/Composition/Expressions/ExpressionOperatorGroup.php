@@ -20,6 +20,7 @@ trait ExpressionOperatorGroupOverride {
 final class ExpressionOperatorGroup extends \System\ValueType
 {
 	use ExpressionOperatorGroupOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

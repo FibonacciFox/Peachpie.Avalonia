@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class SynchronousCompletionAsyncResultSource_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Utilities\SynchronousCompletionAsyncResult_1[T]

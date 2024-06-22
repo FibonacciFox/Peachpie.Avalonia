@@ -15,6 +15,7 @@ trait SEHExceptionOverride {
 final class UnmanagedFunctionPointerAttribute extends \System\Attribute
 {
 	use SEHExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

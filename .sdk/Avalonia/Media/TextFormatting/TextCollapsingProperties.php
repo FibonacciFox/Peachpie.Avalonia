@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 class TextCollapsingProperties extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 class RuntimeEventSourceHelper extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Double|double
 	 */

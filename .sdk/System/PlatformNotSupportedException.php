@@ -21,6 +21,7 @@ class PlatformNotSupportedException extends \System\NotSupportedException implem
 	\System\Runtime\Serialization\ISerializable
 {
 	use PlatformNotSupportedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

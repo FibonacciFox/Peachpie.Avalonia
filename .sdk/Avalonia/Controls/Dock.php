@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum Dock
 {
+
 	
 	case Left = '0';
 	case Bottom = '1';

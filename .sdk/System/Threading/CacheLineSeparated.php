@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class CacheLineSeparated extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\PortableThreadPool+ThreadCounts

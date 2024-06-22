@@ -3,6 +3,7 @@ namespace System;
 interface IConvertible
 {
 
+
 	/**
 	 * @return \System\TypeCode
 	 */

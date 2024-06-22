@@ -19,6 +19,7 @@ trait MarkupBindingChainExceptionOverride {
 class PropertyAccessorNode extends \Avalonia\Data\Core\SettableNode
 {
 	use MarkupBindingChainExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

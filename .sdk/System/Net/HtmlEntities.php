@@ -3,6 +3,7 @@ namespace System\Net;
 class HtmlEntities extends \System\Object
 {
 
+
 	private static function InitializeLookupTable(){}
 	/**
 	 * @param \System\ReadOnlySpan_1 $entity [generic: System\Char]

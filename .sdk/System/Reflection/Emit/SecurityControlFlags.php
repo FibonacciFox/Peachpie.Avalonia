@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum SecurityControlFlags
 {
+
 	
 	case Default = '0';
 	case SkipVisibilityChecks = '1';

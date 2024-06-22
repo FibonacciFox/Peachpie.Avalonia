@@ -2,6 +2,7 @@
 namespace Avalonia\Diagnostics;
 class StyleDiagnostics extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Diagnostics\AppliedStyle]

@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 interface IAnimator
 {
 
+
 	/**
 	 * @param \Avalonia\Animation\Animation $animation
 	 * @param \Avalonia\Animation\Animatable $control

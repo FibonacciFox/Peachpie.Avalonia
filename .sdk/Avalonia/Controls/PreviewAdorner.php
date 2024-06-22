@@ -19,6 +19,7 @@ final class PreviewAdorner extends \Avalonia\Controls\Decorator implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double
@@ -336,7 +337,7 @@ final class PreviewAdorner extends \Avalonia\Controls\Decorator implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

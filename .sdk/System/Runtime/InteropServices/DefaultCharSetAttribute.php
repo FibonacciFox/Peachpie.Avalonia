@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DefaultCharSetAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\CharSet

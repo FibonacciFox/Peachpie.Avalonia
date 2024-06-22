@@ -2,6 +2,7 @@
 
 enum ActivityControl
 {
+
 	
 	case EVENT_ACTIVITY_CTRL_GET_ID = '1';
 	case EVENT_ACTIVITY_CTRL_SET_ID = '2';

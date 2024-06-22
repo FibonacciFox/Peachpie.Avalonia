@@ -3,6 +3,7 @@ namespace Avalonia\Styling;
 interface IStyleHost
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\IReadOnlyList_1 $styles [generic: Avalonia\Styling\IStyle]
 	 * @return \System\Void|void

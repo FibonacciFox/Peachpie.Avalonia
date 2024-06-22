@@ -2,6 +2,7 @@
 
 enum OpenFlags
 {
+
 	
 	case O_RDONLY = '0';
 	case O_WRONLY = '1';

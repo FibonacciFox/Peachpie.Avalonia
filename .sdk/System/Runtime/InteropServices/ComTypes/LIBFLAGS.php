@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum LIBFLAGS
 {
+
 	
 	case LIBFLAG_FRESTRICTED = '1';
 	case LIBFLAG_FCONTROL = '2';

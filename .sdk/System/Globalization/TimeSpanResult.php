@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class TimeSpanResult extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\TimeSpan

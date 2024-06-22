@@ -45,6 +45,7 @@ trait EventPipeMetadataGeneratorOverride {
 final class EventPipeMetadataGenerator extends \System\Object
 {
 	use EventPipeMetadataGeneratorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventPipeMetadataGenerator

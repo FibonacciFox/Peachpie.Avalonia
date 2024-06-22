@@ -1140,6 +1140,7 @@ class MemoryExtensions extends \System\Object
 {
 	use MemoryExtensionsOverride;
 
+
 	/**
 	 * @uses MemoryExtensionsOverride::AsSpan_1 <br>public , args: ($array, $start)<br>
 	 * @uses MemoryExtensionsOverride::AsSpan_2 <br>public , args: ($array, $startIndex)<br>

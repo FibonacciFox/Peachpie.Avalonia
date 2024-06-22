@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core\Plugins;
 interface IDataValidationPlugin
 {
 
+
 	/**
 	 * @param \System\WeakReference_1 $reference [generic: System\Object]
 	 * @param \System\String|string $memberName

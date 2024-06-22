@@ -15,6 +15,7 @@ final class RuntimePropertyInfo extends \System\Reflection\PropertyInfo implemen
 	\System\Reflection\ICustomAttributeProvider
 {
 	use RuntimePropertyInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

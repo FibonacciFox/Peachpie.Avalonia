@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum OpCodeType
 {
+
 	
 	case Annotation = '0';
 	case Macro = '1';

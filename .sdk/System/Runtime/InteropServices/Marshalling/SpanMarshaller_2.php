@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\Marshalling;
 class SpanMarshaller_2 extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Span_1 $managed [generic: T]
 	 * @param \System\Int32& &$numElements

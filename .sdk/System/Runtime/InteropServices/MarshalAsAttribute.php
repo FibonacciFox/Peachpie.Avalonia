@@ -16,6 +16,7 @@ trait InvalidOleVariantTypeExceptionOverride {
 final class MarshalAsAttribute extends \System\Attribute
 {
 	use InvalidOleVariantTypeExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\Runtime\InteropServices\VarEnum

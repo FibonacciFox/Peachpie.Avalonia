@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class GotFocusEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\NavigationMethod

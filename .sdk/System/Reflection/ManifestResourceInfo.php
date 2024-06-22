@@ -2,6 +2,7 @@
 namespace System\Reflection;
 class ManifestResourceInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\Assembly

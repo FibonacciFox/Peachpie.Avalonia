@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class UsableDuringInitializationAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

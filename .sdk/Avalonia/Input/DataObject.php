@@ -4,6 +4,7 @@ class DataObject extends \System\Object implements
 	\Avalonia\Input\IDataObject
 {
 
+
 	/**
 	 * @param \System\String|string $dataFormat
 	 * @return \System\Boolean|bool

@@ -36,6 +36,7 @@ final class MultiProducerMultiConsumerQueue_1 extends \System\Collections\Concur
 	\System\Threading\Tasks\IProducerConsumerQueue_1
 {
 	use MultiProducerMultiConsumerQueue_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

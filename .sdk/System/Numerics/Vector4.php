@@ -167,6 +167,7 @@ final class Vector4 extends \System\ValueType implements
 	\System\IFormattable
 {
 	use Vector4Override;
+
 	/**
 	 * @field
 	 * @var \System\Single

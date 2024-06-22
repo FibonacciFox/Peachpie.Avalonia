@@ -286,6 +286,7 @@ final class DateOnly extends \System\ValueType implements
 	\System\IParsable_1
 {
 	use DateOnlyOverride;
+
 	/**
 	 * @property
 	 * @var \System\DateOnly

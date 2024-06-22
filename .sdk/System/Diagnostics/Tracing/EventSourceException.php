@@ -21,6 +21,7 @@ class EventSourceException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use EventSourceExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

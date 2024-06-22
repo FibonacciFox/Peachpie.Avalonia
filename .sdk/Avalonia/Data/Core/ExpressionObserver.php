@@ -57,6 +57,7 @@ class ExpressionObserver extends \Avalonia\Reactive\LightweightObservableBase_1 
 	\Avalonia\IDescription
 {
 	use ExpressionObserverOverride;
+
 	/**
 	 * @field
 	 * @since readonly

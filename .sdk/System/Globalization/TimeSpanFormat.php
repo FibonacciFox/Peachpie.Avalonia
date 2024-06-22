@@ -2,6 +2,7 @@
 namespace System\Globalization;
 class TimeSpanFormat extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

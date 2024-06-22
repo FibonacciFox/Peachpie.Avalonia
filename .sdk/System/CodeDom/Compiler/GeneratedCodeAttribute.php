@@ -2,6 +2,7 @@
 namespace System\CodeDom\Compiler;
 final class GeneratedCodeAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

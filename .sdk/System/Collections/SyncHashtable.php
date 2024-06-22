@@ -8,6 +8,7 @@ final class SyncHashtable extends \System\Collections\Hashtable implements
 	\System\Runtime\Serialization\IDeserializationCallback,
 	\System\ICloneable
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

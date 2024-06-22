@@ -2,6 +2,7 @@
 namespace System;
 final class PowerOvfl extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

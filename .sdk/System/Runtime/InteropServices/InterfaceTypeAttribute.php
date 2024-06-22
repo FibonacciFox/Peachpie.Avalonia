@@ -16,6 +16,7 @@ trait ExternalExceptionOverride {
 final class InterfaceTypeAttribute extends \System\Attribute
 {
 	use ExternalExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\ComInterfaceType

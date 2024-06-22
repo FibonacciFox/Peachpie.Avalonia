@@ -3,6 +3,7 @@ namespace System\Diagnostics;
 final class DebugAssertException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -20,6 +20,7 @@ trait AmbiguousMatchExceptionOverride {
 final class AssemblyFlagsAttribute extends \System\Attribute
 {
 	use AmbiguousMatchExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\UInt32

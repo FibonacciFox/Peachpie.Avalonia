@@ -16,6 +16,7 @@ class CornerRadiusAnimator extends \Avalonia\Animation\Animators\Animator_1 impl
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

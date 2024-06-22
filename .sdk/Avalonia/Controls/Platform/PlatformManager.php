@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 class PlatformManager extends \System\Object
 {
 
+
 	/**
 	 * @return \System\IDisposable
 	 */

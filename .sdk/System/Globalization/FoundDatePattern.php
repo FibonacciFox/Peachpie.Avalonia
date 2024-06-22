@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum FoundDatePattern
 {
+
 	
 	case None = '0';
 	case FoundYearPatternFlag = '1';

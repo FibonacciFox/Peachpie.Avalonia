@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum WindowResizeReason
 {
+
 	
 	case Unspecified = '0';
 	case User = '1';

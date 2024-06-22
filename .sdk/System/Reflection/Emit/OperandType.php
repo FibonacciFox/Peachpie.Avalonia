@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum OperandType
 {
+
 	
 	case InlineBrTarget = '0';
 	case InlineField = '1';

@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventParameterInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

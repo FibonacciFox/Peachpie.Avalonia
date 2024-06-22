@@ -3,6 +3,7 @@ namespace System;
 final class SorterObjectArray extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\Int32|int $a
 	 * @param \System\Int32|int $b

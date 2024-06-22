@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum FontStretch
 {
+
 	
 	case Normal = '5';
 	case UltraCondensed = '1';

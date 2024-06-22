@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 final class Rgba8888Pixel extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @var \System\Byte

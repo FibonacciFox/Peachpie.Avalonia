@@ -101,6 +101,7 @@ class HashSet_1 extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use HashSet_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

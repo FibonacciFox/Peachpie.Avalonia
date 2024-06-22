@@ -4,6 +4,7 @@ final class EmptyAsyncLocalValueMap extends \System\Object implements
 	\System\Threading\IAsyncLocalValueMap
 {
 
+
 	/**
 	 * @param \System\Threading\IAsyncLocal $key
 	 * @param \System\Object|object $value

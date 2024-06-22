@@ -2,6 +2,7 @@
 namespace Avalonia\Styling\Activators;
 final class OrActivatorBuilder extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

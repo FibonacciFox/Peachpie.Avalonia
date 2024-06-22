@@ -3,6 +3,7 @@
 class procfs extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $pid
 	 * @return \System\String|string

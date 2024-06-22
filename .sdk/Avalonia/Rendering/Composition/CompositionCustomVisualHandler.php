@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 class CompositionCustomVisualHandler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Object|object $message
 	 * @return \System\Void|void

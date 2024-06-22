@@ -4,6 +4,7 @@ final class DBNull extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable,
 	\System\IConvertible
 {
+
 	/**
 	 * @field
 	 * @since readonly

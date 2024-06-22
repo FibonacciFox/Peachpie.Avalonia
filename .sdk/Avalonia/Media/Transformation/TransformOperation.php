@@ -3,6 +3,7 @@ namespace Avalonia\Media\Transformation;
 final class TransformOperation extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Media\Transformation\TransformOperation+OperationType

@@ -2,6 +2,7 @@
 namespace System\IO;
 enum FileAccess
 {
+
 	
 	case Read = '1';
 	case Write = '2';

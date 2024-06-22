@@ -23,6 +23,7 @@ trait DecoderFallbackBufferOverride {
 class DecoderFallbackBuffer extends \System\Object
 {
 	use DecoderFallbackBufferOverride;
+
 	/**
 	 * @field
 	 * @var \System\Byte*

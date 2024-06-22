@@ -3,6 +3,7 @@ namespace System\Runtime;
 class ProfileOptimization extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $directoryPath
 	 * @return \System\Void|void

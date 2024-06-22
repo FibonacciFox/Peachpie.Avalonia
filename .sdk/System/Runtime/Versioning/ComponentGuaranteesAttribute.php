@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 final class ComponentGuaranteesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Versioning\ComponentGuaranteesOptions

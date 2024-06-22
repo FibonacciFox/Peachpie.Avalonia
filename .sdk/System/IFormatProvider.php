@@ -3,6 +3,7 @@ namespace System;
 interface IFormatProvider
 {
 
+
 	/**
 	 * @param \System\Type $formatType
 	 * @return \System\Object|object

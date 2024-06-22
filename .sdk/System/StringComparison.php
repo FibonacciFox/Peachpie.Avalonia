@@ -2,6 +2,7 @@
 namespace System;
 enum StringComparison
 {
+
 	
 	case CurrentCulture = '0';
 	case CurrentCultureIgnoreCase = '1';

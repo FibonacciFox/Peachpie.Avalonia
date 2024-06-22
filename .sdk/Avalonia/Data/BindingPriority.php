@@ -2,6 +2,7 @@
 namespace Avalonia\Data;
 enum BindingPriority
 {
+
 	
 	case Animation = '-1';
 	case LocalValue = '0';

@@ -92,6 +92,7 @@ trait RuntimeCustomAttributeDataOverride {
 final class RuntimeCustomAttributeData extends \System\Reflection\CustomAttributeData
 {
 	use RuntimeCustomAttributeDataOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\ConstructorInfo

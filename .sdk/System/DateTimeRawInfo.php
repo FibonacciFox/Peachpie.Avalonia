@@ -2,6 +2,7 @@
 namespace System;
 final class DateTimeRawInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

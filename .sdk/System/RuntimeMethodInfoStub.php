@@ -19,6 +19,7 @@ final class RuntimeMethodInfoStub extends \System\Object implements
 	\System\IRuntimeMethodInfo
 {
 	use RuntimeTypeHandleOverride;
+
 	/**
 	 * @field
 	 * @var \System\RuntimeMethodHandleInternal

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum EventAttributes
 {
+
 	
 	case None = '0';
 	case SpecialName = '512';

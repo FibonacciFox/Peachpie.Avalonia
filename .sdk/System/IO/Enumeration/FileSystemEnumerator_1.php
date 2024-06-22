@@ -44,6 +44,7 @@ class FileSystemEnumerator_1 extends \System\Runtime\ConstrainedExecution\Critic
 	\System\Collections\IEnumerator
 {
 	use FileSystemEnumerator_1Override;
+
 	/**
 	 * @property
 	 * @var \TResult

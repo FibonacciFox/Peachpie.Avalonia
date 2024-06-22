@@ -4,6 +4,7 @@ final class KeyCollection extends \System\Object implements
 	\System\Collections\ICollection,
 	\System\Collections\IEnumerable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

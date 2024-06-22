@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class KeyboardNavigation extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

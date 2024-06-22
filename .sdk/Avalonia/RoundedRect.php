@@ -49,6 +49,7 @@ trait RoundedRectOverride {
 final class RoundedRect extends \System\ValueType
 {
 	use RoundedRectOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

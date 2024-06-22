@@ -21,6 +21,7 @@ final class MulticastNotSupportedException extends \System\SystemException imple
 	\System\Runtime\Serialization\ISerializable
 {
 	use MulticastNotSupportedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

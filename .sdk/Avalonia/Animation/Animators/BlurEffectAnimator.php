@@ -16,6 +16,7 @@ class BlurEffectAnimator extends \Avalonia\Animation\Animators\EffectAnimatorBas
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

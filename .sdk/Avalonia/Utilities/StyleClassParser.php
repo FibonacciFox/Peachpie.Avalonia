@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class StyleClassParser extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Utilities\CharacterReader& $r
 	 * @return \System\ReadOnlySpan_1[System\Char]

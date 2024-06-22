@@ -48,6 +48,7 @@ final class HsvColor extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use HsvColorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double

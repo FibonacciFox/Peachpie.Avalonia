@@ -45,6 +45,7 @@ class BindingEvaluator_1 extends \Avalonia\Controls\Control implements
 	\Avalonia\Styling\ISetterValue
 {
 	use BindingEvaluator_1Override;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -358,7 +359,7 @@ class BindingEvaluator_1 extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

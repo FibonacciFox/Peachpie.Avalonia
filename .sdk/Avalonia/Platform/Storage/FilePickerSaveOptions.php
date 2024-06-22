@@ -2,6 +2,7 @@
 namespace Avalonia\Platform\Storage;
 class FilePickerSaveOptions extends \Avalonia\Platform\Storage\PickerOptions
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

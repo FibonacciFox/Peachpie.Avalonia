@@ -22,6 +22,7 @@ class DragDropDevice extends \System\Object implements
 	\Avalonia\Input\IInputDevice
 {
 	use DragDropDeviceOverride;
+
 	/**
 	 * @field
 	 * @since readonly

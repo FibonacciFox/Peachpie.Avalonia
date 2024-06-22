@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum KnownColor
 {
+
 	
 	case None = '0';
 	case AliceBlue = '4293982463';

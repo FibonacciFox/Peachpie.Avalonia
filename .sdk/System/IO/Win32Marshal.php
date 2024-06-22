@@ -3,6 +3,7 @@ namespace System\IO;
 class Win32Marshal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $path
 	 * @return \System\Exception

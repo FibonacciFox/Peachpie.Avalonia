@@ -23,6 +23,7 @@ class UnicodeEncoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
 	use UnicodeEncodingOverride;
+
 	/**
 	 * @field
 	 * @since readonly

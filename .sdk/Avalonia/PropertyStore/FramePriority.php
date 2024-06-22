@@ -2,6 +2,7 @@
 namespace Avalonia\PropertyStore;
 enum FramePriority
 {
+
 	
 	case Animation = '0';
 	case AnimationTemplatedParentTheme = '1';

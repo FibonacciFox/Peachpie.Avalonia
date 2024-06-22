@@ -3,6 +3,7 @@ namespace System\Threading;
 final class LowLevelMonitor extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

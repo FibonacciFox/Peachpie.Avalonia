@@ -27,6 +27,7 @@ namespace Avalonia\Input;
 interface IInputElement
 {
 
+
 	/**
 	 * @param \Avalonia\Input\NavigationMethod $method
 	 * @param \Avalonia\Input\KeyModifiers $keyModifiers

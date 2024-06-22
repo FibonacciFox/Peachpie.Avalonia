@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class FontFallback extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\FontFamily

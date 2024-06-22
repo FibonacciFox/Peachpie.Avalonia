@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 final class DebuggerHiddenAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

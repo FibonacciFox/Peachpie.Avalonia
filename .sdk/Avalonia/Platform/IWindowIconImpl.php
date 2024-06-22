@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IWindowIconImpl
 {
 
+
 	/**
 	 * @param \System\IO\Stream $outputStream
 	 * @return \System\Void|void

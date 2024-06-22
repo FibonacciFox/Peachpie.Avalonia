@@ -4,6 +4,7 @@ final class ConfiguredNoThrowAwaiter_1 extends \System\ValueType implements
 	\System\Runtime\CompilerServices\ICriticalNotifyCompletion,
 	\System\Runtime\CompilerServices\INotifyCompletion
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

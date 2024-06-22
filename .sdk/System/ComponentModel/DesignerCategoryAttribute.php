@@ -15,6 +15,7 @@ trait ComponentCollectionOverride {
 final class DesignerCategoryAttribute extends \System\Attribute
 {
 	use ComponentCollectionOverride;
+
 	/**
 	 * @field
 	 * @since readonly

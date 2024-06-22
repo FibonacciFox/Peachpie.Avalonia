@@ -5,6 +5,7 @@ class SimpleServerRenderResource extends \Avalonia\Rendering\Composition\Server\
 	\Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

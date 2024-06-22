@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 class PollingCounter extends \System\Diagnostics\Tracing\DiagnosticCounter implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class MngdFixedArrayMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\IntPtr $pMarshalState
 	 * @param \System\IntPtr $pMT

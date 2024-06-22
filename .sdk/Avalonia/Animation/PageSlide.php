@@ -17,6 +17,7 @@ class PageSlide extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 	use KeySplineTypeConverterOverride;
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan

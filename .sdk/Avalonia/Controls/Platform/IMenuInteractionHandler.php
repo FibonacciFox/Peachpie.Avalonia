@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface IMenuInteractionHandler
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\MenuBase $menu
 	 * @return \System\Void|void

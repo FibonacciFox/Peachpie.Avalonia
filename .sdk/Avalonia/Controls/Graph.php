@@ -22,6 +22,7 @@ class Graph extends \System\Object
 {
 	use GraphOverride;
 
+
 	/**
 	 * @return \System\Collections\Generic\IEnumerable_1[Avalonia\Controls\RelativePanel+GraphNode]
 	 */

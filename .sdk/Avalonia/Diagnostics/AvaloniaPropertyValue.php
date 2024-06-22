@@ -2,6 +2,7 @@
 namespace Avalonia\Diagnostics;
 class AvaloniaPropertyValue extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

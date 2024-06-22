@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum Attributes
 {
+
 	
 	case ComposedOfAllVirtualMethods = '1';
 	case ComposedOfAllPrivateMethods = '2';

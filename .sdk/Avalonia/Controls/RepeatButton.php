@@ -23,6 +23,7 @@ class RepeatButton extends \Avalonia\Controls\Button implements
 	\Avalonia\Input\ICommandSource,
 	\Avalonia\Input\IClickableControl
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -469,7 +470,7 @@ class RepeatButton extends \Avalonia\Controls\Button implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

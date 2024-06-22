@@ -4,6 +4,7 @@ class RadioButtonAutomationPeer extends \Avalonia\Automation\Peers\ToggleButtonA
 	\Avalonia\Automation\Provider\IToggleProvider,
 	\Avalonia\Automation\Provider\ISelectionItemProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -17,7 +18,7 @@ class RadioButtonAutomationPeer extends \Avalonia\Automation\Peers\ToggleButtonA
 	 */
 	public $SelectionContainer;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Primitives\ToggleButton|\Avalonia\Controls\ContentControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

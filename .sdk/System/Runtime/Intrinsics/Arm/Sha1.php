@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics\Arm;
 class Sha1 extends \System\Runtime\Intrinsics\Arm\ArmBase
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

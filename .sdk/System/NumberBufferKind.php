@@ -2,6 +2,7 @@
 namespace System;
 enum NumberBufferKind
 {
+
 	
 	case Unknown = '0';
 	case Integer = '1';

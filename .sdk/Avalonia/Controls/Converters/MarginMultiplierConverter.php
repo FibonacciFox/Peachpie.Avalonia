@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Converters;
 class MarginMultiplierConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

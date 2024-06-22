@@ -6,6 +6,7 @@ class AnimatorTransitionObservable_2 extends \Avalonia\Animation\TransitionObser
 	\System\IObserver_1
 {
 
+
 	private function OnCompleted(){}
 	private function OnError($error){}
 	private function OnNext($value){}

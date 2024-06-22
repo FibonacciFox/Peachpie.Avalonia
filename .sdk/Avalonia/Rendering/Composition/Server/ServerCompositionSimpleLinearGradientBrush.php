@@ -8,6 +8,7 @@ class ServerCompositionSimpleLinearGradientBrush extends \Avalonia\Rendering\Com
 	\Avalonia\Media\IGradientBrush,
 	\Avalonia\Media\ILinearGradientBrush
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

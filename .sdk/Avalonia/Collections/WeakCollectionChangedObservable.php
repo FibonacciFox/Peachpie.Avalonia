@@ -4,6 +4,7 @@ class WeakCollectionChangedObservable extends \Avalonia\Reactive\LightweightObse
 	\System\IObservable_1,
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

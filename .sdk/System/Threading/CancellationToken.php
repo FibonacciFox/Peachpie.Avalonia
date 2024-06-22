@@ -67,6 +67,7 @@ final class CancellationToken extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use CancellationTokenOverride;
+
 	/**
 	 * @property
 	 * @var \System\Threading\CancellationToken

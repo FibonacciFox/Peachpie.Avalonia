@@ -2,6 +2,7 @@
 namespace System\Reflection;
 class ExceptionHandlingClause extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Reflection\ExceptionHandlingClauseOptions

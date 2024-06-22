@@ -26,6 +26,7 @@ class ServerObject extends \Avalonia\Rendering\Composition\Server\SimpleServerOb
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
 	use ServerObjectOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

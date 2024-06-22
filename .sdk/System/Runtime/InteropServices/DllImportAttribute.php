@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class DllImportAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

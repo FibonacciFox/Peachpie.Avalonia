@@ -21,6 +21,7 @@ class UnauthorizedAccessException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use UnauthorizedAccessExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -47,6 +47,7 @@ class MemoryStream extends \System\IO\Stream implements
 	\System\IAsyncDisposable
 {
 	use MemoryStreamOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

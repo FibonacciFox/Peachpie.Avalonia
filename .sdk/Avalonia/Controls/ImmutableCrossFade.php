@@ -4,6 +4,7 @@ class ImmutableCrossFade extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $from
 	 * @param \Avalonia\Visual $to

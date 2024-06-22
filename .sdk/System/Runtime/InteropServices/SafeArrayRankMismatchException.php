@@ -21,6 +21,7 @@ class SafeArrayRankMismatchException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SafeArrayRankMismatchExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

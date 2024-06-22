@@ -7,6 +7,7 @@ final class OrdinalCaseSensitiveComparer extends \System\OrdinalComparer impleme
 	\System\Collections\Generic\IEqualityComparer_1,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @since readonly

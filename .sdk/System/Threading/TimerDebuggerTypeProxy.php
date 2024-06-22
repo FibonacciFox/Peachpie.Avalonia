@@ -16,6 +16,7 @@ trait TimerQueueTimerOverride {
 final class TimerDebuggerTypeProxy extends \System\Object
 {
 	use TimerQueueTimerOverride;
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\DateTime]

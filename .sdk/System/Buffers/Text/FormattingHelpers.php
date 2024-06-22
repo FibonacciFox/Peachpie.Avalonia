@@ -53,6 +53,7 @@ class FormattingHelpers extends \System\Object
 {
 	use FormattingHelpersOverride;
 
+
 	/**
 	 * @uses FormattingHelpersOverride::CountDigits_1 <br>public , args: ($value)<br>
 	 * @uses FormattingHelpersOverride::CountDigits_2 <br>public , args: ($value)<br>

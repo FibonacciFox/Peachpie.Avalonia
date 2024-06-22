@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class AsyncMethodBuilderAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

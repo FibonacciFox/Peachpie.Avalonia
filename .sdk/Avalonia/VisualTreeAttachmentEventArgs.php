@@ -2,6 +2,7 @@
 namespace Avalonia;
 class VisualTreeAttachmentEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Visual

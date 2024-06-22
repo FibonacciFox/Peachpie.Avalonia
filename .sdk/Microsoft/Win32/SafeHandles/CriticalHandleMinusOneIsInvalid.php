@@ -3,6 +3,7 @@ namespace Microsoft\Win32\SafeHandles;
 class CriticalHandleMinusOneIsInvalid extends \System\Runtime\InteropServices\CriticalHandle implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

@@ -2,6 +2,7 @@
 namespace System\Buffers;
 enum BufferAllocatedReason
 {
+
 	
 	case Pooled = '0';
 	case OverMaximumSize = '1';

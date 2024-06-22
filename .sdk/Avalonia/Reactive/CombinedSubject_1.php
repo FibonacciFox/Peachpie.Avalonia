@@ -6,6 +6,7 @@ class CombinedSubject_1 extends \System\Object implements
 	\System\IObservable_1
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

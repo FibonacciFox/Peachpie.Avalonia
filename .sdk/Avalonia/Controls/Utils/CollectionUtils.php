@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Utils;
 class CollectionUtils extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Specialized\NotifyCollectionChangedEventArgs

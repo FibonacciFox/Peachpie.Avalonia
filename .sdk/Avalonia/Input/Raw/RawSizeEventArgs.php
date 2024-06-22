@@ -17,6 +17,7 @@ trait RawPointerPointOverride {
 class RawSizeEventArgs extends \System\EventArgs
 {
 	use RawPointerPointOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size

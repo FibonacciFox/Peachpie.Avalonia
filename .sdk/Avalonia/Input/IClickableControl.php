@@ -7,6 +7,7 @@ namespace Avalonia\Input;
 interface IClickableControl
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

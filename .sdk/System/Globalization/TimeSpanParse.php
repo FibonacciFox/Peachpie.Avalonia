@@ -27,6 +27,7 @@ class TimeSpanParse extends \System\Object
 {
 	use TimeSpanParseOverride;
 
+
 	/**
 	 * @param \System\Int32|int $pow
 	 * @return \System\Int64|int

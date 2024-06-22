@@ -4,6 +4,7 @@ final class PosixSignalRegistration extends \System\Object implements
 	\System\IDisposable
 {
 
+
 	/**
 	 * @param \System\Runtime\InteropServices\PosixSignal $signal
 	 * @param \System\Action_1 $handler [generic: System\Runtime\InteropServices\PosixSignalContext]

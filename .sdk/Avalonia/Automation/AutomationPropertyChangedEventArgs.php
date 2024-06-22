@@ -2,6 +2,7 @@
 namespace Avalonia\Automation;
 class AutomationPropertyChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Automation\AutomationProperty

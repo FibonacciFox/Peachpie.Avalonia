@@ -19,6 +19,7 @@ trait LazyHelperOverride {
 final class LazyHelper extends \System\Object
 {
 	use LazyHelperOverride;
+
 	/**
 	 * @field
 	 * @since readonly

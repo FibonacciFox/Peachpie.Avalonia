@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Transport;
 class BatchStreamPoolBase_1 extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

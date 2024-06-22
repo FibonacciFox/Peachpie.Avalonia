@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IStream
 {
 
+
 	/**
 	 * @param \System\Byte &$pv
 	 * @param \System\Int32|int $cb

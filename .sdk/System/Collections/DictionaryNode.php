@@ -2,6 +2,7 @@
 namespace System\Collections;
 final class DictionaryNode extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

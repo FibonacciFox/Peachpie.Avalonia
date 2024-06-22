@@ -49,6 +49,7 @@ final class Quaternion extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use QuaternionOverride;
+
 	/**
 	 * @field
 	 * @var \System\Single

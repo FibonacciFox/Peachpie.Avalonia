@@ -2,6 +2,7 @@
 namespace System;
 enum TypeNameFormatFlags
 {
+
 	
 	case FormatBasic = '0';
 	case FormatNamespace = '1';

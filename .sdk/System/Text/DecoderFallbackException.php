@@ -27,6 +27,7 @@ final class DecoderFallbackException extends \System\ArgumentException implement
 	\System\Runtime\Serialization\ISerializable
 {
 	use DecoderFallbackExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -56,6 +56,7 @@ trait AssemblyLoadContextOverride {
 class AssemblyLoadContext extends \System\Object
 {
 	use AssemblyLoadContextOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[System\Reflection\Assembly]

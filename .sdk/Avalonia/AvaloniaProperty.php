@@ -69,6 +69,7 @@ class AvaloniaProperty extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
 	use AvaloniaPropertyOverride;
+
 	/**
 	 * @field
 	 * @since readonly

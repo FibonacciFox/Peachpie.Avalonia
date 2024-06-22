@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting;
 final class TextShaperOptions extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IGlyphTypeface

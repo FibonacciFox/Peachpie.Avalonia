@@ -71,6 +71,7 @@ trait AsyncTaskMethodBuilder_1Override {
 final class AsyncTaskMethodBuilder_1 extends \System\ValueType
 {
 	use AsyncTaskMethodBuilder_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\Task_1[TResult]

@@ -21,6 +21,7 @@ class PermissionSet extends \System\Object implements
 	\System\Security\IStackWalk
 {
 	use StubHelpersOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

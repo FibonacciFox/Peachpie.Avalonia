@@ -20,6 +20,7 @@ trait CULongOverride {
 final class ErrorWrapper extends \System\Object
 {
 	use CULongOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

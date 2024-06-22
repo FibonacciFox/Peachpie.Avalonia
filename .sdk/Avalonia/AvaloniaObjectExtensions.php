@@ -124,6 +124,7 @@ class AvaloniaObjectExtensions extends \System\Object
 {
 	use AvaloniaObjectExtensionsOverride;
 
+
 	/**
 	 * @param \System\IObservable_1 $source [generic: T]
 	 * @return \Avalonia\Data\IBinding

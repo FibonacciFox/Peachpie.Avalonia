@@ -5,6 +5,7 @@ class ManagedDispatcherImpl extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImplWithPendingInput,
 	\Avalonia\Threading\IDispatcherImpl
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 class AdornedElementInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\IDisposable

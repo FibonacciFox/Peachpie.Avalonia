@@ -4,6 +4,7 @@ class ServerCompositionExperimentalAcrylicVisual extends \Avalonia\Rendering\Com
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject,
 	\Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

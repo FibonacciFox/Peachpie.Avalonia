@@ -21,6 +21,7 @@ class ArithmeticException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ArithmeticExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

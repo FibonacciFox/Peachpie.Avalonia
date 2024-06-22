@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum IMPLTYPEFLAGS
 {
+
 	
 	case IMPLTYPEFLAG_FDEFAULT = '1';
 	case IMPLTYPEFLAG_FSOURCE = '2';

@@ -4,6 +4,7 @@ class DefinitionBase extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int
@@ -27,7 +28,7 @@ class DefinitionBase extends \Avalonia\AvaloniaObject implements
 	 */
 	public $SharedSizeGroup;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

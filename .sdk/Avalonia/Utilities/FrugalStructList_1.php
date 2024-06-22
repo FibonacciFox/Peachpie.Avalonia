@@ -20,6 +20,7 @@ trait ArrayItemList_1Override {
 final class FrugalStructList_1 extends \System\ValueType
 {
 	use ArrayItemList_1Override;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\FrugalListBase_1[T]

@@ -2,6 +2,7 @@
 namespace System\IO\Enumeration;
 final class FileSystemEntry extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\ReadOnlySpan_1[System\Char]

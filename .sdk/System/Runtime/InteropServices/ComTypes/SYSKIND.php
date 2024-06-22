@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum SYSKIND
 {
+
 	
 	case SYS_WIN16 = '0';
 	case SYS_WIN32 = '1';

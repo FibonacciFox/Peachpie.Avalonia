@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventMetadata extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventDescriptor

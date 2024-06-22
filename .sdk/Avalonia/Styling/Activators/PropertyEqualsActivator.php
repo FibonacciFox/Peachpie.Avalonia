@@ -5,6 +5,7 @@ class PropertyEqualsActivator extends \Avalonia\Styling\Activators\StyleActivato
 	\System\IDisposable,
 	\System\IObserver_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

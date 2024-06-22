@@ -18,6 +18,7 @@ final class Net5CompatDerivedImpl extends \System\ImplBase
 {
 	use Net5CompatDerivedImplOverride;
 
+
 	private function NextUInt64(){}
 	/**
 	 * @uses Net5CompatDerivedImplOverride::__construct_1 <br>public , args: ($parent)<br>

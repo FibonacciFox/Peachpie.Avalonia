@@ -3,8 +3,9 @@ namespace Avalonia\Automation\Peers;
 class ButtonAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAutomationPeer implements
 	\Avalonia\Automation\Provider\IInvokeProvider
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Button|\Avalonia\Controls\ContentControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

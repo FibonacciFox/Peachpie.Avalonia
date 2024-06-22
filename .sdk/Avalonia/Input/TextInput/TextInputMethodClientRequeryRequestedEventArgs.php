@@ -2,6 +2,7 @@
 namespace Avalonia\Input\TextInput;
 class TextInputMethodClientRequeryRequestedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

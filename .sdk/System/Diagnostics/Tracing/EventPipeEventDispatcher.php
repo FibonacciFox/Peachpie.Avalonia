@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventPipeEventDispatcher extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

@@ -16,6 +16,7 @@ trait Memory_1Override {
 final class MemoryDebugView_1 extends \System\Object
 {
 	use Memory_1Override;
+
 	/**
 	 * @property
 	 * @var \T[]

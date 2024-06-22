@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 class ScrollEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

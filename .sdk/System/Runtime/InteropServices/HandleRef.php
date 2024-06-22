@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class HandleRef extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

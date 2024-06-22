@@ -4,4 +4,5 @@ class __Canon extends \System\Object
 {
 
 
+
 }

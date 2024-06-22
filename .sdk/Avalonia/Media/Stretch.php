@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum Stretch
 {
+
 	
 	case None = '0';
 	case Fill = '1';

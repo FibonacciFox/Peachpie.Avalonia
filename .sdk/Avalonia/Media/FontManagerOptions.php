@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class FontManagerOptions extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

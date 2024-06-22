@@ -4,6 +4,7 @@ final class PropertyChangingEventHandler extends \System\MulticastDelegate imple
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

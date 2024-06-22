@@ -2,6 +2,7 @@
 namespace System\IO;
 enum UnixFileMode
 {
+
 	
 	case None = '0';
 	case OtherExecute = '1';

@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 class AsyncMethodBuilderCore extends \System\Object
 {
 
+
 	/**
 	 * @param \TStateMachine& $stateMachine
 	 * @return \System\Void|void

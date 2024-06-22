@@ -44,6 +44,7 @@ class TabControl extends \Avalonia\Controls\Primitives\SelectingItemsControl imp
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
 	use TabControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -578,7 +579,7 @@ class TabControl extends \Avalonia\Controls\Primitives\SelectingItemsControl imp
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

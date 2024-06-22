@@ -68,6 +68,7 @@ class BindingExpression extends \Avalonia\Reactive\LightweightObservableBase_1 i
 	\Avalonia\IDescription
 {
 	use BindingExpressionOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\Converters\IValueConverter

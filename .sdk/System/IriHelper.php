@@ -32,6 +32,7 @@ class IriHelper extends \System\Object
 {
 	use IriHelperOverride;
 
+
 	/**
 	 * @uses IriHelperOverride::CheckIriUnicodeRange_1 <br>protected , args: ($unicode, $isQuery)<br>
 	 * @uses IriHelperOverride::CheckIriUnicodeRange_2 <br>protected , args: ($highSurr, $lowSurr, &$isSurrogatePair, $isQuery)<br>

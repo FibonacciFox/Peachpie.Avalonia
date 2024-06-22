@@ -28,6 +28,7 @@ class EventPipeInternal extends \System\Object
 {
 	use EventPipeInternalOverride;
 
+
 	/**
 	 * @uses EventPipeInternalOverride::Enable_1 <br>private , args: ($outputFile, $format, $circularBufferSizeInMB, $providers, $numProviders)<br>
 	 * @uses EventPipeInternalOverride::Enable_2 <br>protected , args: ($outputFile, $format, $circularBufferSizeInMB, $providers)<br>

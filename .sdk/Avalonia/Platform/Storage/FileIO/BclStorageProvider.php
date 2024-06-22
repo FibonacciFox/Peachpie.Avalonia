@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage\FileIO;
 class BclStorageProvider extends \System\Object implements
 	\Avalonia\Platform\Storage\IStorageProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

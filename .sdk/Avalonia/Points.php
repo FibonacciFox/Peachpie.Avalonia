@@ -28,6 +28,7 @@ final class Points extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use PointsOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

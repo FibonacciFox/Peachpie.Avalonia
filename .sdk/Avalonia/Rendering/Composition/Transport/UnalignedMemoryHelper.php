@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Transport;
 class UnalignedMemoryHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Byte* $src
 	 * @return \T|object

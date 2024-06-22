@@ -3,6 +3,7 @@ namespace System\Buffers;
 class BuffersExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Buffers\ReadOnlySequence_1 &$source [generic: T]
 	 * @param \T|object $value

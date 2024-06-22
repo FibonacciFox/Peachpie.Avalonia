@@ -10,6 +10,7 @@ class StyleChildren extends \System\Collections\ObjectModel\Collection_1 impleme
 	\System\Collections\Generic\IReadOnlyList_1,
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

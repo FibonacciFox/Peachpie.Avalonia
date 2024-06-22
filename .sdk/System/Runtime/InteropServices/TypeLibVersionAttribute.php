@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class TypeLibVersionAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

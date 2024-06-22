@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage;
 interface IStorageItem
 {
 
+
 	/**
 	 * @return \System\Threading\Tasks\Task_1[Avalonia\Platform\Storage\StorageItemProperties]
 	 */

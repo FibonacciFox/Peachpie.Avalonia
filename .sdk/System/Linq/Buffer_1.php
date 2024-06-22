@@ -2,6 +2,7 @@
 namespace System\Linq;
 final class Buffer_1 extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

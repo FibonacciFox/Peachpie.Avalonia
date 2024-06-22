@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Imaging;
 enum BitmapInterpolationMode
 {
+
 	
 	case Unspecified = '0';
 	case None = '1';

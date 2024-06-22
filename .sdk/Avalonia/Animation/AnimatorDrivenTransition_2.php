@@ -3,6 +3,7 @@ namespace Avalonia\Animation;
 class AnimatorDrivenTransition_2 extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Animation\Easings\IEasing $easing
 	 * @param \System\IObservable_1 $progress [generic: System\Double]

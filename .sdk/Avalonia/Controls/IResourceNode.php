@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface IResourceNode
 {
 
+
 	/**
 	 * @param \System\Object|object $key
 	 * @param \Avalonia\Styling\ThemeVariant $theme

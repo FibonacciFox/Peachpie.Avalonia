@@ -4,6 +4,7 @@ final class UnmanagedMemoryStreamWrapper extends \System\IO\MemoryStream impleme
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

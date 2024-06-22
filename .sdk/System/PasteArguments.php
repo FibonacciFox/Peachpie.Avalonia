@@ -3,6 +3,7 @@ namespace System;
 class PasteArguments extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Text\ValueStringBuilder& $stringBuilder
 	 * @param \System\String|string $argument

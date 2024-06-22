@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum LayoutTimeSizeType
 {
+
 	
 	case None = '0';
 	case Pixel = '1';

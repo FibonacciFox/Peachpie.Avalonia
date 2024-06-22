@@ -16,6 +16,7 @@ trait ComAwareEventInfoOverride {
 final class TypeLibFuncAttribute extends \System\Attribute
 {
 	use ComAwareEventInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\TypeLibFuncFlags

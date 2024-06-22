@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class PosixSignalContext extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\PosixSignal

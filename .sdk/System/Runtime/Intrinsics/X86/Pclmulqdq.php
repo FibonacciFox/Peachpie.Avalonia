@@ -24,6 +24,7 @@ trait PclmulqdqOverride {
 class Pclmulqdq extends \System\Runtime\Intrinsics\X86\Sse2
 {
 	use PclmulqdqOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

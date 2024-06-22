@@ -4,6 +4,7 @@ final class NoOpEventProvider extends \System\Object implements
 	\System\Diagnostics\Tracing\IEventProvider
 {
 
+
 	private function EventRegister($eventSource, $enableCallback, $callbackContext, $registrationHandle){}
 	private function EventUnregister($registrationHandle){}
 	private function EventWriteTransfer($registrationHandle, &$eventDescriptor, $eventHandle, $activityId, $relatedActivityId, $userDataCount, $userData){}

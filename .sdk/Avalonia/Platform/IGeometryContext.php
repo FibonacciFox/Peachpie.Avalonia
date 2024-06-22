@@ -3,6 +3,7 @@ namespace Avalonia\Platform;
 interface IGeometryContext
 {
 
+
 	/**
 	 * @param \Avalonia\Point $point
 	 * @param \Avalonia\Size $size

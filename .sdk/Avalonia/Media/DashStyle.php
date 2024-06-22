@@ -29,6 +29,7 @@ final class DashStyle extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Media\IDashStyle
 {
 	use DashStyleOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -81,7 +82,7 @@ final class DashStyle extends \Avalonia\Animation\Animatable implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

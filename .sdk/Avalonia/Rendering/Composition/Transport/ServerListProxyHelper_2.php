@@ -27,6 +27,7 @@ class ServerListProxyHelper_2 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use ServerListProxyHelper_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

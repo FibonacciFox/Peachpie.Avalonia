@@ -3,6 +3,7 @@ namespace System\Text;
 class StringBuilderCache extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $capacity
 	 * @return \System\Text\StringBuilder

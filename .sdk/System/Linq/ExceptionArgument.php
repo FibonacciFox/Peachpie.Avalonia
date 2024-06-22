@@ -2,6 +2,7 @@
 namespace System\Linq;
 enum ExceptionArgument
 {
+
 	
 	case collectionSelector = '0';
 	case count = '1';

@@ -21,6 +21,7 @@ class Spinner extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Controls\IContentControl,
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -421,7 +422,7 @@ class Spinner extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

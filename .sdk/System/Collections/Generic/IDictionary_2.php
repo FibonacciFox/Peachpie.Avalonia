@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface IDictionary_2
 {
 
+
 	/**
 	 * @param \TKey $key
 	 * @return \System\Boolean|bool

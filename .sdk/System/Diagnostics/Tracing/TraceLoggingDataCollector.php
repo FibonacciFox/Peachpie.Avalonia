@@ -33,6 +33,7 @@ class TraceLoggingDataCollector extends \System\Object
 {
 	use TraceLoggingDataCollectorOverride;
 
+
 	/**
 	 * @return \System\Int32|int
 	 */

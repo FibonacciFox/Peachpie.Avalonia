@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 enum MethodImplOptions
 {
+
 	
 	case Unmanaged = '4';
 	case NoInlining = '8';

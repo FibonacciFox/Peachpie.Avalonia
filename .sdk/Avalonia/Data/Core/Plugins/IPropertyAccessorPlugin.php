@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core\Plugins;
 interface IPropertyAccessorPlugin
 {
 
+
 	/**
 	 * @param \System\Object|object $obj
 	 * @param \System\String|string $propertyName

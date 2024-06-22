@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 class CollectionsMarshal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\List_1 $list [generic: T]
 	 * @return \System\Span_1[T]

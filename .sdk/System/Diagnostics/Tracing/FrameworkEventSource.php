@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class FrameworkEventSource extends \System\Diagnostics\Tracing\EventSource implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

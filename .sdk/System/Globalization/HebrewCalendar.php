@@ -3,6 +3,7 @@ namespace System\Globalization;
 class HebrewCalendar extends \System\Globalization\Calendar implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @since readonly

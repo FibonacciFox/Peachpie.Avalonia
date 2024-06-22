@@ -37,6 +37,7 @@ class Observable extends \System\Object
 {
 	use ObservableOverride;
 
+
 	/**
 	 * @param \System\Func_2 $subscribe [generic: System\IObserver_1[TSource]
 	 * @return \System\IObservable_1[TSource]

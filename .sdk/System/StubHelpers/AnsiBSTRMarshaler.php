@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class AnsiBSTRMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Int32|int $flags
 	 * @param \System\String|string $strManaged

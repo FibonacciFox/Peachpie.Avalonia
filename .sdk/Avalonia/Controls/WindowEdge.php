@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum WindowEdge
 {
+
 	
 	case NorthWest = '0';
 	case North = '1';

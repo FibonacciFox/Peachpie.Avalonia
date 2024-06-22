@@ -23,6 +23,7 @@ class ParameterInfo extends \System\Object implements
 	\System\Runtime\Serialization\IObjectReference
 {
 	use ParameterInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\ParameterAttributes

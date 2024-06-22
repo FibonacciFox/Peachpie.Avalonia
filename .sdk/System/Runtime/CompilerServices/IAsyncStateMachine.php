@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 interface IAsyncStateMachine
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

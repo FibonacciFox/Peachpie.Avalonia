@@ -22,6 +22,7 @@ class ControlExtensions extends \System\Object
 {
 	use ControlExtensionsOverride;
 
+
 	/**
 	 * @uses ControlExtensionsOverride::BringIntoView_1 <br>public , args: ($control)<br>
 	 * @uses ControlExtensionsOverride::BringIntoView_2 <br>public , args: ($control, $rect)<br>

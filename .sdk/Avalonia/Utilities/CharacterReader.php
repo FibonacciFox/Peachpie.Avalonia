@@ -20,6 +20,7 @@ trait CharacterReaderOverride {
 final class CharacterReader extends \System\ValueType
 {
 	use CharacterReaderOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

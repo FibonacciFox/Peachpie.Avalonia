@@ -2,6 +2,7 @@
 namespace System\Collections;
 final class HashtableDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\KeyValuePairs[]

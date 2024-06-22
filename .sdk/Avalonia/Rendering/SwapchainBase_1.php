@@ -4,6 +4,7 @@ class SwapchainBase_1 extends \System\Object implements
 	\System\IAsyncDisposable
 {
 
+
 	private static function IsBroken($image){}
 	private static function IsReady($image){}
 	private function CleanupAndFindNextImage($size){}

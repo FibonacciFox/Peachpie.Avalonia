@@ -6,6 +6,7 @@ class Validator extends \Avalonia\Data\Core\Plugins\DataValidationBase implement
 	\System\IObserver_1,
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

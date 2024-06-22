@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 final class ConcreteFormattableString extends \System\FormattableString implements
 	\System\IFormattable
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class MenuItemAccessKeyHandler extends \System\Object implements
 	\Avalonia\Input\IAccessKeyHandler
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IMainMenu

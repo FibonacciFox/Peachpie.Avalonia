@@ -3,6 +3,7 @@ namespace System\Threading;
 class ProcessorIdCache extends \System\Object
 {
 
+
 	private static function RefreshCurrentProcessorId(){}
 	/**
 	 * @return \System\Int32|int

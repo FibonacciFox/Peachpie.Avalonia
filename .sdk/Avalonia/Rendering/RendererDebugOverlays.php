@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering;
 enum RendererDebugOverlays
 {
+
 	
 	case None = '0';
 	case Fps = '1';

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum CallingConventions
 {
+
 	
 	case Standard = '1';
 	case VarArgs = '2';

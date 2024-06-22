@@ -23,6 +23,7 @@ class NotifyCollectionChangedExtensions extends \System\Object
 {
 	use NotifyCollectionChangedExtensionsOverride;
 
+
 	/**
 	 * @param \System\Collections\Specialized\INotifyCollectionChanged $collection
 	 * @return \System\IObservable_1[System\Collections\Specialized\NotifyCollectionChangedEventArgs]

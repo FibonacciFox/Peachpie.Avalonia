@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class TYPEDESC extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

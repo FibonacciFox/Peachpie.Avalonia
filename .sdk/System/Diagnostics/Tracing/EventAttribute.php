@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

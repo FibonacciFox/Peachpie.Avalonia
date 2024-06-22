@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 final class PureAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

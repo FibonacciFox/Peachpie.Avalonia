@@ -618,6 +618,7 @@ trait AvxOverride {
 class Avx extends \System\Runtime\Intrinsics\X86\Sse42
 {
 	use AvxOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

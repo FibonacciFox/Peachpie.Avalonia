@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 class RawPointerGestureEventArgs extends \Avalonia\Input\Raw\RawPointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

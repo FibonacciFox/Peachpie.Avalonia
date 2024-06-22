@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum BaselineAlignment
 {
+
 	
 	case Top = '0';
 	case Center = '1';

@@ -22,6 +22,7 @@ class HeaderedContentControl extends \Avalonia\Controls\ContentControl implement
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Controls\IHeadered
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -432,7 +433,7 @@ class HeaderedContentControl extends \Avalonia\Controls\ContentControl implement
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

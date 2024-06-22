@@ -2,6 +2,7 @@
 
 final class EVENT_FILTER_DESCRIPTOR extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

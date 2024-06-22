@@ -30,6 +30,7 @@ class ServerResourceHelperExtensions extends \System\Object
 {
 	use ServerResourceHelperExtensionsOverride;
 
+
 	/**
 	 * @uses ServerResourceHelperExtensionsOverride::GetServer_1 <br>public , args: ($brush, $compositor)<br>
 	 * @uses ServerResourceHelperExtensionsOverride::GetServer_2 <br>public , args: ($pen, $compositor)<br>

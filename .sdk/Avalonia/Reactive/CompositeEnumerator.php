@@ -21,6 +21,7 @@ final class CompositeEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use CompositeEnumeratorOverride;
+
 	/**
 	 * @property
 	 * @var \System\IDisposable

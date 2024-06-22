@@ -179,6 +179,7 @@ class Utf8Parser extends \System\Object
 {
 	use Utf8ParserOverride;
 
+
 	/**
 	 * @uses Utf8ParserOverride::TryParse_1 <br>public , args: ($source, &$value, &$bytesConsumed, $standardFormat)<br>
 	 * @uses Utf8ParserOverride::TryParse_2 <br>public , args: ($source, &$value, &$bytesConsumed, $standardFormat)<br>

@@ -20,6 +20,7 @@ final class KeySpline extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use KeySplineOverride;
+
 	/**
 	 * @property
 	 * @var \System\Double|double
@@ -41,7 +42,7 @@ final class KeySpline extends \Avalonia\AvaloniaObject implements
 	 */
 	public $ControlPointY2;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

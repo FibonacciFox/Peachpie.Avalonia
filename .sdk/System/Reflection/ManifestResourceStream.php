@@ -4,6 +4,7 @@ final class ManifestResourceStream extends \System\IO\UnmanagedMemoryStream impl
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

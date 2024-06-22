@@ -2,6 +2,7 @@
 namespace System;
 enum DS
 {
+
 	
 	case BEGIN = '0';
 	case N = '1';

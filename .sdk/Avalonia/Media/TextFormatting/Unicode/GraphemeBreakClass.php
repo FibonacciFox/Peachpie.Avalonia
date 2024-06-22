@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 enum GraphemeBreakClass
 {
+
 	
 	case Other = '0';
 	case Control = '1';

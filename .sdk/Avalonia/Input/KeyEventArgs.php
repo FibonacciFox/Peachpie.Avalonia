@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class KeyEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\Key

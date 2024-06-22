@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class EventCommandEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventSource

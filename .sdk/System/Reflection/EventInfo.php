@@ -53,6 +53,7 @@ class EventInfo extends \System\Reflection\MemberInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use EventInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

@@ -16,6 +16,7 @@ trait PersianCalendarOverride {
 class RegionInfo extends \System\Object
 {
 	use PersianCalendarOverride;
+
 	/**
 	 * @field
 	 * @var \System\Globalization\RegionInfo

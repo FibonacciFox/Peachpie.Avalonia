@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class CounterPayloadType extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\Tracing\CounterPayload

@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class DateMapping extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

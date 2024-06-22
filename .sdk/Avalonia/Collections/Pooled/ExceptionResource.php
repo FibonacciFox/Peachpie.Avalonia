@@ -2,6 +2,7 @@
 namespace Avalonia\Collections\Pooled;
 enum ExceptionResource
 {
+
 	
 	case ArgumentOutOfRange_Index = '0';
 	case ArgumentOutOfRange_Count = '1';

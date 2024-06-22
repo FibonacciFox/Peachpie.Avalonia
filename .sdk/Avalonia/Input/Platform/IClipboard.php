@@ -3,6 +3,7 @@ namespace Avalonia\Input\Platform;
 interface IClipboard
 {
 
+
 	/**
 	 * @return \System\Threading\Tasks\Task_1[System\String]
 	 */

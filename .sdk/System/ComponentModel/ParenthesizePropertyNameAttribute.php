@@ -15,6 +15,7 @@ trait InvalidEnumArgumentExceptionOverride {
 final class ParenthesizePropertyNameAttribute extends \System\Attribute
 {
 	use InvalidEnumArgumentExceptionOverride;
+
 	/**
 	 * @field
 	 * @since readonly

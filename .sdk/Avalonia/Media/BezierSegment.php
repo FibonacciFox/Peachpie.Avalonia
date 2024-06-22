@@ -4,6 +4,7 @@ final class BezierSegment extends \Avalonia\Media\PathSegment implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -38,7 +39,7 @@ final class BezierSegment extends \Avalonia\Media\PathSegment implements
 	 */
 	public $Point3;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -3,6 +3,7 @@ namespace System\Globalization;
 class HebrewNumber extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Text\ValueStringBuilder& $outputBuffer
 	 * @param \System\Int32|int $Number

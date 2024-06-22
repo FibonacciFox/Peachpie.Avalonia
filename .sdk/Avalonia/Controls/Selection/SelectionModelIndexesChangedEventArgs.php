@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Selection;
 class SelectionModelIndexesChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

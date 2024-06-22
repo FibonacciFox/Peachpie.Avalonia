@@ -43,6 +43,7 @@ class TreeView extends \Avalonia\Controls\ItemsControl implements
 	\Avalonia\Input\ICustomKeyboardNavigation
 {
 	use TreeViewOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -68,7 +69,7 @@ class TreeView extends \Avalonia\Controls\ItemsControl implements
 	 */
 	public static $SelectionModeProperty;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\Generators\TreeItemContainerGenerator|\Avalonia\Controls\Generators\ItemContainerGenerator
 	 */
 	public $ItemContainerGenerator;
@@ -504,7 +505,7 @@ class TreeView extends \Avalonia\Controls\ItemsControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -4,6 +4,7 @@ class ServerBorderVisual extends \Avalonia\Rendering\Composition\Server\ServerCo
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject,
 	\Avalonia\Rendering\Composition\Server\IServerRenderResourceObserver
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

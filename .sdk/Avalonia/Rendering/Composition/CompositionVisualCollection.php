@@ -34,6 +34,7 @@ class CompositionVisualCollection extends \Avalonia\Rendering\Composition\Compos
 	\System\Collections\IEnumerable
 {
 	use CompositionVisualCollectionOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

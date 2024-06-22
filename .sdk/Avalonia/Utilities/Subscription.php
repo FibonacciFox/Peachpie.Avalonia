@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class Subscription extends \System\Object
 {
 
+
 	private function Destroy(){}
 	/**
 	 * @param \Avalonia\Utilities\IWeakEventSubscriber_1 $s [generic: TEventArgs]

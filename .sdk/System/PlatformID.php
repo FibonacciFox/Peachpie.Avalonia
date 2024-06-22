@@ -2,6 +2,7 @@
 namespace System;
 enum PlatformID
 {
+
 	
 	case Win32S = '0';
 	case Win32Windows = '1';

@@ -4,6 +4,7 @@ final class CompatibleComparer extends \System\Object implements
 	\System\Collections\IEqualityComparer
 {
 
+
 	/**
 	 * @param \System\Object|object $a
 	 * @param \System\Object|object $b

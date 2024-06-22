@@ -4,6 +4,7 @@ final class SignatureByRefType extends \System\Reflection\SignatureHasElementTyp
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

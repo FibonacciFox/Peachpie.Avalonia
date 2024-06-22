@@ -155,6 +155,7 @@ class Tuple extends \System\Object
 {
 	use TupleOverride;
 
+
 	/**
 	 * @uses TupleOverride::Create_1 <br>public , args: ($item1)<br>
 	 * @uses TupleOverride::Create_2 <br>public , args: ($item1, $item2)<br>

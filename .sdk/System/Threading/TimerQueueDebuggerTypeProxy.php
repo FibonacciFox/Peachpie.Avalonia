@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class TimerQueueDebuggerTypeProxy extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\TimerQueueTimer[]

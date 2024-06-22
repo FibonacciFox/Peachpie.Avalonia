@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 final class PARAMDESC extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

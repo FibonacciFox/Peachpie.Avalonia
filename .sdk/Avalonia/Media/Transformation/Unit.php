@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Transformation;
 enum Unit
 {
+
 	
 	case None = '0';
 	case Pixel = '1';

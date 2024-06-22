@@ -2,6 +2,7 @@
 namespace Avalonia;
 class AvaloniaPropertyMetadata extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\BindingMode

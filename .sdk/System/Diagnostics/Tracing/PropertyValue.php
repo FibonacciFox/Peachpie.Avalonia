@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class PropertyValue extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

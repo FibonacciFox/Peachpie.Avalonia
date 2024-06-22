@@ -5,6 +5,7 @@ class AndActivator extends \Avalonia\Styling\Activators\StyleActivatorBase imple
 	\System\IDisposable,
 	\Avalonia\Styling\Activators\IStyleActivatorSink
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

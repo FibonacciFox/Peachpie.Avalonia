@@ -36,6 +36,7 @@ class OperationCanceledException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use OperationCanceledExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

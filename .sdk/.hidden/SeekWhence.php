@@ -2,6 +2,7 @@
 
 enum SeekWhence
 {
+
 	
 	case SEEK_SET = '0';
 	case SEEK_CUR = '1';

@@ -5,6 +5,7 @@ final class TaskAwaiter_1 extends \System\ValueType implements
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\Runtime\CompilerServices\ITaskAwaiter
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

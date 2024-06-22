@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class ResizeData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool

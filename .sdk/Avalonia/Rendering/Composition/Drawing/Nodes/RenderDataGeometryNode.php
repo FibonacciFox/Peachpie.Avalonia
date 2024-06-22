@@ -4,6 +4,7 @@ class RenderDataGeometryNode extends \Avalonia\Rendering\Composition\Drawing\Nod
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItemWithServerResources,
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IGeometryImpl

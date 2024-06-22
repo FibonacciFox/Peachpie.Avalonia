@@ -2,6 +2,7 @@
 namespace System;
 enum TokenType
 {
+
 	
 	case NumberToken = '1';
 	case YearNumberToken = '2';

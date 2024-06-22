@@ -16,6 +16,7 @@ class BoxShadowsAnimator extends \Avalonia\Animation\Animators\Animator_1 implem
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

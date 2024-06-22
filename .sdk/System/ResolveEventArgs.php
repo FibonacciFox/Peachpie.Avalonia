@@ -17,6 +17,7 @@ trait ReadOnlySpan_1Override {
 class ResolveEventArgs extends \System\EventArgs
 {
 	use ReadOnlySpan_1Override;
+
 	/**
 	 * @property
 	 * @var \System\String|string

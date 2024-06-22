@@ -21,6 +21,7 @@ class KeyNotFoundException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use KeyNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

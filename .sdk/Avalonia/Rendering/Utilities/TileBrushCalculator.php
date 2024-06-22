@@ -25,6 +25,7 @@ trait LayoutPassTimingOverride {
 class TileBrushCalculator extends \System\Object
 {
 	use LayoutPassTimingOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

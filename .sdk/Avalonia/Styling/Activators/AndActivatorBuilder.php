@@ -3,6 +3,7 @@ namespace Avalonia\Styling\Activators;
 final class AndActivatorBuilder extends \System\ValueType
 {
 
+
 	/**
 	 * @param \Avalonia\Styling\Activators\IStyleActivator $activator
 	 * @return \System\Void|void

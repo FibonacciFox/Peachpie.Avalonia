@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Drawing;
 class Collector extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataServerResourcesCollector
 {
+
 	/**
 	 * @field
 	 * @since readonly

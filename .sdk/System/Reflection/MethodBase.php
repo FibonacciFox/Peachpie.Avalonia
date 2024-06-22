@@ -39,6 +39,7 @@ class MethodBase extends \System\Reflection\MemberInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use MethodBaseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MethodAttributes

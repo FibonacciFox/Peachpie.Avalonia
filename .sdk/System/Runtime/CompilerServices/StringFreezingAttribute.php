@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class StringFreezingAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

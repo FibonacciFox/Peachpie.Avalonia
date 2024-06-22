@@ -154,6 +154,7 @@ trait ThreadPoolOverride {
 class ThreadPool extends \System\Object
 {
 	use ThreadPoolOverride;
+
 	/**
 	 * @field
 	 * @since readonly

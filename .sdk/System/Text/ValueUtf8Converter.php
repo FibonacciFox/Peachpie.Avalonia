@@ -3,6 +3,7 @@ namespace System\Text;
 final class ValueUtf8Converter extends \System\ValueType
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $value [generic: System\Char]
 	 * @return \System\Span_1[System\Byte]

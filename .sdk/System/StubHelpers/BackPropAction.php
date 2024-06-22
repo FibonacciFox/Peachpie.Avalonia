@@ -2,6 +2,7 @@
 namespace System\StubHelpers;
 enum BackPropAction
 {
+
 	
 	case None = '0';
 	case Array = '1';

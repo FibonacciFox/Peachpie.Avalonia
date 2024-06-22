@@ -3,6 +3,7 @@ namespace System\Reflection;
 final class MetadataException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 class TextTrimming extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

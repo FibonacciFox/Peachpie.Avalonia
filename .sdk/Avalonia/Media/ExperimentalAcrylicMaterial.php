@@ -22,6 +22,7 @@ class ExperimentalAcrylicMaterial extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IExperimentalAcrylicMaterial
 {
 	use ExperimentalAcrylicMaterialOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -89,7 +90,7 @@ class ExperimentalAcrylicMaterial extends \Avalonia\AvaloniaObject implements
 	 */
 	public $PlatformTransparencyCompensationLevel;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

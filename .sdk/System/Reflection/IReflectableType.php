@@ -3,6 +3,7 @@ namespace System\Reflection;
 interface IReflectableType
 {
 
+
 	/**
 	 * @return \System\Reflection\TypeInfo
 	 */

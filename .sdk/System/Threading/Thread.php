@@ -285,6 +285,7 @@ trait ThreadOverride {
 final class Thread extends \System\Runtime\ConstrainedExecution\CriticalFinalizerObject
 {
 	use ThreadOverride;
+
 	/**
 	 * @field
 	 * @var \System\Threading\ExecutionContext

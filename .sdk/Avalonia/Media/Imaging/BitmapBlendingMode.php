@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Imaging;
 enum BitmapBlendingMode
 {
+
 	
 	case Unspecified = '0';
 	case SourceOver = '1';

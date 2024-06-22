@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 class TextSearch extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

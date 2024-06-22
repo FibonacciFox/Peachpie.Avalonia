@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum FORMATFLAGS
 {
+
 	
 	case None = '0';
 	case UseGenitiveMonth = '1';

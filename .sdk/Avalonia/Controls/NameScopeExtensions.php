@@ -37,6 +37,7 @@ class NameScopeExtensions extends \System\Object
 {
 	use NameScopeExtensionsOverride;
 
+
 	/**
 	 * @uses NameScopeExtensionsOverride::Find_1 <br>public , args: ($nameScope, $name)<br>
 	 * @uses NameScopeExtensionsOverride::Find_2 <br>public , args: ($anchor, $name)<br>

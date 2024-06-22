@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 enum EditorBrowsableState
 {
+
 	
 	case Always = '0';
 	case Never = '1';

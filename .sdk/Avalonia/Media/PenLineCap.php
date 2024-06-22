@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum PenLineCap
 {
+
 	
 	case Flat = '0';
 	case Round = '1';

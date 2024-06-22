@@ -321,6 +321,7 @@ final class TimeZoneInfo extends \System\Object implements
 	\System\Runtime\Serialization\IDeserializationCallback
 {
 	use TimeZoneInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 class RawDragEvent extends \Avalonia\Input\Raw\RawInputEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Point

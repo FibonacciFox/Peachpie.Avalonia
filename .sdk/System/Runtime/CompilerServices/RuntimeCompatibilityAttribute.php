@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class RuntimeCompatibilityAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

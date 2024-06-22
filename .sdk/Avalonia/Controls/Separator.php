@@ -19,6 +19,7 @@ class Separator extends \Avalonia\Controls\Primitives\TemplatedControl implement
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IBrush
@@ -376,7 +377,7 @@ class Separator extends \Avalonia\Controls\Primitives\TemplatedControl implement
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

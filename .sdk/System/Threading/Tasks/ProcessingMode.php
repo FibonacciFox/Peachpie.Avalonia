@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 enum ProcessingMode
 {
+
 	
 	case NotCurrentlyProcessing = '0';
 	case ProcessingExclusiveTask = '1';

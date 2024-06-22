@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 interface ICollectionChangedListener
 {
 
+
 	/**
 	 * @param \System\Collections\Specialized\INotifyCollectionChanged $sender
 	 * @param \System\Collections\Specialized\NotifyCollectionChangedEventArgs $e

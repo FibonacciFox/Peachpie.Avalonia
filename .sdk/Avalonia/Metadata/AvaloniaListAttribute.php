@@ -2,6 +2,7 @@
 namespace Avalonia\Metadata;
 final class AvaloniaListAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

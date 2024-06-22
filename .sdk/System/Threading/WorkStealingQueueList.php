@@ -2,6 +2,7 @@
 namespace System\Threading;
 class WorkStealingQueueList extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\ThreadPoolWorkQueue+WorkStealingQueue[]

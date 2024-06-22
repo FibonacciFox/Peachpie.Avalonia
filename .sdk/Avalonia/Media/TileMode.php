@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum TileMode
 {
+
 	
 	case None = '0';
 	case FlipX = '1';

@@ -2,6 +2,7 @@
 namespace System\Resources;
 enum ResourceTypeCode
 {
+
 	
 	case Null = '0';
 	case String = '1';

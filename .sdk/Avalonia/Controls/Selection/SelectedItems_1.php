@@ -31,6 +31,7 @@ class SelectedItems_1 extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use SelectedItems_1Override;
+
 	/**
 	 * @property
 	 * @var \T|object

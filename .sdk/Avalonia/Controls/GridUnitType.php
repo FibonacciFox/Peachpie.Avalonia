@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum GridUnitType
 {
+
 	
 	case Auto = '0';
 	case Pixel = '1';

@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class DestroyScout extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\RuntimeMethodHandleInternal

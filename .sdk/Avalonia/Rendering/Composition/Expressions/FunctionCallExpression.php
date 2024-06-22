@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 class FunctionCallExpression extends \Avalonia\Rendering\Composition\Expressions\Expression
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

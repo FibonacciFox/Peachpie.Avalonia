@@ -159,6 +159,7 @@ final class DirectoryInfo extends \System\IO\FileSystemInfo implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use DirectoryInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

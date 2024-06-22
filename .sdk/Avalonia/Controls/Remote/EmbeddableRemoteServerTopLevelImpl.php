@@ -6,6 +6,7 @@ class EmbeddableRemoteServerTopLevelImpl extends \Avalonia\Controls\Remote\Serve
 	\System\IDisposable,
 	\Avalonia\Controls\Platform\Surfaces\IFramebufferPlatformSurface
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[System\Object]

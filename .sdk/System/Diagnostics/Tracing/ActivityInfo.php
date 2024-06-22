@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class ActivityInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

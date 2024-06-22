@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum TickBarPlacement
 {
+
 	
 	case Left = '0';
 	case Top = '1';

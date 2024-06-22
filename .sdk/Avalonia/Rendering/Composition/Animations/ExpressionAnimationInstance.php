@@ -4,6 +4,7 @@ class ExpressionAnimationInstance extends \Avalonia\Rendering\Composition\Animat
 	\Avalonia\Rendering\Composition\Animations\IAnimationInstance,
 	\Avalonia\Rendering\Composition\Server\IServerClockItem
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Server\ServerObject

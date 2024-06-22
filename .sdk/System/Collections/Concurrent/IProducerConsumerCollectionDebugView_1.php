@@ -2,6 +2,7 @@
 namespace System\Collections\Concurrent;
 final class IProducerConsumerCollectionDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T[]

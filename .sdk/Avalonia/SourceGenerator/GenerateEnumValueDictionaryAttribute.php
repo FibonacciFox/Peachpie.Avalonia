@@ -2,6 +2,7 @@
 namespace Avalonia\SourceGenerator;
 final class GenerateEnumValueDictionaryAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

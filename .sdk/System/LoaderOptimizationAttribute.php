@@ -16,6 +16,7 @@ trait LazyHelperOverride {
 final class LoaderOptimizationAttribute extends \System\Attribute
 {
 	use LazyHelperOverride;
+
 	/**
 	 * @property
 	 * @var \System\LoaderOptimization

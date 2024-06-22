@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 enum DateTimePickerPanelType
 {
+
 	
 	case Year = '0';
 	case Month = '1';

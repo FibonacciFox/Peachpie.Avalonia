@@ -4,6 +4,7 @@ final class ContinuationResultTaskFromTask_1 extends \System\Threading\Tasks\Tas
 	\System\IAsyncResult,
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @var \TResult

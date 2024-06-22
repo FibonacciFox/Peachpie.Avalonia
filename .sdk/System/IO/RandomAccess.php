@@ -77,6 +77,7 @@ class RandomAccess extends \System\Object
 {
 	use RandomAccessOverride;
 
+
 	/**
 	 * @param \Microsoft\Win32\SafeHandles\SafeFileHandle $handle
 	 * @return \System\Int64|int

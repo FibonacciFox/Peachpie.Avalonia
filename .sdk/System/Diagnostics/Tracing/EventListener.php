@@ -33,6 +33,7 @@ class EventListener extends \System\Object implements
 	\System\IDisposable
 {
 	use EventListenerOverride;
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\EventListener

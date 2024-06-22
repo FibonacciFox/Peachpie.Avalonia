@@ -3,6 +3,7 @@ namespace Avalonia\Automation\Peers;
 class ListItemAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAutomationPeer implements
 	\Avalonia\Automation\Provider\ISelectionItemProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -16,7 +17,7 @@ class ListItemAutomationPeer extends \Avalonia\Automation\Peers\ContentControlAu
 	 */
 	public $SelectionContainer;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\ContentControl|\Avalonia\Controls\Control
 	 */
 	public $Owner;

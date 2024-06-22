@@ -21,6 +21,7 @@ class ArrayTypeMismatchException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ArrayTypeMismatchExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

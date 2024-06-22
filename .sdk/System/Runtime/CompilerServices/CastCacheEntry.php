@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class CastCacheEntry extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

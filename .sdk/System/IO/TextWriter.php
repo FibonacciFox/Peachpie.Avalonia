@@ -357,6 +357,7 @@ class TextWriter extends \System\MarshalByRefObject implements
 	\System\IAsyncDisposable
 {
 	use TextWriterOverride;
+
 	/**
 	 * @field
 	 * @var \System\Char[]

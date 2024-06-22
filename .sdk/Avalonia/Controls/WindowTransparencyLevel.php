@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 final class WindowTransparencyLevel extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\WindowTransparencyLevel

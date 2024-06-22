@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Server;
 final class FrameTimeGraph extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size

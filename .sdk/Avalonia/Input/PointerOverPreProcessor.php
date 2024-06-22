@@ -25,6 +25,7 @@ class PointerOverPreProcessor extends \System\Object implements
 	\System\IObserver_1
 {
 	use PointerOverPreProcessorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[Avalonia\PixelPoint]

@@ -5,6 +5,7 @@ final class TransitionClock extends \Avalonia\Animation\ClockBase implements
 	\System\IObservable_1,
 	\System\IObserver_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Animation\PlayState

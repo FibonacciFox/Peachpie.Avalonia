@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 enum VariantType
 {
+
 	
 	case Invalid = '0';
 	case Boolean = '1';

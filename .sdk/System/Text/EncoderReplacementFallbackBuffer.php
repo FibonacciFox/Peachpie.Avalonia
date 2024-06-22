@@ -2,6 +2,7 @@
 namespace System\Text;
 final class EncoderReplacementFallbackBuffer extends \System\Text\EncoderFallbackBuffer
 {
+
 	/**
 	 * @field
 	 * @var \System\Char*

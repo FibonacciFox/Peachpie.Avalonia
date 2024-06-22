@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class SystemThreading_SpinLockDebugView extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Nullable_1[System\Boolean]

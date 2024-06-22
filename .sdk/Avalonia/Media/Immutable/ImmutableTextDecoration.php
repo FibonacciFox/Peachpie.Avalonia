@@ -2,6 +2,7 @@
 namespace Avalonia\Media\Immutable;
 class ImmutableTextDecoration extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextDecorationLocation

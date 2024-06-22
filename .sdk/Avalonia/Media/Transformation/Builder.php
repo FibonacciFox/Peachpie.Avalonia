@@ -4,6 +4,7 @@ final class Builder extends \System\ValueType implements
 	\System\IEquatable_1
 {
 
+
 	/**
 	 * @param \System\Double|double $x
 	 * @param \System\Double|double $y

@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 class Debugger extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

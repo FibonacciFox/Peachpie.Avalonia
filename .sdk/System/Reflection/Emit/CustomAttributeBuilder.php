@@ -36,6 +36,7 @@ trait ConstructorBuilderOverride {
 class CustomAttributeBuilder extends \System\Object
 {
 	use ConstructorBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\ConstructorInfo

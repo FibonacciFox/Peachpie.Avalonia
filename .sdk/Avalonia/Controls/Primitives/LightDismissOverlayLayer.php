@@ -21,6 +21,7 @@ class LightDismissOverlayLayer extends \Avalonia\Controls\Border implements
 	\Avalonia\VisualTree\IVisualWithRoundRectClip,
 	\Avalonia\Rendering\ICustomHitTest
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IInputElement
@@ -364,7 +365,7 @@ class LightDismissOverlayLayer extends \Avalonia\Controls\Border implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

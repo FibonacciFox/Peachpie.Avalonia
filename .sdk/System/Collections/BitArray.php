@@ -36,6 +36,7 @@ final class BitArray extends \System\Object implements
 	\System\ICloneable
 {
 	use SROverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

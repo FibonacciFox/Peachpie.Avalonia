@@ -15,6 +15,7 @@ class CompositionDrawingSurface extends \Avalonia\Rendering\Composition\Composit
 	\System\IDisposable
 {
 	use CompositionDrawingSurfaceOverride;
+
 	/**
 	 * @field
 	 * @var \Avalonia\Utilities\InlineDictionary_2[Avalonia\Rendering\Composition\Server\CompositionProperty,Avalonia\Rendering\Composition\Animations\IAnimationInstance]

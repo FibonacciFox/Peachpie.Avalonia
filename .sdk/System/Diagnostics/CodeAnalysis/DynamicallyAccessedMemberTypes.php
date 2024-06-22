@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 enum DynamicallyAccessedMemberTypes
 {
+
 	
 	case None = '0';
 	case PublicParameterlessConstructor = '1';

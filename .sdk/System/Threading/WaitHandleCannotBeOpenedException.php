@@ -21,6 +21,7 @@ class WaitHandleCannotBeOpenedException extends \System\ApplicationException imp
 	\System\Runtime\Serialization\ISerializable
 {
 	use WaitHandleCannotBeOpenedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

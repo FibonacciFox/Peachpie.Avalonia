@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class NullablePublicOnlyAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

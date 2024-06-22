@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition;
 class MatrixUtils extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Vector $size
 	 * @param \Avalonia\Vector $anchorPoint

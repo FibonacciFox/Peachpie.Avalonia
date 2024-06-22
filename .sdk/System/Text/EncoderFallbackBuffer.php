@@ -37,6 +37,7 @@ trait EncoderFallbackBufferOverride {
 class EncoderFallbackBuffer extends \System\Object
 {
 	use EncoderFallbackBufferOverride;
+
 	/**
 	 * @field
 	 * @var \System\Char*

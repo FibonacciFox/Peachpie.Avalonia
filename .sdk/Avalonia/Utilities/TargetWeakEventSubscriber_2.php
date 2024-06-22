@@ -4,6 +4,7 @@ final class TargetWeakEventSubscriber_2 extends \System\Object implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1
 {
 
+
 	private function OnEvent($sender, $ev, $e){}
 	/**
 	 * @param \TTarget $target

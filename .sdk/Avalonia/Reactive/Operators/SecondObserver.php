@@ -3,6 +3,7 @@ namespace Avalonia\Reactive\Operators;
 final class SecondObserver extends \System\Object implements
 	\System\IObserver_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

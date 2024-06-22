@@ -3,6 +3,7 @@ namespace System\Text;
 final class ManyChunkInfo extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Text\StringBuilder& $current
 	 * @return \System\Boolean|bool

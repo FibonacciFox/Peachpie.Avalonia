@@ -23,6 +23,7 @@ trait InvalidEnumArgumentExceptionOverride {
 final class DesignerSerializerAttribute extends \System\Attribute
 {
 	use InvalidEnumArgumentExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

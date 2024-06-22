@@ -2,6 +2,7 @@
 namespace System\Reflection;
 class LocalVariableInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

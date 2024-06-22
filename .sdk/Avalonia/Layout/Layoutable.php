@@ -15,6 +15,7 @@ class Layoutable extends \Avalonia\Visual implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -279,7 +280,7 @@ class Layoutable extends \Avalonia\Visual implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

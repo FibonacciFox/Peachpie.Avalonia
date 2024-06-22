@@ -2,6 +2,7 @@
 namespace System;
 final class Enumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \T&

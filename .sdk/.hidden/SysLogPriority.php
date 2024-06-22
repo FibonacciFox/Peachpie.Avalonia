@@ -2,6 +2,7 @@
 
 enum SysLogPriority
 {
+
 	
 	case LOG_EMERG = '0';
 	case LOG_ALERT = '1';

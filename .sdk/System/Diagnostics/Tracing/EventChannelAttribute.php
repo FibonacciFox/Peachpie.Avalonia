@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class EventChannelAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

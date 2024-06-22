@@ -36,6 +36,7 @@ class MenuFlyoutPresenter extends \Avalonia\Controls\MenuBase implements
 	\Avalonia\Controls\IMenuElement
 {
 	use MenuFlyoutPresenterOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -509,7 +510,7 @@ class MenuFlyoutPresenter extends \Avalonia\Controls\MenuBase implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

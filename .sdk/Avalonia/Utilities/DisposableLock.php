@@ -3,6 +3,7 @@ namespace Avalonia\Utilities;
 class DisposableLock extends \System\Object
 {
 
+
 	/**
 	 * @return \System\IDisposable
 	 */

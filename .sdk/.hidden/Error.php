@@ -2,6 +2,7 @@
 
 enum Error
 {
+
 	
 	case SUCCESS = '0';
 	case E2BIG = '65537';

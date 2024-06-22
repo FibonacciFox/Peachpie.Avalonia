@@ -4,4 +4,5 @@ final class NativeVariant extends \System\ValueType
 {
 
 
+
 }

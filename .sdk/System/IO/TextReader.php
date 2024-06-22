@@ -105,6 +105,7 @@ class TextReader extends \System\MarshalByRefObject implements
 	\System\IDisposable
 {
 	use TextReaderOverride;
+
 	/**
 	 * @field
 	 * @since readonly

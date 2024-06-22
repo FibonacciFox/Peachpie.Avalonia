@@ -22,6 +22,7 @@ trait PixelVectorOverride {
 final class PixelVector extends \System\ValueType
 {
 	use PixelVectorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

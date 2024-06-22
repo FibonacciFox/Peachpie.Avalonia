@@ -81,6 +81,7 @@ final class Color extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ColorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Byte

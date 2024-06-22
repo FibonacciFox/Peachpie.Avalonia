@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PointerWheelEventArgs extends \Avalonia\Input\PointerEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

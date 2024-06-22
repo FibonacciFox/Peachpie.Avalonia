@@ -44,6 +44,7 @@ class ContentControl extends \Avalonia\Controls\Primitives\TemplatedControl impl
 	\Avalonia\Controls\Presenters\IContentPresenterHost
 {
 	use ContentControlOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -450,7 +451,7 @@ class ContentControl extends \Avalonia\Controls\Primitives\TemplatedControl impl
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

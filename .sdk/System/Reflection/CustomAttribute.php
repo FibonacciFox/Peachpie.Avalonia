@@ -166,6 +166,7 @@ class CustomAttribute extends \System\Object
 {
 	use CustomAttributeOverride;
 
+
 	/**
 	 * @uses CustomAttributeOverride::IsDefined_1 <br>protected , args: ($type, $caType, $inherit)<br>
 	 * @uses CustomAttributeOverride::IsDefined_2 <br>protected , args: ($method, $caType, $inherit)<br>

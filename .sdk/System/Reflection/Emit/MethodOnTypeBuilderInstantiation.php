@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class MethodOnTypeBuilderInstantiation extends \System\Reflection\MethodInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\MethodInfo

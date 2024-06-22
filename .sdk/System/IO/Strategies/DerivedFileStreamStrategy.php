@@ -4,6 +4,7 @@ final class DerivedFileStreamStrategy extends \System\IO\Strategies\FileStreamSt
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\SemaphoreSlim

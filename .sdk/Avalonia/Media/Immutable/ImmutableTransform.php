@@ -3,6 +3,7 @@ namespace Avalonia\Media\Immutable;
 class ImmutableTransform extends \System\Object implements
 	\Avalonia\Media\ITransform
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Matrix

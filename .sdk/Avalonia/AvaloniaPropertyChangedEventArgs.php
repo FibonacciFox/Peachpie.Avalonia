@@ -2,6 +2,7 @@
 namespace Avalonia;
 class AvaloniaPropertyChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaObject

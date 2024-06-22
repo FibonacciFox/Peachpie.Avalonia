@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 final class ConditionalAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

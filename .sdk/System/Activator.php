@@ -127,6 +127,7 @@ class Activator extends \System\Object
 {
 	use ActivatorOverride;
 
+
 	/**
 	 * @uses ActivatorOverride::CreateInstance_1 <br>public , args: ($type, $bindingAttr, $binder, $args, $culture)<br>
 	 * @uses ActivatorOverride::CreateInstance_2 <br>public , args: ($type, ...$args)<br>

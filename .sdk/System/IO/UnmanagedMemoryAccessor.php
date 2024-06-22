@@ -131,6 +131,7 @@ class UnmanagedMemoryAccessor extends \System\Object implements
 	\System\IDisposable
 {
 	use UnmanagedMemoryAccessorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int64|int

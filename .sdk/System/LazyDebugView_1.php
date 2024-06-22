@@ -2,6 +2,7 @@
 namespace System;
 final class LazyDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

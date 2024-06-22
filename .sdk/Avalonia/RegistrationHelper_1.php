@@ -3,6 +3,7 @@ namespace Avalonia;
 class RegistrationHelper_1 extends \System\Object
 {
 
+
 	/**
 	 * @param \TImpl $constant
 	 * @return \Avalonia\AvaloniaLocator

@@ -17,6 +17,7 @@ trait MissingSatelliteAssemblyExceptionOverride {
 final class NeutralResourcesLanguageAttribute extends \System\Attribute
 {
 	use MissingSatelliteAssemblyExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

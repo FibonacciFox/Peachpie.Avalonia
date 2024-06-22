@@ -16,6 +16,7 @@ class ThicknessAnimator extends \Avalonia\Animation\Animators\Animator_1 impleme
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

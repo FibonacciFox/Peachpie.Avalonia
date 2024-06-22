@@ -2,6 +2,7 @@
 namespace System;
 final class STAThreadAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

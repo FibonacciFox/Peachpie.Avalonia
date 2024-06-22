@@ -2,6 +2,7 @@
 namespace Avalonia;
 class TrimmingMessages extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

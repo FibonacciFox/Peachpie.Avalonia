@@ -2,6 +2,7 @@
 namespace System\Text;
 final class EncoderExceptionFallbackBuffer extends \System\Text\EncoderFallbackBuffer
 {
+
 	/**
 	 * @field
 	 * @var \System\Char*

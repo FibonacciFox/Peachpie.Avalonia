@@ -20,6 +20,7 @@ trait __DTStringOverride {
 final class __DTString extends \System\ValueType
 {
 	use __DTStringOverride;
+
 	/**
 	 * @field
 	 * @var \System\ReadOnlySpan_1[System\Char]

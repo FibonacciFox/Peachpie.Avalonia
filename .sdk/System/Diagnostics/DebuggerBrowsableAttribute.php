@@ -2,6 +2,7 @@
 namespace System\Diagnostics;
 final class DebuggerBrowsableAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Diagnostics\DebuggerBrowsableState

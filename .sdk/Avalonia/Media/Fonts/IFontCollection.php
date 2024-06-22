@@ -3,6 +3,7 @@ namespace Avalonia\Media\Fonts;
 interface IFontCollection
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\IFontManagerImpl $fontManager
 	 * @return \System\Void|void

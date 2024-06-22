@@ -3,6 +3,7 @@ namespace System\Threading;
 class GateThread extends \System\Object
 {
 
+
 	private static function GateThreadStart(){}
 	/**
 	 * @param \System\Threading\PortableThreadPool $threadPoolInstance

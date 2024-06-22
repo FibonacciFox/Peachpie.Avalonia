@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Primitives;
 class UpdateState extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

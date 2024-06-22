@@ -34,6 +34,7 @@ class Exception extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

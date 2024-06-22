@@ -22,6 +22,7 @@ class SignatureTypeExtensions extends \System\Object
 {
 	use SignatureTypeExtensionsOverride;
 
+
 	/**
 	 * @param \System\Type $pattern
 	 * @param \System\Reflection\ParameterInfo $parameter

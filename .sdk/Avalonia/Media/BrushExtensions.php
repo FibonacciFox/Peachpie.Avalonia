@@ -27,6 +27,7 @@ class BrushExtensions extends \System\Object
 {
 	use BrushExtensionsOverride;
 
+
 	/**
 	 * @uses BrushExtensionsOverride::ToImmutable_1 <br>public , args: ($brush)<br>
 	 * @uses BrushExtensionsOverride::ToImmutable_2 <br>public , args: ($style)<br>

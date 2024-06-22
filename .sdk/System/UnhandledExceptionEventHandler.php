@@ -4,6 +4,7 @@ final class UnhandledExceptionEventHandler extends \System\MulticastDelegate imp
 	\System\ICloneable,
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\Object|object

@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class HillClimbing extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

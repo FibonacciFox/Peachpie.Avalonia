@@ -42,6 +42,7 @@ final class ValueTask extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use ValueTaskOverride;
+
 	/**
 	 * @field
 	 * @since readonly

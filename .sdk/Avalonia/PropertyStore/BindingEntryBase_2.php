@@ -67,6 +67,7 @@ class BindingEntryBase_2 extends \System\Object implements
 	\System\IDisposable
 {
 	use BindingEntryBase_2Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

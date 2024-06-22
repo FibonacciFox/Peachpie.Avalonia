@@ -195,6 +195,7 @@ class Assembly extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use AssemblyOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[System\Reflection\TypeInfo]

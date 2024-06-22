@@ -4,6 +4,7 @@ final class MemoryFailPoint extends \System\Runtime\ConstrainedExecution\Critica
 	\System\IDisposable
 {
 
+
 	private static function AddToLastKnownFreeAddressSpace($addend){}
 	/**
 	 * @return \System\Void|void

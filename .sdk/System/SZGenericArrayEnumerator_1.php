@@ -21,6 +21,7 @@ final class SZGenericArrayEnumerator_1 extends \System\Object implements
 	\System\Collections\IEnumerator
 {
 	use SZGenericArrayEnumerator_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

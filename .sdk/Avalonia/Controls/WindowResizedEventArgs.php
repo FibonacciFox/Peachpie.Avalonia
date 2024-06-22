@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class WindowResizedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Size

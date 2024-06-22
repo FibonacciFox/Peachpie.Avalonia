@@ -19,6 +19,7 @@ trait DataCollectorOverride {
 final class DataCollector extends \System\ValueType
 {
 	use DataCollectorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Diagnostics\Tracing\DataCollector

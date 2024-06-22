@@ -22,6 +22,7 @@ class Kernel32 extends \System\Object
 {
 	use Kernel32Override;
 
+
 	/**
 	 * @param \System\IntPtr $handle
 	 * @return \System\Boolean|bool

@@ -23,6 +23,7 @@ class Geometry extends \Avalonia\AvaloniaObject implements
 	\System\ComponentModel\INotifyPropertyChanged
 {
 	use GeometryOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -47,7 +48,7 @@ class Geometry extends \Avalonia\AvaloniaObject implements
 	 */
 	public $ContourLength;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Collections\Pooled;
 final class ICollectionDebugView_1 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T[]

@@ -20,6 +20,7 @@ trait ContractExceptionOverride {
 final class ContractOptionAttribute extends \System\Attribute
 {
 	use ContractExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

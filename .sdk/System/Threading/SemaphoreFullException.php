@@ -21,6 +21,7 @@ class SemaphoreFullException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SemaphoreFullExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

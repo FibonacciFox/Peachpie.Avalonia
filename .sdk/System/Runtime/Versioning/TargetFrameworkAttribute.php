@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 final class TargetFrameworkAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

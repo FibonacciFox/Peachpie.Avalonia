@@ -3,6 +3,7 @@
 final class ErrorInfo extends \System\ValueType
 {
 
+
 	/**
 	 * @return \System\String|string
 	 */

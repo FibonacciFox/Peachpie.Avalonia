@@ -28,6 +28,7 @@ final class RuntimeParameterInfo extends \System\Reflection\ParameterInfo implem
 	\System\Runtime\Serialization\IObjectReference
 {
 	use RuntimeParameterInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\ParameterAttributes

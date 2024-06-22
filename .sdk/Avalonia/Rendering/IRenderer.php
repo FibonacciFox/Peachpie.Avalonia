@@ -7,6 +7,7 @@ namespace Avalonia\Rendering;
 interface IRenderer
 {
 
+
 	/**
 	 * @param \Avalonia\Visual $visual
 	 * @return \System\Void|void

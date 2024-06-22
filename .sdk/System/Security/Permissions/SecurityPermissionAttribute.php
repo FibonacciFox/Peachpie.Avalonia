@@ -2,6 +2,7 @@
 namespace System\Security\Permissions;
 final class SecurityPermissionAttribute extends \System\Security\Permissions\CodeAccessSecurityAttribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

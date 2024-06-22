@@ -17,6 +17,7 @@ final class SecureString extends \System\Object implements
 	\System\IDisposable
 {
 	use StubHelpersOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

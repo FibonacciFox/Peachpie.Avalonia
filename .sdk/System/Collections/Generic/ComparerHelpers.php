@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 class ComparerHelpers extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Type $type
 	 * @return \System\Object|object

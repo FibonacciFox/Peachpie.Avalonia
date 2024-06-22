@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class TupleElementNamesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IList_1[System\String]

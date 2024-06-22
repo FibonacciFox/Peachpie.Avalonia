@@ -35,6 +35,7 @@ class StringNormalizationExtensions extends \System\Object
 {
 	use StringNormalizationExtensionsOverride;
 
+
 	/**
 	 * @uses StringNormalizationExtensionsOverride::IsNormalized_1 <br>public , args: ($strInput)<br>
 	 * @uses StringNormalizationExtensionsOverride::IsNormalized_2 <br>public , args: ($strInput, $normalizationForm)<br>

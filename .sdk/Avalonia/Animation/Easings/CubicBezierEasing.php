@@ -3,6 +3,7 @@ namespace Avalonia\Animation\Easings;
 final class CubicBezierEasing extends \System\Object implements
 	\Avalonia\Animation\Easings\IEasing
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Point

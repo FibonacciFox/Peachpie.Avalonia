@@ -2,6 +2,7 @@
 namespace System\Diagnostics\CodeAnalysis;
 final class ExcludeFromCodeCoverageAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

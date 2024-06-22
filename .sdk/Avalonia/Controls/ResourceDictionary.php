@@ -58,6 +58,7 @@ class ResourceDictionary extends \System\Object implements
 	\Avalonia\Controls\IThemeVariantProvider
 {
 	use ResourceDictionaryOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

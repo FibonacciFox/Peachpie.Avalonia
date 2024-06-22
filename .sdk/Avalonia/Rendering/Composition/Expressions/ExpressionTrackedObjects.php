@@ -26,6 +26,7 @@ class ExpressionTrackedObjects extends \System\Object implements
 {
 	use ExpressionTrackedObjectsOverride;
 
+
 	/**
 	 * @param \Avalonia\Rendering\Composition\Expressions\IExpressionObject $obj
 	 * @param \System\String|string $member

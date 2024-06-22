@@ -3,6 +3,7 @@ namespace Avalonia\Data\Converters;
 class StringFormatMultiValueConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IMultiValueConverter
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Data\Converters\IMultiValueConverter

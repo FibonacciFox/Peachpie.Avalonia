@@ -16,6 +16,7 @@ trait ConcreteFormattableStringOverride {
 final class InterpolatedStringHandlerArgumentAttribute extends \System\Attribute
 {
 	use ConcreteFormattableStringOverride;
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

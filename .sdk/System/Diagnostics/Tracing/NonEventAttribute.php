@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 final class NonEventAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

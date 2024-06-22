@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum ComInterfaceType
 {
+
 	
 	case InterfaceIsDual = '0';
 	case InterfaceIsIUnknown = '1';

@@ -20,6 +20,7 @@ class RelativePanel extends \Avalonia\Controls\Panel implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -429,7 +430,7 @@ class RelativePanel extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

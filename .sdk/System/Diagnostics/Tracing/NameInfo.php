@@ -15,6 +15,7 @@ trait NameInfoOverride {
 final class NameInfo extends \System\Diagnostics\Tracing\ConcurrentSetItem_2
 {
 	use NameInfoOverride;
+
 	/**
 	 * @field
 	 * @since readonly

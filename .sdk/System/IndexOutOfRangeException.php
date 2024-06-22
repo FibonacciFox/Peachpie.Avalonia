@@ -21,6 +21,7 @@ final class IndexOutOfRangeException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use IndexOutOfRangeExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

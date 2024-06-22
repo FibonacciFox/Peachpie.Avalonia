@@ -84,6 +84,7 @@ class MenuItem extends \Avalonia\Controls\Primitives\HeaderedSelectingItemsContr
 	\Avalonia\Input\IClickableControl
 {
 	use MenuItemOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -686,7 +687,7 @@ class MenuItem extends \Avalonia\Controls\Primitives\HeaderedSelectingItemsContr
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -5,6 +5,7 @@ class TypeDelegator extends \System\Reflection\TypeInfo implements
 	\System\Reflection\IReflect,
 	\System\Reflection\IReflectableType
 {
+
 	/**
 	 * @field
 	 * @var \System\Type

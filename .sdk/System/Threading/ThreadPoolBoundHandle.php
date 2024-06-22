@@ -32,6 +32,7 @@ final class ThreadPoolBoundHandle extends \System\Object implements
 	\System\IDisposable
 {
 	use ThreadPoolBoundHandleOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\SafeHandle

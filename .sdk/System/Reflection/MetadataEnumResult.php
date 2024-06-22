@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class MetadataEnumResult extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

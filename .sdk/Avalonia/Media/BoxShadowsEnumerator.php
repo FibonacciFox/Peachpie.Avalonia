@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 final class BoxShadowsEnumerator extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\BoxShadow

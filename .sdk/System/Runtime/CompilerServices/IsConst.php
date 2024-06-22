@@ -4,4 +4,5 @@ class IsConst extends \System\Object
 {
 
 
+
 }

@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage;
 interface IStorageProvider
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\Storage\FilePickerOpenOptions $options
 	 * @return \System\Threading\Tasks\Task_1[System\Collections\Generic\IReadOnlyList_1[Avalonia\Platform\Storage\IStorageFile]]

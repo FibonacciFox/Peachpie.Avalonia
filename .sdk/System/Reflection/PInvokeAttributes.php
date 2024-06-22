@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum PInvokeAttributes
 {
+
 	
 	case NoMangle = '1';
 	case CharSetMask = '6';

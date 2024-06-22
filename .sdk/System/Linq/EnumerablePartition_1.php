@@ -29,6 +29,7 @@ final class EnumerablePartition_1 extends \System\Linq\Iterator_1 implements
 	\System\Linq\IIListProvider_1
 {
 	use EnumerablePartition_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

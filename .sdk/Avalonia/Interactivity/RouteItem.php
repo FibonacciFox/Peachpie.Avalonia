@@ -2,6 +2,7 @@
 namespace Avalonia\Interactivity;
 final class RouteItem extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Interactivity\Interactive

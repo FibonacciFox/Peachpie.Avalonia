@@ -20,6 +20,7 @@ class Panel extends \Avalonia\Controls\Control implements
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -339,7 +340,7 @@ class Panel extends \Avalonia\Controls\Control implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -21,6 +21,7 @@ final class ImmutableReadOnlyListStructEnumerator_1 extends \System\ValueType im
 	\System\Collections\IEnumerator
 {
 	use ImmutableReadOnlyListStructEnumerator_1Override;
+
 	/**
 	 * @property
 	 * @var \T|object

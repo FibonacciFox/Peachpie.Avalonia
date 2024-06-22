@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum CustomAttributeEncoding
 {
+
 	
 	case Undefined = '0';
 	case Boolean = '2';

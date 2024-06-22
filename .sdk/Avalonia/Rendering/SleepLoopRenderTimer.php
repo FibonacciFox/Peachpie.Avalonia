@@ -3,6 +3,7 @@ namespace Avalonia\Rendering;
 class SleepLoopRenderTimer extends \System\Object implements
 	\Avalonia\Rendering\IRenderTimer
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

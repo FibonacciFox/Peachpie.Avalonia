@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 final class FieldMetadata extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

@@ -20,6 +20,7 @@ trait MetadataTokenOverride {
 final class MetadataToken extends \System\ValueType
 {
 	use MetadataTokenOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

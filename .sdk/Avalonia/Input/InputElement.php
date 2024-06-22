@@ -33,6 +33,7 @@ class InputElement extends \Avalonia\Interactivity\Interactive implements
 	\Avalonia\Input\IInputElement
 {
 	use InputElementOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -452,7 +453,7 @@ class InputElement extends \Avalonia\Interactivity\Interactive implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

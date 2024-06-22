@@ -22,6 +22,7 @@ class ToggleSplitButton extends \Avalonia\Controls\SplitButton implements
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Input\ICommandSource
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -437,7 +438,7 @@ class ToggleSplitButton extends \Avalonia\Controls\SplitButton implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

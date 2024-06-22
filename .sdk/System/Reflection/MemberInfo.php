@@ -22,6 +22,7 @@ class MemberInfo extends \System\Object implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use MemberInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

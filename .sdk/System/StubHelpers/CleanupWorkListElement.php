@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class CleanupWorkListElement extends \System\Object
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

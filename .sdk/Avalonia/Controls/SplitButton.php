@@ -42,6 +42,7 @@ class SplitButton extends \Avalonia\Controls\ContentControl implements
 	\Avalonia\Input\ICommandSource
 {
 	use SplitButtonOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -479,7 +480,7 @@ class SplitButton extends \Avalonia\Controls\ContentControl implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

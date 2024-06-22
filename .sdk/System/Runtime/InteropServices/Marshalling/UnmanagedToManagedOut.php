@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\Marshalling;
 class UnmanagedToManagedOut extends \System\Object
 {
 
+
 	/**
 	 * @param \System\ReadOnlySpan_1 $managed [generic: T]
 	 * @param \System\Int32& &$numElements

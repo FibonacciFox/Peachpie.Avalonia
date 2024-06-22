@@ -70,6 +70,7 @@ trait TaskCompletionSource_1Override {
 class TaskCompletionSource_1 extends \System\Object
 {
 	use TaskCompletionSource_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\Task_1[TResult]

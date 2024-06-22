@@ -2,6 +2,7 @@
 namespace System\Collections;
 class StructuralComparisons extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\IComparer

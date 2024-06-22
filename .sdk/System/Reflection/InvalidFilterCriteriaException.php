@@ -21,6 +21,7 @@ class InvalidFilterCriteriaException extends \System\ApplicationException implem
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidFilterCriteriaExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

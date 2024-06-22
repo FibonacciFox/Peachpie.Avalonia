@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 class CollectionsMarshalHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Collections\Generic\Dictionary_2 $dictionary [generic: TKey,TValue]
 	 * @param \TKey $key

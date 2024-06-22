@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 class FinderNode extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\IObservable_1[Avalonia\StyledElement]

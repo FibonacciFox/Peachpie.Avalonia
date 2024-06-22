@@ -15,6 +15,7 @@ trait ManagedToUnmanagedInOverride {
 final class MarshalUsingAttribute extends \System\Attribute
 {
 	use ManagedToUnmanagedInOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

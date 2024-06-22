@@ -2,6 +2,7 @@
 namespace Avalonia\Input\Raw;
 class RawInputEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\IInputDevice

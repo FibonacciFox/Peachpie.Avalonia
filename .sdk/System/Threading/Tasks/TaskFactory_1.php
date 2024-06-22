@@ -429,6 +429,7 @@ trait TaskFactory_1Override {
 class TaskFactory_1 extends \System\Object
 {
 	use TaskFactory_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Threading\CancellationToken

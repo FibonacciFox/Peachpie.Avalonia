@@ -2,6 +2,7 @@
 namespace System;
 final class RuntimeMethodHandleInternal extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

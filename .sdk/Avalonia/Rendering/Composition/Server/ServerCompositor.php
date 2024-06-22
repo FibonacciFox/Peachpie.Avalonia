@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class ServerCompositor extends \System\Object implements
 	\Avalonia\Rendering\IRenderLoopTask
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Transport\BatchStreamObjectPool_1[System\Object]

@@ -2,6 +2,7 @@
 namespace System;
 final class MoreInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

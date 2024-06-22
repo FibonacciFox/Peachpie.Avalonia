@@ -23,6 +23,7 @@ final class ShapedBuffer extends \System\Object implements
 	\System\IDisposable
 {
 	use ShapedBufferOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

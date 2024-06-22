@@ -111,6 +111,7 @@ class StreamReader extends \System\IO\TextReader implements
 	\System\IDisposable
 {
 	use StreamReaderOverride;
+
 	/**
 	 * @field
 	 * @since readonly

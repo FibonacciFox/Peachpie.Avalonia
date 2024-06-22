@@ -78,6 +78,7 @@ trait DateTimeFormatOverride {
 class DateTimeFormat extends \System\Object
 {
 	use DateTimeFormatOverride;
+
 	/**
 	 * @field
 	 * @since readonly

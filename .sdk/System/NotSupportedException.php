@@ -21,6 +21,7 @@ class NotSupportedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use NotSupportedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class RefSafetyRulesAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

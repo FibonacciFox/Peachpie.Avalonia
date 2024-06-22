@@ -5,6 +5,7 @@ class RenderDataGlyphRunNode extends \System\Object implements
 	\Avalonia\Rendering\Composition\Drawing\Nodes\IRenderDataItem,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IBrush

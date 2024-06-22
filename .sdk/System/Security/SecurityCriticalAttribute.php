@@ -15,6 +15,7 @@ trait UnmanagedBufferOverride {
 final class SecurityCriticalAttribute extends \System\Attribute
 {
 	use UnmanagedBufferOverride;
+
 	/**
 	 * @property
 	 * @var \System\Security\SecurityCriticalScope

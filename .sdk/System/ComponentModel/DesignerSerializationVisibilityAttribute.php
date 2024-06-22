@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 final class DesignerSerializationVisibilityAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @since readonly

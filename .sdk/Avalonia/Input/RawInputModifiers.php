@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum RawInputModifiers
 {
+
 	
 	case None = '0';
 	case Alt = '1';

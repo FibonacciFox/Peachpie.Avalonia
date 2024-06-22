@@ -89,6 +89,7 @@ final class PixelPoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use PixelPointOverride;
+
 	/**
 	 * @field
 	 * @since readonly

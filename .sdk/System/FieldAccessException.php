@@ -21,6 +21,7 @@ class FieldAccessException extends \System\MemberAccessException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use FieldAccessExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

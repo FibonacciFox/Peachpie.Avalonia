@@ -36,6 +36,7 @@ class FuncTreeDataTemplate_1 extends \Avalonia\Controls\Templates\FuncTreeDataTe
 {
 	use FuncTreeDataTemplate_1Override;
 
+
 	private static function CastMatch($f){}
 	/**
 	 * @since @override => public | private | protected

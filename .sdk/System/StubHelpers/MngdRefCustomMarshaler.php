@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class MngdRefCustomMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\IntPtr $pMarshalState
 	 * @param \System\IntPtr $pCMHelper

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 final class ResolveByNameAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

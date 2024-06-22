@@ -2,6 +2,7 @@
 namespace System\Runtime\Versioning;
 final class UnsupportedOSPlatformGuardAttribute extends \System\Runtime\Versioning\OSPlatformAttribute
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System;
 enum GenericUriParserOptions
 {
+
 	
 	case Default = '0';
 	case GenericAuthority = '1';

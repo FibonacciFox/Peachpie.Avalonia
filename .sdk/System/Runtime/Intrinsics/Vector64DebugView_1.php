@@ -2,6 +2,7 @@
 namespace System\Runtime\Intrinsics;
 final class Vector64DebugView_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Byte[]

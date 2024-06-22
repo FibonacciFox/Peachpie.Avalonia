@@ -21,6 +21,7 @@ class EntryPointNotFoundException extends \System\TypeLoadException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use EntryPointNotFoundExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

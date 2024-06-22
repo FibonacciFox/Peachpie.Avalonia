@@ -35,6 +35,7 @@ class StyleBase extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Controls\IResourceProvider
 {
 	use StyleBaseOverride;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IList_1[Avalonia\Styling\IStyle]
@@ -69,7 +70,7 @@ class StyleBase extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Animations;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

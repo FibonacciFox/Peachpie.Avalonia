@@ -3,6 +3,7 @@ namespace System\Runtime\CompilerServices;
 interface ICastable
 {
 
+
 	/**
 	 * @param \System\RuntimeTypeHandle $interfaceType
 	 * @param \System\Exception& &$castError

@@ -25,6 +25,7 @@ class LoggingUtils extends \System\Object
 {
 	use LoggingUtilsOverride;
 
+
 	/**
 	 * @uses LoggingUtilsOverride::LogIfNecessary_1 <br>public , args: ($owner, $property, $value)<br>
 	 * @uses LoggingUtilsOverride::LogIfNecessary_2 <br>public , args: ($owner, $property, $value)<br>

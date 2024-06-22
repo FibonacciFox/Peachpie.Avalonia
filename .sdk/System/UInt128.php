@@ -475,6 +475,7 @@ final class UInt128 extends \System\ValueType implements
 	\System\Numerics\IUnsignedNumber_1
 {
 	use UInt128Override;
+
 	/**
 	 * @property
 	 * @var \System\UInt128

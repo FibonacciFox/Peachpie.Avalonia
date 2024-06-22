@@ -2,6 +2,7 @@
 namespace System;
 final class Offset extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\UInt16

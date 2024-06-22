@@ -53,6 +53,7 @@ final class ResourceReader extends \System\Object implements
 	\System\IDisposable
 {
 	use ResourceReaderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\Dictionary_2[System\String,System\Resources\ResourceLocator]

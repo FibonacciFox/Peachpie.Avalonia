@@ -22,6 +22,7 @@ trait TextShaperOverride {
 class TextShaper extends \System\Object
 {
 	use TextShaperOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\TextShaper

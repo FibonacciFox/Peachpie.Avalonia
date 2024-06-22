@@ -4,6 +4,7 @@ class Entry extends \System\Object implements
 	\Avalonia\Utilities\IWeakEventSubscriber_1,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\List_1[System\WeakReference_1[Avalonia\Controls\Utils\ICollectionChangedListener]]

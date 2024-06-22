@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class ReaderWriterCount extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Int64|int

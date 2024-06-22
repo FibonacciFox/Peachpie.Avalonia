@@ -19,6 +19,7 @@ trait UndoRedoHelper_1Override {
 class UndoRedoHelper_1 extends \System\Object
 {
 	use UndoRedoHelper_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

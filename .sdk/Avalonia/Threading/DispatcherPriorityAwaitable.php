@@ -3,6 +3,7 @@ namespace Avalonia\Threading;
 class DispatcherPriorityAwaitable extends \System\Object implements
 	\System\Runtime\CompilerServices\INotifyCompletion
 {
+
 	/**
 	 * @field
 	 * @since readonly

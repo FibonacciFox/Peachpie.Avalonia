@@ -3,6 +3,7 @@ namespace System\Globalization;
 class TextElementEnumerator extends \System\Object implements
 	\System\Collections\IEnumerator
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

@@ -3,6 +3,7 @@ namespace System\Runtime\Remoting;
 class ObjectHandle extends \System\MarshalByRefObject
 {
 
+
 	/**
 	 * @return \System\Object|object
 	 */

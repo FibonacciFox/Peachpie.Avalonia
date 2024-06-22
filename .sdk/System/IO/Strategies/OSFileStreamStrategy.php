@@ -4,6 +4,7 @@ class OSFileStreamStrategy extends \System\IO\Strategies\FileStreamStrategy impl
 	\System\IDisposable,
 	\System\IAsyncDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

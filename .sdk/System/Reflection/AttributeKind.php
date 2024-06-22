@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum AttributeKind
 {
+
 	
 	case Version = '1';
 	case Culture = '2';

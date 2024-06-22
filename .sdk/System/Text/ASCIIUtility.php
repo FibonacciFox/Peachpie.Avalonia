@@ -3,6 +3,7 @@ namespace System\Text;
 class ASCIIUtility extends \System\Object
 {
 
+
 	private static function AllBytesInUInt64AreAscii($value){}
 	private static function AllCharsInUInt32AreAscii($value){}
 	private static function AllCharsInUInt64AreAscii($value){}

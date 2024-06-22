@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class Token extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\InteropServices\PosixSignal

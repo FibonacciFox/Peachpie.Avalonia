@@ -21,6 +21,7 @@ class RuntimeTypeMetadataUpdateHandler extends \System\Object
 {
 	use RuntimeTypeMetadataUpdateHandlerOverride;
 
+
 	/**
 	 * @uses RuntimeTypeMetadataUpdateHandlerOverride::ClearCache_1 <br>public , args: ($types)<br>
 	 * @uses RuntimeTypeMetadataUpdateHandlerOverride::ClearCache_2 <br>private , args: ($type)<br>

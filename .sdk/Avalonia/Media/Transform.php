@@ -9,6 +9,7 @@ class Transform extends \Avalonia\Animation\Animatable implements
 	\Avalonia\Rendering\Composition\Drawing\ICompositionRenderResource,
 	\Avalonia\Rendering\Composition\ICompositorSerializable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Matrix
@@ -21,7 +22,7 @@ class Transform extends \Avalonia\Animation\Animatable implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

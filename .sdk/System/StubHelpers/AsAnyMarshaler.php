@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 final class AsAnyMarshaler extends \System\ValueType
 {
 
+
 	private static function IsIn($dwFlags){}
 	private static function IsOut($dwFlags){}
 	private static function IsAnsi($dwFlags){}

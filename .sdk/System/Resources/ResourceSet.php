@@ -69,6 +69,7 @@ class ResourceSet extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use ResourceSetOverride;
+
 	/**
 	 * @field
 	 * @var \System\Resources\IResourceReader

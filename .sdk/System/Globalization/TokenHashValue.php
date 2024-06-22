@@ -2,6 +2,7 @@
 namespace System\Globalization;
 final class TokenHashValue extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

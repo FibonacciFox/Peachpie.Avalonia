@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MetadataTokenType
 {
+
 	
 	case Module = '0';
 	case TypeRef = '16777216';

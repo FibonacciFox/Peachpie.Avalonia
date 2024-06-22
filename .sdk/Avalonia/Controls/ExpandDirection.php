@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum ExpandDirection
 {
+
 	
 	case Down = '0';
 	case Up = '1';

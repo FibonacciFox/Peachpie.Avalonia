@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class DateTimeHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\DateTime $time
 	 * @param \System\Int32|int $days

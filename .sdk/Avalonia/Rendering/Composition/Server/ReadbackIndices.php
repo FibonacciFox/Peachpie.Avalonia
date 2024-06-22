@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Server;
 class ReadbackIndices extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

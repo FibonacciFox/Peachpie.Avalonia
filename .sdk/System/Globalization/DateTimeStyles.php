@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum DateTimeStyles
 {
+
 	
 	case None = '0';
 	case AllowLeadingWhite = '1';

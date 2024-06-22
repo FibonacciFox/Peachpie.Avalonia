@@ -12,6 +12,7 @@ final class CalendarBlackoutDatesCollection extends \System\Collections\ObjectMo
 	\System\Collections\Specialized\INotifyCollectionChanged,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core\Plugins;
 interface IPropertyAccessor
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \Avalonia\Data\BindingPriority $priority

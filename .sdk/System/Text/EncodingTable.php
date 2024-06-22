@@ -20,6 +20,7 @@ class EncodingTable extends \System\Object
 {
 	use EncodingTableOverride;
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @return \System\Int32|int

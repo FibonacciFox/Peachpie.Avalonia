@@ -2,6 +2,7 @@
 namespace System;
 enum DelegateBindingFlags
 {
+
 	
 	case StaticMethodOnly = '1';
 	case InstanceMethodOnly = '2';

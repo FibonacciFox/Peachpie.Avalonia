@@ -20,6 +20,7 @@ trait ScreensOverride {
 class Screens extends \System\Object
 {
 	use ScreensOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

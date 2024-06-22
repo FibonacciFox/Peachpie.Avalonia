@@ -3,6 +3,7 @@ namespace System\Linq;
 class CachingComparer_1 extends \System\Object
 {
 
+
 	/**
 	 * @param \TElement $element
 	 * @param \System\Boolean|bool $cacheLower

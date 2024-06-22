@@ -21,6 +21,7 @@ class GestureRecognizerCollection extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use GestureRecognizerCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -125,6 +125,7 @@ class OrderedEnumerable_1 extends \System\Object implements
 	\System\Linq\IOrderedEnumerable_1
 {
 	use OrderedEnumerable_1Override;
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\IEnumerable_1[TElement]

@@ -58,6 +58,7 @@ class CompositorDrawingContextProxy extends \System\Object implements
 	\Avalonia\Platform\IDrawingContextImplWithEffects
 {
 	use CompositorDrawingContextProxyOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Matrix

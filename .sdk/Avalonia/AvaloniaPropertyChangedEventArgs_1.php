@@ -2,18 +2,19 @@
 namespace Avalonia;
 class AvaloniaPropertyChangedEventArgs_1 extends \Avalonia\AvaloniaPropertyChangedEventArgs
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\AvaloniaProperty_1[T]|\Avalonia\AvaloniaProperty
 	 */
 	public $Property;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Data\Optional_1[T]|\System\Object|object
 	 */
 	public $OldValue;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Data\BindingValue_1[T]|\System\Object|object
 	 */
 	public $NewValue;

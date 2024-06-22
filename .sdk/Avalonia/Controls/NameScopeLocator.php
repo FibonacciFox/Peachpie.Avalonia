@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class NameScopeLocator extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\INameScope $scope
 	 * @param \System\String|string $name

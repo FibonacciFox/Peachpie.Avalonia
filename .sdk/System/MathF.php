@@ -63,6 +63,7 @@ trait MathFOverride {
 class MathF extends \System\Object
 {
 	use MathFOverride;
+
 	/**
 	 * @field
 	 * @var \System\Single

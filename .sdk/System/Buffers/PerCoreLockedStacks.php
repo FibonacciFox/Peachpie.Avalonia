@@ -3,6 +3,7 @@ namespace System\Buffers;
 final class PerCoreLockedStacks extends \System\Object
 {
 
+
 	/**
 	 * @param \T $array
 	 * @return \System\Boolean|bool

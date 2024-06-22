@@ -2,6 +2,7 @@
 namespace Avalonia\Collections\Pooled;
 enum ExceptionArgument
 {
+
 	
 	case obj = '0';
 	case dictionary = '1';

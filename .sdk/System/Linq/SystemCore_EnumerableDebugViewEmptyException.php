@@ -3,6 +3,7 @@ namespace System\Linq;
 final class SystemCore_EnumerableDebugViewEmptyException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
+
 	/**
 	 * @field
 	 * @var \System\String|string

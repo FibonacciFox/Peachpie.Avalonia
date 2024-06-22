@@ -16,6 +16,7 @@ class TransformOperationsAnimator extends \Avalonia\Animation\Animators\Animator
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug,
 	\Avalonia\Animation\IAnimator
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\AvaloniaProperty

@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 class CompilerGlobalScopeAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

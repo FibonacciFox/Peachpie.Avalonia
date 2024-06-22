@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class ConstArray extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @since readonly

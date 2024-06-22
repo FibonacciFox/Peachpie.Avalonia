@@ -22,6 +22,7 @@ class ComboBoxItem extends \Avalonia\Controls\ListBoxItem implements
 	\Avalonia\Controls\Presenters\IContentPresenterHost,
 	\Avalonia\Controls\ISelectable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -410,7 +411,7 @@ class ComboBoxItem extends \Avalonia\Controls\ListBoxItem implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

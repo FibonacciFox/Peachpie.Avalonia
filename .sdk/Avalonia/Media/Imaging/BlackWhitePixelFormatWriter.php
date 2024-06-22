@@ -4,6 +4,7 @@ final class BlackWhitePixelFormatWriter extends \System\ValueType implements
 	\Avalonia\Media\Imaging\IPixelFormatWriter
 {
 
+
 	/**
 	 * @param \Avalonia\Media\Imaging\Rgba8888Pixel $pixel
 	 * @return \System\Void|void

@@ -346,6 +346,7 @@ class EventSource extends \System\Object implements
 	\System\IDisposable
 {
 	use EventSourceOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

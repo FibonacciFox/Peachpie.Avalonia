@@ -2,8 +2,9 @@
 namespace Avalonia\Automation\Peers;
 class TextBlockAutomationPeer extends \Avalonia\Automation\Peers\ControlAutomationPeer
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\Controls\TextBlock|\Avalonia\Controls\Control
 	 */
 	public $Owner;

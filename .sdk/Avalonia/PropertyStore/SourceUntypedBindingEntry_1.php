@@ -6,8 +6,9 @@ final class SourceUntypedBindingEntry_1 extends \Avalonia\PropertyStore\BindingE
 	\System\IObserver_1,
 	\System\IDisposable
 {
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\StyledProperty_1[TTarget]|\Avalonia\AvaloniaProperty
 	 */
 	public $Property;

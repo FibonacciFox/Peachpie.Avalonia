@@ -3,6 +3,7 @@ namespace System\IO\Enumeration;
 class FileSystemEnumerableFactory extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String& $directory
 	 * @param \System\String& $expression

@@ -3,6 +3,7 @@ namespace Avalonia;
 class LoggingExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\AppBuilder $builder
 	 * @param \Avalonia\Logging\LogEventLevel $level

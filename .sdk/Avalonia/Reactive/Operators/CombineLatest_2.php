@@ -4,6 +4,7 @@ final class CombineLatest_2 extends \System\Object implements
 	\System\IObservable_1
 {
 
+
 	/**
 	 * @param \System\IObserver_1 $observer [generic: TResult]
 	 * @return \System\IDisposable

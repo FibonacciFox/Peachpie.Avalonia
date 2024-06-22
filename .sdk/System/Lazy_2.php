@@ -39,6 +39,7 @@ trait LazyHelperOverride {
 class Lazy_2 extends \System\Lazy_1
 {
 	use LazyHelperOverride;
+
 	/**
 	 * @property
 	 * @var \TMetadata

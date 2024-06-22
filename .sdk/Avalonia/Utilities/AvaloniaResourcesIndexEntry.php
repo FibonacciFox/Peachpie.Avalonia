@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 class AvaloniaResourcesIndexEntry extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

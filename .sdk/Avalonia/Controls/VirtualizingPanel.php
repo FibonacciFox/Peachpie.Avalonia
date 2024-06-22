@@ -43,6 +43,7 @@ class VirtualizingPanel extends \Avalonia\Controls\Panel implements
 	\Avalonia\Input\INavigableContainer
 {
 	use VirtualizingPanelOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Generators\ItemContainerGenerator
@@ -362,7 +363,7 @@ class VirtualizingPanel extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

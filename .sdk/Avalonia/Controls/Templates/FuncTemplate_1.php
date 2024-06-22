@@ -21,6 +21,7 @@ class FuncTemplate_1 extends \System\Object implements
 {
 	use FuncTemplate_1Override;
 
+
 	/**
 	 * @uses FuncTemplate_1Override::Build_1 <br>public , args: ()<br>
 	 * @uses FuncTemplate_1Override::Build_2 <br>private , args: ()<br>

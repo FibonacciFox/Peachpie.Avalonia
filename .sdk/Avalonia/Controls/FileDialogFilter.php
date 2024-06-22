@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class FileDialogFilter extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

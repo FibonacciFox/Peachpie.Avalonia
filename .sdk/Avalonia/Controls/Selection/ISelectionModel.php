@@ -13,6 +13,7 @@ namespace Avalonia\Controls\Selection;
 interface ISelectionModel
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

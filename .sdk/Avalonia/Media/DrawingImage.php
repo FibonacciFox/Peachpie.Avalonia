@@ -19,6 +19,7 @@ class DrawingImage extends \Avalonia\AvaloniaObject implements
 	\Avalonia\Media\IAffectsRender
 {
 	use DrawingImageOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -37,7 +38,7 @@ class DrawingImage extends \Avalonia\AvaloniaObject implements
 	 */
 	public $Size;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

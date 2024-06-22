@@ -3,6 +3,7 @@ namespace Avalonia\Media\TextFormatting\Unicode;
 final class LineBreakEnumerator extends \System\ValueType
 {
 
+
 	/**
 	 * @param \Avalonia\Media\TextFormatting\Unicode\LineBreak& &$lineBreak
 	 * @return \System\Boolean|bool

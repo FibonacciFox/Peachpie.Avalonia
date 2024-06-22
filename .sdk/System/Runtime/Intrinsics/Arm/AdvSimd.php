@@ -11401,6 +11401,7 @@ trait AdvSimdOverride {
 class AdvSimd extends \System\Runtime\Intrinsics\Arm\ArmBase
 {
 	use AdvSimdOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\Generators;
 class TreeContainerIndex extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEnumerable_1[Avalonia\Controls\Control]

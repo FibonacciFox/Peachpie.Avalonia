@@ -3,6 +3,7 @@ namespace System;
 interface IValueTupleInternal
 {
 
+
 	/**
 	 * @param \System\Collections\IEqualityComparer $comparer
 	 * @return \System\Int32|int

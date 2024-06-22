@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface IEqualityComparer_1
 {
 
+
 	/**
 	 * @param \T|object $x
 	 * @param \T|object $y

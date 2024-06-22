@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class ComVisibleAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

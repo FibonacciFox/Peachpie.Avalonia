@@ -15,6 +15,7 @@ final class Italic extends \Avalonia\Controls\Documents\Span implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\Documents\InlineCollection
@@ -132,7 +133,7 @@ final class Italic extends \Avalonia\Controls\Documents\Span implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

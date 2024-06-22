@@ -2,6 +2,7 @@
 namespace System\Runtime\ConstrainedExecution;
 final class ReliabilityContractAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Runtime\ConstrainedExecution\Consistency

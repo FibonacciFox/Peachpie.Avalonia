@@ -20,6 +20,7 @@ class TabStrip extends \Avalonia\Controls\Primitives\SelectingItemsControl imple
 	\Avalonia\Styling\ISetterValue,
 	\Avalonia\LogicalTree\IChildIndexProvider
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool
@@ -488,7 +489,7 @@ class TabStrip extends \Avalonia\Controls\Primitives\SelectingItemsControl imple
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class OpenFolderDialog extends \Avalonia\Controls\FileSystemDialog
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

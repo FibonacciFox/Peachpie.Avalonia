@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum NavigationDirection
 {
+
 	
 	case Next = '0';
 	case Previous = '1';

@@ -23,6 +23,7 @@ class AvaloniaResourcesIndexReaderWriter extends \System\Object
 {
 	use AvaloniaResourcesIndexReaderWriterOverride;
 
+
 	/**
 	 * @param \System\IO\Stream $stream
 	 * @return \System\Collections\Generic\List_1[Avalonia\Utilities\AvaloniaResourcesIndexEntry]

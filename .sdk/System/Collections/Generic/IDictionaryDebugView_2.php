@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class IDictionaryDebugView_2 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\KeyValuePair_2[K,V][]

@@ -19,6 +19,7 @@ final class CalendarItem extends \Avalonia\Controls\Primitives\TemplatedControl 
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -398,7 +399,7 @@ final class CalendarItem extends \Avalonia\Controls\Primitives\TemplatedControl 
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

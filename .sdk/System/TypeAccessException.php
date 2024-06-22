@@ -21,6 +21,7 @@ class TypeAccessException extends \System\TypeLoadException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TypeAccessExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -3,6 +3,7 @@ namespace Avalonia\Data;
 interface IBinding
 {
 
+
 	/**
 	 * @param \Avalonia\AvaloniaObject $target
 	 * @param \Avalonia\AvaloniaProperty $targetProperty

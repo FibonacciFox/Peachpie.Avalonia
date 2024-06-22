@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Platform;
 interface INativeApplicationCommands
 {
 
+
 	/**
 	 * @return \System\Void|void
 	 */

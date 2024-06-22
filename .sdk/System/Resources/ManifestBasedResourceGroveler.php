@@ -4,6 +4,7 @@ final class ManifestBasedResourceGroveler extends \System\Object implements
 	\System\Resources\IResourceGroveler
 {
 
+
 	private static function InternalGetSatelliteAssembly($mainAssembly, $culture, $version){}
 	/**
 	 * @param \System\Globalization\CultureInfo $culture

@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Templates;
 class DataTemplateExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Controls\Control $control
 	 * @param \System\Object|object $data

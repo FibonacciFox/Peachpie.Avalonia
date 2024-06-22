@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class Registrations extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @since readonly

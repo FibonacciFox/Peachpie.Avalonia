@@ -2,6 +2,7 @@
 namespace System\Threading;
 class AsyncLocalValueMap extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\IAsyncLocalValueMap

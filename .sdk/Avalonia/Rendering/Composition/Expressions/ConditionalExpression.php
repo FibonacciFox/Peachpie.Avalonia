@@ -2,6 +2,7 @@
 namespace Avalonia\Rendering\Composition\Expressions;
 class ConditionalExpression extends \Avalonia\Rendering\Composition\Expressions\Expression
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Expressions\Expression

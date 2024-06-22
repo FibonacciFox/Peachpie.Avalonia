@@ -7,6 +7,7 @@ class ServerCompositionSimpleSolidColorBrush extends \Avalonia\Rendering\Composi
 	\Avalonia\Media\IBrush,
 	\Avalonia\Media\ISolidColorBrush
 {
+
 	/**
 	 * @field
 	 * @var \Avalonia\Rendering\Composition\Server\CompositionProperty

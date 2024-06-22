@@ -2,6 +2,7 @@
 
 enum LockType
 {
+
 	
 	case F_RDLCK = '0';
 	case F_WRLCK = '1';

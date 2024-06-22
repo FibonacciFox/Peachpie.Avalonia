@@ -24,6 +24,7 @@ class AppContextConfigHelper extends \System\Object
 {
 	use AppContextConfigHelperOverride;
 
+
 	/**
 	 * @uses AppContextConfigHelperOverride::GetBooleanConfig_1 <br>protected , args: ($configName, $defaultValue)<br>
 	 * @uses AppContextConfigHelperOverride::GetBooleanConfig_2 <br>protected , args: ($switchName, $envVariable, $defaultValue)<br>

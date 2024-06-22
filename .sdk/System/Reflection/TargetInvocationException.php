@@ -18,6 +18,7 @@ final class TargetInvocationException extends \System\ApplicationException imple
 	\System\Runtime\Serialization\ISerializable
 {
 	use TargetInvocationExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

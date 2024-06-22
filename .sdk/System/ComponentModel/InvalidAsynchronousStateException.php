@@ -21,6 +21,7 @@ class InvalidAsynchronousStateException extends \System\ArgumentException implem
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidAsynchronousStateExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

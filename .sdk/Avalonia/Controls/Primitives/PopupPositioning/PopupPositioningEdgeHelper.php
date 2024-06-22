@@ -33,6 +33,7 @@ class PopupPositioningEdgeHelper extends \System\Object
 {
 	use PopupPositioningEdgeHelperOverride;
 
+
 	/**
 	 * @param \Avalonia\Controls\Primitives\PopupPositioning\PopupAnchor $edge
 	 * @return \System\Void|void

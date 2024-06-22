@@ -22,6 +22,7 @@ final class StringTokenizer extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use StringTokenizerOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

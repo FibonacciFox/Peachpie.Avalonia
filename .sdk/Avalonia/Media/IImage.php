@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 interface IImage
 {
 
+
 	/**
 	 * @param \Avalonia\Media\DrawingContext $context
 	 * @param \Avalonia\Rect $sourceRect

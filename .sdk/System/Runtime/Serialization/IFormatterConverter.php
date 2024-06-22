@@ -3,6 +3,7 @@ namespace System\Runtime\Serialization;
 interface IFormatterConverter
 {
 
+
 	/**
 	 * @param \System\Object|object $value
 	 * @param \System\Type $type

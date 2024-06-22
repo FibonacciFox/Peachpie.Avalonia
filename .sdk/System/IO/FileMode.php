@@ -2,6 +2,7 @@
 namespace System\IO;
 enum FileMode
 {
+
 	
 	case CreateNew = '1';
 	case Create = '2';

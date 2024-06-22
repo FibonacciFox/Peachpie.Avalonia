@@ -2,6 +2,7 @@
 namespace System;
 final class UriInfo extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Uri+Offset

@@ -7,6 +7,7 @@ class ImmutableDropShadowDirectionEffect extends \System\Object implements
 	\Avalonia\Media\IImmutableEffect,
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Double|double

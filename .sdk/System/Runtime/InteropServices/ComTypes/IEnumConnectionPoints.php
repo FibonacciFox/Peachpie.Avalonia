@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IEnumConnectionPoints
 {
 
+
 	/**
 	 * @param \System\Int32|int $celt
 	 * @param \System\Runtime\InteropServices\ComTypes\IConnectionPoint &$rgelt

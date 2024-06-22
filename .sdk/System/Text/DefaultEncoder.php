@@ -3,6 +3,7 @@ namespace System\Text;
 final class DefaultEncoder extends \System\Text\Encoder implements
 	\System\Runtime\Serialization\IObjectReference
 {
+
 	/**
 	 * @field
 	 * @var \System\Text\EncoderFallback

@@ -16,6 +16,7 @@ trait SEHExceptionOverride {
 final class TypeIdentifierAttribute extends \System\Attribute
 {
 	use SEHExceptionOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

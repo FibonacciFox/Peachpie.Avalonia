@@ -28,6 +28,7 @@ final class ReadLinesIterator extends \System\IO\Iterator_1 implements
 	\System\Collections\IEnumerator
 {
 	use ReadLinesIteratorOverride;
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

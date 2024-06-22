@@ -2,6 +2,7 @@
 namespace System;
 final class CachedData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Collections\Generic\Dictionary_2[System\String,System\TimeZoneInfo]

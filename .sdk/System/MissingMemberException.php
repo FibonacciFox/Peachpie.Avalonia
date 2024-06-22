@@ -26,6 +26,7 @@ class MissingMemberException extends \System\MemberAccessException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use MissingMemberExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

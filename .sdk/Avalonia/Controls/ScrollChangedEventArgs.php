@@ -21,6 +21,7 @@ trait ScreensOverride {
 class ScrollChangedEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use ScreensOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Vector

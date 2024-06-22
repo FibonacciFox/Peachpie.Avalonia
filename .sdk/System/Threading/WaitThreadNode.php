@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class WaitThreadNode extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\PortableThreadPool+WaitThread

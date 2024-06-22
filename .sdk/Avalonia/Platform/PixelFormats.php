@@ -2,6 +2,7 @@
 namespace Avalonia\Platform;
 class PixelFormats extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\PixelFormat

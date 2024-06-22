@@ -11,6 +11,7 @@ final class ConicGradientBrush extends \Avalonia\Media\GradientBrush implements
 	\Avalonia\Media\IMutableBrush,
 	\Avalonia\Media\IConicGradientBrush
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -64,7 +65,7 @@ final class ConicGradientBrush extends \Avalonia\Media\GradientBrush implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

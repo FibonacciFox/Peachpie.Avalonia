@@ -26,6 +26,7 @@ class InvalidCastException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use InvalidCastExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

@@ -7,6 +7,7 @@ class ServerCompositionSimpleGradientBrush extends \Avalonia\Rendering\Compositi
 	\Avalonia\Media\IBrush,
 	\Avalonia\Media\IGradientBrush
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Media\IGradientStop]

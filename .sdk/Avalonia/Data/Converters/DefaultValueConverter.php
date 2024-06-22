@@ -3,6 +3,7 @@ namespace Avalonia\Data\Converters;
 class DefaultValueConverter extends \System\Object implements
 	\Avalonia\Data\Converters\IValueConverter
 {
+
 	/**
 	 * @field
 	 * @since readonly

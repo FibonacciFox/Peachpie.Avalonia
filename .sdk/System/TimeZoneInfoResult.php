@@ -2,6 +2,7 @@
 namespace System;
 enum TimeZoneInfoResult
 {
+
 	
 	case Success = '0';
 	case TimeZoneNotFoundException = '1';

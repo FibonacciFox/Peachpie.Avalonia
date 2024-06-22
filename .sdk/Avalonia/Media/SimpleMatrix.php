@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class SimpleMatrix extends \System\ValueType
 {
 
+
 	/**
 	 * @param \Avalonia\Media\PreciseEllipticArcHelper+EllipticalArc+SimpleMatrix $m
 	 * @param \Avalonia\Point $p

@@ -10,6 +10,7 @@ class KeyedCollection_2 extends \System\Collections\ObjectModel\Collection_1 imp
 	\System\Collections\Generic\IReadOnlyList_1,
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IEqualityComparer_1[TKey]
@@ -17,7 +18,7 @@ class KeyedCollection_2 extends \System\Collections\ObjectModel\Collection_1 imp
 	 */
 	public $Comparer;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \TItem
 	 */
 	public $Item;

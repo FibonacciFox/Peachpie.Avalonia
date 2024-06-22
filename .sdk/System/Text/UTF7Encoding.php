@@ -16,6 +16,7 @@ class UTF7Encoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
 	use UTF7EncodingOverride;
+
 	/**
 	 * @field
 	 * @since readonly

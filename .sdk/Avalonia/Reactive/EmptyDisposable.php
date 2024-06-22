@@ -3,6 +3,7 @@ namespace Avalonia\Reactive;
 final class EmptyDisposable extends \System\Object implements
 	\System\IDisposable
 {
+
 	/**
 	 * @field
 	 * @since readonly

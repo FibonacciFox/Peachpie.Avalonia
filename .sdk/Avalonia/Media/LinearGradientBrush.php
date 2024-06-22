@@ -11,6 +11,7 @@ final class LinearGradientBrush extends \Avalonia\Media\GradientBrush implements
 	\Avalonia\Media\IMutableBrush,
 	\Avalonia\Media\ILinearGradientBrush
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -64,7 +65,7 @@ final class LinearGradientBrush extends \Avalonia\Media\GradientBrush implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

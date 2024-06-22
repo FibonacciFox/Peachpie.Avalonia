@@ -39,6 +39,7 @@ class NativeLibrary extends \System\Object
 {
 	use NativeLibraryOverride;
 
+
 	/**
 	 * @param \System\String|string $libraryName
 	 * @param \System\Reflection\Assembly $assembly

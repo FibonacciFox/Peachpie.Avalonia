@@ -15,6 +15,7 @@ final class Transitions extends \Avalonia\Collections\AvaloniaList_1 implements
 	\System\Collections\ICollection,
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

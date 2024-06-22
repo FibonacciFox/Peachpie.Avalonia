@@ -4,6 +4,7 @@ final class ImageDrawing extends \Avalonia\Media\Drawing implements
 	\Avalonia\Diagnostics\IAvaloniaObjectDebug,
 	\System\ComponentModel\INotifyPropertyChanged
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -27,7 +28,7 @@ final class ImageDrawing extends \Avalonia\Media\Drawing implements
 	 */
 	public $Rect;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

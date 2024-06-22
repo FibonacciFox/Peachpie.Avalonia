@@ -2,6 +2,7 @@
 namespace System\Collections\Specialized;
 enum NotifyCollectionChangedAction
 {
+
 	
 	case Add = '0';
 	case Remove = '1';

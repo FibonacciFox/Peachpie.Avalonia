@@ -3,6 +3,7 @@ namespace System\Reflection\Emit;
 final class RTDynamicMethod extends \System\Reflection\MethodInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\DynamicMethod

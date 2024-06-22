@@ -4,6 +4,7 @@ final class Bgra8888PixelFormatReader extends \System\ValueType implements
 	\Avalonia\Media\Imaging\IPixelFormatReader
 {
 
+
 	/**
 	 * @return \Avalonia\Media\Imaging\Rgba8888Pixel
 	 */

@@ -3,6 +3,7 @@ namespace System\Threading;
 class WaitHandleExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Threading\WaitHandle $waitHandle
 	 * @return \Microsoft\Win32\SafeHandles\SafeWaitHandle

@@ -20,6 +20,7 @@ final class RelativePoint extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use RelativePointOverride;
+
 	/**
 	 * @field
 	 * @since readonly

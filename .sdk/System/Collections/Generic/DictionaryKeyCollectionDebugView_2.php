@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class DictionaryKeyCollectionDebugView_2 extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \TKey[]

@@ -1,27 +1,48 @@
 <?php
 namespace Avalonia\Input\GestureRecognizers;
-class VelocityTracker extends \System\Object
+final class PointAtTime extends \System\ValueType implements
+	\System\IEquatable_1
 {
 
 	/**
-	 * @param \System\TimeSpan $time
-	 * @param \Avalonia\Vector $position
+	 * @property
+	 * @var \System\Boolean|bool
+	 */
+	public $Valid;
+	/**
+	 * @property
+	 * @var \Avalonia\Vector
+	 */
+	public $Point;
+	/**
+	 * @property
+	 * @var \System\TimeSpan
+	 */
+	public $Time;
+	private function PrintMembers($builder){}
+	/**
+	 * @param \Avalonia\Input\GestureRecognizers\PointAtTime $left
+	 * @param \Avalonia\Input\GestureRecognizers\PointAtTime $right
+	 * @return \System\Boolean|bool
+	 */
+	public static function op_Inequality($left, $right){}
+	/**
+	 * @param \Avalonia\Input\GestureRecognizers\PointAtTime $left
+	 * @param \Avalonia\Input\GestureRecognizers\PointAtTime $right
+	 * @return \System\Boolean|bool
+	 */
+	public static function op_Equality($left, $right){}
+	/**
+	 * @param \System\Boolean& &$Valid
+	 * @param \Avalonia\Vector& &$Point
+	 * @param \System\TimeSpan& &$Time
 	 * @return \System\Void|void
 	 */
-	public function AddPosition($time, $position){}
+	public function Deconstruct(&$Valid, &$Point, &$Time){}
 	/**
-	 * @return \Avalonia\Input\GestureRecognizers\VelocityEstimate
+	 * @param \System\Boolean|bool $Valid
+	 * @param \Avalonia\Vector $Point
+	 * @param \System\TimeSpan $Time
 	 */
-	protected function GetVelocityEstimate(){}
-	/**
-	 * @return \Avalonia\Input\GestureRecognizers\Velocity
-	 */
-	protected function GetVelocity(){}
-	/**
-	 * @return \Avalonia\Input\GestureRecognizers\Velocity
-	 */
-	protected function GetFlingVelocity(){}
-	/**
-	 */
-	public function __construct(){}
+	public function __construct($Valid, $Point, $Time){}
 }

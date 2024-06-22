@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class ThreadLocalNode extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\ThreadInt64PersistentCounter+ThreadLocalNode

@@ -37,6 +37,7 @@ class TabNavigation extends \System\Object
 {
 	use TabNavigationOverride;
 
+
 	/**
 	 * @uses TabNavigationOverride::GetNextTab_1 <br>public , args: ($e, $goDownOnly)<br>
 	 * @uses TabNavigationOverride::GetNextTab_2 <br>public , args: ($e, $container, $goDownOnly)<br>

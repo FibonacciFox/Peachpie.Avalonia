@@ -83,6 +83,7 @@ final class DynamicMethod extends \System\Reflection\MethodInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use DynamicMethodOverride;
+
 	/**
 	 * @field
 	 * @var \System\IRuntimeMethodInfo

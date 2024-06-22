@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class DragEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\DragDropEffects

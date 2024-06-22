@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class FontMetrics extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int16

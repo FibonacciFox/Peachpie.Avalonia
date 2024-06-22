@@ -3,6 +3,7 @@ namespace System\StubHelpers;
 class VBByValStrMarshaler extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $strManaged
 	 * @param \System\Boolean|bool $fBestFit

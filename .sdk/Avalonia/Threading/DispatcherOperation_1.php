@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 class DispatcherOperation_1 extends \Avalonia\Threading\DispatcherOperation
 {
+
 	/**
 	 * @field
 	 * @since readonly

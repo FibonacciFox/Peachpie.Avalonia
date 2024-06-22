@@ -2,6 +2,7 @@
 namespace System;
 enum UriPartial
 {
+
 	
 	case Scheme = '0';
 	case Authority = '1';

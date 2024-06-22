@@ -39,6 +39,7 @@ trait ArrayBuilder_1Override {
 final class ArrayBuilder_1 extends \System\ValueType
 {
 	use ArrayBuilder_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

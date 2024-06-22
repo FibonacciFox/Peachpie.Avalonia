@@ -77,6 +77,7 @@ class Task_1 extends \System\Threading\Tasks\Task implements
 	\System\IDisposable
 {
 	use Task_1Override;
+
 	/**
 	 * @field
 	 * @var \TResult

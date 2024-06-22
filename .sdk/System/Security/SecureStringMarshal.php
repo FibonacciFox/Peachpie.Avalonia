@@ -3,6 +3,7 @@ namespace System\Security;
 class SecureStringMarshal extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Security\SecureString $s
 	 * @return \System\IntPtr

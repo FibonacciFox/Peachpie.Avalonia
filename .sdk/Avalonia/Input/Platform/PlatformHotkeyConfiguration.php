@@ -17,6 +17,7 @@ trait RawPointerPointOverride {
 final class PlatformHotkeyConfiguration extends \System\Object
 {
 	use RawPointerPointOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Input\KeyModifiers

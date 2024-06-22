@@ -24,6 +24,7 @@ final class EnumBuilder extends \System\Reflection\TypeInfo implements
 	\System\Reflection\IReflectableType
 {
 	use EnumBuilderOverride;
+
 	/**
 	 * @field
 	 * @var \System\Reflection\Emit\TypeBuilder

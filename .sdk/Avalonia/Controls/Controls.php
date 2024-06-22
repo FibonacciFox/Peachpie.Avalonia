@@ -28,6 +28,7 @@ class Controls extends \Avalonia\Collections\AvaloniaList_1 implements
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use ControlsOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

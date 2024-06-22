@@ -2,6 +2,7 @@
 namespace System\Security;
 final class AllowPartiallyTrustedCallersAttribute extends \System\Attribute
 {
+
 	/**
 	 * @property
 	 * @var \System\Security\PartialTrustVisibilityLevel

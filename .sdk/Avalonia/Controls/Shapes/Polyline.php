@@ -19,6 +19,7 @@ class Polyline extends \Avalonia\Controls\Shapes\Shape implements
 	\Avalonia\Rendering\IVisualBrushInitialize,
 	\Avalonia\Styling\ISetterValue
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -379,7 +380,7 @@ class Polyline extends \Avalonia\Controls\Shapes\Shape implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

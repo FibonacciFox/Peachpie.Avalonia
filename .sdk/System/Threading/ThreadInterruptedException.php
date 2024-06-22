@@ -21,6 +21,7 @@ class ThreadInterruptedException extends \System\SystemException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use ThreadInterruptedExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

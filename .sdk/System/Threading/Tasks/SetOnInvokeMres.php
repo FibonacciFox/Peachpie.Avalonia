@@ -4,6 +4,7 @@ final class SetOnInvokeMres extends \System\Threading\ManualResetEventSlim imple
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -15,6 +15,7 @@ class Inline extends \Avalonia\Controls\Documents\TextElement implements
 	\Avalonia\Styling\IStyleable,
 	\Avalonia\INamed
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -139,7 +140,7 @@ class Inline extends \Avalonia\Controls\Documents\TextElement implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

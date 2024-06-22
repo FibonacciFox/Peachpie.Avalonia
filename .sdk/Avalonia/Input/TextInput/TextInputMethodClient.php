@@ -21,6 +21,7 @@ trait TextInputMethodClientOverride {
 class TextInputMethodClient extends \System\Object
 {
 	use TextInputMethodClientOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Visual

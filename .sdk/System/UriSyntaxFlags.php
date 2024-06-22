@@ -2,6 +2,7 @@
 namespace System;
 enum UriSyntaxFlags
 {
+
 	
 	case None = '0';
 	case MustHaveAuthority = '1';

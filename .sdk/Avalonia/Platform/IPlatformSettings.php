@@ -7,6 +7,7 @@ namespace Avalonia\Platform;
 interface IPlatformSettings
 {
 
+
 	/**
 	 * @param \Avalonia\Input\PointerType $type
 	 * @return \Avalonia\Size

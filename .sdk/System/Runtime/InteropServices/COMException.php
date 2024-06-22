@@ -26,6 +26,7 @@ class COMException extends \System\Runtime\InteropServices\ExternalException imp
 	\System\Runtime\Serialization\ISerializable
 {
 	use COMExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

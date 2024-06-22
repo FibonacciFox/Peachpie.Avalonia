@@ -5,6 +5,7 @@ class AttachedProperty_1 extends \Avalonia\StyledProperty_1 implements
 	\Avalonia\Data\Core\IPropertyInfo,
 	\Avalonia\IStyledPropertyAccessor
 {
+
 	/**
 	 * @property
 	 * @var \System\Func_2[TValue,System\Boolean]
@@ -12,7 +13,7 @@ class AttachedProperty_1 extends \Avalonia\StyledProperty_1 implements
 	 */
 	public $ValidateValue;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs_1[TValue]]|\System\IObservable_1[Avalonia\AvaloniaPropertyChangedEventArgs]
 	 */
 	public $Changed;

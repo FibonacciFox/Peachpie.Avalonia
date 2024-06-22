@@ -3,6 +3,7 @@ namespace Avalonia\Data\Core;
 class ClrPropertyInfo extends \System\Object implements
 	\Avalonia\Data\Core\IPropertyInfo
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

@@ -2,6 +2,7 @@
 namespace System;
 enum LoaderOptimization
 {
+
 	
 	case DisallowBindings = '4';
 	case DomainMask = '3';

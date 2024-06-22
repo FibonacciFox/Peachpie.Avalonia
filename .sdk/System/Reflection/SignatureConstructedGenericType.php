@@ -4,6 +4,7 @@ final class SignatureConstructedGenericType extends \System\Reflection\Signature
 	\System\Reflection\ICustomAttributeProvider,
 	\System\Reflection\IReflect
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

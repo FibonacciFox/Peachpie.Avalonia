@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Contracts;
 final class ContractFailedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @field
 	 * @var \System\Exception

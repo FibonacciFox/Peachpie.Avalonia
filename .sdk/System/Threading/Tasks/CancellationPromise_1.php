@@ -5,6 +5,7 @@ final class CancellationPromise_1 extends \System\Threading\Tasks\Task_1 impleme
 	\System\IDisposable,
 	\System\Threading\Tasks\ITaskCompletionAction
 {
+
 	/**
 	 * @field
 	 * @var \TResult

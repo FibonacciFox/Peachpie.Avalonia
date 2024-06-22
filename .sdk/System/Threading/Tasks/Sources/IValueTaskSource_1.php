@@ -3,6 +3,7 @@ namespace System\Threading\Tasks\Sources;
 interface IValueTaskSource_1
 {
 
+
 	/**
 	 * @param \System\Int16 $token
 	 * @return \System\Threading\Tasks\Sources\ValueTaskSourceStatus

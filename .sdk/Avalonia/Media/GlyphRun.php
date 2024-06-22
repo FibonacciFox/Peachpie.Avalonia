@@ -27,6 +27,7 @@ final class GlyphRun extends \System\Object implements
 	\System\IDisposable
 {
 	use GlyphMetricsOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\IGlyphTypeface

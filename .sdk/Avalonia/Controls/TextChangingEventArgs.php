@@ -17,6 +17,7 @@ trait TextBoxTextInputMethodClientOverride {
 class TextChangingEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
 	use TextBoxTextInputMethodClientOverride;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

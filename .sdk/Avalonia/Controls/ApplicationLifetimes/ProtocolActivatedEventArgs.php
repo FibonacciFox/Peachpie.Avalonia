@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\ApplicationLifetimes;
 class ProtocolActivatedEventArgs extends \Avalonia\Controls\ApplicationLifetimes\ActivatedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Uri

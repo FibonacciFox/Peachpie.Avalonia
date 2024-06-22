@@ -2,6 +2,7 @@
 namespace System;
 class UnhandledExceptionEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Object|object

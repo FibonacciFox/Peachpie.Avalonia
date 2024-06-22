@@ -3,6 +3,7 @@ namespace System\Net;
 final class UrlDecoder extends \System\ValueType
 {
 
+
 	private function FlushBytes(){}
 	/**
 	 * @param \System\Char $ch

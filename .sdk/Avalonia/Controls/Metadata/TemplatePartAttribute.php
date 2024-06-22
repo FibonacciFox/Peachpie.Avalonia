@@ -16,6 +16,7 @@ trait TemplateResult_1Override {
 final class TemplatePartAttribute extends \System\Attribute
 {
 	use TemplateResult_1Override;
+
 	/**
 	 * @property
 	 * @var \System\String|string

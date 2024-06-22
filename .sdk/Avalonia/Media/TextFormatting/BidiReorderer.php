@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting;
 final class BidiReorderer extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\TextFormatting\BidiReorderer

@@ -5,6 +5,7 @@ final class ValueTaskAwaiter extends \System\ValueType implements
 	\System\Runtime\CompilerServices\INotifyCompletion,
 	\System\Runtime\CompilerServices\IStateMachineBoxAwareAwaiter
 {
+
 	/**
 	 * @field
 	 * @since readonly

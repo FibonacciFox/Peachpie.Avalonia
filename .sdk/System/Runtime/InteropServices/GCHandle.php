@@ -34,6 +34,7 @@ final class GCHandle extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use GCHandleOverride;
+
 	/**
 	 * @property
 	 * @var \System\Object|object

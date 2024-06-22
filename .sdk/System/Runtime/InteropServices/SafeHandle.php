@@ -20,6 +20,7 @@ class SafeHandle extends \System\Runtime\ConstrainedExecution\CriticalFinalizerO
 	\System\IDisposable
 {
 	use SafeHandleOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

@@ -3,6 +3,7 @@ namespace System\Diagnostics\Tracing;
 class EventPipePayloadDecoder extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Diagnostics\Tracing\EventSource+EventMetadata& $metadata
 	 * @param \System\ReadOnlySpan_1 $payload [generic: System\Byte]

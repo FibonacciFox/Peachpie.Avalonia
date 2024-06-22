@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class Entry extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Runtime\DependentHandle

@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Drawing\Nodes;
 final class RenderDataNodeRenderContext extends \System\ValueType implements
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Platform\IDrawingContextImpl

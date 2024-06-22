@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\ComTypes;
 enum IDLFLAG
 {
+
 	
 	case IDLFLAG_NONE = '0';
 	case IDLFLAG_FIN = '1';

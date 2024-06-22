@@ -26,6 +26,7 @@ trait ThreadPoolBoundHandleOverlappedOverride {
 class ConcurrentExclusiveSchedulerPair extends \System\Object
 {
 	use ThreadPoolBoundHandleOverlappedOverride;
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\Task

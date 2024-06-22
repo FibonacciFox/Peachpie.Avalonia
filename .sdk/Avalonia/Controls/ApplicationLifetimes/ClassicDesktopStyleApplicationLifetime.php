@@ -6,6 +6,7 @@ class ClassicDesktopStyleApplicationLifetime extends \System\Object implements
 	\Avalonia\Controls\ApplicationLifetimes\IApplicationLifetime,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\String[]|array

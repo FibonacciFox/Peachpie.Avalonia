@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices\Marshalling;
 enum MarshalMode
 {
+
 	
 	case Default = '0';
 	case ManagedToUnmanagedIn = '1';

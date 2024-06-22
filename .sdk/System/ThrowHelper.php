@@ -39,6 +39,7 @@ class ThrowHelper extends \System\Object
 {
 	use ThrowHelperOverride;
 
+
 	/**
 	 * @param \System\ExceptionArgument $argument
 	 * @return \System\Void|void

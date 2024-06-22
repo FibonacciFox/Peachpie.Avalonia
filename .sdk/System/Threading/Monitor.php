@@ -100,6 +100,7 @@ trait MonitorOverride {
 class Monitor extends \System\Object
 {
 	use MonitorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int64|int

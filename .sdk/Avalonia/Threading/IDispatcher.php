@@ -3,6 +3,7 @@ namespace Avalonia\Threading;
 interface IDispatcher
 {
 
+
 	/**
 	 * @return \System\Boolean|bool
 	 */

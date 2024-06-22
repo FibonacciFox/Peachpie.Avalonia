@@ -5,6 +5,7 @@ class LightweightSubject_1 extends \Avalonia\Reactive\LightweightObservableBase_
 	\Avalonia\Reactive\IAvaloniaSubject_1,
 	\System\IObserver_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

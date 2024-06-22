@@ -24,6 +24,7 @@ class Comparer_1 extends \System\Object implements
 	\System\Collections\Generic\IComparer_1
 {
 	use Comparer_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\Comparer_1[T]

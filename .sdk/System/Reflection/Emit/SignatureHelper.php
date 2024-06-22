@@ -198,6 +198,7 @@ final class SignatureHelper extends \System\Object
 {
 	use SignatureHelperOverride;
 
+
 	/**
 	 * @uses SignatureHelperOverride::GetMethodSigHelper_1 <br>public , args: ($mod, $returnType, $parameterTypes)<br>
 	 * @uses SignatureHelperOverride::GetMethodSigHelper_2 <br>public , args: ($mod, $callingConvention, $returnType)<br>

@@ -2,6 +2,7 @@
 namespace Avalonia\Input\GestureRecognizers;
 class PolynomialFit extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Double[]|array

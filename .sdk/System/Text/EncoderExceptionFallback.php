@@ -2,6 +2,7 @@
 namespace System\Text;
 final class EncoderExceptionFallback extends \System\Text\EncoderFallback
 {
+
 	/**
 	 * @field
 	 * @since readonly

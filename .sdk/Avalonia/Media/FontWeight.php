@@ -2,6 +2,7 @@
 namespace Avalonia\Media;
 enum FontWeight
 {
+
 	
 	case Thin = '100';
 	case ExtraLight = '200';

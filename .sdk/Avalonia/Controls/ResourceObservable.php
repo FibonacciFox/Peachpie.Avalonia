@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class ResourceObservable extends \Avalonia\Reactive\LightweightObservableBase_1 implements
 	\System\IObservable_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices;
 class ComEventsHelper extends \System\Object
 {
 
+
 	/**
 	 * @param \System\Object|object $rcw
 	 * @param \System\Guid $iid

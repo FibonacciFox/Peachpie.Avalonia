@@ -3,6 +3,7 @@ namespace System\Globalization;
 class TaiwanCalendar extends \System\Globalization\Calendar implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

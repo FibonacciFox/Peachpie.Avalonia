@@ -15,6 +15,7 @@ final class MdFieldInfo extends \System\Reflection\RuntimeFieldInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use MdFieldInfoOverride;
+
 	/**
 	 * @field
 	 * @var \System\RuntimeType+RuntimeTypeCache

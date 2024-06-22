@@ -21,6 +21,7 @@ class MethodAccessException extends \System\MemberAccessException implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use MethodAccessExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

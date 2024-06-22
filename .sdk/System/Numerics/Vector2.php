@@ -147,6 +147,7 @@ final class Vector2 extends \System\ValueType implements
 	\System\IFormattable
 {
 	use Vector2Override;
+
 	/**
 	 * @field
 	 * @var \System\Single

@@ -4,6 +4,7 @@ class StyleActivatorBase extends \System\Object implements
 	\Avalonia\Styling\Activators\IStyleActivator,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

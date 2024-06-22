@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Utils;
 class TimeUtils extends \System\Object
 {
 
+
 	/**
 	 * @return \System\String|string
 	 */

@@ -20,6 +20,7 @@ class Console extends \System\Object
 {
 	use ConsoleOverride;
 
+
 	/**
 	 * @uses ConsoleOverride::WriteLine_1 <br>public , args: ($s)<br>
 	 * @uses ConsoleOverride::WriteLine_2 <br>public , args: ()<br>

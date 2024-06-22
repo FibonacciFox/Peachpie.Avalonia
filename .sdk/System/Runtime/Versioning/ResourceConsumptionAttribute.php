@@ -17,6 +17,7 @@ trait FrameworkNameOverride {
 final class ResourceConsumptionAttribute extends \System\Attribute
 {
 	use FrameworkNameOverride;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Versioning\ResourceScope

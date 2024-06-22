@@ -9,6 +9,7 @@ namespace Avalonia\Controls\ApplicationLifetimes;
 interface IControlledApplicationLifetime
 {
 
+
 	/**
 	 * @param \System\Int32|int $exitCode
 	 * @return \System\Void|void

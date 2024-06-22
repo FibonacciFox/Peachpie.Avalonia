@@ -37,6 +37,7 @@ final class Vector256_1 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use Vector256_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Runtime\Intrinsics\Vector256_1[T]

@@ -2,6 +2,7 @@
 namespace Avalonia\Threading;
 class PriorityChain extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Threading\DispatcherPriority

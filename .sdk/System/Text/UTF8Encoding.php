@@ -21,6 +21,7 @@ class UTF8Encoding extends \System\Text\Encoding implements
 	\System\ICloneable
 {
 	use UTF8EncodingOverride;
+
 	/**
 	 * @field
 	 * @since readonly

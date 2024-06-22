@@ -569,6 +569,7 @@ class File extends \System\Object
 {
 	use FileOverride;
 
+
 	/**
 	 * @param \System\String|string $path
 	 * @return \System\IO\StreamReader

@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 class PullGestureEventArgs extends \Avalonia\Interactivity\RoutedEventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

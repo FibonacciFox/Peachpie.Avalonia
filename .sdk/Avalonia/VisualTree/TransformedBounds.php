@@ -3,6 +3,7 @@ namespace Avalonia\VisualTree;
 final class TransformedBounds extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rect

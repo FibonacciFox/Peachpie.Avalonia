@@ -16,6 +16,7 @@ trait CULongOverride {
 final class CurrencyWrapper extends \System\Object
 {
 	use CULongOverride;
+
 	/**
 	 * @property
 	 * @var \System\Decimal

@@ -714,6 +714,7 @@ trait Sse41Override {
 class Sse41 extends \System\Runtime\Intrinsics\X86\Ssse3
 {
 	use Sse41Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

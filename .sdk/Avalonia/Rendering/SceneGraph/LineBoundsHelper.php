@@ -26,6 +26,7 @@ class LineBoundsHelper extends \System\Object
 {
 	use LineBoundsHelperOverride;
 
+
 	private static function CalculateAngle($p1, $p2){}
 	/**
 	 * @param \System\Double|double $angle

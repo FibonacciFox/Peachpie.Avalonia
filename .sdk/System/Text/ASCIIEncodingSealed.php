@@ -3,6 +3,7 @@ namespace System\Text;
 final class ASCIIEncodingSealed extends \System\Text\ASCIIEncoding implements
 	\System\ICloneable
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

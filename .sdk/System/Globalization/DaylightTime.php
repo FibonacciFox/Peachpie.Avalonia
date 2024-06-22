@@ -2,6 +2,7 @@
 namespace System\Globalization;
 class DaylightTime extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\DateTime

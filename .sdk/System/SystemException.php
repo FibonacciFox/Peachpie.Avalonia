@@ -21,6 +21,7 @@ class SystemException extends \System\Exception implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use SystemExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

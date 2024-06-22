@@ -3,6 +3,7 @@ namespace Avalonia\Threading;
 class NullDispatcherImpl extends \System\Object implements
 	\Avalonia\Threading\IDispatcherImpl
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -34,6 +34,7 @@ class LocalValueBindingObserverBase_1 extends \System\Object implements
 	\System\IDisposable
 {
 	use LocalValueBindingObserverBase_1Override;
+
 	/**
 	 * @field
 	 * @var \System\IDisposable

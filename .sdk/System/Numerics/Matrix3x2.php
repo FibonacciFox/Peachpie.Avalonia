@@ -119,6 +119,7 @@ final class Matrix3x2 extends \System\ValueType implements
 	\System\IEquatable_1
 {
 	use Matrix3x2Override;
+
 	/**
 	 * @field
 	 * @var \System\Single

@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 final class __LabelInfo extends \System\ValueType
 {
+
 	/**
 	 * @field
 	 * @var \System\Int32|int

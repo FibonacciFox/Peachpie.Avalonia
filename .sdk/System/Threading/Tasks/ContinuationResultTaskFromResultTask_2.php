@@ -1,9 +1,15 @@
 <?php
 namespace System\Threading\Tasks;
-final class ContinuationTaskFromResultTask_1 extends \System\Threading\Tasks\Task implements
+final class ContinuationResultTaskFromResultTask_2 extends \System\Threading\Tasks\Task_1 implements
 	\System\IAsyncResult,
 	\System\IDisposable
 {
+
+	/**
+	 * @field
+	 * @var \TResult
+	 */
+	protected $m_result;
 	/**
 	 * @field
 	 * @var \System\Delegate
@@ -29,6 +35,12 @@ final class ContinuationTaskFromResultTask_1 extends \System\Threading\Tasks\Tas
 	 * @var \System\Threading\Tasks\Task+ContingentProperties
 	 */
 	protected $m_contingentProperties;
+	/**
+	 * @property
+	 * @var \TResult
+	 * @since readonly
+	 */
+	public $Result;
 	/**
 	 * @property
 	 * @var \System\Int32|int
@@ -87,10 +99,10 @@ final class ContinuationTaskFromResultTask_1 extends \System\Threading\Tasks\Tas
 	private function get_CompletedSynchronously(){}
 	/**
 	 * @param \System\Threading\Tasks\Task_1 $antecedent [generic: TAntecedentResult]
-	 * @param \System\Delegate $action
+	 * @param \System\Delegate $function
 	 * @param \System\Object|object $state
 	 * @param \System\Threading\Tasks\TaskCreationOptions $creationOptions
 	 * @param \System\Threading\Tasks\InternalTaskOptions $internalOptions
 	 */
-	public function __construct($antecedent, $action, $state, $creationOptions, $internalOptions){}
+	public function __construct($antecedent, $function, $state, $creationOptions, $internalOptions){}
 }

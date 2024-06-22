@@ -3,6 +3,7 @@ namespace System\Runtime\InteropServices\ComTypes;
 interface IPersistFile
 {
 
+
 	/**
 	 * @param \System\Guid& &$pClassID
 	 * @return \System\Void|void

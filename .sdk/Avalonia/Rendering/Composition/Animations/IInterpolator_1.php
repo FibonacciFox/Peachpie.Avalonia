@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Animations;
 interface IInterpolator_1
 {
 
+
 	/**
 	 * @param \T|object $from
 	 * @param \T|object $to

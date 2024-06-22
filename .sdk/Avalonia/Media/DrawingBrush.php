@@ -23,6 +23,7 @@ final class DrawingBrush extends \Avalonia\Media\TileBrush implements
 	\Avalonia\Media\ISceneBrush
 {
 	use DrawingBrushOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -85,7 +86,7 @@ final class DrawingBrush extends \Avalonia\Media\TileBrush implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -20,6 +20,7 @@ trait ArrayPool_1Override {
 class ArrayPool_1 extends \System\Object
 {
 	use ArrayPool_1Override;
+
 	/**
 	 * @property
 	 * @var \System\Buffers\ArrayPool_1[T]

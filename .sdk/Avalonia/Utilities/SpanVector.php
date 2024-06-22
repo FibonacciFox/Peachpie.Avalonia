@@ -43,6 +43,7 @@ class SpanVector extends \System\Object implements
 	\System\Collections\IEnumerable
 {
 	use SpanVectorOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 interface IPixelFormatReader
 {
 
+
 	/**
 	 * @return \Avalonia\Media\Imaging\Rgba8888Pixel
 	 */

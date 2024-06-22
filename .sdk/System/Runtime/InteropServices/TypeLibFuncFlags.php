@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 enum TypeLibFuncFlags
 {
+
 	
 	case FRestricted = '1';
 	case FSource = '2';

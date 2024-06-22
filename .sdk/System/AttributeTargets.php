@@ -2,6 +2,7 @@
 namespace System;
 enum AttributeTargets
 {
+
 	
 	case Assembly = '1';
 	case Module = '2';

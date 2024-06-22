@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 final class TextCollapsingCreateInfo extends \System\ValueType implements
 	\System\IEquatable_1
 {
+
 	/**
 	 * @field
 	 * @since readonly

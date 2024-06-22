@@ -1,12 +1,13 @@
 <?php
 namespace System\Collections;
-interface IComparer
+interface ICollection
 {
 
+
 	/**
-	 * @param \System\Object|object $x
-	 * @param \System\Object|object $y
-	 * @return \System\Int32|int
+	 * @param \System\Array|array $array
+	 * @param \System\Int32|int $index
+	 * @return \System\Void|void
 	 */
-	public function Compare($x, $y);
+	public function CopyTo($array, $index);
 }

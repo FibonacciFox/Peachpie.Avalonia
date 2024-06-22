@@ -10,6 +10,7 @@ class WindowTransparencyLevelCollection extends \System\Collections\ObjectModel\
 	\System\Collections\Generic\IReadOnlyList_1,
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

@@ -2,6 +2,7 @@
 namespace System\Reflection;
 final class NullabilityInfo extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Type

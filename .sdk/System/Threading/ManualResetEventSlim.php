@@ -80,6 +80,7 @@ class ManualResetEventSlim extends \System\Object implements
 	\System\IDisposable
 {
 	use ManualResetEventSlimOverride;
+
 	/**
 	 * @property
 	 * @var \System\Threading\WaitHandle

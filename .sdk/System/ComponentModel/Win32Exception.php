@@ -30,6 +30,7 @@ class Win32Exception extends \System\Runtime\InteropServices\ExternalException i
 	\System\Runtime\Serialization\ISerializable
 {
 	use Win32ExceptionOverride;
+
 	/**
 	 * @field
 	 * @var \System\String|string

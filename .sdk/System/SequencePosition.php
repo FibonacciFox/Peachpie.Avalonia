@@ -4,6 +4,7 @@ final class SequencePosition extends \System\ValueType implements
 	\System\IEquatable_1
 {
 
+
 	/**
 	 * @return \System\Object|object
 	 */

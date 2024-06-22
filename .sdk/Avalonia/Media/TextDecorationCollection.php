@@ -28,6 +28,7 @@ class TextDecorationCollection extends \Avalonia\Collections\AvaloniaList_1 impl
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use TextDecorationCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

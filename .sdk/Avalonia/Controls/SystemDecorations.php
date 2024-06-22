@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum SystemDecorations
 {
+
 	
 	case None = '0';
 	case BorderOnly = '1';

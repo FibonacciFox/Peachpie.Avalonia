@@ -4,6 +4,7 @@ class RenderDataDrawingContext extends \Avalonia\Media\DrawingContext implements
 	\System\IDisposable
 {
 
+
 	private function Add($item){}
 	private function Push($node){}
 	private function Pop(){}

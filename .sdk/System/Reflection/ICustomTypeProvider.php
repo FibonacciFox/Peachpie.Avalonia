@@ -3,6 +3,7 @@ namespace System\Reflection;
 interface ICustomTypeProvider
 {
 
+
 	/**
 	 * @return \System\Type
 	 */

@@ -33,6 +33,7 @@ class CrossFade extends \System\Object implements
 	\Avalonia\Animation\IPageTransition
 {
 	use CrossFadeOverride;
+
 	/**
 	 * @property
 	 * @var \System\TimeSpan

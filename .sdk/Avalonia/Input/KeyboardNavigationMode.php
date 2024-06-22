@@ -2,6 +2,7 @@
 namespace Avalonia\Input;
 enum KeyboardNavigationMode
 {
+
 	
 	case Continue = '0';
 	case Cycle = '1';

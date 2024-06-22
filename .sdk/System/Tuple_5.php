@@ -77,6 +77,7 @@ class Tuple_5 extends \System\Object implements
 	\System\Runtime\CompilerServices\ITuple
 {
 	use Tuple_5Override;
+
 	/**
 	 * @property
 	 * @var \T1

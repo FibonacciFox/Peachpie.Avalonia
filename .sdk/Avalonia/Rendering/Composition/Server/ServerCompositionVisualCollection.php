@@ -3,6 +3,7 @@ namespace Avalonia\Rendering\Composition\Server;
 class ServerCompositionVisualCollection extends \Avalonia\Rendering\Composition\Server\ServerList_1 implements
 	\Avalonia\Rendering\Composition\Expressions\IExpressionObject
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\List_1[Avalonia\Rendering\Composition\Server\ServerCompositionVisual]

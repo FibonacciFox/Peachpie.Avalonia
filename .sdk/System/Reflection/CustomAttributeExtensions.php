@@ -255,6 +255,7 @@ class CustomAttributeExtensions extends \System\Object
 {
 	use CustomAttributeExtensionsOverride;
 
+
 	/**
 	 * @uses CustomAttributeExtensionsOverride::GetCustomAttribute_1 <br>public , args: ($element, $attributeType)<br>
 	 * @uses CustomAttributeExtensionsOverride::GetCustomAttribute_2 <br>public , args: ($element, $attributeType)<br>

@@ -2,6 +2,7 @@
 namespace Microsoft\Win32\SafeHandles;
 enum Operation
 {
+
 	
 	case None = '0';
 	case Read = '1';

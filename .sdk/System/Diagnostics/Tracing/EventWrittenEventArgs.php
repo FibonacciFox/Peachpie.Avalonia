@@ -2,6 +2,7 @@
 namespace System\Diagnostics\Tracing;
 class EventWrittenEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @field
 	 * @since readonly

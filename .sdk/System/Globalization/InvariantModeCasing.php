@@ -47,6 +47,7 @@ class InvariantModeCasing extends \System\Object
 {
 	use InvariantModeCasingOverride;
 
+
 	/**
 	 * @uses InvariantModeCasingOverride::ToLower_1 <br>protected , args: ($c)<br>
 	 * @uses InvariantModeCasingOverride::ToLower_2 <br>protected , args: ($s)<br>

@@ -2,6 +2,7 @@
 namespace Avalonia\Utilities;
 final class MappedArraySlice_1 extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

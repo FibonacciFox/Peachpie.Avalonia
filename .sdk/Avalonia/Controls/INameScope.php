@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 interface INameScope
 {
 
+
 	/**
 	 * @param \System\String|string $name
 	 * @param \System\Object|object $element

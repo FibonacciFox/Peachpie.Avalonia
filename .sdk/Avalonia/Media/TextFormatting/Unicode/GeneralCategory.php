@@ -2,6 +2,7 @@
 namespace Avalonia\Media\TextFormatting\Unicode;
 enum GeneralCategory
 {
+
 	
 	case Other = '0';
 	case Control = '1';

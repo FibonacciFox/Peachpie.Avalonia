@@ -3,6 +3,7 @@ namespace Avalonia\Platform\Storage;
 class StorageProviderExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Platform\Storage\IStorageProvider $provider
 	 * @param \System\String|string $filePath

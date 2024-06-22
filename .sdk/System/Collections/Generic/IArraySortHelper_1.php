@@ -3,6 +3,7 @@ namespace System\Collections\Generic;
 interface IArraySortHelper_1
 {
 
+
 	/**
 	 * @param \System\Span_1 $keys [generic: TKey]
 	 * @param \System\Collections\Generic\IComparer_1 $comparer [generic: TKey]

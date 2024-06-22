@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum TickPlacement
 {
+
 	
 	case None = '0';
 	case TopLeft = '1';

@@ -170,6 +170,7 @@ class NumericUpDown extends \Avalonia\Controls\Primitives\TemplatedControl imple
 	\Avalonia\Styling\ISetterValue
 {
 	use NumericUpDownOverride;
+
 	/**
 	 * @field
 	 * @since readonly
@@ -731,7 +732,7 @@ class NumericUpDown extends \Avalonia\Controls\Primitives\TemplatedControl imple
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

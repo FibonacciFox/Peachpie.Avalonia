@@ -2,6 +2,7 @@
 namespace System\Reflection;
 enum MdSigCallingConvention
 {
+
 	
 	case CallConvMask = '15';
 	case Default = '0';

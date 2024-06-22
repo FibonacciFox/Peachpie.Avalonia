@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 enum AutoCompleteFilterMode
 {
+
 	
 	case None = '0';
 	case StartsWith = '1';

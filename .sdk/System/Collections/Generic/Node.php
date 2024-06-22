@@ -2,6 +2,7 @@
 namespace System\Collections\Generic;
 final class Node extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \T|object

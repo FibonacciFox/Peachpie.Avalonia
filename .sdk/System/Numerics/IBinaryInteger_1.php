@@ -3,6 +3,7 @@ namespace System\Numerics;
 interface IBinaryInteger_1
 {
 
+
 	/**
 	 * @param \TSelf $left
 	 * @param \TSelf $right

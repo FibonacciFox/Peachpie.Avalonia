@@ -2,6 +2,7 @@
 namespace Avalonia\Diagnostics;
 class AppliedStyle extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

@@ -3,6 +3,7 @@ namespace System\Threading\Tasks;
 final class TaskAsyncResult extends \System\Object implements
 	\System\IAsyncResult
 {
+
 	/**
 	 * @field
 	 * @since readonly

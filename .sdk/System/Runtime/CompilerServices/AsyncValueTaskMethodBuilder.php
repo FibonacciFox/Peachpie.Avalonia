@@ -2,6 +2,7 @@
 namespace System\Runtime\CompilerServices;
 final class AsyncValueTaskMethodBuilder extends \System\ValueType
 {
+
 	/**
 	 * @property
 	 * @var \System\Threading\Tasks\ValueTask

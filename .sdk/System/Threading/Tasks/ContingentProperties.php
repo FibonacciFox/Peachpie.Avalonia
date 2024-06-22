@@ -2,6 +2,7 @@
 namespace System\Threading\Tasks;
 final class ContingentProperties extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\Threading\ExecutionContext

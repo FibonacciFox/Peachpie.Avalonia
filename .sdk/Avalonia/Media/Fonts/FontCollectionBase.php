@@ -24,6 +24,7 @@ class FontCollectionBase extends \System\Object implements
 	\System\IDisposable
 {
 	use FontCollectionBaseOverride;
+
 	/**
 	 * @field
 	 * @since readonly

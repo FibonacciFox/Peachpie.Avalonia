@@ -3,6 +3,7 @@ namespace System\IO\Enumeration;
 class FileSystemName extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $expression
 	 * @return \System\String|string

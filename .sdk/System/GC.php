@@ -139,6 +139,7 @@ trait GCOverride {
 class GC extends \System\Object
 {
 	use GCOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

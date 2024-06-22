@@ -2,6 +2,7 @@
 
 enum ResultCode
 {
+
 	
 	case Success = '0';
 	case UnknownError = '1';

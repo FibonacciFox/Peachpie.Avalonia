@@ -2,6 +2,7 @@
 namespace Avalonia\Controls;
 class TextBoxTextInputMethodClient extends \Avalonia\Input\TextInput\TextInputMethodClient
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Visual

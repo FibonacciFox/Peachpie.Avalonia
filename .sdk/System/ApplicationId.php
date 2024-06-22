@@ -2,6 +2,7 @@
 namespace System;
 final class ApplicationId extends \System\Object
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

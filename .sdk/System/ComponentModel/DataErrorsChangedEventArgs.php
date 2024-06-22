@@ -2,6 +2,7 @@
 namespace System\ComponentModel;
 class DataErrorsChangedEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\String|string

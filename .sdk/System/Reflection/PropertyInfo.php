@@ -91,6 +91,7 @@ class PropertyInfo extends \System\Reflection\MemberInfo implements
 	\System\Reflection\ICustomAttributeProvider
 {
 	use PropertyInfoOverride;
+
 	/**
 	 * @property
 	 * @var \System\Reflection\MemberTypes

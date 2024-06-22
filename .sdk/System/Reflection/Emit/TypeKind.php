@@ -2,6 +2,7 @@
 namespace System\Reflection\Emit;
 enum TypeKind
 {
+
 	
 	case IsArray = '1';
 	case IsPointer = '2';

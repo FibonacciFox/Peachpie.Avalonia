@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 interface IGlyphTypeface
 {
 
+
 	/**
 	 * @param \System\UInt16 $glyph
 	 * @param \Avalonia\Media\GlyphMetrics& &$metrics

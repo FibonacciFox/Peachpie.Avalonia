@@ -2,6 +2,7 @@
 namespace Avalonia\Controls\ApplicationLifetimes;
 class ControlledApplicationLifetimeExitEventArgs extends \System\EventArgs
 {
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

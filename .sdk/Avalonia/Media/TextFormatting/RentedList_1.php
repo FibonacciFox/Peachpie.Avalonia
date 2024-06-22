@@ -10,6 +10,7 @@ final class RentedList_1 extends \System\Collections\Generic\List_1 implements
 	\System\Collections\Generic\IReadOnlyList_1,
 	\System\Collections\Generic\IReadOnlyCollection_1
 {
+
 	/**
 	 * @field
 	 * @var \T[]

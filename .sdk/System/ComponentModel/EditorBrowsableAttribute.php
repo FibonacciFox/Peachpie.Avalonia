@@ -15,6 +15,7 @@ trait UmAlQuraCalendarOverride {
 final class EditorBrowsableAttribute extends \System\Attribute
 {
 	use UmAlQuraCalendarOverride;
+
 	/**
 	 * @property
 	 * @var \System\ComponentModel\EditorBrowsableState

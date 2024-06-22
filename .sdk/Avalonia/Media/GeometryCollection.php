@@ -28,6 +28,7 @@ final class GeometryCollection extends \Avalonia\Collections\AvaloniaList_1 impl
 	\Avalonia\Diagnostics\INotifyCollectionChangedDebug
 {
 	use GeometryCollectionOverride;
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\GeometryGroup

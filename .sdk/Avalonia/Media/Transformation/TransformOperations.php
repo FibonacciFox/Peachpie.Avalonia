@@ -3,6 +3,7 @@ namespace Avalonia\Media\Transformation;
 final class TransformOperations extends \System\Object implements
 	\Avalonia\Media\ITransform
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Media\Transformation\TransformOperations

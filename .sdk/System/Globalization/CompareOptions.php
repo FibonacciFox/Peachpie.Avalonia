@@ -2,6 +2,7 @@
 namespace System\Globalization;
 enum CompareOptions
 {
+
 	
 	case None = '0';
 	case IgnoreCase = '1';

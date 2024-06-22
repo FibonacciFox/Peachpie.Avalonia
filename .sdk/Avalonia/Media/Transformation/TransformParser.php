@@ -3,6 +3,7 @@ namespace Avalonia\Media\Transformation;
 class TransformParser extends \System\Object
 {
 
+
 	/**
 	 * @param \System\String|string $s
 	 * @return \Avalonia\Media\Transformation\TransformOperations

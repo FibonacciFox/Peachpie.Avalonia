@@ -15,6 +15,7 @@ trait ContractOverride {
 final class RequiresAssemblyFilesAttribute extends \System\Attribute
 {
 	use ContractOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

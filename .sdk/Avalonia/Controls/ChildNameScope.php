@@ -3,6 +3,7 @@ namespace Avalonia\Controls;
 class ChildNameScope extends \System\Object implements
 	\Avalonia\Controls\INameScope
 {
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

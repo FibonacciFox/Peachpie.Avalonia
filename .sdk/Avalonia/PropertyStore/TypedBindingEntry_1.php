@@ -26,8 +26,9 @@ final class TypedBindingEntry_1 extends \Avalonia\PropertyStore\BindingEntryBase
 	\System\IDisposable
 {
 	use TypedBindingEntry_1Override;
+
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \Avalonia\StyledProperty_1[T]|\Avalonia\AvaloniaProperty
 	 */
 	public $Property;

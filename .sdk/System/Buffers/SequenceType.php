@@ -2,6 +2,7 @@
 namespace System\Buffers;
 enum SequenceType
 {
+
 	
 	case MultiSegment = '0';
 	case Array = '1';

@@ -39,6 +39,7 @@ final class RuntimeModule extends \System\Reflection\Module implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RuntimeModuleOverride;
+
 	/**
 	 * @property
 	 * @var \System\Int32|int

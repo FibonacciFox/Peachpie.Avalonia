@@ -181,6 +181,7 @@ final class RuntimeAssembly extends \System\Reflection\Assembly implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use RuntimeAssemblyOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

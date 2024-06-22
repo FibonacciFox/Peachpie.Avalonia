@@ -21,6 +21,7 @@ class Canvas extends \Avalonia\Controls\Panel implements
 	\Avalonia\LogicalTree\IChildIndexProvider,
 	\Avalonia\Input\INavigableContainer
 {
+
 	/**
 	 * @field
 	 * @since readonly
@@ -358,7 +359,7 @@ class Canvas extends \Avalonia\Controls\Panel implements
 	 */
 	public $Transitions;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

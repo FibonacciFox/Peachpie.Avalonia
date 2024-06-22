@@ -3,6 +3,7 @@ namespace Avalonia\Controls\Primitives\PopupPositioning;
 class ManagedPopupPositionerPopupImplHelper extends \System\Object implements
 	\Avalonia\Controls\Primitives\PopupPositioning\IManagedPopupPositionerPopup
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\IReadOnlyList_1[Avalonia\Controls\Primitives\PopupPositioning\ManagedPopupPositionerScreenInfo]

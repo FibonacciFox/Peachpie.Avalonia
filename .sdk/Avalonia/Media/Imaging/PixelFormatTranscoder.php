@@ -3,6 +3,7 @@ namespace Avalonia\Media\Imaging;
 class PixelFormatTranscoder extends \System\Object
 {
 
+
 	/**
 	 * @param \System\IntPtr $source
 	 * @param \Avalonia\PixelSize $srcSize

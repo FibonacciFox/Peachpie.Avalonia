@@ -5,6 +5,7 @@ class NativeMenuItemSeparator extends \Avalonia\Controls\NativeMenuItem implemen
 	\System\ComponentModel\INotifyPropertyChanged,
 	\Avalonia\Controls\INativeMenuItemExporterEventsImplBridge
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Controls\NativeMenu
@@ -67,7 +68,7 @@ class NativeMenuItemSeparator extends \Avalonia\Controls\NativeMenuItem implemen
 	 */
 	public $Parent;
 	/**
-	 * @property dublicate
+	 * @property duplicate
 	 * @var \System\Object|object|\Avalonia\Data\IBinding
 	 */
 	public $Item;

@@ -3,6 +3,7 @@ namespace Avalonia\Input;
 interface IDataObject
 {
 
+
 	/**
 	 * @return \System\Collections\Generic\IEnumerable_1[System\String]
 	 */

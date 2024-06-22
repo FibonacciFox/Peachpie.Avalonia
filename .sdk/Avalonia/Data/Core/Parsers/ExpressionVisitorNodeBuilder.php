@@ -2,6 +2,7 @@
 namespace Avalonia\Data\Core\Parsers;
 class ExpressionVisitorNodeBuilder extends \System\Linq\Expressions\ExpressionVisitor
 {
+
 	/**
 	 * @property
 	 * @var \System\Collections\Generic\List_1[Avalonia\Data\Core\ExpressionNode]

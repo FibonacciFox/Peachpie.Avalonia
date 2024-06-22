@@ -52,6 +52,7 @@ trait ReadOnlySpan_1Override {
 final class ReadOnlySpan_1 extends \System\ValueType
 {
 	use ReadOnlySpan_1Override;
+
 	/**
 	 * @field
 	 * @since readonly

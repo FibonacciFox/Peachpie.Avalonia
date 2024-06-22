@@ -752,6 +752,7 @@ trait Avx2Override {
 class Avx2 extends \System\Runtime\Intrinsics\X86\Avx
 {
 	use Avx2Override;
+
 	/**
 	 * @property
 	 * @var \System\Boolean|bool

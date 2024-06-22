@@ -18,6 +18,7 @@ final class WeakReference_1 extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use TypeNameParserOverride;
+
 	/**
 	 * @field
 	 * @var \System\IntPtr

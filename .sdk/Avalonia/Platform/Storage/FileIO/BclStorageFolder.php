@@ -24,6 +24,7 @@ class BclStorageFolder extends \System\Object implements
 	\Avalonia\Platform\Storage\IStorageBookmarkItem
 {
 	use BclStorageFolderOverride;
+
 	/**
 	 * @property
 	 * @var \System\String|string

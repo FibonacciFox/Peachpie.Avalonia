@@ -106,6 +106,7 @@ class Uri extends \System\Object implements
 	\System\Runtime\Serialization\ISerializable
 {
 	use UriOverride;
+
 	/**
 	 * @field
 	 * @var \System\UriParser

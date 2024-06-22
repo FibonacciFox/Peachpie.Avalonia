@@ -2,6 +2,7 @@
 namespace System\Threading;
 final class OverlappedData extends \System\Object
 {
+
 	/**
 	 * @field
 	 * @var \System\IAsyncResult

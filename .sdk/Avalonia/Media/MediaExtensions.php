@@ -3,6 +3,7 @@ namespace Avalonia\Media;
 class MediaExtensions extends \System\Object
 {
 
+
 	/**
 	 * @param \Avalonia\Media\Stretch $stretch
 	 * @param \Avalonia\Size $destinationSize

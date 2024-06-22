@@ -4,6 +4,7 @@ class CompositionRenderData extends \System\Object implements
 	\Avalonia\Rendering\Composition\ICompositorSerializable,
 	\System\IDisposable
 {
+
 	/**
 	 * @property
 	 * @var \Avalonia\Rendering\Composition\Drawing\ServerCompositionRenderData

@@ -2,6 +2,7 @@
 namespace System\Runtime\InteropServices;
 final class BestFitMappingAttribute extends \System\Attribute
 {
+
 	/**
 	 * @field
 	 * @var \System\Boolean|bool
