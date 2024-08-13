@@ -7,15 +7,20 @@ use Avalonia\Controls\ShutdownMode;
 use Avalonia\AppBuilderDesktopExtensions;
 use Avalonia\AppBuilderExtension;
 
+// Создание объекта ClassicDesktopStyleApplicationLifetime
+// Create a ClassicDesktopStyleApplicationLifetime object
 $lifetime = new ClassicDesktopStyleApplicationLifetime();
-
 $lifetime->Args = null;
 $lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
 
-AppPhpBuilder::Configure("App, MVVM")
-    ->UsePlatformDetect()
-    ->WithInterFont()
-    ->LogToTrace()
-    ->SetupWithLifetime($lifetime);
+// Конфигурация AppPhpBuilder с указанием типа приложения и имени сборки
+// Configure AppPhpBuilder with the specified application type and assembly name
+AppPhpBuilder::Configure("App", "MVVM")
+    ->UsePlatformDetect()    // Настройка платформенной детекции / Configure platform detection
+    ->WithInterFont()        // Использование шрифта Inter / Use the Inter font
+    ->LogToTrace()           // Логирование в Trace / Log to Trace
+    ->SetupWithLifetime($lifetime); // Настройка времени жизни приложения / Set up application lifetime
 
+// Запуск приложения
+// Start the application
 $lifetime->Start(args: null);
