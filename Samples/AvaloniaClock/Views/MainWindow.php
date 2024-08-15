@@ -3,10 +3,9 @@
 namespace Views {
 
     use Avalonia\DevToolsExtensions;
-    use Avalonia\Threading\DispatcherTimer;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Php\Output\Logger;
-    use System\TimeSpan;
+    use Php\Threading\Timer;
 
     class MainWindow extends UxWindow
     {
@@ -17,14 +16,13 @@ namespace Views {
             $clockPanel = new ClockPanel();
             $this->Content = $clockPanel;
 
-            $timer = new DispatcherTimer();
-            $timer->Interval = TimeSpan::FromMilliseconds(16);
+            $intervalTimer = Timer::every('16', function() use ($clockPanel)  {
 
-            $timer->add_Tick(value: function ($sender, $e) use ($clockPanel) {
-                $clockPanel->InvalidateVisual();
+                uiLater(function() use ($clockPanel) {
+                    $clockPanel->InvalidateVisual();
+                });
+
             });
-
-            $timer->Start();
         }
 
         private function InitializeComponent(): void

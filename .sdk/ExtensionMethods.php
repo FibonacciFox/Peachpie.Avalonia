@@ -18,3 +18,13 @@ function Load() : void {
 function alert(mixed $message) : void {
 
 }
+
+/**
+ * Выполнить колбэк позже в UI потоке.
+ * Необходимо для работы с UI из других паралельных потоков.
+ *
+ * @param callable $callback
+ */
+function uiLater(callable $callback) : void {
+
+}
