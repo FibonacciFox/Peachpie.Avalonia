@@ -28,7 +28,7 @@ namespace Views {
         private function InitializeComponent(): void
         {
             Load();
-            
+
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");
                 //DevTools press F12 Debug build

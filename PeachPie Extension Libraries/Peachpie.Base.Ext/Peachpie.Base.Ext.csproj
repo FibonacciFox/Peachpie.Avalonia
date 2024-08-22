@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>net6.0</TargetFramework>
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
         <PackageId>Peachpie.Base.Ext</PackageId>
         <PackageTags>peachpie;base</PackageTags>
@@ -10,7 +10,7 @@
         <RootNamespace>Php</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Peachpie.Library" Version="1.2.0-r17582" />
+        <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
     
