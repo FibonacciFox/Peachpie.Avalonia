@@ -2,13 +2,12 @@
 
 namespace Views {
 
-    use Avalonia\DevToolsExtensions;
     use Avalonia\Input\TappedEventArgs;
     use Peachpie\Avalonia\Controls\UxContentControl;
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
-    use Php\Output\Logger;
+    use Peachpie\Community\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
     use Views\Pages\FieldsPage;
@@ -76,8 +75,6 @@ namespace Views {
             
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");
-                //DevTools press F12 Debug build
-                DevToolsExtensions::AttachDevTools($this);
             }
         }
     }

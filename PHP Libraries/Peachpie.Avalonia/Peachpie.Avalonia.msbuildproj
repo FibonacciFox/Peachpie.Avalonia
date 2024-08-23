@@ -15,13 +15,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Peachpie.Avalonia.Controls\Peachpie.Avalonia.Controls.msbuildproj" />
+    <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
+      <_Parameter1>https://github.com/avaloniaui</_Parameter1>
+      <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
+    </AssemblyAttribute>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
+  </ItemGroup>
+  
   <!-- PHP SDK generation -->
   <ItemGroup>
     <Content Include="src/**/*.*">
       <PackagePath>.sdk</PackagePath>
     </Content>
   </ItemGroup>
+ 
 </Project>

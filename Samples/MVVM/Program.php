@@ -4,9 +4,6 @@ use Peachpie\Avalonia\Core\AppPhpBuilder;
 use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
 use Avalonia\Controls\ShutdownMode;
 
-use Avalonia\AppBuilderDesktopExtensions;
-use Avalonia\AppBuilderExtension;
-
 // Создание объекта ClassicDesktopStyleApplicationLifetime
 // Create a ClassicDesktopStyleApplicationLifetime object
 $lifetime = new ClassicDesktopStyleApplicationLifetime();

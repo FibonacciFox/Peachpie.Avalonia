@@ -3,7 +3,7 @@
 namespace ViewModels;
 
 
-use Php\Reactive\ReactiveObject;
+use Peachpie\Community\Reactive\ReactiveObject;
 
 class ViewModelBase extends ReactiveObject
 {
