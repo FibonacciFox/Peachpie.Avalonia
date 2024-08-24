@@ -14,7 +14,7 @@ namespace Peachpie.Avalonia.Core
 
         /// <summary>
         /// Configures the application builder with the specified application type and assembly name.
-        /// Настраивает построитель приложений с указанным типом приложения и именем сборки.
+        /// Настраивает построитель приложения с указанным типом приложения и именем сборки.
         /// </summary>
         /// <param name="applicationType">The type of the application class. / Тип класса приложения.</param>
         /// <param name="assemblyName">The name of the assembly containing the application class. / Имя сборки, содержащей класс приложения.</param>
@@ -79,18 +79,7 @@ namespace Peachpie.Avalonia.Core
         {
             _appBuilder = appBuilder ?? throw new ArgumentNullException(nameof(appBuilder));
         }
-
-        /// <summary>
-        /// Configures the application to use platform detection.
-        /// Настраивает приложение для использования платформенной детекции.
-        /// </summary>
-        /// <returns>The current instance of AppPhpBuilder. / Текущий экземпляр AppPhpBuilder.</returns>
-        public AppPhpBuilder UsePlatformDetect()
-        {
-            _appBuilder.UsePlatformDetect();
-            return this;
-        }
-
+        
         /// <summary>
         /// Sets up the application with the specified lifetime.
         /// Настраивает приложение с указанным временем жизни.
@@ -102,18 +91,7 @@ namespace Peachpie.Avalonia.Core
             _appBuilder.SetupWithLifetime(lifetime);
             return this;
         }
-
-        /// <summary>
-        /// Configures the application to use the Inter font.
-        /// Настраивает приложение для использования шрифта Inter.
-        /// </summary>
-        /// <returns>The current instance of AppPhpBuilder. / Текущий экземпляр AppPhpBuilder.</returns>
-        public AppPhpBuilder WithInterFont()
-        {
-            _appBuilder.WithInterFont();
-            return this;
-        }
-
+        
         /// <summary>
         /// Configures the application to log to trace.
         /// Настраивает приложение для логирования в трассировку.

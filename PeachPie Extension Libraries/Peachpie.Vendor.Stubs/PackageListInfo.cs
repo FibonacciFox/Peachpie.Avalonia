@@ -5,9 +5,9 @@ using Microsoft.Build.Utilities;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace PhpSdkSync
+namespace Peachpie.Vendor.Stubs
 {
-    public class MyClass : Task
+    public class PackageListInfo : Task
     {
         public override bool Execute()
         {

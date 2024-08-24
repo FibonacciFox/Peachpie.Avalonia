@@ -10,15 +10,16 @@
         <Description>Peachpie Community Tool Kit</Description>
         <RootNamespace>Peachpie.Community</RootNamespace>
     </PropertyGroup>
+    
     <ItemGroup>
         <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
         <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
     </ItemGroup>
 
-    <!-- PHP SDK Include -->
+    <!-- Including PHP Sdk Stubs in the nuget package -->
     <ItemGroup>
-        <Content Include=".sdk/**/*.*">
-            <PackagePath>.sdk</PackagePath>
+        <Content Include="vendor/**/*.*">
+            <PackagePath>vendor</PackagePath>
             <PackageCopyToOutput>true</PackageCopyToOutput>
         </Content>
     </ItemGroup>

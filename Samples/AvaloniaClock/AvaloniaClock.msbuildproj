@@ -3,16 +3,19 @@
     <OutputType>Exe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <Description>Application</Description>
+    <Description>AvaloniaClock</Description>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Compile Include="**/*.php" />
+    <AvaloniaResource Include="Assets\**" />
   </ItemGroup>
-  
+
   <ItemGroup>
     <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
-  
+
 </Project>
