@@ -10,7 +10,6 @@ public class ViewLocatorBase : IDataTemplate
     public Control Build(object data)
     {
         var typeObject = data.GetType();
-        
         var name = typeObject.FullName!.Replace("ViewModel", "View");
         var assemblyName = typeObject.Assembly.FullName;
         

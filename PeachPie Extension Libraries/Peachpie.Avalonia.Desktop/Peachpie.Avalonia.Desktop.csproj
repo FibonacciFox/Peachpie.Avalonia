@@ -18,5 +18,13 @@
     <ItemGroup>
       <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
     </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="vendor/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
     
 </Project>

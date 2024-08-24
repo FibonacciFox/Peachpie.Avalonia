@@ -6,7 +6,7 @@
     <!-- Определение цели для задачи -->
     <Target Name="UpdateVendorStubs" AfterTargets="Build">
         <Peachpie.Vendor.Stubs.PackageListInfo
-                StubsDirectory="$(ProjectDir)vendor\stubs"
+                StubsDirectory="$(ProjectDir)vendor\Stubs"
                 NugetPackagePathPattern="$(UserProfile)\.nuget\packages\{PackageId}\{Version}\vendor" />
     </Target>
     

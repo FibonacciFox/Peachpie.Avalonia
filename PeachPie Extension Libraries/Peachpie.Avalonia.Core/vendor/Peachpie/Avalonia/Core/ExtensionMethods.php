@@ -5,7 +5,8 @@
  * Avalonia\Markup\Xaml\AvaloniaXamlLoader::Load();
  * @return void
  */
-function Load() : void {
+function Load(): void
+{
 
 }
 
@@ -15,7 +16,8 @@ function Load() : void {
  * @param mixed $message
  * @return void
  */
-function alert(mixed $message) : void {
+function alert(mixed $message): void
+{
 
 }
 
@@ -25,6 +27,7 @@ function alert(mixed $message) : void {
  *
  * @param callable $callback
  */
-function uiLater(callable $callback) : void {
+function uiLater(callable $callback): void
+{
 
 }

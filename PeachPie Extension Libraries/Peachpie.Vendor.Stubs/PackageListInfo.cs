@@ -7,11 +7,28 @@ using Newtonsoft.Json.Linq;
 
 namespace Peachpie.Vendor.Stubs
 {
+    /// <summary>
+    /// Класс <c>PackageListInfo</c> отвечает за обработку списка NuGet пакетов,
+    /// поиск PHP файлов в соответствующих директориях и копирование их в структуру стубов.
+    /// </summary>
     public class PackageListInfo : Task
     {
+        /// <summary>
+        /// Директория, куда будут копироваться файлы PHP для использования в проекте.
+        /// </summary>
         public string StubsDirectory { get; set; }
+
+        /// <summary>
+        /// Шаблон пути, используемый для поиска PHP файлов в локальном репозитории NuGet.
+        /// </summary>
         public string NugetPackagePathPattern { get; set; }
 
+        /// <summary>
+        /// Основной метод, выполняющий задачу. Он удаляет и создает каталоги стубов,
+        /// запускает команду <c>dotnet list package</c>, обрабатывает полученные данные,
+        /// и копирует файлы PHP в соответствующие каталоги.
+        /// </summary>
+        /// <returns>Возвращает <c>true</c>, если задача выполнена успешно, иначе <c>false</c>.</returns>
         public override bool Execute()
         {
             try
@@ -39,6 +56,10 @@ namespace Peachpie.Vendor.Stubs
             }
         }
 
+        /// <summary>
+        /// Удаляет каталог, если он существует, и затем создает его заново.
+        /// </summary>
+        /// <param name="path">Путь к каталогу, который нужно удалить и создать заново.</param>
         private void DeleteAndCreateDirectory(string path)
         {
             if (Directory.Exists(path))
@@ -48,6 +69,10 @@ namespace Peachpie.Vendor.Stubs
             Directory.CreateDirectory(path);
         }
 
+        /// <summary>
+        /// Выполняет команду <c>dotnet list package</c> и возвращает ее вывод в виде строки.
+        /// </summary>
+        /// <returns>Вывод команды <c>dotnet list package</c> в формате JSON.</returns>
         private string RunDotnetListPackage()
         {
             var startInfo = new ProcessStartInfo
@@ -69,6 +94,11 @@ namespace Peachpie.Vendor.Stubs
             return output;
         }
 
+        /// <summary>
+        /// Обрабатывает JSON, содержащий информацию о пакетах, и копирует файлы PHP из пакетов
+        /// в соответствующие каталоги стубов.
+        /// </summary>
+        /// <param name="packages">Объект JSON, содержащий информацию о пакетах и их версиях.</param>
         private void ProcessPackages(JObject packages)
         {
             foreach (var project in packages["projects"].Children<JObject>())
@@ -101,6 +131,11 @@ namespace Peachpie.Vendor.Stubs
             }
         }
 
+        /// <summary>
+        /// Копирует файлы PHP из исходного каталога в каталог стубов.
+        /// </summary>
+        /// <param name="sourcePath">Исходный каталог, в котором ищутся файлы PHP.</param>
+        /// <param name="destinationPath">Каталог назначения, куда копируются файлы PHP.</param>
         private void ProcessFiles(string sourcePath, string destinationPath)
         {
             var directories = Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories);
@@ -118,6 +153,10 @@ namespace Peachpie.Vendor.Stubs
             }
         }
 
+        /// <summary>
+        /// Проверяет, существует ли каталог, и создает его, если он не существует.
+        /// </summary>
+        /// <param name="path">Путь к каталогу, который нужно создать.</param>
         private void EnsureDirectoryExists(string path)
         {
             if (!Directory.Exists(path))

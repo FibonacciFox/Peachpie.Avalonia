@@ -24,11 +24,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
   </ItemGroup>
-  
-  <!-- PHP SDK generation -->
+
+  <!-- Including PHP Sdk Stubs in the nuget package -->
   <ItemGroup>
-    <Content Include="src/**/*.*">
-      <PackagePath>.sdk</PackagePath>
+    <Content Include="src/**/*.*" Exclude="vendor/Stubs/**/*.*">
+      <PackagePath>vendor</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
   </ItemGroup>
  
