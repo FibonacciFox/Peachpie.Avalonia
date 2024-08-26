@@ -1,0 +1,21 @@
+<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+<PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Program.php</StartupObject>
+    <TargetFramework>net8.0</TargetFramework>
+    <Description>A cross-platform Avalonia UI PHP Application targeting Desktop</Description>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+</PropertyGroup>
+
+<ItemGroup>
+    <Compile Include="**/*.php" Exclude="vendor/**/*.php" />
+</ItemGroup>
+
+<ItemGroup>
+    <PackageReference Include="Peachpie.Avalonia" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Vendor.Stubs" Version="1.0.0" />
+</ItemGroup>
+
+</Project>

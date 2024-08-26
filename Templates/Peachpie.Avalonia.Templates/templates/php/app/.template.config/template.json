@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "FibonacciFox",
+  "classifications": ["Avalonia", "Peachpie", "PHP"],
+  "description": "A cross-platform Avalonia UI PHP Application targeting Desktop",
+  "groupidentity": "Peachpie.Avalonia.App",
+  "identity": "Peachpie.Avalonia.App",
+  "name": "Avalonia PHP App",
+  "preferNameDirectory": true,
+  "shortName": "peachpie.avalonia.app",
+  "sourceName": "PeachpieAvaloniaAppTemplate",
+  "defaultName": "PeachpieAvaloniaApplication",
+  "tags": {
+    "language": "PHP",
+    "type": "project"
+  }
+}

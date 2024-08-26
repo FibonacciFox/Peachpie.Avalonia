@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>1.0.2</PackageVersion>
+        <PackageVersion>$(Version)</PackageVersion>
         <PackageId>Peachpie.Avalonia.Templates</PackageId>
         <Title>Peachpie Avalonia Templates</Title>
         <Description>Templates for creating Avalonia PHP applications and libraries.</Description>
@@ -21,9 +21,5 @@
         <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
         <Compile Remove="**\*" />
     </ItemGroup>
-
-    <ItemGroup>
-        <Folder Include="templates\php\app\Assets\" />
-        <Folder Include="templates\php\app\Styles\" />
-    </ItemGroup>
+    
 </Project>
