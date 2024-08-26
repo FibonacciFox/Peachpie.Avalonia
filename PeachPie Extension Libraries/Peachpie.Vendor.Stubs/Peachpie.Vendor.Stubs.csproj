@@ -17,4 +17,13 @@
         <PackageReference Include="Microsoft.Build.Utilities.Core" Version="17.11.4" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="vendor/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
+
 </Project>
