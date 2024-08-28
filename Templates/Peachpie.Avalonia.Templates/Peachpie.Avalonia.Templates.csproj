@@ -6,9 +6,8 @@
         <PackageId>Peachpie.Avalonia.Templates</PackageId>
         <Title>Peachpie Avalonia Templates</Title>
         <Description>Templates for creating Avalonia PHP applications and libraries.</Description>
-        <PackageTags>dotnet-new;templates;php-avalonia;peachpie-avalonia</PackageTags>
-        <PackageProjectUrl>https://github.com/FibonacciFox/Peachpie.Avalonia.Templates</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/FibonacciFox/Peachpie.Avalonia.Templates</RepositoryUrl>
+        <PackageTags>dotnet-new;templates;php-avalonia</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <TargetFramework>netstandard2.0</TargetFramework>
         <IncludeContentInPack>true</IncludeContentInPack>
         <IncludeBuildOutput>false</IncludeBuildOutput>
@@ -23,3 +22,4 @@
     </ItemGroup>
     
 </Project>
+

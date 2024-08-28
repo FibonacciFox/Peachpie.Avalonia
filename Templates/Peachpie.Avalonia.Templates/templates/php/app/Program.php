@@ -15,13 +15,17 @@ $lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
 // Конфигурация AppPhpBuilder с указанием типа приложения и имени сборки
 // Configure AppPhpBuilder with the specified application type and assembly name
 $appPhpBuilder = AppPhpBuilder::Configure("App", "PeachpieAvaloniaAppTemplate");
-// Настройка платформенной детекции / Configure platform detection
+// Настройка платформенной детекции 
+// Configure platform detection
 $appPhpBuilder = AppPhpBuilderDesktop::UsePlatformDetect($appPhpBuilder);
-// Использование шрифта Inter / Use the Inter font
+// Использование шрифта Inter 
+// Use the Inter font
 $appPhpBuilder = AppPhpBuilderFonts::WithInterFont($appPhpBuilder);
-// Логирование в Trace / Log to Trace
+// Логирование в Trace 
+// Log to Trace
 $appPhpBuilder->LogToTrace();
-// Настройка времени жизни приложения / Set up application lifetime
+// Настройка времени жизни приложения 
+// Set up application lifetime
 $appPhpBuilder->SetupWithLifetime($lifetime);
 
 // Запуск приложения
