@@ -7,7 +7,7 @@
     "authors": [ { "name": "FibonacciFox" } ],
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "Peachpie\\Avalonia\\": "src/"
         }
     }
 }

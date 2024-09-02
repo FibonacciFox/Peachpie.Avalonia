@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17582">
+<Project Sdk="Peachpie.NET.Sdk/1.1.10">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <StartupObject>Program.php</StartupObject>
@@ -15,12 +15,12 @@
   <ItemGroup>
     <PackageReference Include="Material.Avalonia" Version="3.5.0" />
     <PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
-    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.11"/>
   </ItemGroup>
   
   <ItemGroup>
     <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
   
 </Project>

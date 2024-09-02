@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.2.0-r17582">
+<Project Sdk="Peachpie.NET.Sdk/1.1.10">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
+    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
   
 </Project>

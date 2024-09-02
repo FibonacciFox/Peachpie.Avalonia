@@ -1,0 +1,25 @@
+<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="**/*.php" Exclude="vendor/Stubs/**/*.php"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Peachpie.Avalonia" Version="1.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.0"/>
+    </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="src/**/*.*" Exclude="vendor/Stubs/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
+
+</Project>

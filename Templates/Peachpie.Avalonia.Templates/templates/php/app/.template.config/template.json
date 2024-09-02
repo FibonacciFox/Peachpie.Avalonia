@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "FibonacciFox",
+  "classifications": [ "Desktop", "PeachPie", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
+  "description": "A cross-platform PeachPie Avalonia UI Application targeting Desktop",
+  "groupidentity": "Peachpie.Avalonia.App",
+  "identity": "Peachpie.Avalonia.App",
+  "name": "Avalonia PHP App",
+  "preferNameDirectory": true,
+  "shortName": "php.avalonia.app",
+  "sourceName": "PeachpieAvaloniaAppTemplate",
+  "defaultName": "PeachpieAvaloniaApplication",
+  "tags": {
+    "language": "PHP",
+    "type": "project"
+  },
+  "symbols": {
+    "skipRestore": {
+      "type": "parameter",
+      "datatype": "bool",
+      "description": "If specified, skips the automatic restore of the project on create.",
+      "defaultValue": "false"
+    },
+    "language": {
+      "type": "parameter",
+      "datatype": "choice",
+      "description": "Choose your preferred language for instructions",
+      "defaultValue": "en",
+      "choices": [
+        {
+          "choice": "en",
+          "description": "English"
+        },
+        {
+          "choice": "ru",
+          "description": "Русский"
+        }
+      ]
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "PeachpieAvaloniaAppTemplate.msbuildproj"
+    }
+  ],
+  "postActions": [
+    {
+      "id": "restore",
+      "condition": "(!skipRestore)",
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        { "text": "Run 'dotnet restore'" }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    },
+    {
+      "id": "PackageStubsRestoreInstructions",
+      "condition": "(language == 'en')",
+      "description": "Manual step to restore package stubs.",
+      "manualInstructions": [
+        { "text": "Run 'dotnet msbuild /t:PackageStubsRestore' to restore package stubs." }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    },
+    {
+      "id": "PackageStubsRestoreInstructionsRU",
+      "condition": "(language == 'ru')",
+      "description": "Ручной шаг для восстановления заглушек пакетов.",
+      "manualInstructions": [
+        { "text": "Выполните команду 'dotnet msbuild /t:PackageStubsRestore' для восстановления заглушек пакетов." }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}

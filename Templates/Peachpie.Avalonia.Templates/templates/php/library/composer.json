@@ -1,0 +1,16 @@
+{
+  "name": "PeachpieLibraryTemplate",
+  "description": "The Peachpie Library.",
+  "type": "library",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=8.1"
+  },
+  "license": "MIT",
+  "authors": [ { "name": "author" } ],
+  "autoload": {
+    "psr-4": {
+      "PeachpieLibraryTemplate\\": "src/"
+    }
+  }
+}

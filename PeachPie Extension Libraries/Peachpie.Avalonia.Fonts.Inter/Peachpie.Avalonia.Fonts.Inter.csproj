@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <AssemblyName>Peachpie.Avalonia.Fonts.Inter</AssemblyName>
+        <PackageId>Peachpie.Avalonia.Fonts.Inter</PackageId>
+        <PackageTags>peachpie;peachpie-avalonia-fonts-inter;</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
+        <RootNamespace>Peachpie.Avalonia.Fonts.Inter</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
+    </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="vendor/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
+    
+</Project>

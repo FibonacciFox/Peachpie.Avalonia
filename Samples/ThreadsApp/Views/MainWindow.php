@@ -9,13 +9,13 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxImage;
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
-    use Php\Threading\Tasks\ManagedTask;
-    use Php\Threading\Tasks\ManagedTaskEventArgs;
-    use Php\Threading\Tasks\ManagedTaskException;
+    use Peachpie\Community\Threading\Tasks\ManagedTask;
+    use Peachpie\Community\Threading\Tasks\ManagedTaskEventArgs;
+    use Peachpie\Community\Threading\Tasks\ManagedTaskException;
     use System\Net\Http\HttpClient;
     use System\Threading\AutoResetEvent;
     use System\Threading\CancellationToken;
-    use Php\Output\Logger;
+    use Peachpie\Community\Output\Logger;
     use System\Threading\Mutex;
     use System\Threading\Thread;
 

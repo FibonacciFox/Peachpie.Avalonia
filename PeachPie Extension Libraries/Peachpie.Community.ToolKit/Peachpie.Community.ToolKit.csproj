@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <PackageId>Peachpie.Community.ToolKit</PackageId>
+        <PackageTags>peachpie;community;toolkit</PackageTags>
+        <PackageVersion>$(Version)</PackageVersion>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>Peachpie Community Tool Kit</Description>
+        <RootNamespace>Peachpie.Community</RootNamespace>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Peachpie.Library" Version="$(PeachpieVersion)" />
+        <PackageReference Include="Peachpie.Runtime" Version="$(PeachpieVersion)" />
+    </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="vendor/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
+    
+</Project>
