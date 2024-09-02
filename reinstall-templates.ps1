@@ -1,4 +1,5 @@
 dotnet new uninstall Peachpie.Avalonia.Templates
-Remove-Item .nuget/**/*.nupkg
+cd ./Templates/Peachpie.Avalonia.Templates/
 dotnet build
 dotnet new install Peachpie.Avalonia.Templates
+pause

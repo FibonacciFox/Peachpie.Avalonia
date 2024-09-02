@@ -1,0 +1,16 @@
+{
+  "name": "PeachpieAvaloniaLibraryTemplate",
+  "description": "A library that extends PeachPie capabilities for Avalonia UI.",
+  "type": "library",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=8.1"
+  },
+  "license": "MIT",
+  "authors": [ { "name": "author" } ],
+  "autoload": {
+    "psr-4": {
+      "PeachpieAvaloniaLibraryTemplate\\": "src/"
+    }
+  }
+}

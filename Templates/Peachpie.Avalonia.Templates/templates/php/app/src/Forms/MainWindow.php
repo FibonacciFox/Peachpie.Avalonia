@@ -1,6 +1,6 @@
 <?php
 
-namespace View;
+namespace PeachpieAvaloniaAppTemplate\Forms;
 
 use Peachpie\Avalonia\Controls\UxTextBlock;
 use Peachpie\Avalonia\Controls\UxWindow;
@@ -14,7 +14,8 @@ class MainWindow extends UxWindow
     {
         //Сначала всегда инициализируем axaml.
         $this->InitializeComponent();
-
+        
+        $this->DateView->Text = "Hello PHP Avalonia!";
         $this->DateView = $this->FindByName("DateView");
 
         // Создание таймера с интервалом в 1 секунду / Create a timer with an interval of 1 second

@@ -1,14 +1,16 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-
-    <!-- Определение задачи -->
     <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\netstandard2.1\Peachpie.Vendor.Stubs.dll" />
 
-    <!-- Определение цели для задачи -->
-    <Target Name="PackageStubsRestore" AfterTargets="Restore" >
+    <PropertyGroup>
+        <!-- Установка пути к профилю пользователя с учетом кросс-платформенности -->
+        <UserProfileDir Condition="'$(OS)' == 'Windows_NT'">$(UserProfile)</UserProfileDir>
+        <UserProfileDir Condition="'$(OS)' != 'Windows_NT'">$(HOME)</UserProfileDir>
+    </PropertyGroup>
+
+    <Target Name="PackageStubsRestore" AfterTargets="Restore">
         <Peachpie.Vendor.Stubs.PackageStubsRestore
-                StubsDirectory="$(ProjectDir)vendor\Stubs"
-                NugetPackagePathPattern="$(UserProfile)\.nuget\packages\{PackageId}\{Version}\vendor" />
-        <Message Text="Package stubs have been restored -> $(ProjectDir)vendor\Stubs" Importance="High" />
+                StubsDirectory="$(ProjectDir)vendor/Stubs"
+                NugetPackagePathPattern="$(UserProfileDir)/.nuget/packages/{PackageId}/{Version}/vendor" />
+        <Message Text="Package stubs have been restored -> $(ProjectDir)vendor/Stubs" Importance="High" />
     </Target>
-    
 </Project>

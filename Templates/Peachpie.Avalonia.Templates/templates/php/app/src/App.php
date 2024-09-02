@@ -1,13 +1,15 @@
 <?php
 
-use Views\MainWindow;
+namespace PeachpieAvaloniaAppTemplate;
+
 use Peachpie\Avalonia\UxApplication;
+use PeachpieAvaloniaAppTemplate\Forms\MainWindow;
 
 class App extends UxApplication
 {
     public function __construct()
     {
-        $this->InitializeComponent(); 
+        $this->InitializeComponent();
     }
 
     public function OnFrameworkInitializationCompleted(): void
@@ -22,7 +24,7 @@ class App extends UxApplication
 
     private function InitializeComponent(): void
     {
-         Load();
+        Load();
     }
-  
+
 }

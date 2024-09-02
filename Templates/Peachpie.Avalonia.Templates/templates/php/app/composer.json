@@ -1,6 +1,6 @@
 {
-  "name": "name/name",
-  "description": "PeachpieAvaloniaAppTemplate",
+  "name": "PeachpieAvaloniaAppTemplate",
+  "description": "A cross-platform Avalonia UI PHP Application targeting Desktop",
   "type": "application",
   "require": {
     "php": ">=8.1"
@@ -9,7 +9,7 @@
   "authors": [ { "name": "author" } ],
   "autoload": {
     "psr-4": {
-      "": ""
+      "PeachpieAvaloniaAppTemplate\\": "src/"
     }
   }
 }

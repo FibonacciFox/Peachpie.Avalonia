@@ -17,8 +17,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+        <Content Include="templates\**\*;templates\src\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
         <Compile Remove="**\*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="templates\php\console\src\" />
     </ItemGroup>
     
 </Project>

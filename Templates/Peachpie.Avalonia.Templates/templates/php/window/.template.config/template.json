@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "FibonacciFox",
+  "classifications": [ "Desktop", "PeachPie", "Xaml", "Avalonia", "Windows", "Linux", "macOS" ],
+  "defaultName": "Window",
+  "description": "An Avalonia UI PHP Window",
+  "groupidentity": "Peachpie.Avalonia.Window",
+  "identity": "Peachpie.Avalonia.Window",
+  "name": "Avalonia PHP Window",
+  "primaryOutputs": [
+    { "path": "NewWindow.php" },
+    { "path": "NewWindow.axaml" }
+  ],
+  "shortName": "php.avalonia.window",
+  "sourceName": "NewWindow",
+  "tags": {
+    "language": "PHP",
+    "type": "item"
+  }
+}

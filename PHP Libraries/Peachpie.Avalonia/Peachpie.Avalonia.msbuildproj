@@ -1,36 +1,36 @@
 <Project Sdk="Peachpie.NET.Sdk/1.1.10">
-  <PropertyGroup>
-    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <NoWarn>$(NoWarn);1591;8632</NoWarn>
-    <AssemblyName>Peachpie.Avalonia</AssemblyName>
-    <PackageId>Peachpie.Avalonia</PackageId>
-    <PackageTags>peachpie;peachpie-avalonia;</PackageTags>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
-    <RootNamespace>Peachpie.Avalonia</RootNamespace>
-  </PropertyGroup>
-  
-  <ItemGroup>
-    <Compile Include="**/*.php" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+        <NoWarn>$(NoWarn);1591;8632</NoWarn>
+        <AssemblyName>Peachpie.Avalonia</AssemblyName>
+        <PackageId>Peachpie.Avalonia</PackageId>
+        <PackageTags>peachpie;peachpie-avalonia;</PackageTags>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Description>A library that extends PeachPie capabilities for Avalonia UI.</Description>
+        <RootNamespace>Peachpie.Avalonia</RootNamespace>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
-      <_Parameter1>https://github.com/avaloniaui</_Parameter1>
-      <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
-    </AssemblyAttribute>
-  </ItemGroup>
+    <ItemGroup>
+        <Compile Include="**/*.php"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
+            <_Parameter1>https://github.com/avaloniaui</_Parameter1>
+            <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
+        </AssemblyAttribute>
+    </ItemGroup>
 
-  <!-- Including PHP Sdk Stubs in the nuget package -->
-  <ItemGroup>
-    <Content Include="src/**/*.*" Exclude="vendor/Stubs/**/*.*">
-      <PackagePath>vendor</PackagePath>
-      <PackageCopyToOutput>true</PackageCopyToOutput>
-    </Content>
-  </ItemGroup>
- 
+    <ItemGroup>
+        <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj"/>
+    </ItemGroup>
+
+    <!-- Including PHP Sdk Stubs in the nuget package -->
+    <ItemGroup>
+        <Content Include="src/**/*.*" Exclude="vendor/Stubs/**/*.*">
+            <PackagePath>vendor</PackagePath>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+        </Content>
+    </ItemGroup>
+
 </Project>
