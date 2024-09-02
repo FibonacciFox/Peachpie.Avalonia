@@ -20,10 +20,6 @@
         <Content Include="templates\**\*;templates\src\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
         <Compile Remove="**\*" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="templates\php\console\src\" />
-    </ItemGroup>
     
 </Project>
 
