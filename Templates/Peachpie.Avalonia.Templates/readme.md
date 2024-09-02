@@ -1,5 +1,5 @@
-[![downloads](https://img.shields.io/nuget/dt/peachpie.avalonia.templates)](https://www.nuget.org/packages/Avalonia.Templates/)
-[![Current stable version](https://img.shields.io/nuget/v/Peachpie.Avalonia.Templates.svg)](https://www.nuget.org/packages/Avalonia.Templates/)
+[![downloads](https://img.shields.io/nuget/dt/peachpie.avalonia.templates)](https://www.nuget.org/packages/Peachpie.Avalonia.Templates/)
+[![Current stable version](https://img.shields.io/nuget/v/Peachpie.Avalonia.Templates.svg)](https://www.nuget.org/packages/Peachpie.Avalonia.Templates/)
 # Peachpie.Avalonia Templates for `dotnet new`
 
 For more information about `dotnet new` templates see [here](https://blogs.msdn.microsoft.com/dotnet/2017/04/02/how-to-create-your-own-templates-for-dotnet-new/).
