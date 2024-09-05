@@ -1,5 +1,5 @@
 
-![Header](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/update-readme/docs/logo/logo_en.png)
+![Build Status](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/docs/logo/logo_ru.png?raw=true)
 
 [![Build Status](https://img.shields.io/github/actions/workflow/status/FibonacciFox/Peachpie.Avalonia/.github/workflows/PackagePublish.yml?branch=master&event=push&logo=nuget)](https://github.com/FibonacciFox/Peachpie.Avalonia/actions/workflows/PackagePublish.yml) ![License](https://img.shields.io/github/license/FibonacciFox/Peachpie.Avalonia)
 [![NuGet](https://img.shields.io/nuget/v/Peachpie.Avalonia.svg)](https://www.nuget.org/packages/Peachpie.Avalonia) [![downloads](https://img.shields.io/nuget/dt/Peachpie.Avalonia)](https://www.nuget.org/packages/Peachpie.Avalonia)  ![Size](https://img.shields.io/github/repo-size/FibonacciFox/Peachpie.Avalonia)
@@ -55,7 +55,7 @@ dotnet run
 
 If you've done everything correctly, you should see a project template like this:
 
-![TemplateApp](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/update-readme/docs/images/template_app.jpg)
+![TemplateApp](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/docs/images/template_app.jpg)
 
 
 
