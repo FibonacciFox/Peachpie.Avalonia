@@ -1,6 +1,10 @@
-# Peachpie.Avalonia
 
-## Description
+![Header](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/update-readme/docs/logo/logo_en.png)
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/FibonacciFox/Peachpie.Avalonia/.github/workflows/PackagePublish.yml?branch=master&event=push&logo=nuget)](https://github.com/FibonacciFox/Peachpie.Avalonia/actions/workflows/PackagePublish.yml) ![License](https://img.shields.io/github/license/FibonacciFox/Peachpie.Avalonia)
+[![NuGet](https://img.shields.io/nuget/v/Peachpie.Avalonia.svg)](https://www.nuget.org/packages/Peachpie.Avalonia) [![downloads](https://img.shields.io/nuget/dt/Peachpie.Avalonia)](https://www.nuget.org/packages/Peachpie.Avalonia)  ![Size](https://img.shields.io/github/repo-size/FibonacciFox/Peachpie.Avalonia)
+
+## 📖 About
 
 The **Peachpie.Avalonia** library will allow developers to easily create cross-platform applications for Windows, macOS, Linux, iOS, Android and web browsers in PHP in the .NET runtime.
 
@@ -10,40 +14,52 @@ The **Peachpie.Avalonia** library will allow developers to easily create cross-p
 
 [**Avalonia**](https://avaloniaui.net/) is a powerful framework that enables developers to create cross-platform application using .NET
 
-## Get Started
+## 🚀 Getting Started
 
 Install .NET 8.0 SDK
 
 > [!NOTE]
 >[ ](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)[Download .NET 8.0]()
 
-Download the simple application archive:
-[Application](https://drive.google.com/file/d/1bph02IFZy3c3CD87-1aa1kMg-lDyQbqs/view?usp=sharing)
+Run from a command line (`.NET 8+`):
 
+```powershell
+dotnet new install Peachpie.Avalonia.Templates
+```
 
-Run the command from the project root directory:
+The templates should now be available in `dotnet new list`:
+
+```
+Template Name                        Short Name                 Language  Tags
+-----------------------------------  -------------------------  --------  -----------------------------------------
+Avalonia PHP App                     php.avalonia.app           PHP       Desktop/PeachPie/Xaml/Avalonia/Windows/Linux/macOS
+Avalonia PHP Library                 php.avalonia.lib           PHP       Library/PeachPie/Xaml/Avalonia/Windows/Linux/macOS
+Avalonia PHP Window                  php.avalonia.window        PHP       Desktop/PeachPie/Xaml/Avalonia/Windows/Linux/macOS
+PHP Console App                      php.console                PHP       Console/PeachPie
+PHP Library                          php.lib                    PHP       Library/PeachPie
+
+```
+
+# Creating a new Avalonia PHP Application
+
+To create a new barebones php application called `MyApp` in its own subdirectory, run:
+
+```
+dotnet new php.avalonia.app -o MyApp
+```
+Go to the `MyApp` derictory `cd ./MyApp` and execute:
 
 ```
 dotnet run
 ```
 
-If you did everything correctly, a simple application window will appear:
+If you've done everything correctly, you should see a project template like this:
 
-![загруженное](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/1847556f-c33e-40cd-8714-8e746e5fe646)
-
-
-> [!TIP]
->PHP stubs have been added to the example.
->You can open the project in any IDE convenient for you and see the code completion options.
-
-![загруженное (1)](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/519df094-2730-4298-936d-b3c5f3074ee2)
-
-> [!IMPORTANT]
->*The library supports both dynamic creation of form components and the use of XAML markup is an XML-based mark-up language that is used by many UI frameworks...*
->
+![TemplateApp](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/update-readme/docs/images/template_app.jpg)
 
 
-#### How to create a Button control (good for any control) using code?
+
+## How to create a Button control (good for any control) using code?
 Unlike basic Avalonia UI components, Peachpie.Avalonia form components must start with «Ux». These components are child classes of Avalonia's base UI components, but with some changes to make development easier. (In the future I plan to avoid inheritance, but for now creating controls would look like this)
 ```php
 <?php
@@ -154,8 +170,4 @@ public UxTextBlock $textblock1;
 $this->textblock1 = $this->FindByName("textblock1");
 $this->Text = "Hello";
 
-## A demo application using the library Material.Avalonia
-
-
-![image](https://github.com/FibonacciFox/Peachpie.Avalonia/assets/61143434/45de92b3-a425-4bb7-9cde-046877bb2602)
 
