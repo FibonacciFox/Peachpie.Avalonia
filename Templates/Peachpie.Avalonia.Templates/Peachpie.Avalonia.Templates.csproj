@@ -2,7 +2,6 @@
 
     <PropertyGroup>
         <PackageType>Template</PackageType>
-        <PackageVersion>$(Version)</PackageVersion>
         <PackageId>Peachpie.Avalonia.Templates</PackageId>
         <Title>Peachpie Avalonia Templates</Title>
         <Description>Templates for creating Avalonia PHP applications and libraries.</Description>

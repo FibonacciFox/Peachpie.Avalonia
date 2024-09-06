@@ -171,7 +171,7 @@ namespace Peachpie.Vendor.Stubs
             var version = package["resolvedVersion"].ToString();
 
             var nugetPackagePath = NugetPackagePathPattern
-                .Replace("{PackageId}", packageId)
+                .Replace("{PackageId}", packageId.ToLower())
                 .Replace("{Version}", version);
 
             var packageStubsDirectory = Path.Combine(StubsDirectory, packageId, version);

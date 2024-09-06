@@ -11,10 +11,10 @@
 </ItemGroup>
 
 <ItemGroup>
-    <PackageReference Include="Peachpie.Avalonia" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.0" />
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Avalonia" Version="1.0.1" />
+    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.1" />
+    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.1" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.1" />
 </ItemGroup>
 
 </Project>

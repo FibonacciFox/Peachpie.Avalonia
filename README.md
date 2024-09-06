@@ -57,7 +57,14 @@ If you've done everything correctly, you should see a project template like this
 
 ![TemplateApp](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/docs/images/template_app.jpg)
 
+# Unpacking PHP stubs into the project directory.
 
+PHP stubs should be unpacked when creating a project from a template or performing `dotnet build`, `dotnet restore` tasks. If this does not happen, force the stubs to be restored by executing:
+
+```
+dotnet msbuild /t:PackageStubsRestore
+```
+* This is the kind of behavior I've noticed in Linux.
 
 ## How to create a Button control (good for any control) using code?
 Unlike basic Avalonia UI components, Peachpie.Avalonia form components must start with «Ux». These components are child classes of Avalonia's base UI components, but with some changes to make development easier. (In the future I plan to avoid inheritance, but for now creating controls would look like this)

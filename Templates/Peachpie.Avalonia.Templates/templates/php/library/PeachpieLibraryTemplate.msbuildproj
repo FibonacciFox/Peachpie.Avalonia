@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.0"/>
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.1"/>
     </ItemGroup>
 
     <!-- Including PHP Sdk Stubs in the nuget package -->

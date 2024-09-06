@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\netstandard2.1\Peachpie.Vendor.Stubs.dll" />
+    <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(MSBuildThisFileDirectory)../lib/netstandard2.1/Peachpie.Vendor.Stubs.dll" />
 
     <PropertyGroup>
         <!-- Установка пути к профилю пользователя с учетом кросс-платформенности -->

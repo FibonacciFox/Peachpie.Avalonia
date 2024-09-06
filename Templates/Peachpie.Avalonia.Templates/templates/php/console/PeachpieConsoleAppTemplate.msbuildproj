@@ -11,8 +11,8 @@
 </ItemGroup>
 
 <ItemGroup>
-    <PackageReference Include="Peachpie.Community.ToolKit" Version="1.0.0" />
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Community.ToolKit" Version="1.0.1" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.1" />
 </ItemGroup>
 
 </Project>
