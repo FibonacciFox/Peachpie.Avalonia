@@ -31,6 +31,9 @@ namespace Views {
         public UxImage $image1;  // Изображение для отображения результатов
 
         // Конструктор класса MainWindow
+        /**
+         * @throws Exception
+         */
         public function __construct()
         {
             $this->InitializeComponent();

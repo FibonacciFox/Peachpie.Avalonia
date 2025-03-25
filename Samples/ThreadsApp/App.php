@@ -8,7 +8,6 @@ class App extends UxApplication
     public function __construct()
     {
         $this->InitializeComponent();
-         
     }
 
     public function OnFrameworkInitializationCompleted(): void

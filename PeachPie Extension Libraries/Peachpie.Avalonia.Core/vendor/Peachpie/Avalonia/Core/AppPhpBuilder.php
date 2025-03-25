@@ -34,10 +34,10 @@ class AppPhpBuilder
      * Configures the application builder with the specified application type and assembly name.
      *
      * @param string $applicationType Тип класса приложения / The type of the application class.
-     * @param string $assemblyName Имя сборки, содержащей класс приложения / The name of the assembly containing the application class.
+     * @param string|null $assemblyName Имя сборки, содержащей класс приложения / The name of the assembly containing the application class.
      * @return AppPhpBuilder Экземпляр AppPhpBuilder / An instance of AppPhpBuilder.
      */
-    public static function Configure(string $applicationType, string $assemblyName): AppPhpBuilder
+    public static function Configure(string $applicationType, string $assemblyName = null): AppPhpBuilder
     {
     }
 

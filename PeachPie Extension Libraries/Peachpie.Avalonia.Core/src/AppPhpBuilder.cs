@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 
@@ -7,20 +8,23 @@ namespace Peachpie.Avalonia.Core
 {
     public class AppPhpBuilder
     {
-
         public AppBuilder Builder => _appBuilder;
         
         private readonly AppBuilder _appBuilder;
 
         /// <summary>
-        /// Configures the application builder with the specified application type and assembly name.
-        /// Настраивает построитель приложения с указанным типом приложения и именем сборки.
+        /// Настраивает построитель приложения с указанным типом приложения.
+        /// Если имя сборки не указано, оно определяется автоматически.
+        /// Configure the application builder with the specified application type.
+        /// If the assembly name is not provided, it is determined automatically.
         /// </summary>
-        /// <param name="applicationType">The type of the application class. / Тип класса приложения.</param>
-        /// <param name="assemblyName">The name of the assembly containing the application class. / Имя сборки, содержащей класс приложения.</param>
-        /// <returns>An instance of AppPhpBuilder. / Экземпляр AppPhpBuilder.</returns>
-        /// <exception cref="ArgumentException">Thrown when applicationType or assemblyName is invalid. / Выбрасывается, когда applicationType или assemblyName недействительны.</exception>
-        public static AppPhpBuilder Configure(string applicationType, string assemblyName)
+        /// <param name="applicationType">Имя класса приложения. / The application class name.</param>
+        /// <param name="assemblyName">
+        /// Имя сборки, содержащей класс приложения. / The name of the assembly containing the application class.
+        /// Если не указано, определяется автоматически. / If not provided, it is determined automatically.
+        /// </param>
+        /// <returns>Экземпляр AppPhpBuilder. / An instance of AppPhpBuilder.</returns>
+        public static AppPhpBuilder Configure(string applicationType, string? assemblyName = null)
         {
             if (string.IsNullOrWhiteSpace(applicationType))
             {
@@ -29,13 +33,17 @@ namespace Peachpie.Avalonia.Core
 
             if (string.IsNullOrWhiteSpace(assemblyName))
             {
-                throw new ArgumentException("Assembly name must be provided. / Имя сборки должно быть указано.", nameof(assemblyName));
+                assemblyName = Assembly.GetEntryAssembly()?.GetName().Name;
+                if (string.IsNullOrWhiteSpace(assemblyName))
+                {
+                    throw new ArgumentException("Unable to determine the assembly name automatically. / Невозможно автоматически определить имя сборки.", nameof(assemblyName));
+                }
             }
 
+            // Формируем полное квалифицированное имя типа
             // Combine the application type and assembly name to form the fully qualified name
-            // Комбинируем тип приложения и имя сборки, чтобы сформировать полное квалифицированное имя
             string qualifiedName = $"{applicationType}, {assemblyName}";
-            Type appType = Type.GetType(qualifiedName);
+            Type? appType = Type.GetType(qualifiedName);
             if (appType == null)
             {
                 throw new ArgumentException("Invalid application type or assembly name. / Неверный тип приложения или имя сборки.", nameof(applicationType));
@@ -46,16 +54,16 @@ namespace Peachpie.Avalonia.Core
         }
 
         /// <summary>
-        /// Creates an AppBuilder for the specified application type.
         /// Создает AppBuilder для указанного типа приложения.
+        /// Creates an AppBuilder for the specified application type.
         /// </summary>
-        /// <param name="applicationType">The type of the application class. / Тип класса приложения.</param>
-        /// <returns>An instance of AppBuilder. / Экземпляр AppBuilder.</returns>
-        /// <exception cref="InvalidOperationException">Thrown when the Configure method is not found. / Выбрасывается, когда метод Configure не найден.</exception>
+        /// <param name="applicationType">Тип класса приложения. / The application class type.</param>
+        /// <returns>Экземпляр AppBuilder. / An instance of AppBuilder.</returns>
+        /// <exception cref="InvalidOperationException">Если метод Configure не найден.</exception>
         private static AppBuilder CreateAppBuilder(Type applicationType)
         {
+            // Ищем универсальный метод Configure в AppBuilder
             // Find the generic Configure method in AppBuilder
-            // Найти универсальный метод Configure в AppBuilder
             var configureMethod = typeof(AppBuilder).GetMethods()
                 .FirstOrDefault(method => method.Name == "Configure" && method.IsGenericMethod);
 
@@ -64,28 +72,28 @@ namespace Peachpie.Avalonia.Core
                 throw new InvalidOperationException("Configure method not found. / Метод Configure не найден.");
             }
 
+            // Делаем метод Configure специфичным для указанного типа приложения
             // Make the Configure method specific to the application type
-            // Сделать метод Configure специфичным для типа приложения
             var genericConfigureMethod = configureMethod.MakeGenericMethod(applicationType);
             return (AppBuilder)genericConfigureMethod.Invoke(null, null);
         }
 
         /// <summary>
+        /// Инициализирует новый экземпляр AppPhpBuilder.
         /// Initializes a new instance of the AppPhpBuilder class.
-        /// Инициализирует новый экземпляр класса AppPhpBuilder.
         /// </summary>
-        /// <param name="appBuilder">An instance of AppBuilder. / Экземпляр AppBuilder.</param>
+        /// <param name="appBuilder">Экземпляр AppBuilder. / An instance of AppBuilder.</param>
         private AppPhpBuilder(AppBuilder appBuilder)
         {
             _appBuilder = appBuilder ?? throw new ArgumentNullException(nameof(appBuilder));
         }
         
         /// <summary>
-        /// Sets up the application with the specified lifetime.
         /// Настраивает приложение с указанным временем жизни.
+        /// Sets up the application with the specified lifetime.
         /// </summary>
-        /// <param name="lifetime">The application lifetime. / Время жизни приложения.</param>
-        /// <returns>The current instance of AppPhpBuilder. / Текущий экземпляр AppPhpBuilder.</returns>
+        /// <param name="lifetime">Время жизни приложения. / The application lifetime.</param>
+        /// <returns>Текущий экземпляр AppPhpBuilder для цепочки вызовов. / The current instance of AppPhpBuilder for chaining.</returns>
         public AppPhpBuilder SetupWithLifetime(IApplicationLifetime lifetime)
         {
             _appBuilder.SetupWithLifetime(lifetime);
@@ -93,10 +101,10 @@ namespace Peachpie.Avalonia.Core
         }
         
         /// <summary>
+        /// Настраивает логирование в трассировку.
         /// Configures the application to log to trace.
-        /// Настраивает приложение для логирования в трассировку.
         /// </summary>
-        /// <returns>The current instance of AppPhpBuilder. / Текущий экземпляр AppPhpBuilder.</returns>
+        /// <returns>Текущий экземпляр AppPhpBuilder для цепочки вызовов. / The current instance of AppPhpBuilder for chaining.</returns>
         public AppPhpBuilder LogToTrace()
         {
             _appBuilder.LogToTrace();

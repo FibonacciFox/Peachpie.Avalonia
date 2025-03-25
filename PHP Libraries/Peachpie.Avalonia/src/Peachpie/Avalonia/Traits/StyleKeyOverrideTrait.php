@@ -1,7 +1,7 @@
 <?php
 
 namespace Peachpie\Avalonia\Traits;
-use Peachpie\Community\ObjectType;
+use Peachpie\Community\TypeHelper;
 use System\Type;
 
 trait StyleKeyOverrideTrait
@@ -13,7 +13,7 @@ trait StyleKeyOverrideTrait
      */
     public function get_StyleKeyOverride() : Type
     {
-        return ObjectType::GetBaseType($this);
+        return TypeHelper::GetBaseType($this);
     }
 
 }
