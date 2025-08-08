@@ -18,6 +18,8 @@ namespace Views {
     use Peachpie\Community\Output\Logger;
     use System\Threading\Mutex;
     use System\Threading\Thread;
+    // Тест унифицированной подписки
+    use Peachpie\Avalonia\Ux\Ux;
 
     // Главный класс окна приложения, унаследованный от UxWindow
     class MainWindow extends UxWindow
@@ -87,8 +89,8 @@ namespace Views {
             // Инициализация мьютекса
             $this->mutex = new Mutex(); // Необходим для синхронизации задач
 
-            // Обработчик клика для кнопки "Start"
-            $this->button_start->on("Click", function () use ($managedTask) {
+            // Обработчик клика для кнопки "Start" используя новую систему подписки на события
+            Ux::of($this->button_start)->once("Click", function () use ($managedTask) {
                 if ($managedTask->IsStarted) {
                     $managedTask->Stop();
                     $this->button_start->Content = "Start ManagedTask";
