@@ -1,16 +1,32 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(MSBuildThisFileDirectory)../lib/netstandard2.1/Peachpie.Vendor.Stubs.dll" />
+
+    <!-- Подключаем сборку задачи из пакета -->
+    <UsingTask
+            TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore"
+            AssemblyFile="$([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','netstandard2.1','Peachpie.Vendor.Stubs.dll'))" />
 
     <PropertyGroup>
-        <!-- Установка пути к профилю пользователя с учетом кросс-платформенности -->
-        <UserProfileDir Condition="'$(OS)' == 'Windows_NT'">$(UserProfile)</UserProfileDir>
-        <UserProfileDir Condition="'$(OS)' != 'Windows_NT'">$(HOME)</UserProfileDir>
+        <!-- Корень NuGet-кэша. Предпочтительно: NuGetPackageRoot (учитывает NUGET_PACKAGES и nuget.config) -->
+        <_NuGetRoot>$(NuGetPackageRoot)</_NuGetRoot>
+
+        <!-- Фоллбеки, если NuGetPackageRoot не задан -->
+        <_NuGetRoot Condition="'$(_NuGetRoot)' == '' and '$(OS)' == 'Windows_NT'">$([System.IO.Path]::Combine('$(UserProfile)','\.nuget','packages'))</_NuGetRoot>
+        <_NuGetRoot Condition="'$(_NuGetRoot)' == '' and '$(OS)' != 'Windows_NT'">$([System.IO.Path]::Combine('$(HOME)','.nuget','packages'))</_NuGetRoot>
     </PropertyGroup>
 
-    <Target Name="PackageStubsRestore" AfterTargets="Restore">
+    <!-- Запускаем после Restore, не в design-time -->
+    <Target Name="PackageStubsRestore"
+            AfterTargets="Restore"
+            Condition=" '$(DesignTimeBuild)' != 'true' and Exists('$(MSBuildProjectDirectory)') ">
+
+        <Message Text="PeachPie Stubs: NuGet root = $(_NuGetRoot)" Importance="Low" />
+
         <Peachpie.Vendor.Stubs.PackageStubsRestore
-                StubsDirectory="$(ProjectDir)vendor/Stubs"
-                NugetPackagePathPattern="$(UserProfileDir)/.nuget/packages/{PackageId}/{Version}/vendor" />
-        <Message Text="Package stubs have been restored -> $(ProjectDir)vendor/Stubs" Importance="High" />
+                StubsDirectory="$(MSBuildProjectDirectory)$(DirectorySeparatorChar)vendor$(DirectorySeparatorChar)Stubs"
+                NugetPackagePathPattern="$(_NuGetRoot){PackageId}/{Version}/vendor"
+                ProjectDirectory="$(MSBuildProjectDirectory)" />
+
+        <Message Text="Package stubs restored → $(MSBuildProjectDirectory)$(DirectorySeparatorChar)vendor$(DirectorySeparatorChar)Stubs" Importance="High" />
     </Target>
+
 </Project>

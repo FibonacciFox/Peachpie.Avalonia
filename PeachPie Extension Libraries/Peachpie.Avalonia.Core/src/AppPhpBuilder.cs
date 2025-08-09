@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Linq;
 using System.Reflection;
 using Avalonia;
@@ -6,109 +7,147 @@ using Avalonia.Controls.ApplicationLifetimes;
 
 namespace Peachpie.Avalonia.Core
 {
-    public class AppPhpBuilder
+    /// <summary>
+    /// Позволяет инициализировать Avalonia-приложение из PHP без дженериков.
+    /// Аналогично коду C#:
+    /// <code>
+    /// AppBuilder.Configure&lt;App&gt;()
+    ///     .UsePlatformDetect()
+    ///     .LogToTrace()
+    ///     .SetupWithLifetime(lifetime);
+    /// </code>
+    /// </summary>
+    /// <remarks>
+    /// Использование в PHP:
+    /// <code language="php">
+    /// use Peachpie\Avalonia\Core\AppPhpBuilder;
+    /// use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
+    /// 
+    /// $lifetime = new ClassicDesktopStyleApplicationLifetime();
+    /// 
+    /// AppPhpBuilder::Configure("App", "Application") // быстрый способ
+    ///     ->LogToTrace()
+    ///     ->SetupWithLifetime($lifetime);
+    /// 
+    /// $lifetime->Start(null);
+    /// </code>
+    /// </remarks>
+    public sealed class AppPhpBuilder
     {
-        public AppBuilder Builder => _appBuilder;
-        
-        private readonly AppBuilder _appBuilder;
+        /// <summary>
+        /// Экземпляр <see cref="AppBuilder"/>, на котором выполняются операции конфигурации.
+        /// </summary>
+        public AppBuilder Builder { get; }
+
+        private AppPhpBuilder(AppBuilder builder) =>
+            Builder = builder ?? throw new ArgumentNullException(nameof(builder));
 
         /// <summary>
-        /// Настраивает построитель приложения с указанным типом приложения.
-        /// Если имя сборки не указано, оно определяется автоматически.
-        /// Configure the application builder with the specified application type.
-        /// If the assembly name is not provided, it is determined automatically.
+        /// Создаёт <see cref="AppPhpBuilder"/> для указанного типа приложения.
         /// </summary>
-        /// <param name="applicationType">Имя класса приложения. / The application class name.</param>
-        /// <param name="assemblyName">
-        /// Имя сборки, содержащей класс приложения. / The name of the assembly containing the application class.
-        /// Если не указано, определяется автоматически. / If not provided, it is determined automatically.
+        /// <param name="applicationType">
+        /// Имя класса приложения:
+        /// <list type="bullet">
+        /// <item>Полное с пространством имён, например: <c>\MyApp\App</c></item>
+        /// <item>Или короткое имя, например: <c>App</c></item>
+        /// </list>
         /// </param>
-        /// <returns>Экземпляр AppPhpBuilder. / An instance of AppPhpBuilder.</returns>
+        /// <param name="assemblyName">
+        /// Необязательно: имя сборки, содержащей этот класс. Если указано — поиск быстрее.
+        /// </param>
+        /// <exception cref="ArgumentException">
+        /// Если тип не найден или не наследуется от <see cref="Application"/>.
+        /// </exception>
         public static AppPhpBuilder Configure(string applicationType, string? assemblyName = null)
         {
-            if (string.IsNullOrWhiteSpace(applicationType))
-            {
-                throw new ArgumentException("Application type must be provided. / Тип приложения должен быть указан.", nameof(applicationType));
-            }
-
-            if (string.IsNullOrWhiteSpace(assemblyName))
-            {
-                assemblyName = Assembly.GetEntryAssembly()?.GetName().Name;
-                if (string.IsNullOrWhiteSpace(assemblyName))
-                {
-                    throw new ArgumentException("Unable to determine the assembly name automatically. / Невозможно автоматически определить имя сборки.", nameof(assemblyName));
-                }
-            }
-
-            // Формируем полное квалифицированное имя типа
-            // Combine the application type and assembly name to form the fully qualified name
-            string qualifiedName = $"{applicationType}, {assemblyName}";
-            Type? appType = Type.GetType(qualifiedName);
-            if (appType == null)
-            {
-                throw new ArgumentException("Invalid application type or assembly name. / Неверный тип приложения или имя сборки.", nameof(applicationType));
-            }
-
-            AppBuilder appBuilder = CreateAppBuilder(appType);
-            return new AppPhpBuilder(appBuilder);
+            var type = ResolveAppType(applicationType, assemblyName);
+            var builder = CreateAppBuilder(type);
+            return new AppPhpBuilder(builder);
         }
 
         /// <summary>
-        /// Создает AppBuilder для указанного типа приложения.
-        /// Creates an AppBuilder for the specified application type.
+        /// Настраивает приложение с указанным временем жизни (lifetime).
         /// </summary>
-        /// <param name="applicationType">Тип класса приложения. / The application class type.</param>
-        /// <returns>Экземпляр AppBuilder. / An instance of AppBuilder.</returns>
-        /// <exception cref="InvalidOperationException">Если метод Configure не найден.</exception>
-        private static AppBuilder CreateAppBuilder(Type applicationType)
-        {
-            // Ищем универсальный метод Configure в AppBuilder
-            // Find the generic Configure method in AppBuilder
-            var configureMethod = typeof(AppBuilder).GetMethods()
-                .FirstOrDefault(method => method.Name == "Configure" && method.IsGenericMethod);
-
-            if (configureMethod == null)
-            {
-                throw new InvalidOperationException("Configure method not found. / Метод Configure не найден.");
-            }
-
-            // Делаем метод Configure специфичным для указанного типа приложения
-            // Make the Configure method specific to the application type
-            var genericConfigureMethod = configureMethod.MakeGenericMethod(applicationType);
-            return (AppBuilder)genericConfigureMethod.Invoke(null, null);
-        }
-
-        /// <summary>
-        /// Инициализирует новый экземпляр AppPhpBuilder.
-        /// Initializes a new instance of the AppPhpBuilder class.
-        /// </summary>
-        /// <param name="appBuilder">Экземпляр AppBuilder. / An instance of AppBuilder.</param>
-        private AppPhpBuilder(AppBuilder appBuilder)
-        {
-            _appBuilder = appBuilder ?? throw new ArgumentNullException(nameof(appBuilder));
-        }
-        
-        /// <summary>
-        /// Настраивает приложение с указанным временем жизни.
-        /// Sets up the application with the specified lifetime.
-        /// </summary>
-        /// <param name="lifetime">Время жизни приложения. / The application lifetime.</param>
-        /// <returns>Текущий экземпляр AppPhpBuilder для цепочки вызовов. / The current instance of AppPhpBuilder for chaining.</returns>
         public AppPhpBuilder SetupWithLifetime(IApplicationLifetime lifetime)
         {
-            _appBuilder.SetupWithLifetime(lifetime);
+            if (lifetime is null) throw new ArgumentNullException(nameof(lifetime));
+            Builder.SetupWithLifetime(lifetime);
             return this;
         }
-        
+
         /// <summary>
-        /// Настраивает логирование в трассировку.
-        /// Configures the application to log to trace.
+        /// Включает логирование в трассировку.
         /// </summary>
-        /// <returns>Текущий экземпляр AppPhpBuilder для цепочки вызовов. / The current instance of AppPhpBuilder for chaining.</returns>
         public AppPhpBuilder LogToTrace()
         {
-            _appBuilder.LogToTrace();
+            Builder.LogToTrace();
             return this;
+        }
+
+        // Кэш метода Configure<T>
+        private static readonly MethodInfo ConfigureGeneric = typeof(AppBuilder)
+            .GetMethods(BindingFlags.Public | BindingFlags.Static)
+            .First(m => m.Name == "Configure" && m.IsGenericMethodDefinition);
+
+        private static AppBuilder CreateAppBuilder(Type appType) =>
+            (AppBuilder)ConfigureGeneric.MakeGenericMethod(appType).Invoke(null, null)!;
+
+        private static Type ResolveAppType(string typeName, string? assemblyName)
+        {
+            if (string.IsNullOrWhiteSpace(typeName))
+                throw new ArgumentException("Application type must be provided.", nameof(typeName));
+
+            // 1. Если указано полное имя с сборкой
+            if (typeName.Contains(','))
+            {
+                var t = Type.GetType(typeName, false);
+                if (t is not null) return RequireApplication(t);
+            }
+
+            // 2. Если есть имя сборки
+            if (!string.IsNullOrWhiteSpace(assemblyName))
+            {
+                var asm = AppDomain.CurrentDomain.GetAssemblies()
+                    .FirstOrDefault(a => a.GetName().Name == assemblyName);
+                var t = asm?.GetType(typeName, false);
+                if (t is not null) return RequireApplication(t);
+            }
+
+            // 3. Ищем в EntryAssembly
+            var entry = Assembly.GetEntryAssembly();
+            var tEntry = entry?.GetType(typeName, false);
+            if (tEntry is not null) return RequireApplication(tEntry);
+
+            // 4. Ищем во всех сборках
+            foreach (var asm in AppDomain.CurrentDomain.GetAssemblies())
+            {
+                var t = asm.GetType(typeName, false);
+                if (t is not null) return RequireApplication(t);
+            }
+
+            // 5. Если просто "App", ищем наследника Application
+            var guess = AppDomain.CurrentDomain.GetAssemblies()
+                .SelectMany(SafeGetTypes)
+                .Where(t => typeof(Application).IsAssignableFrom(t))
+                .FirstOrDefault(t => t.Name == typeName)
+                ?? AppDomain.CurrentDomain.GetAssemblies()
+                    .SelectMany(SafeGetTypes)
+                    .SingleOrDefault(t => typeof(Application).IsAssignableFrom(t));
+
+            if (guess is not null) return guess;
+
+            throw new ArgumentException($"Cannot resolve application type '{typeName}'.");
+        }
+
+        private static Type RequireApplication(Type t) =>
+            typeof(Application).IsAssignableFrom(t)
+                ? t
+                : throw new ArgumentException($"Type '{t.FullName}' is not Avalonia.Application.");
+
+        private static Type[] SafeGetTypes(Assembly a)
+        {
+            try { return a.GetTypes(); }
+            catch { return Array.Empty<Type>(); }
         }
     }
 }
