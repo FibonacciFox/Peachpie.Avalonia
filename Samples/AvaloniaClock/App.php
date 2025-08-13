@@ -2,6 +2,7 @@
 
 use Views\MainWindow;
 use Peachpie\Avalonia\UxApplication;
+use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
 class App extends UxApplication
 {
@@ -27,7 +28,6 @@ class App extends UxApplication
 
     private function InitializeComponent(): void
     {
-         Load();
+        AvaloniaXamlLoader::Load(obj:$this);
     }
-  
 }

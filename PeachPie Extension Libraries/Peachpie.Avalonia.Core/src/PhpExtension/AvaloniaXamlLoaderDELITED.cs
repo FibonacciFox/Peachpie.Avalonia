@@ -1,10 +1,11 @@
+/*using Avalonia.Markup.Xaml;
 using Pchp.Core;
 
 [assembly: PhpExtension] 
 
 // ReSharper disable once CheckNamespace
-namespace Avalonia.Markup.Xaml;
-public static class AvaloniaXamlLoader
+namespace Avalonia.Markup.Xaml1;
+public static class AvaloniaXamlLoader1
 {
     /// <summary>
     /// Loads the XAML into a Avalonia component.
@@ -17,4 +18,4 @@ public static class AvaloniaXamlLoader
             $"No precompiled XAML found for {obj.GetType()}, make sure to specify x:Class and include your XAML file as AvaloniaResource");
     }
 
-}
+}*/

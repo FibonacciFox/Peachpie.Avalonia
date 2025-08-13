@@ -20,6 +20,8 @@ namespace Views {
     use System\Threading\Thread;
     // Тест унифицированной подписки
     use Peachpie\Avalonia\Ux\Ux;
+    
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
     // Главный класс окна приложения, унаследованный от UxWindow
     class MainWindow extends UxWindow
@@ -173,7 +175,8 @@ namespace Views {
         // Метод инициализации компонентов
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
+            
             if (defined('DEBUG')) {
                 Logger::Info("Debug Build!");
             }

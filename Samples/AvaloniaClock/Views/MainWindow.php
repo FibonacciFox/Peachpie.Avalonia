@@ -2,11 +2,12 @@
 
 namespace Views {
 
-    use Peachpie\Avalonia\Controls\UxWindow;
+    use Avalonia\Controls\Window;
     use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Timer;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
         public function __construct()
         {
@@ -24,9 +25,9 @@ namespace Views {
             });
         }
 
-        private function InitializeComponent(): void
+        private function InitializeComponent()
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
 
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");
