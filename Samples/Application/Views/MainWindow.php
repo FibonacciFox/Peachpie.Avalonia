@@ -3,6 +3,7 @@
 namespace Views {
 
     use Avalonia\Input\TappedEventArgs;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Controls\UxContentControl;
     use Peachpie\Avalonia\Controls\UxListBox;
     use Peachpie\Avalonia\Controls\UxToggleButton;
@@ -71,7 +72,7 @@ namespace Views {
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
             
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");

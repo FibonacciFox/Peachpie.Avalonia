@@ -2,6 +2,7 @@
 
 namespace Views {
 
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Controls\UxWindow;
 
     class MainWindow extends UxWindow
@@ -14,7 +15,7 @@ namespace Views {
         //Не удаляйте метод, если используете разметку axaml
         public function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 

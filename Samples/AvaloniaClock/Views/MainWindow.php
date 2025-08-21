@@ -3,9 +3,9 @@
 namespace Views {
 
     use Avalonia\Controls\Window;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Timer;
-    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
     class MainWindow extends Window
     {

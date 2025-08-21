@@ -2,6 +2,7 @@
 namespace {
 
     use Avalonia\Application;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use ViewModels\MainWindowViewModel;
     use Views\MainWindow;
 
@@ -21,7 +22,7 @@ namespace {
 
         public function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 }

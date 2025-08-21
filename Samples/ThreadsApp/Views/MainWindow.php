@@ -2,6 +2,7 @@
 
 namespace Views {
 
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Avalonia\Media\Imaging\Bitmap;
     use Avalonia\Threading\Dispatcher;
     use Exception;
@@ -9,19 +10,18 @@ namespace Views {
     use Peachpie\Avalonia\Controls\UxImage;
     use Peachpie\Avalonia\Controls\UxTextBlock;
     use Peachpie\Avalonia\Controls\UxWindow;
+    use Peachpie\Avalonia\Ux\Ux;
+    use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Tasks\ManagedTask;
     use Peachpie\Community\Threading\Tasks\ManagedTaskEventArgs;
     use Peachpie\Community\Threading\Tasks\ManagedTaskException;
     use System\Net\Http\HttpClient;
     use System\Threading\AutoResetEvent;
     use System\Threading\CancellationToken;
-    use Peachpie\Community\Output\Logger;
     use System\Threading\Mutex;
     use System\Threading\Thread;
+
     // Тест унифицированной подписки
-    use Peachpie\Avalonia\Ux\Ux;
-    
-    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
     // Главный класс окна приложения, унаследованный от UxWindow
     class MainWindow extends UxWindow

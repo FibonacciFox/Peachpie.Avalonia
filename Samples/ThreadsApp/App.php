@@ -1,8 +1,9 @@
 <?php
 
-use Views\MainWindow;
-use Peachpie\Avalonia\UxApplication;
 use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+use Peachpie\Avalonia\UxApplication;
+use Views\MainWindow;
+
 class App extends UxApplication
 {
     public function __construct()

@@ -1,7 +1,8 @@
 <?php
 
 namespace Views\Pages {
-   
+
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Avalonia\Controls\UxUserControl;
 
     class HomePage extends UxUserControl
@@ -13,7 +14,7 @@ namespace Views\Pages {
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 
