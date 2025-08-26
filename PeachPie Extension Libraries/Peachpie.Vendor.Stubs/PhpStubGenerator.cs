@@ -78,6 +78,11 @@ public static class PhpStubGenerator
         sb.AppendLine("declare(strict_types=1);");
         sb.AppendLine();
 
+        // === 1) ШАПКА ФАЙЛА — ПЕРЕД namespace ===
+        sb.AppendLine(BuildFileHeader(t, docs));
+        sb.AppendLine();
+
+        // === 2) namespace
         var phpNs = ToPhpNamespace(t.Namespace);
         if (!string.IsNullOrEmpty(phpNs))
         {
@@ -86,7 +91,9 @@ public static class PhpStubGenerator
         }
 
         var phpClassName = ToPhpIdentifier(StripGenericTick(t.Name).Replace('+', '\\'));
-        sb.AppendLine(BuildHeaderDoc(t, docs));
+
+        // === 3) ДОКБЛОК ТИПА (summary + @property/@property-read/@property-write + события как @property ClrEvent)
+        sb.AppendLine(BuildTypeDocBlock(t, docs));
 
         if (t.IsEnum)
         {
@@ -98,6 +105,7 @@ public static class PhpStubGenerator
             {
                 var name = ToPhpIdentifier(names[i]);
                 var value = Convert.ToInt64(values.GetValue(i)!);
+                // Оставим типизированную константу (PHP 8.3+); для максимальной совместимости можно заменить на /** @var int */ public const NAME = ...
                 sb.AppendLine($"    public const int {name} = {value};");
             }
             sb.AppendLine("}");
@@ -128,124 +136,58 @@ public static class PhpStubGenerator
         sb.AppendLine($"{kind} {phpClassName}{extendsPart}{implementsPart}");
         sb.AppendLine("{");
 
-        if (isInterface)
+        // === ВНИМАНИЕ: больше НЕ печатаем @property внутри тела интерфейса/класса ===
+
+        if (!isInterface)
         {
-            // @property для свойств и событий
-            var propertyDocs = new List<string>();
+            // Класс: реальные плейсхолдеры для свойств
+            foreach (var p in t.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly))
+            {
+                try
+                {
+                    if (IsIndexer(p)) continue;
+                    var acc = p.GetMethod ?? p.SetMethod;
+                    if (acc == null || !acc.IsPublic) continue;
+                    if (!IsAcceptableType(p.PropertyType)) continue;
 
-            foreach (var p in t.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
-            {
-                if (IsIndexer(p)) continue;
-                if (!IsAcceptableType(p.PropertyType)) continue;
-                var line = $"@property {MapPhpDocType(p.PropertyType)} ${ToPhpIdentifier(p.Name)}";
-                var psum = docs?.GetPropertySummary(p);
-                if (!string.IsNullOrWhiteSpace(psum)) line += $" {EscapeDoc(psum!)}";
-                propertyDocs.Add(line);
-            }
-            foreach (var ev in t.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly))
-            {
-                var line = $"@property \\Pchp\\Core\\ClrEvent ${ToPhpIdentifier(ev.Name)}";
-                var esum = docs?.GetEventSummary(ev);
-                if (!string.IsNullOrWhiteSpace(esum)) line += $" {EscapeDoc(esum!)}";
-                propertyDocs.Add(line);
-            }
+                    var staticKw = (p.GetMethod?.IsStatic == true || p.SetMethod?.IsStatic == true) ? "static " : "";
+                    var docType = MapPhpDocType(p.PropertyType);
+                    var psum = docs?.GetPropertySummary(p);
 
-            if (propertyDocs.Count > 0)
-            {
-                sb.AppendLine("    /**");
-                foreach (var line in propertyDocs)
-                    sb.AppendLine("     * " + line);
-                sb.AppendLine("     */");
+                    sb.AppendLine("    /**");
+                    sb.AppendLine($"     * @var {docType}");
+                    if (!string.IsNullOrWhiteSpace(psum))
+                        sb.AppendLine("     * " + EscapeDoc(psum!));
+                    sb.AppendLine("     */");
+                    sb.AppendLine($"    public {staticKw}${ToPhpIdentifier(p.Name)};");
+                    sb.AppendLine();
+                }
+                catch { }
             }
 
-            // Методы интерфейса: одна подпись (минимум параметров), остальные — в @method
-            var ifaceGroups = t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)
-                .Where(m => !m.IsSpecialName)
-                .Where(IsAcceptableSignature)
-                .GroupBy(m => m.Name);
-
-            var ifaceAtMethods = new List<string>();
-
-            foreach (var g in ifaceGroups)
+            // События как ClrEvent
+            foreach (var ev in t.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly))
             {
-                var canonical = g.OrderBy(m => m.GetParameters().Length)
-                    .ThenByDescending(m => m.IsStatic)
-                    .First();
+                try
+                {
+                    var isStatic = (ev.AddMethod?.IsStatic ?? false) || (ev.RemoveMethod?.IsStatic ?? false);
+                    var staticKw = isStatic ? "static " : "";
+                    var esum = docs?.GetEventSummary(ev);
 
-                foreach (var m in g)
-                    if (!ReferenceEquals(m, canonical))
-                        ifaceAtMethods.Add(BuildAtMethodLine(m));
-
-                var mi = canonical as MethodInfo;
-                var (mdoc, mret, pdocs) = docs?.GetMethodDocs(canonical) ?? default;
-                var phpDoc = BuildMethodPhpDoc(canonical.Name, canonical.GetParameters(), mi?.ReturnType, mdoc, mret, pdocs);
-
-                sb.Append(Indent(1)).AppendLine(phpDoc);
-                sb.Append(Indent(1)).Append($"public function {ToPhpIdentifier(canonical.Name)}(");
-                sb.Append(string.Join(", ", canonical.GetParameters().Select(ParamDecl)));
-                sb.AppendLine(");");
-                sb.AppendLine();
+                    sb.AppendLine("    /**");
+                    sb.AppendLine("     * @var \\Pchp\\Core\\ClrEvent");
+                    if (!string.IsNullOrWhiteSpace(esum))
+                        sb.AppendLine("     * " + EscapeDoc(esum!));
+                    sb.AppendLine("     * Use: $hook = $this->" + ToPhpIdentifier(ev.Name) + "->add(callable $callback);");
+                    sb.AppendLine("     */");
+                    sb.AppendLine($"    public {staticKw}${ToPhpIdentifier(ev.Name)};");
+                    sb.AppendLine();
+                }
+                catch { }
             }
-
-            if (ifaceAtMethods.Count > 0)
-            {
-                sb.Append(Indent(1)).AppendLine("/**");
-                foreach (var line in ifaceAtMethods)
-                    sb.Append(Indent(1)).AppendLine($" * {line}");
-                sb.Append(Indent(1)).AppendLine(" */");
-            }
-
-            sb.AppendLine("}");
-            return sb.ToString();
         }
 
-        // Класс: свойства
-        foreach (var p in t.GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly))
-        {
-            try
-            {
-                if (IsIndexer(p)) continue;
-                var acc = p.GetMethod ?? p.SetMethod;
-                if (acc == null || !acc.IsPublic) continue;
-                if (!IsAcceptableType(p.PropertyType)) continue;
-
-                var staticKw = (p.GetMethod?.IsStatic == true || p.SetMethod?.IsStatic == true) ? "static " : "";
-                var docType = MapPhpDocType(p.PropertyType);
-                var psum = docs?.GetPropertySummary(p);
-
-                sb.AppendLine("    /**");
-                sb.AppendLine($"     * @var {docType}");
-                if (!string.IsNullOrWhiteSpace(psum))
-                    sb.AppendLine("     * " + EscapeDoc(psum!));
-                sb.AppendLine("     */");
-                sb.AppendLine($"    public {staticKw}${ToPhpIdentifier(p.Name)};");
-                sb.AppendLine();
-            }
-            catch { }
-        }
-
-        // События
-        foreach (var ev in t.GetEvents(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly))
-        {
-            try
-            {
-                var isStatic = (ev.AddMethod?.IsStatic ?? false) || (ev.RemoveMethod?.IsStatic ?? false);
-                var staticKw = isStatic ? "static " : "";
-                var esum = docs?.GetEventSummary(ev);
-
-                sb.AppendLine("    /**");
-                sb.AppendLine("     * @var \\Pchp\\Core\\ClrEvent");
-                if (!string.IsNullOrWhiteSpace(esum))
-                    sb.AppendLine("     * " + EscapeDoc(esum!));
-                sb.AppendLine("     * Use: $hook = $this->" + ToPhpIdentifier(ev.Name) + "->add(callable $callback);");
-                sb.AppendLine("     */");
-                sb.AppendLine($"    public {staticKw}${ToPhpIdentifier(ev.Name)};");
-                sb.AppendLine();
-            }
-            catch { }
-        }
-
-        // (ОТКЛЮЧЕНО) Конструктор
+        // Конструкторы отключены для предупреждения "Missing parent constructor call"
         if (EMIT_CONSTRUCTORS)
         {
             var ctors = t.GetConstructors(BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly)
@@ -264,7 +206,7 @@ public static class PhpStubGenerator
             }
         }
 
-        // Методы класса (DeclaredOnly): одна «минимальная» перегрузка на имя
+        // Методы (DeclaredOnly): одна «минимальная» перегрузка на имя + @method-набор для остальных
         var methodsByName = t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly)
             .Where(m => !m.IsSpecialName)
             .Where(IsAcceptableSignature)
@@ -309,56 +251,120 @@ public static class PhpStubGenerator
             sb.AppendLine();
         }
 
-        // === Вписать методы интерфейсов в класс (одна минимальная подпись) ===
-        var existingMethodNames = new HashSet<string>(
-            methodsByName.Select(g => g.Key),
-            StringComparer.Ordinal
-        );
-
-        var ifaceList = DirectInterfaces(t).Where(IsAcceptableType).ToArray();
-
-        foreach (var iface in ifaceList)
+        // Методы интерфейсов, не переопределённые в классе
+        if (!isInterface)
         {
-            var ifaceGroups = iface.GetMethods(BindingFlags.Public | BindingFlags.Instance)
-                .Where(IsAcceptableSignature)
-                .GroupBy(m => m.Name);
-            foreach (var g in ifaceGroups)
+            var existingMethodNames = new HashSet<string>(methodsByName.Select(g => g.Key), StringComparer.Ordinal);
+
+            var ifaceList = DirectInterfaces(t).Where(IsAcceptableType).ToArray();
+            foreach (var iface in ifaceList)
             {
-                if (!existingMethodNames.Add(g.Key))
-                    continue;
+                var ifaceGroups = iface.GetMethods(BindingFlags.Public | BindingFlags.Instance)
+                    .Where(IsAcceptableSignature)
+                    .GroupBy(m => m.Name);
+                foreach (var g in ifaceGroups)
+                {
+                    if (!existingMethodNames.Add(g.Key))
+                        continue;
 
-                var im = g.OrderBy(m => m.GetParameters().Length)
-                    .ThenByDescending(m => m.IsStatic)
-                    .First();
+                    var im = g.OrderBy(m => m.GetParameters().Length)
+                        .ThenByDescending(m => m.IsStatic)
+                        .First();
 
-                var imReturn = (im as MethodInfo)?.ReturnType;
-                var (imDoc, imRetDoc, imParamDocs) = docs?.GetMethodDocs(im) ?? default;
+                    var imReturn = (im as MethodInfo)?.ReturnType;
+                    var (imDoc, imRetDoc, imParamDocs) = docs?.GetMethodDocs(im) ?? default;
 
-                var phpDoc2 = BuildMethodPhpDoc(im.Name, im.GetParameters(), imReturn, imDoc, imRetDoc, imParamDocs);
-                sb.Append(Indent(1)).AppendLine(phpDoc2);
-                sb.Append(Indent(1)).Append($"public function {ToPhpIdentifier(im.Name)}(");
-                sb.Append(string.Join(", ", im.GetParameters().Select(ParamDecl)));
-                sb.AppendLine(") {}");
-                sb.AppendLine();
+                    var phpDoc2 = BuildMethodPhpDoc(im.Name, im.GetParameters(), imReturn, imDoc, imRetDoc, imParamDocs);
+                    sb.Append(Indent(1)).AppendLine(phpDoc2);
+                    sb.Append(Indent(1)).Append($"public function {ToPhpIdentifier(im.Name)}(");
+                    sb.Append(string.Join(", ", im.GetParameters().Select(ParamDecl)));
+                    sb.AppendLine(") {}");
+                    sb.AppendLine();
+                }
             }
-        }
 
-        // === НОВОЕ: проецируем методы из «закрытых» generic-баз (например AvaloniaList<Control>) ===
-        ProjectMethodsFromConstructedGenericBases(t, sb, docs, existingMethodNames);
+            // Методы из ближайшей сконструированной generic-базы (например, AvaloniaList<Control>)
+            ProjectMethodsFromConstructedGenericBases(t, sb, docs, existingMethodNames);
+        }
 
         sb.AppendLine("}");
         return sb.ToString();
+    }
+
+    // === новый: шапка файла (перед namespace)
+    private static string BuildFileHeader(Type t, XmlDocProvider? docs)
+    {
+        var fq = (t.FullName ?? t.Name).Replace('+', '.');
+        var lines = new List<string>
+        {
+            "/**",
+            $" * Stub generated from .NET type {fq}",
+            " * NOTE: for IDE autocompletion only. Do NOT include in runtime build.",
+            " * Public members only. Generics and unsupported signatures are excluded.",
+        };
+        var tsum = docs?.GetTypeSummary(t);
+        if (!string.IsNullOrWhiteSpace(tsum))
+            lines.Add(" * " + EscapeDoc(tsum!));
+        lines.Add(" */");
+        return string.Join(Environment.NewLine, lines);
+    }
+
+    // === новый: докблок типа (summary + @property + events-as-property)
+    private static string BuildTypeDocBlock(Type t, XmlDocProvider? docs)
+    {
+        var lines = new List<string> { "/**" };
+
+        var tsum = docs?.GetTypeSummary(t);
+        if (!string.IsNullOrWhiteSpace(tsum))
+            lines.Add(" * " + EscapeDoc(tsum!));
+
+        // Свойства
+        var propFlags = t.IsInterface
+            ? BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly
+            : BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
+
+        foreach (var p in t.GetProperties(propFlags))
+        {
+            if (IsIndexer(p)) continue;
+            if (!IsAcceptableType(p.PropertyType)) continue;
+
+            var kind = (p.CanRead, p.CanWrite) switch
+            {
+                (true, false) => "@property-read",
+                (false, true) => "@property-write",
+                _             => "@property"
+            };
+
+            var docType = MapPhpDocType(p.PropertyType);
+            var psum = docs?.GetPropertySummary(p);
+            var desc = string.IsNullOrWhiteSpace(psum) ? "" : " " + EscapeDoc(psum!);
+
+            lines.Add($" * {kind} {docType} ${ToPhpIdentifier(p.Name)}{desc}");
+        }
+
+        // События как @property \Pchp\Core\ClrEvent
+        var evFlags = t.IsInterface
+            ? BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly
+            : BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
+
+        foreach (var ev in t.GetEvents(evFlags))
+        {
+            var esum = docs?.GetEventSummary(ev);
+            var desc = string.IsNullOrWhiteSpace(esum) ? "" : " " + EscapeDoc(esum!);
+            lines.Add($" * @property \\Pchp\\Core\\ClrEvent ${ToPhpIdentifier(ev.Name)}{desc}");
+        }
+
+        lines.Add(" */");
+        return string.Join(Environment.NewLine, lines);
     }
 
     private static void ProjectMethodsFromConstructedGenericBases(Type t, StringBuilder sb, XmlDocProvider? docs, HashSet<string> existingNames)
     {
         for (var bt = t.BaseType; bt != null && bt != typeof(object); bt = bt.BaseType)
         {
-            // интересуют только сконструированные generic-базы (типа List<Control>)
             if (!bt.IsGenericType || bt.ContainsGenericParameters)
                 continue;
 
-            // собираем публичные instance-методы базы
             var baseGroups = bt.GetMethods(BindingFlags.Public | BindingFlags.Instance)
                 .Where(m => !m.IsSpecialName)
                 .Where(IsAcceptableSignatureForProjection)
@@ -366,7 +372,6 @@ public static class PhpStubGenerator
 
             foreach (var g in baseGroups)
             {
-                // если в производном классе уже есть метод с таким именем — пропускаем
                 if (!existingNames.Add(g.Key))
                     continue;
 
@@ -384,9 +389,7 @@ public static class PhpStubGenerator
                 sb.AppendLine(") {}");
                 sb.AppendLine();
             }
-
-            // достаточно ближайшей generic-базы
-            break;
+            break; // достаточно ближайшей generic-базы
         }
     }
 
@@ -446,23 +449,6 @@ class Hook
         return (nsPath, fileName);
     }
 
-    static string BuildHeaderDoc(Type t, XmlDocProvider? docs)
-    {
-        var fq = (t.FullName ?? t.Name).Replace('+', '.');
-        var lines = new List<string>
-        {
-            "/**",
-            $" * Stub generated from .NET type {fq}",
-            " * NOTE: for IDE autocompletion only. Do NOT include in runtime build.",
-            " * Public members only. Generics and unsupported signatures are excluded.",
-        };
-        var tsum = docs?.GetTypeSummary(t);
-        if (!string.IsNullOrWhiteSpace(tsum))
-            lines.Add(" * " + EscapeDoc(tsum!));
-        lines.Add(" */");
-        return string.Join(Environment.NewLine, lines);
-    }
-
     static string BuildMethodPhpDoc(string methodName, ParameterInfo[] ps, Type? returnType,
         string? summaryFromXml, string? returnsFromXml, Dictionary<string,string>? paramDocs)
     {
@@ -515,6 +501,14 @@ class Hook
         return true;
     }
 
+    // Мягкий фильтр для проекции из generic-баз:
+    static bool IsAcceptableTypeForProjection(Type t)
+    {
+        if (t.IsPointer || t.IsByRef) return false;
+        if (t.ContainsGenericParameters) return false;
+        return true;
+    }
+
     static bool IsAcceptableSignature(MethodBase m)
     {
         if (m.IsGenericMethodDefinition) return false;
@@ -526,14 +520,6 @@ class Hook
         if (m is MethodInfo mi)
             if (!IsAcceptableType(mi.ReturnType)) return false;
 
-        return true;
-    }
-
-    // Мягкий фильтр для проекции из generic-баз:
-    static bool IsAcceptableTypeForProjection(Type t)
-    {
-        if (t.IsPointer || t.IsByRef) return false;
-        if (t.ContainsGenericParameters) return false;
         return true;
     }
 
