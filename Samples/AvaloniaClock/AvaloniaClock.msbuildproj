@@ -1,21 +1,30 @@
 <Project Sdk="Peachpie.NET.Sdk/1.1.11">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <StartupObject>Program.php</StartupObject>
-    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <Description>AvaloniaClock</Description>
-    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
-  </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Include="**/*.php" />
-    <AvaloniaResource Include="Assets\**" />
-  </ItemGroup>
+    <PropertyGroup>
+        <!-- Ваши обычные настройки -->
+        <OutputType>WinExe</OutputType>
+        <StartupObject>Program.php</StartupObject>
+        <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+        <Description>AvaloniaClock</Description>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
-    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
-    <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
-  </ItemGroup>
+    </PropertyGroup>
 
+    <!-- Ссылки на PHP и ресурсы как раньше -->
+    <ItemGroup>
+        <Compile Include="**\*.php" />
+        <AvaloniaResource Include="Assets\**" />
+    </ItemGroup>
+
+    <!-- Ваши проектные зависимости -->
+    <ItemGroup>
+        <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />
+        <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
+        <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
+    </ItemGroup>
+    
+    <!-- Выполнить XAML-компиляцию после Compile, но до первого CopyFilesToOutputDirectory. Не удалять! -->
+    <Target Name="RunAvaloniaXaml"
+            AfterTargets="Compile"
+            BeforeTargets="CopyFilesToOutputDirectory"
+            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
 </Project>

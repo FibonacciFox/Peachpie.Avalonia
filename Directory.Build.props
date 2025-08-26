@@ -2,7 +2,7 @@
   
   <PropertyGroup>
     <!-- version -->
-    <AvaloniaVersion>11.2.5</AvaloniaVersion>
+    <AvaloniaVersion>11.3.4</AvaloniaVersion>
     <PeachpieVersion>1.1.11</PeachpieVersion>
     <Version Condition=" '$(Version)'=='' ">1.0.2</Version>
     <PackageVersion>$(Version)</PackageVersion>
@@ -39,7 +39,7 @@
     <PackageOutputPath Condition=" '$(PackageOutputPath)'=='' ">$(MSBuildThisFileDirectory).nuget</PackageOutputPath>
     <PackageIconUrl>https://github.com/peachpiecompiler/peachpie/raw/master/docs/logos/round-orange-196x196.png</PackageIconUrl>
     <Authors>FibonacciFox</Authors>
-    <NoWarn>NU5048</NoWarn>
+    <NoWarn>NU5048;AVA3001</NoWarn>
   </PropertyGroup>
   
 </Project>

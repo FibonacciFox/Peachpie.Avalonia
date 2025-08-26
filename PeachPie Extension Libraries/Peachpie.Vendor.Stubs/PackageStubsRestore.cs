@@ -9,66 +9,38 @@ using Newtonsoft.Json.Linq;
 
 namespace Peachpie.Vendor.Stubs
 {
-    /// <summary>
-    /// Кроссплатформенный MSBuild‑таск, который:
-    /// 1) запускает "dotnet list package --include-transitive --format json" в каталоге проекта;
-    /// 2) находит у пакетов папку "vendor" в NuGet‑кэше;
-    /// 3) копирует оттуда *.php в проект в vendor/Stubs/{packageId}/{version}.
-    /// </summary>
     public sealed class PackageStubsRestore : Task
     {
-        /// <summary>
-        /// Куда складывать стобы (например: $(ProjectDir)vendor/Stubs).
-        /// </summary>
-        [Required]
-        public string StubsDirectory { get; set; } = null!;
-
-        /// <summary>
-        /// Шаблон пути к NuGet‑кэшу — уже развёрнутый в .targets (например: $(NuGetPackageRoot){PackageId}/{Version}/vendor).
-        /// </summary>
-        [Required]
-        public string NugetPackagePathPattern { get; set; } = null!;
-
-        /// <summary>
-        /// Рабочая папка для вызова "dotnet list package" (обычно $(MSBuildProjectDirectory)).
-        /// </summary>
-        [Required]
-        public string ProjectDirectory { get; set; } = null!;
+        [Required] public string ProjectFile { get; set; } = null!;
+        [Required] public string StubsDirectory { get; set; } = null!;
+        [Required] public string NugetPackagePathPattern { get; set; } = null!;
 
         public override bool Execute()
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(StubsDirectory))
-                {
-                    Log.LogError("StubsDirectory is empty.");
-                    return false;
-                }
+                var projectFullPath = Path.GetFullPath(ProjectFile ?? throw new ArgumentNullException(nameof(ProjectFile)));
+                var projectDir = Path.GetDirectoryName(projectFullPath)!;
+
+                var stubsRoot = NormalizeAbsPath(projectDir, StubsDirectory);
+                Directory.CreateDirectory(stubsRoot);
+
                 if (string.IsNullOrWhiteSpace(NugetPackagePathPattern))
                 {
                     Log.LogError("NugetPackagePathPattern is empty.");
                     return false;
                 }
-                if (string.IsNullOrWhiteSpace(ProjectDirectory))
-                {
-                    Log.LogError("ProjectDirectory is empty.");
-                    return false;
-                }
 
-                Log.LogMessage(MessageImportance.Low, $"PeachPie Stubs: ProjectDirectory = {ProjectDirectory}");
-                Log.LogMessage(MessageImportance.Low, $"PeachPie Stubs: NuGetPattern   = {NugetPackagePathPattern}");
+                Log.LogMessage(MessageImportance.Low, $"PeachPie Stubs: ProjectFile = {projectFullPath}");
+                Log.LogMessage(MessageImportance.Low, $"PeachPie Stubs: ProjectDir  = {projectDir}");
+                Log.LogMessage(MessageImportance.Low, $"PeachPie Stubs: StubsDir    = {stubsRoot}");
 
-                DeleteAndCreateDirectory(StubsDirectory);
-
-                string output = RunDotnetListPackage(ProjectDirectory);
+                var output = RunDotnetListPackage(projectDir);
                 if (string.IsNullOrWhiteSpace(output))
-                {
-                    Log.LogMessage(MessageImportance.Low, "dotnet list package returned empty output; nothing to restore.");
-                    return true; // не валим билд
-                }
+                    return true;
 
                 var json = JObject.Parse(output);
-                ProcessPackages(json);
+                ProcessPackages(json, stubsRoot);
 
                 return !Log.HasLoggedErrors;
             }
@@ -79,24 +51,14 @@ namespace Peachpie.Vendor.Stubs
             }
         }
 
-        private void DeleteAndCreateDirectory(string path)
+        private static string NormalizeAbsPath(string projectDir, string path)
         {
-            try
-            {
-                if (Directory.Exists(path))
-                {
-                    Directory.Delete(path, recursive: true);
-                }
-                Directory.CreateDirectory(path);
-            }
-            catch (Exception ex)
-            {
-                Log.LogError($"Failed to recreate stubs directory '{path}': {ex.Message}");
-                throw;
-            }
+            var s = string.IsNullOrWhiteSpace(path) ? projectDir : path;
+            s = s.Replace('\\', Path.DirectorySeparatorChar).Replace('/', Path.DirectorySeparatorChar);
+            return Path.GetFullPath(Path.IsPathRooted(s) ? s : Path.Combine(projectDir, s));
         }
 
-        private string RunDotnetListPackage(string workingDir)
+        private static string RunDotnetListPackage(string workingDir)
         {
             var psi = new ProcessStartInfo
             {
@@ -108,22 +70,14 @@ namespace Peachpie.Vendor.Stubs
                 CreateNoWindow = true,
                 WorkingDirectory = workingDir
             };
-
-            using var proc = new Process { StartInfo = psi };
-            proc.Start();
-
-            string stdout = proc.StandardOutput.ReadToEnd();
-            string stderr = proc.StandardError.ReadToEnd();
-
-            proc.WaitForExit();
-
-            if (!string.IsNullOrWhiteSpace(stderr))
-                Log.LogMessage(MessageImportance.Low, $"dotnet list package (stderr): {stderr.Trim()}");
-
+            using var p = new Process { StartInfo = psi };
+            p.Start();
+            var stdout = p.StandardOutput.ReadToEnd();
+            p.WaitForExit();
             return stdout;
         }
 
-        private void ProcessPackages(JObject root)
+        private void ProcessPackages(JObject root, string stubsRoot)
         {
             var projects = root["projects"]?.Children<JObject>() ?? Enumerable.Empty<JObject>();
             foreach (var project in projects)
@@ -132,65 +86,38 @@ namespace Peachpie.Vendor.Stubs
                 foreach (var fw in frameworks)
                 {
                     foreach (var pkg in fw["topLevelPackages"]?.Children<JObject>() ?? Enumerable.Empty<JObject>())
-                        ProcessPackage(pkg);
-
+                        ProcessPackage(pkg, stubsRoot);
                     foreach (var pkg in fw["transitivePackages"]?.Children<JObject>() ?? Enumerable.Empty<JObject>())
-                        ProcessPackage(pkg);
+                        ProcessPackage(pkg, stubsRoot);
                 }
             }
         }
 
-        private void ProcessPackage(JObject package)
+        private void ProcessPackage(JObject package, string stubsRoot)
         {
-            var packageId = (package["id"] ?? "").ToString();
-            var version   = (package["resolvedVersion"] ?? "").ToString();
-
-            if (string.IsNullOrEmpty(packageId) || string.IsNullOrEmpty(version))
+            var id = (package["id"] ?? "").ToString();
+            var ver = (package["resolvedVersion"] ?? "").ToString();
+            if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(ver))
                 return;
 
-            var packageIdLower = packageId.ToLowerInvariant();
+            var vendorDirRaw = NugetPackagePathPattern
+                .Replace("{PackageId}", id.ToLowerInvariant())
+                .Replace("{Version}", ver);
 
-            // Собираем путь к vendor‑каталогу в кэше NuGet
-            // Пример: /home/user/.nuget/packages/{packageIdLower}/{version}/vendor
-            var nugetVendorDir = NugetPackagePathPattern
-                .Replace("{PackageId}", packageIdLower)
-                .Replace("{Version}", version);
+            var vendorDir = vendorDirRaw.Replace('\\', Path.DirectorySeparatorChar)
+                                        .Replace('/', Path.DirectorySeparatorChar);
+            vendorDir = Path.GetFullPath(vendorDir);
 
-            Log.LogMessage(MessageImportance.Low, $"Searching vendor stubs: {nugetVendorDir}");
-
-            if (!Directory.Exists(nugetVendorDir))
-            {
-                Log.LogMessage(MessageImportance.Low, $"No PHP stubs for '{packageId}' at '{nugetVendorDir}'.");
+            if (!Directory.Exists(vendorDir))
                 return;
-            }
 
-            var destRoot = Path.Combine(StubsDirectory, packageIdLower, version);
-            ProcessFiles(nugetVendorDir, destRoot);
-        }
-
-        private void ProcessFiles(string sourcePath, string destinationPath)
-        {
-            var files = Directory.GetFiles(sourcePath, "*.php", SearchOption.AllDirectories);
-            foreach (var file in files)
+            var destRoot = Path.Combine(stubsRoot, id.ToLowerInvariant(), ver);
+            foreach (var src in Directory.EnumerateFiles(vendorDir, "*.php", SearchOption.AllDirectories))
             {
-                var relative = Path.GetRelativePath(sourcePath, file);
-                var destFile = Path.Combine(destinationPath, relative);
-
-                var destDir = Path.GetDirectoryName(destFile);
-                if (!string.IsNullOrEmpty(destDir))
-                    EnsureDirectoryExists(destDir);
-
-                File.Copy(file, destFile, overwrite: true);
-                Log.LogMessage(MessageImportance.Low, $"Copied: {relative}");
-            }
-        }
-
-        private void EnsureDirectoryExists(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-                Log.LogMessage(MessageImportance.Low, $"Created: {path}");
+                var rel = Path.GetRelativePath(vendorDir, src);
+                var dst = Path.Combine(destRoot, rel);
+                Directory.CreateDirectory(Path.GetDirectoryName(dst)!);
+                File.Copy(src, dst, overwrite: true);
             }
         }
     }

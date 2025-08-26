@@ -1,9 +1,9 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+<Project Sdk="Peachpie.NET.Sdk/1.1.11">
     
 <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>PeachpieAvaloniaAppTemplate.php</StartupObject>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
 </PropertyGroup>
 
 <ItemGroup>
@@ -17,4 +17,10 @@
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.1" />
 </ItemGroup>
 
+    <!-- Выполнить XAML-компиляцию после Compile, но до первого CopyFilesToOutputDirectory. Не удалять! -->
+    <Target Name="RunAvaloniaXaml"
+            AfterTargets="Compile"
+            BeforeTargets="CopyFilesToOutputDirectory"
+            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
+    
 </Project>

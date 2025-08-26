@@ -8,10 +8,10 @@ use Avalonia\Media\Pen;
 use Avalonia\Point;
 use Avalonia\Rect;
 use Avalonia\Media\DrawingContext;
-use Peachpie\Avalonia\Controls\UxUserControl;
+use Avalonia\Controls\UserControl;
 
 
-class ClockPanel extends UxUserControl
+class ClockPanel extends UserControl
 {
     public function Render(DrawingContext $context): void
     {

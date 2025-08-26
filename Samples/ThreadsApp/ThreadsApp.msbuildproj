@@ -17,4 +17,10 @@
     <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
 
+    <!-- Выполнить XAML-компилятор после Compile, но до первого CopyFilesToOutputDirectory -->
+    <Target Name="RunAvaloniaXaml"
+            AfterTargets="Compile"
+            BeforeTargets="CopyFilesToOutputDirectory"
+            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
+    
 </Project>

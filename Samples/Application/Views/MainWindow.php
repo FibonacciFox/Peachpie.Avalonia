@@ -2,11 +2,11 @@
 
 namespace Views {
 
+    use Avalonia\Controls\ContentControl;
+    use Avalonia\Controls\ListBox;
+    use Avalonia\Controls\Primitives\ToggleButton;
     use Avalonia\Input\TappedEventArgs;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Controls\UxContentControl;
-    use Peachpie\Avalonia\Controls\UxListBox;
-    use Peachpie\Avalonia\Controls\UxToggleButton;
     use Peachpie\Avalonia\Controls\UxWindow;
     use Peachpie\Community\Output\Logger;
     use Views\Pages\ButtonsPage;
@@ -17,8 +17,8 @@ namespace Views {
 
     class MainWindow extends UxWindow
     {
-        public UxContentControl $PageView;
-        public UxListBox $ItemMenu;
+        public ContentControl $PageView;
+        public ListBox $ItemMenu;
 
         public HomePage $HomePage;
         public ButtonsPage $ButtonsPage;
@@ -26,7 +26,8 @@ namespace Views {
         public FieldsPage $FieldsPage;
         public ProgressIndicatorsPage $ProgressIndicatorsPage;
 
-        public UxToggleButton $BurgerButton;
+        public ToggleButton $BurgerButton;
+
 
         public function __construct()
         {
