@@ -2,6 +2,7 @@
 
 namespace Peachpie\Avalonia\Core\Extension;
 
+use Avalonia\Controls\ContentControl;
 use Avalonia\Controls\Control;
 
 /**
@@ -17,9 +18,9 @@ class ControlFinder
      *
      * @param Control $targetComponent Контейнер, с которого начинается поиск
      * @param string  $name            Имя искомого элемента
-     * @return Control|null            Найденный Control или null, если не найден
+     * @return mixed|null            Найденный Control или null, если не найден
      */
-    public static function ByName(Control $targetComponent, string $name): ?Control
+    public static function ByName(Control $targetComponent, string $name): mixed
     {
         // Заглушка: фактическая реализация в C# (Peachpie).
         return $targetComponent;

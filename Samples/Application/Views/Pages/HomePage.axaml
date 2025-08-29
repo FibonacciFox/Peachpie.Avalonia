@@ -1,12 +1,12 @@
-<UxUserControl xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
                x:Class="Views.Pages.HomePage">
-    <UxStackPanel>
-                <UxImage Source="../../Assets/Logo.png" Width="200" Height="200" />
-                <UxStackPanel Margin="16" Spacing="20">
-                    <UxTextBlock Classes="Headline4" HorizontalAlignment="Center">Добро пожаловать в Peachpie.Avalonia</UxTextBlock>
-                    <UxTextBlock Classes="Headline6" HorizontalAlignment="Center">Платформа разработки игр и программ на PHP</UxTextBlock>
+    <StackPanel>
+                <Image Source="../../Assets/Logo.png" Width="200" Height="200" />
+                <StackPanel Margin="16" Spacing="20">
+                    <TextBlock Classes="Headline4" HorizontalAlignment="Center">Добро пожаловать в Peachpie.Avalonia</TextBlock>
+                    <TextBlock Classes="Headline6" HorizontalAlignment="Center">Платформа разработки игр и программ на PHP</TextBlock>
                     <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Spacing="40">
                         <icons:MaterialIcon Kind="MicrosoftWindows" Width="30" Height="30" ToolTip.Tip="Windows" /> 
                         <icons:MaterialIcon Kind="Linux" Width="30" Height="30" ToolTip.Tip="Linux" /> 
@@ -15,12 +15,12 @@
                         <icons:MaterialIcon Kind="Android" Width="30" Height="30" ToolTip.Tip="Android" /> 
                         <icons:MaterialIcon Kind="Application" Width="30" Height="30" ToolTip.Tip="WebAssembly" /> 
                     </StackPanel>
-                    <UxStackPanel Width="720" Spacing="20" Margin="0,20,0,0">
-                        <UxTextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="PeachPie.Avalonia" /> позволит разработчикам создавать кроссплатформенные приложения для Windows, macOS, Linux, iOS, Android и веб-браузеров на языке PHP в среде выполнения .NET с непревзойденной легкостью.</UxTextBlock>
-                        <UxTextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="PeachPie" /> - это современный PHP-компилятор, основанный на платформе компиляции Microsoft Roslyn и Phalanger. Он позволяет запускать PHP в .NET framework, тем самым открывающий разработчикам PHP дверь в мир .NET – и наоборот.</UxTextBlock>
-                        <UxTextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="Полная .NET совместимость:" /> скомпилированные программы выполняются в повторно реализованной среде выполнения PeachPie, полностью совместимой со средой выполнения PHP.</UxTextBlock>
-                        <UxTextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="Двусторонняя совместимость:" /> проект допускает гибридные приложения, части которых написаны на C #, а другие - на PHP. Части будут полностью совместимы и смогут беспрепятственно взаимодействовать, все в рамках .NET framework.</UxTextBlock>
-                    </UxStackPanel>
-                </UxStackPanel>
-            </UxStackPanel>
-</UxUserControl>
+                    <StackPanel Width="720" Spacing="20" Margin="0,20,0,0">
+                        <TextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="PeachPie.Avalonia" /> позволит разработчикам создавать кроссплатформенные приложения для Windows, macOS, Linux, iOS, Android и веб-браузеров на языке PHP в среде выполнения .NET с непревзойденной легкостью.</TextBlock>
+                        <TextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="PeachPie" /> - это современный PHP-компилятор, основанный на платформе компиляции Microsoft Roslyn и Phalanger. Он позволяет запускать PHP в .NET framework, тем самым открывающий разработчикам PHP дверь в мир .NET – и наоборот.</TextBlock>
+                        <TextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="Полная .NET совместимость:" /> скомпилированные программы выполняются в повторно реализованной среде выполнения PeachPie, полностью совместимой со средой выполнения PHP.</TextBlock>
+                        <TextBlock Classes="Headline7" TextWrapping="Wrap"><Run FontSize="14" FontWeight="Bold" Foreground="White" Text="Двусторонняя совместимость:" /> проект допускает гибридные приложения, части которых написаны на C #, а другие - на PHP. Части будут полностью совместимы и смогут беспрепятственно взаимодействовать, все в рамках .NET framework.</TextBlock>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+</UserControl>

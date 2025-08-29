@@ -2,7 +2,9 @@
 
 namespace Peachpie\Avalonia\Ux;
 
+use Avalonia\Controls\ContentControl;
 use Avalonia\Controls\Control;
+use Peachpie\Avalonia\Core\Extension\ControlFinder;
 use SplObjectStorage;
 
 /**
@@ -41,10 +43,10 @@ final class Ux
         self::of($c)->offAll();
     }
 
-    // Удобный хелпер поиска по имени (делегирует твоему ControlFinder)
-    public static function find(Control $root, string $name): ?Control
+    // Удобный хелпер поиска по имени (делегирует ControlFinder)
+    public static function find(Control $root, string $name): mixed
     {
-        return \Peachpie\Avalonia\Core\Extension\ControlFinder::ByName($root, $name);
+        return ControlFinder::ByName($root, $name);
     }
 }
 

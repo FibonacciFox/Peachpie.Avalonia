@@ -1,6 +1,6 @@
 <Project Sdk="Peachpie.NET.Sdk/1.1.11">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <Description>Application</Description>

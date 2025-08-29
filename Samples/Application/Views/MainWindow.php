@@ -5,9 +5,10 @@ namespace Views {
     use Avalonia\Controls\ContentControl;
     use Avalonia\Controls\ListBox;
     use Avalonia\Controls\Primitives\ToggleButton;
+    use Avalonia\Controls\Window;
     use Avalonia\Input\TappedEventArgs;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Controls\UxWindow;
+    use Peachpie\Avalonia\Ux\Ux;
     use Peachpie\Community\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
@@ -15,7 +16,7 @@ namespace Views {
     use Views\Pages\HomePage;
     use Views\Pages\ProgressIndicatorsPage;
 
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
         public ContentControl $PageView;
         public ListBox $ItemMenu;
@@ -33,9 +34,9 @@ namespace Views {
         {
             $this->InitializeComponent();
 
-            $this->PageView = $this->FindByName("PageView");
-            $this->ItemMenu = $this->FindByName("ItemMenu");
-            $this->BurgerButton = $this->FindByName("BurgerButton");
+            $this->PageView = Ux::find($this, "PageView");
+            $this->ItemMenu = Ux::find($this, "ItemMenu");
+            $this->BurgerButton = Ux::find($this, "BurgerButton");
 
 
             $this->HomePage = new HomePage();

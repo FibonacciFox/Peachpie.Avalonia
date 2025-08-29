@@ -2,7 +2,7 @@
 
     <!-- Абсолютный путь к сборке задач (ОДНА СТРОКА) -->
     <PropertyGroup>
-        <PeachpieVendorStubsAssemblyFile Condition="'$(PeachpieVendorStubsAssemblyFile)'==''">$([System.IO.Path]::GetFullPath($([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','netstandard2.1','Peachpie.Vendor.Stubs.dll'))))</PeachpieVendorStubsAssemblyFile>
+        <PeachpieVendorStubsAssemblyFile Condition="'$(PeachpieVendorStubsAssemblyFile)'==''">$([System.IO.Path]::GetFullPath($([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','net6.0','Peachpie.Vendor.Stubs.dll'))))</PeachpieVendorStubsAssemblyFile>
     </PropertyGroup>
 
     <!-- Подключаем задачи -->

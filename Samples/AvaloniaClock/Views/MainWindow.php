@@ -25,7 +25,7 @@ namespace Views {
             });
         }
 
-        private function InitializeComponent()
+        private function InitializeComponent(): void
         {
             AvaloniaXamlLoader::Load(obj:$this);
 

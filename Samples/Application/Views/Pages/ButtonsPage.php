@@ -2,10 +2,10 @@
 
 namespace Views\Pages {
 
+    use Avalonia\Controls\UserControl;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Controls\UxUserControl;
 
-    class ButtonsPage extends UxUserControl
+    class ButtonsPage extends UserControl
     {
         public function __construct()
         {
