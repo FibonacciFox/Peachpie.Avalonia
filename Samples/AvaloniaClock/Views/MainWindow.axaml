@@ -5,6 +5,7 @@
            mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="700"
            Height="400"
            Width="400"
+           Background="#669bbc"
            x:Class="Views.MainWindow"
            Title="AvaloniaClock">
 </Window>

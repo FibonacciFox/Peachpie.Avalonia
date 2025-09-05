@@ -6,11 +6,11 @@ use Avalonia\Controls\UserControl;
 use Avalonia\Media\Brushes;
 use Avalonia\Media\Pen;
 use Avalonia\Media\PenLineCap;
+use Avalonia\Media\Brush;
 use Avalonia\Point;
-use Avalonia\Rect;
-
 use DateTimeImmutable;
-use System\TimeSpan;
+use Peachpie\Community\Threading\Timer;
+
 
 /**
  * Красивые аналоговые часы для PeachPie + Avalonia.
@@ -22,6 +22,16 @@ use System\TimeSpan;
  */
 class ClockPanel extends UserControl
 {
+    function __construct()
+    {
+        $intervalTimer = Timer::every('16', function() {
+
+            uiLater(function(){
+                $this->InvalidateVisual();
+            });
+        });
+    }
+
     public function Render($context): void
     {
         parent::Render($context);
@@ -30,15 +40,16 @@ class ClockPanel extends UserControl
         $h = $this->Bounds->Height;
         $margin = 16; // внешний отступ
 
-        // Фон
-        $context->FillRectangle(Brushes::$Black, new Rect(0, 0, $w, $h));
-
         // Геометрия
         $cx = $w / 2.0;
         $cy = $h / 2.0;
         $radiusX = ($w / 2.0) - $margin;
         $radiusY = ($h / 2.0) - $margin;
         $center = new Point($cx, $cy);
+
+        // Фон внутри циферблата
+        $dialBrush = Brush::Parse("#003049");
+        $context->DrawEllipse($dialBrush, null, $center, $radiusX, $radiusY);
 
         // Дата/время с дробной частью
         $now = new DateTimeImmutable();
@@ -54,8 +65,8 @@ class ClockPanel extends UserControl
         // Обод и внутренняя подложка циферблата
         $ringPenOuter = new Pen(Brushes::$DimGray, 4);
         $ringPenInner = new Pen(Brushes::$Gray, 1);
-        $context->DrawEllipse($ringPenOuter, null, $center, $radiusX, $radiusY);
-        $context->DrawEllipse($ringPenInner, null, $center, $radiusX - 6, $radiusY - 6);
+        $context->DrawEllipse(null, $ringPenOuter, $center, $radiusX, $radiusY);
+        $context->DrawEllipse(null, $ringPenInner, $center, $radiusX - 6, $radiusY - 6);
 
         // Деления: минутные и часовые
         $minutePen = new Pen(Brushes::$DarkGray, 1);
@@ -80,7 +91,7 @@ class ClockPanel extends UserControl
         $minutePenDraw = new Pen(Brushes::$White, 4);
         $secondPenDraw = new Pen(Brushes::$Red,   1.5);
         $hourPenDraw->LineCap = PenLineCap::Round;
-        $minutePenDraw->LineCap =  PenLineCap::Round;
+        $minutePenDraw->LineCap = PenLineCap::Round;
         $secondPenDraw->LineCap = PenLineCap::Round;
 
         // Углы в градусах: 0° — вверх, поэтому смещаем на -90°
@@ -100,8 +111,8 @@ class ClockPanel extends UserControl
         $context->DrawLine($secondPenDraw, $secondTail, $secondPt);
 
         // Центральная втулка
-        //$context->FillEllipse(Brushes::$Red, $center, 5, 5);
-        $context->DrawEllipse(new Pen(Brushes::$White, 1), null, $center, 7, 7);
+        $context->DrawEllipse(Brushes::$Red, null, $center, 5, 5);
+        $context->DrawEllipse(null, new Pen(Brushes::$White, 1), $center, 7, 7);
     }
 
     /**
@@ -110,9 +121,6 @@ class ClockPanel extends UserControl
     private function polar(float $cx, float $cy, float $rx, float $ry, float $deg): Point
     {
         $rad = deg2rad($deg - 90.0); // 0° вверх как у часов
-        $x = $cx + $rx * cos($rad + M_PI_2);
-        $y = $cy + $ry * sin($rad + M_PI_2);
-        // Упростим: для стандартных часов достаточно синуса/косинуса обычного вида
         $x = $cx + $rx * cos($rad);
         $y = $cy + $ry * sin($rad);
         return new Point($x, $y);

@@ -1,19 +1,21 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "FibonacciFox",
-  "classifications": [ "Console", "PeachPie"],
+  "classifications": [ "Console", "PeachPie" ],
   "description": "A Console PHP Application",
-  "groupidentity": "Peachpie.Console",
+  "groupIdentity": "Peachpie.Console",
   "identity": "Peachpie.Console",
   "name": "PHP Console App",
-  "preferNameDirectory": true,
   "shortName": "php.console",
   "sourceName": "PeachpieConsoleAppTemplate",
   "defaultName": "PeachpieConsoleApplication",
+  "preferNameDirectory": true,
+
   "tags": {
     "language": "PHP",
     "type": "project"
   },
+
   "symbols": {
     "skipRestore": {
       "type": "parameter",
@@ -21,28 +23,22 @@
       "description": "If specified, skips the automatic restore of the project on create.",
       "defaultValue": "false"
     },
-    "language": {
+    "uiLang": {
       "type": "parameter",
       "datatype": "choice",
-      "description": "Choose your preferred language for instructions",
+      "description": "Choose language for post-create instructions",
       "defaultValue": "en",
       "choices": [
-        {
-          "choice": "en",
-          "description": "English"
-        },
-        {
-          "choice": "ru",
-          "description": "Русский"
-        }
+        { "choice": "en", "description": "English" },
+        { "choice": "ru", "description": "Русский" }
       ]
     }
   },
+
   "primaryOutputs": [
-    {
-      "path": "PeachpieConsoleAppTemplate.msbuildproj"
-    }
+    { "path": "PeachpieConsoleAppTemplate.msbuildproj" }
   ],
+
   "postActions": [
     {
       "id": "restore",
@@ -51,25 +47,25 @@
       "manualInstructions": [
         { "text": "Run 'dotnet restore'" }
       ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "actionId": "E2F6A4F0-62C0-4A0A-8E24-81D3B5711B0A",
       "continueOnError": true
     },
     {
-      "id": "PackageStubsRestoreInstructions",
-      "condition": "(language == 'en')",
-      "description": "Manual step to restore package stubs.",
+      "id": "stubs-en",
+      "condition": "(uiLang == 'en')",
+      "description": "Generate PHP stubs (NuGet vendor stubs + reflection stubs).",
       "manualInstructions": [
-        { "text": "Run 'dotnet msbuild /t:PackageStubsRestore' to restore package stubs." }
+        { "text": "Run 'dotnet msbuild -t:PeachpieStubs' to restore vendor stubs and generate PHP stubs into <project>/vendor/Stubs" }
       ],
       "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
       "continueOnError": true
     },
     {
-      "id": "PackageStubsRestoreInstructionsRU",
-      "condition": "(language == 'ru')",
-      "description": "Ручной шаг для восстановления заглушек пакетов.",
+      "id": "stubs-ru",
+      "condition": "(uiLang == 'ru')",
+      "description": "Сгенерировать PHP заглушки (vendor из NuGet + рефлексия).",
       "manualInstructions": [
-        { "text": "Выполните команду 'dotnet msbuild /t:PackageStubsRestore' для восстановления заглушек пакетов." }
+        { "text": "Выполните 'dotnet msbuild -t:PeachpieStubs', чтобы восстановить vendor-заглушки и сгенерировать PHP-заглушки в <проект>/vendor/Stubs" }
       ],
       "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
       "continueOnError": true

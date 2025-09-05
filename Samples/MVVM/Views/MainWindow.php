@@ -2,10 +2,10 @@
 
 namespace Views {
 
+    use Avalonia\Controls\Window;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Controls\UxWindow;
 
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
         public function __construct()
         {

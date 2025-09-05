@@ -2,7 +2,9 @@
 
     <!-- Абсолютный путь к сборке задач (ОДНА СТРОКА) -->
     <PropertyGroup>
-        <PeachpieVendorStubsAssemblyFile Condition="'$(PeachpieVendorStubsAssemblyFile)'==''">$([System.IO.Path]::GetFullPath($([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','net6.0','Peachpie.Vendor.Stubs.dll'))))</PeachpieVendorStubsAssemblyFile>
+        <PeachpieVendorStubsAssemblyFile Condition="'$(PeachpieVendorStubsAssemblyFile)'==''">
+            $([System.IO.Path]::GetFullPath($([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','net6.0','Peachpie.Vendor.Stubs.dll'))))
+        </PeachpieVendorStubsAssemblyFile>
     </PropertyGroup>
 
     <!-- Подключаем задачи -->
@@ -21,7 +23,6 @@
 
     <!-- Копирование готовых PHP-stubs из пакетов (их /vendor в NuGet-кэше) -->
     <Target Name="PackageStubsRestore"
-            AfterTargets="Restore"
             Condition=" '$(DesignTimeBuild)'!='true' ">
         <Message Text="PeachPie Stubs: NuGet root = $(_NuGetRoot)" Importance="Low" />
         <Message Text="PeachPie Stubs: Out = $(PeachpieStubsDir)" Importance="Low" />
@@ -34,7 +35,6 @@
 
     <!-- Генерация PHP-stubs из DLL пакетов -->
     <Target Name="GeneratePhpStubs"
-            AfterTargets="Restore"
             DependsOnTargets="PackageStubsRestore"
             Condition=" '$(DesignTimeBuild)'!='true' ">
         <Message Text="PeachPie Stub Generator: Out=$(PeachpieStubsDir)" Importance="Low" />
@@ -43,6 +43,13 @@
                 StubsDirectory="$(PeachpieStubsDir)"
                 NugetRoot="$(_NuGetRoot)" />
         <Message Text="PeachPie PHP stubs generated → $(PeachpieStubsDir)" Importance="High" />
+    </Target>
+
+    <!-- Сводная цель: последовательно выполнить Restore stubs + Generate stubs -->
+    <Target Name="PeachpieStubs"
+            DependsOnTargets="PackageStubsRestore;GeneratePhpStubs"
+            Condition=" '$(DesignTimeBuild)'!='true' ">
+        <Message Text="PeachPie Stubs: done → $(PeachpieStubsDir)" Importance="High" />
     </Target>
 
 </Project>

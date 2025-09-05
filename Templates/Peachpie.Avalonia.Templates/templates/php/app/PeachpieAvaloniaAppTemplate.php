@@ -14,7 +14,7 @@ $lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
 
 // Конфигурация AppPhpBuilder с указанием типа приложения и имени сборки
 // Configure AppPhpBuilder with the specified application type and assembly name
-$appPhpBuilder = AppPhpBuilder::Configure("PeachpieAvaloniaAppTemplate.App", "PeachpieAvaloniaAppTemplate");
+$appPhpBuilder = AppPhpBuilder::Configure("App", "PeachpieAvaloniaAppTemplate");
 // Настройка платформенной детекции 
 // Configure platform detection
 $appPhpBuilder = AppPhpBuilderDesktop::UsePlatformDetect($appPhpBuilder);

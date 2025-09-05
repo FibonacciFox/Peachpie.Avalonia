@@ -2,10 +2,10 @@
 
 namespace Views {
 
+    use Avalonia\Controls\UserControl;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Controls\UxUserControl;
 
-    class AddItemView extends UxUserControl
+    class AddItemView extends UserControl
     {
         public function __construct()
         {

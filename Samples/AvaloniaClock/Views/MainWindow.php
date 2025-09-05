@@ -15,14 +15,6 @@ namespace Views {
 
             $clockPanel = new ClockPanel();
             $this->Content = $clockPanel;
-
-            $intervalTimer = Timer::every('16', function() use ($clockPanel)  {
-
-                uiLater(function() use ($clockPanel) {
-                    $clockPanel->InvalidateVisual();
-                });
-
-            });
         }
 
         private function InitializeComponent(): void

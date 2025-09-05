@@ -2,37 +2,35 @@
 
 namespace Views {
 
+    use Avalonia\Controls\Button;
+    use Avalonia\Controls\Image;
+    use Avalonia\Controls\TextBlock;
+    use Avalonia\Controls\Window;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Avalonia\Media\Imaging\Bitmap;
     use Avalonia\Threading\Dispatcher;
     use Exception;
-    use Peachpie\Avalonia\Controls\UxButton;
-    use Peachpie\Avalonia\Controls\UxImage;
-    use Peachpie\Avalonia\Controls\UxTextBlock;
-    use Peachpie\Avalonia\Controls\UxWindow;
     use Peachpie\Avalonia\Ux\Ux;
     use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Tasks\ManagedTask;
     use Peachpie\Community\Threading\Tasks\ManagedTaskEventArgs;
     use Peachpie\Community\Threading\Tasks\ManagedTaskException;
-    use System\Net\Http\HttpClient;
-    use System\Threading\AutoResetEvent;
-    use System\Threading\CancellationToken;
     use System\Threading\Mutex;
     use System\Threading\Thread;
+    use System\Net\Http\HttpClient;
 
     // Тест унифицированной подписки
 
     // Главный класс окна приложения, унаследованный от UxWindow
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
         public int $x = 1;  // Переменная для хранения состояния
         private Mutex $mutex;  // Мьютекс для синхронизации потоков
 
-        public UxButton $button_start;  // Кнопка для запуска и остановки задачи
-        public UxButton $button_pause_resume;  // Кнопка для паузы и возобновления задачи
-        public UxTextBlock $textblock1;  // Текстовый блок для отображения результатов
-        public UxImage $image1;  // Изображение для отображения результатов
+        public Button $button_start;  // Кнопка для запуска и остановки задачи
+        public Button $button_pause_resume;  // Кнопка для паузы и возобновления задачи
+        public TextBlock $textblock1;  // Текстовый блок для отображения результатов
+        public Image $image1;  // Изображение для отображения результатов
 
         // Конструктор класса MainWindow
         /**
@@ -43,10 +41,10 @@ namespace Views {
             $this->InitializeComponent();
 
             // Находим элементы управления по их именам
-            $this->button_start = $this->FindByName("button_start");
-            $this->button_pause_resume = $this->FindByName("button_pause_resume");
-            $this->textblock1 = $this->FindByName("textblock1");
-            $this->image1 = $this->FindByName("image1");
+            $this->button_start = Ux::find($this, "button_start");
+            $this->button_pause_resume = Ux::find($this, "button_pause_resume");
+            $this->textblock1 = Ux::find($this, "textblock1");
+            $this->image1 = Ux::find($this, "image1");
 
             // Создаем и настраиваем ManagedTask для загрузки изображения
             $managedTask = new ManagedTask([$this, 'Load']);
@@ -92,7 +90,7 @@ namespace Views {
             $this->mutex = new Mutex(); // Необходим для синхронизации задач
 
             // Обработчик клика для кнопки "Start" используя новую систему подписки на события
-            Ux::of($this->button_start)->once("Click", function () use ($managedTask) {
+            $this->button_start->Click->add(function () use ($managedTask) {
                 if ($managedTask->IsStarted) {
                     $managedTask->Stop();
                     $this->button_start->Content = "Start ManagedTask";
@@ -106,7 +104,7 @@ namespace Views {
             });
 
             // Обработчик клика для кнопки "Pause/Resume"
-            $this->button_pause_resume->on("Click", function () use ($managedTask) {
+            $this->button_pause_resume->Click->add(function () use ($managedTask) {
                 if (!$managedTask->IsPaused) {
                     $managedTask->Pause();
                     $this->button_pause_resume->Content = "Resume ManagedTask";
