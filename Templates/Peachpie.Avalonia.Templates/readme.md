@@ -41,7 +41,7 @@ PHP Library                          php.lib                    PHP       Librar
 dotnet new php.avalonia.app -o MyApp
 cd MyApp
 dotnet restore
-dotnet msbuild -t:PeachpieStubs   # восстановит vendor-заглушки и сгенерирует PHP stubs в vendor/Stubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs   # восстановит vendor-заглушки и сгенерирует PHP stubs в vendor/Stubs
 dotnet run
 ```
 
@@ -56,7 +56,7 @@ dotnet run
 dotnet new php.avalonia.lib -o MyLibrary
 cd MyLibrary
 dotnet restore
-dotnet msbuild -t:PeachpieStubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 ```
 
 **Parameters:**
@@ -79,7 +79,7 @@ dotnet new php.avalonia.window -n MyNewWindow
 dotnet new php.console -o MyConsoleApp
 cd MyConsoleApp
 dotnet restore
-dotnet msbuild -t:PeachpieStubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 dotnet run
 ```
 
@@ -94,7 +94,7 @@ dotnet run
 dotnet new php.lib -o MyLibrary
 cd MyLibrary
 dotnet restore
-dotnet msbuild -t:PeachpieStubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 ```
 
 **Parameters:**
@@ -104,7 +104,7 @@ dotnet msbuild -t:PeachpieStubs
 
 ## About stubs generation
 
-Во всех проектных шаблонах подключён MSBuild-таргет **`PeachpieStubs`**, который:
+Во всех проектных шаблонах подключён MSBuild-таргет **`PackageStubsRestore;GeneratePhpStubs`**, который:
 
 1. Ищет подключённые NuGet-пакеты (`dotnet list package --include-transitive --format json`);
 2. Копирует PHP-заглушки из их `/vendor` (если такие есть) в каталог проекта `vendor/Stubs`;
@@ -114,7 +114,7 @@ dotnet msbuild -t:PeachpieStubs
 Запуск:
 
 ```bash
-dotnet msbuild -t:PeachpieStubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 ```
 
 Пути формируются кроссплатформенно (`System.IO.Path.Combine`), поддерживается Windows, Linux и macOS.

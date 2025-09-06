@@ -44,7 +44,7 @@ dotnet new install Peachpie.Avalonia.Templates
 dotnet new php.avalonia.app -o MyApp
 cd MyApp
 dotnet restore
-dotnet msbuild -t:PeachpieStubs   # восстановит vendor-stubs и сгенерирует IDE-заглушки в vendor/Stubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs   # восстановит vendor-stubs и сгенерирует IDE-заглушки в vendor/Stubs
 dotnet run
 ```
 
@@ -102,7 +102,7 @@ IDE-заглушки (stubs) не участвуют в компиляции/р�
 
 Запуск вручную:
 ```bash
-dotnet msbuild -t:PeachpieStubs
+dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 ```
 
 ---
