@@ -1,48 +1,48 @@
-<UxUserControl xmlns="https://github.com/avaloniaui"
+<UserControl xmlns="https://github.com/avaloniaui"
                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
                mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="650"
                x:Class="Views.Pages.ProgressIndicatorsPage">
-    <UxStackPanel>
-        <UxTextBlock Classes="Headline3" Margin="20">Progress Indicators</UxTextBlock>
-        <UxTextBlock Classes="Headline7" Padding="20">Horizontal</UxTextBlock>
-        <UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
-            <UxProgressBar Width="100" Value="0" />
-            <UxProgressBar Width="100" Value="30" />
-            <UxProgressBar Name="Bar1" Width="100" ShowProgressText="True" />
-            <UxProgressBar Name="Bar2" Width="100" Classes="no-transitions" />
-            <UxProgressBar Width="100" IsIndeterminate="True" />
-        </UxStackPanel>
-        <UxTextBlock Classes="Headline7" Padding="20">Vertical</UxTextBlock>
-        <UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
-            <UxProgressBar Name="Bar3" Orientation="Vertical" Height="100" Value="80" />
-            <UxProgressBar Name="Bar4" Orientation="Vertical" Height="100" Value="80" ShowProgressText="True" />
-        </UxStackPanel>
-        <UxTextBlock Classes="Headline7" Padding="20">Circular</UxTextBlock>
-        <UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
-            <UxProgressBar Classes="circular" Value="30" Margin="4"  />
+    <StackPanel>
+        <TextBlock Classes="Headline3" Margin="20">Progress Indicators</TextBlock>
+        <TextBlock Classes="Headline7" Padding="20">Horizontal</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <ProgressBar Width="100" Value="0" />
+            <ProgressBar Width="100" Value="30" />
+            <ProgressBar Name="Bar1" Width="100" ShowProgressText="True" />
+            <ProgressBar Name="Bar2" Width="100" Classes="no-transitions" />
+            <ProgressBar Width="100" IsIndeterminate="True" />
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">Vertical</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <ProgressBar Name="Bar3" Orientation="Vertical" Height="100" Value="80" />
+            <ProgressBar Name="Bar4" Orientation="Vertical" Height="100" Value="80" ShowProgressText="True" />
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">Circular</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <ProgressBar Classes="circular" Value="30" Margin="4"  />
             <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <UxProgressBar Classes="circular" Value="90" />
+                <ProgressBar Classes="circular" Value="90" />
             </material:Card>
             <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <UxProgressBar Classes="circular" IsIndeterminate="True" />
+                <ProgressBar Classes="circular" IsIndeterminate="True" />
             </material:Card>
             <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <UxProgressBar Name="Bar5" Classes="circular"/>
+                <ProgressBar Name="Bar5" Classes="circular"/>
             </material:Card>
             <material:Card Background="White" CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <UxProgressBar Name="Bar6" Classes="circular" Height="80" Width="80" />
+                <ProgressBar Name="Bar6" Classes="circular" Height="80" Width="80" />
             </material:Card>
-        </UxStackPanel>
-        <UxTextBlock Classes="Headline7" Padding="20">With Progress</UxTextBlock>
-        <UxStackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
-            <UxProgressBar Name="Bar7" Classes="circular" ShowProgressText="True" />
+        </StackPanel>
+        <TextBlock Classes="Headline7" Padding="20">With Progress</TextBlock>
+        <StackPanel Orientation="Horizontal" Spacing="20" Margin="20,0,0,0">
+            <ProgressBar Name="Bar7" Classes="circular" ShowProgressText="True" />
             <material:Card CornerRadius="24" Padding="4" Margin="4" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <UxProgressBar Name="Bar8" Classes="circular" Height="80" Width="80" ShowProgressText="True" />
+                <ProgressBar Name="Bar8" Classes="circular" Height="80" Width="80" ShowProgressText="True" />
             </material:Card>
-        </UxStackPanel>
-    </UxStackPanel>
-</UxUserControl>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
 

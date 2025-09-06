@@ -2,11 +2,13 @@
 
 namespace Views {
 
+    use Avalonia\Controls\ContentControl;
+    use Avalonia\Controls\ListBox;
+    use Avalonia\Controls\Primitives\ToggleButton;
+    use Avalonia\Controls\Window;
     use Avalonia\Input\TappedEventArgs;
-    use Peachpie\Avalonia\Controls\UxContentControl;
-    use Peachpie\Avalonia\Controls\UxListBox;
-    use Peachpie\Avalonia\Controls\UxToggleButton;
-    use Peachpie\Avalonia\Controls\UxWindow;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+    use Peachpie\Avalonia\Ux\Ux;
     use Peachpie\Community\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
@@ -14,10 +16,10 @@ namespace Views {
     use Views\Pages\HomePage;
     use Views\Pages\ProgressIndicatorsPage;
 
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
-        public UxContentControl $PageView;
-        public UxListBox $ItemMenu;
+        public ContentControl $PageView;
+        public ListBox $ItemMenu;
 
         public HomePage $HomePage;
         public ButtonsPage $ButtonsPage;
@@ -25,15 +27,16 @@ namespace Views {
         public FieldsPage $FieldsPage;
         public ProgressIndicatorsPage $ProgressIndicatorsPage;
 
-        public UxToggleButton $BurgerButton;
+        public ToggleButton $BurgerButton;
+
 
         public function __construct()
         {
             $this->InitializeComponent();
 
-            $this->PageView = $this->FindByName("PageView");
-            $this->ItemMenu = $this->FindByName("ItemMenu");
-            $this->BurgerButton = $this->FindByName("BurgerButton");
+            $this->PageView = Ux::find($this, "PageView");
+            $this->ItemMenu = Ux::find($this, "ItemMenu");
+            $this->BurgerButton = Ux::find($this, "BurgerButton");
 
 
             $this->HomePage = new HomePage();
@@ -71,7 +74,7 @@ namespace Views {
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
             
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");

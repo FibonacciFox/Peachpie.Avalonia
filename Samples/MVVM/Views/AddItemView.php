@@ -2,9 +2,10 @@
 
 namespace Views {
 
-    use Peachpie\Avalonia\Controls\UxUserControl;
+    use Avalonia\Controls\UserControl;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
-    class AddItemView extends UxUserControl
+    class AddItemView extends UserControl
     {
         public function __construct()
         {
@@ -14,7 +15,7 @@ namespace Views {
         //Не удаляйте метод, если используете разметку axaml
         public function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 

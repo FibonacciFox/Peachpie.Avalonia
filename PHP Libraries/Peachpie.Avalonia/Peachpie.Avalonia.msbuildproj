@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+<Project Sdk="Peachpie.NET.Sdk/1.1.11">
     <PropertyGroup>
         <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
@@ -14,13 +14,18 @@
         <Compile Include="**/*.php"/>
     </ItemGroup>
 
+    <!--
     <ItemGroup>
         <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
             <_Parameter1>https://github.com/avaloniaui</_Parameter1>
             <_Parameter2>Peachpie.Avalonia.Controls</_Parameter2>
         </AssemblyAttribute>
+        <AssemblyAttribute Include="Avalonia.Metadata.XmlnsDefinitionAttribute">
+            <_Parameter1>https://github.com/avaloniaui</_Parameter1>
+            <_Parameter2>Peachpie.Avalonia</_Parameter2>
+        </AssemblyAttribute>
     </ItemGroup>
-
+    -->
     <ItemGroup>
         <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Core\Peachpie.Avalonia.Core.csproj"/>
     </ItemGroup>

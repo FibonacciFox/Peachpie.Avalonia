@@ -5,7 +5,6 @@
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
         <PackageId>Peachpie.Community.ToolKit</PackageId>
         <PackageTags>peachpie;community;toolkit</PackageTags>
-        <PackageVersion>$(Version)</PackageVersion>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Description>Peachpie Community Tool Kit</Description>
         <RootNamespace>Peachpie.Community</RootNamespace>

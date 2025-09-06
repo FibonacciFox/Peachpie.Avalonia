@@ -3,7 +3,7 @@
     "description": "MVVM App",
     "type": "application",
     "require": {
-        "php": ">=8.1"
+        "php": ">=8.4"
     },
     "license": "MIT",
     "authors": [ { "name": "FibonacciFox" } ],

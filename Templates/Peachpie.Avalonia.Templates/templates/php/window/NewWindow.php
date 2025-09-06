@@ -1,18 +1,18 @@
 <?php
 
-use Peachpie\Avalonia\Controls\UxWindow;
+use Avalonia\Controls\Window;
+use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
-class NewWindow extends UxWindow
+class NewWindow extends Window
 {
     public function __construct()
     {
-        $this->InitializeComponent();
-        
+        $this->InitializeComponent();  
     }
 
     public function InitializeComponent(): void
     {
-        Load();
+        AvaloniaXamlLoader::Load(obj:$this);
     }
 }
 

@@ -1,6 +1,6 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+<Project Sdk="Peachpie.NET.Sdk/1.1.11">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <Description>Application</Description>
@@ -13,8 +13,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Material.Avalonia" Version="3.5.0" />
-    <PackageReference Include="Material.Icons.Avalonia" Version="2.1.0" />
+    <PackageReference Include="Material.Avalonia" Version="3.9.2" />
+    <PackageReference Include="Material.Icons.Avalonia" Version="2.3.0" />
   </ItemGroup>
   
   <ItemGroup>
@@ -22,5 +22,11 @@
     <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Desktop\Peachpie.Avalonia.Desktop.csproj" />
     <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
+
+    <!-- Выполнить XAML-компилятор после Compile, но до первого CopyFilesToOutputDirectory -->
+    <Target Name="RunAvaloniaXaml"
+            AfterTargets="Compile"
+            BeforeTargets="CopyFilesToOutputDirectory"
+            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
   
 </Project>

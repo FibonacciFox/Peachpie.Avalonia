@@ -1,20 +1,29 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.10">
+<Project Sdk="Peachpie.NET.Sdk/1.1.11">
     
 <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>PeachpieAvaloniaAppTemplate.php</StartupObject>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
+        <!-- Using private apis in nuget packages -->
+        <AvaloniaAccessUnstablePrivateApis>true</AvaloniaAccessUnstablePrivateApis>
+        <Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>true</Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>
 </PropertyGroup>
 
 <ItemGroup>
     <Compile Include="**/*.php" Exclude="vendor/Stubs/**/*.php" />
+    <AvaloniaResource Include="Assets\**" />
 </ItemGroup>
 
 <ItemGroup>
-    <PackageReference Include="Peachpie.Avalonia" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.0" />
-    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.0" />
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.0" />
+    <PackageReference Include="Peachpie.Avalonia" Version="1.0.2" />
+    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.2" />
+    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.2" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.2" />
 </ItemGroup>
 
+    <!-- Выполнить XAML-компиляцию после Compile. Не удалять! -->
+    <Target Name="RunAvaloniaXaml"
+            AfterTargets="Compile"
+            BeforeTargets="CopyFilesToOutputDirectory"
+            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
 </Project>

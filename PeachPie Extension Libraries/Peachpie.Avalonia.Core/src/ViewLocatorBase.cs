@@ -1,6 +1,7 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
+using Avalonia.Media;
 using Peachpie.Community.Reactive;
 
 namespace Peachpie.Avalonia.Core;

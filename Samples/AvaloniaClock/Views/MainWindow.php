@@ -2,11 +2,12 @@
 
 namespace Views {
 
-    use Peachpie\Avalonia\Controls\UxWindow;
+    use Avalonia\Controls\Window;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Timer;
 
-    class MainWindow extends UxWindow
+    class MainWindow extends Window
     {
         public function __construct()
         {
@@ -14,19 +15,11 @@ namespace Views {
 
             $clockPanel = new ClockPanel();
             $this->Content = $clockPanel;
-
-            $intervalTimer = Timer::every('16', function() use ($clockPanel)  {
-
-                uiLater(function() use ($clockPanel) {
-                    $clockPanel->InvalidateVisual();
-                });
-
-            });
         }
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
 
             if ( defined('DEBUG') ) {
                 Logger::Info("Debug Build!");

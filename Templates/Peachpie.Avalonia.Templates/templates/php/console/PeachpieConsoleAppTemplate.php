@@ -3,7 +3,7 @@
 // Пример использования класса / Example of class usage
 use PeachpieConsoleAppTemplate\Event;
 
-$event = new Event('My Birthday', '2024-09-10');
+$event = new Event('My Birthday', '2025-09-10');
 
 echo $event->getDescription() . "\n";
 echo "Days until event: " . $event->daysUntil() . "\n";

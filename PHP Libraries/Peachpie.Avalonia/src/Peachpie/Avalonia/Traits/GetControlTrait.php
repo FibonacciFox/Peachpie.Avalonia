@@ -1,18 +1,23 @@
 <?php
 
 namespace Peachpie\Avalonia\Traits;
-use Peachpie\Avalonia\Core\Extension\GetControl;
+
+use Peachpie\Avalonia\Core\Extension\ControlFinder;
+use Avalonia\Controls\Control;
 
 trait GetControlTrait
 {
-
     /**
-     * @param string $name
-     * @return mixed
+     * Находит вложенный контрол (Control) по имени,
+     * начиная от текущего объекта (this), используя его NameScope.
+     *
+     * @param string $name Имя искомого элемента.
+     * @return mixed|null Вернёт объект Control, если найден, иначе null.
      */
-    public function FindByName(string $name): mixed
+    public function FindByName(string $name): ?Control
     {
-        return GetControl::FindByName($this, $name);
+        // Вызваем C#-метод ControlFinder.ByName(this, $name)
+        // который внутри использует targetComponent.FindNameScope()?.Find<Control>($name);
+        return ControlFinder::ByName($this, $name);
     }
-
 }

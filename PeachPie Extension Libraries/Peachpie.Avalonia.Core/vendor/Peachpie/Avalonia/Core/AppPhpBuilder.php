@@ -5,60 +5,85 @@ namespace Peachpie\Avalonia\Core;
 use Avalonia\AppBuilder;
 use Avalonia\Controls\ApplicationLifetimes\IApplicationLifetime;
 
+/**
+ * Минималистичный адаптер для инициализации Avalonia-приложения из PHP.
+ *
+ * Аналог C#-кода:
+ *  AppBuilder.Configure<App>()
+ *      .LogToTrace()
+ *      .SetupWithLifetime(lifetime);
+ *
+ * Пример использования в PHP:
+ *  use Peachpie\Avalonia\Core\AppPhpBuilder;
+ *  use Avalonia\Controls\ApplicationLifetimes\ClassicDesktopStyleApplicationLifetime;
+ *  use Avalonia\Controls\ShutdownMode;
+ *
+ *  $lifetime = new ClassicDesktopStyleApplicationLifetime();
+ *  $lifetime->ShutdownMode = ShutdownMode::OnMainWindowClose;
+ *
+ *  AppPhpBuilder::Configure("App", "Application") // быстрее и надёжнее, если известна сборка
+ *      ->LogToTrace()
+ *      ->SetupWithLifetime($lifetime);
+ *
+ *  $lifetime->Start(null);
+ */
 class AppPhpBuilder
 {
     /**
-     * Возвращает экземпляр AppBuilder.
-     *
-     * Returns an instance of AppBuilder.
+     * Внутренний экземпляр Avalonia\AppBuilder, на котором выполняется конфигурация.
      *
      * @var AppBuilder
      */
     public AppBuilder $Builder;
 
     /**
-     * Конструктор AppPhpBuilder.
+     * Закрытый конструктор. Используйте {@see AppPhpBuilder::Configure()}.
      *
-     * Initializes a new instance of the AppPhpBuilder class.
-     *
-     * @param AppBuilder $appBuilder Экземпляр AppBuilder / An instance of AppBuilder.
+     * @param AppBuilder $appBuilder Экземпляр AppBuilder.
      */
     protected function __construct(AppBuilder $appBuilder)
     {
-        $this->Builder = $appBuilder;
     }
 
     /**
-     * Настраивает приложения с указанным типом приложения и именем сборки.
+     * Создаёт AppPhpBuilder, разрешая тип приложения и вызывая AppBuilder::Configure<TApp>().
      *
-     * Configures the application builder with the specified application type and assembly name.
+     * Можно передать:
+     *  - только имя типа: "App";
+     *  - полное имя типа с пространством имён: "\My\Namespace\App";
+     *  - полностью квалифицированное имя с именем сборки: "My.Namespace.App, Application".
      *
-     * @param string $applicationType Тип класса приложения / The type of the application class.
-     * @param string $assemblyName Имя сборки, содержащей класс приложения / The name of the assembly containing the application class.
-     * @return AppPhpBuilder Экземпляр AppPhpBuilder / An instance of AppPhpBuilder.
+     * Если $assemblyName не указан, поиск идёт в EntryAssembly, затем по всем загруженным сборкам.
+     *
+     * @param string      $applicationType Имя класса приложения (наследника Avalonia\Application).
+     * @param string|null $assemblyName    (Необязательно) Имя сборки, где расположен класс приложения.
+     *
+     * @return AppPhpBuilder Инициализированный билдёр.
+     *
+     * @throws \ArgumentException Если тип не найден или не наследуется от Avalonia\Application.
      */
-    public static function Configure(string $applicationType, string $assemblyName): AppPhpBuilder
+    public static function Configure(string $applicationType, ?string $assemblyName = null): AppPhpBuilder
     {
     }
 
     /**
-     * Настраивает приложение с указанным временем жизни.
+     * Подключает реализацию времени жизни приложения (Desktop/SingleView и т.п.).
      *
-     * Sets up the application with the specified lifetime.
+     * Обычно после вызова этого метода приложение запускают: $lifetime->Start(...).
      *
-     * @param IApplicationLifetime $lifetime Время жизни приложения / The application lifetime.
-     * @return AppPhpBuilder Текущий экземпляр AppPhpBuilder / The current instance of AppPhpBuilder.
+     * @param IApplicationLifetime $lifetime Экземпляр lifetime.
+     *
+     * @return AppPhpBuilder Текущий билдёр (для чейнинга).
      */
     public function SetupWithLifetime(IApplicationLifetime $lifetime): AppPhpBuilder
     {
     }
 
     /**
-     * Настраивает приложение для логирования в трассировку.
+     * Включает логирование в системную трассировку (Diagnostic Trace).
+     * Полезно в отладке; в продакшене настраивайте логирование под свои нужды.
      *
-     * Configures the application to log to trace.
-     *
-     * @return AppPhpBuilder Текущий экземпляр AppPhpBuilder / The current instance of AppPhpBuilder.
+     * @return AppPhpBuilder Текущий билдёр (для чейнинга).
      */
     public function LogToTrace(): AppPhpBuilder
     {

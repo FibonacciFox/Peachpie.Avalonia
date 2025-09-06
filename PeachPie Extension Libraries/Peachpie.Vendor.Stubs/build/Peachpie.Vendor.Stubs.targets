@@ -1,16 +1,55 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(MSBuildThisFileDirectory)..\lib\netstandard2.1\Peachpie.Vendor.Stubs.dll" />
 
+    <!-- Абсолютный путь к сборке задач (ОДНА СТРОКА) -->
     <PropertyGroup>
-        <!-- Установка пути к профилю пользователя с учетом кросс-платформенности -->
-        <UserProfileDir Condition="'$(OS)' == 'Windows_NT'">$(UserProfile)</UserProfileDir>
-        <UserProfileDir Condition="'$(OS)' != 'Windows_NT'">$(HOME)</UserProfileDir>
+        <PeachpieVendorStubsAssemblyFile Condition="'$(PeachpieVendorStubsAssemblyFile)'==''">
+            $([System.IO.Path]::GetFullPath($([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)','..','lib','net6.0','Peachpie.Vendor.Stubs.dll'))))
+        </PeachpieVendorStubsAssemblyFile>
     </PropertyGroup>
 
-    <Target Name="PackageStubsRestore" AfterTargets="Restore">
+    <!-- Подключаем задачи -->
+    <UsingTask TaskName="Peachpie.Vendor.Stubs.PackageStubsRestore" AssemblyFile="$(PeachpieVendorStubsAssemblyFile)" />
+    <UsingTask TaskName="Peachpie.Vendor.Stubs.GeneratePhpStubs"    AssemblyFile="$(PeachpieVendorStubsAssemblyFile)" />
+
+    <PropertyGroup>
+        <!-- Корень NuGet-кэша (уважает NUGET_PACKAGES и nuget.config); кроссплатформенные фолбэки -->
+        <_NuGetRoot>$(NuGetPackageRoot)</_NuGetRoot>
+        <_NuGetRoot Condition="'$(_NuGetRoot)'=='' and '$(OS)'=='Windows_NT'">$([System.IO.Path]::Combine('$(UserProfile)', '.nuget', 'packages'))</_NuGetRoot>
+        <_NuGetRoot Condition="'$(_NuGetRoot)'=='' and '$(OS)'!='Windows_NT'">$([System.IO.Path]::Combine('$(HOME)', '.nuget', 'packages'))</_NuGetRoot>
+
+        <!-- ЕДИНСТВЕННЫЙ выходной каталог: <proj>/vendor/Stubs (через Path.Combine) -->
+        <PeachpieStubsDir>$([System.IO.Path]::Combine('$(MSBuildProjectDirectory)', 'vendor', 'Stubs'))</PeachpieStubsDir>
+    </PropertyGroup>
+
+    <!-- Копирование готовых PHP-stubs из пакетов (их /vendor в NuGet-кэше) -->
+    <Target Name="PackageStubsRestore"
+            Condition=" '$(DesignTimeBuild)'!='true' ">
+        <Message Text="PeachPie Stubs: NuGet root = $(_NuGetRoot)" Importance="Low" />
+        <Message Text="PeachPie Stubs: Out = $(PeachpieStubsDir)" Importance="Low" />
         <Peachpie.Vendor.Stubs.PackageStubsRestore
-                StubsDirectory="$(ProjectDir)vendor/Stubs"
-                NugetPackagePathPattern="$(UserProfileDir)/.nuget/packages/{PackageId}/{Version}/vendor" />
-        <Message Text="Package stubs have been restored -> $(ProjectDir)vendor/Stubs" Importance="High" />
+                ProjectFile="$(MSBuildProjectFullPath)"
+                StubsDirectory="$(PeachpieStubsDir)"
+                NugetPackagePathPattern="$([System.IO.Path]::Combine('$(_NuGetRoot)', '{PackageId}', '{Version}', 'vendor'))" />
+        <Message Text="Package stubs restored → $(PeachpieStubsDir)" Importance="High" />
     </Target>
+
+    <!-- Генерация PHP-stubs из DLL пакетов -->
+    <Target Name="GeneratePhpStubs"
+            DependsOnTargets="PackageStubsRestore"
+            Condition=" '$(DesignTimeBuild)'!='true' ">
+        <Message Text="PeachPie Stub Generator: Out=$(PeachpieStubsDir)" Importance="Low" />
+        <Peachpie.Vendor.Stubs.GeneratePhpStubs
+                ProjectFile="$(MSBuildProjectFullPath)"
+                StubsDirectory="$(PeachpieStubsDir)"
+                NugetRoot="$(_NuGetRoot)" />
+        <Message Text="PeachPie PHP stubs generated → $(PeachpieStubsDir)" Importance="High" />
+    </Target>
+
+    <!-- Сводная цель: последовательно выполнить Restore stubs + Generate stubs -->
+    <Target Name="PeachpieStubs"
+            DependsOnTargets="PackageStubsRestore;GeneratePhpStubs"
+            Condition=" '$(DesignTimeBuild)'!='true' ">
+        <Message Text="PeachPie Stubs: done → $(PeachpieStubsDir)" Importance="High" />
+    </Target>
+
 </Project>

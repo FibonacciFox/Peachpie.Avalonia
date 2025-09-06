@@ -4,8 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:material="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
              xmlns:icons="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
+             xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Views.Pages.ButtonsPage">
+    <UserControl.Styles>
+        <themes:MaterialTheme BaseTheme='Dark' PrimaryColor="LightBlue" SecondaryColor="Blue"/>
+        <icons:MaterialIconStyles />
+    </UserControl.Styles>
     <StackPanel>
         <TextBlock Classes="Headline3" Margin="20">Buttons</TextBlock>
         <TextBlock Classes="Headline7" Padding="20">Buttons</TextBlock>

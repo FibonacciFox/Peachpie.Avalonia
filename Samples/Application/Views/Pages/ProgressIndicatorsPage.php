@@ -2,23 +2,25 @@
 
 namespace Views\Pages {
 
-    use Peachpie\Avalonia\Controls\UxProgressBar;
-    use Peachpie\Avalonia\Controls\UxUserControl;
-    
+    use Avalonia\Controls\ProgressBar;
+    use Avalonia\Controls\UserControl;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+
     use Avalonia\Threading\DispatcherTimer;
+    use Peachpie\Avalonia\Ux\Ux;
     use System\TimeSpan;
 
-    class ProgressIndicatorsPage extends UxUserControl
+    class ProgressIndicatorsPage extends UserControl
     {
 
-        public UxProgressBar $Bar1;
-        public UxProgressBar $Bar2;
-        public UxProgressBar $Bar3;
-        public UxProgressBar $Bar4;
-        public UxProgressBar $Bar5;
-        public UxProgressBar $Bar6;
-        public UxProgressBar $Bar7;
-        public UxProgressBar $Bar8;
+        public ProgressBar $Bar1;
+        public ProgressBar $Bar2;
+        public ProgressBar $Bar3;
+        public ProgressBar $Bar4;
+        public ProgressBar $Bar5;
+        public ProgressBar $Bar6;
+        public ProgressBar $Bar7;
+        public ProgressBar $Bar8;
 
         private float $valueBar = 0;
 
@@ -26,14 +28,14 @@ namespace Views\Pages {
         {
             $this->InitializeComponent();
 
-            $this->Bar1 = $this->FindByName("Bar1");
-            $this->Bar2 = $this->FindByName("Bar2");
-            $this->Bar3= $this->FindByName("Bar3");
-            $this->Bar4 = $this->FindByName("Bar4");
-            $this->Bar5 = $this->FindByName("Bar5");
-            $this->Bar6 = $this->FindByName("Bar6");
-            $this->Bar7 = $this->FindByName("Bar7");
-            $this->Bar8 = $this->FindByName("Bar8");
+            $this->Bar1 = Ux::find($this, "Bar1");
+            $this->Bar2 = Ux::find($this, "Bar2");
+            $this->Bar3=  Ux::find($this, "Bar3");
+            $this->Bar4 = Ux::find($this, "Bar4");
+            $this->Bar5 = Ux::find($this, "Bar5");
+            $this->Bar6 = Ux::find($this, "Bar6");
+            $this->Bar7 = Ux::find($this, "Bar7");
+            $this->Bar8 = Ux::find($this, "Bar8");
 
             DispatcherTimer::Run( action: function(): bool {
 
@@ -57,7 +59,7 @@ namespace Views\Pages {
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 

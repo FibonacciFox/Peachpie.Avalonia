@@ -1,10 +1,11 @@
 <?php
 
 namespace Views\Pages {
-   
-    use Peachpie\Avalonia\Controls\UxUserControl;
 
-    class ButtonsPage extends UxUserControl
+    use Avalonia\Controls\UserControl;
+    use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+
+    class ButtonsPage extends UserControl
     {
         public function __construct()
         {
@@ -13,7 +14,7 @@ namespace Views\Pages {
 
         private function InitializeComponent(): void
         {
-            Load();
+            AvaloniaXamlLoader::Load(obj:$this);
         }
     }
 

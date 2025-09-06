@@ -1,14 +1,14 @@
 <?php
 
-use Views\MainWindow;
+use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 use Peachpie\Avalonia\UxApplication;
+use Views\MainWindow;
 
 class App extends UxApplication
 {
     public function __construct()
     {
         $this->InitializeComponent();
-         
     }
 
     public function OnFrameworkInitializationCompleted(): void
@@ -23,7 +23,7 @@ class App extends UxApplication
 
     private function InitializeComponent(): void
     {
-         Load();
+         AvaloniaXamlLoader::Load(obj:$this);
     }
   
 }

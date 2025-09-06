@@ -2,6 +2,7 @@
 
 namespace PeachpieAvaloniaAppTemplate;
 
+use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 use Peachpie\Avalonia\UxApplication;
 use PeachpieAvaloniaAppTemplate\Forms\MainWindow;
 
@@ -24,7 +25,7 @@ class App extends UxApplication
 
     private function InitializeComponent(): void
     {
-        Load();
+        AvaloniaXamlLoader::Load(obj:$this);
     }
 
 }
