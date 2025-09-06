@@ -2,59 +2,76 @@
 
 ![Logo](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/docs/logo/logo_ru.png?raw=true)
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/FibonacciFox/Peachpie.Avalonia/.github/workflows/PackagePublish.yml?branch=master&event=push&logo=nuget)](https://github.com/FibonacciFox/Peachpie.Avalonia/actions/workflows/PackagePublish.yml) ![License](https://img.shields.io/github/license/FibonacciFox/Peachpie.Avalonia)
-[![NuGet](https://img.shields.io/nuget/v/Peachpie.Avalonia.svg)](https://www.nuget.org/packages/Peachpie.Avalonia) [![downloads](https://img.shields.io/nuget/dt/Peachpie.Avalonia)](https://www.nuget.org/packages/Peachpie.Avalonia) ![Size](https://img.shields.io/github/repo-size/FibonacciFox/Peachpie.Avalonia)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/FibonacciFox/Peachpie.Avalonia/.github/workflows/PackagePublish.yml?branch=master&event=push&logo=nuget)](https://github.com/FibonacciFox/Peachpie.Avalonia/actions/workflows/PackagePublish.yml)
+![License](https://img.shields.io/github/license/FibonacciFox/Peachpie.Avalonia)
+[![NuGet](https://img.shields.io/nuget/v/Peachpie.Avalonia.svg)](https://www.nuget.org/packages/Peachpie.Avalonia)
+[![downloads](https://img.shields.io/nuget/dt/Peachpie.Avalonia)](https://www.nuget.org/packages/Peachpie.Avalonia)
+![Size](https://img.shields.io/github/repo-size/FibonacciFox/Peachpie.Avalonia)
+
+---
+
+## ✨ Что нового в 1.0.2
+
+- ✅ **.NET 9** — минимальная версия SDK.
+- ✅ **События**: основной способ подписки — `.NET-подобный` через `->add(callable)` / `Hook->close()`.
+  Генератор заглушек добавляет понятные подсказки с сигнатурой обработчика.
+- ✅ **UX-обёртки над контролами удалены** (`UxButton`, `UxWindow`, …) — используйте оригинальные `Avalonia\Controls\*`.
+- 🧪 **Дополнительный (экспериментальный) способ** подписки через `Peachpie\Avalonia\Ux\Ux` сохранён как удобный синтаксический сахар.
+- 🧩 **Генератор заглушек**: копирует stubs из NuGet-пакетов и генерирует PHP-заглушки по .NET-типам для автодополнения IDE.
 
 ---
 
 ## 📖 Описание
 
-**Peachpie.Avalonia** — библиотека, позволяющая создавать кроссплатформенные приложения (Windows, macOS, Linux, iOS, Android, WebAssembly) на PHP в среде .NET с использованием [Avalonia UI](https://avaloniaui.net/).
+**Peachpie.Avalonia** — библиотека, позволяющая создавать кроссплатформенные приложения (Windows, macOS, Linux и др.) на PHP в среде .NET с использованием [Avalonia UI](https://avaloniaui.net/).
 
 Особенности:
 - **Полная совместимость с .NET** — PHP код компилируется в IL через [PeachPie](https://www.peachpie.io/).
-- **Двустороннее взаимодействие** — можно свободно комбинировать PHP и C# в одном проекте.
-- **Кроссплатформенность** — поддержка всех платформ, где работает .NET 8+ и Avalonia.
+- **Двустороннее взаимодействие** — свободно комбинируйте PHP и C#.
+- **Кроссплатформенность** — всё, где работает .NET 9 и Avalonia.
 
 ---
 
-## 🚀 Установка и запуск
+## 🚀 Быстрый старт
 
-1. **Установите .NET 8 SDK**  
-   [Скачать .NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-
-2. **Установите шаблоны**:
-   ```powershell
-   dotnet new install Peachpie.Avalonia.Templates
-   ```
-
-3. **Создайте проект**:
-   ```powershell
-   dotnet new php.avalonia.app -o MyApp
-   cd MyApp
-   dotnet run
-   ```
-
-При успешном запуске откроется окно шаблонного приложения:
-
-![TemplateApp](https://github.com/FibonacciFox/Peachpie.Avalonia/blob/master/docs/images/template_app.jpg)
-
----
-
-## 📦 Восстановление PHP stubs
-
-Stubs автоматически разворачиваются при создании проекта или сборке.  
-Если этого не произошло:
+1) Установите **.NET 9 SDK**
+2) Поставьте шаблоны:
 ```powershell
-dotnet msbuild /t:PackageStubsRestore
+dotnet new install Peachpie.Avalonia.Templates
+```
+3) Создайте приложение:
+```powershell
+dotnet new php.avalonia.app -o MyApp
+cd MyApp
+dotnet restore
+dotnet msbuild -t:PeachpieStubs   # восстановит vendor-stubs и сгенерирует IDE-заглушки в vendor/Stubs
+dotnet run
 ```
 
+При успешном запуске откроется окно шаблонного приложения.
+
 ---
 
-## 🆕 Новый способ подписки на события
+## 🔔 События в PeachPie + Avalonia
 
-Начиная с версии **X.X.X**, рекомендуется использовать **универсальный прокси** `Ux::of(...)`:
+### Основной способ (рекомендуется)
+Используйте `.NET`-подобную модель через `\Pchp\Core\ClrEvent`:
+```php
+use Avalonia\Controls\Button;
 
+$button = new Button();
+
+$hook = $button->Click->add(function (object $sender, \Avalonia\Interactivity\RoutedEventArgs $e): void {
+    // обработчик
+});
+
+// Отписаться:
+$hook->close(); // или ->dispose()
+```
+> Генератор заглушек прописывает в PHPDoc точную сигнатуру коллбэка (тип `EventArgs`, имена параметров), что даёт корректные подсказки IDE.
+
+### Дополнительный способ (экспериментальный)
+Синтаксический сахар через `Peachpie\Avalonia\Ux\Ux`:
 ```php
 use Avalonia\Controls\Button;
 use Peachpie\Avalonia\Ux\Ux;
@@ -67,98 +84,148 @@ Ux::of($button)->onceClick(fn() => Logger::Info("Только один раз"))
 Ux::of($button)->offClick(); // снять все обработчики Click
 Ux::on($button, ['Click', 'PointerPressed'], fn() => Logger::Info("Множественная подписка"));
 ```
-
-### Почему именно так?
-- **Без наследования** — теперь можно использовать оригинальные `Avalonia\\Controls\\*` без `Ux*`.
-- **Без проблем со стилями** — `StyleKeyOverride` больше не нужен.
-- **Один API для всех контролов** — кнопки, окна, текстовые поля и т.д.
-- **Чистый PeachPie** — под капотом используется стандартный способ `$control->Event->add($callable)` / `$hook->close()`.
-
-> ⚠ Старый синтаксис `$button->on('Click', ...)` и `UxButton` будет **устаревшим** и удалён в будущих версиях.
+> Этот способ удобен, но носит статус **дополнительного/тестируемого**. Базовым остаётся `->add(callable)`.
 
 ---
 
-## 📚 Пример для новичков
+## 🧩 Зачем нужен генератор заглушек?
 
-Создадим кнопку, по клику увеличивающую счётчик:
+IDE-заглушки (stubs) не участвуют в компиляции/рантайме, а служат для **автодополнения, подсветки типов и навигации**.  
+Механизм делает два шага:
+1. **Копирует** готовые PHP-stubs из подключённых NuGet-пакетов (их папка `vendor`).
+2. **Генерирует** stubs по публичным .NET типам (без generic-конструкций), включая:
+    - классы/интерфейсы/свойства/методы;
+    - события как `@var \Pchp\Core\ClrEvent $Name` с документированной сигнатурой `callback`;
+    - перегрузки методов в PHPDoc (`.NET overloads`).
 
-```php
-use Avalonia\Controls\Button;
-use Peachpie\Avalonia\Ux\Ux;
-use Php\Output\Logger;
+Все файлы складываются в `<проект>/vendor/Stubs` и используются IDE для подсказок.
 
-$button = new Button();
-$button->Content = "Нажми меня (0)";
-$counter = 0;
-
-Ux::of($button)->onClick(function($sender, $e) use (&$counter, $button) {
-    $counter++;
-    $button->Content = "Нажми меня ($counter)";
-    Logger::Info("Кнопка нажата $counter раз(а)");
-});
+Запуск вручную:
+```bash
+dotnet msbuild -t:PeachpieStubs
 ```
 
 ---
 
-## 🔄 Миграция со старого синтаксиса
+## 🧭 Миграция
 
-| Было (устаревшее) | Стало (новое) |
-|---|---|
-| `use Peachpie\\Avalonia\\Controls\\UxButton;` | `use Avalonia\\Controls\\Button;` |
-| `$btn = new UxButton();` | `$btn = new Button();` |
-| `$btn->on('Click', fn()=>...);` | `Ux::of($btn)->onClick(fn()=>...);` |
-| `$sub = $btn->on('Click', $h); $sub->dispose();` | `$sub = Ux::of($btn)->onClick($h); Ux::of($btn)->offClick($h);` |
+- ❌ Обёртки `Ux*` над контролами **удалены**.
+- ✅ Используйте оригинальные `Avalonia\Controls\*` и подписку на события через `->add(callable)`.
+- 🧪 Хелпер `Peachpie\Avalonia\Ux\Ux` можно применять как *дополнительный* синтаксический сахар.
+
+| Было (устаревшее)                     | Стало (актуально)                               |
+|--------------------------------------|--------------------------------------------------|
+| `use Peachpie\Avalonia\Controls\UxButton;` | `use Avalonia\Controls\Button;`             |
+| `$btn = new UxButton();`             | `$btn = new Button();`                          |
+| `$btn->on('Click', fn()=>...);`      | `$hook = $btn->Click->add(fn()=>...);`          |
 
 ---
 
-## 📜 Доступ к контролам из XAML
+## 📚 Примеры
 
-**XAML:**
+### 1) Простая кнопка с обработчиком
+```php
+use Avalonia\Controls\Button;
+
+$button = new Button();
+$button->Content = "Нажми меня";
+
+$count = 0;
+$hook = $button->Click->add(function(object $s, \Avalonia\Interactivity\RoutedEventArgs $e) use (&$count, $button) {
+    $count++;
+    $button->Content = "Нажато: $count";
+});
+```
+
+### 2) Окно с вертикальным стеком
+```php
+use Avalonia\Controls\{Window, StackPanel, Button, TextBlock};
+
+$window = new Window();
+$panel  = new StackPanel();
+
+$txt = new TextBlock();
+$txt->Text = "Hello PeachPie Avalonia!";
+
+$btn = new Button();
+$btn->Content = "Click me";
+
+$btn->Click->add(function() use ($txt) {
+    $txt->Text = "Clicked!";
+});
+
+$panel->Children->Add($txt);
+$panel->Children->Add($btn);
+$window->Content = $panel;
+$window->Show();
+```
+
+### 3) Загрузка из XAML и поиск по имени (через Ux::find)
+**XAML (пример):**
 ```xml
-<TextBlock Name="textblock1" Text="Hello PeachPie Avalonia!" />
+<!-- MyView.axaml -->
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MyApp.Views.MyView"
+             Name="PageView">
+  <StackPanel>
+    <TextBlock Name="text1" Text="Hello!" />
+    <Button Name="btnOk" Content="OK" />
+  </StackPanel>
+</UserControl>
 ```
 
 **PHP:**
 ```php
+<?php
+declare(strict_types=1);
+
+namespace MyApp\Views;
+
+use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
+use Avalonia\Controls\UserControl;
 use Avalonia\Controls\TextBlock;
+use Avalonia\Controls\Button;
+use Peachpie\Avalonia\Ux\Ux;
 
-public TextBlock $textblock1;
+class MyView extends UserControl
+{
+    /** @var TextBlock */
+    public $text1;
+    /** @var Button */
+    public $btnOk;
+    /** @var UserControl */
+    public $PageView;
 
-$this->textblock1 = $this->FindByName("textblock1");
-$this->textblock1->Text = "Hello";
+    public function __construct()
+    {
+        // Важно для PeachPie: именованный параметр, чтобы вызвать одноаргументную перегрузку
+        AvaloniaXamlLoader::Load(obj: $this);
+
+        // Поиск по имени из .axaml — через обёртку Ux::find():
+        $this->PageView = Ux::find($this, "PageView");
+        $this->text1    = Ux::find($this, "text1");
+        $this->btnOk    = Ux::find($this, "btnOk");
+
+        $this->btnOk->Click->add(fn() => $this->text1->Text = "OK clicked");
+    }
+}
 ```
 
----
-
-## ❓ FAQ
-
-**Q:** Как подписаться на несколько событий сразу?  
-**A:**
+### 4) Подписка на несколько событий (доп. способ)
 ```php
-Ux::on($button, ['Click', 'PointerPressed'], fn() => Logger::Info('Событие!'));
-```
+use Peachpie\Avalonia\Ux\Ux;
+use Avalonia\Controls\Button;
 
-**Q:** Как сделать обработчик, который сработает только один раз?  
-**A:**
-```php
-Ux::of($button)->onceClick(fn() => Logger::Info('Один раз'));
+$btn = new Button();
+Ux::on($btn, ['Click', 'PointerPressed'], fn()=> /* … */ );
 ```
-
-**Q:** Как отписаться от конкретного обработчика?  
-**A:**
-```php
-$handler = fn() => Logger::Info('Click!');
-Ux::of($button)->onClick($handler);
-Ux::of($button)->offClick($handler);
-```
-
-**Q:** Можно ли использовать старые `Ux*` контролы?  
-**A:** Пока да, но они будут удалены в будущих релизах. Переходите на `Ux::of(...)`.
 
 ---
 
 ## 🔗 Полезные ссылки
-- [Документация PeachPie: Работа с событиями](https://docs.peachpie.io/net/type-system/#c-event)
-- [Документация Avalonia](https://docs.avaloniaui.net/)
+- [PeachPie: C# Events из PHP](https://docs.peachpie.io/net/type-system/#c-event)
+- [Avalonia Docs](https://docs.avaloniaui.net/)
+- [PeachPie](https://www.peachpie.io/)
 
 ---
