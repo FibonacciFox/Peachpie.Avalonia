@@ -7,7 +7,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A2F46BD5-2304-4293-99DE-66B6F6DC1E57}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
-		nuget.config = nuget.config
 		.github\workflows\PackagePublish.yml = .github\workflows\PackagePublish.yml
 	EndProjectSection
 EndProject

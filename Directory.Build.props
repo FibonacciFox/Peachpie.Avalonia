@@ -4,7 +4,7 @@
     <!-- version -->
     <AvaloniaVersion>11.3.5</AvaloniaVersion>
     <PeachpieVersion>1.1.11</PeachpieVersion>
-    <Version Condition=" '$(Version)'=='' ">1.0.2</Version>
+    <Version Condition=" '$(Version)'=='' ">1.0.3</Version>
     <PackageVersion>$(Version)</PackageVersion>
     <TargetFrameworkVersion>net9.0</TargetFrameworkVersion>
     <!-- Using private apis in nuget packages -->
