@@ -15,10 +15,10 @@
 </ItemGroup>
 
 <ItemGroup>
-    <PackageReference Include="Peachpie.Avalonia" Version="1.0.2" />
-    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.2" />
-    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.2" />
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.2" />
+    <PackageReference Include="Peachpie.Avalonia" Version="1.0.3" />
+    <PackageReference Include="Peachpie.Avalonia.Desktop" Version="1.0.3" />
+    <PackageReference Include="Peachpie.Avalonia.Fonts.Inter" Version="1.0.3" />
+    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Peachpie.Vendor.Stubs" Version="1.0.3" />
 </ItemGroup>
 
     <!-- Выполнить XAML-компиляцию после Compile. Не удалять! -->

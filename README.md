@@ -10,7 +10,7 @@
 
 ---
 
-## ✨ Что нового в 1.0.2
+## ✨ Что нового в 1.0.3
 
 - ✅ **.NET 9** — минимальная версия SDK.
 - ✅ **События**: основной способ подписки — `.NET-подобный` через `->add(callable)` / `Hook->close()`.
@@ -37,6 +37,7 @@
 1) Установите **.NET 9 SDK**
 2) Поставьте шаблоны:
 ```powershell
+dotnet new uninstall Peachpie.Avalonia.Templates # удалите принудительно устаревшую версию шаблонов.
 dotnet new install Peachpie.Avalonia.Templates
 ```
 3) Создайте приложение:
@@ -44,7 +45,7 @@ dotnet new install Peachpie.Avalonia.Templates
 dotnet new php.avalonia.app -o MyApp
 cd MyApp
 dotnet restore
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs   # восстановит vendor-stubs и сгенерирует IDE-заглушки в vendor/Stubs
+dotnet msbuild -t:PeachpieStubs   # восстановит vendor-stubs и сгенерирует IDE-заглушки в vendor/Stubs
 dotnet run
 ```
 
@@ -102,7 +103,7 @@ IDE-заглушки (stubs) не участвуют в компиляции/р�
 
 Запуск вручную:
 ```bash
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
+dotnet msbuild -t:PeachpieStubs
 ```
 
 ---

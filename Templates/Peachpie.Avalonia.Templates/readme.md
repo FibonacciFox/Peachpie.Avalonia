@@ -12,6 +12,7 @@
 Требуется **.NET SDK 9+**.
 
 ```powershell
+dotnet new uninstall Peachpie.Avalonia.Templates # удалите принудительно устаревшую версию шаблонов.
 dotnet new install Peachpie.Avalonia.Templates
 ```
 
@@ -41,7 +42,7 @@ PHP Library                          php.lib                    PHP       Librar
 dotnet new php.avalonia.app -o MyApp
 cd MyApp
 dotnet restore
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs   # восстановит vendor-заглушки и сгенерирует PHP stubs в vendor/Stubs
+dotnet msbuild -t:PeachpieStubs   # восстановит vendor-заглушки и сгенерирует PHP stubs в vendor/Stubs
 dotnet run
 ```
 
@@ -56,7 +57,7 @@ dotnet run
 dotnet new php.avalonia.lib -o MyLibrary
 cd MyLibrary
 dotnet restore
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
+dotnet msbuild -t:PeachpieStubs
 ```
 
 **Parameters:**
@@ -79,7 +80,7 @@ dotnet new php.avalonia.window -n MyNewWindow
 dotnet new php.console -o MyConsoleApp
 cd MyConsoleApp
 dotnet restore
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
+dotnet msbuild -t:PeachpieStubs
 dotnet run
 ```
 
@@ -94,7 +95,7 @@ dotnet run
 dotnet new php.lib -o MyLibrary
 cd MyLibrary
 dotnet restore
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
+dotnet msbuild -t:PeachpieStubs
 ```
 
 **Parameters:**
@@ -114,7 +115,7 @@ dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
 Запуск:
 
 ```bash
-dotnet msbuild -t:PackageStubsRestore -t:GeneratePhpStubs
+dotnet msbuild -t:PeachpieStubs
 ```
 
 Пути формируются кроссплатформенно (`System.IO.Path.Combine`), поддерживается Windows, Linux и macOS.
