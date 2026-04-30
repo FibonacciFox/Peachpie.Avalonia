@@ -1,0 +1,130 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Class="Views.MainWindow"
+        Title="PeachPie Avalonia Showcase"
+        Width="1120"
+        Height="720"
+        MinWidth="900"
+        MinHeight="620"
+        Background="#111827">
+  <Window.Resources>
+    <SolidColorBrush x:Key="PanelBrush" Color="#182235" />
+    <SolidColorBrush x:Key="AccentBrush" Color="#38BDF8" />
+    <SolidColorBrush x:Key="MutedTextBrush" Color="#A7B0C2" />
+  </Window.Resources>
+
+  <Window.Styles>
+    <Style Selector="TextBlock.hero">
+      <Setter Property="FontSize" Value="28" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="Foreground" Value="#F8FAFC" />
+    </Style>
+    <Style Selector="TextBlock.caption">
+      <Setter Property="Foreground" Value="{StaticResource MutedTextBrush}" />
+      <Setter Property="FontSize" Value="13" />
+    </Style>
+    <Style Selector="Border.panel">
+      <Setter Property="Background" Value="{StaticResource PanelBrush}" />
+      <Setter Property="CornerRadius" Value="8" />
+      <Setter Property="Padding" Value="18" />
+    </Style>
+    <Style Selector="Button.action">
+      <Setter Property="MinWidth" Value="150" />
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+    </Style>
+  </Window.Styles>
+
+  <Grid RowDefinitions="Auto,*" Margin="22" RowSpacing="18">
+    <Border Classes="panel">
+      <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+        <StackPanel Spacing="6">
+          <TextBlock Classes="hero" Text="PeachPie + Avalonia advanced sample" />
+          <TextBlock Classes="caption" Text="PHP-код управляет Avalonia 12 UI, .NET events, DispatcherTimer, ObservableCollection и ManagedTask." />
+        </StackPanel>
+        <StackPanel Grid.Column="1" HorizontalAlignment="Right" Spacing="4">
+          <TextBlock Name="ClockText" Foreground="#F8FAFC" FontSize="18" HorizontalAlignment="Right" />
+          <TextBlock Name="StatusText" Classes="caption" HorizontalAlignment="Right" Text="Ready" />
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <TabControl Grid.Row="1">
+      <TabItem Header="Overview">
+        <Grid ColumnDefinitions="1.2*,*" ColumnSpacing="16" Margin="0,16,0,0">
+          <Border Classes="panel">
+            <StackPanel Spacing="14">
+              <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Runtime capabilities" />
+              <TextBlock Classes="caption" TextWrapping="Wrap" Text="Этот пример специально собран из возможностей проекта: запуск PHP-приложения через AppPhpBuilder, XAML loading, Ux::find, события ClrEvent, фоновые ManagedTask и безопасный возврат в UI thread." />
+              <UniformGrid Columns="2" Rows="3">
+                <TextBlock Foreground="#F8FAFC" Text=".NET target" />
+                <TextBlock Foreground="{StaticResource AccentBrush}" Text="net10.0" />
+                <TextBlock Foreground="#F8FAFC" Text="Avalonia" />
+                <TextBlock Foreground="{StaticResource AccentBrush}" Text="12.0.0" />
+                <TextBlock Foreground="#F8FAFC" Text="PeachPie" />
+                <TextBlock Foreground="{StaticResource AccentBrush}" Text="1.1.13" />
+              </UniformGrid>
+            </StackPanel>
+          </Border>
+          <Border Grid.Column="1" Classes="panel">
+            <StackPanel Spacing="12">
+              <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Live counters" />
+              <ProgressBar Name="PulseProgress" Minimum="0" Maximum="100" Height="10" />
+              <TextBlock Name="CounterText" Foreground="#F8FAFC" FontSize="42" FontWeight="SemiBold" Text="0" />
+              <TextBlock Classes="caption" Text="DispatcherTimer обновляет состояние UI каждую секунду." />
+            </StackPanel>
+          </Border>
+        </Grid>
+      </TabItem>
+
+      <TabItem Header="Events">
+        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16" Margin="0,16,0,0">
+          <Border Classes="panel">
+            <StackPanel Spacing="10">
+              <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Event wiring" />
+              <Button Name="DirectEventButton" Classes="action" Content="ClrEvent->add" />
+              <Button Name="UxEventButton" Classes="action" Content="Ux::on" />
+              <Button Name="OnceEventButton" Classes="action" Content="Ux::once" />
+              <Button Name="ClearLogButton" Classes="action" Content="Clear log" />
+            </StackPanel>
+          </Border>
+          <Border Grid.Column="1" Classes="panel">
+            <ListBox Name="TimelineList" x:CompileBindings="False">
+              <ListBox.ItemTemplate>
+                <DataTemplate>
+                  <Grid ColumnDefinitions="80,110,*" ColumnSpacing="10" Margin="0,4">
+                    <TextBlock Text="{Binding Time}" Foreground="{StaticResource MutedTextBrush}" />
+                    <TextBlock Grid.Column="1" Text="{Binding Kind}" Foreground="{StaticResource AccentBrush}" FontWeight="SemiBold" />
+                    <TextBlock Grid.Column="2" Text="{Binding Message}" Foreground="#F8FAFC" TextWrapping="Wrap" />
+                  </Grid>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Border>
+        </Grid>
+      </TabItem>
+
+      <TabItem Header="Async task">
+        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="16" Margin="0,16,0,0">
+          <Border Classes="panel">
+            <StackPanel Spacing="10">
+              <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#F8FAFC" Text="ManagedTask" />
+              <Button Name="StartTaskButton" Classes="action" Content="Start compute" />
+              <Button Name="CancelTaskButton" Classes="action" Content="Cancel" IsEnabled="False" />
+              <ProgressBar Name="TaskProgress" Minimum="0" Maximum="100" Width="220" />
+            </StackPanel>
+          </Border>
+          <Border Grid.Column="1" Classes="panel">
+            <StackPanel Spacing="12">
+              <TextBlock FontSize="20" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Background result" />
+              <TextBlock Name="TaskStatusText" Foreground="#F8FAFC" TextWrapping="Wrap" Text="No task has been started yet." />
+              <TextBlock Classes="caption" TextWrapping="Wrap" Text="Расчёт выполняется вне UI thread, а результат возвращается через Dispatcher.UIThread.Post." />
+            </StackPanel>
+          </Border>
+        </Grid>
+      </TabItem>
+    </TabControl>
+  </Grid>
+</Window>

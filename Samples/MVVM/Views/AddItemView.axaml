@@ -15,6 +15,6 @@
             HorizontalContentAlignment="Center">OK</Button>
     <TextBox AcceptsReturn="True"
              Text="{Binding Description}"
-             Watermark="Enter your to do item"/>
+             PlaceholderText="Enter your to do item"/>
   </DockPanel>
 </UserControl>

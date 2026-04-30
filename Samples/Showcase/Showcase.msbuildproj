@@ -3,9 +3,10 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <Description>My PHP MVVM App</Description>
+    <Description>Advanced PeachPie Avalonia showcase</Description>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <Compile Include="**/*.php" />
   </ItemGroup>
@@ -16,10 +17,8 @@
     <ProjectReference Include="..\..\PeachPie Extension Libraries\Peachpie.Avalonia.Fonts.Inter\Peachpie.Avalonia.Fonts.Inter.csproj" />
   </ItemGroup>
 
-    <!-- Выполнить XAML-компилятор после Compile, но до первого CopyFilesToOutputDirectory -->
-    <Target Name="RunAvaloniaXaml"
-            AfterTargets="Compile"
-            BeforeTargets="CopyFilesToOutputDirectory"
-            DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
-  
+  <Target Name="RunAvaloniaXaml"
+          AfterTargets="Compile"
+          BeforeTargets="CopyFilesToOutputDirectory"
+          DependsOnTargets="AvaloniaPrepareCoreCompile;CompileAvaloniaXaml;GenerateAvaloniaResources" />
 </Project>

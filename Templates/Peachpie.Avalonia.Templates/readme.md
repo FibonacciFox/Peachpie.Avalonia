@@ -9,7 +9,7 @@
 
 ## Installation
 
-Требуется **.NET SDK 9+**.
+Требуется **.NET SDK 10+**.
 
 ```powershell
 dotnet new uninstall Peachpie.Avalonia.Templates # удалите принудительно устаревшую версию шаблонов.

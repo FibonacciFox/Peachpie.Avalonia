@@ -1,0 +1,19 @@
+{
+  "name": "fibonaccifox/showcase",
+  "description": "Advanced PeachPie Avalonia showcase",
+  "type": "application",
+  "require": {
+    "php": ">=8.4"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "FibonacciFox"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "": ""
+    }
+  }
+}

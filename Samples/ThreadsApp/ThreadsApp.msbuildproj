@@ -1,8 +1,8 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.11">
+<Project Sdk="Peachpie.NET.Sdk/1.1.13">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <StartupObject>Program.php</StartupObject>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
     <Description>ThreadsApp</Description>
   </PropertyGroup>
   

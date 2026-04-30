@@ -1,0 +1,35 @@
+<Project>
+
+  <Target Name="PatchPeachpieCompilerRuntimeConfig"
+          BeforeTargets="CoreCompile"
+          Condition=" '$(PeachpieVersion)'!='' and '$(DesignTimeBuild)'!='true' ">
+    <PropertyGroup>
+      <_NuGetRoot>$(NuGetPackageRoot)</_NuGetRoot>
+      <_NuGetRoot Condition="'$(_NuGetRoot)'=='' and '$(OS)'=='Windows_NT'">$([System.IO.Path]::Combine('$(UserProfile)', '.nuget', 'packages'))</_NuGetRoot>
+      <_NuGetRoot Condition="'$(_NuGetRoot)'=='' and '$(OS)'!='Windows_NT'">$([System.IO.Path]::Combine('$(HOME)', '.nuget', 'packages'))</_NuGetRoot>
+      <_PeachpieCompilerRuntimeConfig>$([System.IO.Path]::Combine('$(_NuGetRoot)', 'peachpie.net.sdk', '$(PeachpieVersion)', 'tools', 'compiler', 'Peachpie.CodeAnalysis.runtimeconfig.json'))</_PeachpieCompilerRuntimeConfig>
+    </PropertyGroup>
+
+    <ItemGroup Condition="Exists('$(_PeachpieCompilerRuntimeConfig)')">
+      <_PeachpieCompilerRuntimeConfigLine Include="{" />
+      <_PeachpieCompilerRuntimeConfigLine Include="  &quot;runtimeOptions&quot;: {" />
+      <_PeachpieCompilerRuntimeConfigLine Include="    &quot;tfm&quot;: &quot;net6.0&quot;," />
+      <_PeachpieCompilerRuntimeConfigLine Include="    &quot;framework&quot;: {" />
+      <_PeachpieCompilerRuntimeConfigLine Include="      &quot;name&quot;: &quot;Microsoft.NETCore.App&quot;," />
+      <_PeachpieCompilerRuntimeConfigLine Include="      &quot;version&quot;: &quot;6.0.0&quot;" />
+      <_PeachpieCompilerRuntimeConfigLine Include="    }," />
+      <_PeachpieCompilerRuntimeConfigLine Include="    &quot;rollForward&quot;: &quot;Major&quot;," />
+      <_PeachpieCompilerRuntimeConfigLine Include="    &quot;configProperties&quot;: {" />
+      <_PeachpieCompilerRuntimeConfigLine Include="      &quot;System.Reflection.Metadata.MetadataUpdater.IsSupported&quot;: false" />
+      <_PeachpieCompilerRuntimeConfigLine Include="    }" />
+      <_PeachpieCompilerRuntimeConfigLine Include="  }" />
+      <_PeachpieCompilerRuntimeConfigLine Include="}" />
+    </ItemGroup>
+
+    <WriteLinesToFile Condition="Exists('$(_PeachpieCompilerRuntimeConfig)')"
+                      File="$(_PeachpieCompilerRuntimeConfig)"
+                      Lines="@(_PeachpieCompilerRuntimeConfigLine)"
+                      Overwrite="true" />
+  </Target>
+
+</Project>

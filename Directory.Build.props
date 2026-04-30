@@ -2,11 +2,11 @@
   
   <PropertyGroup>
     <!-- version -->
-    <AvaloniaVersion>11.3.5</AvaloniaVersion>
-    <PeachpieVersion>1.1.11</PeachpieVersion>
-    <Version Condition=" '$(Version)'=='' ">1.0.3</Version>
+    <AvaloniaVersion>12.0.0</AvaloniaVersion>
+    <PeachpieVersion>1.1.13</PeachpieVersion>
+    <Version Condition=" '$(Version)'=='' ">1.0.4</Version>
     <PackageVersion>$(Version)</PackageVersion>
-    <TargetFrameworkVersion>net9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>net10.0</TargetFrameworkVersion>
     <!-- Using private apis in nuget packages -->
     <AvaloniaAccessUnstablePrivateApis>true</AvaloniaAccessUnstablePrivateApis>
     <Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>true</Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>

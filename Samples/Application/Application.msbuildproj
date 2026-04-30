@@ -1,4 +1,4 @@
-<Project Sdk="Peachpie.NET.Sdk/1.1.11">
+<Project Sdk="Peachpie.NET.Sdk/1.1.13">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
@@ -13,8 +13,8 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Material.Avalonia" Version="3.9.2" />
-    <PackageReference Include="Material.Icons.Avalonia" Version="2.3.0" />
+    <PackageReference Include="Material.Avalonia" Version="3.16.0" />
+    <PackageReference Include="Material.Icons.Avalonia" Version="3.0.2" />
   </ItemGroup>
   
   <ItemGroup>

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
         <NoWarn>$(NoWarn);1591;8632</NoWarn>
         <PackageId>Peachpie.Vendor.Stubs</PackageId>
         <PackageTags>php;sdk;stubs</PackageTags>

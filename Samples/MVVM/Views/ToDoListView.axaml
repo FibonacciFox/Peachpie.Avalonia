@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="using:ViewModels"
+             xmlns:models="using:Models"
              mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="450"
              x:Class="Views.ToDoListView"
              x:DataType="vm:ToDoListViewModel">
@@ -16,7 +17,7 @@
     </Button>
     <ItemsControl ItemsSource="{Binding ListItems}">
       <ItemsControl.ItemTemplate>
-        <DataTemplate>
+        <DataTemplate x:DataType="models:TodoItem">
           <CheckBox Margin="4"
                     IsChecked="{Binding IsChecked}"
                     Content="{Binding Description}"/>
