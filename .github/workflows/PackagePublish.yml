@@ -33,11 +33,11 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Install dependencies
-        run: dotnet restore Peachpie.Avalonia.sln
+      - name: Smoke test
+        run: bash scripts/smoke.sh
 
-      - name: Build
-        run: dotnet build Peachpie.Avalonia.sln --configuration Release --no-restore
+      - name: Build Release packages
+        run: dotnet build Peachpie.Avalonia.sln --configuration Release
 
       - name: Publish NuGet Package
         run: dotnet nuget push .nuget/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate

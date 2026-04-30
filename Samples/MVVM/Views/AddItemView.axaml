@@ -9,12 +9,19 @@
   <DockPanel>
     <Button DockPanel.Dock="Bottom"
             HorizontalAlignment="Stretch"
-            HorizontalContentAlignment="Center">Cancel</Button>
+            HorizontalContentAlignment="Center"
+            Command="{Binding Cancel}">Cancel</Button>
     <Button DockPanel.Dock="Bottom"
             HorizontalAlignment="Stretch"
-            HorizontalContentAlignment="Center">OK</Button>
+            HorizontalContentAlignment="Center"
+            Command="{Binding Ok}">OK</Button>
     <TextBox AcceptsReturn="True"
              Text="{Binding Description}"
-             PlaceholderText="Enter your to do item"/>
+             PlaceholderText="Enter your to do item">
+      <TextBox.KeyBindings>
+        <KeyBinding Gesture="Enter" Command="{Binding Ok}" />
+        <KeyBinding Gesture="Escape" Command="{Binding Cancel}" />
+      </TextBox.KeyBindings>
+    </TextBox>
   </DockPanel>
 </UserControl>

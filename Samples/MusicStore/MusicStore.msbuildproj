@@ -3,7 +3,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>Program.php</StartupObject>
     <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
-    <Description>Advanced PeachPie Avalonia showcase</Description>
+    <Description>PeachPie Avalonia MusicStore sample</Description>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
 
@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" />
+    <PackageReference Include="iTunesSearch" Version="1.0.44" />
   </ItemGroup>
 
   <ItemGroup>

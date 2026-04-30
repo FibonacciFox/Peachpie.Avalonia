@@ -1,0 +1,148 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="using:Models"
+        xmlns:vm="using:ViewModels"
+        mc:Ignorable="d"
+        x:Class="Views.MainWindow"
+        x:DataType="vm:MainViewModel"
+        Title="PeachPie MusicStore"
+        Width="1120"
+        Height="720"
+        MinWidth="940"
+        MinHeight="620"
+        Background="#111827">
+  <Grid RowDefinitions="Auto,*" Margin="22" RowSpacing="18">
+    <Border Classes="panel">
+      <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+        <StackPanel Spacing="4">
+          <TextBlock Classes="h1" Text="Avalonia MusicStore" />
+          <TextBlock Classes="caption" Text="PeachPie 1.1.13, Avalonia 12, PHP view models, iTunes search, ObservableCollection and ManagedTask." />
+          <TextBlock Name="StatusText" Classes="caption" Text="{Binding Status}" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+          <Button Name="OpenStoreButton" Classes="icon" ToolTip.Tip="Open store">
+            <PathIcon Data="{StaticResource store_microsoft_regular}" />
+          </Button>
+          <Button Name="RemoveAlbumButton" Content="Remove selected" />
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <Grid Grid.Row="1" ColumnDefinitions="1.25*,0.9*" ColumnSpacing="18">
+      <Border Classes="panel">
+        <Grid RowDefinitions="Auto,*">
+          <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,12">
+            <StackPanel>
+              <TextBlock FontSize="18" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Library" />
+              <TextBlock Name="EmptyText" Classes="caption" Text="No albums bought yet. Open the store and add your first album." />
+            </StackPanel>
+            <PathIcon Grid.Column="1" Data="{StaticResource music_regular}" Foreground="#38BDF8" Width="28" Height="28" />
+          </Grid>
+
+          <ListBox Name="LibraryList"
+                   Grid.Row="1"
+                   Background="Transparent"
+                   ItemsSource="{Binding Albums}">
+            <ListBox.ItemsPanel>
+              <ItemsPanelTemplate>
+                <WrapPanel />
+              </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.ItemTemplate>
+              <DataTemplate x:DataType="models:Album">
+                <Border Width="210"
+                        Margin="0,0,14,14"
+                        Padding="12"
+                        CornerRadius="8"
+                        Background="#22304A">
+                  <StackPanel Spacing="8">
+                    <Border Height="128" CornerRadius="6" Background="#334155" ClipToBounds="True">
+                      <Grid>
+                        <PathIcon Data="{StaticResource music_regular}"
+                                  Width="56"
+                                  Height="56"
+                                  Foreground="#93C5FD"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" />
+                        <Image Source="{Binding Cover}" Stretch="UniformToFill" />
+                      </Grid>
+                    </Border>
+                    <TextBlock Text="{Binding Title}" Foreground="#F8FAFC" FontWeight="SemiBold" TextWrapping="Wrap" MaxHeight="44" />
+                    <TextBlock Text="{Binding Artist}" Classes="caption" TextWrapping="Wrap" MaxHeight="36" />
+                    <TextBlock Text="{Binding Price}" Foreground="#38BDF8" />
+                  </StackPanel>
+                </Border>
+              </DataTemplate>
+            </ListBox.ItemTemplate>
+          </ListBox>
+        </Grid>
+      </Border>
+
+      <Border Name="StorePanel" Grid.Column="1" Classes="panel">
+        <Grid RowDefinitions="Auto,Auto,* ,Auto,Auto" RowSpacing="12">
+          <Grid ColumnDefinitions="*,Auto">
+            <StackPanel>
+              <TextBlock FontSize="18" FontWeight="SemiBold" Foreground="#F8FAFC" Text="Store" />
+              <TextBlock Classes="caption" Text="Search albums from the iTunes Search API." />
+            </StackPanel>
+            <Button Name="CloseStoreButton" Grid.Column="1" Content="Close" />
+          </Grid>
+
+          <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="8">
+            <TextBox Name="SearchBox"
+                     PlaceholderText="Search for albums..."
+                     Text="{Binding SearchText}" />
+            <Button Name="SearchButton" Grid.Column="1" Content="Search" />
+          </Grid>
+
+          <Grid Grid.Row="2" RowDefinitions="Auto,*">
+            <ProgressBar Name="BusyBar"
+                         IsIndeterminate="True"
+                         IsVisible="{Binding IsBusy}"
+                         Height="6" />
+            <ListBox Name="ResultsList"
+                     Grid.Row="1"
+                     Background="Transparent"
+                     ItemsSource="{Binding SearchResults}">
+              <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="models:Album">
+                  <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12" Margin="0,6">
+                    <Border Width="54" Height="54" CornerRadius="6" Background="#334155" ClipToBounds="True">
+                      <Grid>
+                        <PathIcon Data="{StaticResource music_regular}"
+                                  Width="24"
+                                  Height="24"
+                                  Foreground="#93C5FD"
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center" />
+                        <Image Source="{Binding Cover}" Stretch="UniformToFill" />
+                      </Grid>
+                    </Border>
+                    <StackPanel Grid.Column="1" Spacing="2">
+                      <TextBlock Text="{Binding Title}" Foreground="#F8FAFC" FontWeight="SemiBold" TextWrapping="Wrap" />
+                      <TextBlock Text="{Binding Subtitle}" Classes="caption" TextWrapping="Wrap" />
+                      <TextBlock Text="{Binding Price}" Foreground="#38BDF8" />
+                    </StackPanel>
+                  </Grid>
+                </DataTemplate>
+              </ListBox.ItemTemplate>
+            </ListBox>
+          </Grid>
+
+          <Button Name="BuyAlbumButton"
+                  Grid.Row="3"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Center"
+                  Content="Buy selected album" />
+          <Button Name="LoadMoreButton"
+                  Grid.Row="4"
+                  HorizontalAlignment="Stretch"
+                  HorizontalContentAlignment="Center"
+                  Content="Load more" />
+        </Grid>
+      </Border>
+    </Grid>
+  </Grid>
+</Window>

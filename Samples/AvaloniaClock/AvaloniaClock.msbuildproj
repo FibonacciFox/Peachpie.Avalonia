@@ -15,6 +15,10 @@
         <AvaloniaResource Include="Assets\**" />
     </ItemGroup>
 
+    <ItemGroup>
+        <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" />
+    </ItemGroup>
+
     <!-- Ваши проектные зависимости -->
     <ItemGroup>
         <ProjectReference Include="..\..\PHP Libraries\Peachpie.Avalonia\Peachpie.Avalonia.msbuildproj" />

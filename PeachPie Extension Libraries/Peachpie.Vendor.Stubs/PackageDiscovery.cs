@@ -26,6 +26,14 @@ public static class PackageDiscovery
         if (string.IsNullOrWhiteSpace(json))
             return new List<PackageInfo>();
 
+        return ParsePackageListJson(json);
+    }
+
+    public static List<PackageInfo> ParsePackageListJson(string json)
+    {
+        if (string.IsNullOrWhiteSpace(json))
+            return new List<PackageInfo>();
+
         var root = JObject.Parse(json);
         var result = new List<PackageInfo>();
 
@@ -75,8 +83,13 @@ public static class PackageDiscovery
         var stdout = p.StandardOutput.ReadToEnd();
         var stderr = p.StandardError.ReadToEnd();
         p.WaitForExit();
-        if (!string.IsNullOrWhiteSpace(stderr))
-            Console.WriteLine(stderr.Trim());
+
+        if (p.ExitCode != 0)
+        {
+            var message = string.IsNullOrWhiteSpace(stderr) ? stdout : stderr;
+            throw new InvalidOperationException($"dotnet list package failed with exit code {p.ExitCode}: {message.Trim()}");
+        }
+
         return stdout;
     }
 

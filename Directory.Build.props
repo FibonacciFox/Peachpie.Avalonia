@@ -4,6 +4,8 @@
     <!-- version -->
     <AvaloniaVersion>12.0.0</AvaloniaVersion>
     <PeachpieVersion>1.1.13</PeachpieVersion>
+    <SystemDrawingCommonVersion>10.0.7</SystemDrawingCommonVersion>
+    <TmdsDBusProtocolVersion>0.92.0</TmdsDBusProtocolVersion>
     <Version Condition=" '$(Version)'=='' ">1.0.4</Version>
     <PackageVersion>$(Version)</PackageVersion>
     <TargetFrameworkVersion>net10.0</TargetFrameworkVersion>
@@ -37,9 +39,15 @@
     <RepositoryUrl>https://github.com/FibonacciFox/Peachpie.Avalonia</RepositoryUrl>
     <PackageProjectUrl>https://github.com/FibonacciFox/Peachpie.Avalonia</PackageProjectUrl>
     <PackageOutputPath Condition=" '$(PackageOutputPath)'=='' ">$(MSBuildThisFileDirectory).nuget</PackageOutputPath>
-    <PackageIconUrl>https://github.com/peachpiecompiler/peachpie/raw/master/docs/logos/round-orange-196x196.png</PackageIconUrl>
+    <PackageIcon>logo_en.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Authors>FibonacciFox</Authors>
-    <NoWarn>NU5048;AVA3001</NoWarn>
+    <NoWarn>AVA3001</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)README.md" Pack="true" PackagePath="" Link="README.md" />
+    <None Include="$(MSBuildThisFileDirectory)docs/logo/logo_en.png" Pack="true" PackagePath="" Link="logo_en.png" />
+  </ItemGroup>
   
 </Project>

@@ -17,12 +17,6 @@
   },
 
   "symbols": {
-    "skipRestore": {
-      "type": "parameter",
-      "datatype": "bool",
-      "description": "If specified, skips the automatic restore of the project on create.",
-      "defaultValue": "false"
-    },
     "uiLang": {
       "type": "parameter",
       "datatype": "choice",
@@ -41,23 +35,13 @@
 
   "postActions": [
     {
-      "id": "restore",
-      "condition": "(!skipRestore)",
-      "description": "Restore NuGet packages required by this project.",
-      "manualInstructions": [
-        { "text": "Run 'dotnet restore'" }
-      ],
-      "actionId": "E2F6A4F0-62C0-4A0A-8E24-81D3B5711B0A",
-      "continueOnError": true
-    },
-    {
       "id": "stubs-en",
       "condition": "(uiLang == 'en')",
       "description": "Generate PHP stubs (NuGet vendor stubs + reflection stubs).",
       "manualInstructions": [
         { "text": "Run 'dotnet msbuild -t:PeachpieStubs' to restore vendor stubs and generate PHP stubs into <project>/vendor/Stubs" }
       ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "actionId": "AC1156F7-BB77-4DB8-B28F-24EEBCCA1E5C",
       "continueOnError": true
     },
     {
@@ -67,7 +51,7 @@
       "manualInstructions": [
         { "text": "Выполните 'dotnet msbuild -t:PeachpieStubs', чтобы восстановить vendor-заглушки и сгенерировать PHP-заглушки в <проект>/vendor/Stubs" }
       ],
-      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "actionId": "AC1156F7-BB77-4DB8-B28F-24EEBCCA1E5C",
       "continueOnError": true
     }
   ]

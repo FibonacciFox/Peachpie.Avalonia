@@ -73,7 +73,15 @@ namespace Peachpie.Vendor.Stubs
             using var p = new Process { StartInfo = psi };
             p.Start();
             var stdout = p.StandardOutput.ReadToEnd();
+            var stderr = p.StandardError.ReadToEnd();
             p.WaitForExit();
+
+            if (p.ExitCode != 0)
+            {
+                var message = string.IsNullOrWhiteSpace(stderr) ? stdout : stderr;
+                throw new InvalidOperationException($"dotnet list package failed with exit code {p.ExitCode}: {message.Trim()}");
+            }
+
             return stdout;
         }
 

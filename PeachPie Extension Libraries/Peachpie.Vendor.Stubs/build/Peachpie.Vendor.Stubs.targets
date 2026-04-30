@@ -41,7 +41,7 @@
     </Target>
 
     <!-- Сводная цель -->
-    <Target Name="PeachpieStubs" DependsOnTargets="PackageStubsRestore;GeneratePhpStubs" Condition=" '$(DesignTimeBuild)'!='true' ">
+    <Target Name="PeachpieStubs" DependsOnTargets="GeneratePhpStubs" Condition=" '$(DesignTimeBuild)'!='true' ">
         <Message Text="PeachPie Stubs: done → $(PeachpieStubsDir)" Importance="High" />
     </Target>
 

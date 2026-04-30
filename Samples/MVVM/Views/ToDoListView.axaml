@@ -18,9 +18,13 @@
     <ItemsControl ItemsSource="{Binding ListItems}">
       <ItemsControl.ItemTemplate>
         <DataTemplate x:DataType="models:TodoItem">
-          <CheckBox Margin="4"
-                    IsChecked="{Binding IsChecked}"
-                    Content="{Binding Description}"/>
+          <Grid ColumnDefinitions="*,Auto" Margin="4">
+            <CheckBox IsChecked="{Binding IsChecked}"
+                      Content="{Binding Description}"/>
+            <Button Grid.Column="1"
+                    Tapped="DeleteButton_OnTapped"
+                    Content="Delete"/>
+          </Grid>
         </DataTemplate>
       </ItemsControl.ItemTemplate>
     </ItemsControl>
