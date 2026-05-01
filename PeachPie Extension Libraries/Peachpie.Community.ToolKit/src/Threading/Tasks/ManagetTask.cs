@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Pchp.Core;
-using Exception = Pchp.Library.Spl.Exception;
 
 namespace Peachpie.Community.Threading.Tasks
 {
@@ -90,7 +89,7 @@ namespace Peachpie.Community.Threading.Tasks
                 // Обработка отмены. / Handle cancellation.
                 throw new ManagedTaskException("Task was cancelled.");
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 // Выбрасывает ManagedTaskException для указания критической ошибки. / Throw a ManagedTaskException to indicate a critical error.
                 throw new ManagedTaskException($"Critical error in ManagedTask {Id}: {ex.Message}", ex.HResult);
@@ -193,6 +192,11 @@ namespace Peachpie.Community.Threading.Tasks
                 }
             }
 
+            if (tasks.Count == 0)
+            {
+                return;
+            }
+
             Task.WaitAll(tasks.ToArray());
         }
         
@@ -215,6 +219,11 @@ namespace Peachpie.Community.Threading.Tasks
                 }
             }
 
+            if (tasks.Count == 0)
+            {
+                throw new ArgumentException("Managed tasks array cannot be empty.", nameof(managedTasks));
+            }
+
             return Task.WaitAny(tasks.ToArray());
         }
 
@@ -231,10 +240,21 @@ namespace Peachpie.Community.Threading.Tasks
 
             var continuationTask = _task.ContinueWith(prevTask =>
             {
+                if (prevTask.IsCanceled)
+                {
+                    throw new ManagedTaskException("Previous task was cancelled.");
+                }
+
+                if (prevTask.IsFaulted)
+                {
+                    var message = prevTask.Exception?.GetBaseException().Message ?? "Unknown task error.";
+                    throw new ManagedTaskException($"Previous task failed: {message}");
+                }
+
                 var result = continuationAction.Invoke(_ctx, PhpValue.FromClass(_cancellationTokenSource.Token),
                     PhpValue.FromClass(_pauseEvent), PhpValue.FromClr(prevTask.Result)).ToClr();
                 return result;
-            }, _cancellationTokenSource.Token, (TaskContinuationOptions)options , TaskScheduler.Current);
+            }, _cancellationTokenSource.Token, (TaskContinuationOptions)options, TaskScheduler.Default);
 
             return new ManagedTask(_ctx, continuationAction, options)
             {

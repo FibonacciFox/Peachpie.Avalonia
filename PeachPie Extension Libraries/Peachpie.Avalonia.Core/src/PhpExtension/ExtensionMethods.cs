@@ -1,5 +1,5 @@
-using Avalonia.Threading;
 using Pchp.Core;
+using Peachpie.Avalonia.Core.Threading;
 
 [assembly: PhpExtension]
 
@@ -9,6 +9,6 @@ public static class ExtensionMethods
 {
     public static void UiLater(Context ctx, IPhpCallable callback)
     {
-        Dispatcher.UIThread.Post(() => callback.Invoke(ctx));
+        UiDispatcher.Post(ctx, callback);
     }
 }

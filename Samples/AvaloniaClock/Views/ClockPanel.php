@@ -9,6 +9,7 @@ use Avalonia\Media\PenLineCap;
 use Avalonia\Media\Brush;
 use Avalonia\Point;
 use DateTimeImmutable;
+use Peachpie\Avalonia\UI;
 use Peachpie\Community\Threading\Timer;
 
 
@@ -26,7 +27,7 @@ class ClockPanel extends UserControl
     {
         $intervalTimer = Timer::every('16', function() {
 
-            uiLater(function(){
+            UI::post(function () {
                 $this->InvalidateVisual();
             });
         });

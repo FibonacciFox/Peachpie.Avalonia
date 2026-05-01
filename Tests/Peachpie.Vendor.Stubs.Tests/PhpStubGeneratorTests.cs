@@ -16,16 +16,20 @@ public sealed class PhpStubGeneratorTests
         Assert.Contains("@var \\Pchp\\Core\\ClrEvent", php);
         Assert.Contains("function(object $sender, \\Peachpie\\Vendor\\Stubs\\Tests\\PhpStubGeneratorTests\\SampleEventArgs $e): void", php);
         Assert.Contains("<br/><b>.NET overloads</b>:", php);
+        Assert.Contains("@method void SetValue(int $value)", php);
+        Assert.Contains("@method void SetValue(string $value)", php);
         Assert.Contains("public function SetValue(...$args) {}", php);
     }
 
     [Fact]
-    public void Generate_SkipsGenericMembers()
+    public void Generate_EmitsClosedGenericMembersForIde()
     {
         var php = PhpStubGenerator.Generate(typeof(SampleControl), docs: null);
 
         Assert.DoesNotContain("GenericMethod", php);
-        Assert.DoesNotContain("$Items", php);
+        Assert.Contains("public $Items;", php);
+        Assert.Contains("@var list<string>", php);
+        Assert.Contains("@return array<string, int>", php);
     }
 
     [Fact]
@@ -46,6 +50,11 @@ public sealed class PhpStubGeneratorTests
         public string Title { get; set; } = "";
 
         public List<string> Items { get; } = new();
+
+        public Dictionary<string, int> GetMap()
+        {
+            return new Dictionary<string, int>();
+        }
 
         public void SetValue(int value)
         {

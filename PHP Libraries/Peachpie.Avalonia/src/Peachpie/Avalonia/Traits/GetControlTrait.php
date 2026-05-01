@@ -2,22 +2,40 @@
 
 namespace Peachpie\Avalonia\Traits;
 
-use Peachpie\Avalonia\Core\Extension\ControlFinder;
 use Avalonia\Controls\Control;
+use Peachpie\Avalonia\Xaml\Xaml;
+use RuntimeException;
 
 trait GetControlTrait
 {
     /**
-     * Находит вложенный контрол (Control) по имени,
-     * начиная от текущего объекта (this), используя его NameScope.
-     *
-     * @param string $name Имя искомого элемента.
-     * @return mixed|null Вернёт объект Control, если найден, иначе null.
+     * @return Control|null
      */
     public function FindByName(string $name): ?Control
     {
-        // Вызваем C#-метод ControlFinder.ByName(this, $name)
-        // который внутри использует targetComponent.FindNameScope()?.Find<Control>($name);
-        return ControlFinder::ByName($this, $name);
+        return $this->findByName($name);
+    }
+
+    public function findByName(string $name): ?Control
+    {
+        return Xaml::find($this, $name);
+    }
+
+    /**
+     * @throws RuntimeException
+     */
+    public function requireByName(string $name): Control
+    {
+        return Xaml::require($this, $name);
+    }
+
+    /**
+     * @param array<string, string>|null $map
+     * @return static
+     */
+    public function bindNamedControls(?array $map = null): static
+    {
+        Xaml::bind($this, $map);
+        return $this;
     }
 }

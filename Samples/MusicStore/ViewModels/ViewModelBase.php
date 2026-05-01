@@ -2,8 +2,8 @@
 
 namespace ViewModels;
 
-use Peachpie\Community\Reactive\ReactiveObject;
+use Peachpie\Avalonia\Mvvm\ViewModel;
 
-class ViewModelBase extends ReactiveObject
+class ViewModelBase extends ViewModel
 {
 }

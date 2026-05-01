@@ -92,8 +92,16 @@ public static class PhpStubGenerator
         // Решение по конструкторам
         var ctorInfo = PrepareCtorInfo(t, docs, phpClassName);
 
+        var methodGroups = t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly)
+            .Where(m => !m.IsSpecialName)
+            .Where(IsAcceptableSignature)
+            .GroupBy(m => m.Name)
+            .ToArray();
+
+        var typeDocExtras = BuildTypeDocExtras(methodGroups);
+
         // Док-блок типа (+ опционально список ctor overloads)
-        sb.AppendLine(BuildTypeDocBlock(t, docs, ctorInfo.CtorOverloadsDocForType));
+        sb.AppendLine(BuildTypeDocBlock(t, docs, ctorInfo.CtorOverloadsDocForType, typeDocExtras));
 
         if (t.IsEnum)
         {
@@ -145,7 +153,7 @@ public static class PhpStubGenerator
                     if (IsIndexer(p)) continue;
                     var acc = p.GetMethod ?? p.SetMethod;
                     if (acc == null || !acc.IsPublic) continue;
-                    if (!IsAcceptableType(p.PropertyType)) continue;
+                    if (!IsDocumentableType(p.PropertyType)) continue;
 
                     var staticKw = (p.GetMethod?.IsStatic == true || p.SetMethod?.IsStatic == true) ? "static " : "";
                     var docType = MapPhpDocType(p.PropertyType);
@@ -215,11 +223,6 @@ public static class PhpStubGenerator
         }
 
         // Методы (DeclaredOnly)
-        var methodGroups = t.GetMethods(BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly)
-            .Where(m => !m.IsSpecialName)
-            .Where(IsAcceptableSignature)
-            .GroupBy(m => m.Name);
-
         foreach (var g in methodGroups)
         {
             var overloads = g.Cast<MethodInfo>().ToList();
@@ -395,6 +398,32 @@ public static class PhpStubGenerator
         return sb.ToString();
     }
 
+    private static IReadOnlyList<string> BuildTypeDocExtras(IEnumerable<IGrouping<string, MethodInfo>> methodGroups)
+    {
+        var lines = new List<string>();
+
+        foreach (var group in methodGroups)
+        {
+            var overloads = group.Cast<MethodInfo>().ToList();
+            if (overloads.Count <= 1)
+            {
+                continue;
+            }
+
+            overloads.Sort(MethodOverloadSortKey);
+
+            foreach (var overload in overloads)
+            {
+                var methodName = ToPhpIdentifier(overload.Name);
+                var parameters = string.Join(", ", overload.GetParameters().Select(BuildPhpDocMethodParam));
+                var returnType = MapPhpDocType(overload.ReturnType);
+                lines.Add($" * @method {returnType} {methodName}({parameters})");
+            }
+        }
+
+        return lines;
+    }
+
     // ——— сигнатуры для HTML-списков overloads (параметры в виде "$name: Type") ———
 
     private static string BuildMethodSignature(MethodInfo m)
@@ -443,7 +472,7 @@ public static class PhpStubGenerator
         return string.Join(Environment.NewLine, lines);
     }
 
-    private static string BuildTypeDocBlock(Type t, XmlDocProvider? docs, string? ctorOverloadsAddon)
+    private static string BuildTypeDocBlock(Type t, XmlDocProvider? docs, string? ctorOverloadsAddon, IReadOnlyList<string>? extraLines = null)
     {
         var lines = new List<string> { "/**" };
 
@@ -455,6 +484,11 @@ public static class PhpStubGenerator
         {
             foreach (var ln in ctorOverloadsAddon.Split(new[] { "\r\n", "\n" }, StringSplitOptions.None))
                 lines.Add(ln);
+        }
+
+        if (extraLines is { Count: > 0 })
+        {
+            lines.AddRange(extraLines);
         }
 
         if (t.IsInterface)
@@ -668,6 +702,15 @@ class Hook
         return true;
     }
 
+    private static bool IsDocumentableType(Type t)
+    {
+        if (t.IsPointer || t.IsByRef) return false;
+        if (t.IsGenericParameter || t.IsGenericTypeDefinition) return false;
+        if (t.IsArray) return IsDocumentableType(t.GetElementType()!);
+        if (t.IsGenericType) return t.GetGenericArguments().All(IsDocumentableType);
+        return true;
+    }
+
     private static bool IsAcceptableTypeForProjection(Type t)
     {
         if (t.IsPointer || t.IsByRef) return false;
@@ -681,10 +724,10 @@ class Hook
         if (m.ContainsGenericParameters) return false;
 
         foreach (var p in m.GetParameters())
-            if (!IsAcceptableType(p.ParameterType)) return false;
+            if (!IsDocumentableType(p.ParameterType)) return false;
 
         if (m is MethodInfo mi)
-            if (!IsAcceptableType(mi.ReturnType)) return false;
+            if (!IsDocumentableType(mi.ReturnType)) return false;
 
         return true;
     }
@@ -695,10 +738,10 @@ class Hook
         if (m.ContainsGenericParameters) return false;
 
         foreach (var p in m.GetParameters())
-            if (!IsAcceptableTypeForProjection(p.ParameterType)) return false;
+            if (!IsDocumentableType(p.ParameterType)) return false;
 
         if (m is MethodInfo mi)
-            if (!IsAcceptableTypeForProjection(mi.ReturnType)) return false;
+            if (!IsDocumentableType(mi.ReturnType)) return false;
 
         return true;
     }
@@ -708,6 +751,12 @@ class Hook
         var name = string.IsNullOrWhiteSpace(p.Name) ? "arg" : p.Name!;
         var defaultPart = p.HasDefaultValue ? " = null" : "";
         return $"${ToPhpIdentifier(name)}{defaultPart}";
+    }
+
+    private static string BuildPhpDocMethodParam(ParameterInfo p)
+    {
+        var name = string.IsNullOrWhiteSpace(p.Name) ? "arg" : p.Name!;
+        return $"{MapPhpDocType(p.ParameterType)} ${ToPhpIdentifier(name)}";
     }
 
     private static string MapPhpDocType(Type t)
@@ -720,22 +769,26 @@ class Hook
             t == typeof(int) || t == typeof(uint) ||
             t == typeof(long) || t == typeof(ulong)) return "int";
         if (t == typeof(float) || t == typeof(double) || t == typeof(decimal)) return "float";
-        if (t.IsArray) return "array";
+        if (t.IsArray) return $"list<{MapPhpDocType(t.GetElementType()!)}>";
 
         if (t.IsGenericType && !t.ContainsGenericParameters)
         {
             var gtd = t.GetGenericTypeDefinition();
+            var args = t.GetGenericArguments().Select(MapPhpDocType).ToArray();
 
             if (gtd == typeof(Nullable<>))
                 return MapPhpDocType(t.GetGenericArguments()[0]) + "|null";
 
-            if (typeof(System.Collections.IEnumerable).IsAssignableFrom(t))
-                return "iterable";
+            if (TryMapCallableType(gtd, args, out var callableType))
+                return callableType;
+
+            if (TryMapCollectionType(gtd, args, out var collectionType))
+                return collectionType;
 
             var fullGtd = (gtd.FullName ?? gtd.Name).Replace('+', '.');
             var idxG = fullGtd.IndexOf('`');
             if (idxG >= 0) fullGtd = fullGtd[..idxG];
-            return "\\" + fullGtd.Replace('.', '\\');
+            return "\\" + fullGtd.Replace('.', '\\') + "<" + string.Join(", ", args) + ">";
         }
 
         var full = (t.FullName ?? t.Name).Replace('+', '.');
@@ -745,6 +798,65 @@ class Hook
     }
 
     private static string MapPhpFqn(Type t) => MapPhpDocType(t);
+
+    private static bool TryMapCollectionType(Type genericTypeDefinition, string[] args, out string phpDocType)
+    {
+        phpDocType = string.Empty;
+
+        var fullName = genericTypeDefinition.FullName ?? genericTypeDefinition.Name;
+        if (args.Length == 1)
+        {
+            if (fullName.StartsWith("System.Collections.Generic.IEnumerable`", StringComparison.Ordinal) ||
+                fullName.StartsWith("System.Collections.Generic.ICollection`", StringComparison.Ordinal) ||
+                fullName.StartsWith("System.Collections.Generic.IReadOnlyCollection`", StringComparison.Ordinal))
+            {
+                phpDocType = $"iterable<int, {args[0]}>";
+                return true;
+            }
+
+            if (fullName.StartsWith("System.Collections.Generic.IList`", StringComparison.Ordinal) ||
+                fullName.StartsWith("System.Collections.Generic.IReadOnlyList`", StringComparison.Ordinal) ||
+                fullName.StartsWith("System.Collections.Generic.List`", StringComparison.Ordinal) ||
+                fullName.StartsWith("System.Collections.ObjectModel.ObservableCollection`", StringComparison.Ordinal))
+            {
+                phpDocType = $"list<{args[0]}>";
+                return true;
+            }
+        }
+
+        if (args.Length == 2 &&
+            (fullName.StartsWith("System.Collections.Generic.IDictionary`", StringComparison.Ordinal) ||
+             fullName.StartsWith("System.Collections.Generic.IReadOnlyDictionary`", StringComparison.Ordinal) ||
+             fullName.StartsWith("System.Collections.Generic.Dictionary`", StringComparison.Ordinal)))
+        {
+            phpDocType = $"array<{args[0]}, {args[1]}>";
+            return true;
+        }
+
+        return false;
+    }
+
+    private static bool TryMapCallableType(Type genericTypeDefinition, string[] args, out string phpDocType)
+    {
+        phpDocType = string.Empty;
+
+        var fullName = genericTypeDefinition.FullName ?? genericTypeDefinition.Name;
+        if (fullName.StartsWith("System.Action`", StringComparison.Ordinal))
+        {
+            phpDocType = $"callable({string.Join(", ", args)}): void";
+            return true;
+        }
+
+        if (fullName.StartsWith("System.Func`", StringComparison.Ordinal) && args.Length > 0)
+        {
+            var returnType = args[^1];
+            var parameters = args.Take(args.Length - 1);
+            phpDocType = $"callable({string.Join(", ", parameters)}): {returnType}";
+            return true;
+        }
+
+        return false;
+    }
 
     private static string StripGenericTick(string name)
     {

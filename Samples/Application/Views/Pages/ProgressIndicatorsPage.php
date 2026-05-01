@@ -7,7 +7,7 @@ namespace Views\Pages {
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
 
     use Avalonia\Threading\DispatcherTimer;
-    use Peachpie\Avalonia\Ux\Ux;
+    use Peachpie\Avalonia\Xaml\Xaml;
     use System\TimeSpan;
 
     class ProgressIndicatorsPage extends UserControl
@@ -28,14 +28,7 @@ namespace Views\Pages {
         {
             $this->InitializeComponent();
 
-            $this->Bar1 = Ux::find($this, "Bar1");
-            $this->Bar2 = Ux::find($this, "Bar2");
-            $this->Bar3=  Ux::find($this, "Bar3");
-            $this->Bar4 = Ux::find($this, "Bar4");
-            $this->Bar5 = Ux::find($this, "Bar5");
-            $this->Bar6 = Ux::find($this, "Bar6");
-            $this->Bar7 = Ux::find($this, "Bar7");
-            $this->Bar8 = Ux::find($this, "Bar8");
+            Xaml::bind($this);
 
             DispatcherTimer::Run( action: function(): bool {
 

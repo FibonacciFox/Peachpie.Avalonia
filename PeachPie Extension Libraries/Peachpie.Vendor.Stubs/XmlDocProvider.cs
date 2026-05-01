@@ -97,6 +97,24 @@ public sealed class XmlDocProvider
 
     private static string FullDocTypeName(Type t)
     {
+        if (t.IsArray)
+        {
+            return FullDocTypeName(t.GetElementType()!) + "[]";
+        }
+
+        if (t.IsByRef)
+        {
+            return FullDocTypeName(t.GetElementType()!) + "@";
+        }
+
+        if (t.IsGenericType && !t.IsGenericTypeDefinition)
+        {
+            var genericType = t.GetGenericTypeDefinition();
+            var baseName = FullDocTypeName(genericType);
+            var args = string.Join(",", t.GetGenericArguments().Select(DocParamType));
+            return $"{baseName}{{{args}}}";
+        }
+
         var full = (t.FullName ?? t.Name).Replace('+', '.');
         var idx = full.IndexOf('`');
         return idx >= 0 ? full[..idx] : full;
@@ -106,6 +124,7 @@ public sealed class XmlDocProvider
     {
         if (t.IsArray) return DocParamType(t.GetElementType()!) + "[]";
         if (t.IsByRef) return DocParamType(t.GetElementType()!) + "@";
+        if (t.IsGenericType && !t.IsGenericTypeDefinition) return FullDocTypeName(t);
         return FullDocTypeName(t);
     }
 

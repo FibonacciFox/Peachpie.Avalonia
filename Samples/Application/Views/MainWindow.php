@@ -8,7 +8,7 @@ namespace Views {
     use Avalonia\Controls\Window;
     use Avalonia\Input\TappedEventArgs;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Peachpie\Avalonia\Ux\Ux;
+    use Peachpie\Avalonia\Xaml\Xaml;
     use Peachpie\Community\Output\Logger;
     use Views\Pages\ButtonsPage;
     use Views\Pages\ColorZonePage;
@@ -34,9 +34,7 @@ namespace Views {
         {
             $this->InitializeComponent();
 
-            $this->PageView = Ux::find($this, "PageView");
-            $this->ItemMenu = Ux::find($this, "ItemMenu");
-            $this->BurgerButton = Ux::find($this, "BurgerButton");
+            Xaml::bind($this);
 
 
             $this->HomePage = new HomePage();

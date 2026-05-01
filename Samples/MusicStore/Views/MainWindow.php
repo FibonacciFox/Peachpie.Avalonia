@@ -11,10 +11,10 @@ namespace Views {
     use Avalonia\Controls\Window;
     use Avalonia\Controls\Image;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
-    use Avalonia\Threading\Dispatcher;
+    use Peachpie\Avalonia\UI;
+    use Peachpie\Avalonia\Xaml\Xaml;
     use Avalonia\VisualTree\VisualExtensions;
     use Models\Album;
-    use Peachpie\Avalonia\Ux\Ux;
     use Peachpie\Community\Threading\Tasks\ManagedTask;
     use Peachpie\Community\Threading\Tasks\ManagedTaskEventArgs;
     use ViewModels\MainViewModel;
@@ -22,16 +22,18 @@ namespace Views {
     class MainWindow extends Window
     {
         private MainViewModel $viewModel;
-        private ListBox $libraryList;
-        private ListBox $resultsList;
-        private TextBox $searchBox;
-        private TextBlock $emptyText;
-        private Border $storePanel;
-        private ProgressBar $busyBar;
-        private Button $searchButton;
-        private Button $buyAlbumButton;
-        private Button $removeAlbumButton;
-        private Button $loadMoreButton;
+        public ListBox $LibraryList;
+        public ListBox $ResultsList;
+        public TextBox $SearchBox;
+        public TextBlock $EmptyText;
+        public Border $StorePanel;
+        public ProgressBar $BusyBar;
+        public Button $SearchButton;
+        public Button $BuyAlbumButton;
+        public Button $RemoveAlbumButton;
+        public Button $LoadMoreButton;
+        public Button $OpenStoreButton;
+        public Button $CloseStoreButton;
         private ?ManagedTask $searchTask = null;
         private ?ManagedTask $coverTask = null;
         private string $currentSearchTerm = "";
@@ -52,36 +54,27 @@ namespace Views {
 
         private function wireControls(): void
         {
-            $this->libraryList = Ux::find($this, "LibraryList");
-            $this->resultsList = Ux::find($this, "ResultsList");
-            $this->searchBox = Ux::find($this, "SearchBox");
-            $this->emptyText = Ux::find($this, "EmptyText");
-            $this->storePanel = Ux::find($this, "StorePanel");
-            $this->busyBar = Ux::find($this, "BusyBar");
-            $this->searchButton = Ux::find($this, "SearchButton");
-            $this->buyAlbumButton = Ux::find($this, "BuyAlbumButton");
-            $this->removeAlbumButton = Ux::find($this, "RemoveAlbumButton");
-            $this->loadMoreButton = Ux::find($this, "LoadMoreButton");
+            Xaml::bind($this);
         }
 
         private function wireEvents(): void
         {
-            Ux::find($this, "OpenStoreButton")->Click->add(fn() => $this->showStore(true));
-            Ux::find($this, "CloseStoreButton")->Click->add(fn() => $this->showStore(false));
-            $this->searchButton->Click->add(fn() => $this->startSearch());
-            $this->loadMoreButton->Click->add(fn() => $this->loadMore());
-            $this->buyAlbumButton->Click->add(fn() => $this->buySelectedAlbum());
-            $this->removeAlbumButton->Click->add(fn() => $this->removeSelectedAlbum());
+            $this->OpenStoreButton->Click->add(fn() => $this->showStore(true));
+            $this->CloseStoreButton->Click->add(fn() => $this->showStore(false));
+            $this->SearchButton->Click->add(fn() => $this->startSearch());
+            $this->LoadMoreButton->Click->add(fn() => $this->loadMore());
+            $this->BuyAlbumButton->Click->add(fn() => $this->buySelectedAlbum());
+            $this->RemoveAlbumButton->Click->add(fn() => $this->removeSelectedAlbum());
         }
 
         private function showStore(bool $visible): void
         {
-            $this->storePanel->IsVisible = $visible;
+            $this->StorePanel->IsVisible = $visible;
         }
 
         private function startSearch(): void
         {
-            $term = trim((string)$this->searchBox->Text);
+            $term = trim((string)$this->SearchBox->Text);
             $this->viewModel->set_SearchText($term);
             $this->currentSearchTerm = $term;
             $this->searchOffset = 0;
@@ -125,11 +118,11 @@ namespace Views {
 
             $this->viewModel->set_IsBusy(true);
             $this->viewModel->set_Status("Loading albums " . ($offset + 1) . "-" . ($offset + $this->pageSize) . "...");
-            $this->searchButton->IsEnabled = false;
-            $this->loadMoreButton->IsEnabled = false;
+            $this->SearchButton->IsEnabled = false;
+            $this->LoadMoreButton->IsEnabled = false;
 
             $this->searchTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e) use ($append): void {
-                Dispatcher::$UIThread->Post(function () use ($e, $append): void {
+                UI::post(function () use ($e, $append): void {
                     $albums = is_array($e->Result) ? $e->Result : [];
 
                     if ($append) {
@@ -140,8 +133,8 @@ namespace Views {
 
                     $this->searchOffset += count($albums);
                     $this->viewModel->set_IsBusy(false);
-                    $this->searchButton->IsEnabled = true;
-                    $this->loadMoreButton->IsEnabled = count($albums) === $this->pageSize;
+                    $this->SearchButton->IsEnabled = true;
+                    $this->LoadMoreButton->IsEnabled = count($albums) === $this->pageSize;
 
                     if (count($albums) > 0) {
                         $this->startCoverLoading($albums);
@@ -181,12 +174,12 @@ namespace Views {
             });
 
             $this->coverTask->Completed->add(function (ManagedTask $sender, ManagedTaskEventArgs $e): void {
-                Dispatcher::$UIThread->Post(function () use ($e): void {
+                UI::post(function () use ($e): void {
                     $result = is_array($e->Result) ? $e->Result : [];
                     $loaded = (int)($result["loaded"] ?? 0);
 
-                    $this->applyCovers($this->resultsList);
-                    $this->applyCovers($this->libraryList);
+                    $this->applyCovers($this->ResultsList);
+                    $this->applyCovers($this->LibraryList);
                     $this->viewModel->set_Status($loaded . " covers loaded");
                 });
             });
@@ -211,7 +204,7 @@ namespace Views {
 
         private function buySelectedAlbum(): void
         {
-            $album = $this->resultsList->SelectedItem;
+            $album = $this->ResultsList->SelectedItem;
 
             if (!$album instanceof Album) {
                 $this->viewModel->set_Status("Select an album in the store first");
@@ -226,7 +219,7 @@ namespace Views {
 
         private function removeSelectedAlbum(): void
         {
-            $album = $this->libraryList->SelectedItem;
+            $album = $this->LibraryList->SelectedItem;
 
             if (!$album instanceof Album) {
                 $this->viewModel->set_Status("Select an album in the library first");
@@ -239,7 +232,7 @@ namespace Views {
 
         private function updateEmptyState(): void
         {
-            $this->emptyText->IsVisible = $this->viewModel->get_Albums()->Count === 0;
+            $this->EmptyText->IsVisible = $this->viewModel->get_Albums()->Count === 0;
         }
 
         private function InitializeComponent(): void

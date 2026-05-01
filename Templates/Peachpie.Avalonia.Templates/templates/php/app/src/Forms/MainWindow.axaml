@@ -6,5 +6,8 @@
         Width="800" Height="450"
         x:Class="PeachpieAvaloniaAppTemplate.Forms.MainWindow"
         Title="PeachpieAvaloniaAppTemplate">
-    <TextBlock Name="DateView" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <StackPanel Spacing="12" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Name="DateView" HorizontalAlignment="Center"/>
+        <Button Name="RefreshButton" Content="Refresh time" Command="{Binding RefreshTimeCommand}" HorizontalAlignment="Center"/>
+    </StackPanel>
 </Window>

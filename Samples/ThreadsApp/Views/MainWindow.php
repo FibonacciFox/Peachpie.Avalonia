@@ -8,9 +8,9 @@ namespace Views {
     use Avalonia\Controls\Window;
     use Avalonia\Markup\Xaml\AvaloniaXamlLoader;
     use Avalonia\Media\Imaging\Bitmap;
-    use Avalonia\Threading\Dispatcher;
     use Exception;
-    use Peachpie\Avalonia\Ux\Ux;
+    use Peachpie\Avalonia\UI;
+    use Peachpie\Avalonia\Xaml\Xaml;
     use Peachpie\Community\Output\Logger;
     use Peachpie\Community\Threading\Tasks\ManagedTask;
     use Peachpie\Community\Threading\Tasks\ManagedTaskEventArgs;
@@ -41,10 +41,7 @@ namespace Views {
             $this->InitializeComponent();
 
             // Находим элементы управления по их именам
-            $this->button_start = Ux::find($this, "button_start");
-            $this->button_pause_resume = Ux::find($this, "button_pause_resume");
-            $this->textblock1 = Ux::find($this, "textblock1");
-            $this->image1 = Ux::find($this, "image1");
+            Xaml::bind($this);
 
             // Создаем и настраиваем ManagedTask для загрузки изображения
             $managedTask = new ManagedTask([$this, 'Load']);
@@ -59,11 +56,11 @@ namespace Views {
                 // Проверяем, является ли результат исключением
                 if ($e->Result instanceof ManagedTaskException) {
                     Logger::Error("Task error: " . $e->Result->getMessage());
-                    Dispatcher::$UIThread->Post(function() use ($e) {
+                    UI::post(function () use ($e) {
                         $this->textblock1->Text = 'Task error: ' . $e->Result->getMessage();
                     });
                 } else {
-                    Dispatcher::$UIThread->Post(function() use ($e) {
+                    UI::post(function () use ($e) {
                         $this->image1->Source = $e->Result;
                     });
                 }
@@ -76,11 +73,11 @@ namespace Views {
                 // Проверяем, является ли результат исключением
                 if ($e->Result instanceof ManagedTaskException) {
                     Logger::Error("Continuation task error: " . $e->Result->getMessage());
-                    Dispatcher::$UIThread->Post(function() use ($e) {
+                    UI::post(function () use ($e) {
                         $this->textblock1->Text = 'Continuation task error: ' . $e->Result->getMessage();
                     });
                 } else {
-                    Dispatcher::$UIThread->Post(function() use ($e) {
+                    UI::post(function () use ($e) {
                         $this->textblock1->Text = 'Continuation task result: ' . $e->Result;
                     });
                 }
@@ -151,7 +148,7 @@ namespace Views {
                     try {
                         $this->x++;
                         // Обновляем UI из потока диспетчера
-                        Dispatcher::$UIThread->Post(function () use ($previousResult) {
+                        UI::post(function () use ($previousResult) {
                             $this->textblock1->Text = 'Continuation with previous result: ' . $previousResult . ' and new $x value: ' . $this->x;
                         });
                     } finally {
