@@ -213,3 +213,11 @@ coc-settings.json
 *.map
 src/Web/Avalonia.Web.Blazor/wwwroot/*.js
 src/Web/Avalonia.Web.Blazor/Interop/Typescript/*.js
+
+# Peachpie.Avalonia Rider integration local artifacts
+Rider Integration/Peachpie.Avalonia.RiderPlugin/.gradle/
+Rider Integration/Peachpie.Avalonia.RiderPlugin/.intellijPlatform/
+Rider Integration/Peachpie.Avalonia.RiderPlugin/.kotlin/
+Rider Integration/Peachpie.Avalonia.RiderPlugin/.tools/
+Rider Integration/Peachpie.Avalonia.RiderPlugin/build/
+**/.peachpie-rider/

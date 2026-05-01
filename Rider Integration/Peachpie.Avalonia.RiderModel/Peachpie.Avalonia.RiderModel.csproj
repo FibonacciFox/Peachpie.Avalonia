@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Peachpie.Avalonia.RiderModel</AssemblyName>
+    <RootNamespace>Peachpie.Avalonia.RiderModel</RootNamespace>
+  </PropertyGroup>
+</Project>

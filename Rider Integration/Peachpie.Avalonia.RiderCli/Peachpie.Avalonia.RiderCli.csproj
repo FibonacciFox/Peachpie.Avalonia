@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>$(TargetFrameworkVersion)</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Peachpie.Avalonia.RiderCli</AssemblyName>
+    <RootNamespace>Peachpie.Avalonia.RiderCli</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Peachpie.Avalonia.RiderModel\Peachpie.Avalonia.RiderModel.csproj" />
+  </ItemGroup>
+</Project>

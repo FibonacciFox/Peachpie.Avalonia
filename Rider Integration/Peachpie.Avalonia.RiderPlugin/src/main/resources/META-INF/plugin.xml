@@ -1,0 +1,16 @@
+<idea-plugin>
+    <id>com.peachpie.avalonia.rider</id>
+    <name>Peachpie.Avalonia Rider</name>
+    <vendor email="support@example.com" url="https://github.com/peachpiecompiler/Peachpie.Avalonia">PeachPie</vendor>
+    <description><![CDATA[
+        Rider integration for PeachPie + Avalonia projects. Reads PeachPie AXAML index data
+        and provides the base for navigation and completion in .axaml files.
+    ]]></description>
+    <depends>com.intellij.modules.rider</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="com.peachpie.avalonia.rider.PeachpieAvaloniaStartupActivity"/>
+        <completion.contributor language="XML" implementationClass="com.peachpie.avalonia.rider.PeachpieAvaloniaCompletionContributor"/>
+        <gotoDeclarationHandler implementation="com.peachpie.avalonia.rider.PeachpieAvaloniaGotoDeclarationHandler"/>
+        <annotator language="XML" implementationClass="com.peachpie.avalonia.rider.PeachpieAvaloniaAnnotator"/>
+    </extensions>
+</idea-plugin>
